@@ -73,6 +73,4 @@ if __name__ == '__main__':
         cell.index = str(int(cell.index) + len(cells))
 
     # 输出到文件
-    with open(INPUT_FILE[:-4] + '-translated.srt', 'w') as f:
-        for cell in cells:
-            f.write(str(cell) + '\n')
+    save_cells(output_cells, INPUT_FILE[:-4] + '-zh.srt')

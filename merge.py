@@ -41,6 +41,4 @@ if __name__ == '__main__':
     output_cells = merge(cells)
 
     # 输出到文件
-    with open(INPUT_FILE[:-4] + '-output.srt', 'w') as f:
-        for cell in output_cells:
-            f.write(str(cell) + '\n')
+    save_cells(output_cells, INPUT_FILE[:-4] + '-output.srt')

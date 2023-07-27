@@ -44,7 +44,7 @@ class cell:
         return self.index + '\n' + self.time + '\n' + self.content + '\n'
     
 
-def load_cells(file_name):
+def load_cells(file_name) -> list:
     content = []
     # 打开srt字幕文件
     with open(file_name) as f:
@@ -60,3 +60,9 @@ def load_cells(file_name):
         # 将每一组元素作为一个cell对象
         ret_cells.append(cell(content[i], content[i+1], content[i+2]))
     return ret_cells
+
+def save_cells(cells: list, file_name):
+    # 保存cells到文件
+    with open(file_name, 'w') as f:
+        for cell in cells:
+            f.write(str(cell) + '\n')
