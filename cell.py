@@ -1,7 +1,5 @@
 # 原始的每一条字幕作为cell
 class cell:
-    # deepl的tranlator, 所有cell共用
-
     def __init__(self, index, time, content):
         self.index = index
         self.time = time
