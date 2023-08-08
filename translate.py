@@ -18,8 +18,8 @@ import threading
 from cell import *
 from constants import DEEPL_API_KEY
 
-INPUT_FILE = 'srt_en/CS50x 2023 - Lecture 0 - Scratch.srt'
-THREADS_NUM = 10
+INPUT_FILE = 'srt_en/CS50x 2023 - Lecture 3 - Algorithms.srt'
+THREADS_NUM = 20
 
 translator = deepl.Translator(DEEPL_API_KEY)
 
@@ -68,9 +68,5 @@ if __name__ == '__main__':
     # 因为是多线程，需要重新排序
     output_cells.sort(key=lambda cell: int(cell.index))
 
-    # 放在cells后面
-    for i, cell in enumerate(output_cells):
-        cell.index = str(int(cell.index) + len(cells))
-
     # 输出到文件
-    save_cells(output_cells, INPUT_FILE[:-4] + '-zh.srt')
+    save_cells(output_cells, INPUT_FILE[:-4] + '_zh.srt')

@@ -41,4 +41,4 @@ if __name__ == '__main__':
     output_cells = merge(cells)
 
     # 输出到文件
-    save_cells(output_cells, INPUT_FILE[:-4] + '-output.srt')
+    save_cells(output_cells, INPUT_FILE[:-4] + '_output.srt')
