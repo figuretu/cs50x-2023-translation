@@ -1,0 +1,10153 @@
+1
+00:00:00,000 --> 00:01:19,147
+
+
+2
+00:01:19,147 --> 00:01:20,230
+SPEAKER 1: Good afternoon.
+
+3
+00:01:20,230 --> 00:01:21,137
+My name is Sarah.
+
+4
+00:01:21,137 --> 00:01:22,470
+SPEAKER 2: And my name is Grant.
+
+5
+00:01:22,470 --> 00:01:25,678
+SPEAKER 1: And we are The Harvard
+Crocodilians and the Radcliffe Pitches.
+
+6
+00:01:25,678 --> 00:01:27,720
+SPEAKER 2: Now, Sarah and
+I understand that today
+
+7
+00:01:27,720 --> 00:01:29,490
+is the final lecture of CS50.
+
+8
+00:01:29,490 --> 00:01:31,170
+SPEAKER 1: It's been a tough semester.
+
+9
+00:01:31,170 --> 00:01:34,323
+We made it through P sets
+4, 5, and even finance.
+
+10
+00:01:34,323 --> 00:01:36,490
+SPEAKER 2: Now, I know this
+is an unpopular opinion,
+
+11
+00:01:36,490 --> 00:01:38,040
+but I particularly enjoyed finance.
+
+12
+00:01:38,040 --> 00:01:40,560
+I spent a lot of time with my flask.
+
+13
+00:01:40,560 --> 00:01:42,300
+SPEAKER 1: The P set?
+
+14
+00:01:42,300 --> 00:01:45,390
+SPEAKER 2: There was a P set?
+
+15
+00:01:45,390 --> 00:01:48,150
+SPEAKER 1: Well, at least
+things are looking up.
+
+16
+00:01:48,150 --> 00:01:49,810
+Today is our last lecture.
+
+17
+00:01:49,810 --> 00:01:51,540
+And look how far we've come.
+
+18
+00:01:51,540 --> 00:01:55,765
+If I were an emoji right now, I'd
+be the face with tears of joy.
+
+19
+00:01:55,765 --> 00:01:58,390
+SPEAKER 2: Sorry about that we're
+just trying to work some CS50
+
+20
+00:01:58,390 --> 00:01:59,740
+references into the intro.
+
+21
+00:01:59,740 --> 00:02:06,880
+I mean, boy I sure hope this Tide
+man doesn't run off my Mario filter.
+
+22
+00:02:06,880 --> 00:02:08,440
+SPEAKER 1: You could say that.
+
+23
+00:02:08,440 --> 00:02:14,737
+For loop x equals open bracket
+1 comma 2 close bracket.
+
+24
+00:02:14,737 --> 00:02:17,320
+Boy, I sure wish we had Check
+50 see if these jokes were funny
+
+25
+00:02:17,320 --> 00:02:19,768
+when we wrote them.
+
+26
+00:02:19,768 --> 00:02:20,560
+SPEAKER 2: Any who.
+
+27
+00:02:20,560 --> 00:02:22,840
+We hope that you'll enjoy
+this brief serenade.
+
+28
+00:02:22,840 --> 00:02:25,350
+
+
+29
+00:02:25,350 --> 00:02:27,240
+[SCATTING]
+
+30
+00:02:27,240 --> 00:02:29,282
+SPEAKER 1: (SINGING) Well,
+you lace up your boats
+
+31
+00:02:29,282 --> 00:02:32,310
+and you walk on down to an
+knocked down shack edge of town.
+
+32
+00:02:32,310 --> 00:02:34,435
+There's a landing [INAUDIBLE]
+that just won't quit.
+
+33
+00:02:34,435 --> 00:02:35,390
+[INTERPOSING VOICES]
+
+34
+00:02:35,390 --> 00:02:41,520
+
+
+35
+00:02:41,520 --> 00:02:43,230
+SPEAKER 1: Well, there's fryers.
+
+36
+00:02:43,230 --> 00:02:44,070
+SPEAKER 2: Broilers.
+
+37
+00:02:44,070 --> 00:02:45,195
+SPEAKER 1: And [INAUDIBLE].
+
+38
+00:02:45,195 --> 00:02:46,728
+SPEAKER 2: Barbeque ribs.
+
+39
+00:02:46,728 --> 00:02:48,936
+SPEAKER 1: But the trick of
+the train is what they're
+
+40
+00:02:48,936 --> 00:02:51,420
+serving at those fine [INAUDIBLE].
+
+41
+00:02:51,420 --> 00:02:54,510
+You're going to spend the rest
+of your [? brights ?] down
+
+42
+00:02:54,510 --> 00:02:56,766
+at the house of blue lights.
+
+43
+00:02:56,766 --> 00:02:59,682
+[ALL SCATTING]
+
+44
+00:02:59,682 --> 00:03:08,280
+
+
+45
+00:03:08,280 --> 00:03:10,610
+Down at the house, the
+house of blue lights.
+
+46
+00:03:10,610 --> 00:03:12,960
+Well, you lace up your
+boots and you walk on down
+
+47
+00:03:12,960 --> 00:03:14,995
+to a knock down shack
+on the edge of town.
+
+48
+00:03:14,995 --> 00:03:17,370
+There's a landing [INAUDIBLE]
+there that won't just quit.
+
+49
+00:03:17,370 --> 00:03:21,720
+You walk until you see a blue
+light [INAUDIBLE] fall in there.
+
+50
+00:03:21,720 --> 00:03:25,170
+Can you dig them sights down at the
+house, the house of blue lights?
+
+51
+00:03:25,170 --> 00:03:27,000
+[ALL SCATTING]
+
+52
+00:03:27,000 --> 00:03:43,810
+
+
+53
+00:03:43,810 --> 00:03:46,090
+You lace up your boots
+and you walk on down
+
+54
+00:03:46,090 --> 00:03:48,790
+to a knocked down shack
+on the edge of town.
+
+55
+00:03:48,790 --> 00:03:51,250
+There's a lot of people coming
+there that just won't quit.
+
+56
+00:03:51,250 --> 00:03:54,550
+You walk until you see a blue
+light [INAUDIBLE] fall in there.
+
+57
+00:03:54,550 --> 00:03:59,110
+Can you dig them sights down at the
+house, the house of blue lights?
+
+58
+00:03:59,110 --> 00:04:01,975
+
+
+59
+00:04:01,975 --> 00:04:03,850
+[ALL SCATTING]
+
+60
+00:04:03,850 --> 00:04:05,590
+
+
+61
+00:04:05,590 --> 00:04:09,160
+ALL: (SINGING) Be sure to
+spend your brights down
+
+62
+00:04:09,160 --> 00:04:13,688
+at the house of blue lights.
+
+63
+00:04:13,688 --> 00:04:16,603
+[APPLAUSE]
+
+64
+00:04:16,603 --> 00:04:25,380
+
+
+65
+00:04:25,380 --> 00:04:27,130
+SPEAKER 3: Good afternoon, everyone.
+
+66
+00:04:27,130 --> 00:04:28,710
+We are the Harvard Krokodiloes.
+
+67
+00:04:28,710 --> 00:04:31,560
+And it is such an honor to be
+here with the Radcliffe Pitches
+
+68
+00:04:31,560 --> 00:04:33,810
+performing for CS50's final lecture.
+
+69
+00:04:33,810 --> 00:04:35,250
+Congratulations to everyone.
+
+70
+00:04:35,250 --> 00:04:37,845
+And we hope you'll enjoy
+this our tribute to CS50.
+
+71
+00:04:37,845 --> 00:04:44,410
+
+
+72
+00:04:44,410 --> 00:04:47,140
+1: 1 2, a, 1, 2, 3, 4.
+
+73
+00:04:47,140 --> 00:04:50,640
+ALL: [VOCALIZING]
+
+74
+00:04:50,640 --> 00:04:57,340
+
+
+75
+00:04:57,340 --> 00:05:02,530
+SPEAKER 2: (SINGING) C is
+for the language I once knew.
+
+76
+00:05:02,530 --> 00:05:07,420
+O is for O notation, I must do.
+
+77
+00:05:07,420 --> 00:05:12,580
+D is for dynamic, flask
+run and finance it.
+
+78
+00:05:12,580 --> 00:05:17,170
+E is even more than
+David Malan can adore.
+
+79
+00:05:17,170 --> 00:05:21,183
+So code is all that I can give to you.
+
+80
+00:05:21,183 --> 00:05:22,600
+ALL: (SINGING) He can give to you.
+
+81
+00:05:22,600 --> 00:05:26,350
+SPEAKER 2: Code debugging
+it since, P set 2.
+
+82
+00:05:26,350 --> 00:05:27,927
+ALL: (SINGING) Bugs in P set 2.
+
+83
+00:05:27,927 --> 00:05:30,010
+SPEAKER 2: (SINGING) Soon
+deadlines, I'll make it.
+
+84
+00:05:30,010 --> 00:05:32,350
+Hit Compile and please don't break it.
+
+85
+00:05:32,350 --> 00:05:35,440
+Code was made by me for you.
+
+86
+00:05:35,440 --> 00:05:41,530
+ALL: [VOCALIZING] (SINGING) C
+is for the language I once knew.
+
+87
+00:05:41,530 --> 00:05:46,780
+O is for O notation I must do.
+
+88
+00:05:46,780 --> 00:05:52,210
+D is for dynamic, flask
+run and finance it.
+
+89
+00:05:52,210 --> 00:05:55,990
+E Is even more than
+David Malan can adore.
+
+90
+00:05:55,990 --> 00:06:01,000
+So code is all that I can give to you.
+
+91
+00:06:01,000 --> 00:06:05,880
+Code debugging, it says P set 2.
+
+92
+00:06:05,880 --> 00:06:08,080
+Soon deadlines, I'll make it.
+
+93
+00:06:08,080 --> 00:06:10,450
+Hit Compile, but please don't break it.
+
+94
+00:06:10,450 --> 00:06:14,720
+Code was made by me for you.
+
+95
+00:06:14,720 --> 00:06:17,830
+SPEAKER 2: (SINGING)
+C is for the language.
+
+96
+00:06:17,830 --> 00:06:19,930
+SPEAKER 3: 0,1,0,0, 0.1,0, 0.
+
+97
+00:06:19,930 --> 00:06:22,150
+SPEAKER 2: (SINGING)
+O is for O notation.
+
+98
+00:06:22,150 --> 00:06:24,485
+SPEAKER 3: 0, 1, 0, 0, 1, 0
+
+99
+00:06:24,485 --> 00:06:26,770
+SPEAKER 2: (SINGING) D is for dynamic.
+
+100
+00:06:26,770 --> 00:06:29,500
+Flask run and finance it.
+
+101
+00:06:29,500 --> 00:06:33,460
+E Is even more than
+David Malan can adore.
+
+102
+00:06:33,460 --> 00:06:38,500
+So code is all that I can give to you.
+
+103
+00:06:38,500 --> 00:06:43,120
+Code debugging it, sends P set 2.
+
+104
+00:06:43,120 --> 00:06:45,700
+Soon deadlines, I'll make it.
+
+105
+00:06:45,700 --> 00:06:48,010
+Hit Compile and please don't break it.
+
+106
+00:06:48,010 --> 00:06:50,740
+Code was made by me for.
+
+107
+00:06:50,740 --> 00:06:53,200
+Code was made by me for.
+
+108
+00:06:53,200 --> 00:06:58,225
+Code was made by me for you.
+
+109
+00:06:58,225 --> 00:06:59,920
+ALL: [VOCALIZING]
+
+110
+00:06:59,920 --> 00:07:02,512
+
+
+111
+00:07:02,512 --> 00:07:03,595
+SPEAKER 2: (SINGING) Code.
+
+112
+00:07:03,595 --> 00:07:06,087
+
+
+113
+00:07:06,087 --> 00:07:07,170
+DAVID J. MALAN: All right.
+
+114
+00:07:07,170 --> 00:07:10,035
+[APPLAUSE]
+
+115
+00:07:10,035 --> 00:07:18,885
+
+
+116
+00:07:18,885 --> 00:07:19,830
+All Right.
+
+117
+00:07:19,830 --> 00:07:21,720
+This is CS50.
+
+118
+00:07:21,720 --> 00:07:26,160
+And CS50, this was the Harvard
+Krokodiloes and the Radcliffe Pitches.
+
+119
+00:07:26,160 --> 00:07:28,740
+If one more time we can thank
+them for joining us today.
+
+120
+00:07:28,740 --> 00:07:31,035
+[APPLAUSE]
+
+121
+00:07:31,035 --> 00:07:33,790
+
+
+122
+00:07:33,790 --> 00:07:38,640
+So this is already week 10, our
+last, and indeed among the goals
+
+123
+00:07:38,640 --> 00:07:41,460
+for today are to hopefully give
+you all the more of appreciation
+
+124
+00:07:41,460 --> 00:07:43,470
+of truly just how far you've come.
+
+125
+00:07:43,470 --> 00:07:46,380
+Recall that in week 0,
+we began with this visual
+
+126
+00:07:46,380 --> 00:07:51,600
+here whereby it was described this
+class as a bit of a fire hose, whereby
+
+127
+00:07:51,600 --> 00:07:55,980
+drinking from that fire hose or really
+a fire hose from a water fountain
+
+128
+00:07:55,980 --> 00:07:58,417
+is not unlike getting an
+education down the road too.
+
+129
+00:07:58,417 --> 00:08:01,500
+And so this is to say, that if you're
+feeling like you didn't quite get it
+
+130
+00:08:01,500 --> 00:08:03,480
+all down, like that's actually OK.
+
+131
+00:08:03,480 --> 00:08:04,590
+And that's to be expected.
+
+132
+00:08:04,590 --> 00:08:08,170
+And even if you felt that with each
+passing week, 0, 1, 2 all the way up
+
+133
+00:08:08,170 --> 00:08:11,250
+now till 10, it never
+really ever got easier,
+
+134
+00:08:11,250 --> 00:08:15,960
+perhaps just consider that what was
+once hard like Mario and getting
+
+135
+00:08:15,960 --> 00:08:18,600
+"Hello, world" to compile
+is indeed the right measure
+
+136
+00:08:18,600 --> 00:08:21,450
+of the delta between week
+0 and now in week 10.
+
+137
+00:08:21,450 --> 00:08:25,770
+In fact, you might recall that again
+in week 0, 2/3 of your classmates
+
+138
+00:08:25,770 --> 00:08:28,180
+had never taken a CS course before.
+
+139
+00:08:28,180 --> 00:08:29,640
+Now, of course, you all have.
+
+140
+00:08:29,640 --> 00:08:32,794
+And indeed, if you think back to
+this final sentiment from week 0,
+
+141
+00:08:32,794 --> 00:08:34,919
+that indeed "what ultimately
+matters in this course
+
+142
+00:08:34,919 --> 00:08:37,320
+is not where you end up
+relative to your classmates,
+
+143
+00:08:37,320 --> 00:08:41,080
+but where you end up relative
+to where you yourself began."
+
+144
+00:08:41,080 --> 00:08:44,350
+So I would take some pride, take
+some satisfaction, take some relief,
+
+145
+00:08:44,350 --> 00:08:47,100
+even though, a little bit more
+work does remain at really just how
+
+146
+00:08:47,100 --> 00:08:48,810
+far you've come since that week 0.
+
+147
+00:08:48,810 --> 00:08:52,200
+And recall that in week 0, we
+literally started with just 0s and 1s.
+
+148
+00:08:52,200 --> 00:08:56,580
+And by now, many of you might have
+gleaned that these 64 0s and 1s have
+
+149
+00:08:56,580 --> 00:08:58,410
+been spelling something week by week.
+
+150
+00:08:58,410 --> 00:09:03,360
+In fact, today is our very last message
+here in binary encoded on stage.
+
+151
+00:09:03,360 --> 00:09:05,490
+But then quickly, we
+introduced scratch and we
+
+152
+00:09:05,490 --> 00:09:09,510
+started to assemble some building blocks
+of programming, loops, conditions,
+
+153
+00:09:09,510 --> 00:09:11,310
+loops, conditions,
+functions and the like,
+
+154
+00:09:11,310 --> 00:09:14,122
+but without all the distractions
+of semicolons and curly braces
+
+155
+00:09:14,122 --> 00:09:16,830
+and all of that which admittedly
+we introduced the next week when
+
+156
+00:09:16,830 --> 00:09:18,130
+we introduced you to C.
+
+157
+00:09:18,130 --> 00:09:20,460
+But even now that we've
+transitioned to Python,
+
+158
+00:09:20,460 --> 00:09:23,068
+hopefully even those kinds
+of curiosities or confusions
+
+159
+00:09:23,068 --> 00:09:25,110
+are hopefully starting to
+just get more familiar.
+
+160
+00:09:25,110 --> 00:09:28,230
+And so you finally start to see
+the missing semicolon as opposed
+
+161
+00:09:28,230 --> 00:09:30,210
+to spending time on
+that kind of struggle.
+
+162
+00:09:30,210 --> 00:09:33,480
+Recall too, that in week 2, we
+started talking already about memory
+
+163
+00:09:33,480 --> 00:09:36,120
+and how you can manage
+things in arrays that later
+
+164
+00:09:36,120 --> 00:09:37,920
+became, of course, in Python, lists.
+
+165
+00:09:37,920 --> 00:09:42,300
+The week after we talked not
+only about debugging bugs in code
+
+166
+00:09:42,300 --> 00:09:44,450
+but how to debug those same programs.
+
+167
+00:09:44,450 --> 00:09:46,450
+Thereafter, we started
+talking about algorithms,
+
+168
+00:09:46,450 --> 00:09:48,495
+and we took a step back
+from code and looked
+
+169
+00:09:48,495 --> 00:09:51,120
+at the bubble sorts and the
+selection sorts and the merge sorts
+
+170
+00:09:51,120 --> 00:09:53,905
+and all of the searches as well
+that go hand in hand with that.
+
+171
+00:09:53,905 --> 00:09:57,030
+And indeed, this ultimately is what a
+lot of problem solving moving forward
+
+172
+00:09:57,030 --> 00:10:00,030
+is going to be about, just solving
+problems with some form of algorithm.
+
+173
+00:10:00,030 --> 00:10:03,210
+And you have so many different
+languages in your toolkit
+
+174
+00:10:03,210 --> 00:10:05,370
+now with which to approach
+problems like those.
+
+175
+00:10:05,370 --> 00:10:07,830
+We talked thereafter
+about pointers, which
+
+176
+00:10:07,830 --> 00:10:10,083
+are not likely to come back
+in any modern languages
+
+177
+00:10:10,083 --> 00:10:12,000
+that you now use but
+hopefully you have an all
+
+178
+00:10:12,000 --> 00:10:13,710
+the better of a sense
+underneath the hood
+
+179
+00:10:13,710 --> 00:10:15,780
+of like what's going on
+inside of the computer
+
+180
+00:10:15,780 --> 00:10:18,120
+so that when you're designing
+something, you're using something,
+
+181
+00:10:18,120 --> 00:10:21,090
+something crashes, you at least have
+a mental model for what's going on
+
+182
+00:10:21,090 --> 00:10:24,810
+and it's no longer that week
+0 Black box as it once was.
+
+183
+00:10:24,810 --> 00:10:26,730
+I mean, you built things like this.
+
+184
+00:10:26,730 --> 00:10:29,370
+Think back to week 5 when you
+built your own hash table.
+
+185
+00:10:29,370 --> 00:10:31,770
+And those things are
+everywhere, key value pairs,
+
+186
+00:10:31,770 --> 00:10:36,720
+whether it's in Python or in C or
+if it's now in CSS and JavaScript
+
+187
+00:10:36,720 --> 00:10:40,960
+and even HTML, like that principle of
+key value pairs is really everywhere.
+
+188
+00:10:40,960 --> 00:10:43,950
+And so, of course, now code doesn't
+necessarily have to look like this.
+
+189
+00:10:43,950 --> 00:10:46,470
+It now wonderfully looks a
+little something more like this.
+
+190
+00:10:46,470 --> 00:10:49,680
+But eventually, you're probably not,
+I'm not going to use Python anymore.
+
+191
+00:10:49,680 --> 00:10:51,810
+Something new and better
+is going to come along.
+
+192
+00:10:51,810 --> 00:10:53,790
+But odds are, like a lot
+of the building blocks
+
+193
+00:10:53,790 --> 00:10:57,480
+from these past 11 weeks are still
+going to be useful for wrapping
+
+194
+00:10:57,480 --> 00:10:59,100
+your mind around those new worlds.
+
+195
+00:10:59,100 --> 00:11:01,427
+And indeed SQL, we introduced
+to you a little bit too.
+
+196
+00:11:01,427 --> 00:11:03,510
+And even if you don't feel
+yourself yet an expert,
+
+197
+00:11:03,510 --> 00:11:05,820
+hopefully you have a sense
+of what you can do with it
+
+198
+00:11:05,820 --> 00:11:07,500
+and what problems you can solve.
+
+199
+00:11:07,500 --> 00:11:11,220
+It's of course a better alternative to
+something simple like a spreadsheet.
+
+200
+00:11:11,220 --> 00:11:13,600
+And now of course, web
+stuff is everywhere,
+
+201
+00:11:13,600 --> 00:11:17,062
+whether it's on your laptop or desktop
+or even a lot of the mobile apps
+
+202
+00:11:17,062 --> 00:11:19,020
+that you use on your
+phone, even though they're
+
+203
+00:11:19,020 --> 00:11:22,530
+native applications, like you install
+them from Google Play or the Apple App
+
+204
+00:11:22,530 --> 00:11:23,280
+Store.
+
+205
+00:11:23,280 --> 00:11:26,973
+They're implemented increasingly
+with HTML, CSS, and JavaScript,
+
+206
+00:11:26,973 --> 00:11:28,890
+but they're put in a
+little rectangular window
+
+207
+00:11:28,890 --> 00:11:31,770
+so you don't even notice that that's
+actually really just an embedded
+
+208
+00:11:31,770 --> 00:11:32,430
+browser.
+
+209
+00:11:32,430 --> 00:11:34,397
+And then of course,
+you can build things,
+
+210
+00:11:34,397 --> 00:11:37,230
+as you might for your final project,
+that too might very well be web
+
+211
+00:11:37,230 --> 00:11:38,470
+based if you go that route.
+
+212
+00:11:38,470 --> 00:11:41,010
+I mean, I'm still clinging to
+like the very first like web
+
+213
+00:11:41,010 --> 00:11:42,840
+app I ever made years ago.
+
+214
+00:11:42,840 --> 00:11:46,725
+But honestly, I do that in part
+because I was just so darn proud
+
+215
+00:11:46,725 --> 00:11:48,600
+that like I taught myself
+how to do something
+
+216
+00:11:48,600 --> 00:11:51,070
+and it actually worked and
+was used by other people.
+
+217
+00:11:51,070 --> 00:11:54,450
+So whether it's just used by you or
+your classmates or your roommates
+
+218
+00:11:54,450 --> 00:11:56,340
+or your family or your
+company down the line,
+
+219
+00:11:56,340 --> 00:11:58,090
+there's a great sense
+of satisfaction that
+
+220
+00:11:58,090 --> 00:12:01,200
+comes despite all of the pain
+that might be along the way
+
+221
+00:12:01,200 --> 00:12:03,930
+when you just can't see or fix that bug.
+
+222
+00:12:03,930 --> 00:12:05,760
+Now, of course we'll
+transition as you'll
+
+223
+00:12:05,760 --> 00:12:10,680
+see in the coming days to empowering
+you to code client side as well.
+
+224
+00:12:10,680 --> 00:12:13,680
+Up until now, you've been using
+our own VS Code installation
+
+225
+00:12:13,680 --> 00:12:15,722
+in the cloud, which is
+nice because you've got up
+
+226
+00:12:15,722 --> 00:12:17,730
+and running super fast
+in week 1, focusing only
+
+227
+00:12:17,730 --> 00:12:20,580
+on code challenges not on
+technical difficulties.
+
+228
+00:12:20,580 --> 00:12:24,090
+But among the goals now, if you
+so choose and want to program
+
+229
+00:12:24,090 --> 00:12:26,880
+after this class, even if you never
+take another CS course before,
+
+230
+00:12:26,880 --> 00:12:30,780
+you can use these same real
+world de facto standard tools
+
+231
+00:12:30,780 --> 00:12:32,220
+on your own Mac or PC.
+
+232
+00:12:32,220 --> 00:12:34,820
+And so pictured here is screenshot
+of like VS Code on the Mac.
+
+233
+00:12:34,820 --> 00:12:36,570
+And even though, yes,
+you're going to have
+
+234
+00:12:36,570 --> 00:12:38,653
+to jump through a couple
+of more hoops to just get
+
+235
+00:12:38,653 --> 00:12:41,258
+Python or some other language
+working on your own Mac or PC,
+
+236
+00:12:41,258 --> 00:12:43,800
+like that's what programming is
+ultimately going to be about.
+
+237
+00:12:43,800 --> 00:12:46,450
+And we deliberately transition
+you to this at term's end
+
+238
+00:12:46,450 --> 00:12:49,950
+so that now you have 11 weeks
+of more comfort under your belt
+
+239
+00:12:49,950 --> 00:12:52,680
+with which to solve sort
+of silly technical support
+
+240
+00:12:52,680 --> 00:12:55,570
+headaches that might have been
+deal breakers so many weeks ago.
+
+241
+00:12:55,570 --> 00:12:58,680
+So there's still more to be
+done in the coming weeks.
+
+242
+00:12:58,680 --> 00:13:01,620
+And indeed a support structure
+therefore, the CS50 hackathon,
+
+243
+00:13:01,620 --> 00:13:05,220
+of course, will be this
+7:00 PM till 7:00 AM
+
+244
+00:13:05,220 --> 00:13:07,380
+opportunity to dive into
+your final project--
+
+245
+00:13:07,380 --> 00:13:10,530
+well, really continue diving
+into your final project ideally
+
+246
+00:13:10,530 --> 00:13:14,040
+at that point alongside classmates,
+perhaps your project partners
+
+247
+00:13:14,040 --> 00:13:15,630
+if you're working collaboratively.
+
+248
+00:13:15,630 --> 00:13:19,593
+And awaiting you will be such memories
+and excitement hopefully as these,
+
+249
+00:13:19,593 --> 00:13:22,260
+even as you then turn your attention
+back to your final project.
+
+250
+00:13:22,260 --> 00:13:26,160
+There of course, will be several meals
+during the day culminating with 5:00 AM
+
+251
+00:13:26,160 --> 00:13:29,160
+shuttles to IHOP, the
+local pancake place,
+
+252
+00:13:29,160 --> 00:13:33,010
+if you are so awake at that
+point or even if you get there.
+
+253
+00:13:33,010 --> 00:13:35,970
+This is not an uncommon sight
+as you might recall from week 0.
+
+254
+00:13:35,970 --> 00:13:38,520
+And then lastly is the
+CS50 fair, which is finally
+
+255
+00:13:38,520 --> 00:13:41,247
+back after a couple of years
+now of it not being on campus.
+
+256
+00:13:41,247 --> 00:13:43,080
+And this will be an
+opportunity for everyone
+
+257
+00:13:43,080 --> 00:13:45,873
+to present their final
+projects to passers by,
+
+258
+00:13:45,873 --> 00:13:48,540
+classmates, faculty and staff and
+really just delight in what it
+
+259
+00:13:48,540 --> 00:13:52,520
+is you created on your Mac, your PC,
+your phone, in the cloud or anywhere
+
+260
+00:13:52,520 --> 00:13:53,020
+else.
+
+261
+00:13:53,020 --> 00:13:54,630
+And indeed, it's just
+going to be an opportunity
+
+262
+00:13:54,630 --> 00:13:57,060
+to bring your laptop to a
+shared space or your phone
+
+263
+00:13:57,060 --> 00:14:00,750
+and introduce your project to
+passers by such as might appear
+
+264
+00:14:00,750 --> 00:14:03,870
+and ultimately celebrate
+what you all accomplished.
+
+265
+00:14:03,870 --> 00:14:07,710
+And indeed will you be handed at
+the CS50 fair, your very own I took
+
+266
+00:14:07,710 --> 00:14:12,490
+CS50 t-shirt, which I daresay, I'm
+still wearing all of these years later.
+
+267
+00:14:12,490 --> 00:14:13,605
+And so you too--
+
+268
+00:14:13,605 --> 00:14:15,600
+[APPLAUSE]
+
+269
+00:14:15,600 --> 00:14:19,240
+--will have that ahead of you as well.
+
+270
+00:14:19,240 --> 00:14:23,010
+So for what's on the agenda today, we
+thought we would not only look back
+
+271
+00:14:23,010 --> 00:14:23,757
+but look forward.
+
+272
+00:14:23,757 --> 00:14:26,340
+But first, we wanted to thank
+so many of the team members that
+
+273
+00:14:26,340 --> 00:14:28,500
+have been helping both
+on stage and off who've
+
+274
+00:14:28,500 --> 00:14:32,370
+made this course and these sections
+and so much more about CS50 possible.
+
+275
+00:14:32,370 --> 00:14:34,590
+Of course, the building
+that we are now in,
+
+276
+00:14:34,590 --> 00:14:37,410
+there's a whole team downstairs
+in Memorial Hall who helps
+
+277
+00:14:37,410 --> 00:14:39,240
+us get set up and organized each day.
+
+278
+00:14:39,240 --> 00:14:40,230
+Our thanks to them.
+
+279
+00:14:40,230 --> 00:14:43,350
+There's the education support services
+team who makes everything look
+
+280
+00:14:43,350 --> 00:14:46,140
+and sound so well down here,
+especially when we have all of them
+
+281
+00:14:46,140 --> 00:14:47,820
+more microphones as well.
+
+282
+00:14:47,820 --> 00:14:50,310
+Our friends, the Harvard
+Krokodiloes and the Radcliffe
+
+283
+00:14:50,310 --> 00:14:55,890
+Pitches most recently and then of
+course CS50's own team, that [INAUDIBLE]
+
+284
+00:14:55,890 --> 00:14:59,130
+CS50's own favorite restaurant,
+Chang Chau, down the road.
+
+285
+00:14:59,130 --> 00:15:02,340
+Indeed if you find yourself in
+Cambridge for the next 1, 2, 3, 4 years
+
+286
+00:15:02,340 --> 00:15:05,160
+or visiting from out of town,
+do pay a visit to our friends
+
+287
+00:15:05,160 --> 00:15:06,090
+just down the road.
+
+288
+00:15:06,090 --> 00:15:09,060
+And in fact, we'll have our
+very last CS50 lunch this Friday
+
+289
+00:15:09,060 --> 00:15:11,130
+if you're able locally to partake.
+
+290
+00:15:11,130 --> 00:15:14,790
+And then there are CS50's own
+team, both on stage and off.
+
+291
+00:15:14,790 --> 00:15:15,780
+And my thanks, truly.
+
+292
+00:15:15,780 --> 00:15:18,540
+Because not only do they make
+everything run so smoothly,
+
+293
+00:15:18,540 --> 00:15:21,960
+they capture it for students here who
+might not be physically present here.
+
+294
+00:15:21,960 --> 00:15:24,900
+For our friends down in New Haven
+at Yale and certainly for anyone
+
+295
+00:15:24,900 --> 00:15:27,100
+online who might be tuning in as well.
+
+296
+00:15:27,100 --> 00:15:30,220
+And then lastly, wanted
+to thank, of course,
+
+297
+00:15:30,220 --> 00:15:33,240
+the huge team of your
+classmates, your peers that
+
+298
+00:15:33,240 --> 00:15:37,230
+make CS50 possible in sections and
+office hours, tutorials, and more.
+
+299
+00:15:37,230 --> 00:15:40,980
+Allow me to share with
+you the outtakes, so
+
+300
+00:15:40,980 --> 00:15:44,520
+that even we, the teaching staff
+sometimes struggle with computer
+
+301
+00:15:44,520 --> 00:15:47,910
+science, here are some of the clips
+that we captured when just passing
+
+302
+00:15:47,910 --> 00:15:50,340
+packets via TCPIP a while back.
+
+303
+00:15:50,340 --> 00:15:51,540
+You saw the finally--
+
+304
+00:15:51,540 --> 00:15:54,240
+the nicely polished
+version, but here are,
+
+305
+00:15:54,240 --> 00:15:57,585
+if I may, if we could dim the
+lights, are some of the outtakes.
+
+306
+00:15:57,585 --> 00:16:00,510
+[MUSIC PLAYING]
+
+307
+00:16:00,510 --> 00:16:01,110
+Buffering.
+
+308
+00:16:01,110 --> 00:16:03,330
+OK.
+
+309
+00:16:03,330 --> 00:16:06,450
+Josh, nice.
+
+310
+00:16:06,450 --> 00:16:07,300
+Helen, Oh.
+
+311
+00:16:07,300 --> 00:16:13,845
+[CHUCKLES] Yet, Moni, No, oh, wait.
+
+312
+00:16:13,845 --> 00:16:19,872
+
+
+313
+00:16:19,872 --> 00:16:20,830
+That was amazing, Josh.
+
+314
+00:16:20,830 --> 00:16:23,790
+
+
+315
+00:16:23,790 --> 00:16:25,326
+But.
+
+316
+00:16:25,326 --> 00:16:26,025
+Um, Sophie.
+
+317
+00:16:26,025 --> 00:16:33,210
+
+
+318
+00:16:33,210 --> 00:16:35,730
+Amazing.
+
+319
+00:16:35,730 --> 00:16:37,850
+That was perfect.
+
+320
+00:16:37,850 --> 00:16:38,870
+Moni.
+
+321
+00:16:38,870 --> 00:16:42,240
+[CHUCKLES] I think I--
+
+322
+00:16:42,240 --> 00:16:44,880
+SPEAKER 4: Hey, un-mute.
+
+323
+00:16:44,880 --> 00:16:46,403
+DAVID J. MALAN: Over to Yoel.
+
+324
+00:16:46,403 --> 00:16:47,320
+SPEAKER 4: [INAUDIBLE]
+
+325
+00:16:47,320 --> 00:16:48,153
+DAVID J. MALAN: Guy.
+
+326
+00:16:48,153 --> 00:16:51,980
+
+
+327
+00:16:51,980 --> 00:16:53,090
+That was amazing.
+
+328
+00:16:53,090 --> 00:16:53,788
+Thank you all.
+
+329
+00:16:53,788 --> 00:16:54,580
+SPEAKER 4: So good.
+
+330
+00:16:54,580 --> 00:16:56,568
+
+
+331
+00:16:56,568 --> 00:16:59,360
+DAVID J. MALAN: Indeed, in that
+moment, if we could, just one round
+
+332
+00:16:59,360 --> 00:17:01,790
+of applause for everyone who's
+helped out this semester.
+
+333
+00:17:01,790 --> 00:17:06,030
+[APPLAUSE]
+
+334
+00:17:06,030 --> 00:17:11,319
+So back in week 0, we
+introduced you, of course,
+
+335
+00:17:11,319 --> 00:17:13,920
+to this idea of
+computational thinking, which
+
+336
+00:17:13,920 --> 00:17:16,858
+is to think a little more methodically,
+a little more algorithmically.
+
+337
+00:17:16,858 --> 00:17:18,868
+And by way of these various
+languages, hopefully, that
+
+338
+00:17:18,868 --> 00:17:20,949
+is something you notice,
+maybe not in the moment,
+
+339
+00:17:20,950 --> 00:17:24,000
+but in the months and the years to come
+that you do find that your thoughts are
+
+340
+00:17:24,000 --> 00:17:27,000
+indeed a little more cleaned up and
+you're just able to express yourself
+
+341
+00:17:27,000 --> 00:17:30,630
+a little more precisely and even spot
+illogic in someone else's document
+
+342
+00:17:30,630 --> 00:17:31,760
+or statements as well.
+
+343
+00:17:31,760 --> 00:17:33,510
+But at the end of the
+day, really a course
+
+344
+00:17:33,510 --> 00:17:35,580
+like this is also about
+critical thinking.
+
+345
+00:17:35,580 --> 00:17:38,010
+And indeed, rewind
+again to week 0 when we
+
+346
+00:17:38,010 --> 00:17:41,850
+frame the entirety of computer science
+as really just this, problem solving.
+
+347
+00:17:41,850 --> 00:17:45,120
+And any problem in the world, be
+it CS or otherwise, has some input,
+
+348
+00:17:45,120 --> 00:17:47,130
+and we decided how to
+represent those inputs.
+
+349
+00:17:47,130 --> 00:17:49,320
+It needs some output,
+the solution there too.
+
+350
+00:17:49,320 --> 00:17:52,620
+And then all of what you focused
+on doing and learning and applying
+
+351
+00:17:52,620 --> 00:17:56,220
+these past several weeks is in that
+proverbial black box, which hopefully
+
+352
+00:17:56,220 --> 00:17:59,670
+is not such an abstraction
+anymore but is indeed something
+
+353
+00:17:59,670 --> 00:18:02,495
+that you know how to harness
+and know what could be going on
+
+354
+00:18:02,495 --> 00:18:05,370
+underneath the hood, even if it's
+in some technology or some language
+
+355
+00:18:05,370 --> 00:18:09,000
+that maybe we ourselves didn't cover,
+because a lot of those first principles
+
+356
+00:18:09,000 --> 00:18:10,150
+remain the same.
+
+357
+00:18:10,150 --> 00:18:13,840
+Now, along the way, we talked about the
+quality of solutions to those problems.
+
+358
+00:18:13,840 --> 00:18:16,200
+We happen to focus on
+correctness, just does it work?
+
+359
+00:18:16,200 --> 00:18:19,110
+Design, which is a bit more
+qualitative and subjective.
+
+360
+00:18:19,110 --> 00:18:21,000
+And then style, the
+aesthetics of it all.
+
+361
+00:18:21,000 --> 00:18:22,980
+And these two are
+characteristic, maybe not
+
+362
+00:18:22,980 --> 00:18:26,040
+with these same words, of just
+how you might write or evaluate
+
+363
+00:18:26,040 --> 00:18:29,590
+other creations in life, be it
+physical or written or the like.
+
+364
+00:18:29,590 --> 00:18:31,500
+So think about too,
+as you solve problems,
+
+365
+00:18:31,500 --> 00:18:34,920
+just how you can frame for
+yourself, like am I doing a good job
+
+366
+00:18:34,920 --> 00:18:39,520
+or not by quantizing it, along these
+or perhaps other axises as well.
+
+367
+00:18:39,520 --> 00:18:42,540
+And we thought we'd highlight just
+two topics from that week 0 that
+
+368
+00:18:42,540 --> 00:18:45,780
+have really been manifest for the past
+several weeks, namely abstraction,
+
+369
+00:18:45,780 --> 00:18:49,440
+like taking complicated things and ideas
+and trying to simplify them so that we
+
+370
+00:18:49,440 --> 00:18:52,500
+can operate at this level and
+solve problems we care about
+
+371
+00:18:52,500 --> 00:18:56,790
+without getting into the weeds of
+implementation details so to speak.
+
+372
+00:18:56,790 --> 00:18:59,100
+But there's this tension
+because, you know now,
+
+373
+00:18:59,100 --> 00:19:02,850
+from all of these different languages,
+that code is fairly unforgiving.
+
+374
+00:19:02,850 --> 00:19:05,980
+I mean, even omitting a stupid
+semicolon sometimes breaks everything.
+
+375
+00:19:05,980 --> 00:19:08,310
+And so precision is sort
+of at odds sometimes
+
+376
+00:19:08,310 --> 00:19:10,900
+with this idea of
+leveraging abstraction.
+
+377
+00:19:10,900 --> 00:19:13,890
+And so we thought we would
+try to tease this apart,
+
+378
+00:19:13,890 --> 00:19:19,210
+especially all these weeks later here,
+but with a bit of a live demonstration.
+
+379
+00:19:19,210 --> 00:19:21,930
+So on the way in, you probably
+all received a sheet of paper.
+
+380
+00:19:21,930 --> 00:19:24,780
+If not, but someone near you
+did just tear theirs in half
+
+381
+00:19:24,780 --> 00:19:26,940
+and borrow half a sheet
+if you can or any piece
+
+382
+00:19:26,940 --> 00:19:29,310
+of loose leaf paper or
+the like will suffice
+
+383
+00:19:29,310 --> 00:19:31,260
+as long as you have a pen or pencil.
+
+384
+00:19:31,260 --> 00:19:37,230
+And for this, allow me to propose
+that we invite up maybe two final CS50
+
+385
+00:19:37,230 --> 00:19:41,795
+volunteers this semester, and like
+a lot of hands are going up in this.
+
+386
+00:19:41,795 --> 00:19:42,420
+A lot of hands.
+
+387
+00:19:42,420 --> 00:19:44,730
+How about, I saw the first hand there.
+
+388
+00:19:44,730 --> 00:19:47,280
+Yes, who's pointing at herself now.
+
+389
+00:19:47,280 --> 00:19:50,190
+Come on down.
+
+390
+00:19:50,190 --> 00:19:52,980
+We just need the one hand
+for now but, oh, wait.
+
+391
+00:19:52,980 --> 00:19:54,183
+You'll be our number two.
+
+392
+00:19:54,183 --> 00:19:56,100
+Well, OK, we have way
+too many volunteers now.
+
+393
+00:19:56,100 --> 00:19:56,760
+No, no please.
+
+394
+00:19:56,760 --> 00:19:57,480
+Please come down.
+
+395
+00:19:57,480 --> 00:19:59,260
+Yes, in the black shirt.
+
+396
+00:19:59,260 --> 00:20:03,890
+And if you guys, we will, we'll
+do pair programming in just a bit.
+
+397
+00:20:03,890 --> 00:20:05,640
+If you want to hang
+out in the wings here,
+
+398
+00:20:05,640 --> 00:20:07,630
+we'll have our second
+demonstration as well.
+
+399
+00:20:07,630 --> 00:20:10,380
+So OK, now maybe round of
+applause for our three volunteers.
+
+400
+00:20:10,380 --> 00:20:12,555
+[APPLAUSE]
+
+401
+00:20:12,555 --> 00:20:14,440
+
+
+402
+00:20:14,440 --> 00:20:14,940
+Oh.
+
+403
+00:20:14,940 --> 00:20:15,870
+Come on up, first.
+
+404
+00:20:15,870 --> 00:20:16,920
+Oh, no.
+
+405
+00:20:16,920 --> 00:20:17,880
+Second and third.
+
+406
+00:20:17,880 --> 00:20:18,750
+OK, you come first.
+
+407
+00:20:18,750 --> 00:20:20,310
+We'll do it order No.
+
+408
+00:20:20,310 --> 00:20:21,570
+This is a queue.
+
+409
+00:20:21,570 --> 00:20:22,362
+Queue here.
+
+410
+00:20:22,362 --> 00:20:23,070
+What's your name?
+
+411
+00:20:23,070 --> 00:20:23,580
+DANI: I'm Dani.
+
+412
+00:20:23,580 --> 00:20:24,000
+DAVID J. MALAN: Dani.
+
+413
+00:20:24,000 --> 00:20:24,810
+OK, take this mic.
+
+414
+00:20:24,810 --> 00:20:27,723
+OK, so we will de-queue you momentarily.
+
+415
+00:20:27,723 --> 00:20:29,890
+All right, so Dani, come
+on over to the middle here.
+
+416
+00:20:29,890 --> 00:20:33,630
+And in a moment, I'm going to
+hand to Dani a sheet of paper that
+
+417
+00:20:33,630 --> 00:20:34,562
+has a picture on it.
+
+418
+00:20:34,562 --> 00:20:36,270
+And this picture is
+going to be something
+
+419
+00:20:36,270 --> 00:20:39,870
+that I'd like you to verbally
+program the audience to draw.
+
+420
+00:20:39,870 --> 00:20:44,380
+You can use any words, any abstractions,
+any level of precision that you want,
+
+421
+00:20:44,380 --> 00:20:47,700
+but you just can't make hand gestures
+or sort of show them what to draw.
+
+422
+00:20:47,700 --> 00:20:51,000
+But first, you want to tell us a little
+something about yourself, including
+
+423
+00:20:51,000 --> 00:20:51,840
+everyone here.
+
+424
+00:20:51,840 --> 00:20:54,288
+DANI: I'm Dani, and I took CS50.
+
+425
+00:20:54,288 --> 00:20:55,080
+DAVID J. MALAN: OK.
+
+426
+00:20:55,080 --> 00:20:55,830
+Wonderful.
+
+427
+00:20:55,830 --> 00:20:56,400
+Wonderful.
+
+428
+00:20:56,400 --> 00:20:59,468
+So I'm going to reveal
+the picture only to Dani.
+
+429
+00:20:59,468 --> 00:21:02,010
+And if each of you would like
+to take out that sheet of paper
+
+430
+00:21:02,010 --> 00:21:04,470
+and just make sure that
+no one else can see this,
+
+431
+00:21:04,470 --> 00:21:06,540
+if you want to hold it up this way.
+
+432
+00:21:06,540 --> 00:21:10,500
+Everyone here is now holding their pen
+or pencil, and in some number of steps,
+
+433
+00:21:10,500 --> 00:21:12,757
+give them a verbal algorithm
+for drawing what you see.
+
+434
+00:21:12,757 --> 00:21:15,090
+And you can say anything you
+want, but no hand gestures.
+
+435
+00:21:15,090 --> 00:21:18,780
+DANI: OK, so you're
+going to want to draw
+
+436
+00:21:18,780 --> 00:21:26,010
+a square in the center of the
+paper with the diagonal pointing
+
+437
+00:21:26,010 --> 00:21:29,160
+to the center of the edge.
+
+438
+00:21:29,160 --> 00:21:32,750
+
+
+439
+00:21:32,750 --> 00:21:33,300
+Wait.
+
+440
+00:21:33,300 --> 00:21:35,670
+No actually, scratch that.
+
+441
+00:21:35,670 --> 00:21:38,595
+Draw a rhombus in the
+center of your paper.
+
+442
+00:21:38,595 --> 00:21:41,450
+
+
+443
+00:21:41,450 --> 00:21:44,120
+DAVID J. MALAN: And for those
+who forget what a rhombus is?
+
+444
+00:21:44,120 --> 00:21:46,484
+DANI: A diamond.
+
+445
+00:21:46,484 --> 00:21:51,020
+A square that's on its side.
+
+446
+00:21:51,020 --> 00:21:56,700
+And then from the bottom vertex,
+draw a straight line down,
+
+447
+00:21:56,700 --> 00:21:59,060
+but not all the way to
+the edge of the paper.
+
+448
+00:21:59,060 --> 00:22:01,960
+
+
+449
+00:22:01,960 --> 00:22:02,690
+OK.
+
+450
+00:22:02,690 --> 00:22:06,580
+And then keep your pencil
+or pen at that point,
+
+451
+00:22:06,580 --> 00:22:09,940
+and you're going to want
+to draw a line that's
+
+452
+00:22:09,940 --> 00:22:14,845
+parallel to the line of the
+original rhombus to the right.
+
+453
+00:22:14,845 --> 00:22:18,320
+
+
+454
+00:22:18,320 --> 00:22:21,370
+And then keep your pencil
+or pen at that point,
+
+455
+00:22:21,370 --> 00:22:24,790
+and draw a line straight up,
+connecting to the side vertex.
+
+456
+00:22:24,790 --> 00:22:28,840
+
+
+457
+00:22:28,840 --> 00:22:29,410
+Yes.
+
+458
+00:22:29,410 --> 00:22:34,450
+And then go back to the line that
+you drew from the bottom vertex
+
+459
+00:22:34,450 --> 00:22:39,070
+to the bottom of the paper,
+and then draw a line parallel
+
+460
+00:22:39,070 --> 00:22:43,840
+to the left edge of the rhombus.
+
+461
+00:22:43,840 --> 00:22:49,510
+And then keep your pencil at
+that point and draw a line up
+
+462
+00:22:49,510 --> 00:22:52,585
+to the vertex of the rhombus again.
+
+463
+00:22:52,585 --> 00:22:55,990
+
+
+464
+00:22:55,990 --> 00:22:56,990
+DAVID J. MALAN: The end.
+
+465
+00:22:56,990 --> 00:22:57,440
+DANI: The end.
+
+466
+00:22:57,440 --> 00:22:58,040
+DAVID J. MALAN: All right.
+
+467
+00:22:58,040 --> 00:22:59,270
+Well, thank you to Dani.
+
+468
+00:22:59,270 --> 00:23:00,290
+Hang on to your paper.
+
+469
+00:23:00,290 --> 00:23:01,295
+Thank you so much.
+
+470
+00:23:01,295 --> 00:23:03,920
+And if you want to step off to
+the stage there, we will reveal.
+
+471
+00:23:03,920 --> 00:23:04,520
+Thank you.
+
+472
+00:23:04,520 --> 00:23:06,395
+A round of applause
+if we could for Dani.
+
+473
+00:23:06,395 --> 00:23:07,100
+[APPLAUSE]
+
+474
+00:23:07,100 --> 00:23:10,260
+That is not an easy task, I'm sure.
+
+475
+00:23:10,260 --> 00:23:13,328
+And if Carter wouldn't mind just
+grabbing a few samples here,
+
+476
+00:23:13,328 --> 00:23:15,620
+let's actually take a look
+on the overhead if we could.
+
+477
+00:23:15,620 --> 00:23:17,330
+I'm going to pop down
+over here real fast.
+
+478
+00:23:17,330 --> 00:23:19,330
+We don't need to collect
+them all, but if you're
+
+479
+00:23:19,330 --> 00:23:25,370
+feeling either good or bad with what you
+drew, happy to collect a few of them.
+
+480
+00:23:25,370 --> 00:23:26,930
+OK.
+
+481
+00:23:26,930 --> 00:23:27,590
+Thank you.
+
+482
+00:23:27,590 --> 00:23:29,860
+Thank you.
+
+483
+00:23:29,860 --> 00:23:31,940
+I hope you won't mind if
+I can't reach everyone.
+
+484
+00:23:31,940 --> 00:23:34,400
+Just a couple more, over here.
+
+485
+00:23:34,400 --> 00:23:35,000
+OK.
+
+486
+00:23:35,000 --> 00:23:36,830
+All right, that's--
+
+487
+00:23:36,830 --> 00:23:37,575
+OK.
+
+488
+00:23:37,575 --> 00:23:39,200
+AUDIENCE: This one's really [INAUDIBLE]
+
+489
+00:23:39,200 --> 00:23:40,250
+DAVID J. MALAN: This one's really funny.
+
+490
+00:23:40,250 --> 00:23:41,480
+I'm going to go with this one if I may.
+
+491
+00:23:41,480 --> 00:23:42,530
+And Carter has some too.
+
+492
+00:23:42,530 --> 00:23:48,050
+
+
+493
+00:23:48,050 --> 00:23:49,520
+Thank you so much.
+
+494
+00:23:49,520 --> 00:23:50,090
+OK.
+
+495
+00:23:50,090 --> 00:23:52,910
+So just a random assortment here.
+
+496
+00:23:52,910 --> 00:23:56,300
+Let me turn on a camera so
+I can show you what I see.
+
+497
+00:23:56,300 --> 00:24:00,740
+Here, for instance, is
+one classmate's drawing
+
+498
+00:24:00,740 --> 00:24:04,280
+which might resemble
+perhaps what you Drew here.
+
+499
+00:24:04,280 --> 00:24:09,530
+Here is the beginnings
+of a house, it seems.
+
+500
+00:24:09,530 --> 00:24:10,850
+Nice.
+
+501
+00:24:10,850 --> 00:24:15,920
+This one, this one is larger.
+
+502
+00:24:15,920 --> 00:24:20,630
+And how about a couple of others
+that were getting closer, I think.
+
+503
+00:24:20,630 --> 00:24:22,970
+So more edges and vertices there.
+
+504
+00:24:22,970 --> 00:24:30,080
+This one seems a little similar
+in spirit, if not proportional.
+
+505
+00:24:30,080 --> 00:24:34,310
+This is Zac's the best one.
+
+506
+00:24:34,310 --> 00:24:37,790
+But it turns out if I may, Zac,
+you're not all that far off.
+
+507
+00:24:37,790 --> 00:24:41,960
+Here, Dani, is what you were
+reciting to everyone algorithmically.
+
+508
+00:24:41,960 --> 00:24:44,000
+Indeed, it was this here cube.
+
+509
+00:24:44,000 --> 00:24:47,240
+And so Dani, can you come
+on back up for a moment.
+
+510
+00:24:47,240 --> 00:24:49,448
+So if you'd like to share
+for just a moment like what
+
+511
+00:24:49,448 --> 00:24:51,490
+were some of the thoughts
+going through your head
+
+512
+00:24:51,490 --> 00:24:53,870
+and why did you choose
+the words that you did?
+
+513
+00:24:53,870 --> 00:24:54,620
+DANI: OK.
+
+514
+00:24:54,620 --> 00:24:58,250
+So what was going through
+my head when I saw the cube.
+
+515
+00:24:58,250 --> 00:25:01,580
+I didn't know if I
+could say, draw a cube.
+
+516
+00:25:01,580 --> 00:25:04,490
+So I decided to start
+with the top and so
+
+517
+00:25:04,490 --> 00:25:06,590
+draw a rhombus in the
+center of your paper,
+
+518
+00:25:06,590 --> 00:25:11,640
+and then draw a line down
+and just do the first part.
+
+519
+00:25:11,640 --> 00:25:14,420
+Then the second part,
+then the third part.
+
+520
+00:25:14,420 --> 00:25:16,280
+And then you would get a cube like Zac.
+
+521
+00:25:16,280 --> 00:25:18,200
+DAVID J. MALAN: Yeah,
+and so had you said,
+
+522
+00:25:18,200 --> 00:25:21,597
+and you could have said, draw a cube,
+which would be more of an abstraction.
+
+523
+00:25:21,597 --> 00:25:23,930
+Even that's not necessarily
+sufficiently precise, right,
+
+524
+00:25:23,930 --> 00:25:26,778
+because you don't necessarily know
+what the orientation of that cube
+
+525
+00:25:26,778 --> 00:25:28,820
+is, the size of it, the
+positioning on the paper.
+
+526
+00:25:28,820 --> 00:25:31,640
+So you instead took a lower level
+approach, which is not unlike Scratch.
+
+527
+00:25:31,640 --> 00:25:33,723
+If you think about Scratch,
+being able to move up,
+
+528
+00:25:33,723 --> 00:25:36,710
+down, left, right, turn 90 degrees,
+turn 15 degrees and the like.
+
+529
+00:25:36,710 --> 00:25:39,890
+I mean, that is ultimately how a
+lot of graphical programs and games
+
+530
+00:25:39,890 --> 00:25:42,680
+even might be implemented by really
+focusing at the level you do.
+
+531
+00:25:42,680 --> 00:25:44,763
+But of course, there's
+this tension with us humans
+
+532
+00:25:44,763 --> 00:25:46,820
+whereby we prefer often
+to think at this level,
+
+533
+00:25:46,820 --> 00:25:48,403
+but even that might not be sufficient.
+
+534
+00:25:48,403 --> 00:25:50,660
+Which is to say, here in
+week 10, these are still
+
+535
+00:25:50,660 --> 00:25:53,990
+going to be in our hard problems,
+but a hand, if we could,
+
+536
+00:25:53,990 --> 00:25:56,960
+one more time for Dani for
+getting us that far along.
+
+537
+00:25:56,960 --> 00:25:57,710
+Thank you so much.
+
+538
+00:25:57,710 --> 00:25:59,168
+Let me give you a stress ball here.
+
+539
+00:25:59,168 --> 00:25:59,750
+[APPLAUSE]
+
+540
+00:25:59,750 --> 00:26:00,440
+All right.
+
+541
+00:26:00,440 --> 00:26:04,730
+And if we could have both of
+our volunteers come up here.
+
+542
+00:26:04,730 --> 00:26:07,490
+We're going to have-- yes, come on up.
+
+543
+00:26:07,490 --> 00:26:08,240
+Come on up.
+
+544
+00:26:08,240 --> 00:26:13,220
+And let me have you guys introduce
+yourselves in the middle here.
+
+545
+00:26:13,220 --> 00:26:15,132
+EVAN: Hi, I'm Evan.
+
+546
+00:26:15,132 --> 00:26:15,840
+SADDIQ: Hi there.
+
+547
+00:26:15,840 --> 00:26:16,970
+I'm Saddiq from Turkey.
+
+548
+00:26:16,970 --> 00:26:17,660
+Nice to meet you all.
+
+549
+00:26:17,660 --> 00:26:18,230
+DAVID J. MALAN: Wonderful.
+
+550
+00:26:18,230 --> 00:26:18,890
+Welcome.
+
+551
+00:26:18,890 --> 00:26:23,450
+And this time we're going to flip
+it around so as to have the audience
+
+552
+00:26:23,450 --> 00:26:25,400
+do what Dani just did for us.
+
+553
+00:26:25,400 --> 00:26:27,440
+The only catch here
+is that the only means
+
+554
+00:26:27,440 --> 00:26:30,755
+we have for showing the audience
+what they need to tell you to draw
+
+555
+00:26:30,755 --> 00:26:32,630
+is like literally right
+above the chalkboard.
+
+556
+00:26:32,630 --> 00:26:36,110
+So on our system here, that your
+eyes must stay on the chalkboard
+
+557
+00:26:36,110 --> 00:26:37,160
+and not look up.
+
+558
+00:26:37,160 --> 00:26:39,740
+And in just a moment, if
+you guys want to both stand
+
+559
+00:26:39,740 --> 00:26:42,320
+in front of the chalkboard,
+back to the audience.
+
+560
+00:26:42,320 --> 00:26:45,740
+And as you're talking with each other,
+verbalize it through the microphone
+
+561
+00:26:45,740 --> 00:26:46,470
+if you will.
+
+562
+00:26:46,470 --> 00:26:49,610
+I'm going to show everyone else in
+the room a second and final drawing,
+
+563
+00:26:49,610 --> 00:26:51,740
+and we'll just go rapid
+fire around the room,
+
+564
+00:26:51,740 --> 00:26:53,870
+give us one step at a time
+collectively, and we'll
+
+565
+00:26:53,870 --> 00:26:57,595
+see if these guys can't draw
+exactly that same outcome.
+
+566
+00:26:57,595 --> 00:26:58,970
+AUDIENCE: Is there another chalk?
+
+567
+00:26:58,970 --> 00:26:59,510
+DAVID J. MALAN: What's that?
+
+568
+00:26:59,510 --> 00:27:00,830
+SADDIQ: Is there another chalk?
+
+569
+00:27:00,830 --> 00:27:03,705
+DAVID J. MALAN: Just the one, so
+you'll have to collaborate and let's
+
+570
+00:27:03,705 --> 00:27:08,660
+give you a clean slate here, literally.
+
+571
+00:27:08,660 --> 00:27:09,290
+All right.
+
+572
+00:27:09,290 --> 00:27:11,280
+So no looking up.
+
+573
+00:27:11,280 --> 00:27:12,920
+That's the only rule for you guys.
+
+574
+00:27:12,920 --> 00:27:13,550
+Here we go.
+
+575
+00:27:13,550 --> 00:27:20,030
+For the audience, here is what we'd
+like them, ironically, to draw.
+
+576
+00:27:20,030 --> 00:27:23,430
+Step one, from anyone in the audience?
+
+577
+00:27:23,430 --> 00:27:24,050
+Yes.
+
+578
+00:27:24,050 --> 00:27:25,710
+AUDIENCE: Draw a circle.
+
+579
+00:27:25,710 --> 00:27:27,050
+DAVID J. MALAN: Draw a circle.
+
+580
+00:27:27,050 --> 00:27:29,210
+Anywhere.
+
+581
+00:27:29,210 --> 00:27:30,980
+AUDIENCE: Not anywhere.
+
+582
+00:27:30,980 --> 00:27:34,508
+[INTERPOSING VOICES]
+
+583
+00:27:34,508 --> 00:27:35,300
+DAVID J. MALAN: OK.
+
+584
+00:27:35,300 --> 00:27:36,080
+That's step one.
+
+585
+00:27:36,080 --> 00:27:37,010
+Step two.
+
+586
+00:27:37,010 --> 00:27:37,830
+Someone else?
+
+587
+00:27:37,830 --> 00:27:39,006
+Yeah, in the middle.
+
+588
+00:27:39,006 --> 00:27:41,930
+AUDIENCE: Draw a line down
+from the bottom of the stairs,
+
+589
+00:27:41,930 --> 00:27:44,450
+about halfway down to the--
+
+590
+00:27:44,450 --> 00:27:45,033
+half way down.
+
+591
+00:27:45,033 --> 00:27:47,033
+DAVID J. MALAN: Draw a
+line down from the bottom
+
+592
+00:27:47,033 --> 00:27:48,680
+of the circle about halfway down.
+
+593
+00:27:48,680 --> 00:27:50,555
+I think there was a hand
+in front of you too.
+
+594
+00:27:50,555 --> 00:27:52,064
+Number three?
+
+595
+00:27:52,064 --> 00:27:57,720
+AUDIENCE: From the point on the bottom,
+draw a diagonal line to the left.
+
+596
+00:27:57,720 --> 00:27:58,220
+OK.
+
+597
+00:27:58,220 --> 00:27:58,720
+[INAUDIBLE]
+
+598
+00:27:58,720 --> 00:28:01,170
+[LAUGHTER]
+
+599
+00:28:01,170 --> 00:28:02,148
+DAVID J. MALAN: OK.
+
+600
+00:28:02,148 --> 00:28:06,167
+AUDIENCE: The overarching goal here
+is you're trying to draw a person.
+
+601
+00:28:06,167 --> 00:28:09,000
+DAVID J. MALAN: The overarching
+goal here, for those unable to hear,
+
+602
+00:28:09,000 --> 00:28:10,170
+is to draw a person.
+
+603
+00:28:10,170 --> 00:28:11,535
+EVAN: Oh, it's a stick figure.
+
+604
+00:28:11,535 --> 00:28:12,035
+SADDIQ: OK.
+
+605
+00:28:12,035 --> 00:28:13,260
+It may be a stick figure.
+
+606
+00:28:13,260 --> 00:28:15,010
+AUDIENCE: Draw the
+left leg of the person.
+
+607
+00:28:15,010 --> 00:28:18,050
+DAVID J. MALAN: Draw the left leg
+of the person, of this person.
+
+608
+00:28:18,050 --> 00:28:19,050
+OK.
+
+609
+00:28:19,050 --> 00:28:19,560
+Good job.
+
+610
+00:28:19,560 --> 00:28:20,180
+All right.
+
+611
+00:28:20,180 --> 00:28:20,680
+OK.
+
+612
+00:28:20,680 --> 00:28:21,810
+Next, step four.
+
+613
+00:28:21,810 --> 00:28:23,010
+Yeah?
+
+614
+00:28:23,010 --> 00:28:28,021
+AUDIENCE: Go to the vertice of
+the line going up and the circle
+
+615
+00:28:28,021 --> 00:28:32,632
+and to the left, I'm sorry,
+to the right, draw a V.
+
+616
+00:28:32,632 --> 00:28:35,590
+DAVID J. MALAN: To the right of the
+vertex at the bottom of the circle,
+
+617
+00:28:35,590 --> 00:28:36,510
+draw a V.
+
+618
+00:28:36,510 --> 00:28:38,290
+AUDIENCE: Yeah, draw a V.
+
+619
+00:28:38,290 --> 00:28:39,180
+SADDIQ: A V.
+
+620
+00:28:39,180 --> 00:28:40,230
+EVAN: Like what V?
+
+621
+00:28:40,230 --> 00:28:41,813
+DAVID J. MALAN: Nope, not interactive.
+
+622
+00:28:41,813 --> 00:28:44,110
+Draw a V.
+
+623
+00:28:44,110 --> 00:28:51,478
+EVAN: Well-- Yeah, it
+seems really weird.
+
+624
+00:28:51,478 --> 00:28:52,770
+DAVID J. MALAN: Get ready for--
+
+625
+00:28:52,770 --> 00:28:54,103
+EVAN: Maybe something like this?
+
+626
+00:28:54,103 --> 00:28:55,550
+DAVID J. MALAN: Step five.
+
+627
+00:28:55,550 --> 00:28:56,730
+OK, we'll go with that.
+
+628
+00:28:56,730 --> 00:28:57,420
+Step five.
+
+629
+00:28:57,420 --> 00:28:58,680
+Someone else?
+
+630
+00:28:58,680 --> 00:29:00,538
+Step five, someone else?
+
+631
+00:29:00,538 --> 00:29:01,080
+Someone else?
+
+632
+00:29:01,080 --> 00:29:01,882
+Yeah?
+
+633
+00:29:01,882 --> 00:29:03,590
+AUDIENCE: Draw the
+right side of the leg.
+
+634
+00:29:03,590 --> 00:29:06,100
+DAVID J. MALAN: Draw the
+right side of the leg.
+
+635
+00:29:06,100 --> 00:29:07,200
+Nice.
+
+636
+00:29:07,200 --> 00:29:08,250
+Step six.
+
+637
+00:29:08,250 --> 00:29:09,168
+Step six.
+
+638
+00:29:09,168 --> 00:29:09,960
+SADDIQ: Happy face?
+
+639
+00:29:09,960 --> 00:29:11,440
+DAVID J. MALAN: Six.
+
+640
+00:29:11,440 --> 00:29:11,940
+Six.
+
+641
+00:29:11,940 --> 00:29:12,480
+Yes?
+
+642
+00:29:12,480 --> 00:29:16,450
+AUDIENCE: Erase the line
+you have on the left.
+
+643
+00:29:16,450 --> 00:29:19,283
+DAVID J. MALAN: Erase the line
+that you have on the left.
+
+644
+00:29:19,283 --> 00:29:20,200
+AUDIENCE: On the left.
+
+645
+00:29:20,200 --> 00:29:22,515
+
+
+646
+00:29:22,515 --> 00:29:23,640
+DAVID J. MALAN: Step seven.
+
+647
+00:29:23,640 --> 00:29:24,645
+Yes?
+
+648
+00:29:24,645 --> 00:29:28,680
+AUDIENCE: Instead of that line that
+was before going up, make it go down.
+
+649
+00:29:28,680 --> 00:29:32,490
+DAVID J. MALAN: Instead of that line
+before going up, make it go down.
+
+650
+00:29:32,490 --> 00:29:34,040
+Step eight.
+
+651
+00:29:34,040 --> 00:29:35,660
+Step eight?
+
+652
+00:29:35,660 --> 00:29:36,380
+Step eight?
+
+653
+00:29:36,380 --> 00:29:37,490
+Yes?
+
+654
+00:29:37,490 --> 00:29:39,570
+AUDIENCE: Connect that line to the hip.
+
+655
+00:29:39,570 --> 00:29:41,975
+DAVID J. MALAN: Connect
+that line to the hip,
+
+656
+00:29:41,975 --> 00:29:43,350
+AUDIENCE: Not like, not touching.
+
+657
+00:29:43,350 --> 00:29:44,558
+DAVID J. MALAN: Not touching.
+
+658
+00:29:44,558 --> 00:29:47,010
+EVAN: Something like this, maybe?
+
+659
+00:29:47,010 --> 00:29:48,315
+DAVID J. MALAN: Compromise.
+
+660
+00:29:48,315 --> 00:29:49,530
+EVAN: Not touching.
+
+661
+00:29:49,530 --> 00:29:50,610
+SADDIQ: Not touching.
+
+662
+00:29:50,610 --> 00:29:51,402
+DAVID J. MALAN: OK.
+
+663
+00:29:51,402 --> 00:29:51,960
+All right.
+
+664
+00:29:51,960 --> 00:29:52,710
+Step nine.
+
+665
+00:29:52,710 --> 00:29:53,820
+Almost there, I think.
+
+666
+00:29:53,820 --> 00:29:54,465
+Step nine?
+
+667
+00:29:54,465 --> 00:29:58,460
+
+
+668
+00:29:58,460 --> 00:29:59,000
+Step nine?
+
+669
+00:29:59,000 --> 00:29:59,500
+Step nine?
+
+670
+00:29:59,500 --> 00:30:00,591
+Yes, in back.
+
+671
+00:30:00,591 --> 00:30:07,820
+AUDIENCE: [INAUDIBLE] write the word
+"hi" on the top left of the circle.
+
+672
+00:30:07,820 --> 00:30:10,861
+DAVID J. MALAN: Right the word
+"hi" on the top left of the circle.
+
+673
+00:30:10,861 --> 00:30:13,170
+EVAN: Put this right here.
+
+674
+00:30:13,170 --> 00:30:14,070
+DAVID J. MALAN: OK.
+
+675
+00:30:14,070 --> 00:30:15,700
+And step 10.
+
+676
+00:30:15,700 --> 00:30:16,242
+Almost there.
+
+677
+00:30:16,242 --> 00:30:17,867
+AUDIENCE: Draw a line pointing to "hi".
+
+678
+00:30:17,867 --> 00:30:19,870
+DAVID J. MALAN: Draw a
+line pointing to "hi".
+
+679
+00:30:19,870 --> 00:30:23,880
+EVAN: This is like a
+speech bubble, basically.
+
+680
+00:30:23,880 --> 00:30:27,390
+DAVID J. MALAN: And step 10, 11?
+
+681
+00:30:27,390 --> 00:30:28,228
+Yeah?
+
+682
+00:30:28,228 --> 00:30:30,097
+AUDIENCE: Erase the exclamation point.
+
+683
+00:30:30,097 --> 00:30:31,930
+DAVID J. MALAN: Erase
+the exclamation point.
+
+684
+00:30:31,930 --> 00:30:32,620
+Nice.
+
+685
+00:30:32,620 --> 00:30:34,360
+12.
+
+686
+00:30:34,360 --> 00:30:37,470
+Do we want to give them one more?
+
+687
+00:30:37,470 --> 00:30:37,970
+12?
+
+688
+00:30:37,970 --> 00:30:39,440
+Or are we good?
+
+689
+00:30:39,440 --> 00:30:41,420
+Yeah, last one.
+
+690
+00:30:41,420 --> 00:30:43,290
+AUDIENCE: Erase the right arm.
+
+691
+00:30:43,290 --> 00:30:45,300
+DAVID J. MALAN: Erase the right arm.
+
+692
+00:30:45,300 --> 00:30:48,330
+I think we're going to need a 13 then.
+
+693
+00:30:48,330 --> 00:30:51,260
+And then?
+
+694
+00:30:51,260 --> 00:30:52,188
+Yeah?
+
+695
+00:30:52,188 --> 00:30:54,532
+AUDIENCE: Repeat the left
+arm, but rotate it 90 degrees.
+
+696
+00:30:54,532 --> 00:30:57,240
+DAVID J. MALAN: Repeat the left
+arm, but rotate it by 90 degrees.
+
+697
+00:30:57,240 --> 00:31:00,903
+
+
+698
+00:31:00,903 --> 00:31:01,945
+SADDIQ: That feels wrong.
+
+699
+00:31:01,945 --> 00:31:04,850
+
+
+700
+00:31:04,850 --> 00:31:05,780
+How would you like--
+
+701
+00:31:05,780 --> 00:31:06,950
+as an organic human being,
+how would you use your arms?
+
+702
+00:31:06,950 --> 00:31:07,060
+DAVID J. MALAN: No.
+
+703
+00:31:07,060 --> 00:31:07,560
+No.
+
+704
+00:31:07,560 --> 00:31:09,460
+No.
+
+705
+00:31:09,460 --> 00:31:10,357
+AUDIENCE: [INAUDIBLE]
+
+706
+00:31:10,357 --> 00:31:12,440
+SADDIQ: Would you ever
+stretch your arm like that?
+
+707
+00:31:12,440 --> 00:31:14,482
+DAVID J. MALAN: That would
+not be a stick figure.
+
+708
+00:31:14,482 --> 00:31:16,550
+
+
+709
+00:31:16,550 --> 00:31:19,190
+SADDIQ: Would you do this
+or would you do that?
+
+710
+00:31:19,190 --> 00:31:21,620
+DAVID J. MALAN: All
+right, little hint, maybe.
+
+711
+00:31:21,620 --> 00:31:23,420
+Give me a step 14.
+
+712
+00:31:23,420 --> 00:31:24,710
+Step 14 and final?
+
+713
+00:31:24,710 --> 00:31:25,250
+Step 14?
+
+714
+00:31:25,250 --> 00:31:27,368
+
+
+715
+00:31:27,368 --> 00:31:29,160
+I think we just got to
+tell him what to do.
+
+716
+00:31:29,160 --> 00:31:30,390
+Step 14?
+
+717
+00:31:30,390 --> 00:31:31,230
+Yes?
+
+718
+00:31:31,230 --> 00:31:33,090
+AUDIENCE: Think of a walking man.
+
+719
+00:31:33,090 --> 00:31:38,980
+The right hand [INAUDIBLE]
+normal [INAUDIBLE],, but just
+
+720
+00:31:38,980 --> 00:31:41,440
+rotate the edge of it
+a little to a left.
+
+721
+00:31:41,440 --> 00:31:47,230
+DAVID J. MALAN: Think of a
+walking man, and have the left,
+
+722
+00:31:47,230 --> 00:31:51,238
+the right hand walking to your right.
+
+723
+00:31:51,238 --> 00:31:52,030
+SADDIQ: It's like--
+
+724
+00:31:52,030 --> 00:31:54,220
+DAVID J. MALAN: Where could the hand go?
+
+725
+00:31:54,220 --> 00:31:57,610
+Where should the hand go on that arm?
+
+726
+00:31:57,610 --> 00:31:59,690
+But Yeah.
+
+727
+00:31:59,690 --> 00:32:00,190
+OK.
+
+728
+00:32:00,190 --> 00:32:00,730
+Yes.
+
+729
+00:32:00,730 --> 00:32:03,400
+No.
+
+730
+00:32:03,400 --> 00:32:04,720
+I mean, look right here.
+
+731
+00:32:04,720 --> 00:32:05,440
+Look right here.
+
+732
+00:32:05,440 --> 00:32:06,520
+Look right.
+
+733
+00:32:06,520 --> 00:32:07,420
+Yes, sorry.
+
+734
+00:32:07,420 --> 00:32:08,740
+Thank you.
+
+735
+00:32:08,740 --> 00:32:10,200
+14 is done.
+
+736
+00:32:10,200 --> 00:32:12,550
+[APPLAUSE]
+
+737
+00:32:12,550 --> 00:32:15,650
+That's pretty close, so
+congratulations to you guys.
+
+738
+00:32:15,650 --> 00:32:17,150
+And thank you as well.
+
+739
+00:32:17,150 --> 00:32:20,620
+All right, so I mean, these
+things too are not-- yes, round
+
+740
+00:32:20,620 --> 00:32:22,030
+of applause then, sure.
+
+741
+00:32:22,030 --> 00:32:25,630
+[APPLAUSE]
+
+742
+00:32:25,630 --> 00:32:30,400
+So this is to say these ideas
+of abstraction and precision
+
+743
+00:32:30,400 --> 00:32:32,650
+and really every other term
+of art that we explored
+
+744
+00:32:32,650 --> 00:32:34,630
+this term are sort of
+omnipresent and can
+
+745
+00:32:34,630 --> 00:32:36,700
+be easier or harder
+to implement depending
+
+746
+00:32:36,700 --> 00:32:38,560
+on exactly what the problem is.
+
+747
+00:32:38,560 --> 00:32:41,620
+But what we thought we'd
+do now in our final day
+
+748
+00:32:41,620 --> 00:32:45,520
+is try to now similarly prepare
+you for life after CS50.
+
+749
+00:32:45,520 --> 00:32:50,200
+And this is really going to be a
+list of really potential to-do,
+
+750
+00:32:50,200 --> 00:32:53,140
+so that you can stand on your own
+after the class, after the classes'
+
+751
+00:32:53,140 --> 00:32:55,240
+infrastructure, write actual code.
+
+752
+00:32:55,240 --> 00:32:58,030
+And then we'll come full circle
+one final time with our friend
+
+753
+00:32:58,030 --> 00:33:00,460
+Jennifer 8 Lee to look
+at the world of emojis
+
+754
+00:33:00,460 --> 00:33:03,190
+and how they relate to all
+forms of representation
+
+755
+00:33:03,190 --> 00:33:05,960
+that we've talked about up until now.
+
+756
+00:33:05,960 --> 00:33:09,100
+So one, how can you go about
+programming after CS50?
+
+757
+00:33:09,100 --> 00:33:13,390
+So one, you can actually install command
+line tools on your own Mac or PC.
+
+758
+00:33:13,390 --> 00:33:15,550
+Perhaps unbeknownst to
+you, Windows has what's
+
+759
+00:33:15,550 --> 00:33:16,990
+generally called a command prompt.
+
+760
+00:33:16,990 --> 00:33:21,380
+Mac OS literally comes with a terminal
+program in your applications utilities
+
+761
+00:33:21,380 --> 00:33:21,880
+folder.
+
+762
+00:33:21,880 --> 00:33:23,838
+And so even if you've
+never run those programs,
+
+763
+00:33:23,838 --> 00:33:26,050
+you've actually had a
+sort of blinking cursor,
+
+764
+00:33:26,050 --> 00:33:27,940
+black and white prompt available to you.
+
+765
+00:33:27,940 --> 00:33:31,210
+Might not have all of the same
+software installed as your code space
+
+766
+00:33:31,210 --> 00:33:33,880
+in the cloud, but you have that
+command line interface even
+
+767
+00:33:33,880 --> 00:33:35,500
+within today's graphical tools.
+
+768
+00:33:35,500 --> 00:33:38,980
+And among the tools you can install
+within that command line interface
+
+769
+00:33:38,980 --> 00:33:41,080
+would be something
+called Xcode on the Mac
+
+770
+00:33:41,080 --> 00:33:44,740
+which comes not only with a GUI IDE,
+integrated development environment,
+
+771
+00:33:44,740 --> 00:33:47,710
+but also those command line
+tools and Microsoft for Windows
+
+772
+00:33:47,710 --> 00:33:49,510
+has something similar as well.
+
+773
+00:33:49,510 --> 00:33:53,177
+Learning Git, so we've used
+Git, only unbeknownst to you
+
+774
+00:33:53,177 --> 00:33:54,760
+underneath the hood for the most part.
+
+775
+00:33:54,760 --> 00:33:58,240
+But Git is a very, very
+popular tool, if challenging
+
+776
+00:33:58,240 --> 00:34:01,060
+to pick up for the first time,
+that makes it easy to push code
+
+777
+00:34:01,060 --> 00:34:03,550
+to a website called
+GitHub or any equivalent
+
+778
+00:34:03,550 --> 00:34:05,800
+and then collaborate more
+effectively with classmates.
+
+779
+00:34:05,800 --> 00:34:07,675
+There's definitely a
+bit of a learning curve,
+
+780
+00:34:07,675 --> 00:34:10,270
+but thanks to CS50's own Brian
+Yu, you can start, for instance
+
+781
+00:34:10,270 --> 00:34:11,380
+with a video like this.
+
+782
+00:34:11,380 --> 00:34:13,780
+And this indeed is going to be
+one of these de facto standards
+
+783
+00:34:13,780 --> 00:34:16,040
+in the real world, at least
+for the next several years
+
+784
+00:34:16,040 --> 00:34:19,750
+that you'll probably encounter if you
+work in tech or really any company
+
+785
+00:34:19,750 --> 00:34:21,250
+where you're doing some programming.
+
+786
+00:34:21,250 --> 00:34:24,320
+VS code itself, we'll walk you through
+this process in the coming days,
+
+787
+00:34:24,320 --> 00:34:26,860
+but you can indeed install
+it on your own Mac or PC.
+
+788
+00:34:26,860 --> 00:34:28,790
+And what can you do when you write code?
+
+789
+00:34:28,790 --> 00:34:31,870
+Well, you can certainly write
+software for your Mac, for your PC,
+
+790
+00:34:31,870 --> 00:34:35,199
+for your phone, or of
+course per week 9, you
+
+791
+00:34:35,199 --> 00:34:41,830
+can host your own website be it
+static as in week 8, hosting it
+
+792
+00:34:41,830 --> 00:34:45,550
+at websites like these, which generally
+have free or student-friendly accounts
+
+793
+00:34:45,550 --> 00:34:48,639
+via which you can put something
+statically on the web at a real domain
+
+794
+00:34:48,639 --> 00:34:50,199
+name that you might choose.
+
+795
+00:34:50,199 --> 00:34:53,320
+Or you can host a full
+fledged web app, and using
+
+796
+00:34:53,320 --> 00:34:58,210
+student tiers on Amazon and Microsoft
+and Google's Cloud Services or others,
+
+797
+00:34:58,210 --> 00:35:01,150
+you can sign up for, being a
+student certainly, a whole lot
+
+798
+00:35:01,150 --> 00:35:06,670
+of free software, free hosting so as to
+if nothing else experiment and perhaps
+
+799
+00:35:06,670 --> 00:35:09,530
+maximally get your own app
+or website up and running.
+
+800
+00:35:09,530 --> 00:35:11,690
+So know that those are
+resources available to you.
+
+801
+00:35:11,690 --> 00:35:15,340
+And this is by certainly
+a non-exhaustive list.
+
+802
+00:35:15,340 --> 00:35:18,400
+If you'd like to geek out in the
+coming months, in the coming years,
+
+803
+00:35:18,400 --> 00:35:22,210
+these are just some of the places
+that people who take computer science
+
+804
+00:35:22,210 --> 00:35:25,570
+classes, who write code, might
+tend to hang out and ask and answer
+
+805
+00:35:25,570 --> 00:35:27,230
+questions of each other.
+
+806
+00:35:27,230 --> 00:35:29,290
+So keep an eye for
+instance on these here.
+
+807
+00:35:29,290 --> 00:35:31,840
+And then CS50 has its own
+communities as you'll see.
+
+808
+00:35:31,840 --> 00:35:35,020
+If you go to this URL here via
+the OpenCourseWare version of CS50
+
+809
+00:35:35,020 --> 00:35:38,710
+which is open to the world,
+there a vibrant community,
+
+810
+00:35:38,710 --> 00:35:42,280
+thanks to time zones, that's
+pretty much active 24/7, 365.
+
+811
+00:35:42,280 --> 00:35:45,470
+Talking about not only CS50 goings
+on and problem sets and projects,
+
+812
+00:35:45,470 --> 00:35:48,020
+but really technology
+more generally, as well.
+
+813
+00:35:48,020 --> 00:35:52,090
+So certainly feel welcome to partake,
+either asking or answering questions.
+
+814
+00:35:52,090 --> 00:35:55,540
+Now, speaking of asking and answering
+questions, a couple of weeks
+
+815
+00:35:55,540 --> 00:35:58,900
+ago, you kindly gave us a
+whole bunch of review questions
+
+816
+00:35:58,900 --> 00:36:02,558
+which we culled through and picked
+out our favorite 20 of them.
+
+817
+00:36:02,558 --> 00:36:04,600
+These, of course, were
+multiple choice questions.
+
+818
+00:36:04,600 --> 00:36:08,590
+And in preparation for this
+week, in preparation for life
+
+819
+00:36:08,590 --> 00:36:12,580
+ahead, we thought we would
+choreograph a bit of a quiz show here.
+
+820
+00:36:12,580 --> 00:36:15,670
+And indeed, as you came
+in at the start of class,
+
+821
+00:36:15,670 --> 00:36:20,350
+you might recall being invited to go
+to this URL here, CS50/ly, either here
+
+822
+00:36:20,350 --> 00:36:25,240
+in person or if you're watching
+live from home at this URL here.
+
+823
+00:36:25,240 --> 00:36:28,030
+You can use a phone or a laptop.
+
+824
+00:36:28,030 --> 00:36:32,500
+And if it's easier on the phone, you
+can point your camera at this 2D barcode
+
+825
+00:36:32,500 --> 00:36:36,470
+here, we'll give folks a
+moment to pull that up.
+
+826
+00:36:36,470 --> 00:36:46,560
+And again that, URL was CS50.ly/poll,
+and once it looks like most folks have
+
+827
+00:36:46,560 --> 00:36:54,150
+it up and running, our friend Carter
+here will help us dive into this review
+
+828
+00:36:54,150 --> 00:36:57,300
+session, if you will, with
+a bit of fun along the way.
+
+829
+00:36:57,300 --> 00:36:59,790
+All right, Carter, if
+you'd like to take it away.
+
+830
+00:36:59,790 --> 00:37:01,950
+What do we have as our first question?
+
+831
+00:37:01,950 --> 00:37:04,920
+You should see on your phone or
+laptop, this same question being asked.
+
+832
+00:37:04,920 --> 00:37:07,560
+The first question is, "How do
+you print quote, unquote "hello,
+
+833
+00:37:07,560 --> 00:37:09,540
+world" in Python?"
+
+834
+00:37:09,540 --> 00:37:14,600
+So among the possible
+answers are these here.
+
+835
+00:37:14,600 --> 00:37:16,705
+Buzz in on your phone or your laptop.
+
+836
+00:37:16,705 --> 00:37:19,840
+
+
+837
+00:37:19,840 --> 00:37:23,040
+We've got a few hundred
+responses already.
+
+838
+00:37:23,040 --> 00:37:24,930
+Seven seconds to make your decision.
+
+839
+00:37:24,930 --> 00:37:27,790
+
+
+840
+00:37:27,790 --> 00:37:30,790
+This is question 1 of 20, going
+into it with some confidence.
+
+841
+00:37:30,790 --> 00:37:36,490
+I think we're down to 0 on the clock
+and Carter it looks like 98% of you
+
+842
+00:37:36,490 --> 00:37:37,960
+indeed said, "hello, world."
+
+843
+00:37:37,960 --> 00:37:41,660
+And Carter, per the check mark,
+that's indeed the correct answer here.
+
+844
+00:37:41,660 --> 00:37:45,670
+Now, to make things interesting, know
+that you'll see some number of points.
+
+845
+00:37:45,670 --> 00:37:49,210
+And we've deliberately anonymized
+it so only what number you are.
+
+846
+00:37:49,210 --> 00:37:53,320
+So a whole lot of guests have a
+perfect score of 1,000 at the moment.
+
+847
+00:37:53,320 --> 00:37:55,610
+Hopefully we'll see over
+the next several questions,
+
+848
+00:37:55,610 --> 00:37:57,460
+things start to bridge out.
+
+849
+00:37:57,460 --> 00:38:00,460
+But know that the speed
+with which you buzz in
+
+850
+00:38:00,460 --> 00:38:03,220
+will also factor into how
+many points you now get.
+
+851
+00:38:03,220 --> 00:38:05,830
+So the faster you move,
+the more points you get.
+
+852
+00:38:05,830 --> 00:38:09,885
+Question 2, if we could,
+"What does DNS stand for?"
+
+853
+00:38:09,885 --> 00:38:11,260
+from just a couple of weeks back.
+
+854
+00:38:11,260 --> 00:38:12,550
+"Domain Number System.
+
+855
+00:38:12,550 --> 00:38:14,020
+Domain Name System.
+
+856
+00:38:14,020 --> 00:38:19,860
+Data Numbering Structure" and
+"There's no such thing as DNS."
+
+857
+00:38:19,860 --> 00:38:26,640
+Few hundred responses
+are in, 8 seconds remain.
+
+858
+00:38:26,640 --> 00:38:29,580
+Fewer points now, but
+still a chance to buzz in.
+
+859
+00:38:29,580 --> 00:38:34,560
+And now as we hit zero, the responses
+are these, "Domain Name System" which
+
+860
+00:38:34,560 --> 00:38:39,360
+is indeed correct, and 84% of you got
+that one correctly, and indeed exists,
+
+861
+00:38:39,360 --> 00:38:41,590
+we talked about it a
+couple of weeks ago.
+
+862
+00:38:41,590 --> 00:38:44,112
+So we're still seeing a
+whole lot of ties at 2,000.
+
+863
+00:38:44,112 --> 00:38:46,320
+We'll see if someone starts
+to pull away before long.
+
+864
+00:38:46,320 --> 00:38:51,220
+Question three, "What is the upper
+bound of Merge Sort's run time?"
+
+865
+00:38:51,220 --> 00:38:53,460
+So that escalated quickly.
+
+866
+00:38:53,460 --> 00:38:55,500
+"Big O of n log n.
+
+867
+00:38:55,500 --> 00:38:58,560
+Big O of log n.
+
+868
+00:38:58,560 --> 00:39:00,240
+Omega of log n."
+
+869
+00:39:00,240 --> 00:39:03,190
+or "Big O of 1."
+
+870
+00:39:03,190 --> 00:39:07,420
+"What is the upper bound
+of Merge Sort's runtime?"
+
+871
+00:39:07,420 --> 00:39:11,020
+That was the last of the algorithms
+we saw for sorting, and in one second,
+
+872
+00:39:11,020 --> 00:39:14,170
+we'll see that the correct
+answer is just edging out
+
+873
+00:39:14,170 --> 00:39:18,010
+everyone else, indeed, 46% it is, n--
+
+874
+00:39:18,010 --> 00:39:18,880
+I know.
+
+875
+00:39:18,880 --> 00:39:20,590
+It's n log n.
+
+876
+00:39:20,590 --> 00:39:24,280
+Now, if I may, as the
+teacher, it can't be log n,
+
+877
+00:39:24,280 --> 00:39:26,290
+because log n is strictly less than n.
+
+878
+00:39:26,290 --> 00:39:29,710
+And you can't possibly sort n
+elements unless you minimally look at
+
+879
+00:39:29,710 --> 00:39:30,950
+or touch each of them.
+
+880
+00:39:30,950 --> 00:39:33,550
+So it's got to be at least
+greater than n intuitively.
+
+881
+00:39:33,550 --> 00:39:35,050
+We still have a whole bunch of ties.
+
+882
+00:39:35,050 --> 00:39:37,660
+Let's move on to number 4.
+
+883
+00:39:37,660 --> 00:39:40,930
+"What is stored in argc?"
+
+884
+00:39:40,930 --> 00:39:43,240
+Back to the language, C. Is
+it "An array of arguments.
+
+885
+00:39:43,240 --> 00:39:44,920
+The maximum size of an array.
+
+886
+00:39:44,920 --> 00:39:47,860
+The count of arguments given
+to a program when first run."
+
+887
+00:39:47,860 --> 00:39:51,630
+or "how much memory is
+allocated to a function?"
+
+888
+00:39:51,630 --> 00:39:54,850
+Again, you wrote all of these questions.
+
+889
+00:39:54,850 --> 00:39:59,290
+And we have 5 seconds, for the reveal.
+
+890
+00:39:59,290 --> 00:40:05,500
+Argc is indeed "The count of arguments
+given to a program when first run."
+
+891
+00:40:05,500 --> 00:40:10,450
+Think back to C when we did command
+line arguments, there was argc and argv.
+
+892
+00:40:10,450 --> 00:40:13,510
+Argv was the array, but
+argc was indeed the count.
+
+893
+00:40:13,510 --> 00:40:14,770
+The a and argc.
+
+894
+00:40:14,770 --> 00:40:18,550
+All right, we still have a
+whole bunch of ties at the top
+
+895
+00:40:18,550 --> 00:40:21,430
+here, but let's move
+on then to number 5.
+
+896
+00:40:21,430 --> 00:40:24,550
+"What is the duck
+debugger's favorite hobby?"
+
+897
+00:40:24,550 --> 00:40:27,940
+According to one of your classmates,
+"Dressing up like Dracula.
+
+898
+00:40:27,940 --> 00:40:29,320
+Swimming across the stage.
+
+899
+00:40:29,320 --> 00:40:32,560
+Filling up the entire
+bathroom of a guy's house.
+
+900
+00:40:32,560 --> 00:40:36,430
+Sitting quietly on stage."
+
+901
+00:40:36,430 --> 00:40:38,680
+The third of course, is a
+reference to a YouTube video
+
+902
+00:40:38,680 --> 00:40:41,150
+that was on the course's
+website that week.
+
+903
+00:40:41,150 --> 00:40:46,720
+But according to your classmates,
+number 2, seconds remaining,
+
+904
+00:40:46,720 --> 00:40:50,650
+sitting quietly on stage
+is its favorite pastime.
+
+905
+00:40:50,650 --> 00:40:54,610
+So a little harder
+perhaps than the others.
+
+906
+00:40:54,610 --> 00:40:57,400
+5,000, now we're starting
+to see some spread.
+
+907
+00:40:57,400 --> 00:41:01,480
+So we only have six guests in
+contention for first place.
+
+908
+00:41:01,480 --> 00:41:08,120
+And the next question now is 6, "What is
+the function used to open a file in C?"
+
+909
+00:41:08,120 --> 00:41:09,220
+"fopen.
+
+910
+00:41:09,220 --> 00:41:10,545
+open. fileopen.
+
+911
+00:41:10,545 --> 00:41:11,045
+file."
+
+912
+00:41:11,045 --> 00:41:13,870
+
+
+913
+00:41:13,870 --> 00:41:16,840
+"What is the function
+used to open a file in C?"
+
+914
+00:41:16,840 --> 00:41:20,390
+
+
+915
+00:41:20,390 --> 00:41:23,440
+7 seconds.
+
+916
+00:41:23,440 --> 00:41:28,660
+There's some differences between
+C and Python here, and the reveal,
+
+917
+00:41:28,660 --> 00:41:32,710
+it is indeed fopen at 77% correct too.
+
+918
+00:41:32,710 --> 00:41:34,390
+All right, let's see the rankings now.
+
+919
+00:41:34,390 --> 00:41:41,680
+If you are Guest1590, 715, 6171,
+3753 or 3273, you're now in the lead
+
+920
+00:41:41,680 --> 00:41:44,410
+as we move on to question 7.
+
+921
+00:41:44,410 --> 00:41:47,020
+"How does strlen compute the avg--
+
+922
+00:41:47,020 --> 00:41:51,150
+sorry, how does strlen compute
+the length of a string in C?"
+
+923
+00:41:51,150 --> 00:41:53,070
+"It looks at how much
+memory the string uses.
+
+924
+00:41:53,070 --> 00:41:55,862
+It counts the number of characters
+until it reaches backslash zero.
+
+925
+00:41:55,862 --> 00:41:57,870
+It counts the number
+of bits in the string.
+
+926
+00:41:57,870 --> 00:42:02,000
+It creates pointers for each
+character and counts them."
+
+927
+00:42:02,000 --> 00:42:09,900
+10 seconds, strlen in C. Recall that
+we implemented this ourselves in class,
+
+928
+00:42:09,900 --> 00:42:12,000
+but then we use the library thereafter.
+
+929
+00:42:12,000 --> 00:42:16,200
+And indeed, with 85%, it simply
+counts the number of characters
+
+930
+00:42:16,200 --> 00:42:19,260
+until it reaches that sentinel,
+backslash zero, a.k.a.
+
+931
+00:42:19,260 --> 00:42:19,960
+Null.
+
+932
+00:42:19,960 --> 00:42:27,580
+And in this case, we have 544
+of you tied now for first.
+
+933
+00:42:27,580 --> 00:42:32,870
+All right, question 8, "Where
+does malloc allocate memory from?"
+
+934
+00:42:32,870 --> 00:42:33,590
+The "Stack."
+
+935
+00:42:33,590 --> 00:42:38,650
+The "Heap" The "Pointers" or
+the "Temp" "Where does malloc
+
+936
+00:42:38,650 --> 00:42:40,150
+allocate memory from?"
+
+937
+00:42:40,150 --> 00:42:42,690
+
+
+938
+00:42:42,690 --> 00:42:44,825
+Responses are coming in, 8 seconds.
+
+939
+00:42:44,825 --> 00:42:48,280
+
+
+940
+00:42:48,280 --> 00:42:50,470
+A good review question at that.
+
+941
+00:42:50,470 --> 00:42:54,670
+In 2 seconds we'll see that malloc
+allocates memory from, close one,
+
+942
+00:42:54,670 --> 00:42:56,800
+the Heap is correct.
+
+943
+00:42:56,800 --> 00:42:57,760
+The Heap is correct.
+
+944
+00:42:57,760 --> 00:43:00,102
+The stack recall is
+where functions store
+
+945
+00:43:00,102 --> 00:43:01,810
+their local variables
+and their arguments
+
+946
+00:43:01,810 --> 00:43:03,440
+and that just happens automatically.
+
+947
+00:43:03,440 --> 00:43:07,690
+The Heap represented in our pictures
+up top is where malloc draws from.
+
+948
+00:43:07,690 --> 00:43:15,430
+Now we have guest 15 has
+made its way to the top here,
+
+949
+00:43:15,430 --> 00:43:18,130
+but others can catch up if
+they don't buzz in fast enough.
+
+950
+00:43:18,130 --> 00:43:21,520
+So number 9, "How many
+people flew from Fiftyville
+
+951
+00:43:21,520 --> 00:43:25,660
+to New York on the day of the crime?"
+
+952
+00:43:25,660 --> 00:43:26,590
+"16.
+
+953
+00:43:26,590 --> 00:43:27,550
+29.
+
+954
+00:43:27,550 --> 00:43:28,930
+8."
+
+955
+00:43:28,930 --> 00:43:29,740
+or "3."
+
+956
+00:43:29,740 --> 00:43:33,190
+
+
+957
+00:43:33,190 --> 00:43:35,920
+Anyone with a laptop perhaps
+has an advantage here.
+
+958
+00:43:35,920 --> 00:43:40,590
+
+
+959
+00:43:40,590 --> 00:43:46,200
+5 seconds, and the answers are--
+
+960
+00:43:46,200 --> 00:43:48,240
+but the answer is 16.
+
+961
+00:43:48,240 --> 00:43:50,830
+
+
+962
+00:43:50,830 --> 00:43:54,090
+Let's see if Guest15 got this.
+
+963
+00:43:54,090 --> 00:43:56,220
+They did not.
+
+964
+00:43:56,220 --> 00:43:58,200
+Goodbye to Guest15 at the top.
+
+965
+00:43:58,200 --> 00:43:59,490
+All right, question 10.
+
+966
+00:43:59,490 --> 00:44:00,900
+We're about halfway there.
+
+967
+00:44:00,900 --> 00:44:06,720
+"What are meta tags used for in
+HTML? " "To describe a web page.
+
+968
+00:44:06,720 --> 00:44:08,700
+To define parameters for an element.
+
+969
+00:44:08,700 --> 00:44:09,960
+To group elements together.
+
+970
+00:44:09,960 --> 00:44:14,040
+To translate content into
+machine-readable format."
+
+971
+00:44:14,040 --> 00:44:16,830
+"What are meta tags used for in HTML?"
+
+972
+00:44:16,830 --> 00:44:24,200
+We saw a few of them
+for different use cases.
+
+973
+00:44:24,200 --> 00:44:28,490
+And with 1 second, we see that
+indeed the number one answer
+
+974
+00:44:28,490 --> 00:44:31,590
+was to describe the webpage,
+be it for a mobile device,
+
+975
+00:44:31,590 --> 00:44:34,460
+be it for screen scrapers
+like Facebook and Twitter
+
+976
+00:44:34,460 --> 00:44:37,830
+and other such apps that grab
+images and descriptions thereof.
+
+977
+00:44:37,830 --> 00:44:38,330
+All right.
+
+978
+00:44:38,330 --> 00:44:44,870
+We're in the second half
+now, Guest4669 edged ahead.
+
+979
+00:44:44,870 --> 00:44:46,710
+Guest15 is now in sixth place.
+
+980
+00:44:46,710 --> 00:44:47,210
+All right.
+
+981
+00:44:47,210 --> 00:44:51,730
+Number 11 is "How do you find
+the address of a variable in C?"
+
+982
+00:44:51,730 --> 00:44:53,140
+Think back a few weeks.
+
+983
+00:44:53,140 --> 00:44:56,200
+Star, dollar sign, ampersand Ask.
+
+984
+00:44:56,200 --> 00:45:01,470
+
+
+985
+00:45:01,470 --> 00:45:03,630
+From one of your own
+classmates, "How do you
+
+986
+00:45:03,630 --> 00:45:05,640
+find the address of a variable in C?"
+
+987
+00:45:05,640 --> 00:45:11,350
+
+
+988
+00:45:11,350 --> 00:45:15,010
+And the number one answer
+is ampersand which is indeed
+
+989
+00:45:15,010 --> 00:45:17,470
+the address of operator at 62%.
+
+990
+00:45:17,470 --> 00:45:18,250
+Nicely done.
+
+991
+00:45:18,250 --> 00:45:20,620
+Let's see who's the top of the list now.
+
+992
+00:45:20,620 --> 00:45:25,060
+Guest4669 has retained their
+lead, so we move on to 12.
+
+993
+00:45:25,060 --> 00:45:28,990
+"What does the arrow
+operator mean in C?"
+
+994
+00:45:28,990 --> 00:45:31,210
+A hyphen and a greater than sign.
+
+995
+00:45:31,210 --> 00:45:31,990
+"Nothing.
+
+996
+00:45:31,990 --> 00:45:33,100
+Starts a comment.
+
+997
+00:45:33,100 --> 00:45:35,080
+Replaces a star in dot operator.
+
+998
+00:45:35,080 --> 00:45:38,220
+Declares a pointer."
+
+999
+00:45:38,220 --> 00:45:43,360
+"What does this arrow
+operator mean in C?"
+
+1000
+00:45:43,360 --> 00:45:46,000
+Again from a few weeks back.
+
+1001
+00:45:46,000 --> 00:45:49,750
+3 seconds, harder assortment perhaps.
+
+1002
+00:45:49,750 --> 00:45:54,430
+And it's oh, "Replaces
+a star in dot operator."
+
+1003
+00:45:54,430 --> 00:45:57,010
+The number two answer
+was indeed correct.
+
+1004
+00:45:57,010 --> 00:45:59,770
+This was just a cleaner
+way, syntactic sugar
+
+1005
+00:45:59,770 --> 00:46:02,860
+for collapsing what would be a star
+and then some parentheses and then a
+
+1006
+00:46:02,860 --> 00:46:05,950
+dot into quite simply something
+that looks like an arrow itself.
+
+1007
+00:46:05,950 --> 00:46:08,470
+All right, Carter,
+who's in the lead now?
+
+1008
+00:46:08,470 --> 00:46:12,910
+Still that same guest, and
+let's see what 13 has for us.
+
+1009
+00:46:12,910 --> 00:46:16,390
+"Which of these is not
+a data type in SQLite?"
+
+1010
+00:46:16,390 --> 00:46:17,440
+"BLOB.
+
+1011
+00:46:17,440 --> 00:46:19,595
+STRING, INTEGER.
+
+1012
+00:46:19,595 --> 00:46:20,095
+TEXT."
+
+1013
+00:46:20,095 --> 00:46:24,430
+
+
+1014
+00:46:24,430 --> 00:46:28,810
+We used a few of these more commonly
+than others but not all of these
+
+1015
+00:46:28,810 --> 00:46:31,660
+are for real.
+
+1016
+00:46:31,660 --> 00:46:35,410
+5 seconds to make your decision.
+
+1017
+00:46:35,410 --> 00:46:41,680
+And the results are BLOG is a
+thing, STRING is not in SQLite.
+
+1018
+00:46:41,680 --> 00:46:44,740
+It's of course called
+TEXT, as we've seen it.
+
+1019
+00:46:44,740 --> 00:46:48,940
+BLOB, as goofy as it sounds,
+is just binary large object.
+
+1020
+00:46:48,940 --> 00:46:52,660
+But indeed, it's how you might store
+a binary file in your database.
+
+1021
+00:46:52,660 --> 00:46:53,890
+All right.
+
+1022
+00:46:53,890 --> 00:46:58,300
+The rankings now, oh,
+Guest8444 has eked ahead.
+
+1023
+00:46:58,300 --> 00:47:00,530
+So we move on to 14.
+
+1024
+00:47:00,530 --> 00:47:03,670
+"Which of the following is a
+valid way to print exclamation,
+
+1025
+00:47:03,670 --> 00:47:09,090
+point exclamation, point exclamation
+point, exclamation point, in Python?"
+
+1026
+00:47:09,090 --> 00:47:12,570
+And I'll let you read these yourselves.
+
+1027
+00:47:12,570 --> 00:47:15,380
+Which is a valid way?
+
+1028
+00:47:15,380 --> 00:47:17,045
+OK, everyone got quiet and is thinking.
+
+1029
+00:47:17,045 --> 00:47:20,370
+
+
+1030
+00:47:20,370 --> 00:47:21,360
+All right.
+
+1031
+00:47:21,360 --> 00:47:25,365
+6 seconds, a few hundred
+responses in so far.
+
+1032
+00:47:25,365 --> 00:47:27,980
+
+
+1033
+00:47:27,980 --> 00:47:30,320
+All right, and yes, nicely done.
+
+1034
+00:47:30,320 --> 00:47:31,920
+78% is correct.
+
+1035
+00:47:31,920 --> 00:47:34,190
+You can use the star operator
+to essentially multiply
+
+1036
+00:47:34,190 --> 00:47:35,420
+the character at left.
+
+1037
+00:47:35,420 --> 00:47:37,280
+All right, who's in the lead, Carter?
+
+1038
+00:47:37,280 --> 00:47:41,090
+We now have still Guest8444.
+
+1039
+00:47:41,090 --> 00:47:43,160
+And so we move on now to 15.
+
+1040
+00:47:43,160 --> 00:47:46,370
+"What does the free function do?"
+
+1041
+00:47:46,370 --> 00:47:48,320
+Deallocated memory from a primitive.
+
+1042
+00:47:48,320 --> 00:47:50,390
+Deallocated memory at the given pointer.
+
+1043
+00:47:50,390 --> 00:47:53,900
+Terminates a loop." or "Returns
+a value from the function."
+
+1044
+00:47:53,900 --> 00:47:55,700
+"What does the free function do?"
+
+1045
+00:47:55,700 --> 00:48:00,820
+
+
+1046
+00:48:00,820 --> 00:48:02,800
+All right, 5 seconds.
+
+1047
+00:48:02,800 --> 00:48:04,480
+"What does the free function do?"
+
+1048
+00:48:04,480 --> 00:48:06,640
+Call to the opposite
+essentially of malloc.
+
+1049
+00:48:06,640 --> 00:48:10,120
+And it "Deallocates the
+memory at the given pointer."
+
+1050
+00:48:10,120 --> 00:48:10,880
+as well.
+
+1051
+00:48:10,880 --> 00:48:12,310
+And in C, that's on you.
+
+1052
+00:48:12,310 --> 00:48:16,720
+In Python, you don't need to worry
+about allocating or freeing alike.
+
+1053
+00:48:16,720 --> 00:48:17,440
+All right.
+
+1054
+00:48:17,440 --> 00:48:22,780
+We now have at the top, still Guest8444
+and seeing more and more spread.
+
+1055
+00:48:22,780 --> 00:48:27,550
+16, "Which is not a step of compiling?
+
+1056
+00:48:27,550 --> 00:48:30,400
+Think back now to week 2.
+
+1057
+00:48:30,400 --> 00:48:31,150
+"Compiling.
+
+1058
+00:48:31,150 --> 00:48:32,140
+Preprocessing.
+
+1059
+00:48:32,140 --> 00:48:32,740
+Linking."
+
+1060
+00:48:32,740 --> 00:48:33,790
+or "Threading."
+
+1061
+00:48:33,790 --> 00:48:38,230
+"Which is not a step of compiling?"
+
+1062
+00:48:38,230 --> 00:48:40,570
+We use it as a catchall,
+but it technically
+
+1063
+00:48:40,570 --> 00:48:43,330
+means a few different
+things collectively.
+
+1064
+00:48:43,330 --> 00:48:47,720
+
+
+1065
+00:48:47,720 --> 00:48:48,290
+All right.
+
+1066
+00:48:48,290 --> 00:48:51,080
+And threading is indeed not on the list.
+
+1067
+00:48:51,080 --> 00:48:54,110
+That is a technical
+thing, generally meaning
+
+1068
+00:48:54,110 --> 00:48:56,330
+a program can do
+multiple things at once,
+
+1069
+00:48:56,330 --> 00:48:59,240
+but that is not related
+here to compiling.
+
+1070
+00:48:59,240 --> 00:49:02,450
+All right Guest8444 still at the top.
+
+1071
+00:49:02,450 --> 00:49:04,040
+We have just a few questions left.
+
+1072
+00:49:04,040 --> 00:49:09,110
+And so, 17 "What was the surprise at
+the beginning of the Halloween lecture?"
+
+1073
+00:49:09,110 --> 00:49:11,720
+According to your classmates,
+someone scared me,
+
+1074
+00:49:11,720 --> 00:49:14,120
+"Someone hid candy under every chair."
+
+1075
+00:49:14,120 --> 00:49:15,650
+Someone dressed up as me.
+
+1076
+00:49:15,650 --> 00:49:17,705
+"The entire staff dressed up as Carter."
+
+1077
+00:49:17,705 --> 00:49:21,070
+
+
+1078
+00:49:21,070 --> 00:49:27,910
+Oh, interesting litmus test of who
+came to or watched lecture perhaps.
+
+1079
+00:49:27,910 --> 00:49:31,510
+Let's see which guests got this correct.
+
+1080
+00:49:31,510 --> 00:49:35,300
+Someones really dressed
+up as indeed me at 64%.
+
+1081
+00:49:35,300 --> 00:49:38,390
+So I think we have attendance here
+essentially from that lecture.
+
+1082
+00:49:38,390 --> 00:49:40,810
+So let's move on now to
+the final few questions
+
+1083
+00:49:40,810 --> 00:49:44,710
+after seeing that Guest8444
+is still doing well.
+
+1084
+00:49:44,710 --> 00:49:46,330
+Can anyone dethrone them?
+
+1085
+00:49:46,330 --> 00:49:49,870
+"Why is it incorrect to use
+the equals equals operator in C
+
+1086
+00:49:49,870 --> 00:49:52,980
+to compare strings?"
+
+1087
+00:49:52,980 --> 00:49:54,600
+"It is computationally inefficient.
+
+1088
+00:49:54,600 --> 00:49:56,610
+You're comparing the
+locations of the strings.
+
+1089
+00:49:56,610 --> 00:49:57,900
+Strings don't exist.
+
+1090
+00:49:57,900 --> 00:50:01,110
+Using equal equals will
+lead to buffer overflow."
+
+1091
+00:50:01,110 --> 00:50:04,760
+
+
+1092
+00:50:04,760 --> 00:50:08,660
+"Why is it incorrect to use equal
+equals in C to compare strings?"
+
+1093
+00:50:08,660 --> 00:50:09,890
+3 seconds.
+
+1094
+00:50:09,890 --> 00:50:12,440
+We saw this live, and it
+motivated like an entire week
+
+1095
+00:50:12,440 --> 00:50:16,850
+because you're comparing the locations,
+that is the addresses in memory
+
+1096
+00:50:16,850 --> 00:50:18,030
+of those same strings.
+
+1097
+00:50:18,030 --> 00:50:18,530
+All right.
+
+1098
+00:50:18,530 --> 00:50:21,320
+Let's see if this leaves
+the rankings the same.
+
+1099
+00:50:21,320 --> 00:50:24,800
+Guest8444 is still at the
+top and pulling ahead.
+
+1100
+00:50:24,800 --> 00:50:26,930
+Two final questions, 19.
+
+1101
+00:50:26,930 --> 00:50:30,620
+"What is the difference
+between NUL" one L, "and NULL."
+
+1102
+00:50:30,620 --> 00:50:33,740
+Two Ls.
+
+1103
+00:50:33,740 --> 00:50:35,330
+NUL and NULL mean the same thing.
+
+1104
+00:50:35,330 --> 00:50:39,470
+NUL refers to backslash 0, whereas
+NULL" 2 L's "is the 0 address.
+
+1105
+00:50:39,470 --> 00:50:43,790
+NUL is the zero address whereas NULL"
+two L's "refers to backslash zero.
+
+1106
+00:50:43,790 --> 00:50:47,690
+NUL is NULL but lazier."
+
+1107
+00:50:47,690 --> 00:50:49,630
+5 seconds.
+
+1108
+00:50:49,630 --> 00:50:50,320
+Subtle.
+
+1109
+00:50:50,320 --> 00:50:53,860
+Not the best design perhaps
+to have in technical terms,
+
+1110
+00:50:53,860 --> 00:50:58,780
+but indeed 62% of you got that and N-U-L
+is the first thing we talked about when
+
+1111
+00:50:58,780 --> 00:51:02,080
+we talked about backslash
+zero, and N-U-L-L is a pointer.
+
+1112
+00:51:02,080 --> 00:51:03,790
+It's the zero pointer.
+
+1113
+00:51:03,790 --> 00:51:06,310
+Same number, but different context.
+
+1114
+00:51:06,310 --> 00:51:07,720
+All right, Carter.
+
+1115
+00:51:07,720 --> 00:51:13,300
+Guest8444 is the person to beat
+with our final 20th questions.
+
+1116
+00:51:13,300 --> 00:51:17,100
+"What do the binary bulbs
+on stage spell today?"
+
+1117
+00:51:17,100 --> 00:51:20,740
+
+
+1118
+00:51:20,740 --> 00:51:25,000
+And these are your four
+choices, different from usual.
+
+1119
+00:51:25,000 --> 00:51:26,770
+We usually use 8-bit Ascii.
+
+1120
+00:51:26,770 --> 00:51:31,720
+Today we are using UTF8
+which is a form of Unicode,
+
+1121
+00:51:31,720 --> 00:51:35,230
+which is the larger subset
+that uses 1, or 2, or 3,
+
+1122
+00:51:35,230 --> 00:51:39,920
+or even 4 bytes to spell
+a single character.
+
+1123
+00:51:39,920 --> 00:51:44,350
+And the answer, wow,
+close, is indeed a cupcake.
+
+1124
+00:51:44,350 --> 00:51:45,940
+Indeed, a cupcake.
+
+1125
+00:51:45,940 --> 00:51:47,020
+Well done.
+
+1126
+00:51:47,020 --> 00:51:48,880
+And let's see the final results.
+
+1127
+00:51:48,880 --> 00:51:50,860
+8444 is the winner.
+
+1128
+00:51:50,860 --> 00:51:53,230
+Are they here in person, perhaps?
+
+1129
+00:51:53,230 --> 00:51:54,790
+8444.
+
+1130
+00:51:54,790 --> 00:51:55,780
+You're 8444.
+
+1131
+00:51:55,780 --> 00:51:56,620
+Come on down.
+
+1132
+00:51:56,620 --> 00:51:59,105
+[APPLAUSE]
+
+1133
+00:51:59,105 --> 00:52:03,715
+
+
+1134
+00:52:03,715 --> 00:52:04,390
+Thank you.
+
+1135
+00:52:04,390 --> 00:52:05,140
+There you go.
+
+1136
+00:52:05,140 --> 00:52:05,840
+Congratulations.
+
+1137
+00:52:05,840 --> 00:52:06,715
+GUEST8444: Thank you.
+
+1138
+00:52:06,715 --> 00:52:08,050
+DAVID J. MALAN: Thank you.
+
+1139
+00:52:08,050 --> 00:52:09,040
+All your.
+
+1140
+00:52:09,040 --> 00:52:11,860
+All right.
+
+1141
+00:52:11,860 --> 00:52:17,410
+Today if we may, give
+me just one moment.
+
+1142
+00:52:17,410 --> 00:52:24,860
+
+
+1143
+00:52:24,860 --> 00:52:25,640
+All right.
+
+1144
+00:52:25,640 --> 00:52:35,600
+
+
+1145
+00:52:35,600 --> 00:52:36,200
+All right.
+
+1146
+00:52:36,200 --> 00:52:40,700
+So today we are so pleased
+to be joined by Jennifer 8
+
+1147
+00:52:40,700 --> 00:52:43,640
+Lee who's an alumna of the
+college, a dear friend,
+
+1148
+00:52:43,640 --> 00:52:47,450
+and is actually really the reason why
+there's evidence of Muppets in CS50.
+
+1149
+00:52:47,450 --> 00:52:50,300
+In fact, some years
+ago, I was visiting her
+
+1150
+00:52:50,300 --> 00:52:52,910
+and she had on her shelf
+like this custom Muppet.
+
+1151
+00:52:52,910 --> 00:52:56,480
+It wasn't one that appears on TV, but
+she had somehow gone on a website,
+
+1152
+00:52:56,480 --> 00:52:59,217
+a former toy store called
+FAO Schwartz at the time,
+
+1153
+00:52:59,217 --> 00:53:01,550
+and you're allowed to configure
+your own Muppet whatnot.
+
+1154
+00:53:01,550 --> 00:53:03,633
+Choose the eyes, the nose,
+the face and the torso.
+
+1155
+00:53:03,633 --> 00:53:05,551
+And I just thought this
+was the coolest thing.
+
+1156
+00:53:05,551 --> 00:53:07,370
+And so in the taxi on
+the way home, I was
+
+1157
+00:53:07,370 --> 00:53:10,850
+like going on the website trying
+to purchase our very first Muppet.
+
+1158
+00:53:10,850 --> 00:53:12,950
+I then sort of woke up
+the next morning thinking,
+
+1159
+00:53:12,950 --> 00:53:15,350
+why did I just buy a puppet
+in the back of a taxi?
+
+1160
+00:53:15,350 --> 00:53:17,450
+And so it sat on the shelf
+for really two years.
+
+1161
+00:53:17,450 --> 00:53:19,747
+And then a colleague of
+mine within CS50's team
+
+1162
+00:53:19,747 --> 00:53:22,580
+decided, after I brought it into
+the office to sit on a shelf there,
+
+1163
+00:53:22,580 --> 00:53:24,170
+to actually bring it to life.
+
+1164
+00:53:24,170 --> 00:53:28,100
+And indeed if you Google around and
+CS50 Muppetry and puppetry online,
+
+1165
+00:53:28,100 --> 00:53:30,187
+you'll see in fact these
+as characters, not only
+
+1166
+00:53:30,187 --> 00:53:32,270
+over the past couple of
+years in COVID times, when
+
+1167
+00:53:32,270 --> 00:53:36,200
+really there was next to no one
+actually here, and so they were instead.
+
+1168
+00:53:36,200 --> 00:53:39,710
+But indeed she's brought not
+only this educational element,
+
+1169
+00:53:39,710 --> 00:53:42,530
+this pedagogical element,
+this playful element to CS50.
+
+1170
+00:53:42,530 --> 00:53:46,400
+And we have her here today to speak
+to exactly the sorts of encodings
+
+1171
+00:53:46,400 --> 00:53:47,600
+that are here on stage.
+
+1172
+00:53:47,600 --> 00:53:51,050
+Jenny is the former Vice Chair
+of the Unicode subcommittee
+
+1173
+00:53:51,050 --> 00:53:53,930
+on emoji, which is to say
+that she and her colleagues
+
+1174
+00:53:53,930 --> 00:53:56,480
+have been influential in
+taking emoji from what
+
+1175
+00:53:56,480 --> 00:53:59,510
+was a very limited character
+set early on and by far
+
+1176
+00:53:59,510 --> 00:54:04,760
+unrepresentative of much human emotion
+in speech into really an initiative now
+
+1177
+00:54:04,760 --> 00:54:07,640
+to capture digitally all
+of the world's languages,
+
+1178
+00:54:07,640 --> 00:54:11,300
+past, present and future, as
+well as the range of emotions
+
+1179
+00:54:11,300 --> 00:54:13,730
+that we might see here in
+the form of that pillow
+
+1180
+00:54:13,730 --> 00:54:15,350
+or even in the cake that await.
+
+1181
+00:54:15,350 --> 00:54:18,146
+So allow me to introduce,
+Jennifer 8 Lee.
+
+1182
+00:54:18,146 --> 00:54:18,646
+JENNIFER 8.
+
+1183
+00:54:18,646 --> 00:54:19,310
+LEE: Thank you.
+
+1184
+00:54:19,310 --> 00:54:22,790
+
+
+1185
+00:54:22,790 --> 00:54:24,830
+I much drink.
+
+1186
+00:54:24,830 --> 00:54:25,620
+Clicker.
+
+1187
+00:54:25,620 --> 00:54:26,120
+Hi.
+
+1188
+00:54:26,120 --> 00:54:26,420
+All right.
+
+1189
+00:54:26,420 --> 00:54:26,920
+Hold on.
+
+1190
+00:54:26,920 --> 00:54:28,660
+I have to hide my drinks.
+
+1191
+00:54:28,660 --> 00:54:29,660
+I might need more water.
+
+1192
+00:54:29,660 --> 00:54:31,160
+All right.
+
+1193
+00:54:31,160 --> 00:54:33,170
+I'm really excited to speak.
+
+1194
+00:54:33,170 --> 00:54:34,310
+So speak your last time.
+
+1195
+00:54:34,310 --> 00:54:35,595
+Last year I was here.
+
+1196
+00:54:35,595 --> 00:54:38,720
+One, I was wearing a mask, which is
+like a real bummer if you're lecturing.
+
+1197
+00:54:38,720 --> 00:54:41,540
+And then the entire front
+part was all Muppets.
+
+1198
+00:54:41,540 --> 00:54:44,780
+So I'm really happy to
+see humans actually.
+
+1199
+00:54:44,780 --> 00:54:48,380
+And it's always an honor
+to speak at Sanders.
+
+1200
+00:54:48,380 --> 00:54:50,910
+And then Dave and I were actually
+classmates way back when.
+
+1201
+00:54:50,910 --> 00:54:54,300
+So I do remember him when he
+was an undergrad much like you.
+
+1202
+00:54:54,300 --> 00:54:57,560
+So I am going to give a
+talk on the world of emoji
+
+1203
+00:54:57,560 --> 00:54:59,660
+and how I kind of became
+an emoji activist.
+
+1204
+00:54:59,660 --> 00:55:04,820
+So it kind of all starts
+with my friend, Yiying Lu,
+
+1205
+00:55:04,820 --> 00:55:07,760
+who is a designer who's well
+known for doing the Twitter fail
+
+1206
+00:55:07,760 --> 00:55:10,350
+whale, which was kind of laid to rest.
+
+1207
+00:55:10,350 --> 00:55:15,540
+Except now, this week it seems
+like it may be necessary again.
+
+1208
+00:55:15,540 --> 00:55:17,660
+So she and I one day were texting.
+
+1209
+00:55:17,660 --> 00:55:18,920
+This is back in 2015.
+
+1210
+00:55:18,920 --> 00:55:22,550
+We're texting about dumplings
+because we are Chinese-ish women
+
+1211
+00:55:22,550 --> 00:55:24,510
+and we like to text about food.
+
+1212
+00:55:24,510 --> 00:55:26,540
+And so I sent her this
+picture of dumplings.
+
+1213
+00:55:26,540 --> 00:55:29,660
+She was like yum, yum, yum,
+yum, yum, yum, yum, yum.
+
+1214
+00:55:29,660 --> 00:55:34,638
+And then she was like, oh, Apple
+doesn't have a dumpling emoji.
+
+1215
+00:55:34,638 --> 00:55:36,680
+And I was like, well,
+that's kind of interesting.
+
+1216
+00:55:36,680 --> 00:55:40,970
+I didn't really think anything about it
+because people point things out to you
+
+1217
+00:55:40,970 --> 00:55:44,520
+all the time, and then you just like
+forget, and you just like move on.
+
+1218
+00:55:44,520 --> 00:55:50,000
+But then half an hour later, on my phone
+appears this dumpling with heart eyes.
+
+1219
+00:55:50,000 --> 00:55:52,490
+And you don't see it because
+this is a still shot,
+
+1220
+00:55:52,490 --> 00:55:54,020
+but it actually had blinking eyes.
+
+1221
+00:55:54,020 --> 00:55:56,187
+So she liked to call it
+like bling, bling, dumpling.
+
+1222
+00:55:56,187 --> 00:56:00,620
+So she as a designer had decided
+to go in and make her own dumpling
+
+1223
+00:56:00,620 --> 00:56:03,733
+emoji because she was like,
+I'm a designer, I can fix it.
+
+1224
+00:56:03,733 --> 00:56:05,150
+But that actually got me thinking.
+
+1225
+00:56:05,150 --> 00:56:07,670
+I was like, where do emoji come from?
+
+1226
+00:56:07,670 --> 00:56:09,800
+And how is there not a dumpling emoji.
+
+1227
+00:56:09,800 --> 00:56:14,000
+Because from my perspective, dumplings
+are this kind of universal food.
+
+1228
+00:56:14,000 --> 00:56:14,510
+Right.
+
+1229
+00:56:14,510 --> 00:56:21,730
+So and there are a lot of Japanese
+foods on the emoji keyboard.
+
+1230
+00:56:21,730 --> 00:56:23,560
+And I was not, this
+was like back in 2015.
+
+1231
+00:56:23,560 --> 00:56:26,060
+I was like not a big
+emoji user like at all.
+
+1232
+00:56:26,060 --> 00:56:28,180
+So I mean, you have things like ramen.
+
+1233
+00:56:28,180 --> 00:56:29,680
+You have Bento boxes.
+
+1234
+00:56:29,680 --> 00:56:30,910
+You have curry.
+
+1235
+00:56:30,910 --> 00:56:32,200
+You have tempura.
+
+1236
+00:56:32,200 --> 00:56:35,710
+You even have kind of
+obscure kind of foods
+
+1237
+00:56:35,710 --> 00:56:40,060
+like this thing, things on a stick,
+turns out to be fish things on a stick.
+
+1238
+00:56:40,060 --> 00:56:44,350
+Then this pink and white swirly
+thing is also a fish thing.
+
+1239
+00:56:44,350 --> 00:56:46,510
+And there's even like
+that triangle rice ball
+
+1240
+00:56:46,510 --> 00:56:49,780
+that looks like it's had a
+bikini wax, all well represented
+
+1241
+00:56:49,780 --> 00:56:52,602
+on the emoji keyboard, but no dumplings.
+
+1242
+00:56:52,602 --> 00:56:55,810
+And it's very strange, because like all
+cultures kind of have their dumpling,
+
+1243
+00:56:55,810 --> 00:56:59,620
+whether or not it's khinkali
+or ravioli or empanadas,
+
+1244
+00:56:59,620 --> 00:57:02,260
+like essentially everyone
+sort of like discovered
+
+1245
+00:57:02,260 --> 00:57:07,270
+the idea of yummy goodness
+inside a carbohydrate shell,
+
+1246
+00:57:07,270 --> 00:57:11,390
+whether or not baked
+or fried or steamed.
+
+1247
+00:57:11,390 --> 00:57:16,270
+So I was like, OK, I literally
+Google was like who controls emoji.
+
+1248
+00:57:16,270 --> 00:57:20,260
+And you discover that they're actually
+regulated by a nonprofit called
+
+1249
+00:57:20,260 --> 00:57:21,850
+the Unicode Consortium.
+
+1250
+00:57:21,850 --> 00:57:25,930
+And it is, and I just
+went on their website
+
+1251
+00:57:25,930 --> 00:57:30,070
+and I discovered that they had 12
+full voting members as of 2015.
+
+1252
+00:57:30,070 --> 00:57:33,430
+So this is 2015, and they were like
+mostly US multinational tech companies.
+
+1253
+00:57:33,430 --> 00:57:34,090
+It was Oracle.
+
+1254
+00:57:34,090 --> 00:57:40,120
+It was IBM, Microsoft, Adobe,
+Google, Apple, Facebook, and Yahoo.
+
+1255
+00:57:40,120 --> 00:57:44,680
+And of the three that were not
+multinational US tech companies,
+
+1256
+00:57:44,680 --> 00:57:48,340
+there were, let's see a
+German company called SAP.
+
+1257
+00:57:48,340 --> 00:57:52,720
+A Chinese telecom company called Huawei,
+and then like the government of Oman.
+
+1258
+00:57:52,720 --> 00:57:57,700
+Those were basically the 12 full voting
+members of the US multinational tech
+
+1259
+00:57:57,700 --> 00:57:58,220
+companies.
+
+1260
+00:57:58,220 --> 00:58:03,460
+So they at that point
+paid $18,000 a year
+
+1261
+00:58:03,460 --> 00:58:06,790
+to have full voting power
+on the Unicode committee.
+
+1262
+00:58:06,790 --> 00:58:09,730
+And I was like, oh,
+that's a lot of money.
+
+1263
+00:58:09,730 --> 00:58:13,055
+And I kind of felt indignant about this.
+
+1264
+00:58:13,055 --> 00:58:15,430
+But then if you kind of keep
+on digging on their website,
+
+1265
+00:58:15,430 --> 00:58:18,160
+you found there was this kind
+of interesting loophole, which
+
+1266
+00:58:18,160 --> 00:58:22,660
+is could join as an individual for $75.
+
+1267
+00:58:22,660 --> 00:58:24,760
+You don't get voting
+power, but it gave you
+
+1268
+00:58:24,760 --> 00:58:27,880
+the right to put yourself
+on the email list
+
+1269
+00:58:27,880 --> 00:58:30,490
+and also to attend the
+quarterly Unicode meeting.
+
+1270
+00:58:30,490 --> 00:58:31,690
+So I was like, I'll do that.
+
+1271
+00:58:31,690 --> 00:58:32,982
+I had no idea what I was doing.
+
+1272
+00:58:32,982 --> 00:58:35,800
+But I'm like, I'm going to go
+fight for this dumpling emoji,
+
+1273
+00:58:35,800 --> 00:58:38,980
+because from my perspective,
+dumplings are universal.
+
+1274
+00:58:38,980 --> 00:58:41,000
+Emoji are kind of universal.
+
+1275
+00:58:41,000 --> 00:58:44,350
+So the fact that there was no
+dumpling emoji meant like something
+
+1276
+00:58:44,350 --> 00:58:49,430
+was wrong in the universe and
+I was determined to fix this.
+
+1277
+00:58:49,430 --> 00:58:50,950
+You know I was on this email list.
+
+1278
+00:58:50,950 --> 00:58:54,170
+And then a couple of maybe, even
+like a couple of weeks later,
+
+1279
+00:58:54,170 --> 00:58:56,960
+I got-- they kind of sent
+out this note that's like,
+
+1280
+00:58:56,960 --> 00:58:59,050
+hey, who's coming to
+the quarterly meeting.
+
+1281
+00:58:59,050 --> 00:59:01,420
+And I was like, I
+looked at the calendar.
+
+1282
+00:59:01,420 --> 00:59:02,450
+I looked at my schedule.
+
+1283
+00:59:02,450 --> 00:59:06,080
+I was like, oh, I'll be in
+Silicon Valley at that time.
+
+1284
+00:59:06,080 --> 00:59:09,850
+So I basically like RSVP and
+I was like, I will be there
+
+1285
+00:59:09,850 --> 00:59:13,827
+and took Caltrain to an Apple building.
+
+1286
+00:59:13,827 --> 00:59:15,910
+It's a legal building in
+I think it was Sunnyvale.
+
+1287
+00:59:15,910 --> 00:59:17,110
+So I just like show up.
+
+1288
+00:59:17,110 --> 00:59:20,680
+And I don't know what I was sort of
+expecting like with like the Unicode.
+
+1289
+00:59:20,680 --> 00:59:23,440
+I think I maybe that was going
+to be like a baby Congress,
+
+1290
+00:59:23,440 --> 00:59:26,650
+like with a little very formal
+seats, people with gavels.
+
+1291
+00:59:26,650 --> 00:59:28,150
+That is not what I found.
+
+1292
+00:59:28,150 --> 00:59:30,760
+Basically it is, it
+was a conference room
+
+1293
+00:59:30,760 --> 00:59:34,830
+full of people who skewed wider, skewed
+older, skewed male, skewed engineers.
+
+1294
+00:59:34,830 --> 00:59:36,830
+And this is basically the
+room where it happens.
+
+1295
+00:59:36,830 --> 00:59:38,710
+So this is 2015.
+
+1296
+00:59:38,710 --> 00:59:43,930
+These were the people who decided
+your emoji, all very nice and.
+
+1297
+00:59:43,930 --> 00:59:47,290
+There was one, even had a daughter
+who had a sense of humor and made him
+
+1298
+00:59:47,290 --> 00:59:50,860
+a shirt that said
+"Shadowy Emoji Overlord."
+
+1299
+00:59:50,860 --> 00:59:55,690
+So I just kind of listened to them
+debate things like milk emoji and beans
+
+1300
+00:59:55,690 --> 00:59:56,260
+emoji.
+
+1301
+00:59:56,260 --> 00:59:58,870
+And it just seemed like
+not quite right to me
+
+1302
+00:59:58,870 --> 01:00:03,850
+that it would be this global
+visual language that were basically
+
+1303
+01:00:03,850 --> 01:00:08,270
+decided by like a small group of people
+inside a conference room in Silicon
+
+1304
+01:00:08,270 --> 01:00:08,920
+Valley.
+
+1305
+01:00:08,920 --> 01:00:12,250
+So I decided to form a
+group called Emojination,
+
+1306
+01:00:12,250 --> 01:00:14,770
+whose motto is like "Emoji by
+the People, for the People."
+
+1307
+01:00:14,770 --> 01:00:20,290
+And it basically advocates for more
+kind of representative inclusive emoji.
+
+1308
+01:00:20,290 --> 01:00:25,120
+We start with a Kickstarter
+campaign, dumpling emoji
+
+1309
+01:00:25,120 --> 01:00:27,730
+process trying to right
+the wrong in this world
+
+1310
+01:00:27,730 --> 01:00:30,458
+and made this little cute
+video sort of advocating--
+
+1311
+01:00:30,458 --> 01:00:32,500
+NARRATOR: Dumpling are
+one of the most universal,
+
+1312
+01:00:32,500 --> 01:00:34,450
+cross-cultural foods in the world.
+
+1313
+01:00:34,450 --> 01:00:40,090
+Georgia has khinkali Japan has gyoza,
+Korea has mandu, Italy has ravioli,
+
+1314
+01:00:40,090 --> 01:00:44,020
+Poland has pierogi, Russia has
+pelmani, Argentina has empanadas,
+
+1315
+01:00:44,020 --> 01:00:47,020
+Jewish people have kreplach,
+China has potstickers,
+
+1316
+01:00:47,020 --> 01:00:49,780
+Nepal and Tibet have momos.
+
+1317
+01:00:49,780 --> 01:00:51,970
+Yet somehow, despite
+their popularity, there
+
+1318
+01:00:51,970 --> 01:00:54,700
+is no dumpling emoji
+in the standard set.
+
+1319
+01:00:54,700 --> 01:00:55,750
+Why is that?
+
+1320
+01:00:55,750 --> 01:01:00,320
+Emoji exist for pizza, tempura, sushi,
+spaghetti, hot dog and now tacos,
+
+1321
+01:01:00,320 --> 01:01:02,600
+which Taco Bell takes credit for.
+
+1322
+01:01:02,600 --> 01:01:04,420
+We need to right this disparity.
+
+1323
+01:01:04,420 --> 01:01:05,680
+Dumplings are global.
+
+1324
+01:01:05,680 --> 01:01:07,145
+Emoji are global.
+
+1325
+01:01:07,145 --> 01:01:08,770
+Isn't it time we brought them together?
+
+1326
+01:01:08,770 --> 01:01:11,380
+
+
+1327
+01:01:11,380 --> 01:01:14,320
+Oh, yeah, while we're at it, how
+about an emoji for Chinese takeout?
+
+1328
+01:01:14,320 --> 01:01:17,420
+
+
+1329
+01:01:17,420 --> 01:01:17,920
+JENNIFER 8.
+
+1330
+01:01:17,920 --> 01:01:21,110
+LEE: So I did put together
+a dumpling emoji proposal.
+
+1331
+01:01:21,110 --> 01:01:24,850
+I wrote this, I remember
+Thanksgiving Day 2015 on a plane.
+
+1332
+01:01:24,850 --> 01:01:29,080
+And actually, and we got it
+passed, basically dumpling,
+
+1333
+01:01:29,080 --> 01:01:32,590
+takeout box, chopsticks
+and fortune cookie.
+
+1334
+01:01:32,590 --> 01:01:35,680
+I have to say, I don't think
+fortune cookie would have made it
+
+1335
+01:01:35,680 --> 01:01:37,510
+on its own merits, but
+it kind of like slid
+
+1336
+01:01:37,510 --> 01:01:40,070
+in on the coattails of the other ones.
+
+1337
+01:01:40,070 --> 01:01:42,790
+And so these were the
+proposals as we submitted them.
+
+1338
+01:01:42,790 --> 01:01:46,475
+And then these are the ones that kind
+of exist now on the Apple keyboard.
+
+1339
+01:01:46,475 --> 01:01:48,350
+And I have to say, the
+dumpling looks really,
+
+1340
+01:01:48,350 --> 01:01:51,190
+really realistic, oddly realistic.
+
+1341
+01:01:51,190 --> 01:01:54,160
+And whereas, like the fortune
+cookie I think is like a big fail,
+
+1342
+01:01:54,160 --> 01:01:56,950
+because first of all, there's
+like, it has no-- it has no gap.
+
+1343
+01:01:56,950 --> 01:01:58,750
+It looks like a dead 3D Pac-Man.
+
+1344
+01:01:58,750 --> 01:02:03,417
+So I'm very disappointed in
+the manifestation of that.
+
+1345
+01:02:03,417 --> 01:02:04,000
+But that's OK.
+
+1346
+01:02:04,000 --> 01:02:05,110
+That's OK.
+
+1347
+01:02:05,110 --> 01:02:07,600
+And so it's kind of
+interesting, like what is
+
+1348
+01:02:07,600 --> 01:02:10,660
+the process of getting an emoji passed?
+
+1349
+01:02:10,660 --> 01:02:13,220
+And I will walk you through it.
+
+1350
+01:02:13,220 --> 01:02:15,760
+So first of all, you
+come up with your idea.
+
+1351
+01:02:15,760 --> 01:02:19,090
+And then you write
+this proposal and then
+
+1352
+01:02:19,090 --> 01:02:22,420
+you submit it to the Unicode emoji
+subcommittee who then gives you
+
+1353
+01:02:22,420 --> 01:02:24,070
+comments and then sends it back to you.
+
+1354
+01:02:24,070 --> 01:02:25,945
+And you kind go around
+and around the circle.
+
+1355
+01:02:25,945 --> 01:02:29,560
+
+
+1356
+01:02:29,560 --> 01:02:31,197
+So these are things that we consider.
+
+1357
+01:02:31,197 --> 01:02:34,030
+So somewhere in there, I also fought
+my way onto the emoji committee
+
+1358
+01:02:34,030 --> 01:02:37,090
+and then also became a Vice
+Chair, became a Vice Chair.
+
+1359
+01:02:37,090 --> 01:02:41,140
+Sort of an extracurricular just
+like completely run amok in my life.
+
+1360
+01:02:41,140 --> 01:02:47,590
+So things that matter popular demand,
+is it a frequently requested emoji.
+
+1361
+01:02:47,590 --> 01:02:51,940
+Multiple usages and meanings, so
+that's actually kind of very important
+
+1362
+01:02:51,940 --> 01:02:55,130
+for something like certain
+animals have meaning.
+
+1363
+01:02:55,130 --> 01:03:01,000
+So we did sloth a while ago, and that
+also has not only the literal meaning
+
+1364
+01:03:01,000 --> 01:03:04,120
+but sort of like connotations.
+
+1365
+01:03:04,120 --> 01:03:07,280
+There are visually distinctiveness,
+it can be recognized.
+
+1366
+01:03:07,280 --> 01:03:10,720
+So this was a blocker
+for one of the emoji
+
+1367
+01:03:10,720 --> 01:03:14,870
+that I have worked on before which
+is cave, which is kind of hard to do.
+
+1368
+01:03:14,870 --> 01:03:17,650
+I think, meaning wise, is pretty
+good, but it's really hard
+
+1369
+01:03:17,650 --> 01:03:20,140
+to get a cave down in emoji sizes.
+
+1370
+01:03:20,140 --> 01:03:22,120
+And then it filling a gap, completeness.
+
+1371
+01:03:22,120 --> 01:03:25,630
+So a good example for that is like
+for some reason, for many years,
+
+1372
+01:03:25,630 --> 01:03:29,260
+we had red heart, yellow heart, green
+heart, blue heart, purple heart,
+
+1373
+01:03:29,260 --> 01:03:31,840
+and no orange heart.
+
+1374
+01:03:31,840 --> 01:03:34,338
+So somewhat, so you
+would do the rainbow,
+
+1375
+01:03:34,338 --> 01:03:36,130
+but people would
+substitute the pumpkin in.
+
+1376
+01:03:36,130 --> 01:03:39,280
+So you would like have a rainbow heart
+thing with a little pumpkin stuck
+
+1377
+01:03:39,280 --> 01:03:39,890
+in the middle.
+
+1378
+01:03:39,890 --> 01:03:45,640
+So orange heart obviously should be
+added and give a sense of completeness.
+
+1379
+01:03:45,640 --> 01:03:49,120
+And then something else is
+existing vendor compatibility.
+
+1380
+01:03:49,120 --> 01:03:53,680
+And so a good example for
+that was many years ago
+
+1381
+01:03:53,680 --> 01:03:58,150
+WhatsApp decided to add the
+gender non-binary emoji.
+
+1382
+01:03:58,150 --> 01:04:03,860
+And then once it did that, then all of
+the other kind of vendors jumped on.
+
+1383
+01:04:03,860 --> 01:04:06,580
+So what kind of knocks out an emoji.
+
+1384
+01:04:06,580 --> 01:04:08,830
+So too specific or narrow.
+
+1385
+01:04:08,830 --> 01:04:13,250
+So we'll often see that with very
+specific animals or a very specific
+
+1386
+01:04:13,250 --> 01:04:13,750
+group.
+
+1387
+01:04:13,750 --> 01:04:18,312
+It's redundant so one year, oh
+my God, who makes a Butterball?
+
+1388
+01:04:18,312 --> 01:04:19,520
+Butterball makes the turkeys.
+
+1389
+01:04:19,520 --> 01:04:24,202
+Butterball submitted an emoji proposal
+that was like a cooked turkey.
+
+1390
+01:04:24,202 --> 01:04:27,410
+But we already had a live turkey so it
+seemed kind of redundant to have both,
+
+1391
+01:04:27,410 --> 01:04:29,810
+like a cooked turkey for
+Thanksgiving and a live turkey.
+
+1392
+01:04:29,810 --> 01:04:33,410
+So not visually discernible.
+
+1393
+01:04:33,410 --> 01:04:36,200
+This is a struggle for things
+like, I know my friends have
+
+1394
+01:04:36,200 --> 01:04:40,250
+kind of proposed kimchi.
+
+1395
+01:04:40,250 --> 01:04:44,992
+Kimchi is really hard on emoji sizes for
+many reasons and part of that tension
+
+1396
+01:04:44,992 --> 01:04:46,700
+is because it's not
+visually discernible.
+
+1397
+01:04:46,700 --> 01:04:49,520
+Then there are no logos brands,
+deities, or celebrities.
+
+1398
+01:04:49,520 --> 01:04:52,910
+So no Nike swoosh, no
+McDonald's M. And then
+
+1399
+01:04:52,910 --> 01:04:57,200
+this is one that we decide in the last
+year or so which is no more flags.
+
+1400
+01:04:57,200 --> 01:04:59,660
+Flags are a very complicated thing.
+
+1401
+01:04:59,660 --> 01:05:01,880
+And as a result Unicode
+does not want to be
+
+1402
+01:05:01,880 --> 01:05:05,030
+in a business of deciding what
+is a country or not a country.
+
+1403
+01:05:05,030 --> 01:05:08,840
+So like when you get a proposal
+from like Kurdistan, you're like--
+
+1404
+01:05:08,840 --> 01:05:11,930
+so right now, the way that
+the emoji flags are decided
+
+1405
+01:05:11,930 --> 01:05:14,750
+is they kind of depend
+on what the UN recognizes
+
+1406
+01:05:14,750 --> 01:05:18,020
+and then those get passed down to the
+International Standards Organization
+
+1407
+01:05:18,020 --> 01:05:19,460
+and then Unicode just does that.
+
+1408
+01:05:19,460 --> 01:05:25,700
+It does not want to be in the
+business of the geopolitical affairs.
+
+1409
+01:05:25,700 --> 01:05:28,310
+So once it comes out
+of the subcommittee,
+
+1410
+01:05:28,310 --> 01:05:31,250
+it goes to the full Unicode
+Technical Committee, UTC.
+
+1411
+01:05:31,250 --> 01:05:34,550
+Those were the people that were
+in the room that I showed you.
+
+1412
+01:05:34,550 --> 01:05:39,950
+And they vote once a year
+basically to pass all the emoji.
+
+1413
+01:05:39,950 --> 01:05:40,967
+And it takes a while.
+
+1414
+01:05:40,967 --> 01:05:43,550
+There's a lot of coordinating
+with the International Standards
+
+1415
+01:05:43,550 --> 01:05:47,210
+Organization and a lot of
+working with the companies.
+
+1416
+01:05:47,210 --> 01:05:50,750
+And eventually, it takes a long
+time, but it ends up on your devices.
+
+1417
+01:05:50,750 --> 01:05:53,325
+And that historically has
+taken about 18 to 24 months
+
+1418
+01:05:53,325 --> 01:05:55,700
+from when you put it in a
+proposal to when you get it in.
+
+1419
+01:05:55,700 --> 01:06:00,920
+It's going to be a little bit longer
+going forward probably is my sense
+
+1420
+01:06:00,920 --> 01:06:02,120
+as we're organized--
+
+1421
+01:06:02,120 --> 01:06:05,600
+Unicode is designed to space out
+some of the Unicode releases.
+
+1422
+01:06:05,600 --> 01:06:09,750
+So Emojination kind
+of has done its thing.
+
+1423
+01:06:09,750 --> 01:06:12,170
+So one of the weird things
+is like how did Unicode,
+
+1424
+01:06:12,170 --> 01:06:15,050
+this kind of non-profit
+organization based in Mountain View,
+
+1425
+01:06:15,050 --> 01:06:19,320
+California end up controlling
+this global visual language?
+
+1426
+01:06:19,320 --> 01:06:22,580
+So a lot of it has to start,
+has it has to do with the fact
+
+1427
+01:06:22,580 --> 01:06:26,450
+that emoji started in Japan
+back in the late 1990s.
+
+1428
+01:06:26,450 --> 01:06:30,590
+The set from Docomo
+in 1999 is considered,
+
+1429
+01:06:30,590 --> 01:06:33,620
+is widely considered sort of like
+the first like color emoji set.
+
+1430
+01:06:33,620 --> 01:06:36,410
+It has been collected by
+the Museum of Modern Art.
+
+1431
+01:06:36,410 --> 01:06:41,720
+And so the Japanese telecom
+companies would use basically,
+
+1432
+01:06:41,720 --> 01:06:43,178
+would have their own sets of emoji.
+
+1433
+01:06:43,178 --> 01:06:46,303
+And then there were different companies,
+so they would have different sets.
+
+1434
+01:06:46,303 --> 01:06:49,550
+So you could basically only send these
+like visual characters with someone
+
+1435
+01:06:49,550 --> 01:06:51,350
+who is on your same carrier.
+
+1436
+01:06:51,350 --> 01:06:55,040
+So it's like basically equivalent
+of if you were on like Verizon,
+
+1437
+01:06:55,040 --> 01:06:58,010
+you could only text people
+on Verizon with like emoji.
+
+1438
+01:06:58,010 --> 01:07:01,680
+Or if you were on T-Mobile,
+you could only do that.
+
+1439
+01:07:01,680 --> 01:07:08,600
+So at a certain point, they decided they
+the Apple and Google came into Japan.
+
+1440
+01:07:08,600 --> 01:07:10,550
+They wanted to start
+selling smartphones.
+
+1441
+01:07:10,550 --> 01:07:14,270
+And they realized that it
+was a hodgepodge of systems
+
+1442
+01:07:14,270 --> 01:07:16,380
+and they wanted to unify it.
+
+1443
+01:07:16,380 --> 01:07:19,820
+And so in 2007, they went to
+Unicode and they're like OK,
+
+1444
+01:07:19,820 --> 01:07:26,220
+help us unify the emoji, kind
+of basically all the emojis
+
+1445
+01:07:26,220 --> 01:07:27,870
+so that we have one standard system.
+
+1446
+01:07:27,870 --> 01:07:30,850
+And part of the reason is why Unicode.
+
+1447
+01:07:30,850 --> 01:07:32,600
+Because Unicode basically
+has this mission
+
+1448
+01:07:32,600 --> 01:07:35,300
+is to enable everyone speaking
+every language on Earth
+
+1449
+01:07:35,300 --> 01:07:37,940
+to be able to use your languages
+on computer and smartphone,
+
+1450
+01:07:37,940 --> 01:07:43,850
+so it basic unifies all written
+languages into one ginormous set.
+
+1451
+01:07:43,850 --> 01:07:47,400
+And that was not the case
+actually when I was growing up.
+
+1452
+01:07:47,400 --> 01:07:50,300
+There was a point where like
+if you were Japanese on Apple
+
+1453
+01:07:50,300 --> 01:07:54,620
+that would be different than
+Japanese on DOS or Chinese or Arabic.
+
+1454
+01:07:54,620 --> 01:07:57,170
+So it drove everyone
+crazy and they basically
+
+1455
+01:07:57,170 --> 01:08:02,240
+decided around the late '80s or early
+1990s that they were going to come up
+
+1456
+01:08:02,240 --> 01:08:04,700
+with one standardized
+system that sort of encoded
+
+1457
+01:08:04,700 --> 01:08:09,060
+all characters in one ginormous set.
+
+1458
+01:08:09,060 --> 01:08:12,350
+So there's three main projects
+for Unicode if you care.
+
+1459
+01:08:12,350 --> 01:08:14,930
+So one is encoding
+characters including emoji.
+
+1460
+01:08:14,930 --> 01:08:17,569
+Now there are about 100,000
+characters aside assigned,
+
+1461
+01:08:17,569 --> 01:08:24,830
+so that includes Chinese, Japanese,
+Korean, Arabic, Cyrillic, actually
+
+1462
+01:08:24,830 --> 01:08:29,930
+all the hieroglyphics, all of the emoji,
+a lot of things like the Bitcoin symbol
+
+1463
+01:08:29,930 --> 01:08:31,490
+or like copyleft or whatever.
+
+1464
+01:08:31,490 --> 01:08:36,290
+Those all assigned were about 100,000
+characters, even those languages
+
+1465
+01:08:36,290 --> 01:08:38,069
+that are basically out of use.
+
+1466
+01:08:38,069 --> 01:08:44,689
+So the other thing it does, it creates
+localization resources so things so
+
+1467
+01:08:44,689 --> 01:08:49,520
+that you know, oh, if you're in this
+country this is you're using a euro
+
+1468
+01:08:49,520 --> 01:08:51,569
+or you're using the pesos or something.
+
+1469
+01:08:51,569 --> 01:08:54,800
+So there's a lot of
+localization data that
+
+1470
+01:08:54,800 --> 01:08:59,600
+is needed depending on which geography
+you're using your device from,
+
+1471
+01:08:59,600 --> 01:09:03,960
+or that you know that the time is used
+this way or dates are shown that way.
+
+1472
+01:09:03,960 --> 01:09:09,240
+So that is called the common local data
+repository or CLDR as they call it.
+
+1473
+01:09:09,240 --> 01:09:12,560
+And the other thing they do is they kind
+of maintain libraries for developers
+
+1474
+01:09:12,560 --> 01:09:15,328
+in order to do all--
+
+1475
+01:09:15,328 --> 01:09:18,370
+so they are not building everything
+from scratch, and that is called ICU.
+
+1476
+01:09:18,370 --> 01:09:21,130
+So it's very funny,
+because it's called CLDR,
+
+1477
+01:09:21,130 --> 01:09:24,520
+and then one day, one of
+our friend's girlfriends
+
+1478
+01:09:24,520 --> 01:09:30,040
+made him this thing which she
+called a sealdeer, because whenever
+
+1479
+01:09:30,040 --> 01:09:35,710
+he talked about CLDR, she thought
+he was talking about sealdeers.
+
+1480
+01:09:35,710 --> 01:09:40,450
+So now this is his little like mascot
+for like Unicode related things.
+
+1481
+01:09:40,450 --> 01:09:42,580
+So how does Unicode do this?
+
+1482
+01:09:42,580 --> 01:09:44,439
+So basically it assigns code points.
+
+1483
+01:09:44,439 --> 01:09:48,910
+And each code point is a unique number
+assigned to each Unicode character,
+
+1484
+01:09:48,910 --> 01:09:55,090
+so face with tears of joy, it can be
+written like this with a code point,
+
+1485
+01:09:55,090 --> 01:09:57,597
+or it can be written like this
+in terms of decimal numbers.
+
+1486
+01:09:57,597 --> 01:09:59,680
+And it can also written
+in this in binary numbers.
+
+1487
+01:09:59,680 --> 01:10:01,970
+So these are all basically the same.
+
+1488
+01:10:01,970 --> 01:10:04,270
+And the key thing to know,
+at least about emoji,
+
+1489
+01:10:04,270 --> 01:10:07,300
+is that when your device, if
+you're talking on your iPhone
+
+1490
+01:10:07,300 --> 01:10:11,800
+with someone who's on a laptop or
+an iPad or like an Android device,
+
+1491
+01:10:11,800 --> 01:10:13,715
+it's not sending the
+images back and forth.
+
+1492
+01:10:13,715 --> 01:10:15,590
+It's sending just a
+number of back and forth.
+
+1493
+01:10:15,590 --> 01:10:19,120
+And then locally, your
+phone, or like your laptop
+
+1494
+01:10:19,120 --> 01:10:23,920
+decides like, oh this number
+correlates with which image in terms
+
+1495
+01:10:23,920 --> 01:10:25,910
+of our emoji font and then pulls it up.
+
+1496
+01:10:25,910 --> 01:10:30,940
+So this is really key to know why
+different emoji look different
+
+1497
+01:10:30,940 --> 01:10:33,020
+on different platforms.
+
+1498
+01:10:33,020 --> 01:10:36,320
+So 2007 to 2010, it
+took about three years,
+
+1499
+01:10:36,320 --> 01:10:40,450
+but Unicode 6.0 came out with our
+first little baby set of emoji.
+
+1500
+01:10:40,450 --> 01:10:42,430
+And it just kind of hung
+out there for a year.
+
+1501
+01:10:42,430 --> 01:10:44,013
+Like no one, it wasn't doing anything.
+
+1502
+01:10:44,013 --> 01:10:48,010
+So 2011 though, Apple starts
+adding the emoji keyboard
+
+1503
+01:10:48,010 --> 01:10:52,930
+and it just like explodes, like I
+feel like in some ways, emoji are
+
+1504
+01:10:52,930 --> 01:10:53,980
+were not invented.
+
+1505
+01:10:53,980 --> 01:10:54,970
+They were discovered.
+
+1506
+01:10:54,970 --> 01:10:58,120
+They like obviously touch
+something very, very primal
+
+1507
+01:10:58,120 --> 01:11:04,030
+to like our human desire to communicate
+in like little colorful glyphs
+
+1508
+01:11:04,030 --> 01:11:05,530
+on electronic devices.
+
+1509
+01:11:05,530 --> 01:11:08,260
+And you kind of have what's
+kind of really interesting
+
+1510
+01:11:08,260 --> 01:11:13,570
+is like the ambiguity that comes
+with what emoji kind of mean.
+
+1511
+01:11:13,570 --> 01:11:15,698
+And so one this is one
+of my favorite emoji.
+
+1512
+01:11:15,698 --> 01:11:18,490
+It's sort of like an upside down
+smiley face, very, very ambiguous.
+
+1513
+01:11:18,490 --> 01:11:20,680
+Clearly very ambiguous,
+because if you start
+
+1514
+01:11:20,680 --> 01:11:23,920
+typing into Google, like the top hits
+are like what does it mean from a guy.
+
+1515
+01:11:23,920 --> 01:11:25,270
+What does it mean from a girl.
+
+1516
+01:11:25,270 --> 01:11:27,160
+It's clearly something
+that a lot of people
+
+1517
+01:11:27,160 --> 01:11:30,820
+are using in like complex
+situation ships between each other.
+
+1518
+01:11:30,820 --> 01:11:33,490
+
+
+1519
+01:11:33,490 --> 01:11:36,310
+So one of the fun things
+is who can propose emoji.
+
+1520
+01:11:36,310 --> 01:11:37,540
+Technically anyone can.
+
+1521
+01:11:37,540 --> 01:11:38,590
+Anyone here can.
+
+1522
+01:11:38,590 --> 01:11:40,240
+Normal humans can.
+
+1523
+01:11:40,240 --> 01:11:42,850
+We have basically Google
+Doc or Google Form
+
+1524
+01:11:42,850 --> 01:11:46,480
+that we throw up historically
+between August, sorry April
+
+1525
+01:11:46,480 --> 01:11:49,100
+and August in the last two years.
+
+1526
+01:11:49,100 --> 01:11:53,330
+And so this is one of
+our favorite examples.
+
+1527
+01:11:53,330 --> 01:11:54,730
+This is Rayouf Alhumedhl.
+
+1528
+01:11:54,730 --> 01:11:58,600
+She was a 15-year-old Saudi Arabian girl
+who was living in Vienna at the time
+
+1529
+01:11:58,600 --> 01:12:02,440
+that she proposed the hijab emoji.
+
+1530
+01:12:02,440 --> 01:12:05,072
+And then she was like Time
+Magazine like coolest teens
+
+1531
+01:12:05,072 --> 01:12:07,030
+she got like a whole
+bunch of different things.
+
+1532
+01:12:07,030 --> 01:12:08,510
+She got into Harvard and Stanford.
+
+1533
+01:12:08,510 --> 01:12:09,552
+And she went to Stanford.
+
+1534
+01:12:09,552 --> 01:12:12,700
+
+
+1535
+01:12:12,700 --> 01:12:13,930
+So this is a proposal we got.
+
+1536
+01:12:13,930 --> 01:12:16,090
+Then there was a group
+of folks from Argentina
+
+1537
+01:12:16,090 --> 01:12:20,350
+who got the mate emoji, kind of
+the symbol of their national drink.
+
+1538
+01:12:20,350 --> 01:12:24,520
+Then we worked with, there was
+a nonprofit that really wanted
+
+1539
+01:12:24,520 --> 01:12:30,850
+to get a menstruation emoji and so
+what they proposed to begin with
+
+1540
+01:12:30,850 --> 01:12:32,480
+was like bloody underwear.
+
+1541
+01:12:32,480 --> 01:12:34,870
+And I was just like no, no, no.
+
+1542
+01:12:34,870 --> 01:12:38,650
+So many different reasons
+why this is a terrible emoji.
+
+1543
+01:12:38,650 --> 01:12:41,403
+So we did get blood drops
+and you can do moon and blood
+
+1544
+01:12:41,403 --> 01:12:42,820
+drop or underwear and blood drops.
+
+1545
+01:12:42,820 --> 01:12:44,153
+There's a lot of different ways.
+
+1546
+01:12:44,153 --> 01:12:47,140
+Actually it's really funny, because
+I was polling my friends beforehand
+
+1547
+01:12:47,140 --> 01:12:50,320
+what they would use to
+indicate menstruation
+
+1548
+01:12:50,320 --> 01:12:52,430
+before there was a blood drop.
+
+1549
+01:12:52,430 --> 01:12:54,220
+So there was like red wine.
+
+1550
+01:12:54,220 --> 01:12:59,050
+There was kind of that rose
+with the like falling petal.
+
+1551
+01:12:59,050 --> 01:13:01,810
+And then my favorite
+is actually my friend
+
+1552
+01:13:01,810 --> 01:13:04,090
+who used a Japanese flag
+as a way to indicate
+
+1553
+01:13:04,090 --> 01:13:06,830
+that she was having her period.
+
+1554
+01:13:06,830 --> 01:13:11,890
+So one of the biggest
+contributors, this skin tone emoji
+
+1555
+01:13:11,890 --> 01:13:13,480
+appeared, I think in 2015.
+
+1556
+01:13:13,480 --> 01:13:14,600
+It was amazing.
+
+1557
+01:13:14,600 --> 01:13:15,100
+It is.
+
+1558
+01:13:15,100 --> 01:13:18,700
+And it was proposed by
+a mom, Katrina Parrott.
+
+1559
+01:13:18,700 --> 01:13:21,940
+She is an entrepreneur and a
+mom who is just like at home
+
+1560
+01:13:21,940 --> 01:13:24,100
+one day and her daughter
+comes home and is
+
+1561
+01:13:24,100 --> 01:13:28,680
+like I wish there were
+emoji that looked like me.
+
+1562
+01:13:28,680 --> 01:13:31,020
+And her mom was like,
+that's great, honey.
+
+1563
+01:13:31,020 --> 01:13:32,130
+What's an emoji?
+
+1564
+01:13:32,130 --> 01:13:36,150
+And so she, like me, I guess
+googled and just figure it out
+
+1565
+01:13:36,150 --> 01:13:38,490
+that Unicode controlled emoji.
+
+1566
+01:13:38,490 --> 01:13:41,130
+And she just came up with a
+proposal saying we should not only
+
+1567
+01:13:41,130 --> 01:13:42,690
+have the yellow skin tones.
+
+1568
+01:13:42,690 --> 01:13:45,540
+At that time, everything was
+sort of Simpson's yellow.
+
+1569
+01:13:45,540 --> 01:13:52,350
+It's really interesting to see how
+race and nationality are depicted
+
+1570
+01:13:52,350 --> 01:13:53,920
+in different parts of the world.
+
+1571
+01:13:53,920 --> 01:13:59,910
+So originally in Japan, everyone
+was yellow, but these were the non--
+
+1572
+01:13:59,910 --> 01:14:03,450
+by default, everyone was
+just like human or Japanese.
+
+1573
+01:14:03,450 --> 01:14:05,880
+But they had like a couple
+of things that were like not.
+
+1574
+01:14:05,880 --> 01:14:08,520
+One was, you had a blonde person.
+
+1575
+01:14:08,520 --> 01:14:10,830
+So there's an emoji
+called like blonde woman
+
+1576
+01:14:10,830 --> 01:14:13,403
+or whatever that
+represents all Westerners.
+
+1577
+01:14:13,403 --> 01:14:14,070
+So that was one.
+
+1578
+01:14:14,070 --> 01:14:16,923
+And then they have one that's
+like an Indian guy with a turban.
+
+1579
+01:14:16,923 --> 01:14:18,840
+So that's supposed to
+represent Indian people.
+
+1580
+01:14:18,840 --> 01:14:23,225
+And then there's like a guy with a
+little like little hat that's supposed
+
+1581
+01:14:23,225 --> 01:14:24,600
+to represent like Chinese people.
+
+1582
+01:14:24,600 --> 01:14:29,040
+So that was like that the Japanese view
+of race which was like default, then
+
+1583
+01:14:29,040 --> 01:14:32,400
+you were then you were like
+blonde Western, Chinese or Indian.
+
+1584
+01:14:32,400 --> 01:14:34,450
+And that is all there was.
+
+1585
+01:14:34,450 --> 01:14:38,590
+And obviously in the United
+States, we care a lot about race.
+
+1586
+01:14:38,590 --> 01:14:42,210
+And then so she came up with
+a system with five skin tones
+
+1587
+01:14:42,210 --> 01:14:43,830
+like just like normal people.
+
+1588
+01:14:43,830 --> 01:14:45,630
+Some guy in Germany
+decided that he wanted
+
+1589
+01:14:45,630 --> 01:14:51,255
+to do a face with one eyebrow raised,
+or as we call it the [? cobara ?] emoji.
+
+1590
+01:14:51,255 --> 01:14:54,540
+
+
+1591
+01:14:54,540 --> 01:14:55,500
+Oh, this one's fun.
+
+1592
+01:14:55,500 --> 01:14:57,210
+So woman's flat shoe.
+
+1593
+01:14:57,210 --> 01:15:00,150
+I have to say, not highly used
+statistically at this point.
+
+1594
+01:15:00,150 --> 01:15:02,130
+But I really kind of
+appreciate it because it
+
+1595
+01:15:02,130 --> 01:15:06,000
+was a mom who was very offended
+that all women shoes had heels, even
+
+1596
+01:15:06,000 --> 01:15:06,840
+the sandals.
+
+1597
+01:15:06,840 --> 01:15:09,570
+So this is her, she had
+like three kids at the time.
+
+1598
+01:15:09,570 --> 01:15:10,350
+She now has four.
+
+1599
+01:15:10,350 --> 01:15:12,210
+She was very fertile.
+
+1600
+01:15:12,210 --> 01:15:19,380
+And she also did the women's flat--
+
+1601
+01:15:19,380 --> 01:15:25,322
+she also did one piece bathing
+suit because she was also
+
+1602
+01:15:25,322 --> 01:15:27,780
+offended by the fact that the
+only kind of bathing suit you
+
+1603
+01:15:27,780 --> 01:15:29,852
+had was like this
+little itsy bitsy polka
+
+1604
+01:15:29,852 --> 01:15:33,060
+dot bikini thing, which is not great if
+you're like taking your six-year-old.
+
+1605
+01:15:33,060 --> 01:15:35,850
+So I would say that got passed,
+but like it didn't go over
+
+1606
+01:15:35,850 --> 01:15:37,950
+super well with everyone.
+
+1607
+01:15:37,950 --> 01:15:41,880
+So you know Unicode, because it's very
+public, submits things for comments.
+
+1608
+01:15:41,880 --> 01:15:46,350
+And we got this comment back,
+so one piece bathing suit, why?
+
+1609
+01:15:46,350 --> 01:15:50,370
+A person wanting to indicate the use
+of swimwear can't use existing bikini.
+
+1610
+01:15:50,370 --> 01:15:52,330
+Is this really necessary?
+
+1611
+01:15:52,330 --> 01:15:56,050
+What about a Victorian bathing
+costume or wetsuit or [INAUDIBLE]..
+
+1612
+01:15:56,050 --> 01:16:01,860
+This is like literally in like the
+records, and like do not encode.
+
+1613
+01:16:01,860 --> 01:16:04,530
+And so the person who did
+this, actually very impressive.
+
+1614
+01:16:04,530 --> 01:16:08,970
+He's actually the person who
+created the middle finger emoji.
+
+1615
+01:16:08,970 --> 01:16:12,720
+And actually if you've ever seen the
+Vulcan emoji, the Vulcan hand emoji,
+
+1616
+01:16:12,720 --> 01:16:14,670
+he's actually very active.
+
+1617
+01:16:14,670 --> 01:16:17,970
+And I have to say this is actually I
+think one of the more impressive emoji.
+
+1618
+01:16:17,970 --> 01:16:21,750
+So obviously, obviously we
+have a lot of active debate.
+
+1619
+01:16:21,750 --> 01:16:24,390
+Sometimes you get like
+whole countries submitting.
+
+1620
+01:16:24,390 --> 01:16:27,300
+So literally the government of
+Finland, as in like their equivalent
+
+1621
+01:16:27,300 --> 01:16:30,270
+of the State Department,
+their diplomacy kind of thing,
+
+1622
+01:16:30,270 --> 01:16:32,640
+submitted a proposal for sauna.
+
+1623
+01:16:32,640 --> 01:16:39,580
+And these were so creepy and so weird.
+
+1624
+01:16:39,580 --> 01:16:42,330
+So much is wrong with this.
+
+1625
+01:16:42,330 --> 01:16:46,560
+But I felt where they were coming
+from, for like they're naked.
+
+1626
+01:16:46,560 --> 01:16:49,050
+They have no-- they're club feet.
+
+1627
+01:16:49,050 --> 01:16:50,760
+And so we decided to help them.
+
+1628
+01:16:50,760 --> 01:16:53,350
+We're like OK, we see where
+you're going with this.
+
+1629
+01:16:53,350 --> 01:16:57,627
+Let's see if we can help you like come
+up, you know like we had this spoon.
+
+1630
+01:16:57,627 --> 01:16:59,460
+Like should there be
+like steam around them.
+
+1631
+01:16:59,460 --> 01:17:02,820
+Like should they be naked or wearing
+a towel was like super dicey.
+
+1632
+01:17:02,820 --> 01:17:04,950
+But we wanted to help them
+because it was literally
+
+1633
+01:17:04,950 --> 01:17:08,580
+a foreign government coming in front of
+Unicode advocating for the sauna emoji
+
+1634
+01:17:08,580 --> 01:17:10,180
+on behalf of their entire country.
+
+1635
+01:17:10,180 --> 01:17:14,760
+So then this-- it's evolved into
+this basically person in steamy room
+
+1636
+01:17:14,760 --> 01:17:18,390
+which is the most sort of
+like the PG version of sauna.
+
+1637
+01:17:18,390 --> 01:17:19,265
+And there's no spoon.
+
+1638
+01:17:19,265 --> 01:17:20,098
+They're all dressed.
+
+1639
+01:17:20,098 --> 01:17:20,790
+It's very odd.
+
+1640
+01:17:20,790 --> 01:17:24,090
+But so you can see the evolution
+of what it started out.
+
+1641
+01:17:24,090 --> 01:17:27,060
+What we submitted and
+what it ended up so.
+
+1642
+01:17:27,060 --> 01:17:31,110
+There's a lot of evolution
+throughout the entire process.
+
+1643
+01:17:31,110 --> 01:17:34,500
+And like companies can
+submit emoji proposals too.
+
+1644
+01:17:34,500 --> 01:17:36,190
+So Google actually worked on this one.
+
+1645
+01:17:36,190 --> 01:17:36,930
+I love this one.
+
+1646
+01:17:36,930 --> 01:17:39,420
+So just to give you some
+context, as of 2015,
+
+1647
+01:17:39,420 --> 01:17:42,810
+there are many ways you could
+be or have an occupation
+
+1648
+01:17:42,810 --> 01:17:45,930
+as a male on the emoji keyboard.
+
+1649
+01:17:45,930 --> 01:17:49,328
+Like for example, you
+could be a police officer.
+
+1650
+01:17:49,328 --> 01:17:50,370
+You could be a detective.
+
+1651
+01:17:50,370 --> 01:17:52,650
+You could be Buckingham Palace guard.
+
+1652
+01:17:52,650 --> 01:17:54,180
+You could even be Santa Claus.
+
+1653
+01:17:54,180 --> 01:17:56,250
+Like these are so many
+jobs that you could have.
+
+1654
+01:17:56,250 --> 01:17:58,230
+But if you were a
+woman as of 2015, there
+
+1655
+01:17:58,230 --> 01:17:59,970
+were four things that you could be.
+
+1656
+01:17:59,970 --> 01:18:00,970
+You could be a princess.
+
+1657
+01:18:00,970 --> 01:18:02,280
+You could be a bride.
+
+1658
+01:18:02,280 --> 01:18:05,070
+You could be a dancer, or
+you could be a Playboy bunny.
+
+1659
+01:18:05,070 --> 01:18:09,240
+These were the sum total of all
+the occupations that we could have.
+
+1660
+01:18:09,240 --> 01:18:12,450
+So there was sort of this
+movement at that time,
+
+1661
+01:18:12,450 --> 01:18:15,410
+there was like this video on
+YouTube that like went viral.
+
+1662
+01:18:15,410 --> 01:18:17,160
+There was like a New
+York Times op-ed that
+
+1663
+01:18:17,160 --> 01:18:19,118
+was like, where are the
+women with professions?
+
+1664
+01:18:19,118 --> 01:18:24,210
+So basically they came up with
+a set of emoji for professions.
+
+1665
+01:18:24,210 --> 01:18:27,700
+And what's nice is not did women have
+these professions, now men have them
+
+1666
+01:18:27,700 --> 01:18:28,200
+too.
+
+1667
+01:18:28,200 --> 01:18:32,310
+So of an Emojination emoji, these are
+some of the ones that we've worked on.
+
+1668
+01:18:32,310 --> 01:18:35,250
+I think about 130 of the
+emoji on your keyboard
+
+1669
+01:18:35,250 --> 01:18:39,180
+probably came through, touched
+our system in some way, including,
+
+1670
+01:18:39,180 --> 01:18:42,150
+I have to say microbe or virus.
+
+1671
+01:18:42,150 --> 01:18:45,390
+I think, I have the opinion
+that every emoji has its day.
+
+1672
+01:18:45,390 --> 01:18:47,305
+It might not be like today.
+
+1673
+01:18:47,305 --> 01:18:50,430
+It might not be next year, but I have
+to say, virus was not doing anything.
+
+1674
+01:18:50,430 --> 01:18:54,550
+Then came 2020, and that was like such
+a good moment for it, along with soap.
+
+1675
+01:18:54,550 --> 01:18:55,830
+We had also done soap.
+
+1676
+01:18:55,830 --> 01:19:00,300
+So among the other emoji
+that we have worked on
+
+1677
+01:19:00,300 --> 01:19:03,360
+are, sorry, mooncake, llama, teddy bear.
+
+1678
+01:19:03,360 --> 01:19:04,230
+There were no toys.
+
+1679
+01:19:04,230 --> 01:19:05,680
+I felt really sad for toys.
+
+1680
+01:19:05,680 --> 01:19:07,890
+We have giraffe.
+
+1681
+01:19:07,890 --> 01:19:08,760
+There was hut.
+
+1682
+01:19:08,760 --> 01:19:09,480
+Bubble tea.
+
+1683
+01:19:09,480 --> 01:19:11,850
+Bubble tea was very
+controversial, actually.
+
+1684
+01:19:11,850 --> 01:19:16,470
+I have to say, we try to slide it
+in originally with the takeout box
+
+1685
+01:19:16,470 --> 01:19:18,973
+and the dumplings and
+people were not having it.
+
+1686
+01:19:18,973 --> 01:19:19,890
+And I understand that.
+
+1687
+01:19:19,890 --> 01:19:21,180
+Because there's not a lot.
+
+1688
+01:19:21,180 --> 01:19:25,110
+Like compared to beer or wine,
+like bubble tea is not long,
+
+1689
+01:19:25,110 --> 01:19:27,540
+does not have a long
+history on this planet.
+
+1690
+01:19:27,540 --> 01:19:34,620
+But I will say that they submit it
+again, actually kind of originally
+
+1691
+01:19:34,620 --> 01:19:36,420
+proposing that it was
+not just bubble tea,
+
+1692
+01:19:36,420 --> 01:19:39,150
+but like a black ball and milk and tea.
+
+1693
+01:19:39,150 --> 01:19:40,200
+It was kind of cool.
+
+1694
+01:19:40,200 --> 01:19:43,230
+And I have to say there was
+definitely a generational divide
+
+1695
+01:19:43,230 --> 01:19:46,170
+between the Asian women who
+sit in that room and are
+
+1696
+01:19:46,170 --> 01:19:48,270
+like this absolutely is
+a thing that we consume
+
+1697
+01:19:48,270 --> 01:19:51,180
+like almost like every week
+of our life, and people
+
+1698
+01:19:51,180 --> 01:19:54,090
+who are a little bit older who are
+like, that looks like a parfait.
+
+1699
+01:19:54,090 --> 01:19:55,798
+How do you not know
+that's not a parfait?
+
+1700
+01:19:55,798 --> 01:19:58,230
+We're like, we absolutely
+know it is not a parfait.
+
+1701
+01:19:58,230 --> 01:19:59,910
+And so it got in, eventually.
+
+1702
+01:19:59,910 --> 01:20:01,230
+So it does sort of influence.
+
+1703
+01:20:01,230 --> 01:20:06,180
+It kind of shows who is in the
+room influences the decisions that
+
+1704
+01:20:06,180 --> 01:20:10,740
+get made or sometimes in the room,
+now sometimes more likely in the Zoom.
+
+1705
+01:20:10,740 --> 01:20:14,310
+I actually had to say Beaver emoji,
+if you see Beaver emoji, that's
+
+1706
+01:20:14,310 --> 01:20:15,870
+one of the ones I'm most proud of.
+
+1707
+01:20:15,870 --> 01:20:18,240
+So that is actually
+co-authored by a professor
+
+1708
+01:20:18,240 --> 01:20:23,760
+here at Harvard who is both lesbian
+and was married to a woman from Canada.
+
+1709
+01:20:23,760 --> 01:20:27,570
+So it was very important to her
+to get the Beaver emoji passed.
+
+1710
+01:20:27,570 --> 01:20:31,950
+And she promised me it would always
+be the first line of her bio.
+
+1711
+01:20:31,950 --> 01:20:34,470
+And indeed, if you go
+to her Twitter handle.
+
+1712
+01:20:34,470 --> 01:20:38,760
+It's like Joan Donovan, creator
+of the Beaver emoji, comma,
+
+1713
+01:20:38,760 --> 01:20:42,890
+is Head of Research at the Shorenstein
+Center at the Harvard Kennedy School.
+
+1714
+01:20:42,890 --> 01:20:45,070
+It's pretty impressive.
+
+1715
+01:20:45,070 --> 01:20:46,290
+And then we did greens.
+
+1716
+01:20:46,290 --> 01:20:49,487
+Actually greens was really
+interesting because people,
+
+1717
+01:20:49,487 --> 01:20:51,570
+this was also like a
+generational, cultural thing.
+
+1718
+01:20:51,570 --> 01:20:53,280
+People were like, why do we need greens?
+
+1719
+01:20:53,280 --> 01:20:54,060
+We have salad.
+
+1720
+01:20:54,060 --> 01:20:55,828
+And I was like, we're Chinese.
+
+1721
+01:20:55,828 --> 01:20:58,620
+We don't eat raw greens because
+like you don't know where it's been
+
+1722
+01:20:58,620 --> 01:20:59,460
+or if it's clean.
+
+1723
+01:20:59,460 --> 01:21:02,310
+So we cook our greens so salad
+is not something that we have.
+
+1724
+01:21:02,310 --> 01:21:06,233
+So eventually I got my greens
+and so that was kind of fun.
+
+1725
+01:21:06,233 --> 01:21:09,150
+And then so these were some of the
+people who sort of have contributed
+
+1726
+01:21:09,150 --> 01:21:12,720
+to our little Emojination things,
+including a number of Native Americans
+
+1727
+01:21:12,720 --> 01:21:13,650
+who help get feather.
+
+1728
+01:21:13,650 --> 01:21:15,000
+So why do I care?
+
+1729
+01:21:15,000 --> 01:21:16,800
+So part of it is because I'm Chinese.
+
+1730
+01:21:16,800 --> 01:21:19,133
+I grew up speaking Chinese
+and English at the same time.
+
+1731
+01:21:19,133 --> 01:21:22,800
+And it's really interesting to see
+like Chinese and English characters
+
+1732
+01:21:22,800 --> 01:21:25,020
+in terms of emoji and
+Chinese together, right.
+
+1733
+01:21:25,020 --> 01:21:26,312
+So this is fire.
+
+1734
+01:21:26,312 --> 01:21:28,770
+You have fire characters and
+now you have the emoji things.
+
+1735
+01:21:28,770 --> 01:21:32,370
+And it kind of shows that there is
+a longevity in the human experience
+
+1736
+01:21:32,370 --> 01:21:35,670
+of something that was designed for
+4,000 years ago has the same visual cues
+
+1737
+01:21:35,670 --> 01:21:37,350
+in the human experiences as now.
+
+1738
+01:21:37,350 --> 01:21:42,330
+So mouth, tree, moon, sun.
+
+1739
+01:21:42,330 --> 01:21:45,250
+They can mix and match
+them, which is super fun.
+
+1740
+01:21:45,250 --> 01:21:49,590
+So two trees kind of make
+a forest, oops, sorry.
+
+1741
+01:21:49,590 --> 01:21:50,235
+Oh well.
+
+1742
+01:21:50,235 --> 01:21:59,220
+And then the moon and sun together
+means bright, which I like.
+
+1743
+01:21:59,220 --> 01:22:00,100
+I like this one.
+
+1744
+01:22:00,100 --> 01:22:02,610
+So if you stop and you
+think about this, so this
+
+1745
+01:22:02,610 --> 01:22:07,950
+is basically a pig under a roof.
+
+1746
+01:22:07,950 --> 01:22:09,930
+And what does that mean?
+
+1747
+01:22:09,930 --> 01:22:11,810
+It does not mean farm
+as you might think.
+
+1748
+01:22:11,810 --> 01:22:14,460
+It actually means home or family.
+
+1749
+01:22:14,460 --> 01:22:18,410
+So in the Chinese kind of
+structure and outlook on the view,
+
+1750
+01:22:18,410 --> 01:22:22,370
+it's like where you keep your pigs
+is actually where your home is
+
+1751
+01:22:22,370 --> 01:22:24,560
+and what your farm is.
+
+1752
+01:22:24,560 --> 01:22:27,720
+So it gets kind of weird
+in all kinds of ways.
+
+1753
+01:22:27,720 --> 01:22:32,750
+So one of my favorite radicals,
+so this character means woman, me.
+
+1754
+01:22:32,750 --> 01:22:38,830
+And as I was learning Chinese, you
+kind of notice like how it shows up.
+
+1755
+01:22:38,830 --> 01:22:44,310
+So this is a woman underneath a roof
+and you're like oh it means mom or wife
+
+1756
+01:22:44,310 --> 01:22:47,760
+or whatever like home.
+
+1757
+01:22:47,760 --> 01:22:48,540
+It does not.
+
+1758
+01:22:48,540 --> 01:22:54,840
+It means peace, because things are
+at home when the woman is or things
+
+1759
+01:22:54,840 --> 01:22:58,330
+are at peace when the woman
+is at home underneath a roof,
+
+1760
+01:22:58,330 --> 01:23:00,210
+which I always thought
+was little bit odd.
+
+1761
+01:23:00,210 --> 01:23:04,900
+Then there is also woman plus child.
+
+1762
+01:23:04,900 --> 01:23:07,503
+So you're like oh, and actually
+specifically boy child.
+
+1763
+01:23:07,503 --> 01:23:09,420
+The connotation there
+is a little bit unclear.
+
+1764
+01:23:09,420 --> 01:23:13,710
+So you're like a woman plus
+child, family, mom, whatever.
+
+1765
+01:23:13,710 --> 01:23:14,400
+It is not.
+
+1766
+01:23:14,400 --> 01:23:15,180
+It means good.
+
+1767
+01:23:15,180 --> 01:23:19,720
+So the standard for goodness in ancient
+China was a woman who had a male child.
+
+1768
+01:23:19,720 --> 01:23:23,850
+So that kind of just like
+kind of irked me growing up.
+
+1769
+01:23:23,850 --> 01:23:29,400
+And then three women together
+means evil which is very Macbeth.
+
+1770
+01:23:29,400 --> 01:23:32,280
+This character means greed.
+
+1771
+01:23:32,280 --> 01:23:34,620
+This character means slave.
+
+1772
+01:23:34,620 --> 01:23:37,680
+This marriage, let's see I
+think this one is jealousy
+
+1773
+01:23:37,680 --> 01:23:41,100
+and this means adultery or betrayal.
+
+1774
+01:23:41,100 --> 01:23:44,370
+So like definitely not
+loving the way women
+
+1775
+01:23:44,370 --> 01:23:47,490
+were portrayed on the emoji keyboard.
+
+1776
+01:23:47,490 --> 01:23:49,860
+So in case you're
+wondering, we just came out
+
+1777
+01:23:49,860 --> 01:23:54,030
+with a kids book called "Hanmoji" that
+kind of compares emoji and Chinese.
+
+1778
+01:23:54,030 --> 01:23:56,610
+And I think they sent
+a whole bunch of books
+
+1779
+01:23:56,610 --> 01:24:01,620
+so that you guys can do some kind
+of contests like later on with CS50.
+
+1780
+01:24:01,620 --> 01:24:04,530
+So but the mixing and matching
+is really interesting.
+
+1781
+01:24:04,530 --> 01:24:09,240
+For example, the skin tones are
+actually the same yellow character
+
+1782
+01:24:09,240 --> 01:24:11,410
+plus a layer of skin
+tone on top of that.
+
+1783
+01:24:11,410 --> 01:24:13,620
+So I kind of took my
+lessons from Chinese
+
+1784
+01:24:13,620 --> 01:24:15,847
+in terms of seeing how
+things can combine.
+
+1785
+01:24:15,847 --> 01:24:18,430
+So there's something that you
+should know about, which is ZWJ.
+
+1786
+01:24:18,430 --> 01:24:20,610
+This is also an invisible
+emoji character.
+
+1787
+01:24:20,610 --> 01:24:22,440
+It stands for zero with joiner.
+
+1788
+01:24:22,440 --> 01:24:24,720
+And it was actually
+originally created for I
+
+1789
+01:24:24,720 --> 01:24:28,950
+think Arabic where you would
+basically kind of force something
+
+1790
+01:24:28,950 --> 01:24:32,040
+to have be in the beginning of
+a word or an end of the word
+
+1791
+01:24:32,040 --> 01:24:34,710
+by kind of having this
+invisible character.
+
+1792
+01:24:34,710 --> 01:24:39,900
+So the rainbow flag for example is
+actually a rainbow plus the white flag.
+
+1793
+01:24:39,900 --> 01:24:43,290
+And we could have all
+kinds of fun combinations.
+
+1794
+01:24:43,290 --> 01:24:45,750
+If you look at polar
+bear, it actually is,
+
+1795
+01:24:45,750 --> 01:24:47,940
+if you have an older device
+where it breaks apart,
+
+1796
+01:24:47,940 --> 01:24:51,000
+it is bear plus snow
+which is really cute.
+
+1797
+01:24:51,000 --> 01:24:53,880
+It was originally, I
+had bear plus white,
+
+1798
+01:24:53,880 --> 01:24:57,550
+and then we decided that bear
+plus snow made a lot more sense.
+
+1799
+01:24:57,550 --> 01:25:01,527
+So another one, this is
+new, I think you guys
+
+1800
+01:25:01,527 --> 01:25:04,360
+should have it if you've updated
+your phones in the last year or so.
+
+1801
+01:25:04,360 --> 01:25:08,862
+So mending heart is heart plus band-aid.
+
+1802
+01:25:08,862 --> 01:25:09,570
+What is this one?
+
+1803
+01:25:09,570 --> 01:25:11,610
+Oh, this is interesting.
+
+1804
+01:25:11,610 --> 01:25:14,278
+There was a breastfeeding
+woman for a long time
+
+1805
+01:25:14,278 --> 01:25:16,320
+and people felt like there
+was not gender parity.
+
+1806
+01:25:16,320 --> 01:25:19,320
+It was actually really interesting,
+all the people who wrote in and were
+
+1807
+01:25:19,320 --> 01:25:22,290
+like I want to be a dad showing
+that I'm holding my baby.
+
+1808
+01:25:22,290 --> 01:25:24,270
+Why is there only a
+woman holding my baby?
+
+1809
+01:25:24,270 --> 01:25:26,770
+So we kind of created a whole set.
+
+1810
+01:25:26,770 --> 01:25:29,800
+So this is man plus bottle.
+
+1811
+01:25:29,800 --> 01:25:31,030
+Ta-dah.
+
+1812
+01:25:31,030 --> 01:25:32,940
+And so this is an-- all
+of these occupations
+
+1813
+01:25:32,940 --> 01:25:37,110
+are actually oftentimes a
+woman plus, like the fried egg
+
+1814
+01:25:37,110 --> 01:25:41,160
+or like a school or a tractor and
+that's how you got the occupations.
+
+1815
+01:25:41,160 --> 01:25:47,260
+If you send an emoji over into an older
+system, sometimes it'll break apart.
+
+1816
+01:25:47,260 --> 01:25:50,790
+So one of my kind of favorite kind
+of contributions in this world
+
+1817
+01:25:50,790 --> 01:25:54,300
+is interracial couple emoji
+which we did with Tinder
+
+1818
+01:25:54,300 --> 01:25:58,440
+which is super fun because then you
+could have different couples that
+
+1819
+01:25:58,440 --> 01:26:00,750
+are, and like so many [INAUDIBLE].
+
+1820
+01:26:00,750 --> 01:26:04,300
+This is a fun, if you guys ever have
+to do a [? combinatoric ?] test.
+
+1821
+01:26:04,300 --> 01:26:06,390
+This is really fun because
+you have to genders
+
+1822
+01:26:06,390 --> 01:26:10,200
+plus a third like neutral
+gender plus two people
+
+1823
+01:26:10,200 --> 01:26:15,240
+plus five skin tones plus yellow, like
+how many emoji couples can you come up
+
+1824
+01:26:15,240 --> 01:26:16,740
+with when you introduce this factor.
+
+1825
+01:26:16,740 --> 01:26:20,727
+So this is-- and underneath
+it, it's just a ZWJ sequence,
+
+1826
+01:26:20,727 --> 01:26:23,560
+it's like two people standing
+together that are like glued together.
+
+1827
+01:26:23,560 --> 01:26:27,150
+Now this actually gets interesting
+from a CS50 perspective because
+
+1828
+01:26:27,150 --> 01:26:31,890
+in many cases, even though you only
+see one character underneath the hood
+
+1829
+01:26:31,890 --> 01:26:33,750
+depending on how your
+system works, they're
+
+1830
+01:26:33,750 --> 01:26:36,360
+counting each one of these
+as an individual character.
+
+1831
+01:26:36,360 --> 01:26:39,360
+So your string length actually
+might be five instead of one.
+
+1832
+01:26:39,360 --> 01:26:41,820
+And this kind of became a
+problem with things like Twitter
+
+1833
+01:26:41,820 --> 01:26:44,160
+where things had a hard skin length.
+
+1834
+01:26:44,160 --> 01:26:47,130
+So gender inclusivity is
+actually one of the things
+
+1835
+01:26:47,130 --> 01:26:51,180
+that we've been dealing most
+with in the last couple of years.
+
+1836
+01:26:51,180 --> 01:26:53,670
+So it's kind of interesting
+if you think about both
+
+1837
+01:26:53,670 --> 01:26:55,650
+what a pictorial language
+looks like versus
+
+1838
+01:26:55,650 --> 01:26:58,410
+the abstractness of a spoken language.
+
+1839
+01:26:58,410 --> 01:27:02,250
+So because we had boy and we had girl.
+
+1840
+01:27:02,250 --> 01:27:04,650
+But there was no way
+to say generic child.
+
+1841
+01:27:04,650 --> 01:27:07,780
+Like if you were, you want to say
+child, you had to pick a boy or a girl,
+
+1842
+01:27:07,780 --> 01:27:11,610
+but not a way to say
+just some little person.
+
+1843
+01:27:11,610 --> 01:27:13,890
+And that's really key
+because in English at least
+
+1844
+01:27:13,890 --> 01:27:18,040
+there is no gender implied by child.
+
+1845
+01:27:18,040 --> 01:27:20,100
+So how do we mimic that?
+
+1846
+01:27:20,100 --> 01:27:24,270
+And also is key for something like
+doctor, right, doctor and teacher.
+
+1847
+01:27:24,270 --> 01:27:27,480
+Those don't have gender
+implied, but when
+
+1848
+01:27:27,480 --> 01:27:29,760
+we have them on the
+emoji keyboard, you'd
+
+1849
+01:27:29,760 --> 01:27:35,150
+pick a male teacher or a
+female doctor or whatnot.
+
+1850
+01:27:35,150 --> 01:27:40,240
+So there was actually a guy at Adobe
+who considers himself non-gender binary
+
+1851
+01:27:40,240 --> 01:27:44,200
+also the man behind the orange heart.
+
+1852
+01:27:44,200 --> 01:27:51,650
+He fought and got basically the first
+three non-gender, the non-gender binary
+
+1853
+01:27:51,650 --> 01:27:52,150
+emoji.
+
+1854
+01:27:52,150 --> 01:27:55,430
+So child, adult, and the older adults.
+
+1855
+01:27:55,430 --> 01:27:56,770
+So those are creative.
+
+1856
+01:27:56,770 --> 01:27:58,768
+And then we started
+having to propagate them
+
+1857
+01:27:58,768 --> 01:28:00,310
+through actually all the occupations.
+
+1858
+01:28:00,310 --> 01:28:03,530
+So these are the gender neutral
+versions of many of those.
+
+1859
+01:28:03,530 --> 01:28:06,160
+But then we got into
+this whole thing where
+
+1860
+01:28:06,160 --> 01:28:09,520
+every emoji that had a gender
+originally had to be mirrored.
+
+1861
+01:28:09,520 --> 01:28:12,310
+So originally we had bearded
+man, and then we're like, OK,
+
+1862
+01:28:12,310 --> 01:28:14,260
+well we actually have
+to get bearded woman.
+
+1863
+01:28:14,260 --> 01:28:15,520
+So that is on your keyboard.
+
+1864
+01:28:15,520 --> 01:28:16,990
+There is pregnant woman.
+
+1865
+01:28:16,990 --> 01:28:21,130
+There is now pregnant
+man, which is interesting.
+
+1866
+01:28:21,130 --> 01:28:24,220
+There is woman in a bridal gown.
+
+1867
+01:28:24,220 --> 01:28:26,360
+There is now man in a bridal gown.
+
+1868
+01:28:26,360 --> 01:28:28,360
+And then there were ones
+that actually had to be
+
+1869
+01:28:28,360 --> 01:28:31,120
+created that were neither man or woman.
+
+1870
+01:28:31,120 --> 01:28:32,398
+So this is a merperson.
+
+1871
+01:28:32,398 --> 01:28:34,940
+So there was merman, there's
+mermaid and there was merperson.
+
+1872
+01:28:34,940 --> 01:28:36,773
+It was really interesting
+to figure out, how
+
+1873
+01:28:36,773 --> 01:28:38,443
+do you draw a gender neutral merperson.
+
+1874
+01:28:38,443 --> 01:28:40,360
+Like a bunch of them in
+the beginning actually
+
+1875
+01:28:40,360 --> 01:28:43,300
+had the arms crossed around the chest.
+
+1876
+01:28:43,300 --> 01:28:46,510
+Monarch, so there was prince and
+princess, and now there is monarch.
+
+1877
+01:28:46,510 --> 01:28:49,420
+And one of my favorite actually
+is there was Santa Claus
+
+1878
+01:28:49,420 --> 01:28:51,530
+and there was Mrs. Claus
+and now there's Mx.
+
+1879
+01:28:51,530 --> 01:28:52,030
+Claus.
+
+1880
+01:28:52,030 --> 01:28:54,490
+Like the name of this
+character literally in Unicode
+
+1881
+01:28:54,490 --> 01:28:57,010
+is Mx Claus so I feel like it's
+sort of like a very official
+
+1882
+01:28:57,010 --> 01:29:01,720
+enshrining of gender
+non-binaryness in like the world.
+
+1883
+01:29:01,720 --> 01:29:02,710
+Not everyone loved it.
+
+1884
+01:29:02,710 --> 01:29:05,740
+New York Post did not
+love this, like we're
+
+1885
+01:29:05,740 --> 01:29:08,650
+cutting of into like emoji woke wars.
+
+1886
+01:29:08,650 --> 01:29:10,458
+So some emoji stats for you.
+
+1887
+01:29:10,458 --> 01:29:11,500
+This is very fascinating.
+
+1888
+01:29:11,500 --> 01:29:13,960
+This is sort of like the
+general distribution.
+
+1889
+01:29:13,960 --> 01:29:16,480
+By far, the single
+emoji that you use more
+
+1890
+01:29:16,480 --> 01:29:19,330
+than anything else is the
+face with tears of joy,
+
+1891
+01:29:19,330 --> 01:29:22,840
+about 10% of all emoji
+sent is that one character.
+
+1892
+01:29:22,840 --> 01:29:26,600
+And the number two is heart, red
+heart, and then it kind of goes down.
+
+1893
+01:29:26,600 --> 01:29:29,110
+So there's a frequency of emoji use.
+
+1894
+01:29:29,110 --> 01:29:32,780
+This is sort of done
+by order of magnitude.
+
+1895
+01:29:32,780 --> 01:29:35,820
+So 1 is 1/2 of 2.
+
+1896
+01:29:35,820 --> 01:29:37,760
+2 is 1/2 of 1 so duh, duh.
+
+1897
+01:29:37,760 --> 01:29:38,760
+It's really interesting.
+
+1898
+01:29:38,760 --> 01:29:42,180
+It's a very, very steep drop off
+after the first couple in case
+
+1899
+01:29:42,180 --> 01:29:46,470
+you ever want to go on to the
+emoji kind of Unicode website,
+
+1900
+01:29:46,470 --> 01:29:49,180
+you too can see all
+the frequency things.
+
+1901
+01:29:49,180 --> 01:29:50,560
+So I think it's really funny.
+
+1902
+01:29:50,560 --> 01:29:52,740
+So basically if it's
+green going this way,
+
+1903
+01:29:52,740 --> 01:29:56,160
+it increased in usage
+between 2019 and 2021.
+
+1904
+01:29:56,160 --> 01:29:57,780
+And it's red going this way, it drop.
+
+1905
+01:29:57,780 --> 01:30:01,500
+And so pleading face, which is a
+relatively new emoji, just sort of
+
+1906
+01:30:01,500 --> 01:30:04,770
+shot up on the charts.
+
+1907
+01:30:04,770 --> 01:30:08,340
+And whereas actually like
+smiley face with heart eyes
+
+1908
+01:30:08,340 --> 01:30:12,100
+actually kind of slipt
+which is interesting.
+
+1909
+01:30:12,100 --> 01:30:15,510
+So we just closed our emoji
+proposal around for 2022.
+
+1910
+01:30:15,510 --> 01:30:16,830
+These were the breakdowns.
+
+1911
+01:30:16,830 --> 01:30:20,310
+People love submitting smileys and
+food and beverages, animals and nature.
+
+1912
+01:30:20,310 --> 01:30:23,638
+I mean, these are very googly colors.
+
+1913
+01:30:23,638 --> 01:30:24,930
+So what is the future of emoji?
+
+1914
+01:30:24,930 --> 01:30:28,650
+I will tell you because we just
+had a meeting two weeks ago
+
+1915
+01:30:28,650 --> 01:30:30,480
+so I can now publicly talk about it.
+
+1916
+01:30:30,480 --> 01:30:32,700
+So historically, there
+was this whole idea
+
+1917
+01:30:32,700 --> 01:30:36,990
+like Unicode doesn't want to be
+in the world of like encoding
+
+1918
+01:30:36,990 --> 01:30:38,988
+glyphs for like devices everywhere.
+
+1919
+01:30:38,988 --> 01:30:41,280
+There was very controversial
+when I started doing that,
+
+1920
+01:30:41,280 --> 01:30:44,730
+because mostly what Unicode used to
+do was you take an existing language.
+
+1921
+01:30:44,730 --> 01:30:48,450
+It could be done, you know and then
+it would just take it and digitize.
+
+1922
+01:30:48,450 --> 01:30:51,750
+It took languages that existed
+and just digitized them.
+
+1923
+01:30:51,750 --> 01:30:55,950
+And then when it kind of wandered
+into emoji world, suddenly
+
+1924
+01:30:55,950 --> 01:31:01,840
+it's like deciding what deserves to be
+like an emoji decides to be digitized.
+
+1925
+01:31:01,840 --> 01:31:08,040
+So trying to get out of it and they have
+proposals over time or it's like, oh,
+
+1926
+01:31:08,040 --> 01:31:12,240
+maybe we should like come up with a way
+to send pictures back and forth where
+
+1927
+01:31:12,240 --> 01:31:15,960
+you it's a fixed
+picture and you like use
+
+1928
+01:31:15,960 --> 01:31:20,460
+a hash so that we would look
+at the picture and then go
+
+1929
+01:31:20,460 --> 01:31:21,870
+do a lookup somewhere.
+
+1930
+01:31:21,870 --> 01:31:23,250
+That did not go over well.
+
+1931
+01:31:23,250 --> 01:31:25,950
+Then there was actually a really
+interesting proposal I kind
+
+1932
+01:31:25,950 --> 01:31:29,970
+of like, didn't go over well, which is
+using something called a queue ID which
+
+1933
+01:31:29,970 --> 01:31:31,990
+is in the Wikipedia world.
+
+1934
+01:31:31,990 --> 01:31:38,100
+So in Wikipedia world, items all have
+numbers across the different language
+
+1935
+01:31:38,100 --> 01:31:38,610
+Wikipedia.
+
+1936
+01:31:38,610 --> 01:31:42,790
+So Obama, human, Earth,
+they will have an ID number,
+
+1937
+01:31:42,790 --> 01:31:46,890
+so that the page in English and the
+page in German the page in Chinese
+
+1938
+01:31:46,890 --> 01:31:48,948
+all know that they're
+pointing to the same thing.
+
+1939
+01:31:48,948 --> 01:31:51,240
+So the question, so one idea
+came up, like why don't we
+
+1940
+01:31:51,240 --> 01:31:56,280
+use the numbering system so we can use
+like Eiffel tower and see the number
+
+1941
+01:31:56,280 --> 01:31:59,370
+and then like, oh, people know like
+oh you're, trying to say Eiffel tower.
+
+1942
+01:31:59,370 --> 01:32:00,670
+That did not go over well.
+
+1943
+01:32:00,670 --> 01:32:04,390
+So both of those proposals
+seem dead as of yet.
+
+1944
+01:32:04,390 --> 01:32:07,360
+And it's too bad because
+you'll see what's happening.
+
+1945
+01:32:07,360 --> 01:32:08,610
+So what's coming in 2022?
+
+1946
+01:32:08,610 --> 01:32:11,362
+So these are the emoji that
+I actually sort of thought
+
+1947
+01:32:11,362 --> 01:32:14,070
+they would be on your phones by
+now because we're in mid-November
+
+1948
+01:32:14,070 --> 01:32:15,700
+and they usually update early November.
+
+1949
+01:32:15,700 --> 01:32:16,710
+So three more hearts.
+
+1950
+01:32:16,710 --> 01:32:19,230
+People love hearts.
+
+1951
+01:32:19,230 --> 01:32:23,430
+Wing, blackbird, goose, birds
+also, purple flowers, jellyfish,
+
+1952
+01:32:23,430 --> 01:32:26,130
+moose face donkey, donkey
+was a bit late for the kind
+
+1953
+01:32:26,130 --> 01:32:33,520
+of elections, ginger, peapod, wireless,
+khanda, shaking face, folding hand
+
+1954
+01:32:33,520 --> 01:32:34,020
+fans.
+
+1955
+01:32:34,020 --> 01:32:36,645
+That one was interesting because
+when people first proposed it,
+
+1956
+01:32:36,645 --> 01:32:40,585
+they proposed it as like an
+electric fan and that didn't--
+
+1957
+01:32:40,585 --> 01:32:42,960
+who knows what electric fans
+will look like in 100 years?
+
+1958
+01:32:42,960 --> 01:32:45,168
+Because the thing is, once
+an emoji, always an emoji.
+
+1959
+01:32:45,168 --> 01:32:46,170
+They never retire.
+
+1960
+01:32:46,170 --> 01:32:49,620
+So they're always looking for things
+that have a long visual longevity,
+
+1961
+01:32:49,620 --> 01:32:52,390
+floppy disk, do not actually do that.
+
+1962
+01:32:52,390 --> 01:32:54,840
+So there's always like, we
+don't want another floppy disk.
+
+1963
+01:32:54,840 --> 01:32:56,310
+And then hair pick is interesting.
+
+1964
+01:32:56,310 --> 01:33:02,683
+So there was a whole debate about
+how to convey like Afro African hair,
+
+1965
+01:33:02,683 --> 01:33:05,100
+like the curly hair that they
+introduced a couple of years
+
+1966
+01:33:05,100 --> 01:33:06,490
+ago is supposed to do that.
+
+1967
+01:33:06,490 --> 01:33:09,898
+And most of the vendors actually have it
+in a sort of Afro way except for Apple.
+
+1968
+01:33:09,898 --> 01:33:11,190
+So there's a lot of complaints.
+
+1969
+01:33:11,190 --> 01:33:14,010
+But hair pick was sort
+of an interesting way.
+
+1970
+01:33:14,010 --> 01:33:17,850
+It means both comb but also has sort
+of an interesting historic connotation,
+
+1971
+01:33:17,850 --> 01:33:20,520
+and it's been around
+for about 2,00 years.
+
+1972
+01:33:20,520 --> 01:33:22,890
+A couple of music things,
+maracas and flute.
+
+1973
+01:33:22,890 --> 01:33:27,440
+Beyond 2022, one of the things that's
+going to die, oops, can I go back?
+
+1974
+01:33:27,440 --> 01:33:28,220
+No, I can't.
+
+1975
+01:33:28,220 --> 01:33:33,530
+Oh well, we're going to
+retire the family emoji.
+
+1976
+01:33:33,530 --> 01:33:34,790
+They didn't go over so well.
+
+1977
+01:33:34,790 --> 01:33:36,110
+There were so many of them.
+
+1978
+01:33:36,110 --> 01:33:41,540
+It's combinatorically if you had all
+the everything in all the races all,
+
+1979
+01:33:41,540 --> 01:33:43,370
+the races, all because
+you wanted to have
+
+1980
+01:33:43,370 --> 01:33:45,182
+skin tones, because
+you didn't want imply
+
+1981
+01:33:45,182 --> 01:33:46,640
+that families can only be one race.
+
+1982
+01:33:46,640 --> 01:33:48,470
+It was such a ordeal.
+
+1983
+01:33:48,470 --> 01:33:52,070
+Essentially, we're all like, no one
+uses them, and there are so many.
+
+1984
+01:33:52,070 --> 01:33:54,650
+And it's like the fonts
+like in terms of the load
+
+1985
+01:33:54,650 --> 01:33:57,890
+is like too large so they're just going
+to make them all into like basically
+
+1986
+01:33:57,890 --> 01:34:01,100
+little like bathroom symbol type folks.
+
+1987
+01:34:01,100 --> 01:34:03,080
+So I think that is,
+those will disappear.
+
+1988
+01:34:03,080 --> 01:34:06,342
+What's actually really interesting about
+the family emoji is they had gay fam.
+
+1989
+01:34:06,342 --> 01:34:09,050
+When they introduced the family
+emoji, they had gay family emoji,
+
+1990
+01:34:09,050 --> 01:34:11,510
+and the Russian government went berserk.
+
+1991
+01:34:11,510 --> 01:34:14,510
+And actually you can Google this in
+2015, you'll see a bunch of articles
+
+1992
+01:34:14,510 --> 01:34:18,372
+about the Russian government considering
+it homosexual propaganda to use.
+
+1993
+01:34:18,372 --> 01:34:20,330
+And there was a big debate
+about whether or not
+
+1994
+01:34:20,330 --> 01:34:21,620
+they were going to ban Apple devices.
+
+1995
+01:34:21,620 --> 01:34:24,203
+And so you can see a lot of the
+media coverage from that time.
+
+1996
+01:34:24,203 --> 01:34:28,820
+But I thought it was really interesting
+how upset a national government can get
+
+1997
+01:34:28,820 --> 01:34:32,300
+about little pictures on your phone.
+
+1998
+01:34:32,300 --> 01:34:36,290
+Another thing that's on the
+agenda as of a couple of weeks ago
+
+1999
+01:34:36,290 --> 01:34:39,200
+is directionality in terms of emoji.
+
+2000
+01:34:39,200 --> 01:34:42,000
+So as you know, most emoji kind
+of just flip one way or another.
+
+2001
+01:34:42,000 --> 01:34:45,200
+And the reason why it matters
+is because not all languages
+
+2002
+01:34:45,200 --> 01:34:46,560
+run in the same direction.
+
+2003
+01:34:46,560 --> 01:34:48,170
+So for example, Arabic.
+
+2004
+01:34:48,170 --> 01:34:53,520
+So we're used to left to right, but
+a lot of languages go right to left.
+
+2005
+01:34:53,520 --> 01:34:56,240
+So and kind of changes
+the meaning of emoji.
+
+2006
+01:34:56,240 --> 01:34:58,910
+For example, right to
+left, I send this a lot
+
+2007
+01:34:58,910 --> 01:35:03,800
+to my friends when I'm going flying
+from the Bay Area to New York.
+
+2008
+01:35:03,800 --> 01:35:07,980
+If you do it from left to right,
+however, that is what it looks like.
+
+2009
+01:35:07,980 --> 01:35:10,940
+So it looks like you're in a
+Bay Area but the plane is still
+
+2010
+01:35:10,940 --> 01:35:13,980
+going that kind of up and to the right.
+
+2011
+01:35:13,980 --> 01:35:17,360
+And then now it looks like you're
+going from New York to the Bay Area.
+
+2012
+01:35:17,360 --> 01:35:21,290
+The other place is like, oh, it's a
+girl, and she's running really fast.
+
+2013
+01:35:21,290 --> 01:35:22,250
+Right.
+
+2014
+01:35:22,250 --> 01:35:26,255
+That is right to left in our
+world, wait left to right, sorry.
+
+2015
+01:35:26,255 --> 01:35:28,130
+Sorry, that was supposed
+to be left to right.
+
+2016
+01:35:28,130 --> 01:35:32,400
+And in here it would be she's like
+behind like pollution or something
+
+2017
+01:35:32,400 --> 01:35:32,900
+like that.
+
+2018
+01:35:32,900 --> 01:35:34,100
+So sorry about--
+
+2019
+01:35:34,100 --> 01:35:36,170
+So an example, this is
+actually in the proposal.
+
+2020
+01:35:36,170 --> 01:35:38,690
+Like in one case, if it's
+left or right, you're
+
+2021
+01:35:38,690 --> 01:35:40,340
+running away from a line of cars.
+
+2022
+01:35:40,340 --> 01:35:43,820
+And the other one, it's a warning
+to not run behind car fumes.
+
+2023
+01:35:43,820 --> 01:35:48,860
+So they are trying to figure out, how
+do we mirror a bunch of the emoji.
+
+2024
+01:35:48,860 --> 01:35:53,680
+But the main thing that I think sort of,
+I don't know when it's going to happen,
+
+2025
+01:35:53,680 --> 01:35:55,430
+I'm really hopeful
+it's going to happen is
+
+2026
+01:35:55,430 --> 01:35:59,090
+trying to come up with a system that
+supports little stickers in line that
+
+2027
+01:35:59,090 --> 01:36:01,610
+don't need Unicode.
+
+2028
+01:36:01,610 --> 01:36:06,920
+So this is like Slack or on Twitch,
+you can embed little pictures in line,
+
+2029
+01:36:06,920 --> 01:36:10,768
+and all the vendors have to get
+together and agree to come up
+
+2030
+01:36:10,768 --> 01:36:12,060
+with a standard way to do that.
+
+2031
+01:36:12,060 --> 01:36:15,410
+They'd have not yet come up with that,
+but that is sort of one of the ways
+
+2032
+01:36:15,410 --> 01:36:18,230
+that Unicode is like
+it wants to back away
+
+2033
+01:36:18,230 --> 01:36:20,810
+from actually being
+like a global regulator
+
+2034
+01:36:20,810 --> 01:36:22,910
+for like little colorful glyphs.
+
+2035
+01:36:22,910 --> 01:36:27,560
+And so if you ever need to
+reach me in my emoji world,
+
+2036
+01:36:27,560 --> 01:36:30,560
+you can find me jenny@emojination.org.
+
+2037
+01:36:30,560 --> 01:36:35,930
+There will be-- it will be actually
+a while I think before we see
+
+2038
+01:36:35,930 --> 01:36:38,057
+a next generation of emoji showing up.
+
+2039
+01:36:38,057 --> 01:36:40,640
+It used to be like every year,
+they would get new code points.
+
+2040
+01:36:40,640 --> 01:36:42,515
+It might be a little
+bit less than every year
+
+2041
+01:36:42,515 --> 01:36:47,180
+now as they work on things
+like directionality over time.
+
+2042
+01:36:47,180 --> 01:36:49,740
+If anyone has questions,
+you can ask questions.
+
+2043
+01:36:49,740 --> 01:36:50,930
+You can find me afterwards.
+
+2044
+01:36:50,930 --> 01:37:00,257
+I think I feel like there's supposed
+to be some hubbub right now about maybe
+
+2045
+01:37:00,257 --> 01:37:01,340
+microphones but maybe not.
+
+2046
+01:37:01,340 --> 01:37:02,460
+But maybe I'm just done.
+
+2047
+01:37:02,460 --> 01:37:06,200
+And if there are questions or
+if David is around, I'm happy.
+
+2048
+01:37:06,200 --> 01:37:09,200
+I'm happy to have to answer
+any questions that folks have.
+
+2049
+01:37:09,200 --> 01:37:10,668
+Yes?
+
+2050
+01:37:10,668 --> 01:37:11,210
+AUDIENCE: Hi.
+
+2051
+01:37:11,210 --> 01:37:12,160
+Yes.
+
+2052
+01:37:12,160 --> 01:37:15,604
+I was wondering what were your
+thoughts on The Emoji Movie.
+
+2053
+01:37:15,604 --> 01:37:16,104
+JENNIFER 8.
+
+2054
+01:37:16,104 --> 01:37:18,870
+LEE: So the question is, what are
+my thoughts on The Emoji Movie.
+
+2055
+01:37:18,870 --> 01:37:20,970
+You're talking about
+the Sony animated one?
+
+2056
+01:37:20,970 --> 01:37:22,320
+Yes.
+
+2057
+01:37:22,320 --> 01:37:27,867
+My thought on that is it is better
+than a 6% rating on Rotten Tomatoes
+
+2058
+01:37:27,867 --> 01:37:28,950
+would lead you to believe.
+
+2059
+01:37:28,950 --> 01:37:30,090
+So that's my one thought.
+
+2060
+01:37:30,090 --> 01:37:36,030
+And my next thought is that was a rush
+job from an animation perspective.
+
+2061
+01:37:36,030 --> 01:37:41,880
+That was about 18 months,
+whereas a typical animated movie
+
+2062
+01:37:41,880 --> 01:37:43,000
+takes four years.
+
+2063
+01:37:43,000 --> 01:37:45,960
+So in my spare time, I also
+produce movies and documentaries.
+
+2064
+01:37:45,960 --> 01:37:52,545
+So one thing that is key to know
+about movies and animated movies,
+
+2065
+01:37:52,545 --> 01:37:53,670
+and this is very important.
+
+2066
+01:37:53,670 --> 01:37:57,330
+They take a very long time,
+but you can always fix it,
+
+2067
+01:37:57,330 --> 01:37:59,430
+because you haven't shot anything.
+
+2068
+01:37:59,430 --> 01:38:02,917
+And a very good example of that is
+I assume you guys have seen Frozen.
+
+2069
+01:38:02,917 --> 01:38:06,000
+If you haven't seen-- you seem of the
+age that you would have seen Frozen.
+
+2070
+01:38:06,000 --> 01:38:10,080
+I do not understand how
+huge and a phenomenon or why
+
+2071
+01:38:10,080 --> 01:38:11,400
+was such a huge phenomenon.
+
+2072
+01:38:11,400 --> 01:38:18,480
+But they actually did an
+original cut of Frozen and it--
+
+2073
+01:38:18,480 --> 01:38:21,600
+So I don't know if you guys
+know the Snow Queen thing,
+
+2074
+01:38:21,600 --> 01:38:26,490
+but she's like super dark and not fun
+and kind of evil and not someone you
+
+2075
+01:38:26,490 --> 01:38:28,080
+want to get behind as a character.
+
+2076
+01:38:28,080 --> 01:38:31,930
+So they actually did sort of
+a rough cut of that of Frozen.
+
+2077
+01:38:31,930 --> 01:38:35,220
+And they came out of that
+with, it is just storyboarding.
+
+2078
+01:38:35,220 --> 01:38:36,870
+They're like, that is not good.
+
+2079
+01:38:36,870 --> 01:38:38,430
+And they killed it.
+
+2080
+01:38:38,430 --> 01:38:41,670
+So they were like, we
+can't go with this and then
+
+2081
+01:38:41,670 --> 01:38:45,880
+started from scratch more or
+less again, starting with a song.
+
+2082
+01:38:45,880 --> 01:38:48,180
+"Let it Go," which is
+actually written by a kid
+
+2083
+01:38:48,180 --> 01:38:52,410
+from my elementary school, Bobby
+Lopez, or co-written by Bobby Lopez.
+
+2084
+01:38:52,410 --> 01:38:54,440
+I also-- actually fun
+fact, I also went, I
+
+2085
+01:38:54,440 --> 01:38:57,332
+would take the school bus
+with a Lin-Manuel Miranda.
+
+2086
+01:38:57,332 --> 01:38:59,790
+So I was a fourth grader when
+he was like a kindergartener.
+
+2087
+01:38:59,790 --> 01:39:02,520
+So we had a very musical
+elementary school in New York City.
+
+2088
+01:39:02,520 --> 01:39:06,030
+But the thing is, they could fix
+it because they had enough time
+
+2089
+01:39:06,030 --> 01:39:08,490
+and have enough money,
+not like movies where
+
+2090
+01:39:08,490 --> 01:39:11,080
+you shoot humans, much harder to fix.
+
+2091
+01:39:11,080 --> 01:39:13,830
+You have the footage that you have,
+and you can do little pickups,
+
+2092
+01:39:13,830 --> 01:39:14,890
+but you can't fix it.
+
+2093
+01:39:14,890 --> 01:39:18,750
+So essentially what happened in
+that case, I think it's 18 months,
+
+2094
+01:39:18,750 --> 01:39:20,400
+and it could have gotten better.
+
+2095
+01:39:20,400 --> 01:39:23,310
+And a lot of the movies that you
+see with Pixar, like it's very--
+
+2096
+01:39:23,310 --> 01:39:26,820
+it's actually sort of emotionally
+similar to the movie called Inside Out.
+
+2097
+01:39:26,820 --> 01:39:28,800
+.
+
+2098
+01:39:28,800 --> 01:39:30,990
+They just had more time,
+and so it's better, so
+
+2099
+01:39:30,990 --> 01:39:35,700
+as opposed to 18 months which is not
+long enough to make an animated movie.
+
+2100
+01:39:35,700 --> 01:39:41,040
+But the other fun thing is, it was so
+weird because they sold sponsorships.
+
+2101
+01:39:41,040 --> 01:39:46,590
+It was like, oh my God, here
+comes the bots and the malware.
+
+2102
+01:39:46,590 --> 01:39:50,020
+Let's go into Dropbox
+and protect ourselves.
+
+2103
+01:39:50,020 --> 01:39:55,230
+And so I think that it got
+a lot of bad kind of vibes
+
+2104
+01:39:55,230 --> 01:39:57,340
+from the press for
+doing things like that.
+
+2105
+01:39:57,340 --> 01:40:00,070
+But from a kid's perspective, it's fine.
+
+2106
+01:40:00,070 --> 01:40:01,260
+I think if--
+
+2107
+01:40:01,260 --> 01:40:05,550
+I don't know that I would put it
+on my top 10 of animated pictures,
+
+2108
+01:40:05,550 --> 01:40:08,310
+but it's better than
+6% on Rotten Tomatoes.
+
+2109
+01:40:08,310 --> 01:40:11,340
+And then actually if you guys
+ever care, we have done--
+
+2110
+01:40:11,340 --> 01:40:15,210
+I did a documentary about
+emoji so and all the people
+
+2111
+01:40:15,210 --> 01:40:16,710
+that helped create emoji.
+
+2112
+01:40:16,710 --> 01:40:22,975
+And we did a CS50x movie night,
+I think during the pandemic?
+
+2113
+01:40:22,975 --> 01:40:24,100
+Was it during the pandemic?
+
+2114
+01:40:24,100 --> 01:40:25,440
+Everything is sort of
+like blurred together,
+
+2115
+01:40:25,440 --> 01:40:26,732
+but it was during the pandemic.
+
+2116
+01:40:26,732 --> 01:40:28,440
+Yeah.
+
+2117
+01:40:28,440 --> 01:40:29,910
+More questions?
+
+2118
+01:40:29,910 --> 01:40:30,750
+Yes?
+
+2119
+01:40:30,750 --> 01:40:31,716
+AUDIENCE: Hi.
+
+2120
+01:40:31,716 --> 01:40:36,510
+I wanted to know that you mentioned
+that one of the criteria for having
+
+2121
+01:40:36,510 --> 01:40:38,820
+an emoji accepted is that it's popular.
+
+2122
+01:40:38,820 --> 01:40:40,380
+How do determine whether--
+
+2123
+01:40:40,380 --> 01:40:40,880
+JENNIFER 8.
+
+2124
+01:40:40,880 --> 01:40:41,960
+LEE: Where there's demand, yeah.
+
+2125
+01:40:41,960 --> 01:40:43,346
+AUDIENCE: Whether there's demand.
+
+2126
+01:40:43,346 --> 01:40:44,270
+How do you determine demand?
+
+2127
+01:40:44,270 --> 01:40:45,200
+Is it based on whether
+or not [INAUDIBLE]??
+
+2128
+01:40:45,200 --> 01:40:45,310
+JENNIFER 8.
+
+2129
+01:40:45,310 --> 01:40:46,935
+LEE: Yeah, that's a very good question.
+
+2130
+01:40:46,935 --> 01:40:49,260
+Yeah, so the question is
+one of the proposals--
+
+2131
+01:40:49,260 --> 01:40:53,660
+One of our criteria is of
+getting an emoji accepted
+
+2132
+01:40:53,660 --> 01:40:57,300
+is to try to demonstrate demand
+and how do we demonstrate demand?
+
+2133
+01:40:57,300 --> 01:41:02,370
+And I would say in a pretty
+clumsy way actually at this point.
+
+2134
+01:41:02,370 --> 01:41:06,980
+So the main thing that you have
+in our current proposal process
+
+2135
+01:41:06,980 --> 01:41:09,920
+is we have a median
+emoji, which is elephant.
+
+2136
+01:41:09,920 --> 01:41:12,853
+So elephant is like, you stack
+ranked all the emoji for popularity,
+
+2137
+01:41:12,853 --> 01:41:15,020
+elephant is like [CLICKS]
+right there in the middle.
+
+2138
+01:41:15,020 --> 01:41:16,940
+And it's also a concept
+that's universally
+
+2139
+01:41:16,940 --> 01:41:19,220
+understood across all languages.
+
+2140
+01:41:19,220 --> 01:41:24,650
+So elephant shows up somewhere
+between 500 million and 700 million
+
+2141
+01:41:24,650 --> 01:41:28,290
+in Google search results, like
+if you type it into a laptop,
+
+2142
+01:41:28,290 --> 01:41:32,150
+you'll see elephant, 500
+million search results.
+
+2143
+01:41:32,150 --> 01:41:37,880
+And generally, you're trying to-- when
+you're comparing your term to elephant,
+
+2144
+01:41:37,880 --> 01:41:41,780
+you want to see very roughly how many
+Google search results, Bing search
+
+2145
+01:41:41,780 --> 01:41:43,310
+results, sometimes Instagram.
+
+2146
+01:41:43,310 --> 01:41:45,950
+So actually something that
+was really surprising to me
+
+2147
+01:41:45,950 --> 01:41:47,660
+was someone proposed hummingbird.
+
+2148
+01:41:47,660 --> 01:41:53,330
+I think hummingbird is a good proposal.
+
+2149
+01:41:53,330 --> 01:41:56,840
+But if you look at hummingbird,
+it's only like 21 million
+
+2150
+01:41:56,840 --> 01:42:00,320
+in terms of the stats, so which I
+thought was like very surprisingly low.
+
+2151
+01:42:00,320 --> 01:42:05,330
+So that's one of the main ways that
+we kind of see like, is it also
+
+2152
+01:42:05,330 --> 01:42:07,650
+visually used and all of that.
+
+2153
+01:42:07,650 --> 01:42:08,900
+Yeah.
+
+2154
+01:42:08,900 --> 01:42:11,350
+Any other questions?
+
+2155
+01:42:11,350 --> 01:42:12,610
+Are we good?
+
+2156
+01:42:12,610 --> 01:42:14,350
+I didn't even need my water or anything.
+
+2157
+01:42:14,350 --> 01:42:15,760
+Oh, can-- I'm going to take a picture.
+
+2158
+01:42:15,760 --> 01:42:18,010
+I'm going to take a picture for
+because now you guys are actually
+
+2159
+01:42:18,010 --> 01:42:20,930
+human and not Muppets, so I'm
+very, very excited about this.
+
+2160
+01:42:20,930 --> 01:42:24,250
+So I will send this to my
+block mates and be like, I just
+
+2161
+01:42:24,250 --> 01:42:27,365
+lectured at CS50 in Sanders Theatre.
+
+2162
+01:42:27,365 --> 01:42:28,990
+DAVID J. MALAN: My thanks to Jenny Lee.
+
+2163
+01:42:28,990 --> 01:42:29,950
+[APPLAUSE]
+
+2164
+01:42:29,950 --> 01:42:32,505
+Thank you.
+
+2165
+01:42:32,505 --> 01:42:34,130
+Yeah, you can stay up here if you want.
+
+2166
+01:42:34,130 --> 01:42:34,922
+Give me one second.
+
+2167
+01:42:34,922 --> 01:42:40,940
+
+
+2168
+01:42:40,940 --> 01:42:44,710
+So if up until now, thought it
+would be appropriate to toss this up
+
+2169
+01:42:44,710 --> 01:42:45,400
+on the board.
+
+2170
+01:42:45,400 --> 01:42:48,538
+If up until now, you've not yet gotten
+CS50 stress ball on the way out,
+
+2171
+01:42:48,538 --> 01:42:49,330
+please do grab one.
+
+2172
+01:42:49,330 --> 01:42:51,400
+We got some extras as
+well off to the side.
+
+2173
+01:42:51,400 --> 01:42:54,340
+But I would also keep
+in mind, back in week 0,
+
+2174
+01:42:54,340 --> 01:42:57,940
+where again we began, we asked
+you to categorize yourselves
+
+2175
+01:42:57,940 --> 01:43:01,360
+as to whether you are among those less
+comfortable, those more comfortable,
+
+2176
+01:43:01,360 --> 01:43:03,160
+or those somewhere in between.
+
+2177
+01:43:03,160 --> 01:43:07,360
+Please know now that you
+are officially all some--
+
+2178
+01:43:07,360 --> 01:43:10,955
+Please know now that you were all
+officially among those more comfortable
+
+2179
+01:43:10,955 --> 01:43:13,330
+and indeed even though a couple
+of more milestones await,
+
+2180
+01:43:13,330 --> 01:43:16,960
+we cannot wait to see what you
+accomplish with your final projects.
+
+2181
+01:43:16,960 --> 01:43:22,630
+In the meantime, as always
+this is and now this was CS50.
+
+2182
+01:43:22,630 --> 01:43:26,008
+[APPLAUSE]
+
+2183
+01:43:26,008 --> 01:43:47,207
+
+
+2184
+01:43:47,207 --> 01:43:50,165
+[HARMONICA]
+
+2185
+01:43:50,165 --> 01:43:55,430
+ALL: (SINGING) Bum, bum, bum, bum, bum,
+bum, bum, bum, bum, bum, bum, bum, bum,
+
+2186
+01:43:55,430 --> 01:43:58,190
+bum, bum, bum, bum, bum, bum,
+bum, bum, bum, bum, bum, bum.
+
+2187
+01:43:58,190 --> 01:44:03,510
+Mr. Sandman, when I enrolled in CS50.
+
+2188
+01:44:03,510 --> 01:44:08,970
+I'll say, truth be told, I
+thought I'd be a real coding hero,
+
+2189
+01:44:08,970 --> 01:44:13,410
+because I did so well on p-set 07.
+
+2190
+01:44:13,410 --> 01:44:15,480
+It picked up so fast.
+
+2191
+01:44:15,480 --> 01:44:18,630
+Turns out the C is harder than scratch.
+
+2192
+01:44:18,630 --> 01:44:24,720
+Hello, world and goodbye
+sleep because this is CS50.
+
+2193
+01:44:24,720 --> 01:44:27,270
+Bum, bum, bum, bum, bum,
+bum, bum, bum, bum bum,
+
+2194
+01:44:27,270 --> 01:44:31,560
+bum, bum, bum, bum, bum, bum, bum,
+bum, bum, bum, bum, bum, bum, bum, bum.
+
+2195
+01:44:31,560 --> 01:44:35,470
+Mr. Sandman, I was on
+the [? fall grind, ?]
+
+2196
+01:44:35,470 --> 01:44:42,040
+trying so hard to not fall behind,
+attending section and wanting a tutor,
+
+2197
+01:44:42,040 --> 01:44:45,320
+stuck in the entry point of my computer.
+
+2198
+01:44:45,320 --> 01:44:48,240
+Sandman, finally getting ahead.
+
+2199
+01:44:48,240 --> 01:44:51,520
+They would switch us to Python instead.
+
+2200
+01:44:51,520 --> 01:44:57,280
+Why we spend five weeks
+on C because this is CS50.
+
+2201
+01:44:57,280 --> 01:45:01,690
+Bum, bum, bum, bum, bum, bum, bum, bum,
+bum, bum, bum, bum, bum, bum, bum, bum,
+
+2202
+01:45:01,690 --> 01:45:04,210
+bum, bum, bum, bum, bum,
+bum, bum, bum, bum, bum.
+
+2203
+01:45:04,210 --> 01:45:08,080
+Mr. Sandman, we completed each task.
+
+2204
+01:45:08,080 --> 01:45:11,290
+JavaScript SQL, CSS and Flask.
+
+2205
+01:45:11,290 --> 01:45:14,440
+With every language,
+our minds had to reset.
+
+2206
+01:45:14,440 --> 01:45:17,578
+Don't get us started
+on that finance p-set.
+
+2207
+01:45:17,578 --> 01:45:20,770
+Sandman, now I return.
+
+2208
+01:45:20,770 --> 01:45:23,890
+My friends asked if I would do it again.
+
+2209
+01:45:23,890 --> 01:45:28,350
+I replied, obviously,
+because this was CS,
+
+2210
+01:45:28,350 --> 01:45:35,290
+no more p-sets because this was CS-fif
+bum, bum, bum, bum, bum, bum, bum, bum,
+
+2211
+01:45:35,290 --> 01:45:36,620
+bum, bum, T.
+
+2212
+01:45:36,620 --> 01:45:37,820
+[APPLAUSE]
+
+2213
+01:45:37,820 --> 01:45:43,520
+
+
+2214
+01:45:43,520 --> 01:45:46,270
+[MUSIC PLAYING]
+
+2215
+01:45:46,270 --> 01:46:21,000
+
+

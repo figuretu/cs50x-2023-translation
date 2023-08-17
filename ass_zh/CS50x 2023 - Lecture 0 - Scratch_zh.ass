@@ -16,10 +16,10 @@ Audio File: ../video/CS50x 2023 - Lecture 0 - Scratch.mp4
 Video File: ../video/CS50x 2023 - Lecture 0 - Scratch.mp4
 Video AR Mode: 4
 Video AR Value: 1.777778
-Video Zoom Percent: 0.250000
-Scroll Position: 3534
-Active Line: 3427
-Video Position: 173286
+Video Zoom Percent: 0.375000
+Scroll Position: 390
+Active Line: 397
+Video Position: 27792
 
 [V4+ Styles]
 Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
@@ -406,7 +406,7 @@ Dialogue: 0,0:18:13.29,0:18:16.34,english,,0,0,0,,And eventually, you need toes 
 Dialogue: 0,0:18:13.29,0:18:16.34,chinese,,0,0,0,,最后，你还需要脚趾什么的，如果你非要往高了数。
 Dialogue: 0,0:18:16.34,0:18:24.83,english,,0,0,0,,But unary is a very simple system of using a single symbol, a human finger in this case, to just solve some problem, like counting the number of people in the room.
 Dialogue: 0,0:18:16.34,0:18:24.83,chinese,,0,0,0,,但是，unary 是一个非常简单的系统，\N它使用一个符号（这里是人的手指）来解决一些问题，比如计算房间里的人数。
-Dialogue: 0,0:18:16.34,0:18:24.83,annotation,,0,0,0,,*暂停警告\N*注：unary我没有翻译成一进制，因为没有中文里"进位"的含义。\N想想小学用的数学小棒，也是没有进位一说，只是单纯的累加。\N与十进制相对比一下，\N111其实是10^2*1+10^1*1+10^0*1，也就是以10的幂次为基底；\N如果我们用unary的方式解读，111就是1^2*1+1^1*1+1^0*1，等于十进制的3。
+Dialogue: 0,0:18:16.34,0:18:24.83,annotation,,0,0,0,,*暂停警告\N*注：unary 我没有翻译成一进制，因为没有中文里"进位"的含义。\N想想小学用的数学小棒，也是没有进位一说，只是单纯的累加。\N与十进制相对比一下，\N111其实是 10^2*1+10^1*1+10^0*1，也就是以 10 的幂次为基底；\N如果我们用 unary 的方式解读，111 就是 1^2*1+1^1*1+1^0*1，等于十进制的 3。
 Dialogue: 0,0:18:24.83,0:18:27.95,english,,0,0,0,,Let's make this slightly more technical for a moment, a little more mathy.
 Dialogue: 0,0:18:24.83,0:18:27.95,chinese,,0,0,0,,让我们把这个问题稍微技术化一点，数学化一点。
 Dialogue: 0,0:18:27.95,0:18:36.92,english,,0,0,0,,That's just called base-1, where the base under which you're operating has one digit in it, like literally a human finger, and maybe multiple such fingers, if you need to count higher.
@@ -421,13 +421,13 @@ Dialogue: 0,0:18:50.93,0:18:55.98,chinese,,0,0,0,,是的，计算机实际使用
 Dialogue: 0,0:18:55.98,0:19:01.76,english,,0,0,0,,So in this case, bi implying two, and so computers have two digits, it turns out, at their disposal.
 Dialogue: 0,0:18:55.98,0:19:01.76,chinese,,0,0,0,,在这种情况下，"bi" 意味着 "2"，所以在每一位，计算机有0 1两个数可以使用。
 Dialogue: 0,0:19:01.76,0:19:07.49,english,,0,0,0,,And in fact, if you've ever heard the technical term bit, which is like a smaller version of a byte-- more on that soon.
-Dialogue: 0,0:19:01.76,0:19:07.49,chinese,,0,0,0,,如果你听说过技术术语比特（bit），它是比字节（byte）更小的单位——马上会提到更多。
+Dialogue: 0,0:19:01.76,0:19:07.49,chinese,,0,0,0,,你可能听说过一个技术术语，比特（bit），\N它是比字节（byte）还要小的单位—— 马上会提到更多。
 Dialogue: 0,0:19:07.49,0:19:15.96,english,,0,0,0,,Well, a binary digit is the origin of that term "Bit," because if you get rid of some of the letters, and are left from binary digit with just B-I-T, thus is a bit.
 Dialogue: 0,0:19:07.49,0:19:15.96,chinese,,0,0,0,,"binary digit" 是 "bit" 一词的由来，去掉一些字母，"binary digit" 只剩下 B-I-T，这就是比特。
 Dialogue: 0,0:19:15.96,0:19:17.99,english,,0,0,0,,A bit is just a 0 and 1.
 Dialogue: 0,0:19:15.96,0:19:17.99,chinese,,0,0,0,,bit 就是 0 和 1。
 Dialogue: 0,0:19:17.99,0:19:23.03,english,,0,0,0,,It's two more digits than you might have on your own finger, and of course, it's fewer though than you and I have.
-Dialogue: 0,0:19:17.99,0:19:23.03,chinese,,0,0,0,,大意：unary下，一根手指只能够表达1。binary下，一个bit能表达0, 1，就能呈现出两种状态。\N一只手只能表达出0~5，那么如果让每根手指弯曲代表0，伸直代表1，一只手就可以表示出2^5种状态。\N信息承载量大大提高，需要的位数减少，也就是David所说的"fewer though than you and I have"。\N可以思考一下二者的差别，binary多利用的是，手指间的位置信息。\N同样的一个手势，在上面两种解读下就有了不同的意义。\N比如00010，unary下为1，binary下就为2^1*1+2^0*0，为2。\N计算机来说只认识0和1，\N我们只是采用不同的编码方式把各种信息编码（encoding）为01二进制串，\N用不同的解码算法，把二进制串解码（decoding）成正确的格式。\NDavid后面会有更加详细生动的演绎。
+Dialogue: 0,0:19:17.99,0:19:23.03,chinese,,0,0,0,,大意：在 unary 下，一根手指只能表达 1。在 binary 下，一个 bit 能表达 0, 1，呈现出两种状态。\N一只手只能表达出 0~5，那么如果让每根手指弯曲代表 0，伸直代表 1，\N一只手就可以表示出 2^5 种状态，信息承载量大大提高。\N表达相同数字时，需要的位数减少，也就是 David 所说的 "fewer though than you and I have"。\N同样的一个手势，在上面两种解读方式下就有了不同的意义。\N比如 00010，用 unary 解释为 1，用 binary 解释为 2^1*1+2^0*0，为2。\N对计算机来说只认识 0 和 1，\N我们只是采用不同的编码方式把各种信息编码（encoding）为 01 二进制串，\N用不同的解码算法，把二进制串解码（decoding）成需要的格式。\N不能完全理解没有关系，David 在后面有更加详细生动的演绎。
 Dialogue: 0,0:19:17.99,0:19:23.03,annotation,,0,0,0,,*暂停警告
 Dialogue: 0,0:19:23.03,0:19:25.82,english,,0,0,0,,You and I typically use, as humans, the decimal system.
 Dialogue: 0,0:19:23.03,0:19:25.82,chinese,,0,0,0,,人们通常使用十进制系统。
@@ -2828,13 +2828,14 @@ Dialogue: 0,1:40:33.27,1:40:36.21,chinese,,0,0,0,,进入这个扩展插件集。
 Dialogue: 0,1:40:36.21,1:40:40.62,english,,0,0,0,,And let me do Video Sensing, since most laptops or phones these days have cameras.
 Dialogue: 0,1:40:36.21,1:40:40.62,chinese,,0,0,0,,我们想要视频感应，因为现在大多数笔记本电脑或手机都有摄像头。
 Dialogue: 0,1:40:40.62,1:40:44.19,english,,0,0,0,,And there, indeed, I am, with Sanders behind me.
-Dialogue: 0,1:40:40.62,1:40:44.19,chinese,,0,0,0,,我确实出现在了屏幕里面。
+Dialogue: 0,1:40:40.62,1:40:44.19,chinese,,0,0,0,,我确实出现在了屏幕里面，背后是 Sanders 剧场。
+Dialogue: 0,1:40:40.62,1:40:44.19,annotation,,0,0,0,,*注：Sanders 是这门课上课的地点，哈佛大学 Sanders 剧场。
 Dialogue: 0,1:40:44.19,1:40:45.78,english,,0,0,0,,And let me do this.
 Dialogue: 0,1:40:44.19,1:40:45.78,chinese,,0,0,0,,接着来吧。
 Dialogue: 0,1:40:45.78,1:40:48.90,english,,0,0,0,,When Video Motion-- and let me get out of the way.
-Dialogue: 0,1:40:45.78,1:40:48.90,chinese,,0,0,0,,当视频动态... 我先离开摄像头。
+Dialogue: 0,1:40:45.78,1:40:48.90,chinese,,0,0,0,,当视频运动... 我先离开摄像头。
 Dialogue: 0,1:40:48.90,1:40:51.82,english,,0,0,0,,When Video Motion is Greater Than some value.
-Dialogue: 0,1:40:48.90,1:40:51.82,chinese,,0,0,0,,当视频动态大于某个值时。
+Dialogue: 0,1:40:48.90,1:40:51.82,chinese,,0,0,0,,当视频运动大于某个值时。
 Dialogue: 0,1:40:51.82,1:40:56.67,english,,0,0,0,,So 10 is the default. This is just a number that measures how much motion there is or isn't.
 Dialogue: 0,1:40:51.82,1:40:56.67,chinese,,0,0,0,,10 是默认值，这只是一个衡量动作幅度大小的数字。
 Dialogue: 0,1:40:56.67,1:40:58.29,english,,0,0,0,,So small number is like no motion.
