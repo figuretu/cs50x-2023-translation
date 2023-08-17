@@ -10,7 +10,7 @@ youtube的英文翻译大多断句非常短,不利于翻译以及理解。
 
 from cell import *
 
-INPUT_FILE = 'srt_en/CS50x 2023 - Lecture 3 - Algorithms.srt'
+INPUT_FILE = 'srt_en/CS50x 2023 - Lab 1 Walkthrough.srt'
 MAX_CONTENT_LENGTH = 200 # 每条字幕最长字符，超过即使同属一句也不合并
 
 def merge(cells) -> list:

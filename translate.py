@@ -18,7 +18,7 @@ import threading
 from cell import *
 from constants import DEEPL_API_KEY
 
-INPUT_FILE = 'srt_en/CS50x 2023 - Lecture 3 - Algorithms.srt'
+INPUT_FILE = 'srt_en/CS50x 2023 - Lab 1 Walkthrough_output.srt'
 THREADS_NUM = 20
 
 translator = deepl.Translator(DEEPL_API_KEY)
