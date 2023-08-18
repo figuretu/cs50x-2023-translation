@@ -15,9 +15,9 @@ Video File: ../video/CS50x 2023 - Lecture 1 - C.mp4
 Video AR Mode: 4
 Video AR Value: 1.777778
 Video Zoom Percent: 0.250000
-Scroll Position: 4342
-Active Line: 4363
-Video Position: 214509
+Scroll Position: 4347
+Active Line: 4360
+Video Position: 214334
 
 [V4+ Styles]
 Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
@@ -53,7 +53,7 @@ Dialogue: 0,0:02:11.57,0:02:15.37,chinese,,0,0,0,,就像我们在 Scratch 中做
 Dialogue: 0,0:02:15.37,0:02:19.61,english,,0,0,0,,So let's start to apply some terminology to these tokens first.
 Dialogue: 0,0:02:15.37,0:02:19.61,chinese,,0,0,0,,现在呢，让我先介绍一些术语来解释这些代码。
 Dialogue: 0,0:02:19.61,0:02:24.04,english,,0,0,0,,So what we're about to see, what we're about to write henceforth, we're going to start calling source code.
-Dialogue: 0,0:02:19.61,0:02:24.04,chinese,,0,0,0,,正如你所看到的，我们今后要亲自编写的，我们会调用源代码。
+Dialogue: 0,0:02:19.61,0:02:24.04,chinese,,0,0,0,,正如你看到的，我们今后要亲自编写的，我们称之为源代码。
 Dialogue: 0,0:02:24.04,0:02:27.90,english,,0,0,0,,Code that you the human programmer write is just henceforth called source code.
 Dialogue: 0,0:02:24.04,0:02:27.90,chinese,,0,0,0,,人类程序员编写的代码，被称为源代码。
 Dialogue: 0,0:02:27.90,0:02:29.20,english,,0,0,0,,Doesn't matter if it's Scratch.
@@ -222,11 +222,11 @@ Dialogue: 0,0:08:22.24,0:08:29.11,english,,0,0,0,,So that you all don't have to 
 Dialogue: 0,0:08:22.24,0:08:29.11,chinese,,0,0,0,,现在课程刚刚开始，为了你们不必在 Mac 或 PC 上安装这个那个软件的时候遇到技术问题，
 Dialogue: 0,0:08:29.11,0:08:34.78,english,,0,0,0,,on your Macs or PCs, we'll use a cloud-based version of VS Code at code.cs50.io.
 Dialogue: 0,0:08:29.11,0:08:34.78,chinese,,0,0,0,,我们将在 code.cs50.io 上使用一个基于云的 VS Code 版本。
-Dialogue: 0,0:08:29.11,0:08:34.78,annotation,,0,0,0,,*注：不强制要求科学的上网，但是由 github 提供支持，直连可能不稳定，推荐科学访问。\N注意本地的 VSCode 本地无法复现 David 的操作。
+Dialogue: 0,0:08:29.11,0:08:34.78,annotation,,0,0,0,,*注：不强制要求科学的上网，但是由 github 提供支持，直连可能不稳定，推荐科学访问。\N注意本地的 VSCode 可能无法复现 David 的操作。
 Dialogue: 0,0:08:34.78,0:08:36.58,english,,0,0,0,,And that's going to be the exact same tool.
 Dialogue: 0,0:08:34.78,0:08:36.58,chinese,,0,0,0,,其实和本地是完全一样的。
 Dialogue: 0,0:08:36.58,0:08:46.09,english,,0,0,0,,And the goal, then, is by the end of the semester to migrate you off of that cloud-based environment to your own Mac and PC so that even if CS50 is the only CS class you ever take,
-Dialogue: 0,0:08:36.58,0:08:46.09,chinese,,0,0,0,,我们的目标是，在学期结束时将你们从云端环境迁移到自己的 Mac 和 PC 上，\N这样即使 CS50 是你们唯一上的计算机课程，
+Dialogue: 0,0:08:36.58,0:08:46.09,chinese,,0,0,0,,我们的目标是，在学期结束时你们可以从云端环境迁移到自己的 Mac 和 PC 上，\N这样即使 CS50 是你们唯一上的计算机课程，
 Dialogue: 0,0:08:46.09,0:08:55.76,english,,0,0,0,,you're 100% equipped to continue writing code after the class using not something that's even CS50-specific, but a de facto industry standard, at least for some time.
 Dialogue: 0,0:08:46.09,0:08:55.76,chinese,,0,0,0,,你们也可以抛弃掉 CS50 的专用代码，\N在课程结束后使用事实上的行业标准继续编写代码。
 Dialogue: 0,0:08:55.76,0:08:59.02,english,,0,0,0,,So what's this program VS Code going to look like, be it on your Mac,
@@ -364,7 +364,7 @@ Dialogue: 0,0:13:21.71,0:13:23.85,chinese,,0,0,0,,现在还是先让它跑一下
 Dialogue: 0,0:13:23.85,0:13:29.84,english,,0,0,0,,And just like I clicked the green flag last week for the first time, let's actually compile and run this program.
 Dialogue: 0,0:13:23.85,0:13:29.84,chinese,,0,0,0,,就像上一周我第一次点击绿旗一样，我们来编译并运行这个程序。
 Dialogue: 0,0:13:29.84,0:13:37.40,english,,0,0,0,,If it were your Mac or PC and Google, or Microsoft, or someone else had made the software, at this point in the story, we'd be double clicking an icon.
-Dialogue: 0,0:13:29.84,0:13:37.40,chinese,,0,0,0,,如果这是你的 Mac 或 PC，而且是谷歌、微软或其他公司制作的软件，\N那么到这个过程，我们通常会双击一个图标来运行。
+Dialogue: 0,0:13:29.84,0:13:37.40,chinese,,0,0,0,,如果这是你的 Mac 或 PC，而且是谷歌、微软或其他公司制作的软件，\N那么走到这步，我们通常会双击一个图标来运行。
 Dialogue: 0,0:13:37.40,0:13:38.45,english,,0,0,0,,But we can't do that yet.
 Dialogue: 0,0:13:37.40,0:13:38.45,chinese,,0,0,0,,不过我们现在还不得行。
 Dialogue: 0,0:13:38.45,0:13:39.93,english,,0,0,0,,This is still source code.
@@ -443,7 +443,7 @@ Dialogue: 0,0:15:49.37,0:15:50.45,chinese,,0,0,0,,梳理一下做了些什么。
 Dialogue: 0,0:15:50.45,0:15:56.24,english,,0,0,0,,We've created a file called hello.c, and then my compiler made the program from that.
 Dialogue: 0,0:15:50.45,0:15:56.24,chinese,,0,0,0,,我们创建了一个名为 hello.c 的文件，然后我的编译器据此编译出了程序。
 Dialogue: 0,0:15:56.24,0:16:01.97,english,,0,0,0,,Let me pause here and see if there's any questions because that's a lot of magical phrases.
-Dialogue: 0,0:15:56.24,0:16:01.97,chinese,,0,0,0,,我现在暂停一下，大家有没有啥什么问题，毕竟刚才涉及到了很多神奇的专业词汇。
+Dialogue: 0,0:15:56.24,0:16:01.97,chinese,,0,0,0,,我现在暂停一下，大家有没有啥问题，毕竟刚才涉及到了很多神奇的专业词汇。
 Dialogue: 0,0:16:01.97,0:16:04.45,english,,0,0,0,,Yeah?
 Dialogue: 0,0:16:04.45,0:16:04.95,english,,0,0,0,,Yeah.
 Dialogue: 0,0:16:04.95,0:16:13.95,english,,0,0,0,,So if you're currently following along, playing along at home and you're getting some kind of error message, part of today will be for me to deliberately induce some of those error messages.
@@ -474,7 +474,7 @@ Dialogue: 0,0:16:58.18,0:16:59.74,english,,0,0,0,,That's super common to happen.
 Dialogue: 0,0:16:58.18,0:16:59.74,chinese,,0,0,0,,这是一个非常常见的错误。
 Dialogue: 0,0:16:59.74,0:17:00.24,english,,0,0,0,,Yeah?
 Dialogue: 0,0:17:00.24,0:17:02.54,english,,0,0,0,,AUDIENCE: Why do you have two hello files?
-Dialogue: 0,0:17:00.24,0:17:02.54,chinese,,0,0,0,,听众：为什么你有两个 hello 文件？
+Dialogue: 0,0:17:00.24,0:17:02.54,chinese,,0,0,0,,观众：为什么你有两个 hello 文件？
 Dialogue: 0,0:17:02.54,0:17:03.79,english,,0,0,0,,DAVID J. MALAN: Why do I have two hello files?
 Dialogue: 0,0:17:02.54,0:17:03.79,chinese,,0,0,0,,为什么我有两个 hello 文件？
 Dialogue: 0,0:17:03.79,0:17:04.40,english,,0,0,0,,AUDIENCE: Yes.
@@ -571,7 +571,7 @@ Dialogue: 0,0:20:18.79,0:20:23.23,chinese,,0,0,0,,而这正是刚刚在 VS Code 
 Dialogue: 0,0:20:23.23,0:20:25.90,english,,0,0,0,,And let's look a little closer now at the code itself.
 Dialogue: 0,0:20:23.23,0:20:25.90,chinese,,0,0,0,,让我们再回来仔细看看代码。
 Dialogue: 0,0:20:25.90,0:20:38.35,english,,0,0,0,,Let me wave my hand at the equivalent of when green flag clicked part of my code, and let's focus only on the say block in Scratch and the corresponding function in C.
-Dialogue: 0,0:20:25.90,0:20:38.35,chinese,,0,0,0,,我来解释一下 Scratch 中的 "当绿旗被点击" 部分，\N然后我们只关注 Scratch 中的说话块以及对应的 C 代码部分。
+Dialogue: 0,0:20:25.90,0:20:38.35,chinese,,0,0,0,,我来解释一下 Scratch 中的 "当绿旗被点击" 部分，\N然后我们只关注 Scratch 中的 Say 块以及对应的 C 代码部分。
 Dialogue: 0,0:20:38.35,0:20:44.83,english,,0,0,0,,So if I step through this and I wanted to convert what we did last week with the say block to C,
 Dialogue: 0,0:20:38.35,0:20:44.83,chinese,,0,0,0,,所以如果我逐步进行这个转换，想要将我们上周用 say 块干的事变成 C 代码，
 Dialogue: 0,0:20:44.83,0:20:48.52,english,,0,0,0,,I would first use the print function-- although that's actually a bit of a white lie.
@@ -597,7 +597,7 @@ Dialogue: 0,0:21:31.24,0:21:37.46,chinese,,0,0,0,,在括号中，输入我想要
 Dialogue: 0,0:21:37.46,0:21:42.16,english,,0,0,0,,But notice I've deliberately left some room because you need some extra keystrokes in the world of C.
 Dialogue: 0,0:21:37.46,0:21:42.16,chinese,,0,0,0,,但是请注意，我故意留了一些空间，因为在 C 的世界里还要添点别的。
 Dialogue: 0,0:21:42.16,0:21:52.10,english,,0,0,0,,Any time you type out some text-- otherwise known as a string of text, to use computer science jargon-- you need to quote it, in this case with double quotes.
-Dialogue: 0,0:21:42.16,0:21:52.10,chinese,,0,0,0,,每当输入一些文本——也就是计算机科学术语中的字符串（string），\N你都需要用引号引起来，这里是双引号。
+Dialogue: 0,0:21:42.16,0:21:52.10,chinese,,0,0,0,,每当输入一些文本——也就是计算机科学术语中的 string（字符串），\N你都需要用引号引起来，这里是双引号。
 Dialogue: 0,0:21:52.10,0:21:54.52,english,,0,0,0,,Double quote at the left, double quote at the right.
 Dialogue: 0,0:21:52.10,0:21:54.52,chinese,,0,0,0,,左边是一个双引号，右边也是一个双引号。
 Dialogue: 0,0:21:54.52,0:22:01.66,english,,0,0,0,,And notice too I'm going to include some slightly cryptic symbol here too-- backslash n, which I also typed and said verbally earlier,
@@ -609,7 +609,7 @@ Dialogue: 0,0:22:05.48,0:22:08.89,chinese,,0,0,0,,这就是为什么我们先从
 Dialogue: 0,0:22:08.89,0:22:10.96,english,,0,0,0,,This, drag and drop, you're good to go.
 Dialogue: 0,0:22:08.89,0:22:10.96,chinese,,0,0,0,,在 Scratch 中，拖拖拖就行了。
 Dialogue: 0,0:22:10.96,0:22:16.63,english,,0,0,0,,In a language like C, printf, parentheses, double quotes, the text you want, backslash n, semicolon at the end.
-Dialogue: 0,0:22:10.96,0:22:16.63,chinese,,0,0,0,,在像 C 这样的语言中，有printf、括号、双引号、需要的字符串、反斜杠 n 以及末尾的分号。
+Dialogue: 0,0:22:10.96,0:22:16.63,chinese,,0,0,0,,在像 C 这样的语言中，有printf、括号、双引号、需要的字符串、\{}n 以及末尾的分号。
 Dialogue: 0,0:22:16.63,0:22:18.97,english,,0,0,0,,There's just so much syntactic overhead.
 Dialogue: 0,0:22:16.63,0:22:18.97,chinese,,0,0,0,,有太多的语法开销。
 Dialogue: 0,0:22:18.97,0:22:21.29,english,,0,0,0,,But at the end of the day, it's just a function.
@@ -720,7 +720,7 @@ Dialogue: 0,0:25:02.24,0:25:04.46,english,,0,0,0,,These error messages will beco
 Dialogue: 0,0:25:02.24,0:25:04.46,chinese,,0,0,0,,你可能会频繁遇到这些报错信息。
 Dialogue: 0,0:25:04.46,0:25:04.96,english,,0,0,0,,Yeah?
 Dialogue: 0,0:25:04.96,0:25:08.84,english,,0,0,0,,AUDIENCE: So do you need a semicolon after line or just some of them?
-Dialogue: 0,0:25:04.96,0:25:08.84,chinese,,0,0,0,,听众：那需要在每一行后加上分号吗，还是特定的行？
+Dialogue: 0,0:25:04.96,0:25:08.84,chinese,,0,0,0,,观众：那需要在每一行后加上分号吗，还是特定的行？
 Dialogue: 0,0:25:08.84,0:25:10.39,english,,0,0,0,,DAVID J. MALAN: Really good question.
 Dialogue: 0,0:25:08.84,0:25:10.39,chinese,,0,0,0,,好问题。
 Dialogue: 0,0:25:10.39,0:25:12.96,english,,0,0,0,,Do you need a semicolon after every line or just some?
@@ -763,7 +763,7 @@ Dialogue: 0,0:26:09.75,0:26:13.26,english,,0,0,0,,But often, it will do its best
 Dialogue: 0,0:26:09.75,0:26:13.26,chinese,,0,0,0,,但通常情况下，它会尽力为你提供答案，就像这样。
 Dialogue: 0,0:26:13.26,0:26:14.17,english,,0,0,0,,Yeah?
 Dialogue: 0,0:26:14.17,0:26:16.93,english,,0,0,0,,AUDIENCE: How come you first put code hello.c?
-Dialogue: 0,0:26:14.17,0:26:16.93,chinese,,0,0,0,,听众：最开始那个 code hello.c 命令是怎么来的？
+Dialogue: 0,0:26:14.17,0:26:16.93,chinese,,0,0,0,,观众：最开始那个 code hello.c 命令是怎么来的？
 Dialogue: 0,0:26:16.93,0:26:22.94,english,,0,0,0,,DAVID J. MALAN: Ah, so how come I first typed code, space, hello.c, and now I'm typing make hello?
 Dialogue: 0,0:26:16.93,0:26:22.94,chinese,,0,0,0,,哦，那么为什么我首先键入了 code hello.c，然后现在我又键入了 make hello？
 Dialogue: 0,0:26:22.94,0:26:24.18,english,,0,0,0,,Two different processes.
@@ -771,9 +771,9 @@ Dialogue: 0,0:26:22.94,0:26:24.18,chinese,,0,0,0,,这是两个不同的过程。
 Dialogue: 0,0:26:24.18,0:26:31.28,english,,0,0,0,,So when I typed code, space, hello.c, that was because I wanted to open VS Code and create a new file called hello.c.
 Dialogue: 0,0:26:24.18,0:26:31.28,chinese,,0,0,0,,所以当我键入 code hello.c 时，那是因为我想要打开 VS Code 并创建一个名为 hello.c 的新文件。
 Dialogue: 0,0:26:31.28,0:26:34.91,english,,0,0,0,,It's like going to File, New in a Mac or PC.
-Dialogue: 0,0:26:31.28,0:26:34.91,chinese,,0,0,0,,就像在 Mac 或 PC 上选择“文件”，然后选择“新建”一样。
+Dialogue: 0,0:26:31.28,0:26:34.91,chinese,,0,0,0,,就像在 Mac 或 PC 上选择 "文件"，然后选择 "新建" 一样。
 Dialogue: 0,0:26:34.91,0:26:42.56,english,,0,0,0,,Thereafter, though, once the file exists and is actually open here-- and it does autosave, you don't need to hit Command-S or Control-S all the time--
-Dialogue: 0,0:26:34.91,0:26:42.56,chinese,,0,0,0,,然后，一旦文件存在并且用 VS Code 打开，它就会自动保存，\N不用一直按 Ctrl/Command + S 手动保存了。
+Dialogue: 0,0:26:34.91,0:26:42.56,chinese,,0,0,0,,然后，一旦文件存在并且用 VS Code 打开，它就会自动保存，\N不用一直按 ctrl/command+s 手动保存了。
 Dialogue: 0,0:26:42.56,0:26:46.11,english,,0,0,0,,I can now compile it with make hello again and again.
 Dialogue: 0,0:26:42.56,0:26:46.11,chinese,,0,0,0,,现在我可以用 make hello 一次又一次进行编译。
 Dialogue: 0,0:26:46.11,0:26:54.02,english,,0,0,0,,So theoretically, I should never need to type code, space, hello.c again unless I want to create a brand-new file called the same thing.
@@ -783,7 +783,7 @@ Dialogue: 0,0:26:54.02,0:26:57.20,chinese,,0,0,0,,行，那我们接着看下一
 Dialogue: 0,0:26:57.20,0:26:58.79,english,,0,0,0,,Let me clear my terminal window here.
 Dialogue: 0,0:26:57.20,0:26:58.79,chinese,,0,0,0,,先清空一下终端窗口。
 Dialogue: 0,0:26:58.79,0:27:03.38,english,,0,0,0,,You can also hit Control-L just to throw everything away just to clean it up aesthetically.
-Dialogue: 0,0:26:58.79,0:27:03.38,chinese,,0,0,0,,按下 Control+L 键，也可以清除所有东西，只是为了美观起见。
+Dialogue: 0,0:26:58.79,0:27:03.38,chinese,,0,0,0,,按下 ctrl+l 键，也可以清除所有东西，只是为了美观起见。
 Dialogue: 0,0:27:03.38,0:27:11.46,english,,0,0,0,,Suppose that I omit whatever this sequence of symbols is, backslash n, since I'm not really sure at first glance why that's even there.
 Dialogue: 0,0:27:03.38,0:27:11.46,chinese,,0,0,0,,我现在要省略 \{}n，因为乍一看我甚至不确定它为什么会在那里。
 Dialogue: 0,0:27:11.46,0:27:20.45,english,,0,0,0,,Does anyone want to conjecture, especially if you've never programmed before, what might happen now if I recompile and rerun this version of the program?
@@ -795,7 +795,7 @@ Dialogue: 0,0:27:25.13,0:27:28.39,chinese,,0,0,0,,直觉上会怎么样？
 Dialogue: 0,0:27:28.39,0:27:29.92,english,,0,0,0,,All right, well-- yeah?
 Dialogue: 0,0:27:28.39,0:27:29.92,chinese,,0,0,0,,你说？
 Dialogue: 0,0:27:29.92,0:27:34.19,english,,0,0,0,,AUDIENCE: Will the next dollar sign appear straight after your hello, world?
-Dialogue: 0,0:27:29.92,0:27:34.19,chinese,,0,0,0,,听众：下一个美元符号会直接出现在你的 hello, world 后面吗？
+Dialogue: 0,0:27:29.92,0:27:34.19,chinese,,0,0,0,,观众：下一个美元符号会直接出现在你的 hello, world 后面吗？
 Dialogue: 0,0:27:34.19,0:27:35.19,english,,0,0,0,,DAVID J. MALAN: It will.
 Dialogue: 0,0:27:34.19,0:27:35.19,chinese,,0,0,0,,对的。
 Dialogue: 0,0:27:35.19,0:27:38.74,english,,0,0,0,,The next dollar sign will appear right after my hello, world.
@@ -803,7 +803,7 @@ Dialogue: 0,0:27:35.19,0:27:38.74,chinese,,0,0,0,,下一个美元符号会直接
 Dialogue: 0,0:27:38.74,0:27:40.56,english,,0,0,0,,But what makes you think that?
 Dialogue: 0,0:27:38.74,0:27:40.56,chinese,,0,0,0,,你是怎么想到的呢？
 Dialogue: 0,0:27:40.56,0:27:43.01,english,,0,0,0,,AUDIENCE: Because the backslash n creates a new line?
-Dialogue: 0,0:27:40.56,0:27:43.01,chinese,,0,0,0,,听众：因为 \{}n 会创建一个新行？
+Dialogue: 0,0:27:40.56,0:27:43.01,chinese,,0,0,0,,观众：因为 \{}n 会创建一个新行？
 Dialogue: 0,0:27:43.01,0:27:44.01,english,,0,0,0,,DAVID J. MALAN: Exactly.
 Dialogue: 0,0:27:43.01,0:27:44.01,chinese,,0,0,0,,没错。
 Dialogue: 0,0:27:44.01,0:27:48.06,english,,0,0,0,,Backslash n is actually a special sequence of symbols that creates a new line.
@@ -883,7 +883,7 @@ Dialogue: 0,0:29:54.09,0:29:54.90,english,,0,0,0,,And voila.
 Dialogue: 0,0:29:54.90,0:29:57.78,english,,0,0,0,,We're back in business with hello.
 Dialogue: 0,0:29:54.90,0:29:57.78,chinese,,0,0,0,,hello 又能跑了。
 Dialogue: 0,0:29:57.78,0:30:04.92,english,,0,0,0,,All right, so now let's tease apart some other aspects of this code because there's a lot going on just to get us to say hello, world on the screen.
-Dialogue: 0,0:29:57.78,0:30:04.92,chinese,,0,0,0,,好的，现在让我们来分析一下这段代码的其他方面，\N为了让我们在屏幕上显示“Hello, world”，这里涉及到了相当多工作。
+Dialogue: 0,0:29:57.78,0:30:04.92,chinese,,0,0,0,,好的，现在让我们来分析一下这段代码的其他方面，\N为了让我们在屏幕上显示 "Hello, world"，这里涉及到了相当多工作。
 Dialogue: 0,0:30:04.92,0:30:10.14,english,,0,0,0,,For today, we're largely going to ignore this-- int main(void) and these curly braces here.
 Dialogue: 0,0:30:04.92,0:30:10.14,chinese,,0,0,0,,今天，我们先忽略 int main(void) 和这些花括号。
 Dialogue: 0,0:30:10.14,0:30:12.52,english,,0,0,0,,We'll come back to that before long as to why it's there.
@@ -917,7 +917,7 @@ Dialogue: 0,0:30:53.29,0:30:53.79,english,,0,0,0,,Why?
 Dialogue: 0,0:30:53.79,0:30:56.34,english,,0,0,0,,I don't understand it, so let's see what happens.
 Dialogue: 0,0:30:53.79,0:30:56.34,chinese,,0,0,0,,我不理解它，所以让我们看看会发生什么。
 Dialogue: 0,0:30:56.34,0:31:09.15,english,,0,0,0,,All right, here's yet another error, but let's see-- hello.c, line 5, character 5-- so it's pretty early on-- error, implicitly declaring library function printf with type int and then dot, dot, dot.
-Dialogue: 0,0:30:56.34,0:31:09.15,chinese,,0,0,0,,好吧，又报了个错误，来看看 hello.c 第 5 行，第 5 个字符——\N错误，隐式声明库函数printf，类型为int，然后有点点点。
+Dialogue: 0,0:30:56.34,0:31:09.15,chinese,,0,0,0,,好吧，又报了个错误，来看看 hello.c 第 5 行，第 5 个字符——\N错误，隐式声明库函数 printf，类型为 int，然后有点点点。
 Dialogue: 0,0:31:09.15,0:31:14.49,english,,0,0,0,,So implicitly declaring library function printf-- so this is very cryptic sounding.
 Dialogue: 0,0:31:09.15,0:31:14.49,chinese,,0,0,0,,隐式声明库函数 printf—— 这听起来一点都不直白。
 Dialogue: 0,0:31:14.49,0:31:16.92,english,,0,0,0,,You'll get better at understanding phrases like these.
@@ -935,9 +935,9 @@ Dialogue: 0,0:31:37.29,0:31:38.29,chinese,,0,0,0,,确实。
 Dialogue: 0,0:31:38.29,0:31:42.13,english,,0,0,0,,It's like importing a library so that you can do things like print things out on the screen.
 Dialogue: 0,0:31:38.29,0:31:42.13,chinese,,0,0,0,,这就是导入一个库，这样你可以在屏幕上输出东西了。
 Dialogue: 0,0:31:42.13,0:31:45.22,english,,0,0,0,,Now, in Scratch, you didn't have to do this for most of the puzzle pieces.
-Dialogue: 0,0:31:42.13,0:31:45.22,chinese,,0,0,0,,在Scratch中，对于大多数的拼图块，你都不需要这样做。
+Dialogue: 0,0:31:42.13,0:31:45.22,chinese,,0,0,0,,在 Scratch 中，对于大多数的拼图块，你都不需要这样做。
 Dialogue: 0,0:31:45.22,0:31:47.95,english,,0,0,0,,But you might recall that partway through week 0,
-Dialogue: 0,0:31:45.22,0:31:47.95,chinese,,0,0,0,,但你可能还记得，在第 0 周的中途、
+Dialogue: 0,0:31:45.22,0:31:47.95,chinese,,0,0,0,,但你可能还记得，在第 0 周的中途，
 Dialogue: 0,0:31:47.95,0:32:00.10,english,,0,0,0,,I went to the Extensions button at the bottom left of the Scratch screen, and I imported some extra puzzle pieces for text to speech that gave us the creepy humanized voice that actually came out of the cat's mouth.
 Dialogue: 0,0:31:47.95,0:32:00.10,chinese,,0,0,0,,但也许你还记得，在 Lecture 0 的中途，我点击了 Scratch 屏幕左下角的 "扩展" ，\N然后导入了一些额外的文本朗读的拼图块，后来让猫发出了有点机械诡异的人声。
 Dialogue: 0,0:32:00.10,0:32:04.39,english,,0,0,0,,Well, that was like adding a library-- code that someone else wrote.
@@ -977,7 +977,7 @@ Dialogue: 0,0:33:07.63,0:33:11.35,chinese,,0,0,0,,这实际上会告诉编译器
 Dialogue: 0,0:33:11.35,0:33:18.32,english,,0,0,0,,I want to use functionality from the Standard I/O Library, including printf in this case.
 Dialogue: 0,0:33:11.35,0:33:18.32,chinese,,0,0,0,,我想使用标准 I/O 库的功能，包括这里的 printf。
 Dialogue: 0,0:33:18.32,0:33:24.04,english,,0,0,0,,And if you omit the header file by accident, it's just not going to work because it doesn't know what printf is.
-Dialogue: 0,0:33:18.32,0:33:24.04,chinese,,0,0,0,,如果你不小心省略了头文件，程序就跑不起来，因为它不知道printf是什么。
+Dialogue: 0,0:33:18.32,0:33:24.04,chinese,,0,0,0,,如果你不小心省略了头文件，程序就跑不起来，因为它不知道 printf 是什么。
 Dialogue: 0,0:33:24.04,0:33:27.97,english,,0,0,0,,It's some unrecognized symbol in that case.
 Dialogue: 0,0:33:24.04,0:33:27.97,chinese,,0,0,0,,在这种情况下，它是一个无法识别的符号。
 Dialogue: 0,0:33:27.97,0:33:37.59,english,,0,0,0,,All right, questions, then, about this line of code, this line of code here, or what these header files are?
@@ -1038,11 +1038,11 @@ Dialogue: 0,0:35:56.43,0:35:59.22,chinese,,0,0,0,,它的文档在这个网址上
 Dialogue: 0,0:35:59.22,0:36:01.23,english,,0,0,0,,And in a moment, we'll use a few of these.
 Dialogue: 0,0:35:59.22,0:36:01.23,chinese,,0,0,0,,稍后，我们将使用其中的一些函数。
 Dialogue: 0,0:36:01.23,0:36:11.79,english,,0,0,0,,You'll see that CS50 provides you with some functions like get_char for get a single character from the user's keyboard, get_int to get an integer from the user's keyboard,
-Dialogue: 0,0:36:01.23,0:36:11.79,chinese,,0,0,0,,你会发现CS50为你提供了一些函数，\N例如 get_char 用于从用户键盘获取单个字符，get_int 用于从用户键盘获取整数，
+Dialogue: 0,0:36:01.23,0:36:11.79,chinese,,0,0,0,,你会发现 CS50 为你提供了一些函数，\N例如 get_char 用于从用户键盘获取单个字符，get_int 用于从用户键盘获取整数，
 Dialogue: 0,0:36:11.79,0:36:16.93,english,,0,0,0,,get_string to get a sequence of text from the user's keyboard, and a bunch of others as well.
 Dialogue: 0,0:36:11.79,0:36:16.93,chinese,,0,0,0,,get_string 用于从用户键盘获取文本序列，以及其他一些函数。
 Dialogue: 0,0:36:16.93,0:36:26.71,english,,0,0,0,,So let's actually use some of these functions, how about, by revisiting, really, the second program we wrote in Scratch last time, which adds some input to the output.
-Dialogue: 0,0:36:16.93,0:36:26.71,chinese,,0,0,0,,所以让我们实际使用其中的一些函数，\N比如重新访问上次在Scratch中编写的第二个程序，它在输出中添加了一些输入。
+Dialogue: 0,0:36:16.93,0:36:26.71,chinese,,0,0,0,,所以让我们实际使用其中的一些函数，\N比如重新访问上次在 Scratch 中编写的第二个程序，它在输出中添加了一些输入。
 Dialogue: 0,0:36:26.71,0:36:28.83,english,,0,0,0,,So first version of Scratch was just hello, world.
 Dialogue: 0,0:36:26.71,0:36:28.83,chinese,,0,0,0,,Scratch 的第一个版本只是打印出 hello, world，
 Dialogue: 0,0:36:28.83,0:36:31.20,english,,0,0,0,,Said the same thing every time you click the green flag.
@@ -1084,7 +1084,7 @@ Dialogue: 0,0:37:28.98,0:37:34.02,chinese,,0,0,0,,返回值就是一个函数的
 Dialogue: 0,0:37:34.02,0:37:38.40,english,,0,0,0,,So how do we convert this Scratch block from last week to C code this week?
 Dialogue: 0,0:37:34.02,0:37:38.40,chinese,,0,0,0,,那我们怎么来把上周的 Scratch 代码块转换为 C 代码呢？
 Dialogue: 0,0:37:38.40,0:37:42.58,english,,0,0,0,,Well, if you want to ask the user for something like their name, you can do this.
-Dialogue: 0,0:37:38.40,0:37:42.58,chinese,,0,0,0,,如果您想询问用户姓名之类的信息，可以这样做。
+Dialogue: 0,0:37:38.40,0:37:42.58,chinese,,0,0,0,,如果你想询问用户姓名之类的信息，可以这样做。
 Dialogue: 0,0:37:42.58,0:37:45.60,english,,0,0,0,,You use a CS50 function called get_string.
 Dialogue: 0,0:37:42.58,0:37:45.60,chinese,,0,0,0,,会用到的是 CS50 里的函数 get_string。
 Dialogue: 0,0:37:45.60,0:37:49.95,english,,0,0,0,,And you use the parentheses to represent here comes the inputs there too.
@@ -1102,7 +1102,7 @@ Dialogue: 0,0:38:08.99,0:38:11.79,chinese,,0,0,0,,我们不会得到像在 Scrat
 Dialogue: 0,0:38:11.79,0:38:19.80,english,,0,0,0,,It's just going to leave the cursor where it is, so we'll see that, aesthetically, that just moves the blinking cursor one space after the sentence on the screen.
 Dialogue: 0,0:38:11.79,0:38:19.80,chinese,,0,0,0,,光标会留在原处，所以在屏幕上看到，在句子后面留出来一个空格，其后才是闪烁的光标。
 Dialogue: 0,0:38:19.80,0:38:27.18,english,,0,0,0,,All right, but the catch is with Scratch, we just automatically got back the answer from the user in a special variable called answer.
-Dialogue: 0,0:38:19.80,0:38:27.18,chinese,,0,0,0,,问题是使用 Scratch 时，我们会自动将用户的答案存储 answer 这个特殊变量中。
+Dialogue: 0,0:38:19.80,0:38:27.18,chinese,,0,0,0,,问题是使用 Scratch 时，我们会自动将用户的答案存储到 answer 这个特殊变量中。
 Dialogue: 0,0:38:27.18,0:38:30.27,english,,0,0,0,,In C, you're going to have to be a little more specific.
 Dialogue: 0,0:38:27.18,0:38:30.27,chinese,,0,0,0,,在 C 语言，你必须说得更具体一些。
 Dialogue: 0,0:38:30.27,0:38:40.42,english,,0,0,0,,In C, If you want to get back a return value from a function like get_string, you have to use an equal sign and then the name of a variable on the left.
@@ -1211,7 +1211,7 @@ Dialogue: 0,0:41:44.53,0:41:48.34,chinese,,0,0,0,,你以前没写过代码，也
 Dialogue: 0,0:41:48.34,0:41:51.24,english,,0,0,0,,What are we going to see on the screen when I hit Enter?
 Dialogue: 0,0:41:48.34,0:41:51.24,chinese,,0,0,0,,按下回车键，屏幕上会出现什么？
 Dialogue: 0,0:41:51.24,0:41:52.24,english,,0,0,0,,AUDIENCE: Hello, answer.
-Dialogue: 0,0:41:51.24,0:41:52.24,chinese,,0,0,0,,听众：hello, answer。
+Dialogue: 0,0:41:51.24,0:41:52.24,chinese,,0,0,0,,观众：hello, answer。
 Dialogue: 0,0:41:52.24,0:41:53.11,english,,0,0,0,,DAVID J. MALAN: Yeah.
 Dialogue: 0,0:41:52.24,0:41:53.11,chinese,,0,0,0,,是的。
 Dialogue: 0,0:41:53.11,0:41:54.28,english,,0,0,0,,Hello, answer, most likely.
@@ -1260,11 +1260,11 @@ Dialogue: 0,0:43:07.81,0:43:11.35,chinese,,0,0,0,,它只是表示这是一个字
 Dialogue: 0,0:43:11.35,0:43:12.74,english,,0,0,0,,Again, a string is just text.
 Dialogue: 0,0:43:11.35,0:43:12.74,chinese,,0,0,0,,同样，字符串只是文本。
 Dialogue: 0,0:43:12.74,0:43:23.90,english,,0,0,0,,So this means, hey, computer, print out literally, hello, comma, space, and then not literally %s. %s is treated specially to mean plug in some value here.
-Dialogue: 0,0:43:12.74,0:43:23.90,chinese,,0,0,0,,这意味着，嘿，计算机，打印出文字 "hello, "，然后不是文字 "%s"。\N"%s" 在这里被特殊处理，表示在这里插入某个值。
+Dialogue: 0,0:43:12.74,0:43:23.90,chinese,,0,0,0,,这意味着，嘿，计算机，打印出文字 "hello, "，然后不是字面上的 "%s"。\N"%s" 在这里被特殊处理，表示在这里插入某个值。
 Dialogue: 0,0:43:23.90,0:43:25.57,english,,0,0,0,,All right, so what else do I still need?
 Dialogue: 0,0:43:23.90,0:43:25.57,chinese,,0,0,0,,好的，还有什么是我需要的呢？
 Dialogue: 0,0:43:25.57,0:43:32.46,english,,0,0,0,,Well, this is still some text, so I'm still going to surround the whole thing with double quotes.
-Dialogue: 0,0:43:25.57,0:43:32.46,chinese,,0,0,0,,这仍然是一些文字，所以我仍然会用双引号将整个内容括起来。
+Dialogue: 0,0:43:25.57,0:43:32.46,chinese,,0,0,0,,这仍然是一些文本，所以我仍然会用双引号将整个内容括起来。
 Dialogue: 0,0:43:32.46,0:43:37.87,english,,0,0,0,,I'm still going to include my backslash n just to keep things tidy and move the cursor to the next line.
 Dialogue: 0,0:43:32.46,0:43:37.87,chinese,,0,0,0,,我仍然会加上 \{}n，只是为了保持整洁，将光标移到下一行。
 Dialogue: 0,0:43:37.87,0:43:45.12,english,,0,0,0,,So the last step here in C is to somehow join the answer with that word hello.
@@ -1278,7 +1278,7 @@ Dialogue: 0,0:43:53.82,0:44:02.76,chinese,,0,0,0,,我现在要添加一个逗号
 Dialogue: 0,0:44:02.76,0:44:04.41,english,,0,0,0,,And printf is just smart about this.
 Dialogue: 0,0:44:02.76,0:44:04.41,chinese,,0,0,0,,而 printf 会自动处理这一点。
 Dialogue: 0,0:44:04.41,0:44:10.98,english,,0,0,0,,If you have one %s and one additional argument after a comma, it just does-- from right to left, it plugs it in.
-Dialogue: 0,0:44:04.41,0:44:10.98,chinese,,0,0,0,,如果你有一个 "%s" 和一个逗号后面的附加参数，它会从右到左依次插入。
+Dialogue: 0,0:44:04.41,0:44:10.98,chinese,,0,0,0,,如果你有一个 "%s" 和一个逗号后面的附加参数，它会把右边的参数值插入到左边。
 Dialogue: 0,0:44:10.98,0:44:16.47,english,,0,0,0,,If you have two %s's and two variables after the comma, that's OK too.
 Dialogue: 0,0:44:10.98,0:44:16.47,chinese,,0,0,0,,如果你有两个 "%s"，然后在逗号后面跟着两个变量，这也是可以的。
 Dialogue: 0,0:44:16.47,0:44:22.38,english,,0,0,0,,If you separate them with commas, it'll plug the first into the first %s and the second variable into the second %s.
@@ -1293,7 +1293,7 @@ Dialogue: 0,0:44:32.76,0:44:35.08,english,,0,0,0,,Any questions on this techniqu
 Dialogue: 0,0:44:32.76,0:44:35.08,chinese,,0,0,0,,对于这种技术有什么问题吗？
 Dialogue: 0,0:44:35.08,0:44:35.58,english,,0,0,0,,Yeah?
 Dialogue: 0,0:44:35.58,0:44:39.72,english,,0,0,0,,AUDIENCE: Why did you exclude the backslash n in the previous section?
-Dialogue: 0,0:44:35.58,0:44:39.72,chinese,,0,0,0,,听众：为什么在上一节中不使用 \{}n？
+Dialogue: 0,0:44:35.58,0:44:39.72,chinese,,0,0,0,,观众：为什么刚才没有用 \{}n？
 Dialogue: 0,0:44:39.72,0:44:41.60,english,,0,0,0,,DAVID J. MALAN: Yeah, a really good question.
 Dialogue: 0,0:44:39.72,0:44:41.60,chinese,,0,0,0,,是的，非常好问题。
 Dialogue: 0,0:44:41.60,0:44:45.55,english,,0,0,0,,Why did I exclude the backslash n a moment ago?
@@ -1320,7 +1320,7 @@ Dialogue: 0,0:45:09.67,0:45:10.21,english,,0,0,0,,Good catch.
 Dialogue: 0,0:45:09.67,0:45:10.21,chinese,,0,0,0,,好问题。
 Dialogue: 0,0:45:10.21,0:45:10.66,english,,0,0,0,,Yeah?
 Dialogue: 0,0:45:10.66,0:45:12.07,english,,0,0,0,,AUDIENCE: Can you show an example with two %s's?
-Dialogue: 0,0:45:10.66,0:45:12.07,chinese,,0,0,0,,听众：你能不能举一个带两个 %s 的例子？
+Dialogue: 0,0:45:10.66,0:45:12.07,chinese,,0,0,0,,观众：你能不能举一个带两个 %s 的例子？
 Dialogue: 0,0:45:12.07,0:45:14.47,english,,0,0,0,,DAVID J. MALAN: Can I show an example with two %s's?
 Dialogue: 0,0:45:12.07,0:45:14.47,chinese,,0,0,0,,我能举一个有两个 %s 的例子吗？
 Dialogue: 0,0:45:14.47,0:45:15.25,english,,0,0,0,,Surely.
@@ -1369,7 +1369,7 @@ Dialogue: 0,0:46:21.52,0:46:27.72,chinese,,0,0,0,,现在重新编译这个更简
 Dialogue: 0,0:46:27.72,0:46:29.22,english,,0,0,0,,What did I do wrong?
 Dialogue: 0,0:46:27.72,0:46:29.22,chinese,,0,0,0,,错哪了？
 Dialogue: 0,0:46:29.22,0:46:31.35,english,,0,0,0,,AUDIENCE: You forgot to change first in line 7.
-Dialogue: 0,0:46:29.22,0:46:31.35,chinese,,0,0,0,,听众：你忘了改第 7 行的 first。
+Dialogue: 0,0:46:29.22,0:46:31.35,chinese,,0,0,0,,观众：你忘了改第 7 行的 first。
 Dialogue: 0,0:46:31.35,0:46:33.27,english,,0,0,0,,DAVID J. MALAN: Yeah, so just newbie mistakes.
 Dialogue: 0,0:46:31.35,0:46:33.27,chinese,,0,0,0,,对的，新手会犯的错误。
 Dialogue: 0,0:46:33.27,0:46:39.61,english,,0,0,0,,So I changed my variable back to answer just to be consistent with week 0, but I didn't change it here.
@@ -1397,7 +1397,7 @@ Dialogue: 0,0:47:06.15,0:47:09.24,chinese,,0,0,0,,我放大一下，只是一个
 Dialogue: 0,0:47:09.24,0:47:23.40,english,,0,0,0,,So inside of my string here is %s, and then I have a comma outside the quotes, and then the name of the variable whose value I want to plug in for that %s.
 Dialogue: 0,0:47:09.24,0:47:23.40,chinese,,0,0,0,,所以在我的字符串里面是 %s，\N然后我在引号外面有一个逗号，然后是我想要为那个 %s 插入值的变量的名称。
 Dialogue: 0,0:47:23.40,0:47:30.30,english,,0,0,0,,And now notice there's technically two commas inside of these parentheses on line 7.
-Dialogue: 0,0:47:23.40,0:47:30.30,chinese,,0,0,0,,注意，在第7行的括号内实际上有两个逗号。
+Dialogue: 0,0:47:23.40,0:47:30.30,chinese,,0,0,0,,注意，在第 7 行的括号内实际上有两个逗号。
 Dialogue: 0,0:47:30.30,0:47:37.29,english,,0,0,0,,And yet, I claim that printf, at the moment, is only taking in two arguments.
 Dialogue: 0,0:47:30.30,0:47:37.29,chinese,,0,0,0,,然而，我刚才说的是，printf 只接收了两个参数。
 Dialogue: 0,0:47:37.29,0:47:41.58,english,,0,0,0,,Why is there then two commas but only two arguments?
@@ -1445,7 +1445,7 @@ Dialogue: 0,0:49:14.63,0:49:16.77,english,,0,0,0,,AUDIENCE: [INAUDIBLE]
 Dialogue: 0,0:49:16.77,0:49:17.65,english,,0,0,0,,DAVID J. MALAN: Yeah.
 Dialogue: 0,0:49:16.77,0:49:17.65,chinese,,0,0,0,,是的。
 Dialogue: 0,0:49:17.65,0:49:20.32,english,,0,0,0,,If you literally want to say, for whatever weird reason,
-Dialogue: 0,0:49:17.65,0:49:20.32,chinese,,0,0,0,,如果你真的想在屏幕上输出%s，出于某种奇怪的原因，
+Dialogue: 0,0:49:17.65,0:49:20.32,chinese,,0,0,0,,如果你真的想在屏幕上输出 %s，出于某种奇怪的原因，
 Dialogue: 0,0:49:20.32,0:49:23.24,english,,0,0,0,,%s on the screen-- or honestly, even just a single %.
 Dialogue: 0,0:49:20.32,0:49:23.24,chinese,,0,0,0,,或者老实说，甚至只是一个单独的 % 也会出问题。
 Dialogue: 0,0:49:23.24,0:49:29.65,english,,0,0,0,,It turns out that a percent sign is treated specially inside of printf strings.
@@ -1499,7 +1499,7 @@ Dialogue: 0,0:50:44.83,0:50:47.13,english,,0,0,0,,So it's just based on left to 
 Dialogue: 0,0:50:44.83,0:50:47.13,chinese,,0,0,0,,因此，它只是按照从左到右的顺序。
 Dialogue: 0,0:50:47.13,0:50:48.22,english,,0,0,0,,Yeah?
 Dialogue: 0,0:50:48.22,0:50:50.76,english,,0,0,0,,AUDIENCE: This more of a clarification question.
-Dialogue: 0,0:50:48.22,0:50:50.76,chinese,,0,0,0,,听众：这更像是一个定义上问题。
+Dialogue: 0,0:50:48.22,0:50:50.76,chinese,,0,0,0,,观众：这更像是一个定义上问题。
 Dialogue: 0,0:50:50.76,0:50:52.45,english,,0,0,0,,What exactly does the %s mean?
 Dialogue: 0,0:50:50.76,0:50:52.45,chinese,,0,0,0,,%s 到底是什么意思？
 Dialogue: 0,0:50:52.45,0:50:54.12,english,,0,0,0,,DAVID J. MALAN: It's just a placeholder.
@@ -1659,7 +1659,7 @@ Dialogue: 0,0:56:45.47,0:56:48.77,chinese,,0,0,0,,这里有一点小矛盾。
 Dialogue: 0,0:56:48.77,0:56:54.43,english,,0,0,0,,Just a little bit ago, I claimed, in C, that an equal sign represents what operation?
 Dialogue: 0,0:56:48.77,0:56:54.43,chinese,,0,0,0,,就在刚才，我说在 C 语言中，等号表示什么操作？
 Dialogue: 0,0:56:54.43,0:56:55.31,english,,0,0,0,,AUDIENCE: Assignment.
-Dialogue: 0,0:56:54.43,0:56:55.31,chinese,,0,0,0,,听众：赋值。
+Dialogue: 0,0:56:54.43,0:56:55.31,chinese,,0,0,0,,观众：赋值。
 Dialogue: 0,0:56:55.31,0:56:57.77,english,,0,0,0,,DAVID J. MALAN: Assignment from right to left.
 Dialogue: 0,0:56:55.31,0:56:57.77,chinese,,0,0,0,,从右到左的赋值操作。
 Dialogue: 0,0:56:57.77,0:57:06.36,english,,0,0,0,,Insofar as Scratch is really meant for kids, and they didn't really want to get into the weeds of this kind of semantic, equal sign in Scratch means equality.
@@ -1673,7 +1673,7 @@ Dialogue: 0,0:57:11.75,0:57:14.21,chinese,,0,0,0,,在 Scratch 中，它表示你
 Dialogue: 0,0:57:14.21,0:57:20.78,english,,0,0,0,,All right, let's translate this code then to C. On the right, this code would correspond really to this.
 Dialogue: 0,0:57:14.21,0:57:20.78,chinese,,0,0,0,,好了，让我们把这段代码翻译成 C 语言。
 Dialogue: 0,0:57:20.78,0:57:29.10,english,,0,0,0,,And you can perhaps see, somewhat goofily, what the solution was, not unlike the %% solution earlier when humans painted themselves into one other corner.
-Dialogue: 0,0:57:20.78,0:57:29.10,chinese,,0,0,0,,左右边的代码是对应的。\N你可能看出来了，有点滑稽，解决方法跟之前解决 % 问题差不多（变成 %% ）。
+Dialogue: 0,0:57:20.78,0:57:29.10,chinese,,0,0,0,,左右边的代码是对应的。\N你可能看出来了，有点滑稽，= 的解决方法跟之前解决 % 问题差不多（变成 %%）。
 Dialogue: 0,0:57:29.10,0:57:36.62,english,,0,0,0,,You say if, you say else if, and you say else if, and how did we resolve the use of a single equal sign already?
 Dialogue: 0,0:57:29.10,0:57:36.62,chinese,,0,0,0,,你使用 if，还有两个 else if，但我们怎么解决 = 已经用来代表赋值这个问题呢？
 Dialogue: 0,0:57:36.62,0:57:47.09,english,,0,0,0,,In C, when you want to express equality-- is the thing on the left equal to the thing on the right-- you literally use two equal signs right next to each other, no space in between them.
@@ -1690,7 +1690,7 @@ Dialogue: 0,0:58:06.20,0:58:07.57,english,,0,0,0,,How about in back?
 Dialogue: 0,0:58:06.20,0:58:07.57,chinese,,0,0,0,,后面这位请讲？
 Dialogue: 0,0:58:07.57,0:58:12.93,english,,0,0,0,,AUDIENCE: The only option after it getting greater than or less than is [INAUDIBLE].
 Dialogue: 0,0:58:12.93,0:58:13.93,english,,0,0,0,,DAVID J. MALAN: Perfect.
-Dialogue: 0,0:58:12.93,0:58:13.93,chinese,,0,0,0,,戴维-J-马兰：太好了。
+Dialogue: 0,0:58:12.93,0:58:13.93,chinese,,0,0,0,,太好了。
 Dialogue: 0,0:58:13.93,0:58:22.51,english,,0,0,0,,Logically, it's got to be the case that x is less than y, or x is greater than y, or by conclusion, it's got to be equal to y.
 Dialogue: 0,0:58:13.93,0:58:22.51,chinese,,0,0,0,,逻辑上，必须是 x 小于 y，或者 x 大于 y，或者都不满足，接下来必须是等于 y。
 Dialogue: 0,0:58:22.51,0:58:26.17,english,,0,0,0,,So why are you wasting my time or the computer's time asking a third question?
@@ -1789,7 +1789,7 @@ Dialogue: 0,1:01:14.41,1:01:19.87,chinese,,0,0,0,,但从逻辑上讲，这里还
 Dialogue: 0,1:01:19.87,1:01:21.13,english,,0,0,0,,What I still need to do?
 Dialogue: 0,1:01:19.87,1:01:21.13,chinese,,0,0,0,,是什么事情要做？
 Dialogue: 0,1:01:21.13,1:01:22.41,english,,0,0,0,,AUDIENCE: A semicolon.
-Dialogue: 0,1:01:21.13,1:01:22.41,chinese,,0,0,0,,听众：添一个分号。
+Dialogue: 0,1:01:21.13,1:01:22.41,chinese,,0,0,0,,观众：添一个分号。
 Dialogue: 0,1:01:22.41,1:01:24.53,english,,0,0,0,,DAVID J. MALAN: So I need the semicolon at the end.
 Dialogue: 0,1:01:22.41,1:01:24.53,chinese,,0,0,0,,所以我需要在末尾加上分号。
 Dialogue: 0,1:01:24.53,1:01:26.01,english,,0,0,0,,AUDIENCE: And the int first.
@@ -1886,7 +1886,7 @@ Dialogue: 0,1:03:56.87,1:04:00.17,chinese,,0,0,0,,其实说得通，因为我们
 Dialogue: 0,1:04:00.17,1:04:00.98,english,,0,0,0,,So let's add that.
 Dialogue: 0,1:04:00.17,1:04:00.98,chinese,,0,0,0,,那就加上这个吧。
 Dialogue: 0,1:04:00.98,1:04:12.35,english,,0,0,0,,Else-- now let's open my curly braces, letting VS Code do one of them for me-- printf, quote/unquote, x is not less than y backslash n semicolon.
-Dialogue: 0,1:04:00.98,1:04:12.35,chinese,,0,0,0,,【口述代码段】
+Dialogue: 0,1:04:00.98,1:04:12.35,chinese,,0,0,0,,【口述代码】
 Dialogue: 0,1:04:12.35,1:04:16.43,english,,0,0,0,,Let me go ahead and try this again-- ./compare, Enter.
 Dialogue: 0,1:04:12.35,1:04:16.43,chinese,,0,0,0,,再试一次 ./compare，回车。
 Dialogue: 0,1:04:16.43,1:04:19.10,english,,0,0,0,,Again, 2 for x, 1 for y.
@@ -1899,7 +1899,7 @@ Dialogue: 0,1:04:24.83,1:04:27.05,english,,0,0,0,,Why am I not seeing any else o
 Dialogue: 0,1:04:24.83,1:04:27.05,chinese,,0,0,0,,为什么看不到 else 的输出？
 Dialogue: 0,1:04:27.05,1:04:27.55,english,,0,0,0,,Yeah?
 Dialogue: 0,1:04:27.55,1:04:29.59,english,,0,0,0,,AUDIENCE: You changed your code when you rebuild.
-Dialogue: 0,1:04:27.55,1:04:29.59,chinese,,0,0,0,,听众：重新构建的时候代码修改了。
+Dialogue: 0,1:04:27.55,1:04:29.59,chinese,,0,0,0,,观众：重新构建的时候代码修改了。
 Dialogue: 0,1:04:29.59,1:04:30.69,english,,0,0,0,,You need to compile it.
 Dialogue: 0,1:04:29.59,1:04:30.69,chinese,,0,0,0,,你得重新编译。
 Dialogue: 0,1:04:30.69,1:04:31.29,english,,0,0,0,,DAVID J. MALAN: Exactly.
@@ -2038,7 +2038,7 @@ Dialogue: 0,1:08:34.37,1:08:50.38,chinese,,0,0,0,,因此，如果 c 跟单引号
 Dialogue: 0,1:08:50.38,1:08:51.88,english,,0,0,0,,Otherwise, let's see.
 Dialogue: 0,1:08:50.38,1:08:51.88,chinese,,0,0,0,,否则... 我看眼教案。
 Dialogue: 0,1:08:51.88,1:09:03.60,english,,0,0,0,,Else if the character equals equals, quote/unquote, n, then let me go ahead and print out, say, Not agreed, as though they didn't, quote/unquote.
-Dialogue: 0,1:08:51.88,1:09:03.60,chinese,,0,0,0,,【口述代码段】
+Dialogue: 0,1:08:51.88,1:09:03.60,chinese,,0,0,0,,【口述代码】
 Dialogue: 0,1:09:03.60,1:09:07.06,english,,0,0,0,,And let's leave it at that, I think, here initially.
 Dialogue: 0,1:09:03.60,1:09:07.06,chinese,,0,0,0,,差不多就这样吧。
 Dialogue: 0,1:09:07.06,1:09:11.83,english,,0,0,0,,Now, you'll notice one curiosity, one inconsistency perhaps.
@@ -2050,7 +2050,7 @@ Dialogue: 0,1:09:15.76,1:09:19.72,chinese,,0,0,0,,我做的事情跟以前稍微
 Dialogue: 0,1:09:19.72,1:09:20.38,english,,0,0,0,,Do you see it?
 Dialogue: 0,1:09:19.72,1:09:20.38,chinese,,0,0,0,,你知道吗？
 Dialogue: 0,1:09:20.38,1:09:22.62,english,,0,0,0,,AUDIENCE: The single quotation mark.
-Dialogue: 0,1:09:20.38,1:09:22.62,chinese,,0,0,0,,听众：单引号。
+Dialogue: 0,1:09:20.38,1:09:22.62,chinese,,0,0,0,,观众：单引号。
 Dialogue: 0,1:09:22.62,1:09:23.50,english,,0,0,0,,DAVID J. MALAN: Yeah.
 Dialogue: 0,1:09:22.62,1:09:23.50,chinese,,0,0,0,,是的。
 Dialogue: 0,1:09:23.50,1:09:30.59,english,,0,0,0,,So I've suddenly used single quotation marks for my single characters and double quotes for my actual strings of text.
@@ -2090,7 +2090,7 @@ Dialogue: 0,1:10:20.17,1:10:22.48,english,,0,0,0,,Enter.
 Dialogue: 0,1:10:22.48,1:10:25.72,english,,0,0,0,,Why is it not behaving as I would have expected?
 Dialogue: 0,1:10:22.48,1:10:25.72,chinese,,0,0,0,,为什么它的表现不符合我们预期？
 Dialogue: 0,1:10:25.72,1:10:28.48,english,,0,0,0,,AUDIENCE: Because you entered the capital Y and capital N.
-Dialogue: 0,1:10:25.72,1:10:28.48,chinese,,0,0,0,,听众：因为你输入了大写的 Y 和大写的 N。
+Dialogue: 0,1:10:25.72,1:10:28.48,chinese,,0,0,0,,观众：因为你输入了大写的 Y 和大写的 N。
 Dialogue: 0,1:10:28.48,1:10:32.23,english,,0,0,0,,DAVID J. MALAN: Yeah, I kind of cheated there, and I hit the Caps Lock key just as I started typing in input.
 Dialogue: 0,1:10:28.48,1:10:32.23,chinese,,0,0,0,,是的，我刚才骗你们了，输入的时候按了大写锁定键。
 Dialogue: 0,1:10:32.23,1:10:32.73,english,,0,0,0,,Why?
@@ -2115,9 +2115,9 @@ Dialogue: 0,1:10:57.91,1:10:59.18,chinese,,0,0,0,,这样可以吗？
 Dialogue: 0,1:10:59.18,1:11:01.40,english,,0,0,0,,Let me go ahead and just add two possibilities.
 Dialogue: 0,1:10:59.18,1:11:01.40,chinese,,0,0,0,,让我来补充两种可能性。
 Dialogue: 0,1:11:01.40,1:11:10.72,english,,0,0,0,,So else if c equals equals quote/unquote capital Y, then also do printf agreed backslash n.
-Dialogue: 0,1:11:01.40,1:11:10.72,chinese,,0,0,0,,【口述代码块】
+Dialogue: 0,1:11:01.40,1:11:10.72,chinese,,0,0,0,,【口述代码】
 Dialogue: 0,1:11:10.72,1:11:20.98,english,,0,0,0,,And down here, else if c equals equals single quote capital N, then go ahead and print out, again, Not agreed.
-Dialogue: 0,1:11:10.72,1:11:20.98,chinese,,0,0,0,,【口述代码块】
+Dialogue: 0,1:11:10.72,1:11:20.98,chinese,,0,0,0,,【口述代码】
 Dialogue: 0,1:11:20.98,1:11:23.77,english,,0,0,0,,This, I will claim now, is correct.
 Dialogue: 0,1:11:20.98,1:11:23.77,chinese,,0,0,0,,我得说这样很对。
 Dialogue: 0,1:11:23.77,1:11:26.98,english,,0,0,0,,And I'll do make agree real fast, ./agree.
@@ -2178,7 +2178,7 @@ Dialogue: 0,1:12:47.16,1:12:49.47,chinese,,0,0,0,,我先来改进确认的部分
 Dialogue: 0,1:12:49.47,1:12:54.32,english,,0,0,0,,It turns out, if I delete that clause, I can actually or things together.
 Dialogue: 0,1:12:49.47,1:12:54.32,chinese,,0,0,0,,其实，我们可以删除这些条件块，把这些判断语句放一起。
 Dialogue: 0,1:12:54.32,1:13:02.35,english,,0,0,0,,In Scratch, there's a couple of puzzle pieces, if you didn't discover them, that literally have the word or and the word and on them, which allow you to combine Boolean expressions.
-Dialogue: 0,1:12:54.32,1:13:02.35,chinese,,0,0,0,,在 Scratch 中，有几块拼图（可能你没怎么注意）\N上面有 or 和 and 两个单词，可以让你组合布尔表达式。
+Dialogue: 0,1:12:54.32,1:13:02.35,chinese,,0,0,0,,在 Scratch 中，有几块拼图可能你没怎么注意，\N上面有 or 和 and 两个单词，可以让你组合布尔表达式。
 Dialogue: 0,1:13:02.35,1:13:06.60,english,,0,0,0,,So that either this or this is true, or this and this is true.
 Dialogue: 0,1:13:02.35,1:13:06.60,chinese,,0,0,0,,就是说，要么这个是真的，要么这个是真的，要么这两个都是真的，才满足条件。
 Dialogue: 0,1:13:06.60,1:13:09.27,english,,0,0,0,,In C, you can't just say the word or.
@@ -2188,11 +2188,11 @@ Dialogue: 0,1:13:09.27,1:13:12.85,chinese,,0,0,0,,作为代替你需要用两个
 Dialogue: 0,1:13:12.85,1:13:16.26,english,,0,0,0,,And vertical bars together mean or, logically.
 Dialogue: 0,1:13:12.85,1:13:16.26,chinese,,0,0,0,,在逻辑上，|| 表示或。
 Dialogue: 0,1:13:16.26,1:13:21.78,english,,0,0,0,,And so I can say, c equals equals quote/unquote capital Y, Agreed.
-Dialogue: 0,1:13:16.26,1:13:21.78,chinese,,0,0,0,,因此，我可以说，【代码段口述】，就打印同意。
+Dialogue: 0,1:13:16.26,1:13:21.78,chinese,,0,0,0,,因此，我可以说，【口述代码】，就打印同意。
 Dialogue: 0,1:13:21.78,1:13:24.27,english,,0,0,0,,And now I can get rid of this code down here.
 Dialogue: 0,1:13:21.78,1:13:24.27,chinese,,0,0,0,,现在我可以删除下面的代码了。
 Dialogue: 0,1:13:24.27,1:13:32.34,english,,0,0,0,,And let me go ahead and say, vertical bar twice c equals quote/unquote N in all caps.
-Dialogue: 0,1:13:24.27,1:13:32.34,chinese,,0,0,0,,让我继续写，【口述代码段】。
+Dialogue: 0,1:13:24.27,1:13:32.34,chinese,,0,0,0,,让我继续写，【口述代码】。
 Dialogue: 0,1:13:32.34,1:13:36.87,english,,0,0,0,,And now my program's roughly a third smaller, which is good.
 Dialogue: 0,1:13:32.34,1:13:36.87,chinese,,0,0,0,,现在，我的代码大概少了三分之一，真不错。
 Dialogue: 0,1:13:36.87,1:13:38.14,english,,0,0,0,,There's less redundancy.
@@ -2205,7 +2205,7 @@ Dialogue: 0,1:13:56.40,1:13:57.99,english,,0,0,0,,And there'll be other such tri
 Dialogue: 0,1:13:56.40,1:13:57.99,chinese,,0,0,0,,还会有其他技巧。
 Dialogue: 0,1:13:57.99,1:13:58.94,english,,0,0,0,,Yeah?
 Dialogue: 0,1:13:58.94,1:14:01.61,english,,0,0,0,,AUDIENCE: Is there not a function to just ignore the case?
-Dialogue: 0,1:13:58.94,1:14:01.61,chinese,,0,0,0,,听众：难道就没有忽略大小写的函数吗？
+Dialogue: 0,1:13:58.94,1:14:01.61,chinese,,0,0,0,,观众：难道就没有忽略大小写的函数吗？
 Dialogue: 0,1:14:01.61,1:14:03.24,english,,0,0,0,,DAVID J. MALAN: A really good question.
 Dialogue: 0,1:14:01.61,1:14:03.24,chinese,,0,0,0,,这真是一个好问题。
 Dialogue: 0,1:14:03.24,1:14:06.03,english,,0,0,0,,Is there not a function to just ignore the case?
@@ -2313,9 +2313,9 @@ Dialogue: 0,1:17:00.48,1:17:03.13,english,,0,0,0,,What should I be doing differe
 Dialogue: 0,1:17:00.48,1:17:03.13,chinese,,0,0,0,,我应该怎么做？
 Dialogue: 0,1:17:03.13,1:17:03.63,english,,0,0,0,,Yeah?
 Dialogue: 0,1:17:03.63,1:17:04.12,english,,0,0,0,,AUDIENCE: A loop?
-Dialogue: 0,1:17:03.63,1:17:04.12,chinese,,0,0,0,,听众：循环？
+Dialogue: 0,1:17:03.63,1:17:04.12,chinese,,0,0,0,,观众：循环？
 Dialogue: 0,1:17:04.12,1:17:05.41,english,,0,0,0,,AUDIENCE: This could be a loop.
-Dialogue: 0,1:17:04.12,1:17:05.41,chinese,,0,0,0,,听众：这可以用个循环。
+Dialogue: 0,1:17:04.12,1:17:05.41,chinese,,0,0,0,,观众：这可以用个循环。
 Dialogue: 0,1:17:05.41,1:17:07.14,english,,0,0,0,,DAVID J. MALAN: Yeah.
 Dialogue: 0,1:17:05.41,1:17:07.14,chinese,,0,0,0,,是的。
 Dialogue: 0,1:17:07.14,1:17:09.31,english,,0,0,0,,It's a perfect opportunity for a loop.
@@ -2557,7 +2557,7 @@ Dialogue: 0,1:24:28.38,1:24:29.47,chinese,,0,0,0,,这是某种存储设备。
 Dialogue: 0,1:24:29.47,1:24:32.10,english,,0,0,0,,It's actually, of course, implemented in the computer's memory.
 Dialogue: 0,1:24:29.47,1:24:32.10,chinese,,0,0,0,,当然，实际上是在计算机内存里实现的。
 Dialogue: 0,1:24:32.10,1:24:35.86,english,,0,0,0,,But metaphorically, it's really just a bowl with some values.
-Dialogue: 0,1:24:32.10,1:24:35.86,chinese,,0,0,0,,从隐喻的角度看，它其实只是一个碗，里面放了一个值。
+Dialogue: 0,1:24:32.10,1:24:35.86,chinese,,0,0,0,,打个比方，它其实只是一个碗，里面放了一个值。
 Dialogue: 0,1:24:35.86,1:24:39.84,english,,0,0,0,,And every time you or, in this case, subtract, you're just changing the value of that variable.
 Dialogue: 0,1:24:35.86,1:24:39.84,chinese,,0,0,0,,例子里每次做减法，都是在改变变量的值。
 Dialogue: 0,1:24:39.84,1:24:44.61,english,,0,0,0,,And then the code, meanwhile, of course, in parentheses, is just checking, is the bowl empty?
@@ -2643,7 +2643,7 @@ Dialogue: 0,1:27:13.39,1:27:21.00,chinese,,0,0,0,,看到这里有几个 printf�
 Dialogue: 0,1:27:21.00,1:27:22.75,english,,0,0,0,,And let's implement this in code.
 Dialogue: 0,1:27:21.00,1:27:22.75,chinese,,0,0,0,,来上手用代码实现。
 Dialogue: 0,1:27:22.75,1:27:36.93,english,,0,0,0,,So let's do int i get 0, how about then while i is less than 3, then let's go ahead and say printf quote/unquote meow-- melow-- meow backslash n.
-Dialogue: 0,1:27:22.75,1:27:36.93,chinese,,0,0,0,,【口述代码块】
+Dialogue: 0,1:27:22.75,1:27:36.93,chinese,,0,0,0,,【口述代码】
 Dialogue: 0,1:27:36.93,1:27:41.31,english,,0,0,0,,And then we have to do i minus minus or plus plus?
 Dialogue: 0,1:27:36.93,1:27:41.31,chinese,,0,0,0,,然后要写 i-- 还是 i++？
 Dialogue: 0,1:27:41.31,1:27:42.23,english,,0,0,0,,AUDIENCE: Plus plus.
@@ -2755,11 +2755,11 @@ Dialogue: 0,1:30:17.42,1:30:22.61,chinese,,0,0,0,,就像 Scratch 里，你可以
 Dialogue: 0,1:30:22.61,1:30:31.52,english,,0,0,0,,Questions, then, about this alternative syntax for loops, AKA, a for loop?
 Dialogue: 0,1:30:22.61,1:30:31.52,chinese,,0,0,0,,那么，关于循环的另一种语法，for 循环，理解到了吗？
 Dialogue: 0,1:30:31.52,1:30:34.19,english,,0,0,0,,AUDIENCE: Can you explain again why it doesn't go back to 0?
-Dialogue: 0,1:30:31.52,1:30:34.19,chinese,,0,0,0,,听众：你能再解释一下为什么不回到 0 吗？
+Dialogue: 0,1:30:31.52,1:30:34.19,chinese,,0,0,0,,观众：你能再解释一下为什么不回到 0 吗？
 Dialogue: 0,1:30:34.19,1:30:35.57,english,,0,0,0,,DAVID J. MALAN: Sorry, say again?
 Dialogue: 0,1:30:34.19,1:30:35.57,chinese,,0,0,0,,对不起，再说一遍？
 Dialogue: 0,1:30:35.57,1:30:37.40,english,,0,0,0,,AUDIENCE: Can you explain again why it doesn't reset to 0?
-Dialogue: 0,1:30:35.57,1:30:37.40,chinese,,0,0,0,,听众：你能再解释一下为什么不重置为 0 吗？
+Dialogue: 0,1:30:35.57,1:30:37.40,chinese,,0,0,0,,观众：你能再解释一下为什么不重置为 0 吗？
 Dialogue: 0,1:30:37.40,1:30:38.27,english,,0,0,0,,DAVID J. MALAN: Yeah.
 Dialogue: 0,1:30:37.40,1:30:38.27,chinese,,0,0,0,,彳亍。
 Dialogue: 0,1:30:38.27,1:30:40.40,english,,0,0,0,,Can I explain again why it doesn't reset to 0?
@@ -2786,7 +2786,7 @@ Dialogue: 0,1:31:05.24,1:31:06.38,english,,0,0,0,,That's all.
 Dialogue: 0,1:31:05.24,1:31:06.38,chinese,,0,0,0,,就是这样。
 Dialogue: 0,1:31:06.38,1:31:06.89,english,,0,0,0,,Yeah?
 Dialogue: 0,1:31:06.89,1:31:07.62,english,,0,0,0,,AUDIENCE: That was my question.
-Dialogue: 0,1:31:06.89,1:31:07.62,chinese,,0,0,0,,听众：刚才我也想问这个。
+Dialogue: 0,1:31:06.89,1:31:07.62,chinese,,0,0,0,,观众：刚才我也想问这个。
 Dialogue: 0,1:31:07.62,1:31:08.41,english,,0,0,0,,DAVID J. MALAN: OK.
 Dialogue: 0,1:31:07.62,1:31:08.41,chinese,,0,0,0,,好的。
 Dialogue: 0,1:31:08.41,1:31:11.21,english,,0,0,0,,So let's just work this into my meow example.
@@ -2806,9 +2806,9 @@ Dialogue: 0,1:31:22.79,1:31:24.26,chinese,,0,0,0,,大多数程序员都会说 ge
 Dialogue: 0,1:31:24.26,1:31:28.13,english,,0,0,0,,So int i gets 0 means assignment-- the word get.
 Dialogue: 0,1:31:24.26,1:31:28.13,chinese,,0,0,0,,int i gets 0，就是说，给变量 i 赋值 0。
 Dialogue: 0,1:31:28.13,1:31:32.36,english,,0,0,0,,Now I'm going to do i is less than 3 i++.
-Dialogue: 0,1:31:28.13,1:31:32.36,chinese,,0,0,0,,【口述代码段】
+Dialogue: 0,1:31:28.13,1:31:32.36,chinese,,0,0,0,,【口述代码】
 Dialogue: 0,1:31:32.36,1:31:37.67,english,,0,0,0,,Now in here I'm going to do my printf quote/unquote meow backslash n.
-Dialogue: 0,1:31:32.36,1:31:37.67,chinese,,0,0,0,,【口述代码段】
+Dialogue: 0,1:31:32.36,1:31:37.67,chinese,,0,0,0,,【口述代码】
 Dialogue: 0,1:31:37.67,1:31:39.45,english,,0,0,0,,And so it's indeed a little tighter.
 Dialogue: 0,1:31:37.67,1:31:39.45,chinese,,0,0,0,,所以确实更紧凑了。
 Dialogue: 0,1:31:39.45,1:31:41.40,english,,0,0,0,,I mean, two of the lines are just curly braces.
@@ -2860,7 +2860,7 @@ Dialogue: 0,1:32:47.86,1:32:48.55,chinese,,0,0,0,,你后面那位？
 Dialogue: 0,1:32:48.55,1:32:49.42,english,,0,0,0,,Is that the same?
 Dialogue: 0,1:32:48.55,1:32:49.42,chinese,,0,0,0,,是一个问题吗？
 Dialogue: 0,1:32:49.42,1:32:50.59,english,,0,0,0,,AUDIENCE: I was going to say checking the time.
-Dialogue: 0,1:32:49.42,1:32:50.59,chinese,,0,0,0,,听众：我也想说检查时间。
+Dialogue: 0,1:32:49.42,1:32:50.59,chinese,,0,0,0,,观众：我也想说检查时间。
 Dialogue: 0,1:32:50.59,1:32:52.17,english,,0,0,0,,DAVID J. MALAN: OK, checking the time.
 Dialogue: 0,1:32:50.59,1:32:52.17,chinese,,0,0,0,,好的，检查时间是对的。
 Dialogue: 0,1:32:52.17,1:32:52.90,english,,0,0,0,,And one more?
@@ -2956,16 +2956,16 @@ Dialogue: 0,1:35:41.59,1:35:43.93,chinese,,0,0,0,,怎么停止它在这里 meow�
 Dialogue: 0,1:35:43.93,1:35:45.91,english,,0,0,0,,What recourse do we have here?
 Dialogue: 0,1:35:43.93,1:35:45.91,chinese,,0,0,0,,我们有什么办法？
 Dialogue: 0,1:35:45.91,1:35:48.55,english,,0,0,0,,Well, Control-C will be your friend.
-Dialogue: 0,1:35:45.91,1:35:48.55,chinese,,0,0,0,,那么，Control-C 会帮你。
+Dialogue: 0,1:35:45.91,1:35:48.55,chinese,,0,0,0,,那么，ctrl+c 会帮你。
 Dialogue: 0,1:35:48.55,1:35:51.07,english,,0,0,0,,Sometimes you have to hit it a bunch in a cloud environment.
 Dialogue: 0,1:35:48.55,1:35:51.07,chinese,,0,0,0,,有时，用云环境的话，你得多按几次。
 Dialogue: 0,1:35:51.07,1:35:55.54,english,,0,0,0,,But Control-C for cancel will interrupt a program that's running.
-Dialogue: 0,1:35:51.07,1:35:55.54,chinese,,0,0,0,,Ctrl-C 的 c 指 cancel，这个快捷键会中断正在运行的程序。
+Dialogue: 0,1:35:51.07,1:35:55.54,chinese,,0,0,0,,ctrl+c 的 c 指 cancel，这个快捷键会中断正在运行的程序。
 Dialogue: 0,1:35:51.07,1:35:55.54,annotation,,0,0,0,,*注：可能你更熟悉 ctrl+c 是复制的快捷键，但在终端中一般就是用来中断的，复制可能是 ctrl+shift+c。
 Dialogue: 0,1:35:55.54,1:36:02.56,english,,0,0,0,,And I promise that almost all of you will at some point accidentally introduce an infinite loop because your math is slightly off.
 Dialogue: 0,1:35:55.54,1:36:02.56,chinese,,0,0,0,,我敢说，几乎所有人都会有不小心引入一个无限循环的经历，总有时候你的想法偏差了。
 Dialogue: 0,1:36:02.56,1:36:09.54,english,,0,0,0,,When in doubt, click in the terminal window and hit Control-C-- sometimes multiple times-- and that will indeed cancel whatever is happening there.
-Dialogue: 0,1:36:02.56,1:36:09.54,chinese,,0,0,0,,有问题的时候，点击终端窗口并按下 Control-C 键，\N有时得多按几次，这样就能取消正在跑的程序。
+Dialogue: 0,1:36:02.56,1:36:09.54,chinese,,0,0,0,,有问题的时候，点击终端窗口并按下 ctrl+c 键，\N有时得多按几次，这样就能取消正在跑的程序。
 Dialogue: 0,1:36:09.54,1:36:11.17,english,,0,0,0,,In this case, I might have intended it.
 Dialogue: 0,1:36:09.54,1:36:11.17,chinese,,0,0,0,,刚才的例子里，我可能是故意的。
 Dialogue: 0,1:36:11.17,1:36:14.33,english,,0,0,0,,But sometimes it's not, in fact, intended.
@@ -3052,8 +3052,7 @@ Dialogue: 0,1:39:36.83,1:39:39.58,chinese,,0,0,0,,在 macOS 或 Windows 的世�
 Dialogue: 0,1:39:39.58,1:39:47.40,english,,0,0,0,,But in the world of a command line environment, that means you do ./ and then the name without the asterisk to execute or run the code therein.
 Dialogue: 0,1:39:39.58,1:39:47.40,chinese,,0,0,0,,但在命令行环境中，这意味着你要输入 ./ ，\N再输入不带星号的名称，以执行其中的代码。
 Dialogue: 0,1:39:47.40,1:39:54.99,english,,0,0,0,,So if I open up my File Explorer-- and I'm hitting Command-B on my computer here just as a keyboard shortcut-- you'll see the exact same thing.
-Dialogue: 0,1:39:47.40,1:39:54.99,chinese,,0,0,0,,所以，如果我打开我的文件浏览器，快捷键是 ctrl+b，您会看到完全相同的内容。
-Dialogue: 0,1:39:47.40,1:39:54.99,annotation,,0,0,0,,*注：这里教授有误，云端环境和本地 VS Code 中，打开 File explorer 的快捷键都是 ctrl+b。
+Dialogue: 0,1:39:47.40,1:39:54.99,chinese,,0,0,0,,所以，如果我打开我的文件浏览器，快捷键是 ctrl/command+b，就会看到完全相同的内容。
 Dialogue: 0,1:39:54.99,1:39:59.21,english,,0,0,0,,So ls is the command line interface for listing the files in your account.
 Dialogue: 0,1:39:54.99,1:39:59.21,chinese,,0,0,0,,因此，ls 是命令行界面里用来列出账户中文件的命令。
 Dialogue: 0,1:39:59.21,1:40:03.06,english,,0,0,0,,But here, because I'm using VS Code or any program like it,
@@ -3178,7 +3177,7 @@ Dialogue: 0,1:43:26.12,1:43:29.00,chinese,,0,0,0,,命令行里，需要通过文
 Dialogue: 0,1:43:29.00,1:43:33.35,english,,0,0,0,,But now if I type ls and hit Enter, what should I see?
 Dialogue: 0,1:43:29.00,1:43:33.35,chinese,,0,0,0,,现在要输入 ls 并按回车键，会看到什么？
 Dialogue: 0,1:43:33.35,1:43:34.34,english,,0,0,0,,AUDIENCE: Mario.c
-Dialogue: 0,1:43:33.35,1:43:34.34,chinese,,0,0,0,,听众：mario.c。
+Dialogue: 0,1:43:33.35,1:43:34.34,chinese,,0,0,0,,观众：mario.c。
 Dialogue: 0,1:43:34.34,1:43:36.17,english,,0,0,0,,DAVID J. MALAN: Yeah, mario.c.
 Dialogue: 0,1:43:34.34,1:43:36.17,chinese,,0,0,0,,没错，mario.c。
 Dialogue: 0,1:43:36.17,1:43:43.94,english,,0,0,0,,And now if I want to open it-- if I want to actually compile it, I can run make mario in this directory once I actually type out all of the code.
@@ -3231,7 +3230,7 @@ Dialogue: 0,1:45:17.88,1:45:25.26,chinese,,0,0,0,,要从哪里开始，又要怎
 Dialogue: 0,1:45:25.26,1:45:31.50,english,,0,0,0,,So one of my favorite games from yesteryear is this one here, "Super Mario Brothers" that has come in so many different forms since.
 Dialogue: 0,1:45:25.26,1:45:31.50,chinese,,0,0,0,,我最喜欢的一款游戏是 "超级马里奥兄弟"，它已经有很多个版本了。
 Dialogue: 0,1:45:31.50,1:45:37.45,english,,0,0,0,,But in this original two-dimensional side scroller game, there was a lot of artwork like this.
-Dialogue: 0,1:45:31.50,1:45:37.45,chinese,,0,0,0,,但在这个最初的二维横板卷轴游戏里面，有很多类似这样的艺术作品。
+Dialogue: 0,1:45:31.50,1:45:37.45,chinese,,0,0,0,,但在这个最初的二维横版卷轴游戏里面，有很多类似这样的艺术作品。
 Dialogue: 0,1:45:37.45,1:45:40.26,english,,0,0,0,,So for instance, up here in the sky were four question marks.
 Dialogue: 0,1:45:37.45,1:45:40.26,chinese,,0,0,0,,比如说，天空上有四个问号。
 Dialogue: 0,1:45:40.26,1:45:49.92,english,,0,0,0,,And we'll find that in C and a lot of programming languages initially, it's a lot easier, a lot more accessible to focus really on black and white type interactive programs textually as opposed
@@ -3271,7 +3270,7 @@ Dialogue: 0,1:46:58.83,1:47:03.15,chinese,,0,0,0,,如果问号增加到了五个
 Dialogue: 0,1:47:03.15,1:47:08.10,english,,0,0,0,,60 different question marks, loop was always the answer for not repeating ourselves.
 Dialogue: 0,1:47:03.15,1:47:08.10,chinese,,0,0,0,,六十个，避免重复的办法当然是使用循环。
 Dialogue: 0,1:47:08.10,1:47:17.10,english,,0,0,0,,So maybe I should rewrite this a little bit more flexibly and say something like this, for in i get 0, i less than 4, i++.
-Dialogue: 0,1:47:08.10,1:47:17.10,chinese,,0,0,0,,我可以灵活地改写一下，这样：【口述代码段】。
+Dialogue: 0,1:47:08.10,1:47:17.10,chinese,,0,0,0,,我可以灵活地改写一下，这样：【口述代码】。
 Dialogue: 0,1:47:17.10,1:47:25.80,english,,0,0,0,,And then inside of a for loop, now I can just do a single question mark, but I don't think what I've just done is correct.
 Dialogue: 0,1:47:17.10,1:47:25.80,chinese,,0,0,0,,在 for 循环内部，我就可以只用打印一个问号了，但好像这么有点问题。
 Dialogue: 0,1:47:25.80,1:47:29.28,english,,0,0,0,,Any one spot the aesthetic bug already?
@@ -3334,7 +3333,7 @@ Dialogue: 0,1:49:04.78,1:49:06.33,chinese,,0,0,0,,还是跟以前一样的范式
 Dialogue: 0,1:49:06.33,1:49:15.87,english,,0,0,0,,Even whether you're using 4 or 3, if you get into the habit of starting counting from 0, you go on up to but not through the value you want to count up to.
 Dialogue: 0,1:49:06.33,1:49:15.87,chinese,,0,0,0,,大家都养成了从 0 开始数数的习惯，然后一直数到要达到的数值，\N且不会数最后一个数，这样就刚好循环那么多次。
 Dialogue: 0,1:49:15.87,1:49:20.05,english,,0,0,0,,So that's why I'm using less than instead of less than or equal to there.
-Dialogue: 0,1:49:15.87,1:49:20.05,chinese,,0,0,0,,我用 less than 而不是 less than 或 equal to，就是这个原因。
+Dialogue: 0,1:49:15.87,1:49:20.05,chinese,,0,0,0,,我用 < 而不是 <=，就是这个原因。
 Dialogue: 0,1:49:20.05,1:49:25.36,english,,0,0,0,,So this would be the common paradigm, though you could count it like we saw earlier in different ways.
 Dialogue: 0,1:49:20.05,1:49:25.36,chinese,,0,0,0,,所以说这种写法很常见，虽然说你用别的写法自己推一推也是一样的。
 Dialogue: 0,1:49:25.36,1:49:27.96,english,,0,0,0,,But what if things escalate one level further?
@@ -3386,7 +3385,7 @@ Dialogue: 0,1:51:23.08,1:51:24.70,chinese,,0,0,0,,这里有什么不好？
 Dialogue: 0,1:51:24.70,1:51:25.34,english,,0,0,0,,Yeah, in back?
 Dialogue: 0,1:51:24.70,1:51:25.34,chinese,,0,0,0,,后面这位请讲？
 Dialogue: 0,1:51:25.34,1:51:27.66,english,,0,0,0,,AUDIENCE: You used the same integer i.
-Dialogue: 0,1:51:25.34,1:51:27.66,chinese,,0,0,0,,听众：你用的是同一个整数 i。
+Dialogue: 0,1:51:25.34,1:51:27.66,chinese,,0,0,0,,观众：你用的是同一个整数 i。
 Dialogue: 0,1:51:27.66,1:51:30.04,english,,0,0,0,,DAVID J. MALAN: Yeah, I'm using the same integer i, which
 Dialogue: 0,1:51:27.66,1:51:30.04,chinese,,0,0,0,,是的，我正在使用相同的整数 i，
 Dialogue: 0,1:51:30.04,1:51:32.08,english,,0,0,0,,I feel like could get me into trouble.
@@ -3418,7 +3417,7 @@ Dialogue: 0,1:52:08.48,1:52:12.85,chinese,,0,0,0,,不过可以数一下，这里
 Dialogue: 0,1:52:12.85,1:52:14.48,english,,0,0,0,,You can probably just guess logically.
 Dialogue: 0,1:52:12.85,1:52:14.48,chinese,,0,0,0,,也可以从逻辑上猜一下。
 Dialogue: 0,1:52:14.48,1:52:15.11,english,,0,0,0,,AUDIENCE: Nine.
-Dialogue: 0,1:52:14.48,1:52:15.11,chinese,,0,0,0,,听众：有九个。
+Dialogue: 0,1:52:14.48,1:52:15.11,chinese,,0,0,0,,观众：有九个。
 Dialogue: 0,1:52:15.11,1:52:17.11,english,,0,0,0,,DAVID J. MALAN: Yeah, there's nine hashes there.
 Dialogue: 0,1:52:15.11,1:52:17.11,chinese,,0,0,0,,没错，这里有九个井号。
 Dialogue: 0,1:52:17.11,1:52:21.34,english,,0,0,0,,Unfortunately, they're all on the same line instead of on three different lines.
@@ -3431,7 +3430,7 @@ Dialogue: 0,1:52:26.53,1:52:28.07,english,,0,0,0,,They're just not on the right 
 Dialogue: 0,1:52:26.53,1:52:28.07,chinese,,0,0,0,,它们只是层次不太对。
 Dialogue: 0,1:52:28.07,1:52:28.64,english,,0,0,0,,Yeah?
 Dialogue: 0,1:52:28.64,1:52:32.62,english,,0,0,0,,AUDIENCE: If you put a new line at the first loop, then you'll get three separate lines.
-Dialogue: 0,1:52:28.64,1:52:32.62,chinese,,0,0,0,,听众：如果在第一个循环那里换行，就有三个独立的行了。
+Dialogue: 0,1:52:28.64,1:52:32.62,chinese,,0,0,0,,观众：如果在第一个循环那里换行，就有三个独立的行了。
 Dialogue: 0,1:52:32.62,1:52:33.49,english,,0,0,0,,DAVID J. MALAN: Yeah.
 Dialogue: 0,1:52:32.62,1:52:33.49,chinese,,0,0,0,,对的。
 Dialogue: 0,1:52:33.49,1:52:38.00,english,,0,0,0,,So put a new line after the first loop, this inner loop, if you will, the nested loop, if you will.
@@ -3455,7 +3454,7 @@ Dialogue: 0,1:53:10.96,1:53:13.60,chinese,,0,0,0,,现在其实还写得有点马
 Dialogue: 0,1:53:13.60,1:53:26.42,english,,0,0,0,,If I want this to always be a square just because that's what it looks like in the game, well, I could change it to be a 4 by 4 square by doing this or a 5 by 5 grid-- whoops-- by doing this.
 Dialogue: 0,1:53:13.60,1:53:26.42,chinese,,0,0,0,,如果我想让它始终保持为正方形，跟游戏里一致，\N那么，可以这么来把它改成 4*4 或者 5*5 的正方形，但是——
 Dialogue: 0,1:53:26.42,1:53:33.33,english,,0,0,0,,Why is this perhaps not the best design to just keep changing the numbers when I want to change the size?
-Dialogue: 0,1:53:26.42,1:53:33.33,chinese,,0,0,0,,为什么说改变尺寸的时候，不断改变数字可能不是最好的设计呢？ 
+Dialogue: 0,1:53:26.42,1:53:33.33,chinese,,0,0,0,,为什么说改变尺寸的时候，不断改变数字可能不是最好的设计呢？
 Dialogue: 0,1:53:33.33,1:53:34.44,english,,0,0,0,,Where could this go awry?
 Dialogue: 0,1:53:33.33,1:53:34.44,chinese,,0,0,0,,哪里会出问题？
 Dialogue: 0,1:53:34.44,1:53:35.01,english,,0,0,0,,Yeah?
@@ -3585,7 +3584,7 @@ Dialogue: 0,1:57:46.45,1:57:49.93,chinese,,0,0,0,,哦，糟糕，我不小心弄
 Dialogue: 0,1:57:49.93,1:57:53.78,english,,0,0,0,,What is it suggesting I do, albeit cryptically?
 Dialogue: 0,1:57:49.93,1:57:53.78,chinese,,0,0,0,,它在暗示我做什么，虽然有点没太说清楚？
 Dialogue: 0,1:57:53.78,1:57:56.66,english,,0,0,0,,AUDIENCE: You have to include the cs50.h.
-Dialogue: 0,1:57:53.78,1:57:56.66,chinese,,0,0,0,,听众：得 include cs50.h。
+Dialogue: 0,1:57:53.78,1:57:56.66,chinese,,0,0,0,,观众：得 include cs50.h。
 Dialogue: 0,1:57:56.66,1:57:59.93,english,,0,0,0,,DAVID J. MALAN: Yeah, I forgot to include the CS50 header file up top.
 Dialogue: 0,1:57:56.66,1:57:59.93,chinese,,0,0,0,,是的，我忘了把 CS50 头文件放在最上面。
 Dialogue: 0,1:57:59.93,1:58:03.42,english,,0,0,0,,And that's why it doesn't know that get_int is, in fact, valid.
@@ -3654,7 +3653,7 @@ Dialogue: 0,1:59:40.79,1:59:44.81,chinese,,0,0,0,,你必须给他们有限次数
 Dialogue: 0,1:59:44.81,1:59:48.17,english,,0,0,0,,So what would be intuitively a better solution here?
 Dialogue: 0,1:59:44.81,1:59:48.17,chinese,,0,0,0,,那么，什么才是直观上更好的解决方案呢？
 Dialogue: 0,1:59:48.17,1:59:49.12,english,,0,0,0,,AUDIENCE: A while loop.
-Dialogue: 0,1:59:48.17,1:59:49.12,chinese,,0,0,0,,听众：用 while 循环。
+Dialogue: 0,1:59:48.17,1:59:49.12,chinese,,0,0,0,,观众：用 while 循环。
 Dialogue: 0,1:59:49.12,1:59:50.92,english,,0,0,0,,DAVID J. MALAN: Yeah, so some kind of loop.
 Dialogue: 0,1:59:49.12,1:59:50.92,chinese,,0,0,0,,是的，所以要用某种循环。
 Dialogue: 0,1:59:50.92,1:59:52.16,english,,0,0,0,,We've seen a while loop.
@@ -3821,7 +3820,7 @@ Dialogue: 0,2:05:28.23,2:05:34.65,chinese,,0,0,0,,我可以说，假设已经存
 Dialogue: 0,2:05:34.65,2:05:36.22,english,,0,0,0,,I could do something like this.
 Dialogue: 0,2:05:34.65,2:05:36.22,chinese,,0,0,0,,可以这样做。
 Dialogue: 0,2:05:36.22,2:05:38.79,english,,0,0,0,,I could do int n equals get_size.
-Dialogue: 0,2:05:36.22,2:05:38.79,chinese,,0,0,0,,【口述代码块】
+Dialogue: 0,2:05:36.22,2:05:38.79,chinese,,0,0,0,,【口述代码】
 Dialogue: 0,2:05:38.79,2:05:43.00,english,,0,0,0,,And now I just have to assume for the moment that some abstraction called get_size exists.
 Dialogue: 0,2:05:38.79,2:05:43.00,chinese,,0,0,0,,现在我只需要暂时假设，有这么一个 get_size 的函数。
 Dialogue: 0,2:05:43.00,2:05:43.50,english,,0,0,0,,It doesn't.
@@ -3880,7 +3879,7 @@ Dialogue: 0,2:06:59.31,2:07:01.14,chinese,,0,0,0,,或者至少在现在，
 Dialogue: 0,2:07:01.14,2:07:03.18,english,,0,0,0,,I at least know concretely what to do.
 Dialogue: 0,2:07:01.14,2:07:03.18,chinese,,0,0,0,,我能够确切地知道该怎么做了。
 Dialogue: 0,2:07:03.18,2:07:12.27,english,,0,0,0,,And I could figure out eventually, with some trial and error perhaps, all right, if I declare a variable and I do the following n equals get_int, prompting the user for size,
-Dialogue: 0,2:07:03.18,2:07:12.27,chinese,,0,0,0,,最后，我通过反复试验，终于写出来，【口述代码块】。
+Dialogue: 0,2:07:03.18,2:07:12.27,chinese,,0,0,0,,最后，我通过反复试验，终于写出来，【口述代码】。
 Dialogue: 0,2:07:12.27,2:07:22.83,english,,0,0,0,,and I keep doing that while n is less than 1, once that block of code is done, here is a new keyword in C where you can return that value n.
 Dialogue: 0,2:07:12.27,2:07:22.83,chinese,,0,0,0,,当 n 小于 1 时，就继续循环。\N完成循环后，这里有一个新的 C 语言关键字，你可以使用它返回这个值 n。
 Dialogue: 0,2:07:22.83,2:07:27.33,english,,0,0,0,,So I keep referring to these values that some functions return as return values.
@@ -3938,9 +3937,9 @@ Dialogue: 0,2:08:54.94,2:08:56.14,chinese,,0,0,0,,也可以称之为 n。
 Dialogue: 0,2:08:56.14,2:09:01.03,english,,0,0,0,,And it's OK to use the same variable in different functions, but I'll call it size just to be distinct.
 Dialogue: 0,2:08:56.14,2:09:01.03,chinese,,0,0,0,,在不同的函数中使用同一个变量名没有问题，但为了明确起见，我会把它叫做 size。
 Dialogue: 0,2:09:01.03,2:09:18.79,english,,0,0,0,,And then in this function, I'm just going to copy from memory the same code is before. for int i get 0, i less than size-- instead of 3-- i++, inside of this, for int j gets 0, j is less than size j++,
-Dialogue: 0,2:09:01.03,2:09:18.79,chinese,,0,0,0,,然后在这个函数中，我凭借记忆重新写一遍代码，【口述代码段】。
+Dialogue: 0,2:09:01.03,2:09:18.79,chinese,,0,0,0,,然后在这个函数中，我凭借记忆重新写一遍代码，【口述代码】。
 Dialogue: 0,2:09:18.79,2:09:28.66,english,,0,0,0,,and inside of that, print out with printf a single hash, print out after that loop a single new line, and that's it.
-Dialogue: 0,2:09:18.79,2:09:28.66,chinese,,0,0,0,,【口述代码段】
+Dialogue: 0,2:09:18.79,2:09:28.66,chinese,,0,0,0,,【口述代码】
 Dialogue: 0,2:09:28.66,2:09:30.37,english,,0,0,0,,Now, I did this fast, admittedly.
 Dialogue: 0,2:09:28.66,2:09:30.37,chinese,,0,0,0,,确实，我写得相当快。
 Dialogue: 0,2:09:30.37,2:09:32.86,english,,0,0,0,,But it's the same code that I wrote earlier.
@@ -4052,9 +4051,9 @@ Dialogue: 0,2:12:51.49,2:12:57.78,chinese,,0,0,0,,再调用一次 get_int，提�
 Dialogue: 0,2:12:57.78,2:13:05.08,english,,0,0,0,,And then let's very simply go ahead at the very end and just print out, say, the sum of x plus y, a super simple calculator.
 Dialogue: 0,2:12:57.78,2:13:05.08,chinese,,0,0,0,,最后，简简单单打印一个 x 和 y 的和，这是一个超级简单的计算器。
 Dialogue: 0,2:13:05.08,2:13:10.93,english,,0,0,0,,So I'll use printf, quote/unquote, %i for integer, backslash n to give me the new line.
-Dialogue: 0,2:13:05.08,2:13:10.93,chinese,,0,0,0,,【口述代码块】
+Dialogue: 0,2:13:05.08,2:13:10.93,chinese,,0,0,0,,【口述代码】
 Dialogue: 0,2:13:10.93,2:13:14.64,english,,0,0,0,,Then I'm going to go ahead and do x plus y to indeed print out the sum.
-Dialogue: 0,2:13:10.93,2:13:14.64,chinese,,0,0,0,,【口述代码块】
+Dialogue: 0,2:13:10.93,2:13:14.64,chinese,,0,0,0,,【口述代码】
 Dialogue: 0,2:13:14.64,2:13:16.71,english,,0,0,0,,Let me go down to my terminal window now.
 Dialogue: 0,2:13:14.64,2:13:16.71,chinese,,0,0,0,,现在来进入终端窗口。
 Dialogue: 0,2:13:16.71,2:13:20.34,english,,0,0,0,,Let me do make calculator in order to compile the code.
@@ -4362,7 +4361,7 @@ Dialogue: 0,2:27:01.40,2:27:16.99,chinese,,0,0,0,,问题就是，如果在 1999 
 Dialogue: 0,2:27:16.99,2:27:30.74,english,,0,0,0,,It should be the year 2000, but if they're only using two digits to represent years, they might mistake the year-- as some systems may very well have-- for the year 1900 instead, taking literally a big step backwards, if you will.
 Dialogue: 0,2:27:16.99,2:27:30.74,chinese,,0,0,0,,本应是 2000 年，但如果他们只用两位数表示年份，\N从字面上就会误认为是 1900 年，有些系统很可能就是这样，导致时间倒退了一大步。
 Dialogue: 0,2:27:30.74,2:27:37.24,english,,0,0,0,,Now, you'd like to think that kind of issue is behind us, especially as we understand all the more about the limitations of code and computing.
-Dialogue: 0,2:27:30.74,2:27:37.24,chinese,,0,0,0,,现在，你可能认为这种问题已经过去了，尤其是在我们对代码和计算的限制有了更多了解的情况下。
+Dialogue: 0,2:27:30.74,2:27:37.24,chinese,,0,0,0,,现在，你可能认为这种问题已经不复存在了，尤其是在我们对代码和计算的限制有了更多了解的情况下。
 Dialogue: 0,2:27:37.24,2:27:42.16,english,,0,0,0,,But we're actually going to run up against this very same type of issue again in just a few years.
 Dialogue: 0,2:27:37.24,2:27:42.16,chinese,,0,0,0,,但实际上，我们很快就会再次遇到类似的问题。
 Dialogue: 0,2:27:42.16,2:27:50.80,english,,0,0,0,,On January 19 in the year 2038, we will have run out of bits in most computers right now to keep track of time.
@@ -4389,6 +4388,6 @@ Dialogue: 0,2:28:48.56,2:28:50.56,english,,0,0,0,,Next week, we'll peel back som
 Dialogue: 0,2:28:48.56,2:28:50.56,chinese,,0,0,0,,下周，我们将深入探讨其中的一些方面。
 Dialogue: 0,2:28:50.56,2:28:54.55,english,,0,0,0,,But for now, this was week 1, and best of luck on problem set 1.
 Dialogue: 0,2:28:50.56,2:28:54.55,chinese,,0,0,0,,到现在为止，就是第一周的内容，祝你在解决问题集 1 上好运。
-Dialogue: 0,2:28:50.56,2:28:54.55,annotation,,0,0,0,,*碎碎念：这次信息量真的很大，大家看完辛苦啦！大家记得去完成 problem set 1 和 lab 1 哦~
+Dialogue: 0,2:28:50.56,2:28:54.55,annotation,,0,0,0,,*碎碎念：这次信息量真的很大，大家看完辛苦啦！记得去完成 problem set 1 和 lab 1 哦~
 Dialogue: 0,2:28:54.55,2:28:57.85,english,,0,0,0,,[APPLAUSE]
 Dialogue: 0,2:28:57.85,2:29:01.50,english,,0,0,0,,[MUSIC PLAYING]
