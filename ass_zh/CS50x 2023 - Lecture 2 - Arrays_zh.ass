@@ -5,12 +5,19 @@ Title: Default Aegisub file
 ScriptType: v4.00+
 WrapStyle: 0
 ScaledBorderAndShadow: yes
-YCbCr Matrix: None
+YCbCr Matrix: TV.601
+PlayResX: 1920
+PlayResY: 1080
 
 [Aegisub Project Garbage]
-Audio File: ../video/CS50x 2023 - Lecture 1 - C.mp4
-Video Zoom Percent: 0.250000
-Active Line: 2132
+Audio File: ../video/CS50x 2023 - Lecture 2 - Arrays.mp4
+Video File: ../video/CS50x 2023 - Lecture 2 - Arrays.mp4
+Video AR Mode: 4
+Video AR Value: 1.777778
+Video Zoom Percent: 0.375000
+Scroll Position: 998
+Active Line: 1004
+Video Position: 60866
 
 [V4+ Styles]
 Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
@@ -25,1046 +32,1007 @@ Dialogue: 0,0:00:02.98,0:00:06.46,english,,0,0,0,,[MUSIC PLAYING]
 Dialogue: 0,0:01:12.60,0:01:13.59,english,,0,0,0,,DAVID MALAN: All right.
 Dialogue: 0,0:01:12.60,0:01:13.59,chinese,,0,0,0,,好的。
 Dialogue: 0,0:01:13.59,0:01:24.12,english,,0,0,0,,This is CS50, and this is week 2 wherein we're going to take a look at a lower level at how things work, and indeed, among the goals of the course is this bottom-up understanding
-Dialogue: 0,0:01:13.59,0:01:24.12,chinese,,0,0,0,,这里是 CS50，这是第二周，我们将从较低的层次来了解事物是如何工作的，事实上，本课程的目标之一就是这种自下而上的理解
+Dialogue: 0,0:01:13.59,0:01:24.12,chinese,,0,0,0,,这里是 CS50，现在是 Week 2，我们会从底层来了解计算机怎么工作，\N其实，本课程的目标之一就是形成自下而上的理解，
 Dialogue: 0,0:01:24.12,0:01:29.92,english,,0,0,0,,so that in a couple of weeks' time, even a few years' time, when you encounter some new technology, you'll be able to think back hopefully
-Dialogue: 0,0:01:24.12,0:01:29.92,chinese,,0,0,0,,这样，几周后，甚至几年后，当你遇到一些新技术时，你就能回想起来，希望
+Dialogue: 0,0:01:24.12,0:01:29.92,chinese,,0,0,0,,这样在几周甚至几年后，当你遇到一些新技术时，你就能够回想起来这门课谈到的东西，
 Dialogue: 0,0:01:29.92,0:01:36.06,english,,0,0,0,,on some of this week's and this is basic building blocks and primitives and really just deduce how tomorrow's technologies work.
-Dialogue: 0,0:01:29.92,0:01:36.06,chinese,,0,0,0,,在本周的一些基本构件和基元的基础上，真正推导出未来技术的工作原理。
+Dialogue: 0,0:01:29.92,0:01:36.06,chinese,,0,0,0,,从计算机科学的基石和原语出发，推断出未来那些全新技术背后的运作原理。
 Dialogue: 0,0:01:36.06,0:01:41.38,english,,0,0,0,,But along the way, it's going to seem-- it's going to be a little hard, perhaps, to see the forest for the trees, so to speak.
-Dialogue: 0,0:01:36.06,0:01:41.38,chinese,,0,0,0,,但一路走来，我们会发现--也许，要做到 "只见树木，不见森林 "有点困难。
+Dialogue: 0,0:01:36.06,0:01:41.38,chinese,,0,0,0,,在这个学习的过程，也许很可能 "只见树木，不见森林" ，陷入暂时的困难。
 Dialogue: 0,0:01:41.38,0:01:44.78,english,,0,0,0,,And so the goal at the end of the day still is going to be problem-solving.
-Dialogue: 0,0:01:41.38,0:01:44.78,chinese,,0,0,0,,因此，最终的目标仍然是解决问题。
+Dialogue: 0,0:01:41.38,0:01:44.78,chinese,,0,0,0,,归根结底，我们的目标仍然是解决问题。
 Dialogue: 0,0:01:44.78,0:01:53.28,english,,0,0,0,,And so we thought we'd begin today with a look at some of the problems we'll talk about or solve this coming week, and for that, we have some brave volunteers who have already come up.
-Dialogue: 0,0:01:44.78,0:01:53.28,chinese,,0,0,0,,为此，我们请来了一些勇敢的志愿者，他们已经站了出来。
+Dialogue: 0,0:01:44.78,0:01:53.28,chinese,,0,0,0,,所以今天，我们先从一些本周打算讨论和解决的问题入手，\N而且，已经有一些勇敢的志愿者自告奋勇了。
 Dialogue: 0,0:01:53.28,0:01:58.32,english,,0,0,0,,If we could turn on some dramatic lighting and meet today's volunteers.
-Dialogue: 0,0:01:53.28,0:01:58.32,chinese,,0,0,0,,如果我们能打开一些戏剧性的灯光，见见今天的志愿者。
+Dialogue: 0,0:01:53.28,0:01:58.32,chinese,,0,0,0,,让灯光聚焦，大家认识一下志愿者们。
 Dialogue: 0,0:01:58.32,0:02:00.43,english,,0,0,0,,So on my left here, we have--
-Dialogue: 0,0:01:58.32,0:02:00.43,chinese,,0,0,0,,在我的左边
+Dialogue: 0,0:01:58.32,0:02:00.43,chinese,,0,0,0,,左边这位，
 Dialogue: 0,0:02:00.43,0:02:00.93,english,,0,0,0,,ALEX: Hi.
 Dialogue: 0,0:02:00.93,0:02:01.96,english,,0,0,0,,My name is Alex.
-Dialogue: 0,0:02:00.93,0:02:01.96,chinese,,0,0,0,,我叫亚历克斯。
+Dialogue: 0,0:02:00.93,0:02:01.96,chinese,,0,0,0,,我叫 Alex。
 Dialogue: 0,0:02:01.96,0:02:05.34,english,,0,0,0,,I'm a first-year at the college and I'm from Chapel Hill, North Carolina.
-Dialogue: 0,0:02:01.96,0:02:05.34,chinese,,0,0,0,,我是学院的一年级学生，来自北卡罗来纳州的教堂山。
+Dialogue: 0,0:02:01.96,0:02:05.34,chinese,,0,0,0,,是学院的一年级生，来自北卡罗来纳州的 Chapel Hell。
 Dialogue: 0,0:02:05.34,0:02:07.08,english,,0,0,0,,DAVID MALAN: Welcome to Alex.
-Dialogue: 0,0:02:05.34,0:02:07.08,chinese,,0,0,0,,戴维-马兰：欢迎亚历克斯。
+Dialogue: 0,0:02:05.34,0:02:07.08,chinese,,0,0,0,,欢迎 Alex。
 Dialogue: 0,0:02:07.08,0:02:09.18,english,,0,0,0,,And to Alex's right.
-Dialogue: 0,0:02:07.08,0:02:09.18,chinese,,0,0,0,,在亚历克斯的右边
+Dialogue: 0,0:02:07.08,0:02:09.18,chinese,,0,0,0,,在Alex的右边是...
 Dialogue: 0,0:02:09.18,0:02:10.05,english,,0,0,0,,SARAH: I'm Sarah.
-Dialogue: 0,0:02:09.18,0:02:10.05,chinese,,0,0,0,,我是莎拉
+Dialogue: 0,0:02:09.18,0:02:10.05,chinese,,0,0,0,,我是 Sarah。
 Dialogue: 0,0:02:10.05,0:02:13.23,english,,0,0,0,,I'm from Toronto, Canada, and I'm also a first-year student at the college.
 Dialogue: 0,0:02:10.05,0:02:13.23,chinese,,0,0,0,,我来自加拿大多伦多，也是学院的一年级学生。
 Dialogue: 0,0:02:13.23,0:02:14.18,english,,0,0,0,,DAVID MALAN: Wonderful.
-Dialogue: 0,0:02:13.23,0:02:14.18,chinese,,0,0,0,,太棒了。
+Dialogue: 0,0:02:13.23,0:02:14.18,chinese,,0,0,0,,真棒。
 Dialogue: 0,0:02:14.18,0:02:15.86,english,,0,0,0,,Well, welcome to both Alex and Sarah.
-Dialogue: 0,0:02:14.18,0:02:15.86,chinese,,0,0,0,,欢迎亚历克斯和莎拉。
-Dialogue: 0,0:02:15.86,0:02:25.65,english,,0,0,0,,So one of the problems you'll perhaps solve this week for problem set 2 is to analyze the reading level of a body of text, whether someone reads at a first grade level, second grade level, third grade
-Dialogue: 0,0:02:15.86,0:02:25.65,chinese,,0,0,0,,因此，你们本周要解决的问题集 2 中的一个问题是分析文章的阅读水平，即某人的阅读水平是一年级水平、二年级水平还是三年级水平。
-Dialogue: 0,0:02:25.65,0:02:28.57,english,,0,0,0,,level, all the way up to 12 or 13 or beyond.
-Dialogue: 0,0:02:25.65,0:02:28.57,chinese,,0,0,0,,级，一直到 12、13 级或更高。
+Dialogue: 0,0:02:14.18,0:02:15.86,chinese,,0,0,0,,欢迎 Alex 和 Sarah。
+Dialogue: 0,0:02:15.86,0:02:28.57,english,,0,0,0,,So one of the problems you'll perhaps solve this week for problem set 2 is to analyze the reading level of a body of text, whether someone reads at a first grade level, second grade level, third grade level, all the way up to 12 or 13 or beyond.
+Dialogue: 0,0:02:15.86,0:02:28.57,chinese,,0,0,0,,我们本周要解决的问题集 2 中，有一个问题是分析文章的阅读水平，\N也就是说需要读者的阅读水平是一年级、二年级... 还是需要 12、13 级或更高。
 Dialogue: 0,0:02:28.57,0:02:36.75,english,,0,0,0,,What you perhaps never quite thought about, certainly in terms of code, like how you would analyze some text, some book and figure out what reading level is it at.
-Dialogue: 0,0:02:28.57,0:02:36.75,chinese,,0,0,0,,你可能从来没有想过，当然是在代码方面，比如你如何分析一些文本、书籍，并找出它的阅读水平。
+Dialogue: 0,0:02:28.57,0:02:36.75,chinese,,0,0,0,,你可能从来没有想过，从代码角度出发，如何来分析一些文本、书籍，然后判断它的阅读水平。
 Dialogue: 0,0:02:36.75,0:02:40.33,english,,0,0,0,,And yet, surely our teachers growing up knew or had an intuitive sense of this.
-Dialogue: 0,0:02:36.75,0:02:40.33,chinese,,0,0,0,,然而，我们成长过程中的老师肯定知道或直观地感受到了这一点。
+Dialogue: 0,0:02:36.75,0:02:40.33,chinese,,0,0,0,,然而，毫无疑问，我们成长过程中的老师知道这一点，或者说他们在直觉上能分辨。
 Dialogue: 0,0:02:40.33,0:02:42.45,english,,0,0,0,,So let's consider some sample text.
 Dialogue: 0,0:02:40.33,0:02:42.45,chinese,,0,0,0,,让我们来看看一些示例文本。
 Dialogue: 0,0:02:42.45,0:02:45.96,english,,0,0,0,,For instance, Alex, what have you been reading lately?
-Dialogue: 0,0:02:42.45,0:02:45.96,chinese,,0,0,0,,比如，亚历克斯，你最近在读什么书？
+Dialogue: 0,0:02:42.45,0:02:45.96,chinese,,0,0,0,,比如，Alex，你最近在读什么书？
 Dialogue: 0,0:02:45.96,0:02:52.50,english,,0,0,0,,ALEX: One fish, two fish, red fish, blue fish.
-Dialogue: 0,0:02:45.96,0:02:52.50,chinese,,0,0,0,,一条鱼、两条鱼、红鱼、蓝鱼
+Dialogue: 0,0:02:45.96,0:02:52.50,chinese,,0,0,0,,Alex：一条鱼，两条鱼，红鱼，蓝鱼。
 Dialogue: 0,0:02:52.50,0:02:53.46,english,,0,0,0,,DAVID MALAN: Wonderful.
 Dialogue: 0,0:02:52.50,0:02:53.46,chinese,,0,0,0,,太棒了。
 Dialogue: 0,0:02:53.46,0:02:58.89,english,,0,0,0,,So given that, what grade level would you say Alex is currently reading at?
-Dialogue: 0,0:02:53.46,0:02:58.89,chinese,,0,0,0,,那么，您认为亚历克斯目前的阅读水平在哪个年级？
+Dialogue: 0,0:02:53.46,0:02:58.89,chinese,,0,0,0,,所以基于这个，你会说 Alex 目前的阅读水平是什么年级？
 Dialogue: 0,0:02:58.89,0:03:01.50,english,,0,0,0,,Feel free to just shout it out.
-Dialogue: 0,0:02:58.89,0:03:01.50,chinese,,0,0,0,,请随时大声喊出来。
+Dialogue: 0,0:02:58.89,0:03:01.50,chinese,,0,0,0,,随意大声说出来就可以了。
 Dialogue: 0,0:03:01.50,0:03:02.73,english,,0,0,0,,First, first?
-Dialogue: 0,0:03:01.50,0:03:02.73,chinese,,0,0,0,,第一个，第一个？
+Dialogue: 0,0:03:01.50,0:03:02.73,chinese,,0,0,0,,一年级？
 Dialogue: 0,0:03:02.73,0:03:10.41,english,,0,0,0,,So indeed, you'll see this week, if you run your code on Alex's text, it actually turns out he reads below a first grade reading level.
-Dialogue: 0,0:03:02.73,0:03:10.41,chinese,,0,0,0,,因此，本周你会看到，如果你在亚历克斯的文本上运行代码，实际上会发现他的阅读水平低于一年级。
+Dialogue: 0,0:03:02.73,0:03:10.41,chinese,,0,0,0,,确实，你会在本周看到，如果你用 Alex 的文本上运行代码，得到的阅读水平低于一年级水平。
 Dialogue: 0,0:03:10.41,0:03:12.40,english,,0,0,0,,But why might that be?
-Dialogue: 0,0:03:10.41,0:03:12.40,chinese,,0,0,0,,但为什么会这样呢？
+Dialogue: 0,0:03:10.41,0:03:12.40,chinese,,0,0,0,,但这可能是为什么呢？
 Dialogue: 0,0:03:12.40,0:03:19.02,english,,0,0,0,,What might your intuition be for why we've accused Alex of reading at this level?
-Dialogue: 0,0:03:12.40,0:03:19.02,chinese,,0,0,0,,你对我们指责亚历克斯的阅读水平的直觉是什么？
+Dialogue: 0,0:03:12.40,0:03:19.02,chinese,,0,0,0,,你判断 Alex 阅读水平是一年级，是出于什么直觉？
 Dialogue: 0,0:03:19.02,0:03:20.99,english,,0,0,0,,Feel free to shout out.
 Dialogue: 0,0:03:19.02,0:03:20.99,chinese,,0,0,0,,请随时大声喊出来。
 Dialogue: 0,0:03:20.99,0:03:21.49,english,,0,0,0,,Yeah.
 Dialogue: 0,0:03:21.49,0:03:24.52,english,,0,0,0,,So very few syllables, short words, short sentences.
-Dialogue: 0,0:03:21.49,0:03:24.52,chinese,,0,0,0,,因此，音节很少，单词很短，句子也很短。
+Dialogue: 0,0:03:21.49,0:03:24.52,chinese,,0,0,0,,是因为，音节少，单词短，句子也很短。
 Dialogue: 0,0:03:24.52,0:03:30.37,english,,0,0,0,,And so there's some heuristics, perhaps, we can infer from that short text, that that probably means that it's best for younger children.
-Dialogue: 0,0:03:24.52,0:03:30.37,chinese,,0,0,0,,因此，我们或许可以从这篇短文中推断出一些启发式的结论，那就是这篇短文最适合年龄较小的儿童阅读。
-Dialogue: 0,0:03:30.37,0:03:33.37,english,,0,0,0,,Now Sarah, by contrast, what have you been reading?
-Dialogue: 0,0:03:30.37,0:03:33.37,chinese,,0,0,0,,相比之下，萨拉，你都读了些什么？
-Dialogue: 0,0:03:33.37,0:03:35.47,english,,0,0,0,,SARAH: Mr. And Mrs. Dursley of Number.
-Dialogue: 0,0:03:33.37,0:03:35.47,chinese,,0,0,0,,杜斯利先生和杜斯利夫人
-Dialogue: 0,0:03:35.47,0:03:41.05,english,,0,0,0,,Four Privet Drive were proud to say that they were perfectly normal, thank you very much.
-Dialogue: 0,0:03:35.47,0:03:41.05,chinese,,0,0,0,,Four Privet Drive 很自豪地说，他们完全正常，非常感谢。
-Dialogue: 0,0:03:41.05,0:03:47.95,english,,0,0,0,,They were the last people you'd expect to be involved in anything strange or mysterious because they just didn't hold with much nonsense.
-Dialogue: 0,0:03:41.05,0:03:47.95,chinese,,0,0,0,,他们是你最不可能想到会卷入任何奇怪或神秘事件的人，因为他们不喜欢胡言乱语。
+Dialogue: 0,0:03:24.52,0:03:30.37,chinese,,0,0,0,,因此，我们可以从这段短文本中推断出一些启发式的规则，可能意味着它最适合年幼的孩子。
+Dialogue: 0,0:03:30.37,0:03:33.37,english,,0,0,0,,Now Sarah, by contrast,、 what have you been reading?
+Dialogue: 0,0:03:30.37,0:03:33.37,chinese,,0,0,0,,那，Sarah，你都读了些什么？
+Dialogue: 0,0:03:33.37,0:03:47.95,english,,0,0,0,,SARAH: Mr. And Mrs. Dursley of Number Four Privet Drive were proud to say that they were perfectly normal, thank you very much. They were the last people you'd expect to be involved in anything strange or mysterious because they just didn't hold with much nonsense.
+Dialogue: 0,0:03:33.37,0:03:47.95,chinese,,0,0,0,,普里维特大道 4 号的达思利夫夫妇很自豪地说，他们非常正常，非常感谢。\N他们是你最不会指望卷入任何奇怪或神秘事件的人，因为他们不太赞同那些荒谬的事情。
 Dialogue: 0,0:03:47.95,0:03:48.91,english,,0,0,0,,DAVID MALAN: All right.
 Dialogue: 0,0:03:47.95,0:03:48.91,chinese,,0,0,0,,好的。
 Dialogue: 0,0:03:48.91,0:03:55.23,english,,0,0,0,,Now irrespective of what grade you were in when you might have read that text, what grade level to Sarah seemed to be reading at?
-Dialogue: 0,0:03:48.91,0:03:55.23,chinese,,0,0,0,,不管你读这篇课文时是哪个年级，莎拉的阅读水平似乎在哪个年级？
+Dialogue: 0,0:03:48.91,0:03:55.23,chinese,,0,0,0,,现在，不管你读这段文本时在哪个年级，你认为 Sarah 的阅读水平是多少？
 Dialogue: 0,0:03:55.23,0:03:57.57,english,,0,0,0,,So eighth grade, second grade.
-Dialogue: 0,0:03:55.23,0:03:57.57,chinese,,0,0,0,,所以是八年级，二年级。
+Dialogue: 0,0:03:55.23,0:03:57.57,chinese,,0,0,0,,八年级，二年级。
 Dialogue: 0,0:03:57.57,0:03:58.08,english,,0,0,0,,OK.
 Dialogue: 0,0:03:58.08,0:04:03.24,english,,0,0,0,,So hearing a bit of everything, so with that, at least according to code, it would actually be seventh grade.
-Dialogue: 0,0:03:58.08,0:04:03.24,chinese,,0,0,0,,因此，我什么都听过一些，所以，至少根据代码，实际上应该是七年级。
+Dialogue: 0,0:03:58.08,0:04:03.24,chinese,,0,0,0,,所以听到了一些不同的回答，根据代码，至少是七年级。
 Dialogue: 0,0:04:03.24,0:04:05.13,english,,0,0,0,,And what might the intuition there be?
-Dialogue: 0,0:04:03.24,0:04:05.13,chinese,,0,0,0,,直觉是什么？
+Dialogue: 0,0:04:03.24,0:04:05.13,chinese,,0,0,0,,那么其中的直觉是什么呢？
 Dialogue: 0,0:04:05.13,0:04:09.91,english,,0,0,0,,Why is that a higher grade level even though we might disagree exactly which grade it is?
-Dialogue: 0,0:04:05.13,0:04:09.91,chinese,,0,0,0,,尽管我们可能不同意到底是哪个年级，但为什么说这是一个更高的年级呢？
+Dialogue: 0,0:04:05.13,0:04:09.91,chinese,,0,0,0,,尽管我们可能对具体是哪个年级存在分歧，但为什么确定它的阅读水平更高呢？
 Dialogue: 0,0:04:09.91,0:04:11.25,english,,0,0,0,,AUDIENCE: Complicated sentences.
-Dialogue: 0,0:04:09.91,0:04:11.25,chinese,,0,0,0,,听众：复杂的句子。
+Dialogue: 0,0:04:09.91,0:04:11.25,chinese,,0,0,0,,观众：复杂的句子。
 Dialogue: 0,0:04:11.25,0:04:12.00,english,,0,0,0,,DAVID MALAN: Yeah.
-Dialogue: 0,0:04:11.25,0:04:12.00,chinese,,0,0,0,,是的
+Dialogue: 0,0:04:11.25,0:04:12.00,chinese,,0,0,0,,是啊。
 Dialogue: 0,0:04:12.00,0:04:14.21,english,,0,0,0,,So complicated sentences, longer sentences.
-Dialogue: 0,0:04:12.00,0:04:14.21,chinese,,0,0,0,,所以句子复杂，句子较长。
+Dialogue: 0,0:04:12.00,0:04:14.21,chinese,,0,0,0,,是因为句子复杂且更长。
 Dialogue: 0,0:04:14.21,0:04:18.51,english,,0,0,0,,So indeed a lot more words were being spoken by Sarah because there was so much more there on the page.
-Dialogue: 0,0:04:14.21,0:04:18.51,chinese,,0,0,0,,因此，莎拉确实说了更多的话，因为纸上的内容太多了。
+Dialogue: 0,0:04:14.21,0:04:18.51,chinese,,0,0,0,,所以，莎拉确实说了更多的话，因为纸上的内容有太多了。
 Dialogue: 0,0:04:18.51,0:04:26.91,english,,0,0,0,,So we'll translate these ideas this coming week in problem set 2, if you tackle this one, through code so that you can ultimately infer things of these quantitatively.
-Dialogue: 0,0:04:18.51,0:04:26.91,chinese,,0,0,0,,因此，我们将在下周的问题集 2（如果你解决了这个问题集 2）中，通过代码来转化这些想法，这样你就能最终定量地推断出这些东西。
+Dialogue: 0,0:04:18.51,0:04:26.91,chinese,,0,0,0,,所以如果你在本周做这个问题集，\N我们会把这些想法翻译成代码，以便于定量地推断出一些东西。
 Dialogue: 0,0:04:26.91,0:04:29.19,english,,0,0,0,,But to do so, we're going to have to understand text.
-Dialogue: 0,0:04:26.91,0:04:29.19,chinese,,0,0,0,,但要做到这一点，我们必须理解文本。
+Dialogue: 0,0:04:26.91,0:04:29.19,chinese,,0,0,0,,但是要做到这一点，我们需要理解文本。
 Dialogue: 0,0:04:29.19,0:04:32.61,english,,0,0,0,,So let's first thank our volunteers and then we'll dive in to that lower level.
-Dialogue: 0,0:04:29.19,0:04:32.61,chinese,,0,0,0,,因此，让我们首先感谢我们的志愿者，然后再进入下一层。
+Dialogue: 0,0:04:29.19,0:04:32.61,chinese,,0,0,0,,让我们首先感谢我们的志愿者，然后深入探讨这个更底层的内容。
 Dialogue: 0,0:04:32.61,0:04:35.33,english,,0,0,0,,[APPLAUSE]
 Dialogue: 0,0:04:39.91,0:04:40.60,english,,0,0,0,,Sorry.
 Dialogue: 0,0:04:40.60,0:04:41.49,english,,0,0,0,,You can keep those.
-Dialogue: 0,0:04:40.60,0:04:41.49,chinese,,0,0,0,,你可以留着这些。
+Dialogue: 0,0:04:40.60,0:04:41.49,chinese,,0,0,0,,你可以把这些留着。
 Dialogue: 0,0:04:41.49,0:04:42.22,english,,0,0,0,,SARAH: Oh, OK.
-Dialogue: 0,0:04:41.49,0:04:42.22,chinese,,0,0,0,,哦，好的
 Dialogue: 0,0:04:42.22,0:04:43.18,english,,0,0,0,,DAVID MALAN: All right.
-Dialogue: 0,0:04:42.22,0:04:43.18,chinese,,0,0,0,,好的。
 Dialogue: 0,0:04:43.18,0:04:50.21,english,,0,0,0,,So besides that, let's consider one other body of text perhaps that you might see this week, which is namely a little something like this.
-Dialogue: 0,0:04:43.18,0:04:50.21,chinese,,0,0,0,,除此以外，让我们考虑一下本周可能会看到的其他文字，即类似这样的文字。
+Dialogue: 0,0:04:43.18,0:04:50.21,chinese,,0,0,0,,除此以外，让我们来看看另一段文本，本周会看到类似这样的文本。
 Dialogue: 0,0:04:50.21,0:04:53.86,english,,0,0,0,,What I have here on the screen is what we'll start calling today ciphertext.
-Dialogue: 0,0:04:50.21,0:04:53.86,chinese,,0,0,0,,我在屏幕上看到的就是我们今天开始所说的密码文本。
+Dialogue: 0,0:04:50.21,0:04:53.86,chinese,,0,0,0,,我在屏幕上显示的是，我们今天要开始称之为密文的东西。
 Dialogue: 0,0:04:53.86,0:04:56.53,english,,0,0,0,,It's the result of encrypting some piece of information.
 Dialogue: 0,0:04:53.86,0:04:56.53,chinese,,0,0,0,,它是对某些信息进行加密的结果。
 Dialogue: 0,0:04:56.53,0:05:00.90,english,,0,0,0,,And encryption, or more generally, the art and science of cryptography is all around us.
-Dialogue: 0,0:04:56.53,0:05:00.90,chinese,,0,0,0,,而加密，或者更笼统地说，密码学的艺术和科学就在我们身边。
+Dialogue: 0,0:04:56.53,0:05:00.90,chinese,,0,0,0,,加密，或者广泛一点说，密码学的艺术和科学无处不在。
 Dialogue: 0,0:05:00.90,0:05:03.70,english,,0,0,0,,It's what you're using on the web, on your phones, with your banks.
-Dialogue: 0,0:05:00.90,0:05:03.70,chinese,,0,0,0,,您在网络、手机和银行中使用的都是它。
+Dialogue: 0,0:05:00.90,0:05:03.70,chinese,,0,0,0,,你在网络、手机和银行上都在使用这个技术。
 Dialogue: 0,0:05:03.70,0:05:07.00,english,,0,0,0,,And anything that tries to keep data secure is using encryption.
 Dialogue: 0,0:05:03.70,0:05:07.00,chinese,,0,0,0,,任何试图保证数据安全的东西都在使用加密技术。
 Dialogue: 0,0:05:07.00,0:05:11.14,english,,0,0,0,,But there's going to be different levels of encryption-- strong encryption, weak encryption.
 Dialogue: 0,0:05:07.00,0:05:11.14,chinese,,0,0,0,,但加密的级别会有所不同，有强加密，也有弱加密。
 Dialogue: 0,0:05:11.14,0:05:22.03,english,,0,0,0,,And what you see here on the screen isn't all that strong, but we'll see later today how we might decrypt this and actually reveal what the plaintext is that corresponds to that ciphertext.
-Dialogue: 0,0:05:11.14,0:05:22.03,chinese,,0,0,0,,你在屏幕上看到的并不是那么强大，但我们今天稍后会看到如何解密，并揭示与密码文本相对应的明文是什么。
+Dialogue: 0,0:05:11.14,0:05:22.03,chinese,,0,0,0,,你在屏幕上看到的是弱加密，稍后我们会看到如何解密，并揭示出密码文本相对应的明文是什么。
 Dialogue: 0,0:05:22.03,0:05:26.19,english,,0,0,0,,But in order to do so, we have to start taking off some training wheels, so to speak.
-Dialogue: 0,0:05:22.03,0:05:26.19,chinese,,0,0,0,,但是，为了做到这一点，我们必须开始摘掉一些训练用的轮子。
+Dialogue: 0,0:05:22.03,0:05:26.19,chinese,,0,0,0,,为了做到这一点，我们必须开始慢慢卸下辅助轮了。
+Dialogue: 0,0:05:22.03,0:05:26.19,annotation,,0,0,0,,*注：辅助轮是自行车后轮两边辅助保持平衡的轮子，在这里指 CS50 课程中提供的一些辅助库等等。
 Dialogue: 0,0:05:26.19,0:05:32.23,english,,0,0,0,,And believe it or not, even though your time would see this past week for the first time, probably, might have been rather in the weeds.
-Dialogue: 0,0:05:26.19,0:05:32.23,chinese,,0,0,0,,信不信由你，即使你的时间会看到过去一周的第一次，可能，可能已经相当在杂草丛生。
+Dialogue: 0,0:05:26.19,0:05:32.23,chinese,,0,0,0,,不管你信不信，可能上周你才第一次见到代码，感觉学起来有点儿难。
 Dialogue: 0,0:05:32.23,0:05:39.76,english,,0,0,0,,And much more complicated seemingly than C, it turns out that along the way, we have been providing and we'll continue to provide certain training wheels.
-Dialogue: 0,0:05:32.23,0:05:39.76,chinese,,0,0,0,,而比 C 更复杂的是，我们一直在提供并将继续提供某些训练车轮。
+Dialogue: 0,0:05:32.23,0:05:39.76,chinese,,0,0,0,,真实情况其实还要更加复杂，\N一路走来，我们一直在提供，还会继续提供一些辅助轮。
 Dialogue: 0,0:05:39.76,0:05:49.73,english,,0,0,0,,For instance, the CS50 Library is one of them, and even some of the explanations we give of topics for now in these early weeks will be somewhat simplified-- abstracted away, if you will.
-Dialogue: 0,0:05:39.76,0:05:49.73,chinese,,0,0,0,,例如，CS50 图书馆就是其中之一，甚至在最初几周，我们暂时对一些主题的解释也会有所简化--可以说是抽象化了。
-Dialogue: 0,0:05:49.73,0:05:58.21,english,,0,0,0,,But the goal ultimately is for you to understand each and every one of those details so that after CS50, you really can stand on your own and understand and wrap your mind
-Dialogue: 0,0:05:49.73,0:05:58.21,chinese,,0,0,0,,但是，我们的最终目标是让您了解其中的每一个细节，这样在 CS50 之后，您就能真正自立于世，并理解和融会贯通。
-Dialogue: 0,0:05:58.21,0:06:01.04,english,,0,0,0,,around any future technologies as well.
-Dialogue: 0,0:05:58.21,0:06:01.04,chinese,,0,0,0,,以及未来的任何技术。
+Dialogue: 0,0:05:39.76,0:05:49.73,chinese,,0,0,0,,比如，CS50 库就是其中之一，\N甚至在前几周里，对一些主题的解释也会略微简化或者抽象出来。
+Dialogue: 0,0:05:49.73,0:06:01.04,english,,0,0,0,,But the goal ultimately is for you to understand each and every one of those details so that after CS50, you really can stand on your own and understand and wrap your mind around any future technologies as well.
+Dialogue: 0,0:05:49.73,0:06:01.04,chinese,,0,0,0,,但最终的目标是让你理解每一个细节，这样在完成 CS50 课程之后，\N你有能力独当一面，理解和适应未来的所有新技术。
 Dialogue: 0,0:06:01.04,0:06:06.11,english,,0,0,0,,So let's consider first the very first program with which we began last week, which was this one.
-Dialogue: 0,0:06:01.04,0:06:06.11,chinese,,0,0,0,,因此，让我们先来看看上周开始的第一个项目，也就是这个项目。
+Dialogue: 0,0:06:01.04,0:06:06.11,chinese,,0,0,0,,那么首先让我们考虑上周我们开始的第一个程序，就是这个。
 Dialogue: 0,0:06:06.11,0:06:14.89,english,,0,0,0,,So "hello, world" in C. At the end of the day, it was really the printf function that was doing the interesting part of the work, but there was a lot of technical stuff above and below it.
-Dialogue: 0,0:06:06.11,0:06:14.89,chinese,,0,0,0,,说到底，printf 函数才是真正有趣的部分，但在它之上和之下还有很多技术性的东西。
+Dialogue: 0,0:06:06.11,0:06:14.89,chinese,,0,0,0,,也就是用 C 语言输出 "hello, world"。\N归根结底，实际上是 printf 函数完成了输出任务，但上下文里还有很多技术性的东西。
 Dialogue: 0,0:06:14.89,0:06:21.73,english,,0,0,0,,The curly braces, the parentheses, words like void and include, and then of course, the angled brackets and more.
-Dialogue: 0,0:06:14.89,0:06:21.73,chinese,,0,0,0,,大括号、小括号、void 和 include 等单词，当然还有斜括号等等。
+Dialogue: 0,0:06:14.89,0:06:21.73,chinese,,0,0,0,,花括号、小括号、void 和 include 这些关键字，当然还有尖括号 <> 什么的。
 Dialogue: 0,0:06:21.73,0:06:30.19,english,,0,0,0,,But at the end of the day, we needed to convert that source code in C to machine code, the 0's and 1's in binary that the computer understood.
-Dialogue: 0,0:06:21.73,0:06:30.19,chinese,,0,0,0,,但最终，我们需要将 C 语言源代码转换为机器代码，即计算机能够理解的二进制 0 和 1。
+Dialogue: 0,0:06:21.73,0:06:30.19,chinese,,0,0,0,,但最终我们需要把 C 语言源代码转换为机器码，也就是计算机理解的 0 1 二进制码。
 Dialogue: 0,0:06:30.19,0:06:33.70,english,,0,0,0,,And to do that, of course, we ran-- we compiled the code.
-Dialogue: 0,0:06:30.19,0:06:33.70,chinese,,0,0,0,,当然，为了做到这一点，我们运行 -- 我们编译了代码。
+Dialogue: 0,0:06:30.19,0:06:33.70,chinese,,0,0,0,,为了做到这一点，我们需要编译代码。
 Dialogue: 0,0:06:33.70,0:06:37.40,english,,0,0,0,,We ran make and then we were able to actually run that code there.
-Dialogue: 0,0:06:33.70,0:06:37.40,chinese,,0,0,0,,我们运行了 make，然后就能在那里实际运行代码了。
+Dialogue: 0,0:06:33.70,0:06:37.40,chinese,,0,0,0,,再执行 make，然后就能运行可执行文件了。
 Dialogue: 0,0:06:37.40,0:06:44.51,english,,0,0,0,,So let me actually go over here to VS Code and really quickly recreate that hello.c pretty much by transcribing the same.
-Dialogue: 0,0:06:37.40,0:06:44.51,chinese,,0,0,0,,因此，让我到 VS 代码中快速重新创建 hello.c。
+Dialogue: 0,0:06:37.40,0:06:44.51,chinese,,0,0,0,,现在让我切换到 VS Code，快速地创建 hello.c 文件，把上周写的搬过去。
 Dialogue: 0,0:06:44.51,0:06:51.97,english,,0,0,0,,So I might have here include stdio.h, int main void.
-Dialogue: 0,0:06:44.51,0:06:51.97,chinese,,0,0,0,,因此，我可能在这里包含 stdio.h，int main void。
+Dialogue: 0,0:06:44.51,0:06:51.97,chinese,,0,0,0,,【口述代码】
 Dialogue: 0,0:06:51.97,0:06:57.43,english,,0,0,0,,And then in here, I had quite simply, hello, comma, world with my backslash, endquotes, and more.
-Dialogue: 0,0:06:51.97,0:06:57.43,chinese,,0,0,0,,然后在这里，我很简单地输入了 "你好"、"逗号"、"世界"、"反斜线"、"尾引号 "等等。
+Dialogue: 0,0:06:51.97,0:06:57.43,chinese,,0,0,0,,【口述代码】
 Dialogue: 0,0:06:57.43,0:07:01.69,english,,0,0,0,,Now last time, to compile this, I indeed ran make hello, followed by Enter.
-Dialogue: 0,0:06:57.43,0:07:01.69,chinese,,0,0,0,,上次编译时，我确实运行了 make hello，然后是 Enter。
+Dialogue: 0,0:06:57.43,0:07:01.69,chinese,,0,0,0,,跟上次编译一样，运行 make hello，然后敲回车。
 Dialogue: 0,0:07:01.69,0:07:03.86,english,,0,0,0,,Hopefully you see no errors and that's a good thing.
-Dialogue: 0,0:07:01.69,0:07:03.86,chinese,,0,0,0,,希望您没有看到任何错误，这是一件好事。
+Dialogue: 0,0:07:01.69,0:07:03.86,chinese,,0,0,0,,希望你没有看到任何错误，就是好事情。
 Dialogue: 0,0:07:03.86,0:07:07.84,english,,0,0,0,,And if you do dot, slash, hello, you see, in fact, the results of that program.
-Dialogue: 0,0:07:03.86,0:07:07.84,chinese,,0,0,0,,如果你进行点、斜线、你好的操作，你就会看到该程序的结果。
+Dialogue: 0,0:07:03.86,0:07:07.84,chinese,,0,0,0,,输入 ./hello 命令，你就能看到程序的结果了。
 Dialogue: 0,0:07:07.84,0:07:12.95,english,,0,0,0,,But it turns out that make is not actually a compiler as I alluded to last week.
-Dialogue: 0,0:07:07.84,0:07:12.95,chinese,,0,0,0,,但事实证明，正如我上周提到的，make 实际上并不是一个编译器。
+Dialogue: 0,0:07:07.84,0:07:12.95,chinese,,0,0,0,,其实真相是这样，make 实际并不是一个编译器，正如我在上周所提到的。
 Dialogue: 0,0:07:12.95,0:07:19.03,english,,0,0,0,,It's a program that clearly makes your program, but it itself just automates the process of using an actual compiler.
-Dialogue: 0,0:07:12.95,0:07:19.03,chinese,,0,0,0,,它是一个程序，可以清晰地编译你的程序，但它本身只是将使用实际编译器的过程自动化。
+Dialogue: 0,0:07:12.95,0:07:19.03,chinese,,0,0,0,,它是一个程序，可以清晰地编译你的程序，但它本身只是自动化地调用了实际的编译器。
 Dialogue: 0,0:07:19.03,0:07:27.64,english,,0,0,0,,And there's lots of different compilers out there, and the one that it's actually using underneath the hood is a little something called Clang for C Language.
-Dialogue: 0,0:07:19.03,0:07:27.64,chinese,,0,0,0,,现在有很多不同的编译器，而它实际上使用的是一种叫做 Clang 的 C 语言编译器。
+Dialogue: 0,0:07:19.03,0:07:27.64,chinese,,0,0,0,,实际上有许多不同的编译器，make 命令在底层其实用的是 Clang 编译器，
 Dialogue: 0,0:07:27.64,0:07:30.19,english,,0,0,0,,And Clang is a pretty popular compiler nowadays.
-Dialogue: 0,0:07:27.64,0:07:30.19,chinese,,0,0,0,,而 Clang 是时下相当流行的编译器。
+Dialogue: 0,0:07:27.64,0:07:30.19,chinese,,0,0,0,,Clang 是一种相当流行的编译器。
 Dialogue: 0,0:07:30.19,0:07:40.31,english,,0,0,0,,There's another one that's been around for ages called GCC, but these are just specific names for types of compilers that different people, different companies, different groups have actually created.
-Dialogue: 0,0:07:30.19,0:07:40.31,chinese,,0,0,0,,还有一种已经存在很久的编译器叫 GCC，但这些只是不同的人、不同的公司、不同的团体所创建的编译器类型的特定名称。
+Dialogue: 0,0:07:30.19,0:07:40.31,chinese,,0,0,0,,还有一个叫做 GCC 的编译器已经存在很长时间了，\N不过这些只是不同的人和团队创建的编译器的具体名字而已。
 Dialogue: 0,0:07:40.31,0:07:50.70,english,,0,0,0,,But if you use in week 1 a compiler yourself manually, you have to understand a little more about what's going on because it's even more cryptic than what just make alone.
-Dialogue: 0,0:07:40.31,0:07:50.70,chinese,,0,0,0,,但是，如果你在第 1 周手动使用编译器，你就必须多了解一些情况，因为它比单独编译更令人费解。
+Dialogue: 0,0:07:40.31,0:07:50.70,chinese,,0,0,0,,要是你想手动使用编译器，就必须更加了解整个过程，\N因为这个流程比一个单 make 命令更加让人费解。
 Dialogue: 0,0:07:50.70,0:07:59.36,english,,0,0,0,,So in fact, let me go back to my terminal window here, let me go ahead and clear the screen a little bit and just run really the raw compiler command.
-Dialogue: 0,0:07:50.70,0:07:59.36,chinese,,0,0,0,,事实上，让我回到终端窗口，清空一下屏幕，然后运行原始编译器命令。
+Dialogue: 0,0:07:50.70,0:07:59.36,chinese,,0,0,0,,我来回到终端窗口，清屏，然后运行真正的编译器命令。
 Dialogue: 0,0:07:59.36,0:08:03.62,english,,0,0,0,,So what make is automating for me let me, actually do this manually for just a moment.
-Dialogue: 0,0:07:59.36,0:08:03.62,chinese,,0,0,0,,因此，让我手动操作一下，就能实现自动化。
+Dialogue: 0,0:07:59.36,0:08:03.62,chinese,,0,0,0,,所以 make 为我们自动化完成的事情，现在得亲自执行了。
 Dialogue: 0,0:08:03.62,0:08:10.45,english,,0,0,0,,So if I want to compile hello.c into an executable program I can run,
-Dialogue: 0,0:08:03.62,0:08:10.45,chinese,,0,0,0,,因此，如果我想将 hello.c 编译成可执行程序，我就可以运行它、
+Dialogue: 0,0:08:03.62,0:08:10.45,chinese,,0,0,0,,如果我想把 hello.c 编译成一个可以运行的可执行程序，我可以这样做。
 Dialogue: 0,0:08:10.45,0:08:17.11,english,,0,0,0,,I can do this. clang, space, hello.c, and then Enter.
-Dialogue: 0,0:08:10.45,0:08:17.11,chinese,,0,0,0,,clang、空格、hello.c，然后回车。
+Dialogue: 0,0:08:10.45,0:08:17.11,chinese,,0,0,0,,输入 clang，一个空格，接着输入 hello.c，然后按下回车键。
 Dialogue: 0,0:08:17.11,0:08:22.01,english,,0,0,0,,And now there's no output, which is a good thing in this case, no errors, but notice this.
-Dialogue: 0,0:08:17.11,0:08:22.01,chinese,,0,0,0,,现在没有输出了，在这种情况下，没有错误是件好事，但请注意这一点。
+Dialogue: 0,0:08:17.11,0:08:22.01,chinese,,0,0,0,,现在没有输出，在终端里面是件好事，没有错误发生，但请注意了。
 Dialogue: 0,0:08:22.01,0:08:32.14,english,,0,0,0,,If I go ahead and type ls, it turns out there's a file that's been created suddenly in my current folder weirdly called a.out.
-Dialogue: 0,0:08:22.01,0:08:32.14,chinese,,0,0,0,,如果我继续输入 ls，就会发现在我的当前文件夹中突然创建了一个文件，文件名很奇怪，叫 a.out。
+Dialogue: 0,0:08:22.01,0:08:32.14,chinese,,0,0,0,,如果我输入 ls，会发现当前文件夹下突然多了一个文件，文件名很奇怪，叫 a.out。
 Dialogue: 0,0:08:32.14,0:08:33.58,english,,0,0,0,,That stands for Assembler Output.
-Dialogue: 0,0:08:32.14,0:08:33.58,chinese,,0,0,0,,这代表汇编输出。
+Dialogue: 0,0:08:32.14,0:08:33.58,chinese,,0,0,0,,意思是 Assembler Output（汇编输出）
 Dialogue: 0,0:08:33.58,0:08:39.44,english,,0,0,0,,And long story short, that's actually the default name of a program that's created when you just run Clang by itself.
-Dialogue: 0,0:08:33.58,0:08:39.44,chinese,,0,0,0,,长话短说，这其实就是运行 Clang 时创建的程序的默认名称。
+Dialogue: 0,0:08:33.58,0:08:39.44,chinese,,0,0,0,,长话短说，这其实就是运行 Clang 时创建程序的默认名称。
 Dialogue: 0,0:08:39.44,0:08:44.00,english,,0,0,0,,Now that's a pretty bad name for a program because it doesn't describe what it does.
-Dialogue: 0,0:08:39.44,0:08:44.00,chinese,,0,0,0,,现在看来，这个程序的名字很糟糕，因为它无法描述程序的功能。
+Dialogue: 0,0:08:39.44,0:08:44.00,chinese,,0,0,0,,现在看来这是一个相当不好的程序名，因为它不能描述程序的功能。
 Dialogue: 0,0:08:44.00,0:08:55.42,english,,0,0,0,,So better would be here to perhaps do, well, instead of a.out, which, yes, still prints hello.world, but isn't really a clearly-named program, it'd be nice to name this hello.
-Dialogue: 0,0:08:44.00,0:08:55.42,chinese,,0,0,0,,因此，最好的办法也许是：好吧，不要用 a.out，没错，它仍然打印 hello.world，但并不是一个真正有明确名称的程序，最好给它取名为 hello。
+Dialogue: 0,0:08:44.00,0:08:55.42,chinese,,0,0,0,,所以更好的做法是，不要叫做 a.out，虽然它确实仍然正确打印出 "hello, world"，\N不过命名含糊不清。最好的做法是把它重命名为 hello。
 Dialogue: 0,0:08:55.42,0:08:56.24,english,,0,0,0,,So what could I do?
-Dialogue: 0,0:08:55.42,0:08:56.24,chinese,,0,0,0,,我能做些什么呢？
+Dialogue: 0,0:08:55.42,0:08:56.24,chinese,,0,0,0,,需要怎么做？
 Dialogue: 0,0:08:56.24,0:09:01.82,english,,0,0,0,,I could do like we learned last week-- well, I could rename a.out to hello by using Linux's mv command.
-Dialogue: 0,0:08:56.24,0:09:01.82,chinese,,0,0,0,,我可以像上周学过的那样--嗯，我可以用 Linux 的 mv 命令把 a.out 重命名为 hello。
+Dialogue: 0,0:08:56.24,0:09:01.82,chinese,,0,0,0,,我们上周学过，嗯，用 Linux 的 mv 命令把 a.out 重命名为 hello。
 Dialogue: 0,0:09:01.82,0:09:04.48,english,,0,0,0,,So I'm going to move a.out to become hello.
-Dialogue: 0,0:09:01.82,0:09:04.48,chinese,,0,0,0,,所以，我要把一个.移出来，变成 "你好"。
+Dialogue: 0,0:09:01.82,0:09:04.48,chinese,,0,0,0,,所以是把 a.out 变成 hello。
 Dialogue: 0,0:09:04.48,0:09:06.37,english,,0,0,0,,But that, too, seems kind of tedious.
-Dialogue: 0,0:09:04.48,0:09:06.37,chinese,,0,0,0,,但这似乎也有点乏味。
+Dialogue: 0,0:09:04.48,0:09:06.37,chinese,,0,0,0,,不过现在也太繁琐了。
 Dialogue: 0,0:09:06.37,0:09:07.72,english,,0,0,0,,Now I have three steps.
-Dialogue: 0,0:09:06.37,0:09:07.72,chinese,,0,0,0,,现在我有三个步骤。
+Dialogue: 0,0:09:06.37,0:09:07.72,chinese,,0,0,0,,需要三个步骤。
 Dialogue: 0,0:09:07.72,0:09:12.19,english,,0,0,0,,Like write my code, compile my code, and then rename it before I can even run it.
-Dialogue: 0,0:09:07.72,0:09:12.19,chinese,,0,0,0,,比如写代码、编译代码，然后在运行之前重命名代码。
+Dialogue: 0,0:09:07.72,0:09:12.19,chinese,,0,0,0,,要写代码、编译代码，在运行之前还需要一次重命名。
 Dialogue: 0,0:09:12.19,0:09:13.58,english,,0,0,0,,We can do better than that.
-Dialogue: 0,0:09:12.19,0:09:13.58,chinese,,0,0,0,,我们可以做得更好。
+Dialogue: 0,0:09:12.19,0:09:13.58,chinese,,0,0,0,,我们可以优化一下的。
 Dialogue: 0,0:09:13.58,0:09:20.38,english,,0,0,0,,And so it turns out that certain commands like clang support what we're going to start today calling command line arguments.
-Dialogue: 0,0:09:13.58,0:09:20.38,chinese,,0,0,0,,事实证明，某些命令（如 clang）支持我们今天开始所说的命令行参数。
-Dialogue: 0,0:09:20.38,0:09:30.40,english,,0,0,0,,A command line argument, unlike an argument to a function, is just an additional word or key phrase that you type after a command at your prompt in your terminal
-Dialogue: 0,0:09:20.38,0:09:30.40,chinese,,0,0,0,,与函数参数不同，命令行参数只是在终端提示符下，在命令后键入的一个附加单词或关键短语
-Dialogue: 0,0:09:30.40,0:09:33.44,english,,0,0,0,,window that just modifies the behavior of that command.
-Dialogue: 0,0:09:30.40,0:09:33.44,chinese,,0,0,0,,窗口，修改该命令的行为。
+Dialogue: 0,0:09:13.58,0:09:20.38,chinese,,0,0,0,,实际上，像 clang 这样的命令，支持一个东西叫做 "命令行参数"。
+Dialogue: 0,0:09:20.38,0:09:33.44,english,,0,0,0,,A command line argument, unlike an argument to a function, is just an additional word or key phrase that you type after a command at your prompt in your terminal window that just modifies the behavior of that command.
+Dialogue: 0,0:09:20.38,0:09:33.44,chinese,,0,0,0,,不同于传给函数的参数，\N命令行参数只是在命令后面输入的一个额外单词或关键词组，可以修改该命令的行为。
 Dialogue: 0,0:09:33.44,0:09:35.60,english,,0,0,0,,It configures it a little more specifically.
-Dialogue: 0,0:09:33.44,0:09:35.60,chinese,,0,0,0,,它的配置更具体一些。
+Dialogue: 0,0:09:33.44,0:09:35.60,chinese,,0,0,0,,它能更具体地配置命令。
 Dialogue: 0,0:09:35.60,0:09:45.22,english,,0,0,0,,So what you're seeing here on the screen is some of a better command with which to run clang so that now I can specify the output of this command per this o.
-Dialogue: 0,0:09:35.60,0:09:45.22,chinese,,0,0,0,,因此，你在屏幕上看到的是一个更好的运行 clang 的命令，现在我可以根据这个 o 指定这个命令的输出。
+Dialogue: 0,0:09:35.60,0:09:45.22,chinese,,0,0,0,,你在屏幕上看到的是，带有一些参数的强化的 clang 指令，用 -o 指定了输出的名称。
 Dialogue: 0,0:09:45.22,0:09:46.61,english,,0,0,0,,So do what I mean by that?
-Dialogue: 0,0:09:45.22,0:09:46.61,chinese,,0,0,0,,那么，我的意思是什么呢？
+Dialogue: 0,0:09:45.22,0:09:46.61,chinese,,0,0,0,,明白我的意思吗？
 Dialogue: 0,0:09:46.61,0:09:54.95,english,,0,0,0,,Well, let me go ahead and clear my terminal window again and more explicitly type clang -o hello hello.c and then Enter.
-Dialogue: 0,0:09:46.61,0:09:54.95,chinese,,0,0,0,,好吧，让我再次清空终端窗口，然后更明确地输入 clang -o hello hello.c，然后回车。
+Dialogue: 0,0:09:46.61,0:09:54.95,chinese,,0,0,0,,好吧，我来再次清屏，然后更明确地输入 clang -o hello hello.c，按下回车。
 Dialogue: 0,0:09:54.95,0:10:02.86,english,,0,0,0,,Nothing, again, appears to happen, but that's a good thing when you see no errors and now the program I just created is indeed called Hello.
-Dialogue: 0,0:09:54.95,0:10:02.86,chinese,,0,0,0,,同样，什么也没有发生，但这是件好事，因为你没有看到任何错误，而且现在我刚刚创建的程序确实叫做 Hello。
+Dialogue: 0,0:09:54.95,0:10:02.86,chinese,,0,0,0,,还是无事发生，但这是件好事，说明没有任何错误出现，而且刚刚创建的程序名确实是 hello。
 Dialogue: 0,0:10:02.86,0:10:07.28,english,,0,0,0,,So it achieves really the same exact effect as make did, but what.
-Dialogue: 0,0:10:02.86,0:10:07.28,chinese,,0,0,0,,因此，它所达到的效果确实与 make 所达到的效果完全相同，但又如何呢？
+Dialogue: 0,0:10:02.86,0:10:07.28,chinese,,0,0,0,,所以说，它实际上实现了和 make 一样的效果，只不过呢。
 Dialogue: 0,0:10:07.28,0:10:11.07,english,,0,0,0,,I don't have to do with make is type and remember something as long as this command.
-Dialogue: 0,0:10:07.28,0:10:11.07,chinese,,0,0,0,,我不需要输入和记住像这条命令这么长的内容。
+Dialogue: 0,0:10:07.28,0:10:11.07,chinese,,0,0,0,,要是用 make 的话，用不着记住和敲出来这么长一条指令。
 Dialogue: 0,0:10:11.07,0:10:12.70,english,,0,0,0,,And this, too, is a bit of a white lie.
-Dialogue: 0,0:10:11.07,0:10:12.70,chinese,,0,0,0,,这也有点像白色谎言。
+Dialogue: 0,0:10:11.07,0:10:12.70,chinese,,0,0,0,,不过这里有个善意的谎言。
 Dialogue: 0,0:10:12.70,0:10:22.84,english,,0,0,0,,It turns out, we have preconfigured VS Code in the cloud for you to also use some other features of Clang that would be even more tedious for you to write yourselves.
-Dialogue: 0,0:10:12.70,0:10:22.84,chinese,,0,0,0,,原来，我们已经在云中为您预配置了 VS Code，让您也能使用 Clang 的其他一些功能，而这些功能如果由您自己编写会更加繁琐。
+Dialogue: 0,0:10:12.70,0:10:22.84,chinese,,0,0,0,,原来，我们已经预先配置了云端的 VS Code，\N可以用上 clang 的一些功能，如果你自己写起来会更加繁琐。
 Dialogue: 0,0:10:22.84,0:10:28.13,english,,0,0,0,,And so really, this is why we distill this as ultimately just running make.
-Dialogue: 0,0:10:22.84,0:10:28.13,chinese,,0,0,0,,因此，这就是为什么我们将其提炼为最终只是运行制造。
+Dialogue: 0,0:10:22.84,0:10:28.13,chinese,,0,0,0,,所以实际上，我们最终把编译流程简化到只用运行一条 make 。
 Dialogue: 0,0:10:28.13,0:10:37.72,english,,0,0,0,,So let me pause here to see first if there's any questions on what I've done by taking my very first program in C and just now compiling it first with make, but then starting over
-Dialogue: 0,0:10:28.13,0:10:37.72,chinese,,0,0,0,,所以，让我在这里暂停一下，先看看大家对我用 C 语言编写的第一个程序有什么疑问，现在先用 make 编译，然后重新开始
+Dialogue: 0,0:10:28.13,0:10:37.72,chinese,,0,0,0,,先停一下，大家对我用 C 语言编写的第一个程序还有什么疑问吗？首先使用的 make 编译它，
 Dialogue: 0,0:10:37.72,0:10:46.82,english,,0,0,0,,and now manually compiling it with clang with what we'll call command line arguments. -o, space, hello, and then the name of the file.
-Dialogue: 0,0:10:37.72,0:10:46.82,chinese,,0,0,0,,现在用 clang 手动编译，我们称之为命令行参数。-o、空格、hello，然后是文件名。
+Dialogue: 0,0:10:37.72,0:10:46.82,chinese,,0,0,0,,然后重新开始，现在使用 clang 手动编译它，还用到了我们说的命令行参数。\N-o，空格，hello，然后是文件名。
 Dialogue: 0,0:10:46.82,0:10:47.32,english,,0,0,0,,Yeah?
 Dialogue: 0,0:10:47.32,0:10:48.78,english,,0,0,0,,AUDIENCE: What is a.out?
-Dialogue: 0,0:10:47.32,0:10:48.78,chinese,,0,0,0,,AUDIENCE：什么是.out？
+Dialogue: 0,0:10:47.32,0:10:48.78,chinese,,0,0,0,,观众：a.out 是啥？
 Dialogue: 0,0:10:48.78,0:10:49.53,english,,0,0,0,,DAVID MALAN: Yeah.
-Dialogue: 0,0:10:48.78,0:10:49.53,chinese,,0,0,0,,是的
 Dialogue: 0,0:10:49.53,0:10:51.87,english,,0,0,0,,So a.out is a historical name.
-Dialogue: 0,0:10:49.53,0:10:51.87,chinese,,0,0,0,,因此，a.out 是一个历史名称。
+Dialogue: 0,0:10:49.53,0:10:51.87,chinese,,0,0,0,,a.out 是一个历史名称。
 Dialogue: 0,0:10:51.87,0:10:55.24,english,,0,0,0,,It refers to assembler output-- more on that soon.
-Dialogue: 0,0:10:51.87,0:10:55.24,chinese,,0,0,0,,它指的是汇编程序的输出--很快会有更多介绍。
+Dialogue: 0,0:10:51.87,0:10:55.24,chinese,,0,0,0,,它是指汇编器输出—— 很快我们会详细讨论。
 Dialogue: 0,0:10:55.24,0:11:02.97,english,,0,0,0,,And it's just the default file name that you get automatically if you just run the compiler on any file so that you have just a standard name for it.
-Dialogue: 0,0:10:55.24,0:11:02.97,chinese,,0,0,0,,如果在任何文件上运行编译器，都会自动获得默认的文件名，这样就有了一个标准的文件名。
+Dialogue: 0,0:10:55.24,0:11:02.97,chinese,,0,0,0,,它只是一个默认的文件名，如果你运行编译器来编译一个文件，\N就会自动得到这个名字，作为一个默认情况下的标准。
 Dialogue: 0,0:11:02.97,0:11:05.21,english,,0,0,0,,But it's not a very well-named program.
-Dialogue: 0,0:11:02.97,0:11:05.21,chinese,,0,0,0,,但这个计划的名字并不好听。
+Dialogue: 0,0:11:02.97,0:11:05.21,chinese,,0,0,0,,但它并不是一个命名恰当的程序。
 Dialogue: 0,0:11:05.21,0:11:09.88,english,,0,0,0,,Instead of running Microsoft Word on your Mac or PC, it would be like double-clicking on a.out.
-Dialogue: 0,0:11:05.21,0:11:09.88,chinese,,0,0,0,,而不是在 Mac 或 PC 上运行 Microsoft Word，就像双击 .out。
+Dialogue: 0,0:11:05.21,0:11:09.88,chinese,,0,0,0,,想想你在 Mac 或 Windows 里双击了 a.out，然后运行的实际是 Microsoft Word。
 Dialogue: 0,0:11:09.88,0:11:17.37,english,,0,0,0,,So instead with these command line arguments, you can customize the output of Clang and call it hello or anything you want.
-Dialogue: 0,0:11:09.88,0:11:17.37,chinese,,0,0,0,,因此，有了这些命令行参数，你就可以自定义 Clang 的输出，并将其称为 hello 或任何你想要的名字。
+Dialogue: 0,0:11:09.88,0:11:17.37,chinese,,0,0,0,,所以通过这些命令行参数，你可以定制 clang 的输出，命名为 hello 或者别的你想要的名字。
 Dialogue: 0,0:11:17.37,0:11:23.02,english,,0,0,0,,Other questions on what I've done here with Clang itself, the compiler?
-Dialogue: 0,0:11:17.37,0:11:23.02,chinese,,0,0,0,,关于 Clang 编译器的其他问题？
+Dialogue: 0,0:11:17.37,0:11:23.02,chinese,,0,0,0,,关于 clang 编译器还有别的问题吗？
 Dialogue: 0,0:11:23.02,0:11:23.52,english,,0,0,0,,Yeah?
 Dialogue: 0,0:11:23.52,0:11:25.51,english,,0,0,0,,AUDIENCE: What is -o?
-Dialogue: 0,0:11:23.52,0:11:25.51,chinese,,0,0,0,,听众：什么是-o？
+Dialogue: 0,0:11:23.52,0:11:25.51,chinese,,0,0,0,,观众：什么是 -o？
 Dialogue: 0,0:11:25.51,0:11:30.50,english,,0,0,0,,DAVID MALAN: So -o-- and you would only know this from reading the manual, taking a class, means output.
-Dialogue: 0,0:11:25.51,0:11:30.50,chinese,,0,0,0,,你只有读过手册、上过课才会知道，这意味着输出。
+Dialogue: 0,0:11:25.51,0:11:30.50,chinese,,0,0,0,,你只有读过手册或者上过课才会知道，-o 代表着 output（输出）。
 Dialogue: 0,0:11:30.50,0:11:38.68,english,,0,0,0,,So -o means change Clang's output to be a file called hello instead of the default, which is a.out.
-Dialogue: 0,0:11:30.50,0:11:38.68,chinese,,0,0,0,,所以 -o 意味着将 Clang 的输出改为名为 hello 的文件，而不是默认的 a.out。
+Dialogue: 0,0:11:30.50,0:11:38.68,chinese,,0,0,0,,所以 -o 就是把 clang 的输出文件名改成 hello，而不是默认的 a.out。
 Dialogue: 0,0:11:38.68,0:11:44.81,english,,0,0,0,,And this, too, is, again, a detail you would have to look up on a web page, read the manual, hear someone like me tell you about it.
-Dialogue: 0,0:11:38.68,0:11:44.81,chinese,,0,0,0,,这也是一个细节问题，你需要在网页上查找，阅读手册，或者听我这样的人告诉你。
+Dialogue: 0,0:11:38.68,0:11:44.81,chinese,,0,0,0,,这也是一个细节，你需要在网页上查找、阅读手册，或者得我这样的人告诉你。
 Dialogue: 0,0:11:44.81,0:11:48.89,english,,0,0,0,,And in fact, there's even more than these options, but we'll just scratch the surface here.
-Dialogue: 0,0:11:44.81,0:11:48.89,chinese,,0,0,0,,事实上，可供选择的方案远不止这些，但我们在此也只是浅尝辄止。
+Dialogue: 0,0:11:44.81,0:11:48.89,chinese,,0,0,0,,其实还有更多的命令行参数选项，但我们只在这里稍作了解即可。
 Dialogue: 0,0:11:48.89,0:11:49.39,english,,0,0,0,,All right.
 Dialogue: 0,0:11:49.39,0:11:53.53,english,,0,0,0,,So if we now know this, what more is actually happening underneath the hood?
-Dialogue: 0,0:11:49.39,0:11:53.53,chinese,,0,0,0,,如果我们现在知道了这些，那么在引擎盖下面究竟还发生了什么呢？
+Dialogue: 0,0:11:49.39,0:11:53.53,chinese,,0,0,0,,我们现在知道这个东西，底层到底发生了什么呢？
 Dialogue: 0,0:11:53.53,0:12:03.43,english,,0,0,0,,Well, let's take a closer look at not just this version of my code, but my slightly more complicated version last week, which looked a little something like this, wherein
-Dialogue: 0,0:11:53.53,0:12:03.43,chinese,,0,0,0,,好吧，让我们仔细看看我的代码，不仅是这个版本，还有上周稍微复杂一点的版本，看起来有点像这样，其中包括
+Dialogue: 0,0:11:53.53,0:12:03.43,chinese,,0,0,0,,好吧，让我们先来仔细看看代码，在这一段以外，上周还有一个稍微复杂点的版本，长这样的。
 Dialogue: 0,0:12:03.43,0:12:11.81,english,,0,0,0,,I added in some dynamic input from the user so I could say not hello, world to everyone, but hello, David or hello to whoever actually runs this program.
-Dialogue: 0,0:12:03.43,0:12:11.81,chinese,,0,0,0,,我添加了一些来自用户的动态输入，这样我就可以不对所有人说 "你好，世界"，而是对实际运行这个程序的人说 "你好，大卫 "或 "你好"。
+Dialogue: 0,0:12:03.43,0:12:11.81,chinese,,0,0,0,,代码里添加了用户的动态输入，这样输出的就不只是 "hello, world" 了，\N而是 "hello, David" 或 hello 谁都可以。
 Dialogue: 0,0:12:11.81,0:12:17.77,english,,0,0,0,,So in fact, let me go ahead and change my code here in VS Code just to match that same code from last week.
-Dialogue: 0,0:12:11.81,0:12:17.77,chinese,,0,0,0,,因此，事实上，让我继续在 VS 代码中修改我的代码，以便与上周的代码保持一致。
+Dialogue: 0,0:12:11.81,0:12:17.77,chinese,,0,0,0,,我接着在 VS Code 里改改代码，和上周保持一致。
 Dialogue: 0,0:12:17.77,0:12:19.19,english,,0,0,0,,So no new code yet.
-Dialogue: 0,0:12:17.77,0:12:19.19,chinese,,0,0,0,,所以还没有新代码。
+Dialogue: 0,0:12:17.77,0:12:19.19,chinese,,0,0,0,,目前为止还没有新东西。
 Dialogue: 0,0:12:19.19,0:12:22.82,english,,0,0,0,,I'm just going to, in a moment, compile it in a slightly different way.
-Dialogue: 0,0:12:19.19,0:12:22.82,chinese,,0,0,0,,稍后，我将以稍有不同的方式对其进行编译。
-Dialogue: 0,0:12:22.82,0:12:29.02,english,,0,0,0,,So I did last week's string, I think, answer equals string, quote-unquote,
-Dialogue: 0,0:12:22.82,0:12:29.02,chinese,,0,0,0,,所以我做了上周的字符串，我想，答案等于字符串，引号-引号、
-Dialogue: 0,0:12:29.02,0:12:30.10,english,,0,0,0,,"What's your name?"
-Dialogue: 0,0:12:29.02,0:12:30.10,chinese,,0,0,0,,"你叫什么名字？"
+Dialogue: 0,0:12:19.19,0:12:22.82,chinese,,0,0,0,,马上，我来用有点不一样的方式编译代码。
+Dialogue: 0,0:12:22.82,0:12:30.10,english,,0,0,0,,So I did last week's string, I think, answer equals string, quote-unquote, "What's your name?"
+Dialogue: 0,0:12:22.82,0:12:30.10,chinese,,0,0,0,,【口述代码】
 Dialogue: 0,0:12:30.10,0:12:31.54,english,,0,0,0,,Just like in Scratch.
-Dialogue: 0,0:12:30.10,0:12:31.54,chinese,,0,0,0,,就像在 Scratch 中一样。
+Dialogue: 0,0:12:30.10,0:12:31.54,chinese,,0,0,0,,跟 Scratch 是一样的。
 Dialogue: 0,0:12:31.54,0:12:37.45,english,,0,0,0,,And then down here, instead of doing world, I initially wrote answer, but that didn't go well.
-Dialogue: 0,0:12:31.54,0:12:37.45,chinese,,0,0,0,,然后在下面，我没有做世界，而是开始写答案，但写得并不顺利。
+Dialogue: 0,0:12:31.54,0:12:37.45,chinese,,0,0,0,,然后下面一行，不是打印 "world" 了，最开始写的 "hello, answer"，但是这样不太行。
 Dialogue: 0,0:12:37.45,0:12:42.94,english,,0,0,0,,What did I ultimately do instead to print out hello, David or hello, so-and-so?
-Dialogue: 0,0:12:37.45,0:12:42.94,chinese,,0,0,0,,打印出 "你好，大卫 "或 "你好，某某"，我最终做了什么？
+Dialogue: 0,0:12:37.45,0:12:42.94,chinese,,0,0,0,,最后怎么做的才打印 "hello, David" 或者是 "hello, " 某某？
 Dialogue: 0,0:12:42.94,0:12:44.72,english,,0,0,0,,Yeah?
 Dialogue: 0,0:12:44.72,0:12:45.68,english,,0,0,0,,Sorry, a little louder?
 Dialogue: 0,0:12:44.72,0:12:45.68,chinese,,0,0,0,,抱歉，再大点声？
 Dialogue: 0,0:12:45.68,0:12:46.43,english,,0,0,0,,AUDIENCE: %s?
-Dialogue: 0,0:12:45.68,0:12:46.43,chinese,,0,0,0,,听众：%s？
+Dialogue: 0,0:12:45.68,0:12:46.43,chinese,,0,0,0,,观众：%s？
 Dialogue: 0,0:12:46.43,0:12:51.02,english,,0,0,0,,DAVID MALAN: Yeah, so %s, the so-called format code that printf just knows how to deal with.
-Dialogue: 0,0:12:46.43,0:12:51.02,chinese,,0,0,0,,DAVID MALAN：是的，所以 %s，也就是 printf 知道如何处理的所谓格式代码。
+Dialogue: 0,0:12:46.43,0:12:51.02,chinese,,0,0,0,,没错，答案是 %s，也就是 printf 能够处理的格式码。
 Dialogue: 0,0:12:51.02,0:12:52.47,english,,0,0,0,,And I had to add one other thing.
-Dialogue: 0,0:12:51.02,0:12:52.47,chinese,,0,0,0,,我还得补充一点。
+Dialogue: 0,0:12:51.02,0:12:52.47,chinese,,0,0,0,,还得添点别的东西。
 Dialogue: 0,0:12:52.47,0:12:54.85,english,,0,0,0,,Someone else besides %s-- yeah?
-Dialogue: 0,0:12:52.47,0:12:54.85,chinese,,0,0,0,,除了 %s 还有别人吗？
+Dialogue: 0,0:12:52.47,0:12:54.85,chinese,,0,0,0,,除了 %s 还有别的吗？
 Dialogue: 0,0:12:54.85,0:12:56.05,english,,0,0,0,,AUDIENCE: The name of the variable.
-Dialogue: 0,0:12:54.85,0:12:56.05,chinese,,0,0,0,,AUDIENCE：变量名称。
+Dialogue: 0,0:12:54.85,0:12:56.05,chinese,,0,0,0,,观众：变量名称。
 Dialogue: 0,0:12:56.05,0:13:00.19,english,,0,0,0,,DAVID MALAN: The name of the variable that I want to plug into that placeholder %s.
-Dialogue: 0,0:12:56.05,0:13:00.19,chinese,,0,0,0,,DAVID MALAN：我要插入占位符 %s 的变量名。
+Dialogue: 0,0:12:56.05,0:13:00.19,chinese,,0,0,0,,我要插入占位符 %s 那个位置的变量名。
 Dialogue: 0,0:13:00.19,0:13:01.63,english,,0,0,0,,And in this case, it's answer.
-Dialogue: 0,0:13:00.19,0:13:01.63,chinese,,0,0,0,,在这种情况下，它就是答案。
+Dialogue: 0,0:13:00.19,0:13:01.63,chinese,,0,0,0,,这个例子里面，就是 answer。
 Dialogue: 0,0:13:01.63,0:13:11.56,english,,0,0,0,,Now let me make one refinement only because now we're in week 2 and we're going to start writing more lines of code, even though Scratch called the return value of the ask puzzle piece, answer always.
-Dialogue: 0,0:13:01.63,0:13:11.56,chinese,,0,0,0,,现在让我做一个改进，因为我们已经进入了第 2 周，我们将开始编写更多行的代码，尽管 Scratch 总是将问谜题的返回值称为答案。
+Dialogue: 0,0:13:01.63,0:13:11.56,chinese,,0,0,0,,我现在来改进一下，都第 2 周了，我们会写更长的代码，\N虽然 Scratch 总是把问问题的返回值叫做 answer。
 Dialogue: 0,0:13:11.56,0:13:14.48,english,,0,0,0,,And see, we have full control over what our variables are called.
-Dialogue: 0,0:13:11.56,0:13:14.48,chinese,,0,0,0,,瞧，我们可以完全控制变量的名称。
+Dialogue: 0,0:13:11.56,0:13:14.48,chinese,,0,0,0,,你看，我们可以完全控制变量名。
 Dialogue: 0,0:13:14.48,0:13:19.87,english,,0,0,0,,And now it's probably good not to just generically always call my variable answer if I'm using get_string.
-Dialogue: 0,0:13:14.48,0:13:19.87,chinese,,0,0,0,,现在，如果我使用 get_string，最好不要总是通用地调用我的变量 answer。
+Dialogue: 0,0:13:14.48,0:13:19.87,chinese,,0,0,0,,现在我用的 get_string，最好不要笼统地把返回值叫做 answer。
 Dialogue: 0,0:13:19.87,0:13:21.05,english,,0,0,0,,Let's call it what it is.
-Dialogue: 0,0:13:19.87,0:13:21.05,chinese,,0,0,0,,就这么说吧。
+Dialogue: 0,0:13:19.87,0:13:21.05,chinese,,0,0,0,,它是什么就该取什么名字。
 Dialogue: 0,0:13:21.05,0:13:23.68,english,,0,0,0,,So this is now just a matter of style, if you will.
-Dialogue: 0,0:13:21.05,0:13:23.68,chinese,,0,0,0,,所以，现在这只是一个风格问题。
+Dialogue: 0,0:13:21.05,0:13:23.68,chinese,,0,0,0,,这只是一个代码风格问题。
 Dialogue: 0,0:13:23.68,0:13:34.00,english,,0,0,0,,Let me change the variable to be name just so that it's a little clearer to me, to you, to a TF or TA exactly what that variable represents instead of more generically answer.
-Dialogue: 0,0:13:23.68,0:13:34.00,chinese,,0,0,0,,让我把变量改成 name，这样我、你、TF 或 TA 就能更清楚地知道这个变量代表什么，而不是更笼统地回答。
+Dialogue: 0,0:13:23.68,0:13:34.00,chinese,,0,0,0,,我来把变量名改成 name，这样你、我、TF（teaching fellow） 或 TA（teaching assistant） \N就能更清楚地知道这个变量代表什么，而不是一个笼统的 answer。
 Dialogue: 0,0:13:34.00,0:13:41.05,english,,0,0,0,,All right, so that said, let me go down to my terminal window, and last week again, I ran make to compile this exact same program.
-Dialogue: 0,0:13:34.00,0:13:41.05,chinese,,0,0,0,,好了，说了这么多，让我回到终端窗口，上周我又运行 make 编译了这个一模一样的程序。
+Dialogue: 0,0:13:34.00,0:13:41.05,chinese,,0,0,0,,好了，现在回到终端窗口，这个跟上周一模一样的程序，上周里是用 make 编译的。
 Dialogue: 0,0:13:41.05,0:13:43.27,english,,0,0,0,,Now, though, let me go ahead and just use clang.
-Dialogue: 0,0:13:41.05,0:13:43.27,chinese,,0,0,0,,现在，让我直接使用 clang。
-Dialogue: 0,0:13:43.27,0:13:45.49,english,,0,0,0,,So clang -o--
-Dialogue: 0,0:13:43.27,0:13:45.49,chinese,,0,0,0,,所以哐当
+Dialogue: 0,0:13:41.05,0:13:43.27,chinese,,0,0,0,,而现在，我来用 clang 编译。
+Dialogue: 0,0:13:43.27,0:13:45.49,english,,0,0,0,,So clang -o
+Dialogue: 0,0:13:43.27,0:13:45.49,chinese,,0,0,0,,输入 clang -o，
 Dialogue: 0,0:13:45.49,0:13:49.33,english,,0,0,0,,I'll still call this version hello-- space, hello.c.
-Dialogue: 0,0:13:45.49,0:13:49.33,chinese,,0,0,0,,我还是把这个版本叫做 hello--space，hello.c。
+Dialogue: 0,0:13:45.49,0:13:49.33,chinese,,0,0,0,,我还是把这个版本叫做 hello，打个空格，然后是 hello.c。
 Dialogue: 0,0:13:49.33,0:13:51.08,english,,0,0,0,,So exact same command as before.
-Dialogue: 0,0:13:49.33,0:13:51.08,chinese,,0,0,0,,因此，命令与之前的完全相同。
+Dialogue: 0,0:13:49.33,0:13:51.08,chinese,,0,0,0,,命令和刚才是一样的。
 Dialogue: 0,0:13:51.08,0:13:56.33,english,,0,0,0,,The only thing that's different is I've added a couple of more lines of code to get the user's input.
-Dialogue: 0,0:13:51.08,0:13:56.33,chinese,,0,0,0,,唯一不同的是，我增加了几行代码来获取用户的输入。
+Dialogue: 0,0:13:51.08,0:13:56.33,chinese,,0,0,0,,唯一不同点是代码，增加了几行来获取用户的输入。
 Dialogue: 0,0:13:56.33,0:13:59.96,english,,0,0,0,,Let me hit Enter, and now, darn it, our first error.
-Dialogue: 0,0:13:56.33,0:13:59.96,chinese,,0,0,0,,让我按下回车键，现在，该死的，我们的第一个错误。
+Dialogue: 0,0:13:56.33,0:13:59.96,chinese,,0,0,0,,按下回车键，现在糟糕了，我们遇到了第一个错误。
 Dialogue: 0,0:13:59.96,0:14:05.42,english,,0,0,0,,So output from clang and make is not a good thing, and here, we're seeing something particularly cryptic.
-Dialogue: 0,0:13:59.96,0:14:05.42,chinese,,0,0,0,,因此，从 clang 和 make 输出并不是一件好事，在这里，我们看到了一些特别隐秘的东西。
+Dialogue: 0,0:13:59.96,0:14:05.42,chinese,,0,0,0,,所以说，这条命令效果不太好，报错提示一点都不好理解。
 Dialogue: 0,0:14:05.42,0:14:13.48,english,,0,0,0,,So something in function 'main--' undefined reference to 'get_string,' string and then linker command failed with exit code 1.
-Dialogue: 0,0:14:05.42,0:14:13.48,chinese,,0,0,0,,因此，函数 "main "中出现了对 "get_string "字符串的未定义引用，然后链接器命令失败，退出代码为 1。
+Dialogue: 0,0:14:05.42,0:14:13.48,chinese,,0,0,0,,问题在 main 函数里面，对 get_string 的未定义引用，然后是链接器命令失败，退出码为 1。
 Dialogue: 0,0:14:13.48,0:14:22.13,english,,0,0,0,,So there's actually a lot of jargon in there that will tease apart today, but my hint is that clearly my problem's in main, although that's not surprising because there's nothing else going on here.
-Dialogue: 0,0:14:13.48,0:14:22.13,chinese,,0,0,0,,因此，实际上有很多专业术语在里面，今天会挑明，但我的提示是，显然我的问题出在主要方面，尽管这并不奇怪，因为这里没有其他事情发生。
+Dialogue: 0,0:14:13.48,0:14:22.13,chinese,,0,0,0,,在这里出现了很多专业术语，今天我们会详细解释，\N有用的提示是，显然问题出在 main 函数里，当然也没有什么奇怪的，这里没别的函数了。
 Dialogue: 0,0:14:22.13,0:14:26.83,english,,0,0,0,,get_string is an issue, and the issue is that it's an undefined reference.
-Dialogue: 0,0:14:22.13,0:14:26.83,chinese,,0,0,0,,get_string 是一个问题，问题在于它是一个未定义的引用。
+Dialogue: 0,0:14:22.13,0:14:26.83,chinese,,0,0,0,,get_string 有问题，它是一个未定义的引用。
 Dialogue: 0,0:14:26.83,0:14:28.99,english,,0,0,0,,And yet, notice, I was pretty good.
-Dialogue: 0,0:14:26.83,0:14:28.99,chinese,,0,0,0,,然而，请注意，我做得很好。
+Dialogue: 0,0:14:26.83,0:14:28.99,chinese,,0,0,0,,然而，注意看这里，我做得很好了。
 Dialogue: 0,0:14:28.99,0:14:39.07,english,,0,0,0,,I added the CS50 header file and I said last week that that's enough to teach the compiler that functions exist, but the problem is that even though this does, in fact,
-Dialogue: 0,0:14:28.99,0:14:39.07,chinese,,0,0,0,,我添加了 CS50 头文件，上周我曾说过，这足以让编译器知道函数的存在，但问题是，即使这样做了，事实上、
+Dialogue: 0,0:14:28.99,0:14:39.07,chinese,,0,0,0,,我添加了 CS50 头文件，\N并且上周我说过，这足以让编译器知道函数的存在，但问题是，就算这样做了，
 Dialogue: 0,0:14:39.07,0:14:51.86,english,,0,0,0,,teach Clang that get_string exists, it is not sufficient information for Clang to go find on the hard drive of the computer the 0's and 1's that actually implement get_string itself.
-Dialogue: 0,0:14:39.07,0:14:51.86,chinese,,0,0,0,,虽然 Clang 知道 get_string 的存在，但要它在计算机硬盘上找到真正实现 get_string 本身的 0 和 1 并不足够。
+Dialogue: 0,0:14:39.07,0:14:51.86,chinese,,0,0,0,,clang 即使知道有 get_string 存在，\N不过还是没有足够的信息，在计算机的硬盘上找到实际实现 get_string 的二进制。
+Dialogue: 0,0:14:39.07,0:14:51.86,annotation,,0,0,0,,*注：就和之前在 main 函数前面写函数声明，在 main 后面写函数实现类似，\N头文件中的函数，声明和实现也是分开的，甚至不在同一个文件里面，\N所以就需要 "链接" 这一步，把函数的实现部分也加入到最终生成的可执行文件。
 Dialogue: 0,0:14:51.86,0:14:55.33,english,,0,0,0,,So in other words, this include line, per last week, is a little bit of a hint.
-Dialogue: 0,0:14:51.86,0:14:55.33,chinese,,0,0,0,,因此，换句话说，按照上周的说法，这句话是一个小小的暗示。
+Dialogue: 0,0:14:51.86,0:14:55.33,chinese,,0,0,0,,换句话说，上周也提过的，include 这一行是对编译器的提示。
 Dialogue: 0,0:14:55.33,0:14:59.56,english,,0,0,0,,It's a teaser to Clang that you're about to see and use this function somewhere.
-Dialogue: 0,0:14:55.33,0:14:59.56,chinese,,0,0,0,,这是向 Clang 发出的预告，告诉它你即将在某处看到并使用这个函数。
+Dialogue: 0,0:14:55.33,0:14:59.56,chinese,,0,0,0,,是向 clang 发出的预告，告诉它我们马上会用到这个函数。
 Dialogue: 0,0:14:59.56,0:15:11.47,english,,0,0,0,,But if you actually want to use the 0's and 1's that CS50 wrote some time ago and bake those into your program so your program actually knows how to get input from the user, well then,
-Dialogue: 0,0:14:59.56,0:15:11.47,chinese,,0,0,0,,但是，如果你真的想使用 CS50 很久以前编写的 0 和 1，并将其融入到你的程序中，让你的程序真正知道如何从用户那里获取输入，那就好办了、
+Dialogue: 0,0:14:59.56,0:15:11.47,chinese,,0,0,0,,如果你想找到 CS50 库对于这些函数的实现，并把它们嵌入到你自己的程序里，\N好让程序实际上知道 get_string 是怎么从用户那里拿到输入的，
 Dialogue: 0,0:15:11.47,0:15:15.44,english,,0,0,0,,I'm going to have to go ahead and run a slightly different command.
-Dialogue: 0,0:15:11.47,0:15:15.44,chinese,,0,0,0,,我得继续运行一个稍有不同的命令。
+Dialogue: 0,0:15:11.47,0:15:15.44,chinese,,0,0,0,,那就得运行一个有点不一样的命令。
 Dialogue: 0,0:15:15.44,0:15:16.25,english,,0,0,0,,So let me do this.
-Dialogue: 0,0:15:15.44,0:15:16.25,chinese,,0,0,0,,那就让我来吧。
+Dialogue: 0,0:15:15.44,0:15:16.25,chinese,,0,0,0,,让我来演示。
 Dialogue: 0,0:15:16.25,0:15:23.02,english,,0,0,0,,Let me clear my terminal window just get rid of that distraction and let me propose now that we run this command instead.
-Dialogue: 0,0:15:16.25,0:15:23.02,chinese,,0,0,0,,让我清空终端窗口，以消除干扰，我建议现在运行这条命令。
+Dialogue: 0,0:15:16.25,0:15:23.02,chinese,,0,0,0,,清空终端窗口以消除干扰，我说现在得跑这行命令。
 Dialogue: 0,0:15:23.02,0:15:35.05,english,,0,0,0,,Almost the same as before, clang -o, space, hello, then hello.c, but with one additional command line argument at the end, and this is a -l-- not a number 1.
-Dialogue: 0,0:15:23.02,0:15:35.05,chinese,,0,0,0,,几乎和之前一样，clang -o、空格、hello，然后是 hello.c，但最后多了一个命令行参数，是 -l--而不是数字 1。
+Dialogue: 0,0:15:23.02,0:15:35.05,chinese,,0,0,0,,前面是一样的，clang -o hello hello.c，在最后多了一个命令行参数，是 -l 哈，不是数字 1。
 Dialogue: 0,0:15:35.05,0:15:39.37,english,,0,0,0,,So -lcs with no space in between those two.
-Dialogue: 0,0:15:35.05,0:15:39.37,chinese,,0,0,0,,因此，-lcs 中间没有空格。
+Dialogue: 0,0:15:35.05,0:15:39.37,chinese,,0,0,0,,而且 -lcs 中间没有空格。
 Dialogue: 0,0:15:39.37,0:15:48.85,english,,0,0,0,,Now the l is going to result in all of those 0's and 1's that actually were in by CS50 being linked into your code, your few lines of code or mine here.
-Dialogue: 0,0:15:39.37,0:15:48.85,chinese,,0,0,0,,现在，"升 "将导致 CS50 所输入的所有 0 和 1 被链接到你的代码、你的几行代码或我的代码中。
+Dialogue: 0,0:15:39.37,0:15:48.85,chinese,,0,0,0,,现在，-l 选项会把 CS50 的所有二进制库文件链接到我们的代码里。
 Dialogue: 0,0:15:48.85,0:15:58.53,english,,0,0,0,,But that's the second step that the compiler requires in order to know how to actually execute and rather compile your code and CS50's.
-Dialogue: 0,0:15:48.85,0:15:58.53,chinese,,0,0,0,,但这是编译器需要的第二步，以便知道如何实际执行和编译您的代码和 CS50 的代码。
+Dialogue: 0,0:15:48.85,0:15:58.53,chinese,,0,0,0,,这是编译器要求的第二步，这样就知道怎么实际编译和执行你的代码和 CS50 的代码。
 Dialogue: 0,0:15:58.53,0:16:00.37,english,,0,0,0,,And CS50 is not the only one that does this.
-Dialogue: 0,0:15:58.53,0:16:00.37,chinese,,0,0,0,,并不是只有 CS50 才这样做。
+Dialogue: 0,0:15:58.53,0:16:00.37,chinese,,0,0,0,,这不是 CS50 特有的。
 Dialogue: 0,0:16:00.37,0:16:10.00,english,,0,0,0,,If you use any third party library in C that doesn't come with the language, you would do -l such and such where whoever-- however they've named their own library.
-Dialogue: 0,0:16:00.37,0:16:10.00,chinese,,0,0,0,,如果你在 C 语言中使用任何不自带的第三方库，你可以使用 -l 诸如此类的命令，不管他们给自己的库起了什么名字。
+Dialogue: 0,0:16:00.37,0:16:10.00,chinese,,0,0,0,,如果你在 C 语言里使用了任何非内置的第三方库，\N他们会告诉你库的名字，用 -l 后跟库的名称就能进行链接。
 Dialogue: 0,0:16:10.00,0:16:14.29,english,,0,0,0,,But you don't have to do it for built in things like we've been using thus far.
-Dialogue: 0,0:16:10.00,0:16:14.29,chinese,,0,0,0,,但你不必像我们迄今为止所使用的那样，为内置设备这样做。
+Dialogue: 0,0:16:10.00,0:16:14.29,chinese,,0,0,0,,不过对于我们一直用着的内置标准库（standard library，带 std 的），不需要这样。
 Dialogue: 0,0:16:14.29,0:16:16.09,english,,0,0,0,,All right, so let me go ahead and try this.
-Dialogue: 0,0:16:14.29,0:16:16.09,chinese,,0,0,0,,好吧，让我来试试这个。
+Dialogue: 0,0:16:14.29,0:16:16.09,chinese,,0,0,0,,好吧，我来试一试。
 Dialogue: 0,0:16:16.09,0:16:23.62,english,,0,0,0,,I'll go back to VS Code here, and let me go ahead now and run clang -o hello, then hello.c.
-Dialogue: 0,0:16:16.09,0:16:23.62,chinese,,0,0,0,,我将回到 VS 代码，现在让我继续运行 clang -o hello，然后运行 hello.c。
+Dialogue: 0,0:16:16.09,0:16:23.62,chinese,,0,0,0,,回到 VS Code，敲下 clang -o hello hello.c。
 Dialogue: 0,0:16:23.62,0:16:29.59,english,,0,0,0,,And now instead of just hitting Enter, -lcs50 with no space between the l and the cs50, Enter.
-Dialogue: 0,0:16:23.62,0:16:29.59,chinese,,0,0,0,,现在不用直接敲回车键，而是敲-lcs50，l 和 cs50 之间不留空格，然后敲回车键。
+Dialogue: 0,0:16:23.62,0:16:29.59,chinese,,0,0,0,,现在不直接敲回车，而是打出 -lcs50，l 和 cs50 之间不留空格，再敲回车键。
 Dialogue: 0,0:16:29.59,0:16:33.31,english,,0,0,0,,Now nothing bad happens, and now I can do ./hello.
-Dialogue: 0,0:16:29.59,0:16:33.31,chinese,,0,0,0,,现在不会发生任何不好的事情，我也可以做 ./hello。
+Dialogue: 0,0:16:29.59,0:16:33.31,chinese,,0,0,0,,现在没有任何坏现象出现，可以 ./hello 了。
 Dialogue: 0,0:16:33.31,0:16:34.18,english,,0,0,0,,What's your name?
 Dialogue: 0,0:16:33.31,0:16:34.18,chinese,,0,0,0,,你叫什么名字？
 Dialogue: 0,0:16:34.18,0:16:37.63,english,,0,0,0,,I'll type in David, Enter, and now we see hello, David.
-Dialogue: 0,0:16:34.18,0:16:37.63,chinese,,0,0,0,,我输入大卫，回车，现在我们看到你好，大卫。
+Dialogue: 0,0:16:34.18,0:16:37.63,chinese,,0,0,0,,输入 David，回车，现在我们看到 "hello, David"。
 Dialogue: 0,0:16:37.63,0:16:46.46,english,,0,0,0,,Now honestly, this is where we're really getting into the weeds, and now this is taking-- this is really just adding nuisance to the process of compiling and running your code.
-Dialogue: 0,0:16:37.63,0:16:46.46,chinese,,0,0,0,,老实说，这才是我们真正要解决的问题，现在这只会给编译和运行代码的过程增加麻烦。
-Dialogue: 0,0:16:46.46,0:16:55.24,english,,0,0,0,,And so the reality is, even though this is indeed what is happening, this is why we used last week and we're going to continue using this week onward make because it just
-Dialogue: 0,0:16:46.46,0:16:55.24,chinese,,0,0,0,,因此，现实情况是，尽管这确实是正在发生的事情，但这就是为什么我们使用上周，并将继续使用本周的原因，因为它只是
-Dialogue: 0,0:16:55.24,0:16:57.13,english,,0,0,0,,automates that whole process for you.
-Dialogue: 0,0:16:55.24,0:16:57.13,chinese,,0,0,0,,为您自动完成整个过程。
+Dialogue: 0,0:16:37.63,0:16:46.46,chinese,,0,0,0,,这里就是我们想深入讨论的地方，虽然这只会给编译和运行代码的过程增加不便。
+Dialogue: 0,0:16:46.46,0:16:57.13,english,,0,0,0,,And so the reality is, even though this is indeed what is happening, this is why we used last week and we're going to continue using this week onward make because it just automates that whole process for you.
+Dialogue: 0,0:16:46.46,0:16:57.13,chinese,,0,0,0,,这就是底层发生的真实情况，不过上一周这一周还有以后，\N我们都会使用 make 命令，因为它自动化了整个过程。
 Dialogue: 0,0:16:57.13,0:17:05.85,english,,0,0,0,,But it's ideal to understand what's going wrong because any of the error messages you saw for problem set 1, any of the error messages you see for the next few weeks probably aren't coming from make,
-Dialogue: 0,0:16:57.13,0:17:05.85,chinese,,0,0,0,,但最理想的做法是了解问题出在哪里，因为你在问题集 1 中看到的任何错误信息，以及接下来几周看到的任何错误信息，可能都不是来自 make、
+Dialogue: 0,0:16:57.13,0:17:05.85,chinese,,0,0,0,,知道背后的原理有助于我们更理想地解决问题，因为你在问题集 1，\N或是接下来几周看到的任何错误消息，可能都不是来自make，
 Dialogue: 0,0:17:05.85,0:17:10.78,english,,0,0,0,,they're coming from Clang underneath the hood because make is just automating the process.
-Dialogue: 0,0:17:05.85,0:17:10.78,chinese,,0,0,0,,它们来自引擎盖下的 Clang，因为 make 只是在自动执行这一过程。
+Dialogue: 0,0:17:05.85,0:17:10.78,chinese,,0,0,0,,它们来自于底层调用的 clang，因为 make 只是自动化了整个过程。
 Dialogue: 0,0:17:10.78,0:17:17.56,english,,0,0,0,,But with make, you literally just write make and then the name of the program, you don't have to worry about any of those command line arguments.
-Dialogue: 0,0:17:10.78,0:17:17.56,chinese,,0,0,0,,但使用 make 时，你只需写下 make 和程序名称，而不必担心任何命令行参数。
+Dialogue: 0,0:17:10.78,0:17:17.56,chinese,,0,0,0,,要是用 make，只需要写 make 和程序名称，用不着考虑任何命令行参数。
 Dialogue: 0,0:17:17.56,0:17:22.24,english,,0,0,0,,Questions, then, on compiling with dash -lcs50 or anything else?
-Dialogue: 0,0:17:17.56,0:17:22.24,chinese,,0,0,0,,那么，对使用 dash -lcs50 或其他方法编译有疑问吗？
+Dialogue: 0,0:17:17.56,0:17:22.24,chinese,,0,0,0,,那么，对于使用 -lcs50 编译什么的还有问题吗？
 Dialogue: 0,0:17:22.24,0:17:23.04,english,,0,0,0,,Yeah?
 Dialogue: 0,0:17:23.04,0:17:24.95,english,,0,0,0,,AUDIENCE: What is the benefit of [INAUDIBLE]??
-Dialogue: 0,0:17:23.04,0:17:24.95,chinese,,0,0,0,,听众：[听不清]有什么好处？
 Dialogue: 0,0:17:24.96,0:17:26.22,english,,0,0,0,,DAVID MALAN: Sorry, what is the benefit of--
-Dialogue: 0,0:17:24.96,0:17:26.22,chinese,,0,0,0,,戴维-马兰：对不起，有什么好处？
+Dialogue: 0,0:17:24.96,0:17:26.22,chinese,,0,0,0,,没听清楚，什么什么好处？
 Dialogue: 0,0:17:26.22,0:17:27.51,english,,0,0,0,,AUDIENCE: Using Clang manually.
-Dialogue: 0,0:17:26.22,0:17:27.51,chinese,,0,0,0,,听众：手动使用 Clang
+Dialogue: 0,0:17:26.22,0:17:27.51,chinese,,0,0,0,,观众：手动使用 clang。
 Dialogue: 0,0:17:27.51,0:17:30.00,english,,0,0,0,,DAVID MALAN: What is the benefit of using Clang manually?
-Dialogue: 0,0:17:27.51,0:17:30.00,chinese,,0,0,0,,DAVID MALAN：手动使用 Clang 有什么好处？
+Dialogue: 0,0:17:27.51,0:17:30.00,chinese,,0,0,0,,手动使用 clang 有什么好处？
 Dialogue: 0,0:17:30.00,0:17:30.87,english,,0,0,0,,None, really.
-Dialogue: 0,0:17:30.00,0:17:30.87,chinese,,0,0,0,,没有，真的没有。
+Dialogue: 0,0:17:30.00,0:17:30.87,chinese,,0,0,0,,那还真没有。
 Dialogue: 0,0:17:30.87,0:17:35.05,english,,0,0,0,,In fact, all main is doing is just say-- make is doing is saving us some keystrokes.
-Dialogue: 0,0:17:30.87,0:17:35.05,chinese,,0,0,0,,事实上，main 所做的只是说--make 所做的只是让我们少敲几下键盘。
+Dialogue: 0,0:17:30.87,0:17:35.05,chinese,,0,0,0,,实际上，make 只是让我们少敲几下键盘。
 Dialogue: 0,0:17:35.05,0:17:42.09,english,,0,0,0,,If you prefer, though, and you just like to be more in control, you can totally run Clang manually if you remember the various command line arguments.
-Dialogue: 0,0:17:35.05,0:17:42.09,chinese,,0,0,0,,不过，如果你更喜欢控制，只要记住各种命令行参数，完全可以手动运行 Clang。
+Dialogue: 0,0:17:35.05,0:17:42.09,chinese,,0,0,0,,而且你比较想有掌控感，完全可以手动运行 clang，只要记得各种命令行参数。
 Dialogue: 0,0:17:42.09,0:17:42.66,english,,0,0,0,,Yeah?
 Dialogue: 0,0:17:42.66,0:17:47.33,english,,0,0,0,,AUDIENCE: So why did you have to explain [INAUDIBLE]
-Dialogue: 0,0:17:42.66,0:17:47.33,chinese,,0,0,0,,你为什么要解释？那么你为什么要解释[听不清] So why did you have to explain [INAUDIBLE]
 Dialogue: 0,0:17:47.33,0:17:48.21,english,,0,0,0,,DAVID MALAN: Exactly.
 Dialogue: 0,0:17:47.33,0:17:48.21,chinese,,0,0,0,,大卫-马兰：没错。
 Dialogue: 0,0:17:48.21,0:17:55.47,english,,0,0,0,,Why did I have to explain-- that is, provide a hint to CS50 with the cs50.h header file, but I didn't have to do that with standardio.h?
-Dialogue: 0,0:17:48.21,0:17:55.47,chinese,,0,0,0,,为什么我必须解释--即用 cs50.h 头文件为 CS50 提供提示，而用 standardio.h 却不必这样做？
+Dialogue: 0,0:17:48.21,0:17:55.47,chinese,,0,0,0,,为什么我已经使用 cs50.h 头文件了，还必须要写一个提示才能用 CS50，而 stdio.h 不用呢？
 Dialogue: 0,0:17:55.47,0:18:03.06,english,,0,0,0,,Just because. standardio.h comes with C, just like a few other libraries come with C that we'll start seeing today.
-Dialogue: 0,0:17:55.47,0:18:03.06,chinese,,0,0,0,,Standardio.h 是 C 语言的自带库，就像我们今天开始看到的其他一些 C 语言库一样。
+Dialogue: 0,0:17:55.47,0:18:03.06,chinese,,0,0,0,,stdio.h 是 C 语言的一部分，今天会看到一些别的库也是如此。
 Dialogue: 0,0:18:03.06,0:18:07.89,english,,0,0,0,,CS50, though, is not built into C everywhere, and so you do have to explicitly add that one there.
-Dialogue: 0,0:18:03.06,0:18:07.89,chinese,,0,0,0,,不过，CS50 并非随处都内置在 C 语言中，因此您必须明确地将其添加到 C 语言中。
+Dialogue: 0,0:18:03.06,0:18:07.89,chinese,,0,0,0,,而 CS50 并非随处都内置在 C 语言里，所以你必须明确地添加它到你的程序里。
 Dialogue: 0,0:18:07.89,0:18:08.76,english,,0,0,0,,Yeah?
 Dialogue: 0,0:18:08.76,0:18:11.97,english,,0,0,0,,AUDIENCE: Can you define what command line argument [INAUDIBLE]??
-Dialogue: 0,0:18:08.76,0:18:11.97,chinese,,0,0,0,,听众：你能定义什么命令行参数吗？
+Dialogue: 0,0:18:08.76,0:18:11.97,chinese,,0,0,0,,观众：你能定义一下什么是命令行参数吗？
 Dialogue: 0,0:18:11.97,0:18:22.20,english,,0,0,0,,DAVID MALAN: A command line argument is a word or phrase that you type at the command line-- a.k.a., your terminal-- in order to influence the behavior of a program.
-Dialogue: 0,0:18:11.97,0:18:22.20,chinese,,0,0,0,,戴维-马兰：命令行参数是你在命令行--也就是你的终端--输入的单词或短语，目的是影响程序的行为。
+Dialogue: 0,0:18:11.97,0:18:22.20,chinese,,0,0,0,,命令行参数是你在命令行，也就是你的终端上输入的一个单词或短语，以影响程序的行为。
 Dialogue: 0,0:18:22.20,0:18:22.74,english,,0,0,0,,AUDIENCE: OK.
-Dialogue: 0,0:18:22.20,0:18:22.74,chinese,,0,0,0,,AUDIENCE：OK.
 Dialogue: 0,0:18:22.74,0:18:24.43,english,,0,0,0,,So it's a term for whatever you're giving it.
-Dialogue: 0,0:18:22.74,0:18:24.43,chinese,,0,0,0,,所以，你给它什么，它就是什么。
+Dialogue: 0,0:18:22.74,0:18:24.43,chinese,,0,0,0,,观众：所以命令行是你传递给程序的东西。
 Dialogue: 0,0:18:24.43,0:18:24.56,english,,0,0,0,,DAVID MALAN: Yeah.
-Dialogue: 0,0:18:24.43,0:18:24.56,chinese,,0,0,0,,是的
+Dialogue: 0,0:18:24.43,0:18:24.56,chinese,,0,0,0,,没错。
 Dialogue: 0,0:18:24.56,0:18:25.66,english,,0,0,0,,It changes the defaults.
 Dialogue: 0,0:18:24.56,0:18:25.66,chinese,,0,0,0,,它可以更改默认设置。
 Dialogue: 0,0:18:25.66,0:18:33.46,english,,0,0,0,,In our GUI world, Graphical User Interface, you and I would probably click some boxes, we would select some menu options to configure a program to behave in the same way.
-Dialogue: 0,0:18:25.66,0:18:33.46,chinese,,0,0,0,,在我们的图形用户界面（GUI）世界里，你和我可能会点击一些方框，选择一些菜单选项，以同样的方式配置程序的行为。
+Dialogue: 0,0:18:25.66,0:18:33.46,chinese,,0,0,0,,在 GUI 里，我们配置程序一般通过点击方框，选择菜单选项什么的，达到和命令行一样的效果。
 Dialogue: 0,0:18:33.46,0:18:39.60,english,,0,0,0,,At a command line interface, you have to just say everything all at once, and that's why we have command line arguments.
-Dialogue: 0,0:18:33.46,0:18:39.60,chinese,,0,0,0,,在命令行界面上，你必须一次性说出所有内容，这就是我们使用命令行参数的原因。
+Dialogue: 0,0:18:33.46,0:18:39.60,chinese,,0,0,0,,在命令行界面里，必须一次性说出所有要求，这就是为什么我们需要命令行参数。
 Dialogue: 0,0:18:39.60,0:18:40.60,english,,0,0,0,,Yeah?
 Dialogue: 0,0:18:40.60,0:18:43.24,english,,0,0,0,,AUDIENCE: Is make [INAUDIBLE]
-Dialogue: 0,0:18:40.60,0:18:43.24,chinese,,0,0,0,,是让[听不清]
 Dialogue: 0,0:18:43.24,0:18:43.91,english,,0,0,0,,DAVID MALAN: No.
-Dialogue: 0,0:18:43.24,0:18:43.91,chinese,,0,0,0,,DAVID MALAN: No.
 Dialogue: 0,0:18:43.91,0:18:45.47,english,,0,0,0,,Make is not just for CS50.
-Dialogue: 0,0:18:43.91,0:18:45.47,chinese,,0,0,0,,Make 不仅仅适用于 CS50。
+Dialogue: 0,0:18:43.91,0:18:45.47,chinese,,0,0,0,,make 命令不仅仅适用于 CS50。
 Dialogue: 0,0:18:45.47,0:18:52.02,english,,0,0,0,,It's used globally in any project really nowadays using C, C++, even other languages as well.
-Dialogue: 0,0:18:45.47,0:18:52.02,chinese,,0,0,0,,如今，在任何使用 C、C++ 甚至其他语言的项目中，它都被广泛使用。
+Dialogue: 0,0:18:45.47,0:18:52.02,chinese,,0,0,0,,在任何使用 C、C++ 还有一些其它语言的项目里，make 都被广泛使用。
 Dialogue: 0,0:18:52.02,0:18:57.53,english,,0,0,0,,In fact, most every command you see in this class, unless it has 5-0 at the end of it, is globally used.
-Dialogue: 0,0:18:52.02,0:18:57.53,chinese,,0,0,0,,事实上，你在这一类中看到的大多数命令，除非结尾有 5-0，否则都是全球通用的。
+Dialogue: 0,0:18:52.02,0:18:57.53,chinese,,0,0,0,,其实课程中出现的命令，除非以 50 结尾，其它的几乎都是通用的。
 Dialogue: 0,0:18:57.53,0:19:00.75,english,,0,0,0,,Only those-- a suffix with 50 are, indeed, course-specific.
-Dialogue: 0,0:18:57.53,0:19:00.75,chinese,,0,0,0,,只有那些后缀为 50 的课程才是特定课程。
+Dialogue: 0,0:18:57.53,0:19:00.75,chinese,,0,0,0,,只有那些后缀 50 的命令，是 CS50 限定。
 Dialogue: 0,0:19:00.75,0:19:06.89,english,,0,0,0,,And even those we'll gradually take training wheels off of so that exactly what those commands are doing as well.
-Dialogue: 0,0:19:00.75,0:19:06.89,chinese,,0,0,0,,即使是这些命令，我们也会逐步卸下训练轮，以便准确了解这些命令的作用。
+Dialogue: 0,0:19:00.75,0:19:06.89,chinese,,0,0,0,,我们也会逐渐卸下 CS50 的辅助轮，准确了解它们幕后做的事情。
 Dialogue: 0,0:19:06.89,0:19:09.05,english,,0,0,0,,All right, so what is it that we've just done?
-Dialogue: 0,0:19:06.89,0:19:09.05,chinese,,0,0,0,,好吧，我们刚才做了什么？
+Dialogue: 0,0:19:06.89,0:19:09.05,chinese,,0,0,0,,好了，我们刚才做了什么？
 Dialogue: 0,0:19:09.05,0:19:15.96,english,,0,0,0,,Everything we've just done, of course, I keep calling compiling, but let's just go down one rabbit hole so that you understand that when you compile code,
-Dialogue: 0,0:19:09.05,0:19:15.96,chinese,,0,0,0,,当然，我们刚才所做的一切，我一直称之为编译，但让我们先钻一个兔子洞，这样你就能理解编译代码的含义了、
-Dialogue: 0,0:19:15.96,0:19:26.06,english,,0,0,0,,there's actually a whole bunch of steps, happening and this is going to enable a lot of features, like companies can write code and then convert it to run it on Macs and PCs alike
-Dialogue: 0,0:19:15.96,0:19:26.06,chinese,,0,0,0,,实际上，有一大堆步骤正在进行，这将使许多功能得以实现，例如，公司可以编写代码，然后将其转换为在 Mac 和 PC 上运行的代码
-Dialogue: 0,0:19:26.06,0:19:27.24,english,,0,0,0,,or phones or the like.
-Dialogue: 0,0:19:26.06,0:19:27.24,chinese,,0,0,0,,或电话之类的东西。
+Dialogue: 0,0:19:09.05,0:19:15.96,chinese,,0,0,0,,当然，我一直把整个过程称之为编译，但让我们深入了解一下，
+Dialogue: 0,0:19:15.96,0:19:27.24,english,,0,0,0,,there's actually a whole bunch of steps, happening and this is going to enable a lot of features, like companies can write code and then convert it to run it on Macs and PCs alike or phones or the like.
+Dialogue: 0,0:19:15.96,0:19:27.24,chinese,,0,0,0,,当编译代码时，实际上有很多步骤，实现了很多功能，比如公司可以编写代码，\N然后跨平台编译，让程序在 Mac、Windows、Linux 或者手机什么的都可以运行。
 Dialogue: 0,0:19:27.24,0:19:35.84,english,,0,0,0,,So it's not just a matter of converting source code to machine code, there's actually four steps involved in what you and I, as of last week, know as compiling.
-Dialogue: 0,0:19:27.24,0:19:35.84,chinese,,0,0,0,,因此，这不仅仅是将源代码转换为机器代码的问题，从上周开始，你我所知道的编译实际上涉及四个步骤。
+Dialogue: 0,0:19:27.24,0:19:35.84,chinese,,0,0,0,,所以问题不仅仅是把源代码转换为机器码，我们统称的编译其实分为四个步骤。
 Dialogue: 0,0:19:35.84,0:19:41.45,english,,0,0,0,,And these aren't terms that you'll have to keep in mind constantly because again, we're going to abstract a lot of this away.
-Dialogue: 0,0:19:35.84,0:19:41.45,chinese,,0,0,0,,这些都不是你必须时刻牢记的术语，因为我们会再次抽象出很多内容。
+Dialogue: 0,0:19:35.84,0:19:41.45,chinese,,0,0,0,,这些术语不需要你时刻牢记，因为我们会进行高层次的抽象。
 Dialogue: 0,0:19:41.45,0:19:51.08,english,,0,0,0,,But just so we've gone down the rabbit hole once, let's consider each of these four steps that have been happening for you for a week automatically, the first of which is called preprocessing.
-Dialogue: 0,0:19:41.45,0:19:51.08,chinese,,0,0,0,,不过，我们已经走过了一次兔子洞，让我们考虑一下这四个步骤中的每一个步骤，它们已经为你自动进行了一周，其中第一个步骤叫做预处理。
+Dialogue: 0,0:19:41.45,0:19:51.08,chinese,,0,0,0,,不过我们已经探索了一次底层，\N现在我们接着考虑一下编译器为我们自动完成的 preprocessing（预处理）。
 Dialogue: 0,0:19:51.08,0:19:52.26,english,,0,0,0,,So what does this mean?
-Dialogue: 0,0:19:51.08,0:19:52.26,chinese,,0,0,0,,这意味着什么？
+Dialogue: 0,0:19:51.08,0:19:52.26,chinese,,0,0,0,,这是干啥的？
 Dialogue: 0,0:19:52.26,0:19:54.45,english,,0,0,0,,Well, let's consider that same program as before.
-Dialogue: 0,0:19:52.26,0:19:54.45,chinese,,0,0,0,,那么，让我们考虑一下之前的那个程序。
+Dialogue: 0,0:19:52.26,0:19:54.45,chinese,,0,0,0,,我们拿前面的程序举例子。
 Dialogue: 0,0:19:54.45,0:19:57.83,english,,0,0,0,,So notice that two of the lines of code start with a hash mark.
-Dialogue: 0,0:19:54.45,0:19:57.83,chinese,,0,0,0,,请注意，有两行代码是以哈希标记开头的。
+Dialogue: 0,0:19:54.45,0:19:57.83,chinese,,0,0,0,,注意看，代码的前两行是以井号开始的。
 Dialogue: 0,0:19:57.83,0:20:02.33,english,,0,0,0,,That is a special symbol in C, and it's a so-called preprocessor directive.
-Dialogue: 0,0:19:57.83,0:20:02.33,chinese,,0,0,0,,这是 C 语言中的一个特殊符号，也就是所谓的预处理器指令。
+Dialogue: 0,0:19:57.83,0:20:02.33,chinese,,0,0,0,,这是 C 语言里的一个特殊符号，被称为预处理指令。
 Dialogue: 0,0:20:02.33,0:20:07.00,english,,0,0,0,,You don't need to memorize terms like that, but it just means that it's a little different from every other line.
-Dialogue: 0,0:20:02.33,0:20:07.00,chinese,,0,0,0,,你不需要记住这样的术语，但这只是意味着它与其他线路有些不同。
+Dialogue: 0,0:20:02.33,0:20:07.00,chinese,,0,0,0,,你不需要记住这些专业术语，意思是这两行和别的有所不同。
 Dialogue: 0,0:20:07.00,0:20:13.31,english,,0,0,0,,And anything with a hash symbol here should be preprocessed-- that is, analyzed initially before anything else happens.
-Dialogue: 0,0:20:07.00,0:20:13.31,chinese,,0,0,0,,任何带有哈希符号的内容都应进行预处理，即在进行任何其他操作之前先进行初步分析。
+Dialogue: 0,0:20:07.00,0:20:13.31,chinese,,0,0,0,,任何带有 # 的语句都会被预处理，也就是先于别的代码被初步分析。
 Dialogue: 0,0:20:13.31,0:20:17.10,english,,0,0,0,,So let's consider these two lines up top, what exactly is happening.
-Dialogue: 0,0:20:13.31,0:20:17.10,chinese,,0,0,0,,那么，让我们来看看上面这两条线，到底发生了什么。
+Dialogue: 0,0:20:13.31,0:20:17.10,chinese,,0,0,0,,所以让我们考虑一下顶部的这两行，究竟发生了什么。
 Dialogue: 0,0:20:17.10,0:20:23.39,english,,0,0,0,,Well, it turns out with these two lines, you have two header files, of course, cs50.h and stdio.h.
-Dialogue: 0,0:20:17.10,0:20:23.39,chinese,,0,0,0,,有了这两行，就有了两个头文件，当然是 cs50.h 和 stdio.h。
+Dialogue: 0,0:20:17.10,0:20:23.39,chinese,,0,0,0,,通过这两行，就引入了两个头文件，cs50.h 和 stdio.h。
 Dialogue: 0,0:20:23.39,0:20:28.55,english,,0,0,0,,Where are those files, because they've never been in VS Code for you, seemingly.
-Dialogue: 0,0:20:23.39,0:20:28.55,chinese,,0,0,0,,这些文件在哪里，因为它们似乎从未出现在你的 VS 代码中。
+Dialogue: 0,0:20:23.39,0:20:28.55,chinese,,0,0,0,,这些文件在哪里呢，它们在 VS Code 里似乎从没出现过。
 Dialogue: 0,0:20:28.55,0:20:35.90,english,,0,0,0,,If you type LS-- if you open up the File Explorer in the GUI, you have never seen, probably, cs50.h or stdio.h.
-Dialogue: 0,0:20:28.55,0:20:35.90,chinese,,0,0,0,,如果你键入 LS -- 如果你在图形用户界面中打开文件资源管理器，你可能从未见过 cs50.h 或 stdio.h。
+Dialogue: 0,0:20:28.55,0:20:35.90,chinese,,0,0,0,,不管是敲入 ls，还是在左侧图形界面打开 File Explorer，都没看到过 cs50.h 或 stdio.h。
 Dialogue: 0,0:20:35.90,0:20:45.69,english,,0,0,0,,They just work, but that's because there's a folder somewhere on the hard drive that you're using on your Mac or PC or somewhere in the cloud, as in our case.
-Dialogue: 0,0:20:35.90,0:20:45.69,chinese,,0,0,0,,它们之所以能正常工作，是因为在你 Mac 或 PC 上使用的硬盘驱动器或云端的某个地方有一个文件夹，就像我们的情况一样。
+Dialogue: 0,0:20:35.90,0:20:45.69,chinese,,0,0,0,,它们能正常工作，是因为在自己的电脑或者云端的硬盘里有一个文件夹。
 Dialogue: 0,0:20:45.69,0:20:50.21,english,,0,0,0,,And inside of this folder, traditionally called /usr/include.
-Dialogue: 0,0:20:45.69,0:20:50.21,chinese,,0,0,0,,这个文件夹的传统名称是 /usr/include。
+Dialogue: 0,0:20:45.69,0:20:50.21,chinese,,0,0,0,,在 Linux 里，这个文件夹一般是 /usr/include。
 Dialogue: 0,0:20:50.21,0:20:51.85,english,,0,0,0,,And user is deliberately misspelled.
-Dialogue: 0,0:20:50.21,0:20:51.85,chinese,,0,0,0,,而 user 则是故意拼错的。
+Dialogue: 0,0:20:50.21,0:20:51.85,chinese,,0,0,0,,而 usr 则是故意拼错的。
 Dialogue: 0,0:20:51.85,0:20:55.76,english,,0,0,0,,It's just slightly more succinct, although it's a little weird why we drop that one letter.
-Dialogue: 0,0:20:51.85,0:20:55.76,chinese,,0,0,0,,这只是略微简洁了一些，虽然我们为什么要去掉那一个字母有点奇怪。
+Dialogue: 0,0:20:51.85,0:20:55.76,chinese,,0,0,0,,比 user 略微显得简洁一些，虽然我们为什么要去掉那一个字母有点奇怪。
+Dialogue: 0,0:20:51.85,0:20:55.76,annotation,,0,0,0,,*注：usr 其实是 Unix System Resources（Unix 系统资源）的缩写，发音和 user 相同。\N在 Linux 中用户目录为 home，教授在这里这么说可能是方便大家记忆，不需要纠结于暂时用不上的概念。
 Dialogue: 0,0:20:55.76,0:21:03.99,english,,0,0,0,,But usr/include is just a folder on the server that contains cs50.h, stdio.h, and a bunch of other things as well.
-Dialogue: 0,0:20:55.76,0:21:03.99,chinese,,0,0,0,,但 usr/include 只是服务器上的一个文件夹，其中包含 cs50.h、stdio.h 和其他一些内容。
+Dialogue: 0,0:20:55.76,0:21:03.99,chinese,,0,0,0,,反正 usr/include 就是云服务器上的一个文件夹，包含有 cs50.h、stdio.h 还有别的。
 Dialogue: 0,0:21:03.99,0:21:15.47,english,,0,0,0,,So in fact, if you type in VS Code, in your terminal window, when you're using code spaces in the cloud and type LS space /usr/include, you can see all of the files in that folder.
-Dialogue: 0,0:21:03.99,0:21:15.47,chinese,,0,0,0,,因此，事实上，如果你在 VS Code 中的终端窗口中键入 LS space /usr/include，当你在云中使用代码空间时，就能看到该文件夹中的所有文件。
+Dialogue: 0,0:21:03.99,0:21:15.47,chinese,,0,0,0,,实际上，如果你使用云端环境 code spaces，\N然后在终端窗口中输入 ls /usr/include，就能看到那个文件夹里的所有文件。
 Dialogue: 0,0:21:15.47,0:21:17.58,english,,0,0,0,,But we've preinstalled all of that stuff for you.
-Dialogue: 0,0:21:15.47,0:21:17.58,chinese,,0,0,0,,但我们已经为你预装了所有这些功能。
+Dialogue: 0,0:21:15.47,0:21:17.58,chinese,,0,0,0,,我们提供的云环境中，预装了所有这些东西。
 Dialogue: 0,0:21:17.58,0:21:20.39,english,,0,0,0,,So let's consider what's actually in those files here.
-Dialogue: 0,0:21:17.58,0:21:20.39,chinese,,0,0,0,,因此，让我们来看看这些文件中到底有什么。
+Dialogue: 0,0:21:17.58,0:21:20.39,chinese,,0,0,0,,所以让我们来看看这些文件里到底有什么。
 Dialogue: 0,0:21:20.39,0:21:25.37,english,,0,0,0,,If I highlight these two lines up top that start with hash include, well,
-Dialogue: 0,0:21:20.39,0:21:25.37,chinese,,0,0,0,,如果我把上面这两行以散列包含开头的部分突出显示出来，效果就会很好、
+Dialogue: 0,0:21:20.39,0:21:25.37,chinese,,0,0,0,,我来高亮顶部这两行 #include 开头的代码。
 Dialogue: 0,0:21:25.37,0:21:32.66,english,,0,0,0,,I kind of hinted last week that what's in that first file is a hint as to what functions CS50 wrote for you.
-Dialogue: 0,0:21:25.37,0:21:32.66,chinese,,0,0,0,,上周我曾暗示过，第一个文件中的内容暗示了 CS50 为你编写了哪些功能。
+Dialogue: 0,0:21:25.37,0:21:32.66,chinese,,0,0,0,,我上周暗示过，第一个文件里的内容是 CS50 为你写的那些函数的提示（CS50 库中的函数声明）。
 Dialogue: 0,0:21:32.66,0:21:41.00,english,,0,0,0,,So you can kind of think of these include lines as being temporary placeholders for what's going to become like a global find and replace.
-Dialogue: 0,0:21:32.66,0:21:41.00,chinese,,0,0,0,,因此，你可以把这些包含行看作是临时的占位符，用于全局查找和替换。
+Dialogue: 0,0:21:32.66,0:21:41.00,chinese,,0,0,0,,所以这些带 #include 的行，能看作是临时的占位符，会在编译的第一步全局查找和替换。
 Dialogue: 0,0:21:41.00,0:21:44.27,english,,0,0,0,,That is the first thing clang is going to do is to preprocess this file.
-Dialogue: 0,0:21:41.00,0:21:44.27,chinese,,0,0,0,,clang 要做的第一件事就是预处理这个文件。
+Dialogue: 0,0:21:41.00,0:21:44.27,chinese,,0,0,0,,也就是说，clang 要做的第一件事就是预处理这个文件。
 Dialogue: 0,0:21:44.27,0:21:47.30,english,,0,0,0,,It's going to look for any line that starts with hash include.
-Dialogue: 0,0:21:44.27,0:21:47.30,chinese,,0,0,0,,它会查找任何以散列 include 开头的行。
+Dialogue: 0,0:21:44.27,0:21:47.30,chinese,,0,0,0,,所有 #include 开头的行，它都会去查找。
 Dialogue: 0,0:21:47.30,0:21:56.44,english,,0,0,0,,And if it sees that, it's going to essentially go into that file, like cs50.h, and then just copy and paste the contents of that file magically there for you.
-Dialogue: 0,0:21:47.30,0:21:56.44,chinese,,0,0,0,,如果它看到了，就会进入该文件，如 cs50.h，然后复制并粘贴该文件的内容。
+Dialogue: 0,0:21:47.30,0:21:56.44,chinese,,0,0,0,,如果找到了，比如说 cs50.h，就会把所有内容神奇地复制粘贴过来。
 Dialogue: 0,0:21:56.44,0:21:58.11,english,,0,0,0,,You don't see it visually on the screen.
-Dialogue: 0,0:21:56.44,0:21:58.11,chinese,,0,0,0,,你在屏幕上看不到。
+Dialogue: 0,0:21:56.44,0:21:58.11,chinese,,0,0,0,,在屏幕上看不到这个过程。
 Dialogue: 0,0:21:58.11,0:22:00.06,english,,0,0,0,,But it's happening behind the scenes.
-Dialogue: 0,0:21:58.11,0:22:00.06,chinese,,0,0,0,,但这一切都发生在幕后。
+Dialogue: 0,0:21:58.11,0:22:00.06,chinese,,0,0,0,,这一切都发生在幕后。
 Dialogue: 0,0:22:00.06,0:22:13.21,english,,0,0,0,,And so really, what's happening with this first line is that somewhere in cs50.h is the declaration of getString like we talked last week, and it probably looks a little something like this.
-Dialogue: 0,0:22:00.06,0:22:13.21,chinese,,0,0,0,,实际上，第一行的内容是在 cs50.h 中的某处对 getString 的声明，就像我们上周说的那样，它看起来可能有点像这样。
+Dialogue: 0,0:22:00.06,0:22:13.21,chinese,,0,0,0,,所以实际上，在处理第一行 #include 时，会看到 cs50.h 里的某个地方，\N就像我们上周谈到的，有 get_string 的声明，它可能看起来大概是这样。
 Dialogue: 0,0:22:13.21,0:22:17.03,english,,0,0,0,,And we didn't spend much time on this yet this past week, but we will in time more.
-Dialogue: 0,0:22:13.21,0:22:17.03,chinese,,0,0,0,,上周我们在这方面花的时间还不多，但以后会花更多时间。
+Dialogue: 0,0:22:13.21,0:22:17.03,chinese,,0,0,0,,我们上周没怎么花时间讨论这个，以后会详细说。
 Dialogue: 0,0:22:17.03,0:22:21.47,english,,0,0,0,,Notice that this is how a function is declared.
-Dialogue: 0,0:22:17.03,0:22:21.47,chinese,,0,0,0,,请注意，函数就是这样声明的。
+Dialogue: 0,0:22:17.03,0:22:21.47,chinese,,0,0,0,,请注意，函数就是这样被声明的。
 Dialogue: 0,0:22:21.47,0:22:23.67,english,,0,0,0,,That is, it is decreed to exist.
-Dialogue: 0,0:22:21.47,0:22:23.67,chinese,,0,0,0,,也就是说，它是注定要存在的。
+Dialogue: 0,0:22:21.47,0:22:23.67,chinese,,0,0,0,,也就是说，告诉了编译器这个函数的存在。
 Dialogue: 0,0:22:23.67,0:22:25.76,english,,0,0,0,,The name of the function, of course, is getString.
-Dialogue: 0,0:22:23.67,0:22:25.76,chinese,,0,0,0,,当然，函数的名称是 getString。
+Dialogue: 0,0:22:23.67,0:22:25.76,chinese,,0,0,0,,函数名当然是这里的 get_string。
 Dialogue: 0,0:22:25.76,0:22:28.31,english,,0,0,0,,Inside of the parentheses are its arguments.
-Dialogue: 0,0:22:25.76,0:22:28.31,chinese,,0,0,0,,括号内是参数。
+Dialogue: 0,0:22:25.76,0:22:28.31,chinese,,0,0,0,,括号内是函数的参数。
 Dialogue: 0,0:22:28.31,0:22:33.08,english,,0,0,0,,In this case, there's one argument to getString, I claim today, but you've known this implicitly.
-Dialogue: 0,0:22:28.31,0:22:33.08,chinese,,0,0,0,,在这种情况下，getString 只有一个参数，我今天声称，但你已经隐约知道了。
+Dialogue: 0,0:22:28.31,0:22:33.08,chinese,,0,0,0,,我告诉你，这里的 get_string 只有一个参数，你其实也应该知道了。
 Dialogue: 0,0:22:33.08,0:22:34.16,english,,0,0,0,,And it's a prompt.
-Dialogue: 0,0:22:33.08,0:22:34.16,chinese,,0,0,0,,这是一个提示。
+Dialogue: 0,0:22:33.08,0:22:34.16,chinese,,0,0,0,,这是一个提示的字符串。
 Dialogue: 0,0:22:34.16,0:22:36.86,english,,0,0,0,,It's the prompt that the human sees when you use getString.
-Dialogue: 0,0:22:34.16,0:22:36.86,chinese,,0,0,0,,这是使用 getString 时人类看到的提示。
+Dialogue: 0,0:22:34.16,0:22:36.86,chinese,,0,0,0,,也就是执行 get_string 时用户看到的提示。
 Dialogue: 0,0:22:36.86,0:22:37.79,english,,0,0,0,,What is that prompt?
 Dialogue: 0,0:22:36.86,0:22:37.79,chinese,,0,0,0,,提示是什么？
 Dialogue: 0,0:22:37.79,0:22:43.08,english,,0,0,0,,Well, it's a string of text, like quote unquote, "what's your name?" or anything else that I asked last week.
-Dialogue: 0,0:22:37.79,0:22:43.08,chinese,,0,0,0,,嗯，就是一串文字，就像我上周问的 "你叫什么名字？"之类的。
+Dialogue: 0,0:22:37.79,0:22:43.08,chinese,,0,0,0,,嗯，就是一些文本，就像我上周问的 "What's your name?" 之类的。
 Dialogue: 0,0:22:43.08,0:22:46.61,english,,0,0,0,,Meanwhile, getString, as we know from last week, has a return value.
-Dialogue: 0,0:22:43.08,0:22:46.61,chinese,,0,0,0,,与此同时，正如我们在上周所知道的，getString 有一个返回值。
+Dialogue: 0,0:22:43.08,0:22:46.61,chinese,,0,0,0,,还有，我们上周就学到了，get_string 有一个返回值。
 Dialogue: 0,0:22:46.61,0:22:48.14,english,,0,0,0,,It returns something to you.
-Dialogue: 0,0:22:46.61,0:22:48.14,chinese,,0,0,0,,它会给你回报一些东西。
+Dialogue: 0,0:22:46.61,0:22:48.14,chinese,,0,0,0,,它会返还一个值给你。
 Dialogue: 0,0:22:48.14,0:22:49.61,english,,0,0,0,,And that, too, is a string.
-Dialogue: 0,0:22:48.14,0:22:49.61,chinese,,0,0,0,,这也是一个字符串。
+Dialogue: 0,0:22:48.14,0:22:49.61,chinese,,0,0,0,,返回值也是一个字符串。
 Dialogue: 0,0:22:49.61,0:22:52.12,english,,0,0,0,,So again, this is also called a functions prototype.
-Dialogue: 0,0:22:49.61,0:22:52.12,chinese,,0,0,0,,因此，这也被称为函数原型。
+Dialogue: 0,0:22:49.61,0:22:52.12,chinese,,0,0,0,,所以，这一行函数的声明，也被称为函数原型。
 Dialogue: 0,0:22:52.12,0:23:02.03,english,,0,0,0,,It's the thing toward the end of last week that I just copied and pasted from the bottom of my file to the top, just so that it was like this teaser for clang as to what would exist later.
-Dialogue: 0,0:22:52.12,0:23:02.03,chinese,,0,0,0,,就是上周末的那篇文章，我把它从文件底部复制粘贴到了顶部，这样就像给铛铛的预告一样，让他知道后面会有什么。
+Dialogue: 0,0:22:52.12,0:23:02.03,chinese,,0,0,0,,上周的课程里有一个函数，我把它的函数原型从文件最底下复制粘贴到了 main 函数之前，\N这就是给 clang 的提示，让他知道后面会有这个函数的实现，而不是一个无效函数。
 Dialogue: 0,0:23:02.03,0:23:11.36,english,,0,0,0,,So you can think, then, of these include lines as just kind of combining all of those function declarations in some separate file called cs50.h,
-Dialogue: 0,0:23:02.03,0:23:11.36,chinese,,0,0,0,,因此，你可以把这些包含行看作是将所有这些函数声明合并到一个名为 cs50.h 的单独文件中、
+Dialogue: 0,0:23:02.03,0:23:11.36,chinese,,0,0,0,,所以，你可以这么理解，\N所有 CS50 库中的函数原型，我们把它合并到一个名为 cs50.h 的单独文件中，
 Dialogue: 0,0:23:11.36,0:23:18.47,english,,0,0,0,,so that you yourself don't have to type them every time you use the library-- or worse, so that you, yourself, don't have to copy and paste those lines.
-Dialogue: 0,0:23:11.36,0:23:18.47,chinese,,0,0,0,,这样，您就不必每次使用图书馆时都输入这些信息，或者更糟糕的是，您自己也不必复制和粘贴这些行文。
+Dialogue: 0,0:23:11.36,0:23:18.47,chinese,,0,0,0,,这样，你就不必每次使用库的时候，都麻烦地手动输入或是复制粘贴了。\N只要 include 整个 cs50.h，编译器会为你自动地复制粘贴过来。
 Dialogue: 0,0:23:18.47,0:23:22.52,english,,0,0,0,,This is what clang is doing for you in its first step of preprocessing.
-Dialogue: 0,0:23:18.47,0:23:22.52,chinese,,0,0,0,,这就是 clang 在第一步预处理中为你做的事情。
+Dialogue: 0,0:23:18.47,0:23:22.52,chinese,,0,0,0,,clang 会在第一步预处理中为你做这件事情。
 Dialogue: 0,0:23:22.52,0:23:29.17,english,,0,0,0,,Second, and last in this example, what happens when clang preprocesses this second include line?
-Dialogue: 0,0:23:22.52,0:23:29.17,chinese,,0,0,0,,其次，也是本例的最后一个问题，当 clang 预处理第二行 include 时会发生什么？
+Dialogue: 0,0:23:22.52,0:23:29.17,chinese,,0,0,0,,还有最后一个问题，当 clang 预处理第二行 include 时会发生什么？
 Dialogue: 0,0:23:29.17,0:23:33.65,english,,0,0,0,,Well, the only other function we care about in this story is printf, of course, which comes with C.
-Dialogue: 0,0:23:29.17,0:23:33.65,chinese,,0,0,0,,在这个故事中，我们唯一关心的函数当然是 C 语言自带的 printf 函数。
+Dialogue: 0,0:23:29.17,0:23:33.65,chinese,,0,0,0,,我们写的代码中，只用到 stdio 库里面的 printf。
 Dialogue: 0,0:23:33.65,0:23:40.82,english,,0,0,0,,So essentially, you can think of printf's prototype or declaration as just being this.
-Dialogue: 0,0:23:33.65,0:23:40.82,chinese,,0,0,0,,因此，你可以把 printf 的原型或声明理解为这样。
+Dialogue: 0,0:23:33.65,0:23:40.82,chinese,,0,0,0,,你可以把 printf 的函数原型或函数声明理解成这样。
 Dialogue: 0,0:23:40.82,0:23:42.87,english,,0,0,0,,Printf is the name of the function.
-Dialogue: 0,0:23:40.82,0:23:42.87,chinese,,0,0,0,,Printf 是函数的名称。
+Dialogue: 0,0:23:40.82,0:23:42.87,chinese,,0,0,0,,printf 是函数的名称。
 Dialogue: 0,0:23:42.87,0:23:49.11,english,,0,0,0,,It takes a string that you want to format like, Hello comma world, or Hello comma %s.
-Dialogue: 0,0:23:42.87,0:23:49.11,chinese,,0,0,0,,它接收一个要格式化的字符串，如：你好，逗号世界，或你好，逗号 %s。
+Dialogue: 0,0:23:42.87,0:23:49.11,chinese,,0,0,0,,它接收一个要格式化的字符串，这里是 "hello, %s\{}n"。
 Dialogue: 0,0:23:49.11,0:23:52.12,english,,0,0,0,,And then with dot, dot, dot, this actually has technical meaning.
-Dialogue: 0,0:23:49.11,0:23:52.12,chinese,,0,0,0,,然后是点、点、点，这其实是有技术含义的。
+Dialogue: 0,0:23:49.11,0:23:52.12,chinese,,0,0,0,,然后是点点点，其实是有技术含义的。
 Dialogue: 0,0:23:52.12,0:23:56.34,english,,0,0,0,,It means, of course, that you can plug-in 0 variables, 1 variable, 2 or 10.
-Dialogue: 0,0:23:52.12,0:23:56.34,chinese,,0,0,0,,当然，这意味着您可以插入 0 个变量、1 个变量、2 个或 10 个变量。
+Dialogue: 0,0:23:52.12,0:23:56.34,chinese,,0,0,0,,它意味着你可以插入 0 个、1 个... 随便多少个变量。
 Dialogue: 0,0:23:56.34,0:23:58.53,english,,0,0,0,,So dot, dot, dot means some number of variables.
-Dialogue: 0,0:23:56.34,0:23:58.53,chinese,,0,0,0,,因此，点、点、点意味着一些变量的数量。
+Dialogue: 0,0:23:56.34,0:23:58.53,chinese,,0,0,0,,因此，点、点、点代表着 "可变数量参数"。
 Dialogue: 0,0:23:58.53,0:24:00.07,english,,0,0,0,,Now we haven't talked about this yet.
 Dialogue: 0,0:23:58.53,0:24:00.07,chinese,,0,0,0,,现在我们还没谈到这个问题。
 Dialogue: 0,0:24:00.07,0:24:05.49,english,,0,0,0,,And we won't really, in general. printf actually returns a value, a number, that is an integer.
-Dialogue: 0,0:24:00.07,0:24:05.49,chinese,,0,0,0,,实际上，printf 返回的是一个数值，一个整数。
+Dialogue: 0,0:24:00.07,0:24:05.49,chinese,,0,0,0,,实际上，printf 还有一个返回值，是个 int 值。
 Dialogue: 0,0:24:05.49,0:24:07.42,english,,0,0,0,,But more on that perhaps another time.
-Dialogue: 0,0:24:05.49,0:24:07.42,chinese,,0,0,0,,但关于这一点，或许下次再谈。
+Dialogue: 0,0:24:05.49,0:24:07.42,chinese,,0,0,0,,有机会再谈这个话题。
 Dialogue: 0,0:24:07.42,0:24:10.92,english,,0,0,0,,It's generally not something the programmer tends to look at.
 Dialogue: 0,0:24:07.42,0:24:10.92,chinese,,0,0,0,,一般来说，程序员不会关注这个问题。
 Dialogue: 0,0:24:10.92,0:24:21.33,english,,0,0,0,,But that's all we mean by preprocessing, so that at the end of this process, even though there's more lines of code in cs50.h and stdio.h, what's really just happening is that clang, in preprocessing
-Dialogue: 0,0:24:10.92,0:24:21.33,chinese,,0,0,0,,但这就是我们所说的预处理，因此在这个过程的最后，尽管 cs50.h 和 stdio.h 中的代码行数增加了，但实际上只是 clang 在预处理时发生了以下变化
+Dialogue: 0,0:24:10.92,0:24:21.33,chinese,,0,0,0,,整个过程就是我们所说的预处理，完成以后，比源代码多了 stdio.h 和 cs50.h 的内容，\N不过发生在 clang 预处理期间所以不会影响到源代码。
 Dialogue: 0,0:24:21.33,0:24:31.06,english,,0,0,0,,the file, copies and pastes the contents of those files into your code so that now your code knows about everything-- getString, printf, and anything else.
-Dialogue: 0,0:24:21.33,0:24:31.06,chinese,,0,0,0,,文件，然后将这些文件的内容复制并粘贴到你的代码中，这样你的代码就知道了一切--getString、printf 和其他任何内容。
+Dialogue: 0,0:24:21.33,0:24:31.06,chinese,,0,0,0,,在预处理过程中，clang 找到这些头文件，把内容复制粘贴到你的代码里，\N这样你的代码就知道了一切—— get_string、printf 和其他任何函数的原型。
 Dialogue: 0,0:24:31.06,0:24:35.23,english,,0,0,0,,Any questions, then, on that first step, preprocessing?
-Dialogue: 0,0:24:31.06,0:24:35.23,chinese,,0,0,0,,那么，关于第一步，预处理，有什么问题吗？
+Dialogue: 0,0:24:31.06,0:24:35.23,chinese,,0,0,0,,那么，关于第一步预处理，大家有什么问题吗？
 Dialogue: 0,0:24:35.23,0:24:35.92,english,,0,0,0,,Yes?
 Dialogue: 0,0:24:35.92,0:24:49.19,english,,0,0,0,,AUDIENCE: [INAUDIBLE]
 Dialogue: 0,0:24:49.19,0:24:50.32,english,,0,0,0,,DAVID MALAN: Good question.
 Dialogue: 0,0:24:49.19,0:24:50.32,chinese,,0,0,0,,大卫-马兰：问得好。
 Dialogue: 0,0:24:50.32,0:24:54.88,english,,0,0,0,,When you include a file, does it only include what you need or does it include everything?
-Dialogue: 0,0:24:50.32,0:24:54.88,chinese,,0,0,0,,包含文件时，是只包含您需要的内容，还是包含所有内容？
+Dialogue: 0,0:24:50.32,0:24:54.88,chinese,,0,0,0,,include 文件时，是只包含你需要的内容，还是包含所有内容？
 Dialogue: 0,0:24:54.88,0:24:56.42,english,,0,0,0,,Think of it as including everything.
-Dialogue: 0,0:24:54.88,0:24:56.42,chinese,,0,0,0,,把它想象成包括一切。
+Dialogue: 0,0:24:54.88,0:24:56.42,chinese,,0,0,0,,想象成包括所有内容。
 Dialogue: 0,0:24:56.42,0:24:59.02,english,,0,0,0,,So if it's a big file, that's a lot of code at the very top.
-Dialogue: 0,0:24:56.42,0:24:59.02,chinese,,0,0,0,,因此，如果文件很大，最顶端的代码就会很多。
+Dialogue: 0,0:24:56.42,0:24:59.02,chinese,,0,0,0,,因此，如果文件很大，最顶端的代码就会多很多。
 Dialogue: 0,0:24:59.02,0:25:01.88,english,,0,0,0,,And that's why, if you think back to all of the zeros and ones
-Dialogue: 0,0:24:59.02,0:25:01.88,chinese,,0,0,0,,这就是为什么，如果你回想一下所有的 0 和 1
+Dialogue: 0,0:24:59.02,0:25:01.88,chinese,,0,0,0,,这就是为什么，如果你回想一下，
 Dialogue: 0,0:25:01.88,0:25:08.89,english,,0,0,0,,I showed a little bit ago, as well as last week, there's a lot of zeros and ones that end up on the screen as a result of just writing, Hello, world.
-Dialogue: 0,0:25:01.88,0:25:08.89,chinese,,0,0,0,,我在不久前和上周都演示过，只要写下 "你好，世界"，屏幕上就会出现大量的 0 和 1。
+Dialogue: 0,0:25:01.88,0:25:08.89,chinese,,0,0,0,,之前演示过，一个简单的 hello, world 程序，对应到机器码是大量的 0 和 1。
 Dialogue: 0,0:25:08.89,0:25:13.39,english,,0,0,0,,A lot of those zeros and ones are perhaps coming from code that you didn't actually, necessarily need.
 Dialogue: 0,0:25:08.89,0:25:13.39,chinese,,0,0,0,,很多 0 和 1 可能来自于你实际上并不一定需要的代码。
 Dialogue: 0,0:25:13.39,0:25:17.74,english,,0,0,0,,But some of it is perhaps there, but there are ways to optimize that as well.
-Dialogue: 0,0:25:13.39,0:25:17.74,chinese,,0,0,0,,但其中一些也许是存在的，但也有优化的方法。
+Dialogue: 0,0:25:13.39,0:25:17.74,chinese,,0,0,0,,只有一些是需要的，当然这也有优化的方法。
 Dialogue: 0,0:25:17.74,0:25:22.39,english,,0,0,0,,All right, so step two of compiling is, confusingly, called compiling.
-Dialogue: 0,0:25:17.74,0:25:22.39,chinese,,0,0,0,,好了，编译的第二步令人困惑地叫做 "编译"。
+Dialogue: 0,0:25:17.74,0:25:22.39,chinese,,0,0,0,,好了，编译的第二步叫做 "编译"，有点迷惑了。
 Dialogue: 0,0:25:22.39,0:25:27.94,english,,0,0,0,,It's just, this is the term that most everyone uses to describe the whole process, instead of just this one step.
-Dialogue: 0,0:25:22.39,0:25:27.94,chinese,,0,0,0,,只是，大多数人都用这个词来描述整个过程，而不仅仅是这一步。
+Dialogue: 0,0:25:22.39,0:25:27.94,chinese,,0,0,0,,只是大多数人大部分时候，都用编译来描述整个过程，而不仅仅是这一步。
 Dialogue: 0,0:25:27.94,0:25:35.86,english,,0,0,0,,But once a program has been preprocessed behind the scenes by the compiler for you, it looks now a little something like this.
-Dialogue: 0,0:25:27.94,0:25:35.86,chinese,,0,0,0,,但是，一旦编译器在幕后为你预处理了程序，它现在看起来就有点像这样了。
+Dialogue: 0,0:25:27.94,0:25:35.86,chinese,,0,0,0,,现在编译器在幕后为你的程序进行了预处理，它现在看起来差不多是这样。
 Dialogue: 0,0:25:35.86,0:25:39.82,english,,0,0,0,,And I've put dot, dot, dot just to imply that, yes, to your question, there's more stuff above it.
-Dialogue: 0,0:25:35.86,0:25:39.82,chinese,,0,0,0,,我把 "点"、"点"、"点 "放在这里，只是为了暗示，是的，对于你的问题，上面还有更多的东西。
+Dialogue: 0,0:25:35.86,0:25:39.82,chinese,,0,0,0,,这里的两个...，只是为了暗示，是的，对应刚才同学的提问，预处理得到的代码不止这些。
 Dialogue: 0,0:25:39.82,0:25:40.98,english,,0,0,0,,There's more stuff below it.
 Dialogue: 0,0:25:39.82,0:25:40.98,chinese,,0,0,0,,下面还有更多内容。
 Dialogue: 0,0:25:40.98,0:25:43.07,english,,0,0,0,,It's just not interesting right now for us.
-Dialogue: 0,0:25:40.98,0:25:43.07,chinese,,0,0,0,,只是现在对我们来说没什么意思。
+Dialogue: 0,0:25:40.98,0:25:43.07,chinese,,0,0,0,,只是现在对我们来说没什么用。
 Dialogue: 0,0:25:43.07,0:25:44.86,english,,0,0,0,,So now we have just C code.
-Dialogue: 0,0:25:43.07,0:25:44.86,chinese,,0,0,0,,现在我们只有 C 代码了。
+Dialogue: 0,0:25:43.07,0:25:44.86,chinese,,0,0,0,,现在我们通篇都是 C 语言代码了。
 Dialogue: 0,0:25:44.86,0:25:46.96,english,,0,0,0,,There's no more preprocessor directives.
-Dialogue: 0,0:25:44.86,0:25:46.96,chinese,,0,0,0,,没有预处理器指令了。
+Dialogue: 0,0:25:44.86,0:25:46.96,chinese,,0,0,0,,没有预处理器指令什么的。
 Dialogue: 0,0:25:46.96,0:25:52.67,english,,0,0,0,,At this point, all of the hash symbols and those lines of code have been preprocessed and converted to something else.
-Dialogue: 0,0:25:46.96,0:25:52.67,chinese,,0,0,0,,此时，所有哈希符号和这些代码行都已被预处理并转换成其他内容。
+Dialogue: 0,0:25:46.96,0:25:52.67,chinese,,0,0,0,,此时，所有 # 开头的行，都已被预处理并转换成其他内容。
 Dialogue: 0,0:25:52.67,0:25:56.38,english,,0,0,0,,And so now-- and this is where things get a little spooky looking.
-Dialogue: 0,0:25:52.67,0:25:56.38,chinese,,0,0,0,,现在事情变得有点诡异了
+Dialogue: 0,0:25:52.67,0:25:56.38,chinese,,0,0,0,,现在，事情变得有点可怕。
 Dialogue: 0,0:25:56.38,0:26:03.31,english,,0,0,0,,Here now is what happens when clang, or any compiler, literally compiles code like this.
-Dialogue: 0,0:25:56.38,0:26:03.31,chinese,,0,0,0,,下面是 clang 或任何编译器编译这样的代码时发生的情况。
+Dialogue: 0,0:25:56.38,0:26:03.31,chinese,,0,0,0,,不管是 clang，还是别的编译器，都会像这样编译代码。
 Dialogue: 0,0:26:03.31,0:26:08.72,english,,0,0,0,,It converts it from this in C to this in assembly code.
-Dialogue: 0,0:26:03.31,0:26:08.72,chinese,,0,0,0,,它将 C 语言中的此代码转换为汇编代码中的此代码。
+Dialogue: 0,0:26:03.31,0:26:08.72,chinese,,0,0,0,,它把 C 语言的这个代码，转换为汇编代码的这个代码。
 Dialogue: 0,0:26:08.72,0:26:10.72,english,,0,0,0,,So this is among the scarier languages.
-Dialogue: 0,0:26:08.72,0:26:10.72,chinese,,0,0,0,,因此，这是一种比较可怕的语言。
+Dialogue: 0,0:26:08.72,0:26:10.72,chinese,,0,0,0,,这是一种比较可怕的语言。
 Dialogue: 0,0:26:10.72,0:26:12.58,english,,0,0,0,,I, myself, don't really have fond memories.
-Dialogue: 0,0:26:10.72,0:26:12.58,chinese,,0,0,0,,我自己并没有什么美好的回忆。
+Dialogue: 0,0:26:10.72,0:26:12.58,chinese,,0,0,0,,我自己对此没什么美好回忆。
 Dialogue: 0,0:26:12.58,0:26:14.80,english,,0,0,0,,This is not a language that many people program in.
-Dialogue: 0,0:26:12.58,0:26:14.80,chinese,,0,0,0,,很多人都不会用这种语言编程。
+Dialogue: 0,0:26:12.58,0:26:14.80,chinese,,0,0,0,,大部分人都不会用这种语言编程。
 Dialogue: 0,0:26:14.80,0:26:21.43,english,,0,0,0,,If you take a subsequent class in computer science, in systems, a higher level class, you might actually learn this or some variant thereof.
-Dialogue: 0,0:26:14.80,0:26:21.43,chinese,,0,0,0,,如果你选修了计算机科学、系统方面的后续课程，或者更高级别的课程，你可能真的会学到这些知识或其中的一些变体。
+Dialogue: 0,0:26:14.80,0:26:21.43,chinese,,0,0,0,,如果你在计算机科学的后续课程中学习，\N比如系统方面的高级课程，你可能会学习这门语言或类似的语言。
 Dialogue: 0,0:26:21.43,0:26:29.32,english,,0,0,0,,But there's at least a few people out there that need to know this stuff because this is closer to what the computers themselves, nowadays, understand.
-Dialogue: 0,0:26:21.43,0:26:29.32,chinese,,0,0,0,,但至少有一些人需要了解这些知识，因为这更接近于现在的计算机本身所能理解的东西。
+Dialogue: 0,0:26:21.43,0:26:29.32,chinese,,0,0,0,,但至少有一些人需要了解这些内容，因为这更接近于现今计算机本身所理解的东西。
 Dialogue: 0,0:26:29.32,0:26:37.96,english,,0,0,0,,The Intel CPUs or the AMD CPUs, the brains of today's computers and phones understand stuff that looks more like this and less like C.
-Dialogue: 0,0:26:29.32,0:26:37.96,chinese,,0,0,0,,英特尔 CPU 或 AMD CPU 是当今电脑和手机的大脑，它们能理解的东西看起来更像这个，而不像 C。
+Dialogue: 0,0:26:29.32,0:26:37.96,chinese,,0,0,0,,英特尔 CPU 或 AMD CPU，当今电脑和手机的大脑，它们更加能理解这个，而不是 C。
 Dialogue: 0,0:26:37.96,0:26:42.43,english,,0,0,0,,Now it's completely esoteric, but let me just highlight a few phrases.
-Dialogue: 0,0:26:37.96,0:26:42.43,chinese,,0,0,0,,这完全是个深奥的问题，但我只想强调几句话。
+Dialogue: 0,0:26:37.96,0:26:42.43,chinese,,0,0,0,,现在它完全是晦涩难懂的，但让我突出几个词汇。
 Dialogue: 0,0:26:42.43,0:26:44.63,english,,0,0,0,,There's some stuff that's a little familiar.
-Dialogue: 0,0:26:42.43,0:26:44.63,chinese,,0,0,0,,有些东西有点熟悉。
+Dialogue: 0,0:26:42.43,0:26:44.63,chinese,,0,0,0,,有些内容还有点熟悉。
 Dialogue: 0,0:26:44.63,0:26:47.62,english,,0,0,0,,There is mention of main at the top there in yellow.
-Dialogue: 0,0:26:44.63,0:26:47.62,chinese,,0,0,0,,顶部的黄色部分提到了主要内容。
+Dialogue: 0,0:26:44.63,0:26:47.62,chinese,,0,0,0,,顶部的黄色部分提到了 main。
 Dialogue: 0,0:26:47.62,0:26:49.75,english,,0,0,0,,There is mention of getString toward the bottom.
-Dialogue: 0,0:26:47.62,0:26:49.75,chinese,,0,0,0,,底部提到了 getString。
+Dialogue: 0,0:26:47.62,0:26:49.75,chinese,,0,0,0,,在下面提到了 get_string。
 Dialogue: 0,0:26:49.75,0:26:52.07,english,,0,0,0,,There is mention of printf down below.
-Dialogue: 0,0:26:49.75,0:26:52.07,chinese,,0,0,0,,下面提到了 printf。
+Dialogue: 0,0:26:49.75,0:26:52.07,chinese,,0,0,0,,最后面提到了 printf。
 Dialogue: 0,0:26:52.07,0:27:00.13,english,,0,0,0,,So this is just another programming language called assembly language, that decades ago, humans-- myself included in school-- did write code in.
-Dialogue: 0,0:26:52.07,0:27:00.13,chinese,,0,0,0,,因此，这只是另一种名为汇编语言的编程语言，几十年前，人类--包括我自己在学校里--确实用这种语言写过代码。
+Dialogue: 0,0:26:52.07,0:27:00.13,chinese,,0,0,0,,这只是另一种叫做汇编语言的编程语言，几十年前的人们，\N包括我在学校里的时候，确实用这种语言写过代码。
 Dialogue: 0,0:27:00.13,0:27:06.07,english,,0,0,0,,And absolutely, some people still write this code, especially since you can write very, very efficient code.
-Dialogue: 0,0:27:00.13,0:27:06.07,chinese,,0,0,0,,当然，有些人仍然在写这样的代码，尤其是你可以写出非常非常高效的代码。
+Dialogue: 0,0:27:00.13,0:27:06.07,chinese,,0,0,0,,不管多久以后，都绝对有人直接写汇编，大佬可以编写非常高效的汇编代码。
 Dialogue: 0,0:27:06.07,0:27:08.59,english,,0,0,0,,But it's a lot more arcane.
-Dialogue: 0,0:27:06.07,0:27:08.59,chinese,,0,0,0,,但它更神秘。
+Dialogue: 0,0:27:06.07,0:27:08.59,chinese,,0,0,0,,它晦涩得不是一点半点。
 Dialogue: 0,0:27:08.59,0:27:11.38,english,,0,0,0,,It's a lot less user friendly.
-Dialogue: 0,0:27:08.59,0:27:11.38,chinese,,0,0,0,,它对用户不那么友好。
-Dialogue: 0,0:27:11.38,0:27:23.63,english,,0,0,0,,So you'll see in yellow now, these are the so-called instructions that a computer's brain or CPU understands, pushing values around, moving them, subtracting values, calling functions, and move, move,
-Dialogue: 0,0:27:11.38,0:27:23.63,chinese,,0,0,0,,所以，你现在会看到黄色的部分，这些就是所谓的指令，计算机的大脑或 CPU 可以理解这些指令，将数值推来推去、移动它们、减去数值、调用函数、移动、移动、
-Dialogue: 0,0:27:23.63,0:27:24.13,english,,0,0,0,,move.
+Dialogue: 0,0:27:08.59,0:27:11.38,chinese,,0,0,0,,对用户根本不友好。
+Dialogue: 0,0:27:11.38,0:27:24.13,english,,0,0,0,,So you'll see in yellow now, these are the so-called instructions that a computer's brain or CPU understands, pushing values around, moving them, subtracting values, calling functions, and move, move, move.
+Dialogue: 0,0:27:11.38,0:27:23.63,chinese,,0,0,0,,你看黄色的部分，这些就是计算机的大脑 CPU 能够理解的指令，\N压栈、移动值、减去值、调用函数，以及各种移动...
 Dialogue: 0,0:27:24.13,0:27:34.12,english,,0,0,0,,So really, the low-level operations that computers understand tend to be arithmetic operations-- subtraction, addition, and the like-- moving things in and out of memory.
-Dialogue: 0,0:27:24.13,0:27:34.12,chinese,,0,0,0,,因此，计算机能理解的低级运算往往是算术运算--减法、加法等--将东西移入或移出内存。
+Dialogue: 0,0:27:24.13,0:27:34.12,chinese,,0,0,0,,所以实际上，计算机能理解的低级操作往往是算术上的加减法、\N把东西移入和移出内存什么的。
 Dialogue: 0,0:27:34.12,0:27:37.51,english,,0,0,0,,It's just a lot more tedious for folks like us to write code like this.
-Dialogue: 0,0:27:34.12,0:27:37.51,chinese,,0,0,0,,对于我们这样的人来说，编写这样的代码要乏味得多。
+Dialogue: 0,0:27:34.12,0:27:37.51,chinese,,0,0,0,,对于碳基生命，编写这样的代码要乏味得多。
 Dialogue: 0,0:27:37.51,0:27:40.45,english,,0,0,0,,This is why you and I tend to write stuff like this.
-Dialogue: 0,0:27:37.51,0:27:40.45,chinese,,0,0,0,,这就是为什么你和我倾向于写这样的东西。
+Dialogue: 0,0:27:37.51,0:27:40.45,chinese,,0,0,0,,这就是为什么我们倾向于写这样的代码。
 Dialogue: 0,0:27:40.45,0:27:46.52,english,,0,0,0,,And ideally, still, people like you and I tend to drag and drop puzzle pieces that sort of abstract all of that away further.
-Dialogue: 0,0:27:40.45,0:27:46.52,chinese,,0,0,0,,理想情况下，像你我这样的人还是倾向于拖放拼图，进一步抽象出这一切。
+Dialogue: 0,0:27:40.45,0:27:46.52,chinese,,0,0,0,,更理想一点，我们可能还更喜欢拖拖拖拼图来构建代码，再做一层抽象。
 Dialogue: 0,0:27:46.52,0:27:49.42,english,,0,0,0,,But for now, this is, again, called assembly language.
-Dialogue: 0,0:27:46.52,0:27:49.42,chinese,,0,0,0,,但就目前而言，这还是被称为汇编语言。
+Dialogue: 0,0:27:46.52,0:27:49.42,chinese,,0,0,0,,再说一遍，现在展示的这个，被称为汇编语言。
 Dialogue: 0,0:27:49.42,0:27:54.31,english,,0,0,0,,It is what happens when the compiler literally compiles your code.
-Dialogue: 0,0:27:49.42,0:27:54.31,chinese,,0,0,0,,这就是编译器编译代码时发生的情况。
+Dialogue: 0,0:27:49.42,0:27:54.31,chinese,,0,0,0,,这就是编译器实际编译你的代码时所发生的情况。
 Dialogue: 0,0:27:54.31,0:27:57.01,english,,0,0,0,,But of course, this, still not zeros and ones.
 Dialogue: 0,0:27:54.31,0:27:57.01,chinese,,0,0,0,,当然，这仍然不是 0 和 1。
 Dialogue: 0,0:27:57.01,0:27:58.58,english,,0,0,0,,So we got two steps to go.
-Dialogue: 0,0:27:57.01,0:27:58.58,chinese,,0,0,0,,所以我们还有两步要走。
+Dialogue: 0,0:27:57.01,0:27:58.58,chinese,,0,0,0,,所以还有两步要走。
 Dialogue: 0,0:27:58.58,0:28:05.53,english,,0,0,0,,So when a compiler proceeds to step three, this is where things get converted to machine code.
-Dialogue: 0,0:27:58.58,0:28:05.53,chinese,,0,0,0,,因此，当编译器进行到第三步时，就会将代码转换为机器代码。
+Dialogue: 0,0:27:58.58,0:28:05.53,chinese,,0,0,0,,当编译器进行到第三步时，就会把汇编码转换为机器码。
 Dialogue: 0,0:28:05.53,0:28:18.55,english,,0,0,0,,And when a compiler assembles your code for you, it converts what we just saw on the screen here to actual zeros and ones-- the so-called machine code that your phone or your computer understands.
-Dialogue: 0,0:28:05.53,0:28:18.55,chinese,,0,0,0,,当编译器为你汇编代码时，它会把我们刚才在屏幕上看到的内容转换成实际的 0 和 1，也就是你的手机或电脑能理解的所谓机器码。
+Dialogue: 0,0:28:05.53,0:28:18.55,chinese,,0,0,0,,编译器汇编代码时，它把我们刚才在屏幕上看到的内容转换为实际的 0 1 二进制，\N也就是手机或电脑能理解的机器码。
 Dialogue: 0,0:28:18.55,0:28:24.28,english,,0,0,0,,But it's worth noting that these are not necessarily all of the zeros and ones of your program.
-Dialogue: 0,0:28:18.55,0:28:24.28,chinese,,0,0,0,,但值得注意的是，这些并不一定是程序中所有的 0 和 1。
+Dialogue: 0,0:28:18.55,0:28:24.28,chinese,,0,0,0,,但值得注意的是，这些并不一定是你程序的所有 0 和 1。
 Dialogue: 0,0:28:24.28,0:28:36.94,english,,0,0,0,,Yes, they are the zeros and ones that correspond to your Hello program or printf and getString and the like, but notice that here, we need one final step.
-Dialogue: 0,0:28:24.28,0:28:36.94,chinese,,0,0,0,,是的，它们就是对应于 Hello 程序或 printf 和 getString 等的 0 和 1，但请注意，在这里，我们还需要最后一步。
+Dialogue: 0,0:28:24.28,0:28:36.94,chinese,,0,0,0,,是的，它们是对应于你的 hello 程序、printf、get_string 等的二进制，\N但请注意，在这里，我们还需要进行最后一步。
 Dialogue: 0,0:28:36.94,0:28:40.10,english,,0,0,0,,In those zeros and ones are only your lines of code.
-Dialogue: 0,0:28:36.94,0:28:40.10,chinese,,0,0,0,,在这些 0 和 1 中，只有你的代码行。
+Dialogue: 0,0:28:36.94,0:28:40.10,chinese,,0,0,0,,在这些 0 和 1 中，只有你自己的源代码。
 Dialogue: 0,0:28:40.10,0:28:43.54,english,,0,0,0,,But what about CS50's lines of code that we wrote to implement getString?
-Dialogue: 0,0:28:40.10,0:28:43.54,chinese,,0,0,0,,但是，我们为实现 getString 而编写的 CS50 代码又是怎么回事呢？
+Dialogue: 0,0:28:40.10,0:28:43.54,chinese,,0,0,0,,那 CS50 的代码在哪里呢？我们写了代码来实现 get_string 的。
 Dialogue: 0,0:28:43.54,0:28:46.99,english,,0,0,0,,What about the lines of code that humans wrote decades ago to implement printf?
-Dialogue: 0,0:28:43.54,0:28:46.99,chinese,,0,0,0,,几十年前人类为实现 printf 而编写的代码行又如何呢？
+Dialogue: 0,0:28:43.54,0:28:46.99,chinese,,0,0,0,,还有几十年前的前辈们编写的实现 printf 的代码呢？
 Dialogue: 0,0:28:46.99,0:28:54.46,english,,0,0,0,,Those are somewhere on this hard drive, like on my Mac, my PC, or somewhere in the cloud, but we need to combine all of those zeros and ones
-Dialogue: 0,0:28:46.99,0:28:54.46,chinese,,0,0,0,,这些数据在硬盘上的某个地方，比如在我的 Mac、PC 或云端的某个地方，但我们需要将所有这些 0 和 1 结合起来
+Dialogue: 0,0:28:46.99,0:28:54.46,chinese,,0,0,0,,这些代码在本机或者云上，硬盘的某个地方，我们还需要把所有的二进制组合在一起，
 Dialogue: 0,0:28:54.46,0:29:02.42,english,,0,0,0,,together and link my code with CS50's code with standard I/O's code, all together.
-Dialogue: 0,0:28:54.46,0:29:02.42,chinese,,0,0,0,,将我的代码与 CS50 的代码和标准 I/O 的代码连接在一起。
+Dialogue: 0,0:28:54.46,0:29:02.42,chinese,,0,0,0,,把我编写的代码，和 CS50 的代码，还有标准 I/O 库的代码连接到一起。
 Dialogue: 0,0:29:02.42,0:29:11.44,english,,0,0,0,,And so what happens in the last step, ultimately, is that if we have my code here in yellow, and then the code that CS50 wrote, and the code that the authors of C
-Dialogue: 0,0:29:02.42,0:29:11.44,chinese,,0,0,0,,因此，最后一步的最终结果是，如果我的代码是黄色的，CS50 写的代码是黄色的，C 语言的作者写的代码是黄色的，C 语言的作者写的代码是黄色的。
+Dialogue: 0,0:29:02.42,0:29:11.44,chinese,,0,0,0,,因此，最后一步实际上是这样的，现在有黄色标注出的我的代码，\NCS50 课程组编写的代码，以及 C 的开发者编写的代码，
 Dialogue: 0,0:29:11.44,0:29:19.96,english,,0,0,0,,itself wrote, what really is happening is that somewhere, we have not only hello.c, which, obviously, I wrote, and wrote with us live here,
-Dialogue: 0,0:29:11.44,0:29:19.96,chinese,,0,0,0,,它本身写道，真正发生的事情是，在某个地方，我们不仅有 hello.c，其中，很明显，我写道，并写道与我们住在这里、
+Dialogue: 0,0:29:11.44,0:29:19.96,chinese,,0,0,0,,真实情况是，这个环境里有 hello.c，显然是我们在现场一起完成的，
 Dialogue: 0,0:29:19.96,0:29:28.21,english,,0,0,0,,there's also, let's assume, somewhere on the computer, a cs50.c file that, coincidentally, I and CS50 staff wrote years ago.
-Dialogue: 0,0:29:19.96,0:29:28.21,chinese,,0,0,0,,另外，我们假设在电脑的某个地方还有一个 cs50.c 文件，巧合的是，这个文件是我和 CS50 工作人员多年前写的。
+Dialogue: 0,0:29:19.96,0:29:28.21,chinese,,0,0,0,,另外，在计算机的某个地方，有一个 cs50.c 文件，是我和 CS50 的工作人员几年前编写的。
 Dialogue: 0,0:29:28.21,0:29:30.79,english,,0,0,0,,And also, somewhere on the computer, there's another file.
-Dialogue: 0,0:29:28.21,0:29:30.79,chinese,,0,0,0,,此外，在电脑的某个地方，还有另一个文件。
+Dialogue: 0,0:29:28.21,0:29:30.79,chinese,,0,0,0,,在计算机的另一个地方，还有一个文件。
 Dialogue: 0,0:29:30.79,0:29:34.12,english,,0,0,0,,Let me oversimplify by just calling it stdio.c.
-Dialogue: 0,0:29:30.79,0:29:34.12,chinese,,0,0,0,,让我简化一下，直接称之为 stdio.c。
+Dialogue: 0,0:29:30.79,0:29:34.12,chinese,,0,0,0,,我们简化一下直接叫做 stdio.c。
 Dialogue: 0,0:29:34.12,0:29:36.85,english,,0,0,0,,In practice, it's probably specifically called printf.c.
-Dialogue: 0,0:29:34.12,0:29:36.85,chinese,,0,0,0,,实际上，它的具体名称可能是 printf.c。
+Dialogue: 0,0:29:34.12,0:29:36.85,chinese,,0,0,0,,实际上，它可能具体是 printf.c。
 Dialogue: 0,0:29:36.85,0:29:39.46,english,,0,0,0,,But they're somewhere, these two other files.
-Dialogue: 0,0:29:36.85,0:29:39.46,chinese,,0,0,0,,但它们就在某处，就是另外两个文件。
+Dialogue: 0,0:29:36.85,0:29:39.46,chinese,,0,0,0,,反正这两个文件，都在别的某个地方。
 Dialogue: 0,0:29:39.46,0:29:48.10,english,,0,0,0,,And so this last step called linking takes my zeros and ones from the code I just wrote, namely this code on the screen here.
-Dialogue: 0,0:29:39.46,0:29:48.10,chinese,,0,0,0,,
+Dialogue: 0,0:29:39.46,0:29:48.10,chinese,,0,0,0,,所以这个最后的链接步骤，首先获取了我刚刚编写的代码转成的二进制，就是这段代码。
 Dialogue: 0,0:29:48.10,0:29:50.81,english,,0,0,0,,It then grabs the zeros and ones that CS50 wrote.
-Dialogue: 0,0:29:48.10,0:29:50.81,chinese,,0,0,0,,然后抓取 CS50 写入的 0 和 1。
+Dialogue: 0,0:29:48.10,0:29:50.81,chinese,,0,0,0,,然后获取了 CS50 课程组代码的二进制。
 Dialogue: 0,0:29:50.81,0:29:56.24,english,,0,0,0,,And it grabs the zeros and ones that the authors of C wrote, in order to implement the standard I/O library.
-Dialogue: 0,0:29:50.81,0:29:56.24,chinese,,0,0,0,,为了实现标准 I/O 库，它抓取了 C 语言作者编写的 0 和 1。
+Dialogue: 0,0:29:50.81,0:29:56.24,chinese,,0,0,0,,最后获取了 C 的作者实现标准 I/O 库的代码转成的二进制。
 Dialogue: 0,0:29:56.24,0:30:00.75,english,,0,0,0,,And lastly, voila, links them all together.
-Dialogue: 0,0:29:56.24,0:30:00.75,chinese,,0,0,0,,最后，瞧，把它们连接在一起。
+Dialogue: 0,0:29:56.24,0:30:00.75,chinese,,0,0,0,,最后，把它们全部链接在一起。
 Dialogue: 0,0:30:00.75,0:30:03.98,english,,0,0,0,,And this is the same blob of zeros and ones that we saw earlier.
-Dialogue: 0,0:30:00.75,0:30:03.98,chinese,,0,0,0,,这就是我们之前看到的那团 0 和 1。
-Dialogue: 0,0:30:03.98,0:30:15.83,english,,0,0,0,,It's just now the result of preprocessing your code, compiling your code, assembling your code, linking your code, and my God, at this point, like if there were any fun in programming for you yet,
-Dialogue: 0,0:30:03.98,0:30:15.83,chinese,,0,0,0,,这只是预处理你的代码、编译你的代码、组装你的代码、链接你的代码的结果，我的天啊，在这一点上，好像编程对你来说还有什么乐趣可言、
-Dialogue: 0,0:30:15.83,0:30:19.62,english,,0,0,0,,we've just taken it all away, we just call this whole process compiling.
-Dialogue: 0,0:30:15.83,0:30:19.62,chinese,,0,0,0,,我们把这一切都拿走了，我们把整个过程称为编译。
+Dialogue: 0,0:30:00.75,0:30:03.98,chinese,,0,0,0,,这就是我们之前看到的那一大团 0 和 1。
+Dialogue: 0,0:30:03.98,0:30:19.62,english,,0,0,0,,It's just now the result of preprocessing your code, compiling your code, assembling your code, linking your code, and my God, at this point, like if there were any fun in programming for you yet, we've just taken it all away, we just call this whole process compiling.
+Dialogue: 0,0:30:03.98,0:30:19.62,chinese,,0,0,0,,你的代码，经过预处理、编译、汇编、链接，结果就是这样。\N我的天，如果你对编程本来很有兴趣，这样一来可能乐趣荡然无存了。\N而我们现在只用把整个过程叫做编译就行。
 Dialogue: 0,0:30:19.62,0:30:20.12,english,,0,0,0,,Why?
-Dialogue: 0,0:30:20.12,0:30:27.89,english,,0,0,0,,Because now that we know those steps exist-- and smart people solve that problem for us-- you and I can kind of operate at this level of abstraction
-Dialogue: 0,0:30:20.12,0:30:27.89,chinese,,0,0,0,,因为既然我们知道这些步骤的存在，而且聪明人也为我们解决了这个问题，你和我就可以在这个抽象的层面上进行操作了
-Dialogue: 0,0:30:27.89,0:30:32.42,english,,0,0,0,,and just assume that compiling converts source code to machine code.
-Dialogue: 0,0:30:27.89,0:30:32.42,chinese,,0,0,0,,并假定编译会将源代码转换为机器代码。
+Dialogue: 0,0:30:20.12,0:30:32.42,english,,0,0,0,,Because now that we know those steps exist-- and smart people solve that problem for us-- you and I can kind of operate at this level of abstraction and just assume that compiling converts source code to machine code.
+Dialogue: 0,0:30:20.12,0:30:32.42,chinese,,0,0,0,,我们只需要知道这些步骤的存在，已经有聪明人为我们解决了这些问题，\N我们就可以把这个繁琐的过程抽象出来了，经过编译，源代码就转换为机器码。
 Dialogue: 0,0:30:32.42,0:30:36.35,english,,0,0,0,,Questions, though, on any of these intermediate steps?
-Dialogue: 0,0:30:32.42,0:30:36.35,chinese,,0,0,0,,对这些中间步骤有疑问吗？
+Dialogue: 0,0:30:32.42,0:30:36.35,chinese,,0,0,0,,对这些中间步骤还有疑问吗？
 Dialogue: 0,0:30:36.35,0:30:37.36,english,,0,0,0,,Yeah?
 Dialogue: 0,0:30:37.36,0:30:41.95,english,,0,0,0,,AUDIENCE: For linking, are different parts, like [INAUDIBLE]??
-Dialogue: 0,0:30:37.36,0:30:41.95,chinese,,0,0,0,,听众：对于链接，不同的部分，如[听不清]？
+Dialogue: 0,0:30:37.36,0:30:41.95,chinese,,0,0,0,,观众：对于链接，不同的部分，...
 Dialogue: 0,0:30:50.07,0:30:51.28,english,,0,0,0,,DAVID MALAN: A good question.
-Dialogue: 0,0:30:50.07,0:30:51.28,chinese,,0,0,0,,大卫-马兰：问得好。
+Dialogue: 0,0:30:50.07,0:30:51.28,chinese,,0,0,0,,好问题。
 Dialogue: 0,0:30:51.28,0:30:53.23,english,,0,0,0,,So where are all of these zeros and one stored?
-Dialogue: 0,0:30:51.28,0:30:53.23,chinese,,0,0,0,,那么，这些 "0 "和 "1 "都储存在哪里呢？
+Dialogue: 0,0:30:51.28,0:30:53.23,chinese,,0,0,0,,那么，这些 0 和 1 都储存在哪里呢？
 Dialogue: 0,0:30:53.23,0:30:58.33,english,,0,0,0,,Because you and I, we've been using a browser, right? code.cs50.io, of course, is this web-based user interface.
-Dialogue: 0,0:30:53.23,0:30:58.33,chinese,,0,0,0,,当然，code.cs50.io 是基于网络的用户界面。
+Dialogue: 0,0:30:53.23,0:30:58.33,chinese,,0,0,0,,我们一直在使用浏览器对吧？当然，code.cs50.io 是基于 Web 的用户界面。
 Dialogue: 0,0:30:58.33,0:31:09.00,english,,0,0,0,,But again, recall from last week, even though you're using a web browser to access VS Code, that web-based version of VS code is connected to an actual server somewhere in the cloud.
-Dialogue: 0,0:30:58.33,0:31:09.00,chinese,,0,0,0,,但是，请再次回顾上周的内容，即使你使用网络浏览器访问 VS 代码，该网络版的 VS 代码也是连接到云中某处的实际服务器上的。
+Dialogue: 0,0:30:58.33,0:31:09.00,chinese,,0,0,0,,但是请回想一下上周，使用 Web 浏览器访问 VS Code，其实也连接到云中的某个具体的服务器上。
 Dialogue: 0,0:31:09.00,0:31:15.36,english,,0,0,0,,And on that server, you have your own account and your own files, and really, your own hard drive, virtually in the cloud.
-Dialogue: 0,0:31:09.00,0:31:15.36,chinese,,0,0,0,,在该服务器上，你有自己的账户和文件，实际上，你有自己的硬盘，实际上是在云中。
+Dialogue: 0,0:31:09.00,0:31:15.36,chinese,,0,0,0,,在那个服务器上，你有自己的帐户和自己的文件，实际上存储在你的云硬盘上。
 Dialogue: 0,0:31:15.36,0:31:19.83,english,,0,0,0,,Think of it a little like Dropbox or Box or Google Drive or OneDrive or something like that.
-Dialogue: 0,0:31:15.36,0:31:19.83,chinese,,0,0,0,,把它想象成 Dropbox 或 Box 或 Google Drive 或 OneDrive 或类似的东西。
+Dialogue: 0,0:31:15.36,0:31:19.83,chinese,,0,0,0,,可以把它想象成类似于 Dropbox、Google Drive、OneDrive，百度云盘之类的东西。
 Dialogue: 0,0:31:19.83,0:31:23.31,english,,0,0,0,,So you have a hard drive somewhere out there that we've provisioned for you.
-Dialogue: 0,0:31:19.83,0:31:23.31,chinese,,0,0,0,,所以，你有一个我们为你配置好的硬盘。
-Dialogue: 0,0:31:23.31,0:31:32.70,english,,0,0,0,,And it's on that hard drive that you have your code that you just wrote, or I just wrote, cs50.c, stdio.c, and all of the other code
-Dialogue: 0,0:31:23.31,0:31:32.70,chinese,,0,0,0,,在那个硬盘上，有你刚写的代码，或者我刚写的代码，cs50.c、stdio.c 以及所有其他代码。
-Dialogue: 0,0:31:32.70,0:31:36.96,english,,0,0,0,,that implements the math functions and everything else that C supports.
-Dialogue: 0,0:31:32.70,0:31:36.96,chinese,,0,0,0,,来实现数学函数和 C 支持的其他功能。
+Dialogue: 0,0:31:19.83,0:31:23.31,chinese,,0,0,0,,所以，在那里有一个分配给你的硬盘。
+Dialogue: 0,0:31:23.31,0:31:36.96,english,,0,0,0,,And it's on that hard drive that you have your code that you just wrote, or I just wrote, cs50.c, stdio.c, and all of the other code that implements the math functions and everything else that C supports.
+Dialogue: 0,0:31:23.31,0:31:36.96,chinese,,0,0,0,,在那个硬盘上，有我们刚写的代码，cs50.c、stdio.c 以及实现了 C 语言所有功能的别的代码。
 Dialogue: 0,0:31:36.96,0:31:37.55,english,,0,0,0,,Good question.
-Dialogue: 0,0:31:36.96,0:31:37.55,chinese,,0,0,0,,问得好。
+Dialogue: 0,0:31:36.96,0:31:37.55,chinese,,0,0,0,,是个好问题。
 Dialogue: 0,0:31:37.55,0:31:38.96,english,,0,0,0,,Yeah?
 Dialogue: 0,0:31:38.96,0:31:51.93,english,,0,0,0,,AUDIENCE: So, say in the CS50 library, the line [INAUDIBLE] do we do the same exact thing [INAUDIBLE] copy paste them all the way over?
-Dialogue: 0,0:31:38.96,0:31:51.93,chinese,,0,0,0,,听众：那么，比方说在 CS50 库中，[INAUDIBLE]这一行我们也是这样[INAUDIBLE]复制粘贴过来的吗？
 Dialogue: 0,0:31:51.93,0:31:53.06,english,,0,0,0,,DAVID MALAN: Good question.
-Dialogue: 0,0:31:51.93,0:31:53.06,chinese,,0,0,0,,大卫-马兰：问得好。
+Dialogue: 0,0:31:51.93,0:31:53.06,chinese,,0,0,0,,问得好。
 Dialogue: 0,0:31:53.06,0:31:57.11,english,,0,0,0,,That hash includes cs50.h line at the top of my code.
-Dialogue: 0,0:31:53.06,0:31:57.11,chinese,,0,0,0,,哈希值包括我代码顶端的 cs50.h 行。
+Dialogue: 0,0:31:53.06,0:31:57.11,chinese,,0,0,0,,那个代码开头的 #include cs50.h 行。
 Dialogue: 0,0:31:57.11,0:32:01.31,english,,0,0,0,,If I just replace that with the contents of cs50.c, would that work?
-Dialogue: 0,0:31:57.11,0:32:01.31,chinese,,0,0,0,,如果我将其替换为 cs50.c 的内容，这样行得通吗？
+Dialogue: 0,0:31:57.11,0:32:01.31,chinese,,0,0,0,,如果我用 cs50.c 的内容替换它，能行吗？
 Dialogue: 0,0:32:01.31,0:32:03.59,english,,0,0,0,,Short answer, yes, that would work.
-Dialogue: 0,0:32:01.31,0:32:03.59,chinese,,0,0,0,,简而言之，是的，这样可行。
+Dialogue: 0,0:32:01.31,0:32:03.59,chinese,,0,0,0,,简短的回答是，是的，这样可以。
 Dialogue: 0,0:32:03.59,0:32:05.40,english,,0,0,0,,You could copy all of the code there.
-Dialogue: 0,0:32:03.59,0:32:05.40,chinese,,0,0,0,,您可以将所有代码复制到这里。
+Dialogue: 0,0:32:03.59,0:32:05.40,chinese,,0,0,0,,你可以把所有代码都复制到这里。
 Dialogue: 0,0:32:05.40,0:32:08.57,english,,0,0,0,,However, there's some order of operations that might come into play.
-Dialogue: 0,0:32:05.40,0:32:08.57,chinese,,0,0,0,,不过，有些操作顺序可能会发挥作用。
+Dialogue: 0,0:32:05.40,0:32:08.57,chinese,,0,0,0,,但是，可能会涉及一些操作顺序。
 Dialogue: 0,0:32:08.57,0:32:10.91,english,,0,0,0,,And so it's probably not quite as simple as copy, paste.
-Dialogue: 0,0:32:08.57,0:32:10.91,chinese,,0,0,0,,因此，这可能不是复制、粘贴那么简单。
+Dialogue: 0,0:32:08.57,0:32:10.91,chinese,,0,0,0,,所以说，这可能不是复制、粘贴那么简单。
 Dialogue: 0,0:32:10.91,0:32:13.19,english,,0,0,0,,But conceptually, yes, that's what's happening.
 Dialogue: 0,0:32:10.91,0:32:13.19,chinese,,0,0,0,,但从概念上讲，是的，就是这么回事。
 Dialogue: 0,0:32:13.19,0:32:25.67,english,,0,0,0,,Now with that said, in cs50.h, are only the prototypes of the functions, the hints as to how the functions look, what their return type is, what their name is, and what their arguments are.
-Dialogue: 0,0:32:13.19,0:32:25.67,chinese,,0,0,0,,因此，在 cs50.h 中，只有函数的原型、函数的外观提示、返回类型、名称和参数。
+Dialogue: 0,0:32:13.19,0:32:25.67,chinese,,0,0,0,,在 cs50.h 里，只有函数的原型，也就是函数长什么样子，包括返回类型、函数名和参数。
 Dialogue: 0,0:32:25.67,0:32:29.86,english,,0,0,0,,It's in the dot c file that actual code tends to be written.
-Dialogue: 0,0:32:25.67,0:32:29.86,chinese,,0,0,0,,实际代码往往是在点 c 文件中编写的。
+Dialogue: 0,0:32:25.67,0:32:29.86,chinese,,0,0,0,,实际的代码通常是在 .c 文件里编写的。
 Dialogue: 0,0:32:29.86,0:32:33.92,english,,0,0,0,,And this is a little confusing now because you and I have only written code in dot c files.
-Dialogue: 0,0:32:29.86,0:32:33.92,chinese,,0,0,0,,现在这有点令人困惑，因为你我都只在点 c 文件中编写过代码。
+Dialogue: 0,0:32:29.86,0:32:33.92,chinese,,0,0,0,,现在这可能有点不好理解，因为我们目前只在 .c 文件里编写过代码。
 Dialogue: 0,0:32:33.92,0:32:40.46,english,,0,0,0,,But in the next few weeks, you'll actually start writing some of your own dot h files as well, just like CS50, just like standard I/O.
-Dialogue: 0,0:32:33.92,0:32:40.46,chinese,,0,0,0,,但在接下来的几周里，你将开始编写一些自己的 dot h 文件，就像 CS50 一样，就像标准 I/O 一样。
+Dialogue: 0,0:32:33.92,0:32:40.46,chinese,,0,0,0,,但在接下来的几周里，你会开始编写一些自己的 .h 文件，就像 CS50 和标准 I/O 一样。
 Dialogue: 0,0:32:40.46,0:32:46.02,english,,0,0,0,,But in essence, that line of code just makes it easier to use and reuse code that's already been written.
-Dialogue: 0,0:32:40.46,0:32:46.02,chinese,,0,0,0,,但实质上，这行代码只是让我们更容易使用和重复使用已经编写好的代码。
+Dialogue: 0,0:32:40.46,0:32:46.02,chinese,,0,0,0,,但本质上，那行代码只是方便我们重用已经编写的代码，不管是自己写的还是别人的。
 Dialogue: 0,0:32:46.02,0:32:47.75,english,,0,0,0,,And that's the whole point of a library.
-Dialogue: 0,0:32:46.02,0:32:47.75,chinese,,0,0,0,,而这正是图书馆的意义所在。
+Dialogue: 0,0:32:46.02,0:32:47.75,chinese,,0,0,0,,这就是库的全部意义。
 Dialogue: 0,0:32:47.75,0:32:50.32,english,,0,0,0,,AUDIENCE: Does linking them [INAUDIBLE]?
-Dialogue: 0,0:32:47.75,0:32:50.32,chinese,,0,0,0,,听众：把它们联系起来[听不清]吗？
 Dialogue: 0,0:32:50.32,0:32:51.91,english,,0,0,0,,DAVID MALAN: Say that a little louder.
 Dialogue: 0,0:32:50.32,0:32:51.91,chinese,,0,0,0,,大点声说。
 Dialogue: 0,0:32:51.91,0:32:54.47,english,,0,0,0,,AUDIENCE: Does linking happen when you use the compiler?
-Dialogue: 0,0:32:51.91,0:32:54.47,chinese,,0,0,0,,听众：使用编译器时是否会进行链接？
+Dialogue: 0,0:32:51.91,0:32:54.47,chinese,,0,0,0,,观众：链接是否发生在编译代码时？
 Dialogue: 0,0:32:54.47,0:32:55.18,english,,0,0,0,,DAVID MALAN: Yes.
 Dialogue: 0,0:32:54.47,0:32:55.18,chinese,,0,0,0,,戴维-马兰：是的。
 Dialogue: 0,0:32:55.18,0:32:56.98,english,,0,0,0,,Does linking happen when you compile your code?
 Dialogue: 0,0:32:55.18,0:32:56.98,chinese,,0,0,0,,编译代码时是否进行了链接？
 Dialogue: 0,0:32:56.98,0:32:57.48,english,,0,0,0,,Yes.
 Dialogue: 0,0:32:57.48,0:33:04.57,english,,0,0,0,,When you run make, as we have been doing the past week now, all four of these steps are happening.
-Dialogue: 0,0:32:57.48,0:33:04.57,chinese,,0,0,0,,当你运行 "制作 "时，就像我们过去一周所做的那样，所有这四个步骤都在进行。
+Dialogue: 0,0:32:57.48,0:33:04.57,chinese,,0,0,0,,当你运行 make，跟前面课程里一样，这四个步骤都会进行。
 Dialogue: 0,0:33:04.57,0:33:07.78,english,,0,0,0,,Preprocessing converts the hash include lines to something else.
-Dialogue: 0,0:33:04.57,0:33:07.78,chinese,,0,0,0,,预处理会将哈希包含行转换为其他内容。
+Dialogue: 0,0:33:04.57,0:33:07.78,chinese,,0,0,0,,预处理把 #include 行转换为其他内容。
 Dialogue: 0,0:33:07.78,0:33:14.29,english,,0,0,0,,Compiling technically converts it to assembly code, which the Mac, the PC, the server more closely understands.
-Dialogue: 0,0:33:07.78,0:33:14.29,chinese,,0,0,0,,从技术上讲，编译会将其转换为汇编代码，Mac、PC 和服务器更容易理解汇编代码。
+Dialogue: 0,0:33:07.78,0:33:14.29,chinese,,0,0,0,,从技术上讲，编译会把它转换为汇编代码，Mac、PC 和服务器更容易理解汇编代码。
 Dialogue: 0,0:33:14.29,0:33:20.08,english,,0,0,0,,Assembly converts that language to binary machine code that this computer actually understands.
-Dialogue: 0,0:33:14.29,0:33:20.08,chinese,,0,0,0,,汇编程序将这种语言转换成二进制机器码，让计算机真正理解。
+Dialogue: 0,0:33:14.29,0:33:20.08,chinese,,0,0,0,,汇编程序把汇编代码再转换成二进制机器码，让计算机真正理解。
 Dialogue: 0,0:33:20.08,0:33:22.54,english,,0,0,0,,And then linking combines everything together.
-Dialogue: 0,0:33:20.08,0:33:22.54,chinese,,0,0,0,,然后将所有内容连接在一起。
+Dialogue: 0,0:33:20.08,0:33:22.54,chinese,,0,0,0,,然后链接把所有内容组合在一起。
 Dialogue: 0,0:33:22.54,0:33:32.86,english,,0,0,0,,And in fact, if you think back a few minutes ago to when I did this -lcs50, the reason I had to add that, and the reason my code did not compile at first, was because I
-Dialogue: 0,0:33:22.54,0:33:32.86,chinese,,0,0,0,,事实上，如果你回想一下几分钟前我做这个 -lcs50 的时候，我之所以要添加这个，以及我的代码一开始无法编译的原因，是因为我
+Dialogue: 0,0:33:22.54,0:33:32.86,chinese,,0,0,0,,如果你回顾一下几分钟前，我执行了 -lcs50，我必须添加这个，\N以及为什么我的代码一开始无法编译通过，
 Dialogue: 0,0:33:32.86,0:33:38.65,english,,0,0,0,,forgot to tell clang to link in CS50's zeros and ones per that last step.
-Dialogue: 0,0:33:32.86,0:33:38.65,chinese,,0,0,0,,忘了告诉 clang 在最后一步连接 CS50 的 0 和 1。
+Dialogue: 0,0:33:32.86,0:33:38.65,chinese,,0,0,0,,是因为我忘了告诉 clang 要链接 CS50 的二进制库文件，这是编译里的最后一步。
 Dialogue: 0,0:33:38.65,0:33:44.48,english,,0,0,0,,I don't need to do -lstdio because it comes with C, so that would just be tedious for everyone in the world.
-Dialogue: 0,0:33:38.65,0:33:44.48,chinese,,0,0,0,,我不需要使用 -lstdio，因为它是 C 语言自带的，所以这对世界上的每个人来说都很乏味。
+Dialogue: 0,0:33:38.65,0:33:44.48,chinese,,0,0,0,,而我不需要使用 -lstdio，因为它是 C 的一部分，如果还需要单独链接对全世界的人都不便。
 Dialogue: 0,0:33:44.48,0:33:47.14,english,,0,0,0,,But CS50 does not come with C, so we link that in.
-Dialogue: 0,0:33:44.48,0:33:47.14,chinese,,0,0,0,,但是，CS50 不带 C，因此我们将其连接进来。
+Dialogue: 0,0:33:44.48,0:33:47.14,chinese,,0,0,0,,但是 CS50 不是 C 的一部分，所以我们要把它链接进来。
 Dialogue: 0,0:33:47.14,0:33:49.78,english,,0,0,0,,And to be clear, too, we won't always use CS50's library.
-Dialogue: 0,0:33:47.14,0:33:49.78,chinese,,0,0,0,,我们也要明确一点，我们不会一直使用 CS50 的资料库。
+Dialogue: 0,0:33:47.14,0:33:49.78,chinese,,0,0,0,,我们也要明确一点，我们不会一直使用 CS50 的库。
 Dialogue: 0,0:33:49.78,0:33:53.07,english,,0,0,0,,That'll be yet another pair of training wheels we take off in the coming weeks.
-Dialogue: 0,0:33:49.78,0:33:53.07,chinese,,0,0,0,,这将是我们在未来几周内摘下的又一副训练轮。
+Dialogue: 0,0:33:49.78,0:33:53.07,chinese,,0,0,0,,在未来几周，我们会逐渐脱离它的辅助。
 Dialogue: 0,0:33:53.07,0:33:55.00,english,,0,0,0,,But for now, it makes a few things simpler.
-Dialogue: 0,0:33:53.07,0:33:55.00,chinese,,0,0,0,,但现在，它让一些事情变得更简单了。
+Dialogue: 0,0:33:53.07,0:33:55.00,chinese,,0,0,0,,但就目前而言，它可以让很多事情更加简单。
 Dialogue: 0,0:33:55.00,0:33:57.28,english,,0,0,0,,Yeah?
 Dialogue: 0,0:33:57.28,0:33:59.75,english,,0,0,0,,AUDIENCE: What is the [INAUDIBLE]?
-Dialogue: 0,0:33:57.28,0:33:59.75,chinese,,0,0,0,,听众：什么是[INNAUDIBLE]？
 Dialogue: 0,0:34:08.87,0:34:10.17,english,,0,0,0,,DAVID MALAN: Short answer, yes.
-Dialogue: 0,0:34:08.87,0:34:10.17,chinese,,0,0,0,,大卫-马兰：简而言之，是的。
+Dialogue: 0,0:34:08.87,0:34:10.17,chinese,,0,0,0,,简单地说，确实。
 Dialogue: 0,0:34:10.17,0:34:12.87,english,,0,0,0,,So what do the zeros and ones, the machine code, translate to?
-Dialogue: 0,0:34:10.17,0:34:12.87,chinese,,0,0,0,,那么，机器码中的 0 和 1 又是什么意思呢？
+Dialogue: 0,0:34:10.17,0:34:12.87,chinese,,0,0,0,,那么这些 0 1 机器码，又翻译成了什么？
 Dialogue: 0,0:34:12.87,0:34:17.34,english,,0,0,0,,Yes, there is a one-to-one relationship between the machine code and the assembly code.
-Dialogue: 0,0:34:12.87,0:34:17.34,chinese,,0,0,0,,是的，机器代码和汇编代码之间是一对一的关系。
+Dialogue: 0,0:34:12.87,0:34:17.34,chinese,,0,0,0,,是的，机器码和汇编代码之间存在一对一的关系。
 Dialogue: 0,0:34:17.34,0:34:21.51,english,,0,0,0,,Assembly code, it's not really English, but at least it's symbols I recognize.
-Dialogue: 0,0:34:17.34,0:34:21.51,chinese,,0,0,0,,汇编代码，虽然不是真正的英语，但至少是我认识的符号。
+Dialogue: 0,0:34:17.34,0:34:21.51,chinese,,0,0,0,,汇编代码并不是真正的英语，但至少是我能够识别的符号。
 Dialogue: 0,0:34:21.51,0:34:22.80,english,,0,0,0,,It's not zeros and ones.
 Dialogue: 0,0:34:21.51,0:34:22.80,chinese,,0,0,0,,不是 0 和 1。
 Dialogue: 0,0:34:22.80,0:34:24.81,english,,0,0,0,,Machine code, of course, is just zeros and ones.
-Dialogue: 0,0:34:22.80,0:34:24.81,chinese,,0,0,0,,当然，机器代码只是 0 和 1。
+Dialogue: 0,0:34:22.80,0:34:24.81,chinese,,0,0,0,,机器码当然就是 0 和 1。
 Dialogue: 0,0:34:24.81,0:34:30.63,english,,0,0,0,,So back in the day, before C existed, people were programming only in assembly code.
-Dialogue: 0,0:34:24.81,0:34:30.63,chinese,,0,0,0,,因此，在 C 语言出现之前，人们只能用汇编代码编程。
+Dialogue: 0,0:34:24.81,0:34:30.63,chinese,,0,0,0,,回到很久以前，在 C 出现之前，人们只能用汇编代码进行编程。
 Dialogue: 0,0:34:30.63,0:34:34.46,english,,0,0,0,,Before assembly code existed, people were coding in zeros and ones.
-Dialogue: 0,0:34:30.63,0:34:34.46,chinese,,0,0,0,,在汇编代码出现之前，人们用 0 和 1 进行编码。
+Dialogue: 0,0:34:30.63,0:34:34.46,chinese,,0,0,0,,在汇编代码出现之前，人们只能用 0 和 1 进行编码。
 Dialogue: 0,0:34:34.46,0:34:40.11,english,,0,0,0,,And you can imagine just how painful that was, and so each of these languages makes life, for us, sort of easier and easier.
-Dialogue: 0,0:34:34.46,0:34:40.11,chinese,,0,0,0,,你可以想象那是多么痛苦，所以每一种语言都让我们的生活变得越来越轻松。
+Dialogue: 0,0:34:34.46,0:34:40.11,chinese,,0,0,0,,你可以想象一下那得多痛苦，所以每种编程语言都使我们的生活变得更加容易。
 Dialogue: 0,0:34:40.11,0:34:48.09,english,,0,0,0,,In a few weeks, we'll transition to Python, which will, in turn, make C even simpler-- or coding, in general, simpler to do too.
-Dialogue: 0,0:34:40.11,0:34:48.09,chinese,,0,0,0,,几周后，我们将过渡到 Python，而 Python 又会让 C 语言变得更加简单，或者说让一般的编码工作变得更加简单。
+Dialogue: 0,0:34:40.11,0:34:48.09,chinese,,0,0,0,,几周后，我们将过渡到 Python，而 Python 比 C 更加简单，或者说让一般的编码工作变得更加简单。
 Dialogue: 0,0:34:48.09,0:34:55.06,english,,0,0,0,,All right, so with that said, what now can we-- what could go wrong with this?
-Dialogue: 0,0:34:48.09,0:34:55.06,chinese,,0,0,0,,好了，说了这么多，我们现在能 -- 这可能会出什么问题？
+Dialogue: 0,0:34:48.09,0:34:55.06,chinese,,0,0,0,,好了，说了这么多，这可能会出什么问题？
 Dialogue: 0,0:34:55.06,0:34:59.23,english,,0,0,0,,Well, it turns out that besides compiling, technically speaking, there's decompiling.
-Dialogue: 0,0:34:55.06,0:34:59.23,chinese,,0,0,0,,原来，除了编译，从技术上讲，还有反编译。
+Dialogue: 0,0:34:55.06,0:34:59.23,chinese,,0,0,0,,其实，除了编译，从技术上讲，还有反编译（decompiling）。
 Dialogue: 0,0:34:59.23,0:35:01.15,english,,0,0,0,,And we've not done this, and we won't do this.
 Dialogue: 0,0:34:59.23,0:35:01.15,chinese,,0,0,0,,我们没有这样做，也不会这样做。
 Dialogue: 0,0:35:01.15,0:35:04.08,english,,0,0,0,,But it's worth considering for just a moment.
-Dialogue: 0,0:35:01.15,0:35:04.08,chinese,,0,0,0,,但这值得我们思考片刻。
+Dialogue: 0,0:35:01.15,0:35:04.08,chinese,,0,0,0,,但这值得我们讨论和思考一下下。
 Dialogue: 0,0:35:04.08,0:35:14.58,english,,0,0,0,,If you were to not compile your code, but decompile it-- as the word suggests, this just means reversing the process, converting it, ideally, from machine code-- zeros and ones--
-Dialogue: 0,0:35:04.08,0:35:14.58,chinese,,0,0,0,,如果不对代码进行编译，而是进行反编译--顾名思义，反编译就是颠倒过程，最好是从机器码--0 和 1--进行转换。
+Dialogue: 0,0:35:04.08,0:35:14.58,chinese,,0,0,0,,如果你不是编译代码，而是反编译它—— \N顾名思义，也就是反转编译的过程，理想情况下，把程序从 0 1 机器码转换回 C。
 Dialogue: 0,0:35:14.58,0:35:22.08,english,,0,0,0,,maybe back to C. Now this would be cool, perhaps, if all you have is a program, you can convert it and see the actual source code.
-Dialogue: 0,0:35:14.58,0:35:22.08,chinese,,0,0,0,,如果你有的只是一个程序，你可以转换它并查看实际的源代码。
+Dialogue: 0,0:35:14.58,0:35:22.08,chinese,,0,0,0,,听起来有点酷，你拿着一个程序，就可以转换它并查看实际的源代码。
 Dialogue: 0,0:35:22.08,0:35:28.65,english,,0,0,0,,What might a downside be, if anyone on the internet is able to decompile code on their machine?
-Dialogue: 0,0:35:22.08,0:35:28.65,chinese,,0,0,0,,如果互联网上的任何人都能在自己的机器上反编译代码，那会有什么坏处呢？
+Dialogue: 0,0:35:22.08,0:35:28.65,chinese,,0,0,0,,如果任何人都能在自己的计算机上反编译代码，会发生什么不好的事？
 Dialogue: 0,0:35:28.65,0:35:29.16,english,,0,0,0,,Yeah?
 Dialogue: 0,0:35:29.16,0:35:30.27,english,,0,0,0,,AUDIENCE: [INAUDIBLE]
 Dialogue: 0,0:35:30.27,0:35:35.43,english,,0,0,0,,DAVID MALAN: OK, so it's easier to find bugs in the code that-- oh, to exploit.
-Dialogue: 0,0:35:30.27,0:35:35.43,chinese,,0,0,0,,好吧，那就更容易在代码中找到漏洞，哦，利用漏洞。
+Dialogue: 0,0:35:30.27,0:35:35.43,chinese,,0,0,0,,对，那就更容易在代码中找到漏洞，哦，利用漏洞。
 Dialogue: 0,0:35:35.43,0:35:45.08,english,,0,0,0,,So it might be easier to hack into the software by finding mistakes you and I made because, literally, they're staring at you in code, whereas the zeros and ones make it way less obvious.
-Dialogue: 0,0:35:35.43,0:35:45.08,chinese,,0,0,0,,因此，通过查找你我所犯的错误来黑进软件可能会更容易，因为从字面上看，它们是用代码盯着你看的，而 0 和 1 就不那么明显了。
+Dialogue: 0,0:35:35.43,0:35:45.08,chinese,,0,0,0,,所以，通过查找我们犯的错误来黑进软件可能会更容易，\N因为他们盯着字面上的代码在分析，而 0 和 1 就不那么明显了。
 Dialogue: 0,0:35:45.08,0:35:48.14,english,,0,0,0,,Other downsides of what I called decompiling?
-Dialogue: 0,0:35:45.08,0:35:48.14,chinese,,0,0,0,,我所说的反编译的其他缺点？
+Dialogue: 0,0:35:45.08,0:35:48.14,chinese,,0,0,0,,还有别的坏处吗？
 Dialogue: 0,0:35:48.14,0:35:49.97,english,,0,0,0,,Yeah?
 Dialogue: 0,0:35:49.97,0:35:53.69,english,,0,0,0,,AUDIENCE: If stuff is copyrighted or you don't even know how to get it--
-Dialogue: 0,0:35:49.97,0:35:53.69,chinese,,0,0,0,,如果东西是有版权的，或者你甚至不知道如何得到它 --
+Dialogue: 0,0:35:49.97,0:35:53.69,chinese,,0,0,0,,观众：如果一个东西是有版权的，或者你甚至不知道怎么获取它...
 Dialogue: 0,0:35:53.69,0:35:54.44,english,,0,0,0,,DAVID MALAN: Yeah.
-Dialogue: 0,0:35:53.69,0:35:54.44,chinese,,0,0,0,,是的
+Dialogue: 0,0:35:53.69,0:35:54.44,chinese,,0,0,0,,是的。
 Dialogue: 0,0:35:54.44,0:35:55.94,english,,0,0,0,,AUDIENCE: [INAUDIBLE]
-Dialogue: 0,0:35:55.94,0:36:03.66,english,,0,0,0,,DAVID MALAN: Yeah, if your code, your work, is your intellectual property, copyrighted or otherwise, that's kind of obnoxious that someone can just run a command, and boom,
-Dialogue: 0,0:35:55.94,0:36:03.66,chinese,,0,0,0,,戴维-马兰：是的，如果你的代码、你的作品是你的知识产权，不管是否有版权，有人可以随便运行一个命令，然后 "嘭 "的一声，这就有点令人讨厌了、
-Dialogue: 0,0:36:03.66,0:36:05.57,english,,0,0,0,,they can see the original code that you wrote.
-Dialogue: 0,0:36:03.66,0:36:05.57,chinese,,0,0,0,,他们可以看到你编写的原始代码。
+Dialogue: 0,0:35:55.94,0:36:05.57,english,,0,0,0,,DAVID MALAN: Yeah, if your code, your work, is your intellectual property, copyrighted or otherwise, that's kind of obnoxious that someone can just run a command, and boom, they can see the original code that you wrote.
+Dialogue: 0,0:35:55.94,0:36:05.57,chinese,,0,0,0,,是的，如果你的代码，你的作品，是你的知识产权，无论是否受版权保护，都很讨厌，\N因为有人可以运行一个命令，然后一下子他们就能看到你编写的原始代码。
 Dialogue: 0,0:36:05.57,0:36:08.49,english,,0,0,0,,Now, it turns out it's not quite as simple as that.
-Dialogue: 0,0:36:05.57,0:36:08.49,chinese,,0,0,0,,现在看来，事情并非如此简单。
+Dialogue: 0,0:36:05.57,0:36:08.49,chinese,,0,0,0,,不过结果证明，事实并没那么简单。
 Dialogue: 0,0:36:08.49,0:36:19.40,english,,0,0,0,,And so even though, yes, you could take a program like Hello, or even Microsoft Word, and convert it from zeros and ones back to some form of source code-- be it in C or Java
-Dialogue: 0,0:36:08.49,0:36:19.40,chinese,,0,0,0,,因此，尽管你可以使用 Hello 或 Microsoft Word 这样的程序，并将其从 0 和 1 转换回某种形式的源代码--无论是 C 语言还是 Java 语言
+Dialogue: 0,0:36:08.49,0:36:19.40,chinese,,0,0,0,,尽管是的，你可以把 hello 这样的程序，\N甚至是 Microsoft Word，从二进制转换回某种形式的源代码。
 Dialogue: 0,0:36:19.40,0:36:25.80,english,,0,0,0,,or Python or something else, whatever it was originally written in-- odds are it's going to be an utter mess to look at.
-Dialogue: 0,0:36:19.40,0:36:25.80,chinese,,0,0,0,,或 Python 或其他语言，不管它最初是用什么语言编写的--都有可能是一团糟。
+Dialogue: 0,0:36:19.40,0:36:25.80,chinese,,0,0,0,,无论是 C、Java、Python 还是其他什么语言编写的都可以，\N但几乎可以肯定，结果会是一团糟，相当难看懂。
 Dialogue: 0,0:36:25.80,0:36:26.30,english,,0,0,0,,Why?
 Dialogue: 0,0:36:26.30,0:36:30.89,english,,0,0,0,,Because things variable names are not retained in the zeros and ones, typically.
-Dialogue: 0,0:36:26.30,0:36:30.89,chinese,,0,0,0,,因为变量名通常不会保留在 0 和 1 中。
+Dialogue: 0,0:36:26.30,0:36:30.89,chinese,,0,0,0,,因为通常情况下，变量名在二进制中不会保留。
 Dialogue: 0,0:36:30.89,0:36:33.98,english,,0,0,0,,Function names might not be retained in the zeros and ones.
-Dialogue: 0,0:36:30.89,0:36:33.98,chinese,,0,0,0,,函数名可能不会保留在 0 和 1 中。
+Dialogue: 0,0:36:30.89,0:36:33.98,chinese,,0,0,0,,函数名也不会。
 Dialogue: 0,0:36:33.98,0:36:42.89,english,,0,0,0,,The code is, the logic is, but the computer doesn't care what pretty variables you chose and how nicely named your functions were, it just needs to know them as zeros and ones.
-Dialogue: 0,0:36:33.98,0:36:42.89,chinese,,0,0,0,,代码是代码，逻辑是逻辑，但计算机并不关心你选择了什么漂亮的变量，也不关心你的函数名称有多好听，它只需要知道它们是 0 和 1。
+Dialogue: 0,0:36:33.98,0:36:42.89,chinese,,0,0,0,,代码是代码，逻辑是逻辑，计算机并不关心你取了什么漂亮的变量名，\N也不关心你的函数名称有多好听，它只需要知道背后的逻辑就行了。
 Dialogue: 0,0:36:42.89,0:36:46.37,english,,0,0,0,,Moreover, if you think about last week, we introduced things like loops in C.
-Dialogue: 0,0:36:42.89,0:36:46.37,chinese,,0,0,0,,此外，回想一下上周，我们介绍了 C 语言中的循环等内容。
+Dialogue: 0,0:36:42.89,0:36:46.37,chinese,,0,0,0,,此外，回想一下上周，我们介绍了 C 语言里面的循环等内容。
 Dialogue: 0,0:36:46.37,0:36:49.74,english,,0,0,0,,And besides for loops, there's what other kind of loop, for instance?
 Dialogue: 0,0:36:46.37,0:36:49.74,chinese,,0,0,0,,除了 for 循环，还有哪种循环？
 Dialogue: 0,0:36:49.74,0:36:50.62,english,,0,0,0,,AUDIENCE: [INAUDIBLE]
 Dialogue: 0,0:36:50.62,0:36:59.91,english,,0,0,0,,DAVID MALAN: So, a while loop-- and even though they look different and you have to write different code, they achieve exactly the same functionality, which is to say, when you compile a for loop
-Dialogue: 0,0:36:50.62,0:36:59.91,chinese,,0,0,0,,DAVID MALAN：所以，while 循环--尽管它们看起来不同，你必须写不同的代码，但它们实现的功能完全相同，也就是说，当你编译 for 循环时
+Dialogue: 0,0:36:50.62,0:36:59.91,chinese,,0,0,0,,答案是 while 循环，尽管它们看起来不同，代码实现不一致，但它们实现的功能完全相同，
 Dialogue: 0,0:36:59.91,0:37:07.42,english,,0,0,0,,or you compile a while loop, if they logically do the same thing, they might end up looking identical as zeros and ones.
-Dialogue: 0,0:36:59.91,0:37:07.42,chinese,,0,0,0,,或编译一个 while 循环，如果它们在逻辑上做的是同一件事，那么它们最终可能看起来就像 0 和 1 一样。
+Dialogue: 0,0:36:59.91,0:37:07.42,chinese,,0,0,0,,所以当编译一个 for 循环或者 while 循环，\N如果它们在逻辑上是一样的，那么它们最终的二进制也可能一样。
 Dialogue: 0,0:37:07.42,0:37:11.82,english,,0,0,0,,And so, therefore, it's not necessarily predictable that you'll get back the original code, why?
-Dialogue: 0,0:37:07.42,0:37:11.82,chinese,,0,0,0,,因此，并不一定能预测你能拿回原始代码，为什么？
+Dialogue: 0,0:37:07.42,0:37:11.82,chinese,,0,0,0,,因此，通过反编译你不太可能拿回原始代码，为什么？
 Dialogue: 0,0:37:11.82,0:37:19.35,english,,0,0,0,,Because the zeros and ones might not know, so to speak, whether it was a for loop or a while loop, so maybe compiling will show you one or the other.
-Dialogue: 0,0:37:11.82,0:37:19.35,chinese,,0,0,0,,因为 0 和 1 可能不知道是 for 循环还是 while 循环，所以编译时可能会显示其中一个。
+Dialogue: 0,0:37:11.82,0:37:19.35,chinese,,0,0,0,,因为通过二进制无法判断是 for 循环还是 while 循环，所以反编译时可能会随便显示一个。
 Dialogue: 0,0:37:19.35,0:37:24.57,english,,0,0,0,,And honestly, decompiling, while possible-- and it's one way of reverse engineering someone's product.
-Dialogue: 0,0:37:19.35,0:37:24.57,chinese,,0,0,0,,老实说，反编译虽然可行，但也是逆向工程的一种方法。
-Dialogue: 0,0:37:24.57,0:37:34.02,english,,0,0,0,,Odds are, if you're good enough to start reading code that's been decompiled and reading through the messiness of it, odds are you have the talent probably to just write that same program from scratch
-Dialogue: 0,0:37:24.57,0:37:34.02,chinese,,0,0,0,,如果你有足够的能力开始阅读已经反编译过的代码，并能读懂其中的杂乱无章，那么你就有可能具备从头开始编写相同程序的才能。
-Dialogue: 0,0:37:34.02,0:37:34.65,english,,0,0,0,,yourself.
+Dialogue: 0,0:37:19.35,0:37:24.57,chinese,,0,0,0,,老实说，反编译虽然可行—— 它是逆向工程中的一种手段。
+Dialogue: 0,0:37:24.57,0:37:34.65,english,,0,0,0,,Odds are, if you're good enough to start reading code that's been decompiled and reading through the messiness of it, odds are you have the talent probably to just write that same program from scratch yourself.
+Dialogue: 0,0:37:24.57,0:37:34.02,chinese,,0,0,0,,但如果你足够有经验，能够阅读反编译后的混乱代码，\N那么你自己从头开始编写相同的程序基本也没问题。
 Dialogue: 0,0:37:34.65,0:37:40.41,english,,0,0,0,,Now, that's an overstatement, perhaps, but it's not quite as easy or threatening as you might first think.
-Dialogue: 0,0:37:34.65,0:37:40.41,chinese,,0,0,0,,现在看来，这也许有点言过其实，但它并不像你最初想象的那样容易或具有威胁性。
+Dialogue: 0,0:37:34.65,0:37:40.41,chinese,,0,0,0,,这可能有点夸张，但反编译不像你可能首先想的那么容易或威胁严重。
 Dialogue: 0,0:37:40.41,0:37:50.04,english,,0,0,0,,So in general, once code is compiled, it's pretty challenging, time consuming, costly to reverse engineer it, much like it would be in the real world, right?
-Dialogue: 0,0:37:40.41,0:37:50.04,chinese,,0,0,0,,因此，一般来说，代码一旦编译完成，要对其进行逆向工程就相当具有挑战性，既费时又费钱，就像在现实世界中一样，对吗？
+Dialogue: 0,0:37:40.41,0:37:50.04,chinese,,0,0,0,,因此，通常情况下，一旦代码被编译，要对其进行逆向工程，\N是相当具有挑战性的、耗时的、昂贵的，就像在现实世界中一样，能理解吗？
 Dialogue: 0,0:37:50.04,0:37:52.86,english,,0,0,0,,Like all of us have some kind of phone, probably, nowadays in our pocket.
-Dialogue: 0,0:37:50.04,0:37:52.86,chinese,,0,0,0,,如今，我们每个人的口袋里都可能装着某种手机。
+Dialogue: 0,0:37:50.04,0:37:52.86,chinese,,0,0,0,,就像我们每个人的兜里都揣着某个牌子的手机。
 Dialogue: 0,0:37:52.86,0:37:57.06,english,,0,0,0,,There's nothing stopping you from opening it up somehow, poking around, recreating what's there.
-Dialogue: 0,0:37:52.86,0:37:57.06,chinese,,0,0,0,,没有什么能阻止你以某种方式打开它，四处探寻，重现那里的一切。
+Dialogue: 0,0:37:52.86,0:37:57.06,chinese,,0,0,0,,没有什么能阻止你拆开它，查看和更换其中的硬件。
 Dialogue: 0,0:37:57.06,0:37:59.13,english,,0,0,0,,That's a huge amount of effort, most likely.
 Dialogue: 0,0:37:57.06,0:37:59.13,chinese,,0,0,0,,这很可能是一个巨大的工作量。
 Dialogue: 0,0:37:59.13,0:38:03.31,english,,0,0,0,,And at that point, maybe you should just invent the phone, instead of trying to reverse engineer it.
-Dialogue: 0,0:37:59.13,0:38:03.31,chinese,,0,0,0,,到那时，也许你应该发明手机，而不是试图逆向工程它。
+Dialogue: 0,0:37:59.13,0:38:03.31,chinese,,0,0,0,,要是完成了，也许你应该发明一款手机，而不是试图对它进行逆向工程。
 Dialogue: 0,0:38:03.31,0:38:06.33,english,,0,0,0,,So same kind of idea in the physical world.
-Dialogue: 0,0:38:03.31,0:38:06.33,chinese,,0,0,0,,因此，在物理世界中也有同样的想法。
+Dialogue: 0,0:38:03.31,0:38:06.33,chinese,,0,0,0,,所以说，跟现实生活里是一个道理。
 Dialogue: 0,0:38:06.33,0:38:13.05,english,,0,0,0,,Any questions, then, on compiling, or even decompiling in these forms?
-Dialogue: 0,0:38:06.33,0:38:13.05,chinese,,0,0,0,,那么，对于这些形式的编译甚至反编译有什么问题吗？
+Dialogue: 0,0:38:06.33,0:38:13.05,chinese,,0,0,0,,对于这些形式的编译或反编译有什么问题吗？
 Dialogue: 0,0:38:13.05,0:38:17.16,english,,0,0,0,,All right, so odds are, at this point, not only I, but you have made mistakes.
-Dialogue: 0,0:38:13.05,0:38:17.16,chinese,,0,0,0,,好吧，现在看来，不仅是我，你们也有可能犯错。
+Dialogue: 0,0:38:13.05,0:38:17.16,chinese,,0,0,0,,好吧，现在看来，我们都可能在代码里犯错。
 Dialogue: 0,0:38:17.16,0:38:26.49,english,,0,0,0,,And you've written buggy code-- a bug in a code is just a mistake, a logical error or otherwise, where the code just does not behave correctly as you intend.
-Dialogue: 0,0:38:17.16,0:38:26.49,chinese,,0,0,0,,你写的代码有漏洞--代码中的漏洞就是一个错误，不管是逻辑错误还是其他错误，代码就是不能按照你的意图正确运行。
+Dialogue: 0,0:38:17.16,0:38:26.49,chinese,,0,0,0,,你写的代码有漏洞—— 代码中的漏洞就是一个错误，\N不管是逻辑错误还是别的错误，代码反正就是不能按照你的意图正确运行。
 Dialogue: 0,0:38:26.49,0:38:35.32,english,,0,0,0,,And up until now, odds are, your debugging techniques have been to maybe look back at what I did in class, maybe ask a question online or in-person.
-Dialogue: 0,0:38:26.49,0:38:35.32,chinese,,0,0,0,,到目前为止，你的调试技巧很可能就是回顾我在课堂上的表现，或者在网上或当面提问。
+Dialogue: 0,0:38:26.49,0:38:35.32,chinese,,0,0,0,,到目前为止，你的代码调试技巧很可能就是回顾我在课堂上是怎么做的，或者在网上或当面提问。
 Dialogue: 0,0:38:35.32,0:38:39.57,english,,0,0,0,,But ultimately, it'd be nice if you had some tools of your own with which to debug code.
-Dialogue: 0,0:38:35.32,0:38:39.57,chinese,,0,0,0,,但归根结底，如果你有一些自己的工具来调试代码，那就更好了。
+Dialogue: 0,0:38:35.32,0:38:39.57,chinese,,0,0,0,,但归根结底，如果你有一些自己调试代码的工具就很好。
 Dialogue: 0,0:38:39.57,0:38:41.58,english,,0,0,0,,And this, honestly, is a lifelong skill.
 Dialogue: 0,0:38:39.57,0:38:41.58,chinese,,0,0,0,,老实说，这是一项终身技能。
 Dialogue: 0,0:38:41.58,0:38:47.91,english,,0,0,0,,You're not going to emerge from CS50-- and even 20 years from now, you're not going to be writing-- if you're writing code at all-- correct code all of the time.
-Dialogue: 0,0:38:41.58,0:38:47.91,chinese,,0,0,0,,你不可能从 CS50 中脱颖而出，甚至 20 年后，你也不可能一直写出正确的代码（如果你写的是代码的话）。
+Dialogue: 0,0:38:41.58,0:38:47.91,chinese,,0,0,0,,不是说学习完 CS50 后就能出师，\N甚至在 20 年后，如果你仍然写代码的话，你也不会一直写正确的代码。
 Dialogue: 0,0:38:47.91,0:38:50.82,english,,0,0,0,,Like, all of us on the staff continue to write bugs.
-Dialogue: 0,0:38:47.91,0:38:50.82,chinese,,0,0,0,,比如，我们所有员工都在继续写 bug。
+Dialogue: 0,0:38:47.91,0:38:50.82,chinese,,0,0,0,,我们所有工作人员都可能写出 bug。
 Dialogue: 0,0:38:50.82,0:38:55.54,english,,0,0,0,,Hopefully, they get a little more sophisticated, and not sort of like, oops, I missed a semicolon.
-Dialogue: 0,0:38:50.82,0:38:55.54,chinese,,0,0,0,,希望他们能变得更成熟一些，而不是像 "哎呀，我漏掉了一个分号 "那样。
+Dialogue: 0,0:38:50.82,0:38:55.54,chinese,,0,0,0,,我们都希望自己更加熟练一点，而不会 "哎呀，我漏掉了一个分号" 什么的。
 Dialogue: 0,0:38:55.54,0:38:57.66,english,,0,0,0,,But even those kinds of mistakes, we make too.
-Dialogue: 0,0:38:55.54,0:38:57.66,chinese,,0,0,0,,但即使是这样的错误，我们也会犯。
+Dialogue: 0,0:38:55.54,0:38:57.66,chinese,,0,0,0,,但即使是这样简单的错误，我们一样会犯。
 Dialogue: 0,0:38:57.66,0:39:03.55,english,,0,0,0,,But there's tools out there and techniques that can make your life easier when it comes to solving those problems.
-Dialogue: 0,0:38:57.66,0:39:03.55,chinese,,0,0,0,,但是，在解决这些问题时，有一些工具和技术可以让你的生活变得更轻松。
+Dialogue: 0,0:38:57.66,0:39:03.55,chinese,,0,0,0,,不过现在呢，有一些工具和技术，可以让我们解决各种错误时轻松点。
 Dialogue: 0,0:39:03.55,0:39:06.36,english,,0,0,0,,Now, the term bug has actually been around for decades.
-Dialogue: 0,0:39:03.55,0:39:06.36,chinese,,0,0,0,,现在，"窃听器 "这个词实际上已经存在了几十年。
+Dialogue: 0,0:39:03.55,0:39:06.36,chinese,,0,0,0,,现在，术语 "bug" 实际上已经存在了几十年了。
 Dialogue: 0,0:39:06.36,0:39:13.65,english,,0,0,0,,But a fun story to tell is that the first documented actual bug was actually somehow connected to Harvard.
-Dialogue: 0,0:39:06.36,0:39:13.65,chinese,,0,0,0,,不过，有一个有趣的故事是，第一个记录在案的真正错误实际上与哈佛大学有某种联系。
+Dialogue: 0,0:39:06.36,0:39:13.65,chinese,,0,0,0,,有一个有趣的故事要讲，第一个有记录的 bug 实际上与哈佛有关。
 Dialogue: 0,0:39:13.65,0:39:22.89,english,,0,0,0,,In fact, this is the logbook relating to the Harvard Mark II computer from 1947, whereby if you read the notes here-- and I'll Zoom in-- this
-Dialogue: 0,0:39:13.65,0:39:22.89,chinese,,0,0,0,,事实上，这是 1947 年与哈佛 Mark II 计算机有关的日志，如果你读了这里的注释--我将放大--这个
+Dialogue: 0,0:39:13.65,0:39:22.89,chinese,,0,0,0,,事实上，这是哈佛 Mark II 计算机在 1947 年的日志，如果你阅读这里的笔记，我放大点，
 Dialogue: 0,0:39:22.89,0:39:29.16,english,,0,0,0,,was an actual moth discovered inside of this big mainframe computer that was causing some kind of problems.
-Dialogue: 0,0:39:22.89,0:39:29.16,chinese,,0,0,0,,是在这台大型计算机主机内发现了一只真正的蛀虫，它造成了某种问题。
+Dialogue: 0,0:39:22.89,0:39:29.16,chinese,,0,0,0,,这是在这台大型计算机内发现的一只真正的 bug（虫子），它造成了一些问题。
 Dialogue: 0,0:39:29.16,0:39:33.61,english,,0,0,0,,And the engineers there at the time actually thought it was funny that, wow, physical bug actually explains the issue.
-Dialogue: 0,0:39:29.16,0:39:33.61,chinese,,0,0,0,,当时在场的工程师们还觉得这很有趣：哇，物理错误居然能解释这个问题。
+Dialogue: 0,0:39:29.16,0:39:33.61,chinese,,0,0,0,,当时在场的工程师们还觉得这很有趣：哇，居然是实际的虫子造成了这个问题。
 Dialogue: 0,0:39:33.61,0:39:39.09,english,,0,0,0,,And it's been forever taped to this sheet of paper, which I believe now is on display in the Smithsonian.
-Dialogue: 0,0:39:33.61,0:39:39.09,chinese,,0,0,0,,它被永远地粘在了这张纸上，我相信这张纸现在正在史密森尼博物馆展出。
+Dialogue: 0,0:39:33.61,0:39:39.09,chinese,,0,0,0,,它被永远地粘在了这张纸上，我相信正在史密森尼博物馆展出。
 Dialogue: 0,0:39:39.09,0:39:43.26,english,,0,0,0,,With that said, this is just representative, too, of a logical bug.
-Dialogue: 0,0:39:39.09,0:39:43.26,chinese,,0,0,0,,尽管如此，这也只是一个逻辑错误的代表。
+Dialogue: 0,0:39:39.09,0:39:43.26,chinese,,0,0,0,,就这样，bug 现在也有逻辑上的错误，这个意思了。
 Dialogue: 0,0:39:43.26,0:39:53.64,english,,0,0,0,,And that story is actually-- that story was often retold by a famous mathematician, then computer scientist really, Dr. Grace Hopper, who actually worked not only on the Harvard Mark II
-Dialogue: 0,0:39:43.26,0:39:53.64,chinese,,0,0,0,,实际上，这个故事经常被一位著名的数学家，也就是后来的计算机科学家格蕾丝-霍珀博士复述。
+Dialogue: 0,0:39:43.26,0:39:53.64,chinese,,0,0,0,,这个故事经常被著名的数学家，后来成为计算机科学家的 Grace Hopper 提起，\N她实际上不仅在 Harvard Mark II 计算机上工作，
 Dialogue: 0,0:39:53.64,0:39:57.21,english,,0,0,0,,computer, but its predecessor, the Harvard Mark I.
-Dialogue: 0,0:39:53.64,0:39:57.21,chinese,,0,0,0,,它的前身是哈佛 Mark I 计算机。
-Dialogue: 0,0:39:57.21,0:40:04.10,english,,0,0,0,,And if you ever spent time, yet, in the engineering building across the river here, you can actually see much of this computer, which
-Dialogue: 0,0:39:57.21,0:40:04.10,chinese,,0,0,0,,如果你曾在河对岸的工程大楼里待过一段时间，你就能看到这台计算机的许多部分。
-Dialogue: 0,0:40:04.10,0:40:07.02,english,,0,0,0,,is along the wall when you first walk into the Science and Engineering
-Dialogue: 0,0:40:04.10,0:40:07.02,chinese,,0,0,0,,当你第一次走进科学与工程学院的时候，你会发现墙边有一个"......
-Dialogue: 0,0:40:07.02,0:40:07.53,english,,0,0,0,,Complex.
+Dialogue: 0,0:39:53.64,0:39:57.21,chinese,,0,0,0,,还在它的前身 Harvard Mark I 上工作过。
+Dialogue: 0,0:39:57.21,0:40:07.53,english,,0,0,0,,And if you ever spent time, yet, in the engineering building across the river here, you can actually see much of this computer, which is along the wall when you first walk into the Science and Engineering Complex.
+Dialogue: 0,0:39:57.21,0:40:07.02,chinese,,0,0,0,,如果你还没有去过这边的工程楼，\N你可以在进入科学与工程综合楼的时候，在墙上看到这台计算机的大部分面目。
 Dialogue: 0,0:40:07.53,0:40:11.07,english,,0,0,0,,And indeed, as you've probably heard growing up, this is a mainframe computer.
-Dialogue: 0,0:40:07.53,0:40:11.07,chinese,,0,0,0,,事实上，正如你在成长过程中可能听说过的，这是一台大型计算机。
-Dialogue: 0,0:40:11.07,0:40:18.24,english,,0,0,0,,This is what Macs and PCs, so to speak, looked like back in the day, with very physical things that essentially implemented the zeros
-Dialogue: 0,0:40:11.07,0:40:18.24,chinese,,0,0,0,,这就是 Mac 和 PC 当年的样子，它们都有一个非常实体的东西，基本上实现了零的功能
-Dialogue: 0,0:40:18.24,0:40:22.41,english,,0,0,0,,and ones that you and I take for granted now being miniaturized in our laptops and phones.
-Dialogue: 0,0:40:18.24,0:40:22.41,chinese,,0,0,0,,而你我认为理所当然的那些东西，现在都已微型化，装进了我们的笔记本电脑和手机中。
+Dialogue: 0,0:40:07.53,0:40:11.07,chinese,,0,0,0,,事实上，你可能在成长过程中就听说过，这是一台大型计算机。
+Dialogue: 0,0:40:11.07,0:40:22.41,english,,0,0,0,,This is what Macs and PCs, so to speak, looked like back in the day, with very physical things that essentially implemented the zeros and ones that you and I take for granted now being miniaturized in our laptops and phones.
+Dialogue: 0,0:40:11.07,0:40:22.41,chinese,,0,0,0,,这就是 Mac 和 PC 当年的样子，可以这么说，\N它们都是通过一些硬件，实现了二进制和我们司空见惯的那些东西，\N只不过现在的硬件都已微型化，小到足以装进我们的笔记本电脑和手机。
 Dialogue: 0,0:40:22.41,0:40:23.91,english,,0,0,0,,So there's a piece of history there.
-Dialogue: 0,0:40:22.41,0:40:23.91,chinese,,0,0,0,,所以这里有一段历史。
+Dialogue: 0,0:40:22.41,0:40:23.91,chinese,,0,0,0,,有一段历史故事在这里。
 Dialogue: 0,0:40:23.91,0:40:27.39,english,,0,0,0,,If you visit that side of campus sometime, do take a look.
-Dialogue: 0,0:40:23.91,0:40:27.39,chinese,,0,0,0,,如果有机会去校园那边看看，一定要去。
+Dialogue: 0,0:40:23.91,0:40:27.39,chinese,,0,0,0,,如果有机会到校园那边去，一定要看看。
 Dialogue: 0,0:40:27.39,0:40:31.35,english,,0,0,0,,But let's consider, then, how we solve not, of course, physical bugs, but logical bugs.
-Dialogue: 0,0:40:27.39,0:40:31.35,chinese,,0,0,0,,但是，让我们考虑一下，我们如何解决的当然不是物理上的错误，而是逻辑上的错误。
+Dialogue: 0,0:40:27.39,0:40:31.35,chinese,,0,0,0,,让我们考虑一下，我们如何解决逻辑 bug，当然不是说实际的 bug 了。
 Dialogue: 0,0:40:31.35,0:40:40.32,english,,0,0,0,,And let's consider something like this from last week, whereby, we were trying very simply to print like this column of three bricks using hashtags of sorts.
-Dialogue: 0,0:40:31.35,0:40:40.32,chinese,,0,0,0,,让我们考虑一下上周发生的事情，我们试图用标签打印这三块砖头，非常简单。
+Dialogue: 0,0:40:31.35,0:40:40.32,chinese,,0,0,0,,再来考虑一下上周发生的事情，我们试图用 # 代表砖块打印出来，还蛮简单的。
 Dialogue: 0,0:40:40.32,0:40:44.40,english,,0,0,0,,So let me go over here in just a moment to VS Code.
-Dialogue: 0,0:40:40.32,0:40:44.40,chinese,,0,0,0,,所以，让我马上去看看 VS Code。
+Dialogue: 0,0:40:40.32,0:40:44.40,chinese,,0,0,0,,所以，让我马上来打开 VS Code。
 Dialogue: 0,0:40:44.40,0:40:47.08,english,,0,0,0,,And I'm going to go ahead and open a program I wrote in advance.
 Dialogue: 0,0:40:44.40,0:40:47.08,chinese,,0,0,0,,我现在要打开一个事先写好的程序。
 Dialogue: 0,0:40:47.08,0:40:51.51,english,,0,0,0,,And I'm bringing it to class because there's a bug in it, and I'd like to figure out how to solve this bug.
-Dialogue: 0,0:40:47.08,0:40:51.51,chinese,,0,0,0,,我把它带到课堂上是因为它有一个漏洞，我想知道如何解决这个漏洞。
+Dialogue: 0,0:40:47.08,0:40:51.51,chinese,,0,0,0,,我把它提到课上讲，是因为它有一个 bug，我想知道怎么解决。
 Dialogue: 0,0:40:51.51,0:40:56.16,english,,0,0,0,,So let me open up a buggy0.c, which is version 0 of my code.
-Dialogue: 0,0:40:51.51,0:40:56.16,chinese,,0,0,0,,因此，让我打开 buggy0.c，这是我代码的第 0 版。
+Dialogue: 0,0:40:51.51,0:40:56.16,chinese,,0,0,0,,那么，让我打开 buggy0.c，这是我代码的第 0 版。
 Dialogue: 0,0:40:56.16,0:40:58.20,english,,0,0,0,,And let's just take a quick peek at what's here.
 Dialogue: 0,0:40:56.16,0:40:58.20,chinese,,0,0,0,,让我们快速浏览一下这里的内容。
 Dialogue: 0,0:40:58.20,0:40:58.95,english,,0,0,0,,It's pretty short.
-Dialogue: 0,0:40:58.20,0:40:58.95,chinese,,0,0,0,,很短。
+Dialogue: 0,0:40:58.20,0:40:58.95,chinese,,0,0,0,,很短的。
 Dialogue: 0,0:40:58.95,0:41:07.79,english,,0,0,0,,It includes only stdio.h, it uses printf, it uses a for loop, and the goal, quite simply, is to print out that column of three bricks.
-Dialogue: 0,0:40:58.95,0:41:07.79,chinese,,0,0,0,,它只包含 stdio.h，使用 printf，使用 for 循环，目的很简单，就是打印出那列三个砖块。
+Dialogue: 0,0:40:58.95,0:41:07.79,chinese,,0,0,0,,它只 include stdio.h，使用了 printf，使用了 for 循环，目的很简单，就是想打印出一列三个砖块。
 Dialogue: 0,0:41:07.79,0:41:13.36,english,,0,0,0,,Now, it's short enough that some of you, if you're getting comfy already with C, you might already see the logical bug.
-Dialogue: 0,0:41:07.79,0:41:13.36,chinese,,0,0,0,,现在，它已经足够短了，如果你们中的一些人已经熟悉了 C 语言，你们可能已经看到了逻辑错误。
+Dialogue: 0,0:41:07.79,0:41:13.36,chinese,,0,0,0,,现在，它已经足够短了，有些同学已经熟悉 C 语言，可能已经看到 bug 在哪了。
 Dialogue: 0,0:41:13.36,0:41:16.20,english,,0,0,0,,It's not a syntax error, like it will compile and run.
 Dialogue: 0,0:41:13.36,0:41:16.20,chinese,,0,0,0,,这不是语法错误，因为它可以编译和运行。
 Dialogue: 0,0:41:16.20,0:41:17.28,english,,0,0,0,,But there's a bug there.
-Dialogue: 0,0:41:16.20,0:41:17.28,chinese,,0,0,0,,但这里有个漏洞。
+Dialogue: 0,0:41:16.20,0:41:17.28,chinese,,0,0,0,,但这里有个 bug。
 Dialogue: 0,0:41:17.28,0:41:27.74,english,,0,0,0,,And suppose that I'm very new to C, I'm very uncomfortable with C, it's 2:00 AM and I just can't see the bug, what are my recourses here for actually finding a mistake like this?
-Dialogue: 0,0:41:17.28,0:41:27.74,chinese,,0,0,0,,假设我是 C 语言的新手，我对 C 语言很不熟悉，现在是凌晨 2 点，我就是看不到这个错误，那么我有什么办法来发现这样的错误呢？
+Dialogue: 0,0:41:17.28,0:41:27.74,chinese,,0,0,0,,假如我是 C 语言新手，对 C 语言很不熟悉，\N已经半夜 2 点了，我就是没找着 bug 在哪，那还有什么办法来发现问题呢？
 Dialogue: 0,0:41:27.74,0:41:29.37,english,,0,0,0,,Well, first, let's look at the symptom.
 Dialogue: 0,0:41:27.74,0:41:29.37,chinese,,0,0,0,,首先，我们来看看症状。
 Dialogue: 0,0:41:29.37,0:41:31.74,english,,0,0,0,,Let me go down to my terminal window.
-Dialogue: 0,0:41:29.37,0:41:31.74,chinese,,0,0,0,,让我进入终端窗口。
-Dialogue: 0,0:41:31.74,0:41:36.12,english,,0,0,0,,I'm going to use make buggy0 because, again, the file is called buggyo.c.
-Dialogue: 0,0:41:31.74,0:41:36.12,chinese,,0,0,0,,我将使用 make buggy0，因为文件名还是 buggyo.c。
+Dialogue: 0,0:41:29.37,0:41:31.74,chinese,,0,0,0,,进入终端窗口。
+Dialogue: 0,0:41:31.74,0:41:36.12,english,,0,0,0,,I'm going to use make buggy0 because, again, the file is called buggy0.c.
+Dialogue: 0,0:41:31.74,0:41:36.12,chinese,,0,0,0,,使用 make buggy0 命令，因为源文件名是 buggy0.c。
 Dialogue: 0,0:41:36.12,0:41:37.26,english,,0,0,0,,I'm not going to use clang.
-Dialogue: 0,0:41:36.12,0:41:37.26,chinese,,0,0,0,,我不会用 clang。
+Dialogue: 0,0:41:36.12,0:41:37.26,chinese,,0,0,0,,我没有用 clang。
 Dialogue: 0,0:41:37.26,0:41:39.88,english,,0,0,0,,In fact, I'm never really going to use clang manually here on out.
-Dialogue: 0,0:41:37.26,0:41:39.88,chinese,,0,0,0,,事实上，从现在开始我再也不会手动使用 clang 了。
+Dialogue: 0,0:41:37.26,0:41:39.88,chinese,,0,0,0,,事实上，后面我也不会手动用 clang 命令了。
 Dialogue: 0,0:41:39.88,0:41:42.43,english,,0,0,0,,I'm just going to use make because it makes our lives easier.
-Dialogue: 0,0:41:39.88,0:41:42.43,chinese,,0,0,0,,我只想用 make，因为它能让我们的生活更轻松。
+Dialogue: 0,0:41:39.88,0:41:42.43,chinese,,0,0,0,,我只想用 make，因为它能让我们轻松点。
 Dialogue: 0,0:41:42.43,0:41:43.56,english,,0,0,0,,It does compile.
-Dialogue: 0,0:41:42.43,0:41:43.56,chinese,,0,0,0,,确实可以编译。
+Dialogue: 0,0:41:42.43,0:41:43.56,chinese,,0,0,0,,编译没问题。
 Dialogue: 0,0:41:43.56,0:41:45.39,english,,0,0,0,,No errors, so it's not syntax.
 Dialogue: 0,0:41:43.56,0:41:45.39,chinese,,0,0,0,,没有错误，所以不是语法问题。
 Dialogue: 0,0:41:45.39,0:41:47.67,english,,0,0,0,,It's not something silly like a missing semicolon.
-Dialogue: 0,0:41:45.39,0:41:47.67,chinese,,0,0,0,,这不是什么分号丢失之类的傻事。
+Dialogue: 0,0:41:45.39,0:41:47.67,chinese,,0,0,0,,这不是什么没写分号之类的傻事。
 Dialogue: 0,0:41:47.67,0:41:59.61,english,,0,0,0,,But when I run ./buggy0, I, of course, see one, two, three, four-- and this, of course, does not match the one, two, three bricks that I actually intended for that column.
-Dialogue: 0,0:41:47.67,0:41:59.61,chinese,,0,0,0,,但是，当我运行 ./buggy0 时，我当然会看到 1、2、3、4 -- 当然，这与我为该列设计的 1、2、3 块砖并不一致。
+Dialogue: 0,0:41:47.67,0:41:59.61,chinese,,0,0,0,,但是，当我运行 ./buggy0 时，我能看到 4 块—— 当然，这与我想法中的 3 块砖并不一致。
 Dialogue: 0,0:41:59.61,0:42:02.97,english,,0,0,0,,And yet, I'm starting counting at 0, as I usually do.
-Dialogue: 0,0:41:59.61,0:42:02.97,chinese,,0,0,0,,然而，我还是像往常一样，从 0 开始计数。
+Dialogue: 0,0:41:59.61,0:42:02.97,chinese,,0,0,0,,嗯，我还是跟往常一样，从 0 开始计数的。
 Dialogue: 0,0:42:02.97,0:42:03.93,english,,0,0,0,,I've got three.
-Dialogue: 0,0:42:02.97,0:42:03.93,chinese,,0,0,0,,我有三个。
+Dialogue: 0,0:42:02.97,0:42:03.93,chinese,,0,0,0,,这里写的 3。
 Dialogue: 0,0:42:03.93,0:42:05.28,english,,0,0,0,,I'm going up to three.
-Dialogue: 0,0:42:03.93,0:42:05.28,chinese,,0,0,0,,我要去三个。
+Dialogue: 0,0:42:03.93,0:42:05.28,chinese,,0,0,0,,我要从 0 数到 3。
 Dialogue: 0,0:42:05.28,0:42:06.78,english,,0,0,0,,So where is my logical error?
-Dialogue: 0,0:42:05.28,0:42:06.78,chinese,,0,0,0,,那么，我的逻辑错误在哪里？
+Dialogue: 0,0:42:05.28,0:42:06.78,chinese,,0,0,0,,那么，我的逻辑错误在哪？
 Dialogue: 0,0:42:06.78,0:42:10.15,english,,0,0,0,,If it hasn't obviously jumped out at you already, well, how can I solve this?
-Dialogue: 0,0:42:06.78,0:42:10.15,chinese,,0,0,0,,如果你还没有明显地意识到这一点，那么，我该如何解决这个问题呢？
+Dialogue: 0,0:42:06.78,0:42:10.15,chinese,,0,0,0,,如果你还没有一眼看到，那要怎么来解决呢？
 Dialogue: 0,0:42:10.15,0:42:16.08,english,,0,0,0,,Well, first and foremost, perhaps the best technique for solving bugs, at least early on, is just use printf.
-Dialogue: 0,0:42:10.15,0:42:16.08,chinese,,0,0,0,,首先，解决 bug 的最佳方法也许就是使用 printf，至少在早期是这样。
-Dialogue: 0,0:42:16.08,0:42:20.02,english,,0,0,0,,Like thus far, we've used sprint say, Hello, and other things on the screen.
-Dialogue: 0,0:42:16.08,0:42:20.02,chinese,,0,0,0,,到目前为止，我们已经在屏幕上使用了 "冲刺说"、"你好 "等功能。
+Dialogue: 0,0:42:10.15,0:42:16.08,chinese,,0,0,0,,首先，解决 bug 的最佳方法也许就是用 printf，至少在早期没问题。
+Dialogue: 0,0:42:16.08,0:42:20.02,english,,0,0,0,,Like thus far, we've used printf say, Hello, and other things on the screen.
+Dialogue: 0,0:42:16.08,0:42:20.02,chinese,,0,0,0,,到目前为止，我们已经在屏幕上打印过 "hello" 之类的了。
 Dialogue: 0,0:42:20.02,0:42:22.53,english,,0,0,0,,But printf is just a function for printing anything.
 Dialogue: 0,0:42:20.02,0:42:22.53,chinese,,0,0,0,,但 printf 只是一个用于打印任何内容的函数。
 Dialogue: 0,0:42:22.53,0:42:31.35,english,,0,0,0,,And there's no reason you can't temporarily use printf to print out the contents of variables, what's going on inside of your program, just to figure out where your mistake is.
@@ -1186,11 +1154,11 @@ Dialogue: 0,0:46:03.03,0:46:07.65,chinese,,0,0,0,,但不得不承认，刚开始
 Dialogue: 0,0:46:07.65,0:46:13.48,english,,0,0,0,,You have to create a configuration file and do some annoying steps that just get in the way of solving real problems.
 Dialogue: 0,0:46:07.65,0:46:13.48,chinese,,0,0,0,,你必须创建一个配置文件，并执行一些恼人的步骤，这些步骤只会妨碍你解决实际问题。
 Dialogue: 0,0:46:13.48,0:46:17.07,english,,0,0,0,,So we have automated the process for you of just starting the debugger.
-Dialogue: 0,0:46:13.48,0:46:17.07,chinese,,0,0,0,,因此，我们为您自动完成了启动调试器的过程。
+Dialogue: 0,0:46:13.48,0:46:17.07,chinese,,0,0,0,,因此，我们为你自动完成了启动调试器的过程。
 Dialogue: 0,0:46:17.07,0:46:19.68,english,,0,0,0,,And thereafter, it's sort of industry standard how you use it.
 Dialogue: 0,0:46:17.07,0:46:19.68,chinese,,0,0,0,,此后，如何使用它就成了行业标准。
 Dialogue: 0,0:46:19.68,0:46:23.38,english,,0,0,0,,But we save you the headache of having to create those configuration files.
-Dialogue: 0,0:46:19.68,0:46:23.38,chinese,,0,0,0,,但我们为您省去了创建这些配置文件的麻烦。
+Dialogue: 0,0:46:19.68,0:46:23.38,chinese,,0,0,0,,但我们为你省去了创建这些配置文件的麻烦。
 Dialogue: 0,0:46:23.38,0:46:25.33,english,,0,0,0,,So, suppose I want to do this.
 Dialogue: 0,0:46:23.38,0:46:25.33,chinese,,0,0,0,,所以，假设我想这样做。
 Dialogue: 0,0:46:25.33,0:46:30.33,english,,0,0,0,,Suppose I want to try to debug this program step by step using special software.
@@ -1221,7 +1189,7 @@ Dialogue: 0,0:47:18.58,0:47:26.01,chinese,,0,0,0,,不要运行程序本身，而
 Dialogue: 0,0:47:26.01,0:47:33.06,english,,0,0,0,,And now this will start your program, but inside of the debugger, which is a special program that smart people wrote that will empower
 Dialogue: 0,0:47:26.01,0:47:33.06,chinese,,0,0,0,,现在，这将启动你的程序，但在调试器内部，调试器是聪明人编写的一个特殊程序，它将赋予你
 Dialogue: 0,0:47:33.06,0:47:38.97,english,,0,0,0,,you to now step through your code line by line, and again, at your own comfort pace.
-Dialogue: 0,0:47:33.06,0:47:38.97,chinese,,0,0,0,,现在，您可以按照自己的节奏逐行查看代码。
+Dialogue: 0,0:47:33.06,0:47:38.97,chinese,,0,0,0,,现在，你可以按照自己的节奏逐行查看代码。
 Dialogue: 0,0:47:38.97,0:47:43.08,english,,0,0,0,,I'm going to hit Enter, some stuff's going to happen on the screen-- whoops.
 Dialogue: 0,0:47:38.97,0:47:43.08,chinese,,0,0,0,,我按下回车键，屏幕上就会出现一些东西--哎呀。
 Dialogue: 0,0:47:43.08,0:47:45.76,english,,0,0,0,,Notice, this is a common mistake that I made accidentally here.
@@ -1355,7 +1323,7 @@ Dialogue: 0,0:51:19.52,0:51:23.67,chinese,,0,0,0,,关于调试的问题？
 Dialogue: 0,0:51:23.67,0:51:24.17,english,,0,0,0,,Questions?
 Dialogue: 0,0:51:24.17,0:51:24.67,english,,0,0,0,,Yeah?
 Dialogue: 0,0:51:24.67,0:51:27.29,english,,0,0,0,,AUDIENCE: Where does it tell you where it went wrong?
-Dialogue: 0,0:51:24.67,0:51:27.29,chinese,,0,0,0,,听众：它告诉你哪里出了问题？
+Dialogue: 0,0:51:24.67,0:51:27.29,chinese,,0,0,0,,观众：它告诉你哪里出了问题？
 Dialogue: 0,0:51:27.29,0:51:28.42,english,,0,0,0,,DAVID MALAN: Good question.
 Dialogue: 0,0:51:27.29,0:51:28.42,chinese,,0,0,0,,大卫-马兰：问得好。
 Dialogue: 0,0:51:28.42,0:51:30.31,english,,0,0,0,,Where does it tell you where it went wrong?
@@ -1363,7 +1331,7 @@ Dialogue: 0,0:51:28.42,0:51:30.31,chinese,,0,0,0,,它在哪里告诉你哪里出
 Dialogue: 0,0:51:30.31,0:51:33.19,english,,0,0,0,,So, sadly, it does not tell you any of that.
 Dialogue: 0,0:51:30.31,0:51:33.19,chinese,,0,0,0,,因此，很遗憾，它并没有告诉你这些。
 Dialogue: 0,0:51:33.19,0:51:39.58,english,,0,0,0,,The onus is still on you, the human, to use this tool productively to walk through your code at a saner pace.
-Dialogue: 0,0:51:33.19,0:51:39.58,chinese,,0,0,0,,您，人类，仍有责任有效地使用这一工具，以更理智的速度浏览您的代码。
+Dialogue: 0,0:51:33.19,0:51:39.58,chinese,,0,0,0,,你，人类，仍有责任有效地使用这一工具，以更理智的速度浏览你的代码。
 Dialogue: 0,0:51:39.58,0:51:42.07,english,,0,0,0,,But your brain is the one that still needs to solve it.
 Dialogue: 0,0:51:39.58,0:51:42.07,chinese,,0,0,0,,但你的大脑仍然需要解决这个问题。
 Dialogue: 0,0:51:42.07,0:51:49.16,english,,0,0,0,,And I don't doubt, down the line, with artificial intelligence and more, programs like this will get all the more helpful, and start answering questions like that for us.
@@ -1408,7 +1376,7 @@ Dialogue: 0,0:52:50.09,0:52:51.47,chinese,,0,0,0,,那么，主要做什么呢？
 Dialogue: 0,0:52:51.47,0:52:55.69,english,,0,0,0,,Well, main just calls this function, passing in nothing in parentheses, no inputs.
 Dialogue: 0,0:52:51.47,0:52:55.69,chinese,,0,0,0,,好吧，main 只是调用这个函数，在括号中什么都没输入，也没有输入。
 Dialogue: 0,0:52:55.69,0:52:58.24,english,,0,0,0,,And it stores the return value in i.
-Dialogue: 0,0:52:55.69,0:52:58.24,chinese,,0,0,0,,并将返回值保存在 i 中。
+Dialogue: 0,0:52:55.69,0:52:58.24,chinese,,0,0,0,,还会返回值保存在 i 中。
 Dialogue: 0,0:52:58.24,0:53:00.26,english,,0,0,0,,And then it just prints out i on the screen.
 Dialogue: 0,0:52:58.24,0:53:00.26,chinese,,0,0,0,,然后它就会在屏幕上打印出 i。
 Dialogue: 0,0:53:00.26,0:53:06.36,english,,0,0,0,,So honestly, just by eyeballing this, I feel comfortable enough with programming in C, I think main is correct.
@@ -1436,7 +1404,7 @@ Dialogue: 0,0:53:40.96,0:53:43.54,chinese,,0,0,0,,我们必须做一个 while �
 Dialogue: 0,0:53:43.54,0:53:47.11,english,,0,0,0,,It uses getInt, which comes with the cs50 library, per last week.
 Dialogue: 0,0:53:43.54,0:53:47.11,chinese,,0,0,0,,它使用的是 cs50 库自带的 getInt，与上周相同。
 Dialogue: 0,0:53:47.11,0:53:51.67,english,,0,0,0,,It prompts the user for negative integer, quote unquote, and stores the value in n.
-Dialogue: 0,0:53:47.11,0:53:51.67,chinese,,0,0,0,,它提示用户输入负整数，加引号不加引号，并将数值存储在 n 中。
+Dialogue: 0,0:53:47.11,0:53:51.67,chinese,,0,0,0,,它提示用户输入负整数，加引号不加引号，还会数值存储在 n 中。
 Dialogue: 0,0:53:51.67,0:53:56.80,english,,0,0,0,,I then do all of this while n is less than 0, right?
 Dialogue: 0,0:53:51.67,0:53:56.80,chinese,,0,0,0,,然后，我在 n 小于 0 的情况下完成所有这些操作，对吗？
 Dialogue: 0,0:53:56.80,0:54:04.97,english,,0,0,0,,Remember, we used to do while loop last week to make sure the human cooperates and doesn't give us the wrong type of value, be it positive or negative or something else.
@@ -1453,11 +1421,11 @@ Dialogue: 0,0:54:17.62,0:54:23.46,english,,0,0,0,,AUDIENCE: [INAUDIBLE]
 Dialogue: 0,0:54:23.46,0:54:24.34,english,,0,0,0,,DAVID MALAN: Exactly.
 Dialogue: 0,0:54:23.46,0:54:24.34,chinese,,0,0,0,,大卫-马兰：没错。
 Dialogue: 0,0:54:24.34,0:54:33.56,english,,0,0,0,,There's this notion of scope in C. And we'll continue to see this over time, whereby, a variable only exists inside of the most recent curly braces that you've opened.
-Dialogue: 0,0:54:24.34,0:54:33.56,chinese,,0,0,0,,在 C 语言中，有这样一个作用域的概念，我们将继续看到这个概念，即一个变量只存在于你最近打开的大括号中。
+Dialogue: 0,0:54:24.34,0:54:33.56,chinese,,0,0,0,,在 C 语言中，有这样一个作用域的概念，我们将继续看到这个概念，即一个变量只存在于你最近打开的花括号中。
 Dialogue: 0,0:54:33.56,0:54:40.90,english,,0,0,0,,So if I've declared n here on line 14, I can use it anywhere between lines 13 and 21 because those are the nearest curly braces.
-Dialogue: 0,0:54:33.56,0:54:40.90,chinese,,0,0,0,,因此，如果我在第 14 行声明了 n，我就可以在第 13 行和第 21 行之间的任何地方使用它，因为这些都是最近的大括号。
+Dialogue: 0,0:54:33.56,0:54:40.90,chinese,,0,0,0,,因此，如果我在第 14 行声明了 n，我就可以在第 13 行和第 21 行之间的任何地方使用它，因为这些都是最近的花括号。
 Dialogue: 0,0:54:40.90,0:54:53.47,english,,0,0,0,,If by contrast, as you note, if I instead said this, int n equals getInt and so forth, and didn't have the current line 14, well, n would exist inside of these curly braces, but not here, which
-Dialogue: 0,0:54:40.90,0:54:53.47,chinese,,0,0,0,,相比之下，正如你所指出的，如果我改成这样说，int n 等于 getInt 等等，并且没有当前的第 14 行，那么，n 就会存在于这些大括号内，但不会存在于这里，这就意味着
+Dialogue: 0,0:54:40.90,0:54:53.47,chinese,,0,0,0,,相比之下，正如你所指出的，如果我改成这样说，int n 等于 getInt 等等，并且没有当前的第 14 行，那么，n 就会存在于这些花括号内，但不会存在于这里，这就意味着
 Dialogue: 0,0:54:53.47,0:54:55.34,english,,0,0,0,,is too late, and definitely not here.
 Dialogue: 0,0:54:53.47,0:54:55.34,chinese,,0,0,0,,太迟了，而且绝对不是在这里。
 Dialogue: 0,0:54:55.34,0:54:59.48,english,,0,0,0,,So you just have to declare it first, and then use and reuse it as such.
@@ -1532,7 +1500,7 @@ Dialogue: 0,0:56:37.93,0:56:40.77,chinese,,0,0,0,,戴维-马兰：是的，从�
 Dialogue: 0,0:56:40.77,0:56:43.56,english,,0,0,0,,And even if you don't understand it, like that's the only explanation.
 Dialogue: 0,0:56:40.77,0:56:43.56,chinese,,0,0,0,,即使你不理解，好像这是唯一的解释。
 Dialogue: 0,0:56:43.56,0:56:46.14,english,,0,0,0,,If you keep getting prompted, surely, there's a loop going on.
-Dialogue: 0,0:56:43.56,0:56:46.14,chinese,,0,0,0,,如果您一直收到提示，肯定是出现了循环。
+Dialogue: 0,0:56:43.56,0:56:46.14,chinese,,0,0,0,,如果你一直收到提示，肯定是出现了循环。
 Dialogue: 0,0:56:46.14,0:56:49.27,english,,0,0,0,,There's only one loop in my code, so there's probably a problem there.
 Dialogue: 0,0:56:46.14,0:56:49.27,chinese,,0,0,0,,我的代码中只有一个循环，所以可能有问题。
 Dialogue: 0,0:56:49.27,0:56:52.90,english,,0,0,0,,So I can't just set a breakpoint in main, and then wait for this to work.
@@ -1730,7 +1698,7 @@ Dialogue: 0,1:03:33.98,1:03:45.07,chinese,,0,0,0,,这些数据类型是告诉计
 Dialogue: 0,1:03:45.07,1:03:49.93,english,,0,0,0,,But it turns out that computers, of course, only have finite amounts of resources.
 Dialogue: 0,1:03:45.07,1:03:49.93,chinese,,0,0,0,,但事实证明，计算机的资源当然是有限的。
 Dialogue: 0,1:03:49.93,1:03:53.74,english,,0,0,0,,Your computer only has a fixed amount of memory or RAM.
-Dialogue: 0,1:03:49.93,1:03:53.74,chinese,,0,0,0,,您的电脑只有固定数量的内存或 RAM。
+Dialogue: 0,1:03:49.93,1:03:53.74,chinese,,0,0,0,,你的电脑只有固定数量的内存或 RAM。
 Dialogue: 0,1:03:53.74,1:03:55.91,english,,0,0,0,,And that actually has very real world implications.
 Dialogue: 0,1:03:53.74,1:03:55.91,chinese,,0,0,0,,这实际上具有非常现实的意义。
 Dialogue: 0,1:03:55.91,1:03:59.63,english,,0,0,0,,So for instance, here are some of the data types we've seen thus far.
@@ -1768,7 +1736,7 @@ Dialogue: 0,1:05:02.77,1:05:06.82,chinese,,0,0,0,,如果你觉得数字太少，
 Dialogue: 0,1:05:06.82,1:05:15.73,english,,0,0,0,,And longs use 64 bits, which allow you to have like a quintillion number of possibilities, which is a lot, certainly, a lot more than 4 billion.
 Dialogue: 0,1:05:06.82,1:05:15.73,chinese,,0,0,0,,而长字符使用 64 位，这就允许你拥有五亿种可能性，当然，这比 40 亿要多得多。
 Dialogue: 0,1:05:15.73,1:05:17.41,english,,0,0,0,,So sometimes you might use a long.
-Dialogue: 0,1:05:15.73,1:05:17.41,chinese,,0,0,0,,因此，有时您可能会使用长号。
+Dialogue: 0,1:05:15.73,1:05:17.41,chinese,,0,0,0,,因此，有时你可能会使用长号。
 Dialogue: 0,1:05:17.41,1:05:18.67,english,,0,0,0,,But even that's finite.
 Dialogue: 0,1:05:17.41,1:05:18.67,chinese,,0,0,0,,但即便如此，也是有限的。
 Dialogue: 0,1:05:18.67,1:05:28.33,english,,0,0,0,,And so as we discussed at the end of last week, bad things can happen if you make certain assumptions as to the data because of things like integer overflow or the like, where things wrap around.
@@ -1831,7 +1799,7 @@ Dialogue: 0,1:07:32.41,1:07:38.80,chinese,,0,0,0,,我们可以任意决定左上
 Dialogue: 0,1:07:38.80,1:07:46.09,english,,0,0,0,,The one next to it is number one, then number two, number 3, dot, dot, dot, number 2 billion or whatever it is, however big this memory is.
 Dialogue: 0,1:07:38.80,1:07:46.09,chinese,,0,0,0,,旁边的是 1 号，然后是 2 号、3 号、点、点、点、20 亿或其他数字，不管这个存储器有多大。
 Dialogue: 0,1:07:46.09,1:07:50.53,english,,0,0,0,,So if you use a variable in a C program, that's only one byte.
-Dialogue: 0,1:07:46.09,1:07:50.53,chinese,,0,0,0,,因此，如果您在 C 语言程序中使用一个变量，它只有一个字节。
+Dialogue: 0,1:07:46.09,1:07:50.53,chinese,,0,0,0,,因此，如果你在 C 语言程序中使用一个变量，它只有一个字节。
 Dialogue: 0,1:07:50.53,1:07:55.12,english,,0,0,0,,Like a char, it might literally be stored in that top left-hand corner of the memory.
 Dialogue: 0,1:07:50.53,1:07:55.12,chinese,,0,0,0,,就像字符一样，它可能就存储在内存的左上角。
 Dialogue: 0,1:07:55.12,1:07:57.76,english,,0,0,0,,In practice, you don't care where, physically, it is.
@@ -1845,7 +1813,7 @@ Dialogue: 0,1:08:07.45,1:08:10.84,chinese,,0,0,0,,4 字节，连续 - 即从左�
 Dialogue: 0,1:08:10.84,1:08:16.14,english,,0,0,0,,But all 32 bits would be next to each other so the computer knows that those, indeed, all belong to the same int.
 Dialogue: 0,1:08:10.84,1:08:16.14,chinese,,0,0,0,,但所有 32 位都会紧挨着，这样计算机就知道这些位确实都属于同一个 int。
 Dialogue: 0,1:08:16.14,1:08:21.14,english,,0,0,0,,If you need a long, or a double for that matter, then you might use a full 8 bytes in this case.
-Dialogue: 0,1:08:16.14,1:08:21.14,chinese,,0,0,0,,如果您需要长数据或双倍数据，在这种情况下您可能需要使用整整 8 个字节。
+Dialogue: 0,1:08:16.14,1:08:21.14,chinese,,0,0,0,,如果你需要长数据或双倍数据，在这种情况下你可能需要使用整整 8 个字节。
 Dialogue: 0,1:08:21.14,1:08:29.84,english,,0,0,0,,And you just keep using and using this memory, kind of like a canvas, almost in Photoshop or a spreadsheet where you can just move pixels or you can move data around,
 Dialogue: 0,1:08:21.14,1:08:29.84,chinese,,0,0,0,,你只需不断地使用这个内存，就像在 Photoshop 或电子表格中的画布一样，你可以随意移动像素或数据、
 Dialogue: 0,1:08:29.84,1:08:36.70,english,,0,0,0,,that's really what your computer's memory is, a canvas for storing information in units of bytes or 8 bits.
@@ -1901,7 +1869,7 @@ Dialogue: 0,1:10:02.21,1:10:14.45,chinese,,0,0,0,,嗯，就像在纸上一样，
 Dialogue: 0,1:10:14.45,1:10:16.04,english,,0,0,0,,All right, so I think this checks out.
 Dialogue: 0,1:10:14.45,1:10:16.04,chinese,,0,0,0,,好吧，我想这是正确的。
 Dialogue: 0,1:10:16.04,1:10:23.18,english,,0,0,0,,And indeed, you can use parentheses and operators like plus in your code like this in C. Let me go ahead now and do make scores.
-Dialogue: 0,1:10:16.04,1:10:23.18,chinese,,0,0,0,,事实上，您可以在 C 语言代码中使用括号和加号等运算符。
+Dialogue: 0,1:10:16.04,1:10:23.18,chinese,,0,0,0,,事实上，你可以在 C 语言代码中使用括号和加号等运算符。
 Dialogue: 0,1:10:23.18,1:10:24.32,english,,0,0,0,,No syntax error.
 Dialogue: 0,1:10:23.18,1:10:24.32,chinese,,0,0,0,,无语法错误。
 Dialogue: 0,1:10:24.32,1:10:25.91,english,,0,0,0,,So that's good, nothing missing there.
@@ -1989,7 +1957,7 @@ Dialogue: 0,1:12:26.75,1:12:30.89,chinese,,0,0,0,,不过，这里还有一个技
 Dialogue: 0,1:12:30.89,1:12:38.76,english,,0,0,0,,If you didn't want to change it to 3.0 because that's a little weird, because there were literally three scores, it's not like that needs to have a decimal point,
 Dialogue: 0,1:12:30.89,1:12:38.76,chinese,,0,0,0,,如果你不想把它改成 3.0，因为那有点奇怪，因为从字面上看有三个分数，这不像是需要有一个小数点、
 Dialogue: 0,1:12:38.76,1:12:46.23,english,,0,0,0,,you could also explicitly convert the 3 to a float by saying, in parentheses, float.
-Dialogue: 0,1:12:38.76,1:12:46.23,chinese,,0,0,0,,您也可以明确地将 3 转换为浮点数，方法是在括号中说明 float。
+Dialogue: 0,1:12:38.76,1:12:46.23,chinese,,0,0,0,,你也可以明确地将 3 转换为浮点数，方法是在括号中说明 float。
 Dialogue: 0,1:12:46.23,1:12:48.05,english,,0,0,0,,This is what's called typecasting.
 Dialogue: 0,1:12:46.23,1:12:48.05,chinese,,0,0,0,,这就是所谓的类型化。
 Dialogue: 0,1:12:48.05,1:12:52.56,english,,0,0,0,,And this will just convert the thing right after it to that data type, if it's possible.
@@ -2056,7 +2024,7 @@ Dialogue: 0,1:14:48.69,1:14:52.44,chinese,,0,0,0,,但从今天起，解决方案
 Dialogue: 0,1:14:52.44,1:15:03.96,english,,0,0,0,,An array is a way of storing your data back to back to back in the computer's memory in such a way that you can access each individual member easily.
 Dialogue: 0,1:14:52.44,1:15:03.96,chinese,,0,0,0,,数组是将数据背靠背存储在计算机内存中的一种方式，这样可以方便地访问每个成员。
 Dialogue: 0,1:15:03.96,1:15:08.53,english,,0,0,0,,Put another way, with an array, you can instead do something like this.
-Dialogue: 0,1:15:03.96,1:15:08.53,chinese,,0,0,0,,换一种说法，使用数组时，您可以这样做。
+Dialogue: 0,1:15:03.96,1:15:08.53,chinese,,0,0,0,,换一种说法，使用数组时，你可以这样做。
 Dialogue: 0,1:15:08.53,1:15:20.70,english,,0,0,0,,Instead of saying int score1, int score2, int score3, giving each a value, you can first tell the computer, please give me a variable called scores-- plural, though you can call it anything you want--
 Dialogue: 0,1:15:08.53,1:15:20.70,chinese,,0,0,0,,与其说 int score1、int score2、int score3，给每个变量赋值，你可以先告诉计算机，请给我一个叫 scores 的变量，虽然它是复数，但你可以随便叫它什么。
 Dialogue: 0,1:15:20.70,1:15:24.09,english,,0,0,0,,of size three, each of which will be an integer.
@@ -2102,9 +2070,9 @@ Dialogue: 0,1:16:33.51,1:16:37.77,chinese,,0,0,0,,但这样做的好处是，你
 Dialogue: 0,1:16:37.77,1:16:39.24,english,,0,0,0,,It's just called scores.
 Dialogue: 0,1:16:37.77,1:16:39.24,chinese,,0,0,0,,这就是所谓的分数。
 Dialogue: 0,1:16:39.24,1:16:43.38,english,,0,0,0,,Yes, you need to go into the array to get individual values.
-Dialogue: 0,1:16:39.24,1:16:43.38,chinese,,0,0,0,,是的，您需要进入数组获取单个值。
+Dialogue: 0,1:16:39.24,1:16:43.38,chinese,,0,0,0,,是的，你需要进入数组获取单个值。
 Dialogue: 0,1:16:43.38,1:16:46.61,english,,0,0,0,,You need to index into it using those square brackets.
-Dialogue: 0,1:16:43.38,1:16:46.61,chinese,,0,0,0,,您需要使用方括号将索引输入其中。
+Dialogue: 0,1:16:43.38,1:16:46.61,chinese,,0,0,0,,你需要使用方括号将索引输入其中。
 Dialogue: 0,1:16:46.61,1:16:53.05,english,,0,0,0,,But at least you don't have this hackish approach of declaring a separate variable for each and every one of these values.
 Dialogue: 0,1:16:46.61,1:16:53.05,chinese,,0,0,0,,但至少你不用为每一个值都声明一个单独的变量，而采用这种黑客式的方法。
 Dialogue: 0,1:16:53.05,1:16:56.07,english,,0,0,0,,So let me go back to scores.c here.
@@ -2200,7 +2168,7 @@ Dialogue: 0,1:19:33.52,1:19:34.60,chinese,,0,0,0,,但现在它是动态的。
 Dialogue: 0,1:19:34.60,1:19:36.08,english,,0,0,0,,Now you don't need the source code.
 Dialogue: 0,1:19:34.60,1:19:36.08,chinese,,0,0,0,,现在你不需要源代码了。
 Dialogue: 0,1:19:36.08,1:19:37.74,english,,0,0,0,,You don't need to recompile the program.
-Dialogue: 0,1:19:36.08,1:19:37.74,chinese,,0,0,0,,您无需重新编译程序。
+Dialogue: 0,1:19:36.08,1:19:37.74,chinese,,0,0,0,,你无需重新编译程序。
 Dialogue: 0,1:19:37.74,1:19:39.67,english,,0,0,0,,It's just going to work again and again.
 Dialogue: 0,1:19:37.74,1:19:39.67,chinese,,0,0,0,,就这样一次又一次地成功。
 Dialogue: 0,1:19:39.67,1:19:41.09,english,,0,0,0,,But this, too.
@@ -2234,7 +2202,7 @@ Dialogue: 0,1:20:26.61,1:20:32.92,chinese,,0,0,0,,然后，在这里，让我做
 Dialogue: 0,1:20:32.92,1:20:34.22,english,,0,0,0,,Scores bracket--
 Dialogue: 0,1:20:32.92,1:20:34.22,chinese,,0,0,0,,分数
 Dialogue: 0,1:20:34.22,1:20:34.72,english,,0,0,0,,AUDIENCE: i.
-Dialogue: 0,1:20:34.22,1:20:34.72,chinese,,0,0,0,,听众： i.
+Dialogue: 0,1:20:34.22,1:20:34.72,chinese,,0,0,0,,观众： i.
 Dialogue: 0,1:20:34.72,1:20:40.72,english,,0,0,0,,DAVID MALAN: i, because that will use whatever i is, be it 0 or 1 or 2 in iteration.
 Dialogue: 0,1:20:34.72,1:20:40.72,chinese,,0,0,0,,DAVID MALAN：i，因为这将使用任何 i，无论是 0、1 还是 2。
 Dialogue: 0,1:20:40.72,1:20:47.00,english,,0,0,0,,And then I can get an int, asking the user for score, without having to repeat myself again and again.
@@ -2252,7 +2220,7 @@ Dialogue: 0,1:21:10.51,1:21:17.21,chinese,,0,0,0,,但变量不是字面上的 sc
 Dialogue: 0,1:21:17.21,1:21:19.03,english,,0,0,0,,It's an array called scores.
 Dialogue: 0,1:21:17.21,1:21:19.03,chinese,,0,0,0,,这是一个名为 scores 的数组。
 Dialogue: 0,1:21:19.03,1:21:28.81,english,,0,0,0,,But you can index into its three locations by using scores[0] to get the first, scores[1] to get the second, scores[2] to get the third.
-Dialogue: 0,1:21:19.03,1:21:28.81,chinese,,0,0,0,,但您可以通过使用 scores[0] 获得第一个位置，使用 scores[1] 获得第二个位置，使用 scores[2] 获得第三个位置，从而索引到这三个位置。
+Dialogue: 0,1:21:19.03,1:21:28.81,chinese,,0,0,0,,但你可以通过使用 scores[0] 获得第一个位置，使用 scores[1] 获得第二个位置，使用 scores[2] 获得第三个位置，从而索引到这三个位置。
 Dialogue: 0,1:21:28.81,1:21:29.99,english,,0,0,0,,But this is key.
 Dialogue: 0,1:21:28.81,1:21:29.99,chinese,,0,0,0,,但这是关键。
 Dialogue: 0,1:21:29.99,1:21:33.04,english,,0,0,0,,The memory is contiguous.
@@ -2338,7 +2306,7 @@ Dialogue: 0,1:23:58.57,1:24:01.93,chinese,,0,0,0,,在我的主函数中，什么
 Dialogue: 0,1:24:05.05,1:24:07.55,english,,0,0,0,,Among the highlighted lines, what jumps out at you as twice?
 Dialogue: 0,1:24:05.05,1:24:07.55,chinese,,0,0,0,,在突出显示的句子中，有哪些句子让你印象深刻？
 Dialogue: 0,1:24:07.55,1:24:09.02,english,,0,0,0,,AUDIENCE: The length of the array?
-Dialogue: 0,1:24:07.55,1:24:09.02,chinese,,0,0,0,,听众：阵列的长度？
+Dialogue: 0,1:24:07.55,1:24:09.02,chinese,,0,0,0,,观众：阵列的长度？
 Dialogue: 0,1:24:09.02,1:24:11.52,english,,0,0,0,,DAVID MALAN: Yeah, the length of the array, it's just three.
 Dialogue: 0,1:24:09.02,1:24:11.52,chinese,,0,0,0,,戴维-马兰：是的，阵列的长度只有三个。
 Dialogue: 0,1:24:11.52,1:24:18.44,english,,0,0,0,,Now it's not a huge deal that I typed the number three on line 8 and line 9, but this is exactly the kind of like shortcut that's going to get you in trouble eventually.
@@ -2465,7 +2433,7 @@ Dialogue: 0,1:29:06.45,1:29:11.53,english,,0,0,0,,You literally use square brack
 Dialogue: 0,1:29:06.45,1:29:11.53,chinese,,0,0,0,,从字面上看，你使用了方括号，但没有在方括号内指定长度。
 Dialogue: 0,1:29:11.53,1:29:12.74,english,,0,0,0,,Yeah?
 Dialogue: 0,1:29:12.74,1:29:16.41,english,,0,0,0,,AUDIENCE: What variable [INAUDIBLE] at the top?
-Dialogue: 0,1:29:12.74,1:29:16.41,chinese,,0,0,0,,听众：顶部有什么变量？
+Dialogue: 0,1:29:12.74,1:29:16.41,chinese,,0,0,0,,观众：顶部有什么变量？
 Dialogue: 0,1:29:16.41,1:29:18.41,english,,0,0,0,,DAVID MALAN: What about the variable at the top?
 Dialogue: 0,1:29:16.41,1:29:18.41,chinese,,0,0,0,,大卫-马兰：顶部的变量呢？
 Dialogue: 0,1:29:18.41,1:29:22.20,english,,0,0,0,,AUDIENCE: [INAUDIBLE]
@@ -2508,7 +2476,7 @@ Dialogue: 0,1:30:43.61,1:30:51.26,english,,0,0,0,,So the conventional way to do 
 Dialogue: 0,1:30:43.61,1:30:51.26,chinese,,0,0,0,,因此，传统的方法是复制粘贴函数的第一行代码，即所谓的原型或声明。
 Dialogue: 0,1:30:51.26,1:30:51.76,english,,0,0,0,,Yeah?
 Dialogue: 0,1:30:51.76,1:30:55.66,english,,0,0,0,,AUDIENCE: Is there a library if you don't know the size of the array?
-Dialogue: 0,1:30:51.76,1:30:55.66,chinese,,0,0,0,,听众：如果不知道数组的大小，有图书馆吗？
+Dialogue: 0,1:30:51.76,1:30:55.66,chinese,,0,0,0,,观众：如果不知道数组的大小，有图书馆吗？
 Dialogue: 0,1:30:55.66,1:30:58.12,english,,0,0,0,,DAVID MALAN: Really good question, and a perfect segue way.
 Dialogue: 0,1:30:55.66,1:30:58.12,chinese,,0,0,0,,大卫-马兰：真是个好问题，也是个完美的切入点。
 Dialogue: 0,1:30:58.12,1:31:01.07,english,,0,0,0,,Is there a library you can use if you don't know the size of the array?
@@ -2526,7 +2494,7 @@ Dialogue: 0,1:31:25.16,1:31:25.66,english,,0,0,0,,Why?
 Dialogue: 0,1:31:25.66,1:31:32.44,english,,0,0,0,,It's just convenient to put them at the very top of the file because everyone, you, your colleagues, your TAs are going to see them at the top of the code.
 Dialogue: 0,1:31:25.66,1:31:32.44,chinese,,0,0,0,,把它们放在文件的最上面很方便，因为每个人、你、你的同事、你的助教都会在代码的最上面看到它们。
 Dialogue: 0,1:31:32.44,1:31:36.13,english,,0,0,0,,But you really shouldn't be using them everywhere throughout your code.
-Dialogue: 0,1:31:32.44,1:31:36.13,chinese,,0,0,0,,但您真的不应该在代码中到处使用它们。
+Dialogue: 0,1:31:32.44,1:31:36.13,chinese,,0,0,0,,但你真的不应该在代码中到处使用它们。
 Dialogue: 0,1:31:36.13,1:31:40.61,english,,0,0,0,,It'd be better if the average function, itself, were independent of that special variable.
 Dialogue: 0,1:31:36.13,1:31:40.61,chinese,,0,0,0,,如果平均函数本身与该特殊变量无关，那就更好了。
 Dialogue: 0,1:31:40.61,1:31:42.02,english,,0,0,0,,So by that, I mean this.
@@ -2620,7 +2588,7 @@ Dialogue: 0,1:34:39.14,1:34:41.58,chinese,,0,0,0,,我们不是在处理 Unicode 
 Dialogue: 0,1:34:41.58,1:34:42.83,english,,0,0,0,,But the point is the same.
 Dialogue: 0,1:34:41.58,1:34:42.83,chinese,,0,0,0,,但问题是一样的。
 Dialogue: 0,1:34:42.83,1:34:45.17,english,,0,0,0,,You don't have to use four bytes to store these numbers.
-Dialogue: 0,1:34:42.83,1:34:45.17,chinese,,0,0,0,,您不必使用四个字节来存储这些数字。
+Dialogue: 0,1:34:42.83,1:34:45.17,chinese,,0,0,0,,你不必使用四个字节来存储这些数字。
 Dialogue: 0,1:34:45.17,1:34:51.42,english,,0,0,0,,You can use a different data type like chars, and underneath the hood, it's, indeed, going to use just single bytes for each.
 Dialogue: 0,1:34:45.17,1:34:51.42,chinese,,0,0,0,,你可以使用不同的数据类型，如字符，而在引擎盖下，它确实会为每个数据使用单字节。
 Dialogue: 0,1:34:51.42,1:34:55.85,english,,0,0,0,,But this is sort of like a-- this isn't really how we implement strings, right?
@@ -2662,7 +2630,7 @@ Dialogue: 0,1:35:59.63,1:36:06.99,chinese,,0,0,0,,但事实证明，有趣的是
 Dialogue: 0,1:36:06.99,1:36:12.09,english,,0,0,0,,Kind of leading up to this-- what is a string, if this is how it's laid out in memory?
 Dialogue: 0,1:36:06.99,1:36:12.09,chinese,,0,0,0,,如果记忆中的字符串是这样排列的，那么字符串又是什么呢？
 Dialogue: 0,1:36:12.09,1:36:13.19,english,,0,0,0,,AUDIENCE: An array.
-Dialogue: 0,1:36:12.09,1:36:13.19,chinese,,0,0,0,,听众：一个阵列。
+Dialogue: 0,1:36:12.09,1:36:13.19,chinese,,0,0,0,,观众：一个阵列。
 Dialogue: 0,1:36:13.19,1:36:15.83,english,,0,0,0,,DAVID MALAN: Literally, it's just an array of characters.
 Dialogue: 0,1:36:13.19,1:36:15.83,chinese,,0,0,0,,戴维-马兰：从字面上看，这只是一系列角色。
 Dialogue: 0,1:36:15.83,1:36:18.59,english,,0,0,0,,And we didn't have to know about arrays last week to use strings.
@@ -2754,7 +2722,7 @@ Dialogue: 0,1:39:03.80,1:39:05.94,chinese,,0,0,0,,我们一般会这样写人物
 Dialogue: 0,1:39:05.94,1:39:09.35,english,,0,0,0,,And again, backslash 0 is just special symbology.
 Dialogue: 0,1:39:05.94,1:39:09.35,chinese,,0,0,0,,同样，反斜杠 0 只是一种特殊符号。
 Dialogue: 0,1:39:09.35,1:39:13.19,english,,0,0,0,,It's what the programmer types to make clear that you're not saying, HI!, 0.
-Dialogue: 0,1:39:09.35,1:39:13.19,chinese,,0,0,0,,这是程序员输入的内容，以明确您不是在说：HI！，0。
+Dialogue: 0,1:39:09.35,1:39:13.19,chinese,,0,0,0,,这是程序员输入的内容，以明确你不是在说：HI！，0。
 Dialogue: 0,1:39:13.19,1:39:15.98,english,,0,0,0,,You're saying HI!, and then it's a special 0.
 Dialogue: 0,1:39:13.19,1:39:15.98,chinese,,0,0,0,,你说 "HI！"，然后就是特别的 "0"。
 Dialogue: 0,1:39:15.98,1:39:22.22,english,,0,0,0,,Specifically, it is eight 0 bits that indicate that it's the end of the string.
@@ -2773,9 +2741,9 @@ Dialogue: 0,1:39:39.08,1:39:42.83,chinese,,0,0,0,,NUL，程序员用它来表示
 Dialogue: 0,1:39:42.83,1:39:46.55,english,,0,0,0,,All 0 bits that means the string ends here.
 Dialogue: 0,1:39:42.83,1:39:46.55,chinese,,0,0,0,,全部为 0 位，表示字符串到此为止。
 Dialogue: 0,1:39:46.55,1:39:48.51,english,,0,0,0,,This all happens automatically for you.
-Dialogue: 0,1:39:46.55,1:39:48.51,chinese,,0,0,0,,这一切都会自动为您完成。
+Dialogue: 0,1:39:46.55,1:39:48.51,chinese,,0,0,0,,这一切都会自动为你完成。
 Dialogue: 0,1:39:48.51,1:39:53.42,english,,0,0,0,,You do not need to create these null characters or these zeros.
-Dialogue: 0,1:39:48.51,1:39:53.42,chinese,,0,0,0,,您无需创建这些空字符或零。
+Dialogue: 0,1:39:48.51,1:39:53.42,chinese,,0,0,0,,你无需创建这些空字符或零。
 Dialogue: 0,1:39:53.42,1:40:00.03,english,,0,0,0,,Any questions then, on this implementation thus far?
 Dialogue: 0,1:39:53.42,1:40:00.03,chinese,,0,0,0,,那么，对迄今为止的实施情况还有什么问题吗？
 Dialogue: 0,1:40:00.03,1:40:01.82,english,,0,0,0,,Any questions here?
@@ -2846,7 +2814,7 @@ Dialogue: 0,1:41:50.79,1:41:54.45,chinese,,0,0,0,,当然，我们从上周开始
 Dialogue: 0,1:41:54.45,1:41:59.37,english,,0,0,0,,String s equals quote unquote, double quotes "HI!"
 Dialogue: 0,1:41:54.45,1:41:59.37,chinese,,0,0,0,,字符串 s 等于引号未加引号，双引号 "HI!"
 Dialogue: 0,1:41:59.37,1:42:02.52,english,,0,0,0,,For this, no, because of these training wheels,
-Dialogue: 0,1:41:59.37,1:42:02.52,chinese,,0,0,0,,因为这个，不，是因为这些训练轮、
+Dialogue: 0,1:41:59.37,1:42:02.52,chinese,,0,0,0,,因为这个，不，是因为这些辅助轮、
 Dialogue: 0,1:42:02.52,1:42:04.56,english,,0,0,0,,I need to include the CS50 library.
 Dialogue: 0,1:42:02.52,1:42:04.56,chinese,,0,0,0,,我需要加入 CS50 库。
 Dialogue: 0,1:42:04.56,1:42:06.58,english,,0,0,0,,But we'll come back to that in the coming weeks.
@@ -2912,7 +2880,7 @@ Dialogue: 0,1:43:51.62,1:43:53.30,chinese,,0,0,0,,因为 s 是一个字符串。
 Dialogue: 0,1:43:53.30,1:44:02.24,english,,0,0,0,,We'll see in a couple of weeks that s is, essentially, implemented underneath the hood, indeed, as an array, but that happens automatically for you.
 Dialogue: 0,1:43:53.30,1:44:02.24,chinese,,0,0,0,,我们将在几周后看到，s 本质上是作为一个数组在引擎盖下实现的，但它会自动为你实现。
 Dialogue: 0,1:44:02.24,1:44:06.80,english,,0,0,0,,You can treat s as just a variable name without square brackets.
-Dialogue: 0,1:44:02.24,1:44:06.80,chinese,,0,0,0,,您可以将 s 仅作为变量名处理，而不去掉方括号。
+Dialogue: 0,1:44:02.24,1:44:06.80,chinese,,0,0,0,,你可以将 s 仅作为变量名处理，而不去掉方括号。
 Dialogue: 0,1:44:06.80,1:44:13.73,english,,0,0,0,,You will use square brackets when you have arrays of ints or you manually create arrays of chars or doubles or floats or anything else.
 Dialogue: 0,1:44:06.80,1:44:13.73,chinese,,0,0,0,,在使用 int 数组或手动创建字符数组、双倍数组、浮点数组或其他数组时，需要使用方括号。
 Dialogue: 0,1:44:13.73,1:44:14.90,english,,0,0,0,,But strings are special.
@@ -3069,11 +3037,11 @@ Dialogue: 0,1:49:20.71,1:49:28.71,chinese,,0,0,0,,那么，在我们继续前进
 Dialogue: 0,1:49:28.71,1:49:29.43,english,,0,0,0,,No?
 Dialogue: 0,1:49:29.43,1:49:30.03,english,,0,0,0,,Yeah?
 Dialogue: 0,1:49:30.03,1:49:33.39,english,,0,0,0,,AUDIENCE: Does the new line character not [INAUDIBLE]??
-Dialogue: 0,1:49:30.03,1:49:33.39,chinese,,0,0,0,,听众：新的行字符不[听不清]吗？
+Dialogue: 0,1:49:30.03,1:49:33.39,chinese,,0,0,0,,观众：新的行字符不[听不清]吗？
 Dialogue: 0,1:49:33.39,1:49:36.03,english,,0,0,0,,DAVID MALAN: Does the new line character-- say that once more?
 Dialogue: 0,1:49:33.39,1:49:36.03,chinese,,0,0,0,,
 Dialogue: 0,1:49:36.03,1:49:38.59,english,,0,0,0,,AUDIENCE: Does the new line character take up any space?
-Dialogue: 0,1:49:36.03,1:49:38.59,chinese,,0,0,0,,听众：新行字符是否占用空间？
+Dialogue: 0,1:49:36.03,1:49:38.59,chinese,,0,0,0,,观众：新行字符是否占用空间？
 Dialogue: 0,1:49:38.59,1:49:40.18,english,,0,0,0,,DAVID MALAN: Ah, really good question.
 Dialogue: 0,1:49:38.59,1:49:40.18,chinese,,0,0,0,,大卫-马兰：啊，真是个好问题。
 Dialogue: 0,1:49:40.18,1:49:42.73,english,,0,0,0,,Does the new line character take up any space?
@@ -3211,11 +3179,11 @@ Dialogue: 0,1:54:29.78,1:54:30.91,chinese,,0,0,0,,还有很多很多。
 Dialogue: 0,1:54:30.91,1:54:40.58,english,,0,0,0,,In fact, yet another library that might be useful moving forward is this one, ctype, which relates to C data types and lots of functions therein that can be useful.
 Dialogue: 0,1:54:30.91,1:54:40.58,chinese,,0,0,0,,事实上，还有一个库在未来可能会很有用，那就是 ctype 库，它与 C 数据类型有关，其中有很多有用的函数。
 Dialogue: 0,1:54:40.58,1:54:49.46,english,,0,0,0,,For instance, if you review its documentation in the manual pages online, you'll see that there are functions via which we can solve problems like this.
-Dialogue: 0,1:54:40.58,1:54:49.46,chinese,,0,0,0,,例如，如果您查看在线手册页面中的文档，就会发现我们可以通过一些功能来解决类似问题。
+Dialogue: 0,1:54:40.58,1:54:49.46,chinese,,0,0,0,,例如，如果你查看在线手册页面中的文档，就会发现我们可以通过一些功能来解决类似问题。
 Dialogue: 0,1:54:49.46,1:54:53.68,english,,0,0,0,,Let me go ahead and propose here-- let me see.
 Dialogue: 0,1:54:49.46,1:54:53.68,chinese,,0,0,0,,让我在这里提议 -- 让我看看。
 Dialogue: 0,1:54:53.68,1:55:06.70,english,,0,0,0,,Let's do an example here involving-- how about checking if something is uppercase or lowercase, and converting it to uppercase only.
-Dialogue: 0,1:54:53.68,1:55:06.70,chinese,,0,0,0,,让我们举个例子--如何检查某些内容是大写还是小写，并将其转换为大写。
+Dialogue: 0,1:54:53.68,1:55:06.70,chinese,,0,0,0,,让我们举个例子--如何检查某些内容是大写还是小写，还会其转换为大写。
 Dialogue: 0,1:55:06.70,1:55:10.81,english,,0,0,0,,Let me go back to VS Code, and code a program called uppercase.c.
 Dialogue: 0,1:55:06.70,1:55:10.81,chinese,,0,0,0,,让我回到 VS 代码，编写一个名为 uppercase.c 的程序。
 Dialogue: 0,1:55:10.81,1:55:15.22,english,,0,0,0,,In this, file I'm going to start by including now, as always, cs50.h.
@@ -3293,7 +3261,7 @@ Dialogue: 0,1:57:44.34,1:57:48.18,chinese,,0,0,0,,同样，如果你理解了这
 Dialogue: 0,1:57:48.18,1:57:57.04,english,,0,0,0,,Whatever s[i] is, if I know on line 13 that it's lowercase, do I want to add or subtract 32?
 Dialogue: 0,1:57:48.18,1:57:57.04,chinese,,0,0,0,,无论 s[i] 是什么，如果我在第 13 行知道它是小写，我是要加上还是减去 32 呢？
 Dialogue: 0,1:57:57.04,1:57:57.84,english,,0,0,0,,AUDIENCE: Subtract.
-Dialogue: 0,1:57:57.04,1:57:57.84,chinese,,0,0,0,,听众：减去
+Dialogue: 0,1:57:57.04,1:57:57.84,chinese,,0,0,0,,观众：减去
 Dialogue: 0,1:57:57.84,1:58:06.56,english,,0,0,0,,DAVID MALAN: So I want to subtract because I want to go from like 97 to 65 or 98 to 66, so indeed, if you do some quick math, that gives you 32.
 Dialogue: 0,1:57:57.84,1:58:06.56,chinese,,0,0,0,,戴维-马兰：所以我想做减法，因为我想从 97 减到 65，或者从 98 减到 66。
 Dialogue: 0,1:58:06.56,1:58:16.37,english,,0,0,0,,So it's suffices to just treat chars as numbers, subtract the 32, and printing it with %c, I think, will just convert lowercase to uppercase.
@@ -3516,7 +3484,7 @@ Dialogue: 0,2:07:13.22,2:07:15.48,chinese,,0,0,0,,观众：所有的字符都会
 Dialogue: 0,2:07:15.48,2:07:16.05,english,,0,0,0,,DAVID MALAN: Exactly.
 Dialogue: 0,2:07:15.48,2:07:16.05,chinese,,0,0,0,,大卫-马兰：没错。
 Dialogue: 0,2:07:16.05,2:07:19.83,english,,0,0,0,,It will be all of the characters, or really all of the words that you type at the prompt.
-Dialogue: 0,2:07:16.05,2:07:19.83,chinese,,0,0,0,,这将是您在提示符下输入的所有字符，或者说所有单词。
+Dialogue: 0,2:07:16.05,2:07:19.83,chinese,,0,0,0,,这将是你在提示符下输入的所有字符，或者说所有单词。
 Dialogue: 0,2:07:19.83,2:07:21.76,english,,0,0,0,,Argc, as an int, any guess?
 Dialogue: 0,2:07:19.83,2:07:21.76,chinese,,0,0,0,,Argc，作为一个 int，猜猜看？
 Dialogue: 0,2:07:24.36,2:07:30.29,english,,0,0,0,,Argument count is what it generally stands for, though technically, you could call these things anything.
@@ -3653,7 +3621,7 @@ Dialogue: 0,2:12:13.17,2:12:14.82,chinese,,0,0,0,,所以，cowsay 并不是我�
 Dialogue: 0,2:12:14.82,2:12:16.03,english,,0,0,0,,It's been around for decades.
 Dialogue: 0,2:12:14.82,2:12:16.03,chinese,,0,0,0,,它已经存在了几十年。
 Dialogue: 0,2:12:16.03,2:12:18.87,english,,0,0,0,,But we installed it in VS Code for you in the cloud.
-Dialogue: 0,2:12:16.03,2:12:18.87,chinese,,0,0,0,,但我们在云中为您将其安装到了 VS 代码中。
+Dialogue: 0,2:12:16.03,2:12:18.87,chinese,,0,0,0,,但我们在云中为你将其安装到了 VS 代码中。
 Dialogue: 0,2:12:18.87,2:12:21.33,english,,0,0,0,,It takes at least one command line argument.
 Dialogue: 0,2:12:18.87,2:12:21.33,chinese,,0,0,0,,它至少需要一个命令行参数。
 Dialogue: 0,2:12:21.33,2:12:23.07,english,,0,0,0,,What do you want the cow to say?
@@ -3701,7 +3669,7 @@ Dialogue: 0,2:14:11.04,2:14:13.05,chinese,,0,0,0,,报告问题或联系技术支
 Dialogue: 0,2:14:13.05,2:14:23.64,english,,0,0,0,,But very often in our human world on Macs, PCs, and phones, you see cryptic error codes, like literally numbers that probably only Zoom knows, or Microsoft or Google or whatever company
 Dialogue: 0,2:14:13.05,2:14:23.64,chinese,,0,0,0,,但在我们人类世界的 Mac、PC 和手机上，你经常会看到隐晦的错误代码，比如字面上的数字，可能只有 Zoom、微软、谷歌或其他公司知道。
 Dialogue: 0,2:14:23.64,2:14:25.05,english,,0,0,0,,wrote the software you're using.
-Dialogue: 0,2:14:23.64,2:14:25.05,chinese,,0,0,0,,编写了您正在使用的软件。
+Dialogue: 0,2:14:23.64,2:14:25.05,chinese,,0,0,0,,编写了你正在使用的软件。
 Dialogue: 0,2:14:25.05,2:14:32.07,english,,0,0,0,,But that number corresponds to a specific error that some human somewhere knows might very well happen.
 Dialogue: 0,2:14:25.05,2:14:32.07,chinese,,0,0,0,,但这个数字对应的是某个地方的某个人知道很可能会发生的特定错误。
 Dialogue: 0,2:14:32.07,2:14:38.26,english,,0,0,0,,These are used similarly, although under a different name that we'll talk about later in the term, on the web as well.
@@ -3840,9 +3808,9 @@ Dialogue: 0,2:19:27.65,2:19:34.04,chinese,,0,0,0,,除此之外，我们还可以
 Dialogue: 0,2:19:34.04,2:19:45.98,english,,0,0,0,,So cryptography is just the art, the science of encrypting information, scrambling information so that if you have a secret message to send in so-called plaintext, you can run it through some algorithm
 Dialogue: 0,2:19:34.04,2:19:45.98,chinese,,0,0,0,,因此，密码学就是一门艺术，一门对信息进行加密、扰乱的科学，这样，如果你有一条秘密信息要以所谓的明文发送，你就可以通过某种算法来处理它。
 Dialogue: 0,2:19:45.98,2:19:49.91,english,,0,0,0,,and turn it into what's called ciphertext, thereby, encrypting it.
-Dialogue: 0,2:19:45.98,2:19:49.91,chinese,,0,0,0,,并将其转化为所谓的密文，从而对其进行加密。
+Dialogue: 0,2:19:45.98,2:19:49.91,chinese,,0,0,0,,还会其转化为所谓的密文，从而对其进行加密。
 Dialogue: 0,2:19:49.91,2:19:59.88,english,,0,0,0,,And only someone who knows what algorithm you've used and what input you've used to the algorithm, theoretically, can decrypt that process and convert it back to the original message.
-Dialogue: 0,2:19:49.91,2:19:59.88,chinese,,0,0,0,,从理论上讲，只有知道你使用了什么算法以及你对算法使用了什么输入的人，才能解密这一过程，并将其转换回原始信息。
+Dialogue: 0,2:19:49.91,2:19:59.88,chinese,,0,0,0,,从理论上讲，只有知道你使用了什么算法以及你对算法使用了什么输入的人，才能解密这一过程，还会其转换回原始信息。
 Dialogue: 0,2:19:59.88,2:20:03.03,english,,0,0,0,,So if we use our mental model from last week, here is a problem.
 Dialogue: 0,2:19:59.88,2:20:03.03,chinese,,0,0,0,,因此，如果我们使用上周的思维模式，问题就来了。
 Dialogue: 0,2:20:03.03,2:20:04.91,english,,0,0,0,,Here is an input and output.
@@ -3870,7 +3838,7 @@ Dialogue: 0,2:20:48.75,2:20:53.09,chinese,,0,0,0,,比如说，你今天可能第
 Dialogue: 0,2:20:53.09,2:20:54.25,english,,0,0,0,,And we've seen this in code.
 Dialogue: 0,2:20:53.09,2:20:54.25,chinese,,0,0,0,,我们已经在代码中看到了这一点。
 Dialogue: 0,2:20:54.25,2:20:57.18,english,,0,0,0,,You can give multiple inputs or arguments to functions.
-Dialogue: 0,2:20:54.25,2:20:57.18,chinese,,0,0,0,,您可以为函数提供多个输入或参数。
+Dialogue: 0,2:20:54.25,2:20:57.18,chinese,,0,0,0,,你可以为函数提供多个输入或参数。
 Dialogue: 0,2:20:57.18,2:21:02.51,english,,0,0,0,,So in this black box, can you imagine passing in the message you want to send, and then some secret.
 Dialogue: 0,2:20:57.18,2:21:02.51,chinese,,0,0,0,,所以，在这个黑盒子里，你能想象传入你想发送的信息，然后再传入一些秘密吗？
 Dialogue: 0,2:21:02.51,2:21:10.31,english,,0,0,0,,So for instance, suppose that, the simplest thing I could think of as a kid was instead of sending the letter A, why don't I write the letter B?
