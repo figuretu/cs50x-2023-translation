@@ -15,9 +15,8 @@ Video File: ../video/Population Growth - Walkthrough - CS50 Labs 2020.mp4
 Video AR Mode: 4
 Video AR Value: 1.777778
 Video Zoom Percent: 0.375000
-Scroll Position: 147
-Active Line: 155
-Video Position: 11219
+Active Line: 129
+Video Position: 9022
 
 [V4+ Styles]
 Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
@@ -157,11 +156,11 @@ Dialogue: 0,0:06:06.19,0:06:13.53,chinese,,0,0,0,,比如说，你可能需要反
 Dialogue: 0,0:06:13.53,0:06:15.90,english,,0,0,0,,You might do that using a formula like this.
 Dialogue: 0,0:06:13.53,0:06:15.90,chinese,,0,0,0,,使用的公式如下。
 Dialogue: 0,0:06:15.90,0:06:27.99,english,,0,0,0,,If you have a variable called n inside of which is your current population, you can update the value of n for the next year using a line that says n equals n plus n over 3, the number of llamas
-Dialogue: 0,0:06:15.90,0:06:27.99,chinese,,0,0,0,,如果你声明一个变量 n，意为当前的种群数量，就可以更新下一年的 n 值了，【口述代码段】。
+Dialogue: 0,0:06:15.90,0:06:27.99,chinese,,0,0,0,,如果你声明一个变量 n，意为当前的种群数量，就可以更新下一年的 n 值了，【口述代码】。
 Dialogue: 0,0:06:27.99,0:06:34.32,english,,0,0,0,,we're adding, minus n over 4, the number of llamas that we're losing in that particular year.
-Dialogue: 0,0:06:27.99,0:06:34.32,chinese,,0,0,0,,【口述代码段】
+Dialogue: 0,0:06:27.99,0:06:34.32,chinese,,0,0,0,,【口述代码】
 Dialogue: 0,0:06:34.32,0:06:47.62,english,,0,0,0,,And finally, once you've completed the calculation, you can print out a variable using the print f function, saying, printf years colon, and then %i, we're %i is going to stand in for an integer.
-Dialogue: 0,0:06:34.32,0:06:47.62,chinese,,0,0,0,,完成计算以后，可以使用 printf 函数打印出一个变量，例如，【口述代码段】。
+Dialogue: 0,0:06:34.32,0:06:47.62,chinese,,0,0,0,,完成计算以后，可以使用 printf 函数打印出一个变量，例如，【口述代码】。
 Dialogue: 0,0:06:47.62,0:06:50.61,english,,0,0,0,,Which Integer Well, that you specify after a comma.
 Dialogue: 0,0:06:47.62,0:06:50.61,chinese,,0,0,0,,%i 是逗号后指定整数的占位符。
 Dialogue: 0,0:06:50.61,0:06:56.85,english,,0,0,0,,And here we're saying, print out the value of n as the integer to print to the user.
