@@ -15,9 +15,9 @@ Video File: ../video/CS50x 2023 - Lecture 2 - Arrays.mp4
 Video AR Mode: 4
 Video AR Value: 1.777778
 Video Zoom Percent: 0.375000
-Scroll Position: 2730
-Active Line: 2721
-Video Position: 145674
+Scroll Position: 3728
+Active Line: 3739
+Video Position: 204125
 
 [V4+ Styles]
 Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
@@ -3767,7 +3767,7 @@ Dialogue: 0,2:21:32.09,2:21:41.30,chinese,,0,0,0,,现在，老师和同学不仅
 Dialogue: 0,2:21:41.30,2:21:45.20,english,,0,0,0,,Did you add 1 to every letter, 2 to every letter, 25 to every letter?
 Dialogue: 0,2:21:41.30,2:21:45.20,chinese,,0,0,0,,你是每个字母加 1，每个字母加 2，还是每个字母加 25？
 Dialogue: 0,2:21:45.20,2:21:51.16,english,,0,0,0,,Now if they're super smart and probably not the young age in this story, they could also just try all possibilities.
-Dialogue: 0,2:21:45.20,2:21:51.16,chinese,,0,0,0,,现在，如果他们超级聪明，不是图样图森破，他们可以尝试所有的可能性来破解加密。
+Dialogue: 0,2:21:45.20,2:21:51.16,chinese,,0,0,0,,现在，如果他们超级聪明，其实可以尝试所有的可能性来破解加密。
 Dialogue: 0,2:21:51.16,2:21:53.04,english,,0,0,0,,And that would be an attack on the algorithm.
 Dialogue: 0,2:21:51.16,2:21:53.04,chinese,,0,0,0,,这就是对算法的攻击。
 Dialogue: 0,2:21:53.04,2:21:56.97,english,,0,0,0,,This is not a sophisticated algorithm, but it's enough to send a message in class.

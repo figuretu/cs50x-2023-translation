@@ -17,9 +17,9 @@ Video File: ../video/CS50x 2023 - Lecture 0 - Scratch.mp4
 Video AR Mode: 4
 Video AR Value: 1.777778
 Video Zoom Percent: 0.375000
-Scroll Position: 1484
-Active Line: 1490
-Video Position: 89206
+Scroll Position: 3216
+Active Line: 3210
+Video Position: 162905
 
 [V4+ Styles]
 Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
@@ -178,11 +178,11 @@ Dialogue: 0,0:07:04.98,0:07:10.67,chinese,,0,0,0,,最初你将使用基于云的
 Dialogue: 0,0:07:10.67,0:07:18.84,english,,0,0,0,,It'll just work right off the bat, but we'll use that to others ultimately to then explore ideas in computer science, principles that you can apply.
 Dialogue: 0,0:07:10.67,0:07:18.84,chinese,,0,0,0,,它一开始就能直接工作，我们将用 VS Code \N探索计算机科学中的其他想法和原则，以便你可以应用它们。
 Dialogue: 0,0:07:18.84,0:07:27.21,english,,0,0,0,,And we'll take a look underneath the hood, so to speak, of your computer at your memory or RAM, Random Access Memory, where all of the data is ultimately going to be stored.
-Dialogue: 0,0:07:18.84,0:07:27.21,chinese,,0,0,0,,我们将从电脑盖下看一看内存也就是 RAM（随机存取存储器），所有数据最终都将存储在这里。
+Dialogue: 0,0:07:18.84,0:07:27.21,chinese,,0,0,0,,我们将从计算机底层看一看内存也就是 RAM（随机存取存储器），所有数据最终都将存储在这里。
 Dialogue: 0,0:07:27.21,0:07:31.47,english,,0,0,0,,We'll also take a look thereafter at bugs. A bug is a mistake in a program.
-Dialogue: 0,0:07:27.21,0:07:31.47,chinese,,0,0,0,,之后，我们还将研究程序中的错误。错误在程序中被称为 bug。
+Dialogue: 0,0:07:27.21,0:07:31.47,chinese,,0,0,0,,之后，我们还会研究程序中的错误。错误在程序中被称为 bug。
 Dialogue: 0,0:07:31.47,0:07:41.04,english,,0,0,0,,Here is an actual bug in an actual computer in yesteryear, but we'll teach you how to debug programs, find your own mistakes, find others' mistakes, and improve that code as well.
-Dialogue: 0,0:07:31.47,0:07:41.04,chinese,,0,0,0,,这是一张真虫子（bug）图片，我们会教你如何调试（debug）程序，\N找到自己的错误（bug），找到别人的bug，并改进代码。
+Dialogue: 0,0:07:31.47,0:07:41.04,chinese,,0,0,0,,这是一张真虫子（bug）图片，我们会教你如何调试（debug）程序，\N找到自己的错误（bug），找到别人的 bug，并改进代码。
 Dialogue: 0,0:07:41.04,0:07:47.34,english,,0,0,0,,We'll transition then to algorithms, step-by-step instructions for solving some problems, which we'll touch on today too.
 Dialogue: 0,0:07:41.04,0:07:47.34,chinese,,0,0,0,,然后，我们将过渡到算法，也就是解决一些问题的分步指导，我们今天也会涉及到一点点。
 Dialogue: 0,0:07:47.34,0:07:51.12,english,,0,0,0,,And if you picture here, this is actually a pretty representative problem.
@@ -202,7 +202,7 @@ Dialogue: 0,0:08:20.88,0:08:24.93,chinese,,0,0,0,,就像你会如何教一个比
 Dialogue: 0,0:08:24.93,0:08:28.74,english,,0,0,0,,How would you compel your Mac or PC or phone to do something like that?
 Dialogue: 0,0:08:24.93,0:08:28.74,chinese,,0,0,0,,你如何驱使你的 Mac、PC 或手机做这样的事情？
 Dialogue: 0,0:08:28.74,0:08:32.57,english,,0,0,0,,You can't just wave your hand, and say, oh, figure it out. Move things around.
-Dialogue: 0,0:08:28.74,0:08:32.57,chinese,,0,0,0,,你不能只是挥挥手，然后说，哦，想想办法，把东西搬来搬去。
+Dialogue: 0,0:08:28.74,0:08:32.57,chinese,,0,0,0,,你不能只是指指点点，然后说，哦，想想办法，把东西搬来搬去。
 Dialogue: 0,0:08:32.57,0:08:36.81,english,,0,0,0,,You have to express yourself more methodically. So we'll translate even ideas like this into code too.
 Dialogue: 0,0:08:32.57,0:08:36.81,chinese,,0,0,0,,你得更有条理地表达自己。因此，我们将把像这样的想法转化为代码。
 Dialogue: 0,0:08:36.81,0:08:42.78,english,,0,0,0,,And that's what the Googles and others of the world are doing constantly, as they sort and organize the world's information.
@@ -256,11 +256,11 @@ Dialogue: 0,0:10:34.44,0:10:40.51,chinese,,0,0,0,,比如，你该如何构建结
 Dialogue: 0,0:10:40.51,0:10:48.04,english,,0,0,0,,And so what you're seeing here is a glimpse, as some of you might have recognized, of some Harry Potter universe names, but they're organized somewhat alphabetically.
 Dialogue: 0,0:10:40.51,0:10:48.04,chinese,,0,0,0,,你们在这里看到的是哈利-波特宇宙中的一些名字，\N有些人可能已经认出来了，它们是按字母顺序排列的。
 Dialogue: 0,0:10:48.04,0:10:58.44,english,,0,0,0,,And notice, that any time there's multiple people with a name that starts with H, like Hermione, Harry, and Hagrid, well, they can't all fit in that mailbox, if each of these squares along the left is that same mailbox.
-Dialogue: 0,0:10:48.04,0:10:58.44,chinese,,0,0,0,,注意，有多个名字以H开头的人，比如Hermione Harry  Hagrid，它们不能同时放入一个邮箱里，如果每个沿左侧的方块都代表同一个邮箱的话。
+Dialogue: 0,0:10:48.04,0:10:58.44,chinese,,0,0,0,,注意，有多个名字以 H 开头的人，比如 Hermione Harry  Hagrid，\N它们不能同时放入一个邮箱里，如果每个沿左侧的方块都代表同一个邮箱的话。
 Dialogue: 0,0:10:58.44,0:11:02.49,english,,0,0,0,,So you have to chain them together. Well, you'll learn how to do that in code.
 Dialogue: 0,0:10:58.44,0:11:02.49,chinese,,0,0,0,,所以你必须将它们串起来。你将学会怎么用代码做到这件事。
 Dialogue: 0,0:11:02.49,0:11:07.44,english,,0,0,0,,So that even if you get more data than you expect, if your business is booming, and you're some web-based business,
-Dialogue: 0,0:11:02.49,0:11:07.44,chinese,,0,0,0,,即使你获得比预期更多的数据，如果你的业务蓬勃发展，成为一家基于网络的企业，
+Dialogue: 0,0:11:02.49,0:11:07.44,chinese,,0,0,0,,即使你获得比预期更多的数据，如果你的业务蓬勃发展，成为一家互联网企业，
 Dialogue: 0,0:11:07.44,0:11:12.79,english,,0,0,0,,how do you keep adding and adding information to your software to actually keep up with it?
 Dialogue: 0,0:11:07.44,0:11:12.79,chinese,,0,0,0,,你该如何不断添加和处理信息，以确保你的软件跟得上业务的发展呢？
 Dialogue: 0,0:11:12.79,0:11:16.48,english,,0,0,0,,But this, again, is what code's going to soon look like, as soon as next week,
@@ -272,7 +272,7 @@ Dialogue: 0,0:11:25.19,0:11:33.52,chinese,,0,0,0,,这门课程在我那个时候
 Dialogue: 0,0:11:33.52,0:11:40.54,english,,0,0,0,,I use C, generally, September, October, November, December, when teaching CS50 itself. But it's everywhere, nonetheless.
 Dialogue: 0,0:11:33.52,0:11:40.54,chinese,,0,0,0,,我通常在 9 月、10 月、11 月和 12 月的时候，教授 CS50 课程时使用 C 语言。\N但无论如何，C 语言无处不在。
 Dialogue: 0,0:11:40.54,0:11:52.36,english,,0,0,0,,In fact, even today's other languages, with which you might be familiar, like Python and Java and yet others still, you see this same primitive language underneath the hood, because it's so darn fast.
-Dialogue: 0,0:11:40.54,0:11:52.36,chinese,,0,0,0,,其实吧，即使是你可能熟悉的现今的其他语言，比如Python、Java等等，\N你仍然会看到在底层有 C，因为它实在是太快了。
+Dialogue: 0,0:11:40.54,0:11:52.36,chinese,,0,0,0,,其实吧，即使是你可能熟悉的现今的其他语言，比如 Python、Java 等等，\N你仍然会看到在底层有 C，因为它实在是太快了。
 Dialogue: 0,0:11:52.36,0:11:59.18,english,,0,0,0,,And as you'll learn over the coming weeks, it really gives you access to and an understanding of what's going on conceptually down here.
 Dialogue: 0,0:11:52.36,0:11:59.18,chinese,,0,0,0,,随着你在接下来的几周里学习，你将真正了解并理解这里的概念和实现。
 Dialogue: 0,0:11:59.18,0:12:05.18,english,,0,0,0,,So that thereafter, after CS50, when you're writing code, you can think at a very high level what's actually going on.
@@ -341,9 +341,9 @@ Dialogue: 0,0:15:07.27,0:15:15.91,english,,0,0,0,,Later in the semester, once yo
 Dialogue: 0,0:15:07.27,0:15:15.91,chinese,,0,0,0,,在学期后期，一旦你着手完成最终项目，这也是课程的高潮部分，\N我们不会给你布置一份作业来完成，而是让你自己想一个项目来构建。
 Dialogue: 0,0:15:07.27,0:15:15.91,annotation,,0,0,0,,*注意看 David 讲得大汗淋漓，哈哈
 Dialogue: 0,0:15:15.91,0:15:23.26,english,,0,0,0,,We'll get together generally around 7:00 PM in the evening, wrap up around 7:00 AM, if you so choose.
-Dialogue: 0,0:15:15.91,0:15:23.26,chinese,,0,0,0,,我们差不多在晚上7点左右聚在一起，并在早上7点左右结束，如果你愿意的话。
+Dialogue: 0,0:15:15.91,0:15:23.26,chinese,,0,0,0,,我们差不多在晚上 7 点左右聚在一起，并在早上 7 点左右结束，如果你想参与的话。
 Dialogue: 0,0:15:23.26,0:15:33.34,english,,0,0,0,,And it's an evening, a 12-hour opportunity to collaborate with classmates on your very own final project, in a large space on campus, that ends-- if you're awake with us-- at 5:00 AM.
-Dialogue: 0,0:15:23.26,0:15:33.34,chinese,,0,0,0,,这是一个为期12小时的机会，在校园的一个大空间里与同学们合作完成你自己的最终项目，\N如果你和我们一起保持清醒，结束时间将是凌晨5点。
+Dialogue: 0,0:15:23.26,0:15:33.34,chinese,,0,0,0,,这是一个为期 12 小时的机会，在校园的一个大空间里与同学们合作完成你自己的最终项目，\N如果你和我们一起保持清醒，结束时间将是凌晨 5 点。
 Dialogue: 0,0:15:33.34,0:15:38.71,english,,0,0,0,,We can hop on some CS50 shuttles and go down the road for some pancakes at IHOP around 6:00.
 Dialogue: 0,0:15:33.34,0:15:38.71,chinese,,0,0,0,,我们可以乘坐 CS50 的班车，在早上6点左右前往附近的 IHOP 吃些煎饼。
 Dialogue: 0,0:15:33.34,0:15:38.71,annotation,,0,0,0,,*注：IHOP 是一家美国连锁餐厅，主要以早餐食品著称，特别是煎饼、煎蛋和烤面包。
@@ -364,7 +364,7 @@ Dialogue: 0,0:16:14.88,0:16:20.82,chinese,,0,0,0,,最终，你们都将带着自
 Dialogue: 0,0:16:20.82,0:16:23.82,english,,0,0,0,,So with that high level overview of the course,
 Dialogue: 0,0:16:20.82,0:16:23.82,chinese,,0,0,0,,以上就是本课程的概况，
 Dialogue: 0,0:16:23.82,0:16:32.78,english,,0,0,0,,I propose that we begin to take a look at what computer science itself is and what it is we're going to be doing over the next several weeks at this lower level too.
-Dialogue: 0,0:16:23.82,0:16:32.78,chinese,,0,0,0,,我想着咱得先看看计算机科学本身是什么，\N以及在接下来的几周里，我们要在这个较底层的层次做些什么。
+Dialogue: 0,0:16:23.82,0:16:32.78,chinese,,0,0,0,,我想着我们得先看看计算机科学本身是什么，\N以及在接下来的几周里，我们要在这个较底层的层次做些什么。
 Dialogue: 0,0:16:32.78,0:16:34.13,english,,0,0,0,,So what is computer science?
 Dialogue: 0,0:16:32.78,0:16:34.13,chinese,,0,0,0,,那么，什么是计算机科学？
 Dialogue: 0,0:16:34.13,0:16:34.63,english,,0,0,0,,Right?
@@ -399,14 +399,14 @@ Dialogue: 0,0:17:51.56,0:17:59.34,chinese,,0,0,0,,举例来说，如果当前的
 Dialogue: 0,0:17:59.34,0:18:03.42,english,,0,0,0,,Well, we could actually use a system called unary. Well, what is that?
 Dialogue: 0,0:17:59.34,0:18:03.42,chinese,,0,0,0,,实际上，我们可以使用一种叫做 "unary" 的系统。那是个啥？
 Dialogue: 0,0:18:03.42,0:18:08.30,english,,0,0,0,,Well, that's a fancy way of saying 1, 2, 3, 4, 5, maybe 6, 7, 8, 9, 10.
-Dialogue: 0,0:18:03.42,0:18:08.30,chinese,,0,0,0,,这是一种用来表示数字的方式，就是通过1、2、3、4、5... 这样的方式。
+Dialogue: 0,0:18:03.42,0:18:08.30,chinese,,0,0,0,,这是一种用来表示数字的方式，就是通过 1、2、3、4、5... 这样的方式。
 Dialogue: 0,0:18:08.30,0:18:13.29,english,,0,0,0,,And I can use my digits-- pun intended-- on my fingers to actually count everyone up.
 Dialogue: 0,0:18:08.30,0:18:13.29,chinese,,0,0,0,,我还能用我的手指数出每个人的人数。
 Dialogue: 0,0:18:13.29,0:18:16.34,english,,0,0,0,,And eventually, you need toes and whatnots, if you have to count so high.
 Dialogue: 0,0:18:13.29,0:18:16.34,chinese,,0,0,0,,最后，你还需要脚趾什么的，如果你非要往高了数。
 Dialogue: 0,0:18:16.34,0:18:24.83,english,,0,0,0,,But unary is a very simple system of using a single symbol, a human finger in this case, to just solve some problem, like counting the number of people in the room.
 Dialogue: 0,0:18:16.34,0:18:24.83,chinese,,0,0,0,,但是，unary 是一个非常简单的系统，\N它使用一个符号（这里是人的手指）来解决一些问题，比如计算房间里的人数。
-Dialogue: 0,0:18:16.34,0:18:24.83,annotation,,0,0,0,,*暂停警告\N*注：unary 我没有翻译成一进制，因为没有中文里"进位"的含义。\N想想小学用的数学小棒，也是没有进位一说，只是单纯的累加。\N与十进制相对比一下，\N111其实是 10^2*1+10^1*1+10^0*1，也就是以 10 的幂次为基底；\N如果我们用 unary 的方式解读，111 就是 1^2*1+1^1*1+1^0*1，等于十进制的 3。
+Dialogue: 0,0:18:16.34,0:18:24.83,annotation,,0,0,0,,*暂停警告\N*注：unary 我没有翻译成一进制，因为没有中文里"进位"的含义。\N想想小学用的数学小棒，也是没有进位一说，只是单纯的累加。\N与十进制相对比一下，\N111 其实是 10^2*1+10^1*1+10^0*1，也就是以 10 的幂次为基底；\N如果我们用 unary 的方式解读，111 就是 1^2*1+1^1*1+1^0*1，等于十进制的 3。
 Dialogue: 0,0:18:24.83,0:18:27.95,english,,0,0,0,,Let's make this slightly more technical for a moment, a little more mathy.
 Dialogue: 0,0:18:24.83,0:18:27.95,chinese,,0,0,0,,让我们把这个问题稍微技术化一点，数学化一点。
 Dialogue: 0,0:18:27.95,0:18:36.92,english,,0,0,0,,That's just called base-1, where the base under which you're operating has one digit in it, like literally a human finger, and maybe multiple such fingers, if you need to count higher.
@@ -427,7 +427,7 @@ Dialogue: 0,0:19:07.49,0:19:15.96,chinese,,0,0,0,,"binary digit" 是 "bit" 一�
 Dialogue: 0,0:19:15.96,0:19:17.99,english,,0,0,0,,A bit is just a 0 and 1.
 Dialogue: 0,0:19:15.96,0:19:17.99,chinese,,0,0,0,,bit 就是 0 和 1。
 Dialogue: 0,0:19:17.99,0:19:23.03,english,,0,0,0,,It's two more digits than you might have on your own finger, and of course, it's fewer though than you and I have.
-Dialogue: 0,0:19:17.99,0:19:23.03,chinese,,0,0,0,,大意：在 unary 下，一根手指只能表达 1。在 binary 下，一个 bit 能表达 0, 1，呈现出两种状态。\N一只手只能表达出 0~5，那么如果让每根手指弯曲代表 0，伸直代表 1，\N一只手就可以表示出 2^5 种状态，信息承载量大大提高。\N表达相同数字时，需要的位数减少，也就是 David 所说的 "fewer though than you and I have"。\N同样的一个手势，在上面两种解读方式下就有了不同的意义。\N比如 00010，用 unary 解释为 1，用 binary 解释为 2^1*1+2^0*0，为2。\N对计算机来说只认识 0 和 1，\N我们只是采用不同的编码方式把各种信息编码（encoding）为 01 二进制串，\N用不同的解码算法，把二进制串解码（decoding）成需要的格式。\N不能完全理解没有关系，David 在后面有更加详细生动的演绎。
+Dialogue: 0,0:19:17.99,0:19:23.03,chinese,,0,0,0,,大意：在 unary 下，一根手指只能表达 1。在 binary 下，一个 bit 能表达 0, 1，呈现出两种状态。\N一只手只能表达出 0~5，那么如果让每根手指弯曲代表 0，伸直代表 1，\N一只手就可以表示出 2^5 种状态，信息承载量大大提高。\N表达相同数字时，需要的位数减少，也就是 David 所说的 "fewer though than you and I have"。\N同样的一个手势，在上面两种解读方式下就有了不同的意义。\N比如 00010，用 unary 解释为 1，用 binary 解释为 2^1*1+2^0*0，为 2。\N对计算机来说只认识 0 和 1，\N我们只是采用不同的编码方式把各种信息编码（encoding）为 01 二进制串，\N用不同的解码算法，把二进制串解码（decoding）成需要的格式。\N不能完全理解没有关系，David 在后面有更加详细生动的演绎。
 Dialogue: 0,0:19:17.99,0:19:23.03,annotation,,0,0,0,,*暂停警告
 Dialogue: 0,0:19:23.03,0:19:25.82,english,,0,0,0,,You and I typically use, as humans, the decimal system.
 Dialogue: 0,0:19:23.03,0:19:25.82,chinese,,0,0,0,,人们通常使用十进制系统。
@@ -440,7 +440,7 @@ Dialogue: 0,0:19:32.93,0:19:37.76,chinese,,0,0,0,,而计算机用的是二进制
 Dialogue: 0,0:19:37.76,0:19:44.09,english,,0,0,0,,But at the end of the day, these are fundamentally going to be the same thing, which is to say that it's all pretty accessible to us.
 Dialogue: 0,0:19:37.76,0:19:44.09,chinese,,0,0,0,,但归根结底，这些基本上是一样的，理解起来很轻松。
 Dialogue: 0,0:19:44.09,0:19:47.61,english,,0,0,0,,Even if you're not a computer person, I daresay you're about to be.
-Dialogue: 0,0:19:44.09,0:19:47.61,chinese,,0,0,0,,即使你现在不是电脑达人，那也不远了。
+Dialogue: 0,0:19:44.09,0:19:47.61,chinese,,0,0,0,,即使你现在不是电脑高手，那也不远了。
 Dialogue: 0,0:19:47.61,0:19:53.57,english,,0,0,0,,So what is a bit? Well, a bit then is a 0 or a 1. That is a so-called binary digit.
 Dialogue: 0,0:19:47.61,0:19:53.57,chinese,,0,0,0,,那么什么是比特呢？那么，一个比特就是一个 0 或一个 1，也就是二进制位。
 Dialogue: 0,0:19:53.57,0:19:56.09,english,,0,0,0,,But how do computers only speak in binary?
@@ -677,10 +677,8 @@ Dialogue: 0,0:27:09.44,0:27:11.50,english,,0,0,0,,So thank you.
 Dialogue: 0,0:27:09.44,0:27:11.50,chinese,,0,0,0,,谢谢你们。
 Dialogue: 0,0:27:11.50,0:27:19.16,english,,0,0,0,,So how do we go about-- how do we go from there to creating these patterns?
 Dialogue: 0,0:27:11.50,0:27:19.16,chinese,,0,0,0,,那么我们要怎么着手来制定模式呢？
-Dialogue: 0,0:27:19.16,0:27:28.72,english,,0,0,0,,Well, even though we still had three bits, initially, and three switches, later four bits and four switches, ultimately, we still
-Dialogue: 0,0:27:19.16,0:27:28.72,chinese,,0,0,0,,最初我们有三位，后来是四位
-Dialogue: 0,0:27:28.72,0:27:32.86,english,,0,0,0,,used the same approach fundamentally to actually representing information.
-Dialogue: 0,0:27:28.72,0:27:32.86,chinese,,0,0,0,,最终我们在根本上仍然使用相同的方法来表示信息
+Dialogue: 0,0:27:19.16,0:27:32.86,english,,0,0,0,,Well, even though we still had three bits, initially, and three switches, later four bits and four switches, ultimately, we still used the same approach fundamentally to actually representing information.
+Dialogue: 0,0:27:19.16,0:27:32.86,chinese,,0,0,0,,最初我们有三位，后来是四位，不过从根本上是用的同一种逻辑来表示信息。
 Dialogue: 0,0:27:32.86,0:27:38.15,english,,0,0,0,,And now why were they those patterns, and why did I very deliberately have our volunteers line up in that way?
 Dialogue: 0,0:27:32.86,0:27:38.15,chinese,,0,0,0,,我为什么要有意让志愿者们这样排队？
 Dialogue: 0,0:27:38.15,0:27:44.14,english,,0,0,0,,Well, I wanted them using base-2, a.k.a. binary, but with binary there comes certain rules.
@@ -688,13 +686,13 @@ Dialogue: 0,0:27:38.15,0:27:44.14,chinese,,0,0,0,,我想让他们使用二进制
 Dialogue: 0,0:27:44.14,0:27:53.02,english,,0,0,0,,And even if you're not familiar with binary beyond that it exists and relates somehow to computers, it's actually pretty much identical to the system you and I use every day
 Dialogue: 0,0:27:44.14,0:27:53.02,chinese,,0,0,0,,即使你对二进制并不熟悉，只知道它的存在并与计算机有某种联系，\N但它实际上与你我每天使用的十进制系统基本相同。
 Dialogue: 0,0:27:53.02,0:27:55.52,english,,0,0,0,,known as base 10, a.k.a. decimal.
-Dialogue: 0,0:27:53.02,0:27:55.52,chinese,,0,0,0,,十进制以十为基数，又叫decimal。
+Dialogue: 0,0:27:53.02,0:27:55.52,chinese,,0,0,0,,十进制以十为基数，又叫 decimal。
 Dialogue: 0,0:27:55.52,0:28:00.37,english,,0,0,0,,So let's consider, if you will, by rewinding to primary school for just a moment, like how decimal works.
 Dialogue: 0,0:27:55.52,0:28:00.37,chinese,,0,0,0,,把时间倒回小学课堂，想想十进制是怎么工作的。
 Dialogue: 0,0:28:00.37,0:28:03.82,english,,0,0,0,,And you'll see that even if you're not a computer person, you actually are.
 Dialogue: 0,0:28:00.37,0:28:03.82,chinese,,0,0,0,,你看，即使你不是计算机专业的人，其实你也早懂的。
 Dialogue: 0,0:28:03.82,0:28:06.41,english,,0,0,0,,You just have to tweak your mental model ever so slightly.
-Dialogue: 0,0:28:03.82,0:28:06.41,chinese,,0,0,0,,只需要稍微调整一点点心智模式。
+Dialogue: 0,0:28:03.82,0:28:06.41,chinese,,0,0,0,,只需要稍微调整一点点思维模式。
 Dialogue: 0,0:28:06.41,0:28:11.51,english,,0,0,0,,So here is the number that you're probably viewing as 123, but why is that?
 Dialogue: 0,0:28:06.41,0:28:11.51,chinese,,0,0,0,,这里的数字你会认为是 123，但这是为什么呢？
 Dialogue: 0,0:28:11.51,0:28:13.24,english,,0,0,0,,Well, it's not really 123.
@@ -714,15 +712,15 @@ Dialogue: 0,0:28:50.50,0:28:56.90,chinese,,0,0,0,,再往深想想，我们怎么
 Dialogue: 0,0:28:56.90,0:28:58.15,english,,0,0,0,,Well, let's generalize this.
 Dialogue: 0,0:28:56.90,0:28:58.15,chinese,,0,0,0,,好吧，我们来归纳一下。
 Dialogue: 0,0:28:58.15,0:29:05.92,english,,0,0,0,,In the decimal system, you and I know, if we've got three digits represented by these hashes here, yes, it's the 1's place, 10's place, 100's place,
-Dialogue: 0,0:28:58.15,0:29:05.92,chinese,,0,0,0,,在十进制系统中，用这里的#符号分别代表个位、十位和百位
+Dialogue: 0,0:28:58.15,0:29:05.92,chinese,,0,0,0,,在十进制系统中，用这里的 # 符号分别代表个位、十位和百位，
 Dialogue: 0,0:29:05.92,0:29:09.86,english,,0,0,0,,and if we keep going 1,000's, 10,000's, and so forth, but why is that?
 Dialogue: 0,0:29:05.92,0:29:09.86,chinese,,0,0,0,,如果我们继续下去，就是千位、万位等等，但是这是为什么呢？
 Dialogue: 0,0:29:09.86,0:29:12.58,english,,0,0,0,,Well, base terminology is now a little more germane.
 Dialogue: 0,0:29:09.86,0:29:12.58,chinese,,0,0,0,,好了，现在用更加书面的术语表述。
 Dialogue: 0,0:29:12.58,0:29:17.42,english,,0,0,0,,That's technically the 10 to the 0th column, the 10 to the 1, 10 to the 2.
-Dialogue: 0,0:29:12.58,0:29:17.42,chinese,,0,0,0,,从技术上讲，这就是10的0次方列、10的1次方列和10的2次方列。
+Dialogue: 0,0:29:12.58,0:29:17.42,chinese,,0,0,0,,从技术上讲，这就是 10 的 0 次方列、10 的 1 次方列和 10 的 2 次方列。
 Dialogue: 0,0:29:17.42,0:29:20.65,english,,0,0,0,,So these are powers of 10, where 10 is your base.
-Dialogue: 0,0:29:17.42,0:29:20.65,chinese,,0,0,0,,所以这些都是以10为基数的幂。
+Dialogue: 0,0:29:17.42,0:29:20.65,chinese,,0,0,0,,所以这些都是以 10 为基数的幂。
 Dialogue: 0,0:29:20.65,0:29:27.52,english,,0,0,0,,Computers just simplify things a little bit, because computers, at the end of the day, only have access to electricity, on or off.
 Dialogue: 0,0:29:20.65,0:29:27.52,chinese,,0,0,0,,计算机只是把事情简化了一点，因为计算机只能使用电力，开或者关。
 Dialogue: 0,0:29:27.52,0:29:32.78,english,,0,0,0,,They don't have access to 10 different types of electricity, just 2, on or off, if you will.
@@ -738,11 +736,11 @@ Dialogue: 0,0:29:39.85,0:29:41.83,chinese,,0,0,0,,最左边的数字是 2 的 2 
 Dialogue: 0,0:29:41.83,0:29:51.92,english,,0,0,0,,1's place, 2's place, 4's place, and as we kept going, 8, and if we keep going, 16, 32, 64, 128, and so forth, but the idea is fundamentally the same.
 Dialogue: 0,0:29:41.83,0:29:51.92,chinese,,0,0,0,,也就是 1 的位置、2 的位置、4 的位置，随着继续进行，\N8，然后 16、32、64、128 等等，但基本思想是相同的。
 Dialogue: 0,0:29:51.92,0:29:56.77,english,,0,0,0,,So why is this how the computer represents the number you and I know is 0?
-Dialogue: 0,0:29:51.92,0:29:56.77,chinese,,0,0,0,,那么，为什么你我都知道的数字 "0 "会被电脑这样表示呢？
+Dialogue: 0,0:29:51.92,0:29:56.77,chinese,,0,0,0,,那么，为什么你我都知道的数字 "0" 会被电脑这样表示呢？
 Dialogue: 0,0:29:56.77,0:30:02.75,english,,0,0,0,,Well, off, off, off, from right to left or in this case left to right, is just 0.
 Dialogue: 0,0:29:56.77,0:30:02.75,chinese,,0,0,0,,那么，全关，就是 0。
 Dialogue: 0,0:30:02.75,0:30:08.32,english,,0,0,0,,Why? Because that's 4 times 0 plus 2 times 0 plus 1 times 0 is, of course, 0.
-Dialogue: 0,0:30:02.75,0:30:08.32,chinese,,0,0,0,,为什么呢？因为 4*0 + 2*0 + 1*0 当然就是 0。
+Dialogue: 0,0:30:02.75,0:30:08.32,chinese,,0,0,0,,为什么呢？因为 4*0+2*0+1*0 当然就是 0。
 Dialogue: 0,0:30:08.32,0:30:12.40,english,,0,0,0,,This is why 001 represents 1.
 Dialogue: 0,0:30:08.32,0:30:12.40,chinese,,0,0,0,,这就是为什么 001 代表 1。
 Dialogue: 0,0:30:12.40,0:30:20.32,english,,0,0,0,,This is why 010 represents 2 and 3 and 4 and 5 and 6 and 7 on up.
@@ -754,9 +752,9 @@ Dialogue: 0,0:30:23.50,0:30:29.74,chinese,,0,0,0,,可以使用熟悉的概念来
 Dialogue: 0,0:30:29.74,0:30:34.63,english,,0,0,0,,But for that we need a 4th bit, another transistor, and this now represents the number 8.
 Dialogue: 0,0:30:29.74,0:30:34.63,chinese,,0,0,0,,但是为此，我们需要第 4 位，另一个晶体管，现在这个表示数字 8。
 Dialogue: 0,0:30:34.63,0:30:39.07,english,,0,0,0,,And that's why we ended with on-- from left to right-- off, off, off.
-Dialogue: 0,0:30:34.63,0:30:39.07,chinese,,0,0,0,,这就是为什么我们以 "开 "结束 -- 从左到右 -- "关"、"关"、"关"。
+Dialogue: 0,0:30:34.63,0:30:39.07,chinese,,0,0,0,,这就是为什么我们以 "开"结束，从左到右剩下是 "关"、"关"、"关"。
 Dialogue: 0,0:30:39.07,0:30:45.31,english,,0,0,0,,So I keep saying on and off, or the light bulb is on or off, but really, I just mean 1 or 0.
-Dialogue: 0,0:30:39.07,0:30:45.31,chinese,,0,0,0,,所以我一直在说 "开 "和 "关"，或者灯泡 "开 "或 "关"，但实际上，我的意思只是 "1" 或 "0"。
+Dialogue: 0,0:30:39.07,0:30:45.31,chinese,,0,0,0,,所以我一直在说 "开" 和 "关"，或者灯泡 "开" 或 "关"，实际上就是在指 "1" 或 "0"。
 Dialogue: 0,0:30:45.31,0:30:52.86,english,,0,0,0,,And so computers and we humans think of things digitally as just being 0's and 1's, but mechanically, you can think of it indeed is these light bulbs.
 Dialogue: 0,0:30:45.31,0:30:52.86,chinese,,0,0,0,,所以计算机和我们人类将数字表示为 0 和 1，但从机械角度来看，你可以把它看作是这些灯泡。
 Dialogue: 0,0:30:52.86,0:30:56.30,english,,0,0,0,,Now, a bit is not very useful. Even 3 bits, 4 bits, not that useful.
@@ -782,7 +780,7 @@ Dialogue: 0,0:31:32.29,0:31:39.67,chinese,,0,0,0,,这意味着你的计算机硬
 Dialogue: 0,0:31:39.67,0:31:46.33,english,,0,0,0,,Here then, with a byte of bits, 8 bits, is how a computer would typically represent the number 0.
 Dialogue: 0,0:31:39.67,0:31:46.33,chinese,,0,0,0,,在这里，计算机通常用 8 位比特，也就是一个字节，来表示数字 0。
 Dialogue: 0,0:31:46.33,0:31:58.24,english,,0,0,0,,And if that same computer uses all 8 of its bits, its full byte, to change it to 1-- anyone who's quick with math or have seen this before, how high can a computer count with 8 bits or 1?
-Dialogue: 0,0:31:46.33,0:31:58.24,chinese,,0,0,0,,如果这八个比特全部都置为1——\N任何擅长数学或之前见过这个的人，计算机用8位二进制最高能计数到多少？
+Dialogue: 0,0:31:46.33,0:31:58.24,chinese,,0,0,0,,如果这八个比特全部都置为 1——\N任何擅长数学或之前见过这个的人，计算机用 8 位二进制最高能计数到多少？
 Dialogue: 0,0:31:58.24,0:31:59.08,english,,0,0,0,,[INTERPOSING VOICES]
 Dialogue: 0,0:31:59.08,0:32:00.90,english,,0,0,0,,Yeah, 255. Why is that?
 Dialogue: 0,0:31:59.08,0:32:00.90,chinese,,0,0,0,,是的，255。为什么是 255？
@@ -821,7 +819,7 @@ Dialogue: 0,0:33:19.05,0:33:21.87,chinese,,0,0,0,,我们必须得做出权衡，
 Dialogue: 0,0:33:21.87,0:33:25.71,english,,0,0,0,,And it turns out the world is not quite as simple as A being 0.
 Dialogue: 0,0:33:21.87,0:33:25.71,chinese,,0,0,0,,事实证明，世界并不像 A 为 0 那么简单。
 Dialogue: 0,0:33:25.71,0:33:32.64,english,,0,0,0,,A typically is represented, by computers everywhere, phones everywhere, with the number 65, the decimal number 65.
-Dialogue: 0,0:33:25.71,0:33:32.64,chinese,,0,0,0,,一个典型的例子是，各地的电脑和电话都用十进制数字 65 来表示。
+Dialogue: 0,0:33:25.71,0:33:32.64,chinese,,0,0,0,,实际上，全世界的计算机和手机都用十进制数字 65 来表示 A。
 Dialogue: 0,0:33:32.64,0:33:41.22,english,,0,0,0,,Using 8 bits, if we turn some of the 0's to 1's, let me just stipulate, you can represent the letter A using 8 bits, by turning certain ones on
 Dialogue: 0,0:33:32.64,0:33:41.22,chinese,,0,0,0,,使用 8 比特，如果我们设置一些位为 1，我只是假设一下，\N你可以用 8 位表示字母 A ，通过打开某些位置的开关和关闭其他位置的开关，
 Dialogue: 0,0:33:41.22,0:33:46.00,english,,0,0,0,,and certain ones off, but we will try not to focus on that binary level too much.
@@ -833,7 +831,7 @@ Dialogue: 0,0:33:54.06,0:33:59.13,chinese,,0,0,0,,原来，有一整套系统可
 Dialogue: 0,0:33:59.13,0:34:05.13,english,,0,0,0,,And here, as I alluded to verbally a moment ago, is the pattern of 0's and 1's via which you'd represent 65.
 Dialogue: 0,0:33:59.13,0:34:05.13,chinese,,0,0,0,,正如我刚才口头提到的，这里是 0 和 1 的模式，你可以通过它来表示 65。
 Dialogue: 0,0:34:05.13,0:34:13.77,english,,0,0,0,,And just quick check here, we won't constantly do math 1's place, that's easy, 2's, 4's, 8's, 16's, 32's, 64's place.
-Dialogue: 0,0:34:05.13,0:34:13.77,chinese,,0,0,0,,这里只需快速检查一下，我们不会经常做 1 位的数学运算。这很简单，2、4、8、16、32、64。
+Dialogue: 0,0:34:05.13,0:34:13.77,chinese,,0,0,0,,这里只需快速检查一下，后面不会经常做一位的加减法了，这很简单，2、4、8、16、32、64。
 Dialogue: 0,0:34:13.77,0:34:17.96,english,,0,0,0,,So 64 plus 1 gives us 65.
 Dialogue: 0,0:34:13.77,0:34:17.96,chinese,,0,0,0,,所以 64 加 1 等于 65。
 Dialogue: 0,0:34:17.96,0:34:21.54,english,,0,0,0,,So once I do that, how do I get to all of the others?
@@ -849,7 +847,7 @@ Dialogue: 0,0:34:30.34,0:34:37.62,chinese,,0,0,0,,是的，它只是一个缩写
 Dialogue: 0,0:34:37.62,0:34:45.61,english,,0,0,0,,Starts at 65, 66, 67 for capital letters, but here are most of the letters in use today, at least with this system.
 Dialogue: 0,0:34:37.62,0:34:45.61,chinese,,0,0,0,,对于大写字母，它从 65 开始，然后是 66、67。\N这里列出了现今使用的大部分字母，至少在这个系统中是这样。
 Dialogue: 0,0:34:45.61,0:34:52.80,english,,0,0,0,,So this is just a big chart from online, and you'll see in the middle of this chart, here, here's my 65, A. Here's my 66,
-Dialogue: 0,0:34:45.61,0:34:52.80,chinese,,0,0,0,,这是网上的一个大图表，你会在图表中间看到，这里是65 A，这里是 66 B。
+Dialogue: 0,0:34:45.61,0:34:52.80,chinese,,0,0,0,,这是网上的一个大图表，你会在图表中间看到，这里是 65 A，这里是 66 B。
 Dialogue: 0,0:34:52.80,0:34:58.75,english,,0,0,0,,B, C, and let's see, 72 is H, 73 is I, and so forth.
 Dialogue: 0,0:34:52.80,0:34:58.75,chinese,,0,0,0,,B、C，接着看，72 是 H，73 是 I，以此类推。
 Dialogue: 0,0:34:58.75,0:35:03.16,english,,0,0,0,,So there's a mapping, at least for English, between all of these numbers and all of these letters.
@@ -867,7 +865,7 @@ Dialogue: 0,0:35:23.14,0:35:27.90,chinese,,0,0,0,,而你的手机正在开关一
 Dialogue: 0,0:35:27.90,0:35:35.43,english,,0,0,0,,Suppose that the three patterns you received were these three bytes, from left to right, spelling out a three-letter word.
 Dialogue: 0,0:35:27.90,0:35:35.43,chinese,,0,0,0,,假如收到的是这三个字节，从左到右，拼成一个三个字母的单词。
 Dialogue: 0,0:35:35.43,0:35:40.06,english,,0,0,0,,Well, if we do out the math, 1's place, 2's place, and so forth-- I'll spoil it for you.
-Dialogue: 0,0:35:35.43,0:35:40.06,chinese,,0,0,0,,好吧，如果我们算出 1 的位置、2 的位置等等——就不告诉你了。
+Dialogue: 0,0:35:35.43,0:35:40.06,chinese,,0,0,0,,好吧，如果我们算出 1 的位置、2 的位置等等—— 就不告诉你了。
 Dialogue: 0,0:35:40.06,0:35:49.41,english,,0,0,0,,Suppose that you received a text message that doesn't literally say 72, 73, 33, but you've received a pattern of 8 plus 8 plus 8, 24 bits
 Dialogue: 0,0:35:40.06,0:35:49.41,chinese,,0,0,0,,假设收到的短信并不是字面上的 72、73、33，而是一个由 8 位加 8 位加 8 位组成的 24 位模式，
 Dialogue: 0,0:35:49.41,0:35:54.51,english,,0,0,0,,that if you do out the math represent the decimal number 72, 73, 33.
@@ -878,7 +876,7 @@ Dialogue: 0,0:35:58.98,0:35:59.97,english,,0,0,0,,Yeah?
 Dialogue: 0,0:35:59.97,0:36:00.93,english,,0,0,0,,AUDIENCE: Hi.
 Dialogue: 0,0:36:00.93,0:36:02.01,english,,0,0,0,,DAVID J. MALAN: Hi.
 Dialogue: 0,0:36:02.01,0:36:08.37,english,,0,0,0,,Yes, hi is the message, but 72, 73 gives us H and I. What's 33?
-Dialogue: 0,0:36:02.01,0:36:08.37,chinese,,0,0,0,,是的，"HI"是信息，72、73 代表 H 和 I。
+Dialogue: 0,0:36:02.01,0:36:08.37,chinese,,0,0,0,,是的，"HI" 是信息，72、73 代表 H 和 I。
 Dialogue: 0,0:36:08.37,0:36:10.56,english,,0,0,0,,Any guesses to 33?
 Dialogue: 0,0:36:08.37,0:36:10.56,chinese,,0,0,0,,猜得到 33 吗？
 Dialogue: 0,0:36:10.56,0:36:12.10,english,,0,0,0,,Yeah, over here.
@@ -895,7 +893,7 @@ Dialogue: 0,0:36:17.02,0:36:18.01,chinese,,0,0,0,,ASCII 编码表。
 Dialogue: 0,0:36:18.01,0:36:24.49,english,,0,0,0,,And if we look elsewhere-- let me highlight the left of the chart-- you can see that next to 33 in decimal is indeed the exclamation point.
 Dialogue: 0,0:36:18.01,0:36:24.49,chinese,,0,0,0,,如果再看看其他地方，让我突出显示图表的左边，\N你会发现，在十进制的 33 旁边就是感叹号。
 Dialogue: 0,0:36:24.49,0:36:31.39,english,,0,0,0,,So back in the day, a bunch of humans got in a room, decided that, hey, when we start building PCs and later Macs and phones
-Dialogue: 0,0:36:24.49,0:36:31.39,chinese,,0,0,0,,所以在过去，一群人聚在一起决定，嘿，我们开始制造个人电脑吧，后来还有Mac和手机，
+Dialogue: 0,0:36:24.49,0:36:31.39,chinese,,0,0,0,,所以在过去，一群人聚在一起决定，嘿，我们开始制造个人电脑吧，后来还有 Mac 和手机，
 Dialogue: 0,0:36:31.39,0:36:38.11,english,,0,0,0,,we all just have to agree on this form of representation of letters of the English alphabet, in this case.
 Dialogue: 0,0:36:31.39,0:36:38.11,chinese,,0,0,0,,在这种情况下，我们必须要对英文字母的这种表现形式达成共识。
 Dialogue: 0,0:36:38.11,0:36:39.81,english,,0,0,0,,We just need to agree on this mapping.
@@ -928,7 +926,7 @@ Dialogue: 0,0:37:29.23,0:37:33.94,chinese,,0,0,0,,现在万幸，矛盾到此为
 Dialogue: 0,0:37:33.94,0:37:36.34,english,,0,0,0,,We just have a mapping now of numbers to numbers.
 Dialogue: 0,0:37:33.94,0:37:36.34,chinese,,0,0,0,,我们现在只需将数字与数字进行映射。
 Dialogue: 0,0:37:36.34,0:37:43.72,english,,0,0,0,,But really, at the end of the day-- and you're going to learn this when we start writing code in that other language, C, next week-- it's just context-dependent, at the end of the day.
-Dialogue: 0,0:37:36.34,0:37:43.72,chinese,,0,0,0,,但实际上，归根结底——下周我们开始用 C 语言\N编写代码时，你就会学到这一点——这只是取决于上下文。
+Dialogue: 0,0:37:36.34,0:37:43.72,chinese,,0,0,0,,但实际上，归根结底，下周我们开始用 C 语言编写代码时，\N你就会学到，这只是取决于上下文。
 Dialogue: 0,0:37:43.72,0:37:49.72,english,,0,0,0,,Inside of your Mac, PC, and phone, there's just all of these permutations of bits, all of these patterns of 0's and 1's.
 Dialogue: 0,0:37:43.72,0:37:49.72,chinese,,0,0,0,,在你的 Mac、PC 和手机里，有所有这些比特的排列组合，所有这些 0 和 1 的模式。
 Dialogue: 0,0:37:49.72,0:37:55.25,english,,0,0,0,,And generally speaking, when you open up a text message that you've received from someone, it's 0's and 1's.
@@ -944,7 +942,7 @@ Dialogue: 0,0:38:07.32,0:38:10.09,chinese,,0,0,0,,看到的是朋友发来的英
 Dialogue: 0,0:38:10.09,0:38:19.66,english,,0,0,0,,By contrast, if you open up something like Excel, that same pattern 0's zeros and 1's might indeed work out to be 72, 73, 33.
 Dialogue: 0,0:38:10.09,0:38:19.66,chinese,,0,0,0,,相比之下，如果你打开 Excel 等软件，同样的 0 和 1 的模式可能确实是 72、73、33。
 Dialogue: 0,0:38:19.66,0:38:23.53,english,,0,0,0,,You might see cells in your spreadsheet with literally those three numbers.
-Dialogue: 0,0:38:19.66,0:38:23.53,chinese,,0,0,0,,您可能会在电子表格中看到写有这三个数字的单元格。
+Dialogue: 0,0:38:19.66,0:38:23.53,chinese,,0,0,0,,你可能会在电子表格中看到写有这三个数字的单元格。
 Dialogue: 0,0:38:23.53,0:38:24.04,english,,0,0,0,,Why?
 Dialogue: 0,0:38:24.04,0:38:28.21,english,,0,0,0,,Because spreadsheets are all about numbers and number crunching and math, in many cases.
 Dialogue: 0,0:38:24.04,0:38:28.21,chinese,,0,0,0,,因为电子表格在很多情况下都是关于数字、数字运算和数学的。
@@ -953,7 +951,7 @@ Dialogue: 0,0:38:28.21,0:38:36.82,chinese,,0,0,0,,相比之下，如果打开 Ph
 Dialogue: 0,0:38:36.82,0:38:38.53,english,,0,0,0,,It's not going to be 0's and 1's.
 Dialogue: 0,0:38:36.82,0:38:38.53,chinese,,0,0,0,,它不会是二进制表示。
 Dialogue: 0,0:38:38.53,0:38:39.67,english,,0,0,0,,It's not going to be hi.
-Dialogue: 0,0:38:38.53,0:38:39.67,chinese,,0,0,0,,它不会是"Hi"。
+Dialogue: 0,0:38:38.53,0:38:39.67,chinese,,0,0,0,,它不会是 "Hi"。
 Dialogue: 0,0:38:39.67,0:38:42.10,english,,0,0,0,,It's going to be some color of the rainbow.
 Dialogue: 0,0:38:39.67,0:38:42.10,chinese,,0,0,0,,它将是彩虹中的某种颜色。
 Dialogue: 0,0:38:42.10,0:38:46.81,english,,0,0,0,,You're going to use those patterns of 0's and 1's, it turns out too, to represent colors.
@@ -971,25 +969,21 @@ Dialogue: 0,0:39:11.62,0:39:17.17,english,,0,0,0,,Well, there's a huge character
 Dialogue: 0,0:39:11.62,0:39:17.17,chinese,,0,0,0,,ASCII 不支持大量字符集，包括重音字符和大量亚洲字母。
 Dialogue: 0,0:39:17.17,0:39:20.42,english,,0,0,0,,You have many more symbols than can fit even on this screen here.
 Dialogue: 0,0:39:17.17,0:39:20.42,chinese,,0,0,0,,那些有特别多字符，这个屏幕是展示不下的。
-Dialogue: 0,0:39:20.42,0:39:24.01,english,,0,0,0,,And so humans kind of painted themselves into a corner, early on, or really,
-Dialogue: 0,0:39:20.42,0:39:24.01,chinese,,0,0,0,,所以早期，人类有点陷入了一个困境，或者更准确地说，
-Dialogue: 0,0:39:24.01,0:39:24.97,english,,0,0,0,,Americans did.
-Dialogue: 0,0:39:24.01,0:39:24.97,chinese,,0,0,0,,美国人这样做了。
+Dialogue: 0,0:39:20.42,0:39:24.97,english,,0,0,0,,And so humans kind of painted themselves into a corner, early on, or really, Americans did.
+Dialogue: 0,0:39:20.42,0:39:24.97,chinese,,0,0,0,,所以早期，人类有点陷入了一个困境，或者更准确地说，是美国人导致的。
 Dialogue: 0,0:39:24.97,0:39:33.88,english,,0,0,0,,But on a typical keyboard, US English keyboard, yeah, you have A's and B's and C's, uppercase and lowercase, but you also have accented characters here.
-Dialogue: 0,0:39:24.97,0:39:33.88,chinese,,0,0,0,,在典型的键盘上，即美国英语键盘上，有 A、B、C等大写和小写字母，也有重音字符。
+Dialogue: 0,0:39:24.97,0:39:33.88,chinese,,0,0,0,,在典型的键盘上，即美国英语键盘上，有 A、B、C 等大写和小写字母，也有重音字符。
 Dialogue: 0,0:39:33.88,0:39:41.09,english,,0,0,0,,And nowadays, not sure if this is maybe necessary, but nowadays, you have other characters on your keyboard, like these.
 Dialogue: 0,0:39:33.88,0:39:41.09,chinese,,0,0,0,,如今，不知道是否还有必要这样做，不过键盘上还有其他字符，比如这些。
 Dialogue: 0,0:39:41.09,0:39:45.73,english,,0,0,0,,And these are a playful incarnation of what's actually a technical solution to this problem.
 Dialogue: 0,0:39:41.09,0:39:45.73,chinese,,0,0,0,,实际技术解决了刚才提到的问题，所以有了这些有趣的东西。
 Dialogue: 0,0:39:45.73,0:39:52.48,english,,0,0,0,,If I claim for the moment that ASCII historically used 7 bits to represent letters-- and let's just round that up to a byte--
-Dialogue: 0,0:39:45.73,0:39:52.48,chinese,,0,0,0,,让我告诉你，ASCII历史上使用7位来表示字母，我们就将其四舍五入为一个字节，8位来表示字母，
+Dialogue: 0,0:39:45.73,0:39:52.48,chinese,,0,0,0,,让我告诉你，ASCII 历史上使用 7 位来表示字母，我们就将其四舍五入为一个字节，8 位来表示字母，
 Dialogue: 0,0:39:52.48,0:40:00.52,english,,0,0,0,,8 bits to represent letters, ASCII can represent as many as 255, or really 256, total characters.
-Dialogue: 0,0:39:52.48,0:40:00.52,chinese,,0,0,0,,ASCII 可以表示多达255个，或者实际上是256个不同的字符。
+Dialogue: 0,0:39:52.48,0:40:00.52,chinese,,0,0,0,,ASCII 可以表示多达 255 个，或者实际上是 256 个不同的字符。
 Dialogue: 0,0:40:00.52,0:40:01.55,english,,0,0,0,,Why 256?
-Dialogue: 0,0:40:01.55,0:40:04.84,english,,0,0,0,,Well, if you have them all 0, that's 0, and the highest number
-Dialogue: 0,0:40:01.55,0:40:04.84,chinese,,0,0,0,,如果全 0，那就是 0，最大的数字是
-Dialogue: 0,0:40:04.84,0:40:07.07,english,,0,0,0,,I claimed a moment ago was 255.
-Dialogue: 0,0:40:04.84,0:40:07.07,chinese,,0,0,0,,我刚才说的是 255。
+Dialogue: 0,0:40:01.55,0:40:07.07,english,,0,0,0,,Well, if you have them all 0, that's 0, and the highest number I claimed a moment ago was 255.
+Dialogue: 0,0:40:01.55,0:40:07.07,chinese,,0,0,0,,如果全 0，那就是 0，最大的数字是我刚才说的是 255。
 Dialogue: 0,0:40:07.07,0:40:09.16,english,,0,0,0,,So that's 256 total possibilities.
 Dialogue: 0,0:40:07.07,0:40:09.16,chinese,,0,0,0,,因此，总共有 256 种可能性。
 Dialogue: 0,0:40:09.16,0:40:10.36,english,,0,0,0,,That's not many letters.
@@ -1018,7 +1012,7 @@ Dialogue: 0,0:40:49.04,0:40:54.71,chinese,,0,0,0,,还好我们的电脑和手机
 Dialogue: 0,0:40:54.71,0:40:58.40,english,,0,0,0,,And the solution then to ASCII is what we'll call Unicode.
 Dialogue: 0,0:40:54.71,0:40:58.40,chinese,,0,0,0,,解决 ASCII 码局限性的办法，就是我们所说的统一码（unicode）。
 Dialogue: 0,0:40:58.40,0:41:06.38,english,,0,0,0,,So Unicode is also just a mapping of numbers to letters but in many different languages.
-Dialogue: 0,0:40:58.40,0:41:06.38,chinese,,0,0,0,,所以Unicode 也只是数字和字母的映射，但容纳了更多语言。
+Dialogue: 0,0:40:58.40,0:41:06.38,chinese,,0,0,0,,所以 Unicode 也只是数字和字母的映射，但容纳了更多语言。
 Dialogue: 0,0:41:06.38,0:41:16.61,english,,0,0,0,,And indeed, the Unicode Consortium is a bunch of people from all different companies-- a lot of different companies and countries and cultures whose mission,
 Dialogue: 0,0:41:06.38,0:41:16.61,chinese,,0,0,0,,事实上，Unicode 协会是由一群来自不同公司、不同国家和不同文化背景的人组成的，
 Dialogue: 0,0:41:16.61,0:41:23.07,english,,0,0,0,,as an organization, is to capture digitally all forms of human language in this case.
@@ -1064,7 +1058,7 @@ Dialogue: 0,0:43:09.25,0:43:14.83,chinese,,0,0,0,,因此，同样是 0 和 1 的
 Dialogue: 0,0:43:14.83,0:43:22.77,english,,0,0,0,,If you've ever gotten like an icon on your phone that's broken, and you've been sent an emoji, but it's like a square or something arbitrary and not sensible
 Dialogue: 0,0:43:14.83,0:43:22.77,chinese,,0,0,0,,如果你的手机上出现了一个没有正确展示的图标，或者你收到了一个表情符号，\N但是它却是一个奇怪方块而不是正常的表情符号，
 Dialogue: 0,0:43:22.77,0:43:29.71,english,,0,0,0,,it might just mean that you have not updated to the latest version of iOS or Android, which just updates the font of supported emoji.
-Dialogue: 0,0:43:22.77,0:43:29.71,chinese,,0,0,0,,可能意味着你还没有更新到最新版本的iOS或Android，它会更新支持的表情符号的字体。
+Dialogue: 0,0:43:22.77,0:43:29.71,chinese,,0,0,0,,可能意味着你还没有更新到最新版本的 iOS 或 Android，它会更新支持的表情符号的字体。
 Dialogue: 0,0:43:29.71,0:43:36.83,english,,0,0,0,,Because those folks at Unicode, pretty much every year nowadays, are adding more and more emoji to that particular character set.
 Dialogue: 0,0:43:29.71,0:43:36.83,chinese,,0,0,0,,因为如今，Unicode 的工作人员几乎每年都会在这个字符集中添加越来越多的表情符号。
 Dialogue: 0,0:43:36.83,0:43:41.71,english,,0,0,0,,Now, I went down the rabbit hole of figuring out the other day just which are the most popular emoji these days.
@@ -1126,7 +1120,7 @@ Dialogue: 0,0:45:39.91,0:45:42.45,chinese,,0,0,0,,所以这实际上是一个例
 Dialogue: 0,0:45:42.45,0:45:43.85,english,,0,0,0,,AUDIENCE: You could use a loop.
 Dialogue: 0,0:45:42.45,0:45:43.85,chinese,,0,0,0,,听众：你可以使用循环。
 Dialogue: 0,0:45:43.85,0:45:44.65,english,,0,0,0,,DAVID J. MALAN: OK.
-Dialogue: 0,0:45:43.85,0:45:44.65,chinese,,0,0,0,,大卫-J-马兰：好的。
+Dialogue: 0,0:45:43.85,0:45:44.65,chinese,,0,0,0,,好的。
 Dialogue: 0,0:45:44.65,0:45:46.90,english,,0,0,0,,So you can use a loop to actually output these things.
 Dialogue: 0,0:45:44.65,0:45:46.90,chinese,,0,0,0,,因此，你可以使用循环来实际输出这些内容。
 Dialogue: 0,0:45:46.90,0:45:47.94,english,,0,0,0,,More on that in a moment.
@@ -1139,7 +1133,7 @@ Dialogue: 0,0:45:54.33,0:45:54.83,english,,0,0,0,,Yeah?
 Dialogue: 0,0:45:54.83,0:45:55.79,english,,0,0,0,,AUDIENCE: A filter?
 Dialogue: 0,0:45:54.83,0:45:55.79,chinese,,0,0,0,,听众：一个滤镜？
 Dialogue: 0,0:45:55.79,0:45:56.59,english,,0,0,0,,DAVID J. MALAN: OK.
-Dialogue: 0,0:45:55.79,0:45:56.59,chinese,,0,0,0,,大卫-J-马兰：好的。
+Dialogue: 0,0:45:55.79,0:45:56.59,chinese,,0,0,0,,好的。
 Dialogue: 0,0:45:56.59,0:45:58.78,english,,0,0,0,,So filter, if we think of in the Instagram sense.
 Dialogue: 0,0:45:56.59,0:45:58.78,chinese,,0,0,0,,所以，如果我们从 Instagram 的角度来考虑，这就是滤镜。
 Dialogue: 0,0:45:58.78,0:46:01.88,english,,0,0,0,,You can change the color of something, and that could be related here too.
@@ -1183,7 +1177,7 @@ Dialogue: 0,0:47:30.23,0:47:37.70,chinese,,0,0,0,,现在，你可能先前就见
 Dialogue: 0,0:47:37.70,0:47:45.39,english,,0,0,0,,And indeed, this is just one key press on your phone, and you can combine different emoji on the left and then the right with the emoji in the middle.
 Dialogue: 0,0:47:37.70,0:47:45.39,chinese,,0,0,0,,事实上，这只需在手机上简单操作，\N就能将左边和右边的不同表情符号与中间的表情符号组合在一起。
 Dialogue: 0,0:47:45.39,0:47:54.92,english,,0,0,0,,And so it turns out how computers nowadays represent these patterns are one set of bits for the character on the left, one set of bits for a character on the right,
-Dialogue: 0,0:47:45.39,0:47:54.92,chinese,,0,0,0,,因此，现在的计算机在表示这些模式时，左边的字符用一组比特表示，右边的字符用一组比特表示、
+Dialogue: 0,0:47:45.39,0:47:54.92,chinese,,0,0,0,,因此，现在的计算机在表示这些模式时，左边的字符用一组比特表示，右边的字符用一组比特表示，
 Dialogue: 0,0:47:54.92,0:47:58.08,english,,0,0,0,,one set of bits for whatever emoji you want in the middle.
 Dialogue: 0,0:47:54.92,0:47:58.08,chinese,,0,0,0,,再一组比特表示你想放中间的表情符号。
 Dialogue: 0,0:47:58.08,0:48:06.35,english,,0,0,0,,And then you assemble more complicated compositions of emoji by just reusing those same patterns and bits and bits.
@@ -1219,11 +1213,11 @@ Dialogue: 0,0:49:12.39,0:49:14.95,annotation,,0,0,0,,*注：在前面提到，�
 Dialogue: 0,0:49:14.95,0:49:17.92,english,,0,0,0,,In actuality, that's kind of what's happening underneath the hood.
 Dialogue: 0,0:49:14.95,0:49:17.92,chinese,,0,0,0,,实际上，在计算机底层就是这样的。
 Dialogue: 0,0:49:17.92,0:49:24.67,english,,0,0,0,,It's not standardized in quite the same way, but starting next week, when we transition from scratch to C, you'll learn about types, data types.
-Dialogue: 0,0:49:17.92,0:49:24.67,chinese,,0,0,0,,只不过没有像unicode一样完全标准化。\N从下周开始，当我们从Scratch过渡到C时，你将学习数据类型。
+Dialogue: 0,0:49:17.92,0:49:24.67,chinese,,0,0,0,,只不过没有像 unicode 一样完全标准化。\N从下周开始，当我们从 Scratch 过渡到 C 时，你会学到数据类型。
 Dialogue: 0,0:49:24.67,0:49:35.64,english,,0,0,0,,Where the onus initially is going to be on you, the programmer, to tell the program whether or not this pattern of bits should be interpreted as a number or as a letter or as a color or something else.
 Dialogue: 0,0:49:24.67,0:49:35.64,chinese,,0,0,0,,最初，你作为程序员的责任是告诉程序，\N这些比特模式应该被解释为数字、字母、颜色还是别的什么。
 Dialogue: 0,0:49:35.64,0:49:41.17,english,,0,0,0,,Nowadays, though, and toward the end of the semester, you'll use languages, like Python, where the computer just figures it out
-Dialogue: 0,0:49:35.64,0:49:41.17,chinese,,0,0,0,,然后到学期末，你将使用像Python这样的语言，计算机会通过上下文自动判断，
+Dialogue: 0,0:49:35.64,0:49:41.17,chinese,,0,0,0,,然后到学期末，你将使用像 Python 这样的语言，计算机会通过上下文自动判断，
 Dialogue: 0,0:49:41.17,0:49:45.95,english,,0,0,0,,for you by context, which makes it even easier and faster to program as well.
 Dialogue: 0,0:49:41.17,0:49:45.95,chinese,,0,0,0,,这使得编程变得更加容易和快速。
 Dialogue: 0,0:49:45.95,0:49:50.58,english,,0,0,0,,Other questions on Unicode, ASCII or the like?
@@ -1245,11 +1239,11 @@ Dialogue: 0,0:50:08.97,0:50:18.39,chinese,,0,0,0,,这意味着，手机上的每
 Dialogue: 0,0:50:18.39,0:50:24.69,english,,0,0,0,,a number representing how much green, and a number representing how much blue it should show, red, green, blue, respectively.
 Dialogue: 0,0:50:18.39,0:50:24.69,chinese,,0,0,0,,有一个代表该点应显示多少绿色的数字，还有一个数字代表多少蓝色。记住分别是，红、绿、蓝。
 Dialogue: 0,0:50:24.69,0:50:37.25,english,,0,0,0,,So for instance, if a dot on your screen were using these three numbers, these three values or bytes, 72, 73, 33, in a text message or email, that would be interpreted as I claimed "HI!."
-Dialogue: 0,0:50:24.69,0:50:37.25,chinese,,0,0,0,,例如，如果在文本消息或电子邮件中使用了这三个值：\N72、73、33，那么这将被解释为我所说的"HI!"。
+Dialogue: 0,0:50:24.69,0:50:37.25,chinese,,0,0,0,,例如，如果在文本消息或电子邮件中使用了这三个值：\N72、73、33，就会被解释成 "HI!"。
 Dialogue: 0,0:50:37.25,0:50:47.84,english,,0,0,0,,But in Photoshop or in some graphical program, that same pattern would be interpreted as let's call it a medium amount of red, a medium amount of green, and a little bit of blue.
 Dialogue: 0,0:50:37.25,0:50:47.84,chinese,,0,0,0,,但是在 Photoshop 或一些图形程序中，这同样的模式会被解释为，\N中等量的红色、中等量的绿色和一点点蓝色。
 Dialogue: 0,0:50:47.84,0:50:49.25,english,,0,0,0,,And why medium and little?
-Dialogue: 0,0:50:47.84,0:50:49.25,chinese,,0,0,0,,为什么是 "中 "和 "少"？
+Dialogue: 0,0:50:47.84,0:50:49.25,chinese,,0,0,0,,为什么是 "中" 和 "少"？
 Dialogue: 0,0:50:49.25,0:50:54.11,english,,0,0,0,,Turns out, each of these are bytes, the smallest value you can have in a byte we said is 0.
 Dialogue: 0,0:50:49.25,0:50:54.11,chinese,,0,0,0,,原来，这些都是字节，我们说的字节中最小的值是 0。
 Dialogue: 0,0:50:54.11,0:50:58.10,english,,0,0,0,,The largest value you can have a byte is 255, so I'm just kind of spitballing here.
@@ -1261,7 +1255,7 @@ Dialogue: 0,0:51:02.66,0:51:12.89,chinese,,0,0,0,,这三种颜色，就像光的
 Dialogue: 0,0:51:12.89,0:51:18.47,english,,0,0,0,,That is how a computer would store precisely that color, and in fact, we've seen this color.
 Dialogue: 0,0:51:12.89,0:51:18.47,chinese,,0,0,0,,这就是计算机精确存储颜色的方式，实际上，我们之前也见过这种颜色。
 Dialogue: 0,0:51:18.47,0:51:23.93,english,,0,0,0,,When you type in Face with Tears of Joy, generally, on your screen, it looks like this, typically much smaller.
-Dialogue: 0,0:51:18.47,0:51:23.93,chinese,,0,0,0,,一般来说，当您在屏幕上输入 emoji "喜极而泣"时，它看起来是这样的，但通常要小得多。
+Dialogue: 0,0:51:18.47,0:51:23.93,chinese,,0,0,0,,一般来说，在屏幕上输入 emoji "笑哭" 的时候，它看起来是这样的，但通常要小得多。
 Dialogue: 0,0:51:23.93,0:51:27.98,english,,0,0,0,,But let's zoom in, or let's Zoom in a little more.
 Dialogue: 0,0:51:23.93,0:51:27.98,chinese,,0,0,0,,不过，让我们放大一点，再放大一点。
 Dialogue: 0,0:51:27.98,0:51:30.21,english,,0,0,0,,What are you starting to see, if you know the term?
@@ -1283,11 +1277,11 @@ Dialogue: 0,0:51:55.70,0:51:58.70,chinese,,0,0,0,,这个点需要多少红绿蓝
 Dialogue: 0,0:51:58.70,0:52:02.72,english,,0,0,0,,And you'll notice too, that when it gets to be sort of brownish here, the dots really stand out.
 Dialogue: 0,0:51:58.70,0:52:02.72,chinese,,0,0,0,,你也会注意到，当它变成褐色时，小点就会非常显眼。
 Dialogue: 0,0:52:02.72,0:52:08.16,english,,0,0,0,,The 3 values, the 3 bytes, a.k.a. 24 bits, are just slightly different.
-Dialogue: 0,0:52:02.72,0:52:08.16,chinese,,0,0,0,,这 3 个值、3 个字节（又称 24 位）只是略有不同。
+Dialogue: 0,0:52:02.72,0:52:08.16,chinese,,0,0,0,,这 3 个值、3 个字节，也就是 24 位，只是略有不同。
 Dialogue: 0,0:52:08.16,0:52:19.85,english,,0,0,0,,And so underneath the hood, this is why images, photographs that you take or gif that you download, get so darn big, potentially, because you have a number representing every dot on the screen.
 Dialogue: 0,0:52:08.16,0:52:19.85,chinese,,0,0,0,,这就是你拍摄的图片或下载的 gif 为什么这样大，因为屏幕上的每一个点都需要用数字代表。
 Dialogue: 0,0:52:19.85,0:52:29.63,english,,0,0,0,,Well, if this I claim is indeed how images are typically represented, using pattern of bits that are assigned to some amount of red, green, or blue, how do you get video?
-Dialogue: 0,0:52:19.85,0:52:29.63,chinese,,0,0,0,,嗯，如果我刚才介绍的确实是图像通常的表示方式，\N即使用位模式来表示一定数量的红色、绿色或蓝色，那么视频是如何产生的呢？
+Dialogue: 0,0:52:19.85,0:52:29.63,chinese,,0,0,0,,嗯，我刚才介绍的就是图像通常的表示方式，\N也就是用位模式来表示一定数量的红色、绿色或蓝色，那视频怎么表示的呢？
 Dialogue: 0,0:52:29.63,0:52:34.82,english,,0,0,0,,What is a video, if at the end of the day, all we have are 0's and 1's?
 Dialogue: 0,0:52:29.63,0:52:34.82,chinese,,0,0,0,,说到底我们所拥有的只是 0 和 1，那么视频又怎么表示呢？
 Dialogue: 0,0:52:34.82,0:52:36.50,english,,0,0,0,,What's a video, perhaps?
@@ -1391,17 +1385,17 @@ Dialogue: 0,0:57:14.18,0:57:24.23,chinese,,0,0,0,,现在，让我们考虑一下
 Dialogue: 0,0:57:24.23,0:57:27.97,english,,0,0,0,,This icon, if you have an iPhone, is, of course for your contacts application.
 Dialogue: 0,0:57:24.23,0:57:27.97,chinese,,0,0,0,,这个图标，如果你有iPhone的话，当然是你的联系人应用程序图标。
 Dialogue: 0,0:57:27.97,0:57:36.80,english,,0,0,0,,And if you've got a whole bunch of family members or friends or colleagues in your phonebook, you have some kind of contacts pictured here, and it's alphabetized typically by first name and last name.
-Dialogue: 0,0:57:27.97,0:57:36.80,chinese,,0,0,0,,如果你的通讯录里有许多家人、朋友或同事，你在这里会看到一些联系人的图片，通常按照名字的首字母和姓氏进行字母顺序排列。
+Dialogue: 0,0:57:27.97,0:57:36.80,chinese,,0,0,0,,如果你的通讯录里有许多家人、朋友或同事，\N你在这里会看到一些联系人的图片，通常按照名字的首字母和姓氏进行字母顺序排列。
 Dialogue: 0,0:57:36.80,0:57:42.95,english,,0,0,0,,And odds are, you and I are in the habit, if they're not already a favorite, of like clicking on Search and then using autocomplete.
 Dialogue: 0,0:57:36.80,0:57:42.95,chinese,,0,0,0,,而且很有可能，我们都习惯于在不是收藏联系人的情况下，点击搜索然后使用自动补全。
 Dialogue: 0,0:57:42.95,0:57:45.14,english,,0,0,0,,And what happens when you start typing autocomplete?
 Dialogue: 0,0:57:42.95,0:57:45.14,chinese,,0,0,0,,当你开始输入自动补全时会发生什么呢？
 Dialogue: 0,0:57:45.14,0:57:48.71,english,,0,0,0,,Well if you type in the letter H, you'll see only, presumably,
-Dialogue: 0,0:57:45.14,0:57:48.71,chinese,,0,0,0,,当你输入字母H时，你会看到，
+Dialogue: 0,0:57:45.14,0:57:48.71,chinese,,0,0,0,,当你输入字母 H 时，你会看到，
 Dialogue: 0,0:57:48.71,0:57:50.64,english,,0,0,0,,Hagrid, Harry, Hermione, and so forth.
 Dialogue: 0,0:57:48.71,0:57:50.64,chinese,,0,0,0,,只有 Hagrid、Harry、Hermione 等等。
 Dialogue: 0,0:57:50.64,0:57:56.28,english,,0,0,0,,If you type in H-A that shows you only Hagrid and Harry, and it all happens super fast.
-Dialogue: 0,0:57:50.64,0:57:56.28,chinese,,0,0,0,,如果输入 H-A，则只显示海格和哈利，而且速度超快。
+Dialogue: 0,0:57:50.64,0:57:56.28,chinese,,0,0,0,,如果输入 H-A，则只显示 Hagrid 和 Harry，而且速度超快。
 Dialogue: 0,0:57:56.28,0:57:57.72,english,,0,0,0,,So how is that happening?
 Dialogue: 0,0:57:56.28,0:57:57.72,chinese,,0,0,0,,这是怎么回事呢？
 Dialogue: 0,0:57:57.72,0:58:07.49,english,,0,0,0,,Well, typically, you could just start at the top and look to the bottom, searching for all of the H's or all of the H-A's, but for larger data sets that's going to get slow.
@@ -1454,7 +1448,7 @@ Dialogue: 0,0:59:41.15,0:59:42.60,chinese,,0,0,0,,这个算法，正确吗？
 Dialogue: 0,0:59:42.60,0:59:43.46,english,,0,0,0,,AUDIENCE: No.
 Dialogue: 0,0:59:42.60,0:59:43.46,chinese,,0,0,0,,听众：不是。
 Dialogue: 0,0:59:43.46,0:59:44.15,english,,0,0,0,,DAVID J. MALAN: All right, so no.
-Dialogue: 0,0:59:43.46,0:59:44.15,chinese,,0,0,0,,戴维-J-马兰：好吧，确实不对。
+Dialogue: 0,0:59:43.46,0:59:44.15,chinese,,0,0,0,,好吧，确实不对。
 Dialogue: 0,0:59:44.15,0:59:44.78,english,,0,0,0,,Why?
 Dialogue: 0,0:59:44.78,0:59:46.28,english,,0,0,0,,AUDIENCE: You're skipping pages.
 Dialogue: 0,0:59:44.78,0:59:46.28,chinese,,0,0,0,,听众：你在跳页。
@@ -1611,7 +1605,7 @@ Dialogue: 0,1:04:43.21,1:04:45.70,chinese,,0,0,0,,其实，我的第一步就是
 Dialogue: 0,1:04:45.70,1:04:48.79,english,,0,0,0,,My second step was opening to the middle of the phone book.
 Dialogue: 0,1:04:45.70,1:04:48.79,chinese,,0,0,0,,我的第二步是打开电话簿的中间部分。
 Dialogue: 0,1:04:48.79,1:04:52.57,english,,0,0,0,,My third step was somewhat different-- look at the page, because why?
-Dialogue: 0,1:04:48.79,1:04:52.57,chinese,,0,0,0,,我的第三步有些不同——看页面，因为为什么？
+Dialogue: 0,1:04:48.79,1:04:52.57,chinese,,0,0,0,,我的第三步有些不同—— 看页面，因为为什么？
 Dialogue: 0,1:04:52.57,1:04:57.67,english,,0,0,0,,My fourth step was if person I'm looking for is on the page, I then do what?
 Dialogue: 0,1:04:52.57,1:04:57.67,chinese,,0,0,0,,我的第四步是，如果我要找的人出现在页面上，我应该怎么做？
 Dialogue: 0,1:04:57.67,1:05:00.82,english,,0,0,0,,It never happened in my example, but I call the person.
@@ -1619,7 +1613,7 @@ Dialogue: 0,1:04:57.67,1:05:00.82,chinese,,0,0,0,,在我的例子中，这种情
 Dialogue: 0,1:05:00.82,1:05:01.96,english,,0,0,0,,So I'm done.
 Dialogue: 0,1:05:00.82,1:05:01.96,chinese,,0,0,0,,然后流程结束了。
 Dialogue: 0,1:05:01.96,1:05:08.83,english,,0,0,0,,Else if the person is earlier in the book alphabetically, as John Harvard was in the case of my H, then
-Dialogue: 0,1:05:01.96,1:05:08.83,chinese,,0,0,0,,否则，如果要查找的人在电话簿中的字母顺序靠前，\N就像在我的例子中 John Harvard 的 “H” 一样，
+Dialogue: 0,1:05:01.96,1:05:08.83,chinese,,0,0,0,,否则，如果要查找的人在电话簿中的字母顺序靠前，\N就像在我的例子中 John Harvard 的 "H" 一样，
 Dialogue: 0,1:05:08.83,1:05:12.46,english,,0,0,0,,I should search to the middle of the left of the phone book.
 Dialogue: 0,1:05:08.83,1:05:12.46,chinese,,0,0,0,,那么我应该搜索电话簿的左半部分的中间位置。
 Dialogue: 0,1:05:12.46,1:05:15.80,english,,0,0,0,,And then I should go back to step three.
@@ -1654,23 +1648,23 @@ Dialogue: 0,1:06:02.05,1:06:05.41,chinese,,0,0,0,,接下来，我们将把这些
 Dialogue: 0,1:06:05.41,1:06:14.02,english,,0,0,0,,When you program or write code and you want the program or the computer to do something for you, some action or verb, we're going to refer to those actions or verbs
 Dialogue: 0,1:06:05.41,1:06:14.02,chinese,,0,0,0,,当你编程或写代码时，如果你想让程序或计算机为你执行一些操作或动作，
 Dialogue: 0,1:06:14.02,1:06:16.51,english,,0,0,0,,as these things called "functions," like those here.
-Dialogue: 0,1:06:14.02,1:06:16.51,chinese,,0,0,0,,我们将把这些操作或动作称为"函数"（function）。
+Dialogue: 0,1:06:14.02,1:06:16.51,chinese,,0,0,0,,我们将把这些操作或动作称为 "函数"（function）。
 Dialogue: 0,1:06:16.51,1:06:20.95,english,,0,0,0,,By contrast, I've just highlighted, instead, my "if," my "else if," my "else if," and "else."
-Dialogue: 0,1:06:16.51,1:06:20.95,chinese,,0,0,0,,另一方面，我用黄色标出"if"、"else if"、"else if"和"else"。
+Dialogue: 0,1:06:16.51,1:06:20.95,chinese,,0,0,0,,另一方面，我用黄色标出 "if"、"else if"、"else if" 和 "else"。
 Dialogue: 0,1:06:20.95,1:06:29.86,english,,0,0,0,,This is going to represent what we're going to start calling a "conditional," a proverbial fork in the road where you can either go this way or that way, do this thing or this other thing.
-Dialogue: 0,1:06:20.95,1:06:29.86,chinese,,0,0,0,,这将代表称之为"条件"的东西，类似于在道路上的岔路口，\N你可以选择这条路还是那条路，做这件事还是那件事。
+Dialogue: 0,1:06:20.95,1:06:29.86,chinese,,0,0,0,,这就是 "条件"，类似于在道路上的岔路口，\N你可以选择这条路还是那条路，做这件事还是那件事。
 Dialogue: 0,1:06:29.86,1:06:38.23,english,,0,0,0,,And you're going to decide which of those things to do based on what I've now highlighted here, which are going to be called "Boolean expressions"--
-Dialogue: 0,1:06:29.86,1:06:38.23,chinese,,0,0,0,,你将根据我现在标出的内容来决定要做哪些事情，这些内容将被称为 "布尔表达式"。
+Dialogue: 0,1:06:29.86,1:06:38.23,chinese,,0,0,0,,程序会根据我现在标出的内容来决定做什么不做什么，这些内容叫做 "布尔表达式"。
 Dialogue: 0,1:06:38.23,1:06:41.26,english,,0,0,0,,Boole, referring to a mathematician, last name Boole.
 Dialogue: 0,1:06:38.23,1:06:41.26,chinese,,0,0,0,,布尔，指一位数学家，姓布尔。
 Dialogue: 0,1:06:41.26,1:06:47.98,english,,0,0,0,,A Boolean expression is just a question with a yes/no, a true/false, a 1 or a 0 answer, if you will.
-Dialogue: 0,1:06:41.26,1:06:47.98,chinese,,0,0,0,,布尔表达式只是一个问题，有 "是"/"否"、"真"/"假"、"1 "或 "0 "等答案。
+Dialogue: 0,1:06:41.26,1:06:47.98,chinese,,0,0,0,,布尔表达式只是一个问题，是或否、真或假、1 或 0 等答案。
 Dialogue: 0,1:06:47.98,1:06:51.79,english,,0,0,0,,And it governs whether you do this thing or this thing or this thing or that.
 Dialogue: 0,1:06:47.98,1:06:51.79,chinese,,0,0,0,,它决定着你是做这件事，还是做这件事，还是做这件事，还是做那件事。
 Dialogue: 0,1:06:51.79,1:06:54.44,english,,0,0,0,,The indentation, in this case, is important.
 Dialogue: 0,1:06:51.79,1:06:54.44,chinese,,0,0,0,,在这种情况下，缩进是很重要的。
 Dialogue: 0,1:06:54.44,1:07:06.41,english,,0,0,0,,The fact that I've indented line 5 implies, by convention in programming, that I should only do line 5 if the answer to line 4 is a yes or a true, and same for these other indented lines as well.
-Dialogue: 0,1:06:54.44,1:07:06.41,chinese,,0,0,0,,我对第5行进行缩进意味着按照编程的惯例，\N只有当第4行的答案是是或真时，才执行第5行，其他缩进的行也是类似的。
+Dialogue: 0,1:06:54.44,1:07:06.41,chinese,,0,0,0,,我对第 5 行进行缩进意味着按照编程的惯例，\N只有当第 4 行的答案是是或真时，才执行第 5 行，其他缩进的行也是类似的。
 Dialogue: 0,1:07:06.41,1:07:09.49,english,,0,0,0,,And the last characteristic here is this here.
 Dialogue: 0,1:07:06.41,1:07:09.49,chinese,,0,0,0,,最后一个特点在这里。
 Dialogue: 0,1:07:09.49,1:07:11.20,english,,0,0,0,,Someone called this out earlier, in fact.
@@ -1685,7 +1679,7 @@ Dialogue: 0,1:07:24.82,1:07:28.24,chinese,,0,0,0,,但在伪代码中，这种算
 Dialogue: 0,1:07:28.24,1:07:34.75,english,,0,0,0,,Even though it's telling me to go back to line 3, why is this algorithm eventually going to stop?
 Dialogue: 0,1:07:28.24,1:07:34.75,chinese,,0,0,0,,它都告诉我要回到第 3 行，但为什么这种算法最终会结束呢？
 Dialogue: 0,1:07:34.75,1:07:43.01,english,,0,0,0,,Why do I not constantly keep looking for John Harvard forever by nature of these loops telling me to keep going back to line 3?
-Dialogue: 0,1:07:34.75,1:07:43.01,chinese,,0,0,0,,你为什么不会因为这些让你不断地回到第3行的循环，\N无穷无尽地寻找 John Harvard 呢？
+Dialogue: 0,1:07:34.75,1:07:43.01,chinese,,0,0,0,,你为什么不会因为这些让你不断地回到第 3 行的循环，\N无穷无尽地寻找 John Harvard 呢？
 Dialogue: 0,1:07:43.01,1:07:43.58,english,,0,0,0,,Good.
 Dialogue: 0,1:07:43.58,1:07:51.26,english,,0,0,0,,Eventually, he'll be on the page or, to your point earlier, he won't be at all and we're out of pages, and so we just quit.
 Dialogue: 0,1:07:43.58,1:07:51.26,chinese,,0,0,0,,最终，他会出现在某一页上，或者就像之前提到的，\N他根本不在电话簿上，我们已经翻遍了所有页面，这时我们就会退出。
@@ -1706,17 +1700,17 @@ Dialogue: 0,1:08:18.08,1:08:25.88,chinese,,0,0,0,,学习编程的过程可能会
 Dialogue: 0,1:08:25.88,1:08:30.38,english,,0,0,0,,But you'll find that the ideas, in fact, are going to be more familiar than you might otherwise think.
 Dialogue: 0,1:08:25.88,1:08:30.38,chinese,,0,0,0,,但你会发现，事实上，这些想法会比你想象的更加熟悉。
 Dialogue: 0,1:08:30.38,1:08:38.24,english,,0,0,0,,And so we'll see in a bit-- and we'll take a break in a moment to take a breather-- that you will see these same ideas in a moment in the context of Scratch,
-Dialogue: 0,1:08:30.38,1:08:38.24,chinese,,0,0,0,,所以我们待会儿会看到—— 我们马上会休息一下——\N你会在Scratch的环境中看到这些相同的想法，
+Dialogue: 0,1:08:30.38,1:08:38.24,chinese,,0,0,0,,所以我们待会儿会看到，我们马上会休息一下，\N你会在 Scratch 的环境中看到这些相同的想法，
 Dialogue: 0,1:08:38.24,1:08:42.74,english,,0,0,0,,an actual programming language via which we'll drag and drop puzzle pieces to make actual code work.
 Dialogue: 0,1:08:38.24,1:08:42.74,chinese,,0,0,0,,Scratch 是一种实际的编程语言，我们可以通过拖放拼图来编写实际的代码。
 Dialogue: 0,1:08:42.74,1:08:47.04,english,,0,0,0,,We'll see some variants of these ideas, things called "arguments" and "return values" and "variables."
-Dialogue: 0,1:08:42.74,1:08:47.04,chinese,,0,0,0,,我们将看到一些这些想法的变体，比如"参数"、"返回值"和"变量"。
+Dialogue: 0,1:08:42.74,1:08:47.04,chinese,,0,0,0,,我们将看到一些这些想法的变体，比如 "参数"、"返回值"和 "变量"。
 Dialogue: 0,1:08:47.04,1:08:50.66,english,,0,0,0,,But we'll ultimately convert it into this somehow.
 Dialogue: 0,1:08:47.04,1:08:50.66,chinese,,0,0,0,,但最终，我们将把它转换成这样的代码。
 Dialogue: 0,1:08:50.66,1:08:56.81,english,,0,0,0,,Anyone want to wager what this program will do if fed to your Mac or PC or phone?
-Dialogue: 0,1:08:50.66,1:08:56.81,chinese,,0,0,0,,有人愿意打赌，如果将这个程序输入到你的Mac、PC或手机中，它会做什么吗？
+Dialogue: 0,1:08:50.66,1:08:56.81,chinese,,0,0,0,,有人愿意打赌，如果将这个程序输入到你的 Mac、PC 或手机中，它会做什么吗？
 Dialogue: 0,1:08:56.81,1:08:59.97,english,,0,0,0,,Here's just a massive pattern of zeros and ones.
-Dialogue: 0,1:08:56.81,1:08:59.97,chinese,,0,0,0,,这里只是一大堆的0和1。
+Dialogue: 0,1:08:56.81,1:08:59.97,chinese,,0,0,0,,这里只是一大堆的 0 和 1。
 Dialogue: 0,1:08:59.97,1:09:01.19,english,,0,0,0,,AUDIENCE: [INAUDIBLE]
 Dialogue: 0,1:09:01.20,1:09:05.37,english,,0,0,0,,DAVID J. MALAN: It will indeed say, rather disappointingly, apparently, just, "Hello, world."
 Dialogue: 0,1:09:01.20,1:09:05.37,chinese,,0,0,0,,它确实会说，有点让人失望，只是 "Hello, world"。
@@ -1770,7 +1764,7 @@ Dialogue: 0,1:11:43.72,1:11:49.31,chinese,,0,0,0,,这就是我们麻省理工学
 Dialogue: 0,1:11:49.31,1:11:58.63,english,,0,0,0,,that indeed some of you might have used in grade school or the like, for playing and writing code and the like, but you maybe didn't necessarily think about how some of these primitives ultimately worked.
 Dialogue: 0,1:11:49.31,1:11:58.63,chinese,,0,0,0,,有些人可能在小学或类似场合使用过它，用于玩耍和编写代码等，\N但你可能并没有深入考虑这些基本概念是如何工作的。
 Dialogue: 0,1:11:58.63,1:12:07.12,english,,0,0,0,,And in fact, everything you've done-- if you've used Scratch before-- and everything you'll see today is going to apply to all of the weeks to come, as we explore these things called "functions"
-Dialogue: 0,1:11:58.63,1:12:07.12,chinese,,0,0,0,,实际上，你所做的一切—— 如果你以前使用过 Scratch——\N以及你今天将要看到的内容，将适用于接下来的所有周，
+Dialogue: 0,1:11:58.63,1:12:07.12,chinese,,0,0,0,,实际上，你所做的一切，如果你以前已经用过 Scratch 的话，\N以及你今天将要看到的内容，将适用于接下来的所有周，
 Dialogue: 0,1:12:07.12,1:12:09.82,english,,0,0,0,,and "loops" and "conditionals," "Boolean expressions" and more.
 Dialogue: 0,1:12:07.12,1:12:09.82,chinese,,0,0,0,,我们将探索这些被称为"函数"、"循环"、"条件语句"、"布尔表达式"等等的概念。
 Dialogue: 0,1:12:09.82,1:12:17.86,english,,0,0,0,,With Scratch, because it's so graphical and animated-congruent, can you create animations, like this one, interactive art, and software more generally.
@@ -1779,12 +1773,10 @@ Dialogue: 0,1:12:17.86,1:12:23.99,english,,0,0,0,,But you'll do so by dragging a
 Dialogue: 0,1:12:17.86,1:12:23.99,chinese,,0,0,0,,但是，你将通过拖放拼图块来实现这些功能，\N只有当逻辑上合理时，这些拼图块才会锁定在一起。
 Dialogue: 0,1:12:23.99,1:12:33.46,english,,0,0,0,,And you won't have to deal with, in this first week of class, is curly braces, parentheses, all of the weird symbology that you might recall seeing, when we just wanted to say, "Hello, world."
 Dialogue: 0,1:12:23.99,1:12:33.46,chinese,,0,0,0,,在这门课程的第一周，你不需要处理大括号、括号和其他奇怪的符号，\N而我们只想说 "Hello, world."。
-Dialogue: 0,1:12:33.46,1:12:41.86,english,,0,0,0,,Now, this particular program, "Raining Men," was written by a former CS50 teaching fellow, Andrew Berry, who's actually now the general manager of the Cleveland
-Dialogue: 0,1:12:33.46,1:12:41.86,chinese,,0,0,0,,现在，这个特定的程序叫做 "Raining Men"，是由前 CS50 助教 Andrew Berry 编写的，\N他现在是美国橄榄球队克利夫兰棕榈队的总经理。
-Dialogue: 0,1:12:41.86,1:12:43.73,english,,0,0,0,,Browns, the American football team.
-Dialogue: 0,1:12:41.86,1:12:43.73,chinese,,0,0,0,,他现在是美国橄榄球队克利夫兰棕榈队的总经理。
+Dialogue: 0,1:12:33.46,1:12:43.73,english,,0,0,0,,Now, this particular program, "Raining Men," was written by a former CS50 teaching fellow, Andrew Berry, who's actually now the general manager of the Cleveland Browns, the American football team.
+Dialogue: 0,1:12:33.46,1:12:43.73,chinese,,0,0,0,,现在，这个特定的程序叫做 "Raining Men"，是由前 CS50 助教 Andrew Berry 编写的，\N他现在是美国橄榄球队克利夫兰棕榈队的总经理。
 Dialogue: 0,1:12:43.73,1:12:48.40,english,,0,0,0,,And so these are just some of the programs that some of your predecessors in the class have created.
-Dialogue: 0,1:12:43.73,1:12:48.40,chinese,,0,0,0,,这些只是你们前辈在课程中创建的一些程序。
+Dialogue: 0,1:12:43.73,1:12:48.40,chinese,,0,0,0,,这些只是你们前辈在课程里写的一些程序。
 Dialogue: 0,1:12:48.40,1:12:56.17,english,,0,0,0,,And you'll see, in the remainder of class here, a couple of others as well, and more in the course's first assignment, namely, problem set zero.
 Dialogue: 0,1:12:48.40,1:12:56.17,chinese,,0,0,0,,在接下来的课程中，你还会看到其他一些程序，以及课程的第一个作业，即问题集 0。
 Dialogue: 0,1:12:56.17,1:12:57.47,english,,0,0,0,,So how do we get there?
@@ -1794,7 +1786,7 @@ Dialogue: 0,1:12:57.47,1:13:00.04,chinese,,0,0,0,,首先，简单介绍一下我
 Dialogue: 0,1:13:00.04,1:13:03.52,english,,0,0,0,,This, in Scratch, is perhaps the simplest program you can write.
 Dialogue: 0,1:13:00.04,1:13:03.52,chinese,,0,0,0,,在 Scratch 中，这也许是你能编写的最简单的程序。
 Dialogue: 0,1:13:03.52,1:13:09.97,english,,0,0,0,,And even if you've never seen Scratch or any programming language before, you can probably guess that this just says, on the screen somehow,
-Dialogue: 0,1:13:03.52,1:13:09.97,chinese,,0,0,0,,即使你以前从未见过Scratch或其他编程语言，你可能也能猜到这个程序只是在屏幕上显示
+Dialogue: 0,1:13:03.52,1:13:09.97,chinese,,0,0,0,,即使你以前从未见过 Scratch 或其他编程语言，你可能也能猜到这个程序只是在屏幕上显示：
 Dialogue: 0,1:13:09.97,1:13:10.94,english,,0,0,0,,"Hello, World."
 Dialogue: 0,1:13:10.94,1:13:16.72,english,,0,0,0,,But what you don't have to do is type esoteric commands and weird syntax, those curly braces and parentheses I keep alluding to.
 Dialogue: 0,1:13:10.94,1:13:16.72,chinese,,0,0,0,,但你不需要输入奇怪的命令和复杂的语法，就像我之前一直提到的大括号和括号一样。
@@ -1814,7 +1806,7 @@ Dialogue: 0,1:13:32.74,1:13:38.50,english,,0,0,0,,At Scratch.MIT.edu is a cloud-
 Dialogue: 0,1:13:32.74,1:13:38.50,chinese,,0,0,0,,在 scratch.mit.edu 上有一个基于云的编程环境，托管在麻省理工学院的服务器上。
 Dialogue: 0,1:13:32.74,1:13:38.50,annotation,,0,0,0,,*注：需要科学的上网环境
 Dialogue: 0,1:13:38.50,1:13:41.38,english,,0,0,0,,You can also download it offline on your own Mac or PC.
-Dialogue: 0,1:13:38.50,1:13:41.38,chinese,,0,0,0,,您还可以在自己的 Mac 或 PC 上离线下载。
+Dialogue: 0,1:13:38.50,1:13:41.38,chinese,,0,0,0,,你还可以在自己的 Mac 或 PC 上离线下载。
 Dialogue: 0,1:13:41.38,1:13:43.87,english,,0,0,0,,And it gives you an interface like this.
 Dialogue: 0,1:13:41.38,1:13:43.87,chinese,,0,0,0,,它会给你一个这样的界面。
 Dialogue: 0,1:13:43.87,1:13:47.77,english,,0,0,0,,On the left-hand side of the screen, you'll see a blocks palette.
@@ -1824,15 +1816,15 @@ Dialogue: 0,1:13:47.77,1:13:52.54,chinese,,0,0,0,,这些拼图或者叫积木，
 Dialogue: 0,1:13:52.54,1:13:57.04,english,,0,0,0,,So pictured here, for instance, in blue, are a whole bunch of motion-related blocks.
 Dialogue: 0,1:13:52.54,1:13:57.04,chinese,,0,0,0,,例如，图中蓝色部分就是一大堆与运动相关的图块。
 Dialogue: 0,1:13:57.04,1:14:05.11,english,,0,0,0,,So Andrew used a whole bunch of those to have the singer and the men moving around on the screen in synchronicity with the song that was playing in the background.
-Dialogue: 0,1:13:57.04,1:14:05.11,chinese,,0,0,0,,于是，安德鲁用了一大堆这样的道具，让歌手和男主角在屏幕上随着背景音乐同步移动。
+Dialogue: 0,1:13:57.04,1:14:05.11,chinese,,0,0,0,,于是，Andrew 用了一大堆这样的道具，让歌手和男主角在屏幕上随着背景音乐同步移动。
 Dialogue: 0,1:14:05.11,1:14:09.31,english,,0,0,0,,Meanwhile, in the middle of this interface is going to be the code area.
 Dialogue: 0,1:14:05.11,1:14:09.31,chinese,,0,0,0,,同时，这个界面的中间将是代码区。
 Dialogue: 0,1:14:09.31,1:14:14.72,english,,0,0,0,,And this is where Andrew, and soon you, will drag and drop some of those puzzle pieces and other colors as well
-Dialogue: 0,1:14:09.31,1:14:14.72,chinese,,0,0,0,,在这里，安德鲁和你将拖放各种颜色的拼图块，
+Dialogue: 0,1:14:09.31,1:14:14.72,chinese,,0,0,0,,在这里，Andrew 和你将拖放各种颜色的拼图块，
 Dialogue: 0,1:14:14.72,1:14:20.11,english,,0,0,0,,and lock them together to get your character-- soon to be invented-- to do something on the screen.
 Dialogue: 0,1:14:14.72,1:14:20.11,chinese,,0,0,0,,并将它们锁定在一起，让你的角色在屏幕上做一些事情。
 Dialogue: 0,1:14:20.11,1:14:29.65,english,,0,0,0,,Indeed, at the bottom right here, will you see, ultimately, a sprite area, where a sprite is a technical term for like a character in a video game or a programming environment like this.
-Dialogue: 0,1:14:20.11,1:14:29.65,chinese,,0,0,0,,的确，在这里的右下方，你将会看到一个精灵区域，\N精灵是指在视频游戏或像这样的编程环境中的角色。
+Dialogue: 0,1:14:20.11,1:14:29.65,chinese,,0,0,0,,然后，在这里的右下方，你将会看到一个精灵区域，\N精灵是指在视频游戏或像这样的编程环境中的角色。
 Dialogue: 0,1:14:29.65,1:14:36.02,english,,0,0,0,,By default, historically, Scratch is the cat, the mascot, if you will, for this programming environment.
 Dialogue: 0,1:14:29.65,1:14:36.02,chinese,,0,0,0,,在历史上，Scratch 默认的精灵是一只猫，也可以说是这个编程环境的吉祥物。
 Dialogue: 0,1:14:36.02,1:14:42.49,english,,0,0,0,,And so here we see, by default, just one sprite selected because on the top right of the screen is the stage for that sprite.
@@ -1840,11 +1832,11 @@ Dialogue: 0,1:14:36.02,1:14:42.49,chinese,,0,0,0,,所以在这里我们看到，
 Dialogue: 0,1:14:42.49,1:14:45.31,english,,0,0,0,,And you can click and zoom in to make it full screen.
 Dialogue: 0,1:14:42.49,1:14:45.31,chinese,,0,0,0,,你可以点击并缩放它，使其全屏显示。
 Dialogue: 0,1:14:45.31,1:14:49.12,english,,0,0,0,,But this is the world in which Scratch-- by default, the cat-- will live.
-Dialogue: 0,1:14:45.31,1:14:49.12,chinese,,0,0,0,,但这是 Scratch 的世界——默认情况下是一只猫——将会生活的地方。
+Dialogue: 0,1:14:45.31,1:14:49.12,chinese,,0,0,0,,但这是 Scratch 的世界，默认情况下是一只猫将会生活的地方。
 Dialogue: 0,1:14:49.12,1:14:55.85,english,,0,0,0,,But you can change Scratch's costume so that it looks like a singer or the man falling from the sky or the like or anything else
-Dialogue: 0,1:14:49.12,1:14:55.85,chinese,,0,0,0,,但你可以改变 Scratch 的造型，让它看起来像一个歌手，或者从天上掉下来的人，或者其他任何东西，
+Dialogue: 0,1:14:49.12,1:14:55.85,chinese,,0,0,0,,但你可以改变 Scratch 的造型，\N让它看起来像一个歌手，或者从天上掉下来的人，或者其他任何东西，
 Dialogue: 0,1:14:55.85,1:15:00.26,english,,0,0,0,,either creating the art yourself or importing some of the things that come with it or elsewhere online.
-Dialogue: 0,1:14:55.85,1:15:00.26,chinese,,0,0,0,,你可以自己创作，也可以从网上或其他地方引进一些艺术品。
+Dialogue: 0,1:14:55.85,1:15:00.26,chinese,,0,0,0,,你可以自己创作，也可以从网上或其他地方引进一些艺术素材。
 Dialogue: 0,1:15:00.26,1:15:03.64,english,,0,0,0,,So what is this world that Scratch rather lives in?
 Dialogue: 0,1:15:00.26,1:15:03.64,chinese,,0,0,0,,那么，Scratch 所处的世界究竟是怎样的呢？
 Dialogue: 0,1:15:03.64,1:15:08.64,english,,0,0,0,,Well, generally speaking, we won't have to care too much about numbers because we'll be able to ask questions
@@ -1854,17 +1846,17 @@ Dialogue: 0,1:15:08.64,1:15:15.52,chinese,,0,0,0,,比如 Scratch 猫或其他任
 Dialogue: 0,1:15:15.52,1:15:21.08,english,,0,0,0,,But Scratch does exist in this two-dimensional coordinate-system world.
 Dialogue: 0,1:15:15.52,1:15:21.08,chinese,,0,0,0,,但是 Scratch 确实存在于这个二维坐标系统的世界中。
 Dialogue: 0,1:15:21.08,1:15:27.70,english,,0,0,0,,So when the cat or any character is dead center in the middle, that would be xy location 0,0, if you will.
-Dialogue: 0,1:15:21.08,1:15:27.70,chinese,,0,0,0,,所以当猫或任何角色位于中心位置时，它的x y坐标是 0,0 。
+Dialogue: 0,1:15:21.08,1:15:27.70,chinese,,0,0,0,,所以当猫或任何角色位于中心位置时，它的 x y 坐标是 0,0 。
 Dialogue: 0,1:15:27.70,1:15:32.99,english,,0,0,0,,Meanwhile, over here is 240 pixels, or dots, all the way to the right.
 Dialogue: 0,1:15:27.70,1:15:32.99,chinese,,0,0,0,,同时，在这里是 240 像素，或者说点，一直到最右边。
 Dialogue: 0,1:15:32.99,1:15:37.70,english,,0,0,0,,So this would be 240,0, where y is 0 because it's right on that midline.
-Dialogue: 0,1:15:32.99,1:15:37.70,chinese,,0,0,0,,因此这里是 240,0 ，其中y是0，因为它正好在中线上，
+Dialogue: 0,1:15:32.99,1:15:37.70,chinese,,0,0,0,,因此这里是 240,0 ，其中 y 是 0，因为它正好在中线上，
 Dialogue: 0,1:15:37.70,1:15:39.46,english,,0,0,0,,So it's neither up or below.
 Dialogue: 0,1:15:37.70,1:15:39.46,chinese,,0,0,0,,既不在上方也不在下方。
 Dialogue: 0,1:15:39.46,1:15:43.33,english,,0,0,0,,Over here to the left, of course, would be -240 and 0.
 Dialogue: 0,1:15:39.46,1:15:43.33,chinese,,0,0,0,,在左边，当然就是 -240 和 0 。
 Dialogue: 0,1:15:43.33,1:15:48.88,english,,0,0,0,,Above the cat would be x equals 0, because it's right on that vertical midline, and 180.
-Dialogue: 0,1:15:43.33,1:15:48.88,chinese,,0,0,0,,猫上方的 x 坐标是0，因为它正好在竖直中线上，而 y 坐标是180。
+Dialogue: 0,1:15:43.33,1:15:48.88,chinese,,0,0,0,,猫上方的 x 坐标是 0，因为它正好在竖直中线上，而 y 坐标是 180。
 Dialogue: 0,1:15:48.88,1:15:52.15,english,,0,0,0,,And then down here, as you might guess, would be 0, negative 180.
 Dialogue: 0,1:15:48.88,1:15:52.15,chinese,,0,0,0,,然后在下方，你可能会猜到，就是 0，-180。
 Dialogue: 0,1:15:52.15,1:15:55.73,english,,0,0,0,,Generally speaking, we don't have to care about those precise pixel coordinates.
@@ -1928,7 +1920,7 @@ Dialogue: 0,1:17:50.98,1:17:54.28,chinese,,0,0,0,,解决问题实际上是关于
 Dialogue: 0,1:17:54.28,1:17:56.04,english,,0,0,0,,And in between there is some algorithm.
 Dialogue: 0,1:17:54.28,1:17:56.04,chinese,,0,0,0,,在这输入输出之间，是一些算法。
 Dialogue: 0,1:17:56.04,1:18:00.47,english,,0,0,0,,In a moment, we're going to start referring to algorithms quite frequently as "functions."
-Dialogue: 0,1:17:56.04,1:18:00.47,chinese,,0,0,0,,接下来，我们将经常将算法称为"函数"，
+Dialogue: 0,1:17:56.04,1:18:00.47,chinese,,0,0,0,,接下来，我们将经常将算法称为  "函数"，
 Dialogue: 0,1:18:00.47,1:18:00.97,english,,0,0,0,,Why?
 Dialogue: 0,1:18:00.97,1:18:03.35,english,,0,0,0,,Because it's the implementation of some algorithm.
 Dialogue: 0,1:18:00.97,1:18:03.35,chinese,,0,0,0,,因为它是某种算法的实现。
@@ -1937,7 +1929,7 @@ Dialogue: 0,1:18:03.35,1:18:06.64,chinese,,0,0,0,,让我用 "Hello, world" 来�
 Dialogue: 0,1:18:06.64,1:18:07.69,english,,0,0,0,,I'll zoom out.
 Dialogue: 0,1:18:06.64,1:18:07.69,chinese,,0,0,0,,我要放大一下。
 Dialogue: 0,1:18:07.69,1:18:15.31,english,,0,0,0,,And now if I go to the top right of the screen and click the Green Flag, we'll see, hopefully, my very first program in code.
-Dialogue: 0,1:18:07.69,1:18:15.31,chinese,,0,0,0,,现在，如果我转到屏幕右上方，点击 "绿旗"，我们就能看到我的第一个程序代码了。
+Dialogue: 0,1:18:07.69,1:18:15.31,chinese,,0,0,0,,现在，我转到屏幕右上方，点击绿旗，就能看到我的第一个程序代码了。
 Dialogue: 0,1:18:15.31,1:18:17.19,english,,0,0,0,,Now, it wasn't a huge lift, right?
 Dialogue: 0,1:18:15.31,1:18:17.19,chinese,,0,0,0,,现在，这可真是一个巨大的突破，是吧？
 Dialogue: 0,1:18:17.19,1:18:19.69,english,,0,0,0,,It only was a matter of dragging and dropping puzzle pieces.
@@ -1977,7 +1969,7 @@ Dialogue: 0,1:19:11.35,1:19:16.08,chinese,,0,0,0,,但在程序员的术语中，
 Dialogue: 0,1:19:16.08,1:19:20.05,english,,0,0,0,,And that just means an input to a function that modifies its behavior in some way.
 Dialogue: 0,1:19:16.08,1:19:20.05,chinese,,0,0,0,,它们是传递给函数的输入值，可以在某种程度上修改函数的行为。
 Dialogue: 0,1:19:20.05,1:19:22.25,english,,0,0,0,,When I click Stop, that's just another event.
-Dialogue: 0,1:19:20.05,1:19:22.25,chinese,,0,0,0,,当我点击 "Stop" 时，那只是另一个事件。
+Dialogue: 0,1:19:20.05,1:19:22.25,chinese,,0,0,0,,我点击 Stop，就是触发另一个事件。
 Dialogue: 0,1:19:22.25,1:19:23.92,english,,0,0,0,,And that one is just built into Scratch.
 Dialogue: 0,1:19:22.25,1:19:23.92,chinese,,0,0,0,,这个事件是内置在 Scratch 中的。
 Dialogue: 0,1:19:23.92,1:19:28.49,english,,0,0,0,,Scratch knows that when you click the green Stop Sign, everything should just stop automatically.
@@ -2002,17 +1994,17 @@ Dialogue: 0,1:20:01.87,1:20:05.77,english,,0,0,0,,The input to the current probl
 Dialogue: 0,1:20:01.87,1:20:05.77,chinese,,0,0,0,,当前问题的输入是白色部分的"Hello, world"。
 Dialogue: 0,1:20:05.77,1:20:06.76,english,,0,0,0,,"Hello, world."
 Dialogue: 0,1:20:06.76,1:20:10.30,english,,0,0,0,,The algorithm is the "say" algorithm.
-Dialogue: 0,1:20:06.76,1:20:10.30,chinese,,0,0,0,,而算法则是 "say" 这个动作。
+Dialogue: 0,1:20:06.76,1:20:10.30,chinese,,0,0,0,,而算法则是 Say 这个动作。
 Dialogue: 0,1:20:10.30,1:20:14.33,english,,0,0,0,,Now, I don't know how MIT got it to print out the little, pretty speech bubble on the screen.
 Dialogue: 0,1:20:10.30,1:20:14.33,chinese,,0,0,0,,现在，我不知道 MIT 是如何在屏幕上打印出那个漂亮的对话气泡的。
 Dialogue: 0,1:20:14.33,1:20:17.77,english,,0,0,0,,But they wrote those underlying low-level implementation details.
 Dialogue: 0,1:20:14.33,1:20:17.77,chinese,,0,0,0,,但他们编写了底层的低级实现细节。
 Dialogue: 0,1:20:17.77,1:20:22.63,english,,0,0,0,,And they gave me and you a purple function, called Say, that just does that for you.
-Dialogue: 0,1:20:17.77,1:20:22.63,chinese,,0,0,0,,然后他们为我和你提供了一个紫色的函数，叫做 "Say"，它会自动为你完成这个工作。
+Dialogue: 0,1:20:17.77,1:20:22.63,chinese,,0,0,0,,然后他们为我和你提供了一个紫色的函数，叫做 Say，它会自动为你完成这个工作。
 Dialogue: 0,1:20:22.63,1:20:24.67,english,,0,0,0,,You and I don't have to reinvent that wheel.
-Dialogue: 0,1:20:22.63,1:20:24.67,chinese,,0,0,0,,你我不必重新发明轮子。
+Dialogue: 0,1:20:22.63,1:20:24.67,chinese,,0,0,0,,我们不用重新发明轮子了。
 Dialogue: 0,1:20:24.67,1:20:28.58,english,,0,0,0,,The output of Say is another technical term, now, called a "side effect."
-Dialogue: 0,1:20:24.67,1:20:28.58,chinese,,0,0,0,,"Say" 函数的输出是另一个技术术语，称为 "副作用"。
+Dialogue: 0,1:20:24.67,1:20:28.58,chinese,,0,0,0,,Say 函数的输出称为 "副作用"，又是一个技术术语。
 Dialogue: 0,1:20:28.58,1:20:34.00,english,,0,0,0,,A side effect is usually something visual that happens, like as a side effect of you calling a function.
 Dialogue: 0,1:20:28.58,1:20:34.00,chinese,,0,0,0,,副作用通常是指一些可视化的现象，比如调用一个函数的副作用。
 Dialogue: 0,1:20:34.00,1:20:39.80,english,,0,0,0,,And so the side effect here is that the cat has this speech bubble magically appear, inside of which is "Hello, world."
@@ -2058,11 +2050,11 @@ Dialogue: 0,1:21:35.80,1:21:39.90,chinese,,0,0,0,,或者，你也可以右键单
 Dialogue: 0,1:21:39.90,1:21:41.11,english,,0,0,0,,Well, let me do this instead.
 Dialogue: 0,1:21:39.90,1:21:41.11,chinese,,0,0,0,,好吧，让我来做一遍。
 Dialogue: 0,1:21:41.11,1:21:50.70,english,,0,0,0,,Under Sensing, which I know is there because I've done this before, are a whole bunch of things related to Sensing, whereby the cat can kind of feel out its world, in some sense.
-Dialogue: 0,1:21:41.11,1:21:50.70,chinese,,0,0,0,,在 "Sensing" 类别下，有许多与感知相关的功能，猫角色可以通过这些功能感知周围的世界。
+Dialogue: 0,1:21:41.11,1:21:50.70,chinese,,0,0,0,,在 Sensing 类别下，有许多与感知相关的功能，猫角色可以通过这些功能感知周围的世界。
 Dialogue: 0,1:21:50.70,1:21:55.62,english,,0,0,0,,It can do things like ask this question, "Am I touching the mouse pointer?"-- like the user's cursor.
-Dialogue: 0,1:21:50.70,1:21:55.62,chinese,,0,0,0,,它可以做一些事情，比如问这个问题："我是否触摸了鼠标指针？"—— 就像用户的光标一样
+Dialogue: 0,1:21:50.70,1:21:55.62,chinese,,0,0,0,,它可以做一些事情，比如问这个问题："我是否碰到了鼠标指针？"，就是说屏幕上的光标。
 Dialogue: 0,1:21:55.62,1:21:59.01,english,,0,0,0,,"Am I touching a specific color that you can override to be anything you want?"
-Dialogue: 0,1:21:55.62,1:21:59.01,chinese,,0,0,0,,"我是否触摸了特定颜色，你可以将其更改为任何你想要的颜色？"
+Dialogue: 0,1:21:55.62,1:21:59.01,chinese,,0,0,0,,"我是否碰到了特定颜色"？你可以改成任何你想要的颜色。
 Dialogue: 0,1:21:59.01,1:22:02.50,english,,0,0,0,,"Is the distance to the mouse pointer some specific value?"
 Dialogue: 0,1:21:59.01,1:22:02.50,chinese,,0,0,0,,"到鼠标指针的距离是多少？"
 Dialogue: 0,1:22:02.50,1:22:12.03,english,,0,0,0,,But for now, I'm going to focus on this, this blue puzzle piece that asks a question, which itself is this white oval that I can apparently change, and then it's going to wait for a response.
@@ -2099,7 +2091,7 @@ Dialogue: 0,1:22:48.85,1:22:53.73,english,,0,0,0,,So let me zoom in here and typ
 Dialogue: 0,1:22:48.85,1:22:53.73,chinese,,0,0,0,,所以，让我放大这里，输入 "Hello"，也许是逗号、空格。
 Dialogue: 0,1:22:53.73,1:23:00.27,english,,0,0,0,,I could do "David," but that's obviously not right because I'm asking for a name, and then I'm like, in advance, hard-coding my name.
 Dialogue: 0,1:22:53.73,1:23:00.27,chinese,,0,0,0,,我可以用 "David"，但这显然不对，\N因为我是在询问一个名字，然后我提前硬编码了我的名字。
-Dialogue: 0,1:22:53.73,1:23:00.27,annotation,,0,0,0,,*注：硬编码指程序不会因为输入的不同，发生不同的变化。把本应是变量的东西设置为常量。
+Dialogue: 0,1:22:53.73,1:23:00.27,annotation,,0,0,0,,*注：硬编码指把本来可以调整的东西直接写死在程序里面。
 Dialogue: 0,1:23:00.27,1:23:01.22,english,,0,0,0,,That's not what I want.
 Dialogue: 0,1:23:00.27,1:23:01.22,chinese,,0,0,0,,这不是我想要的。
 Dialogue: 0,1:23:01.22,1:23:02.61,english,,0,0,0,,I just want, "hello," comma.
@@ -2115,9 +2107,9 @@ Dialogue: 0,1:23:09.18,1:23:14.23,chinese,,0,0,0,,我不想直接输入自己的
 Dialogue: 0,1:23:14.23,1:23:15.30,english,,0,0,0,,But notice this.
 Dialogue: 0,1:23:14.23,1:23:15.30,chinese,,0,0,0,,但请注意这一点。
 Dialogue: 0,1:23:15.30,1:23:22.08,english,,0,0,0,,If I go back to the sensing block, this is where that oval that's blue, called Answer, is useful.
-Dialogue: 0,1:23:15.30,1:23:22.08,chinese,,0,0,0,,如果我回到感知类别，这就是那个蓝色的椭圆，叫做"Answer"，马上派上用场。
+Dialogue: 0,1:23:15.30,1:23:22.08,chinese,,0,0,0,,如果我回到 Sensing 类别，这就是那个蓝色的椭圆，叫做 "Answer"，马上派上用场。
 Dialogue: 0,1:23:22.08,1:23:25.28,english,,0,0,0,,This will be the so-called "return value" of that function.
-Dialogue: 0,1:23:22.08,1:23:25.28,chinese,,0,0,0,,这就是该函数的"返回值"。
+Dialogue: 0,1:23:22.08,1:23:25.28,chinese,,0,0,0,,这就是该函数的 "返回值"。
 Dialogue: 0,1:23:25.28,1:23:27.78,english,,0,0,0,,So I'm just going to go ahead and do this and drag and drop.
 Dialogue: 0,1:23:25.28,1:23:27.78,chinese,,0,0,0,,所以，我要接着做，拖过去。
 Dialogue: 0,1:23:27.78,1:23:30.60,english,,0,0,0,,Even though it's not the right size, it is the right shape.
@@ -2129,13 +2121,13 @@ Dialogue: 0,1:23:34.62,1:23:35.82,chinese,,0,0,0,,现在让我缩小一下视图
 Dialogue: 0,1:23:35.82,1:23:37.60,english,,0,0,0,,And now let me click the Green Flag.
 Dialogue: 0,1:23:35.82,1:23:37.60,chinese,,0,0,0,,点击绿旗。
 Dialogue: 0,1:23:37.60,1:23:40.44,english,,0,0,0,,You'll see that Scratch is indeed prompting me with a speech bubble,
-Dialogue: 0,1:23:37.60,1:23:40.44,chinese,,0,0,0,,你会看到Scratch确实用一个对话气泡提示我说：
+Dialogue: 0,1:23:37.60,1:23:40.44,chinese,,0,0,0,,你会看到 Scratch 确实用一个对话气泡提示我说：
 Dialogue: 0,1:23:40.44,1:23:41.23,english,,0,0,0,,"What's your name?"
 Dialogue: 0,1:23:40.44,1:23:41.23,chinese,,0,0,0,,"你叫什么名字？"
 Dialogue: 0,1:23:41.23,1:23:44.32,english,,0,0,0,,Notice the little text box below the cat is asking, what's your name?
 Dialogue: 0,1:23:41.23,1:23:44.32,chinese,,0,0,0,,注意猫角色下方的文本框正在询问："你叫什么名字？"
 Dialogue: 0,1:23:44.32,1:23:46.59,english,,0,0,0,,So I'm going to type in D-A-V-I-D and hit Enter.
-Dialogue: 0,1:23:44.32,1:23:46.59,chinese,,0,0,0,,所以我要输入D-A-V-I-D并按回车键。
+Dialogue: 0,1:23:44.32,1:23:46.59,chinese,,0,0,0,,所以我要输入 D-A-V-I-D 并按回车键。
 Dialogue: 0,1:23:46.59,1:23:48.12,english,,0,0,0,,Or I can click the blue check.
 Dialogue: 0,1:23:46.59,1:23:48.12,chinese,,0,0,0,,或者我可以点击蓝色的勾号。
 Dialogue: 0,1:23:48.12,1:23:50.31,english,,0,0,0,,Enter.
@@ -2155,7 +2147,7 @@ Dialogue: 0,1:24:00.23,1:24:02.49,chinese,,0,0,0,,啊... 有点没礼貌。
 Dialogue: 0,1:24:02.49,1:24:04.89,english,,0,0,0,,Why is there this bug?
 Dialogue: 0,1:24:02.49,1:24:04.89,chinese,,0,0,0,,为什么会出现这个bug？
 Dialogue: 0,1:24:04.89,1:24:07.92,english,,0,0,0,,Like, I wanted to say, "Hello, David," not just "David."
-Dialogue: 0,1:24:04.89,1:24:07.92,chinese,,0,0,0,,我想说 "你好，David"，而不只是 "David"。
+Dialogue: 0,1:24:04.89,1:24:07.92,chinese,,0,0,0,,我想让它说 "Hello，David"，而不只是 "David"。
 Dialogue: 0,1:24:07.92,1:24:11.55,english,,0,0,0,,And yet twice it has failed to do so.
 Dialogue: 0,1:24:07.92,1:24:11.55,chinese,,0,0,0,,然而，它两次都没有做到这一点。
 Dialogue: 0,1:24:11.55,1:24:12.56,english,,0,0,0,,Yeah--
@@ -2163,9 +2155,9 @@ Dialogue: 0,1:24:12.56,1:24:13.57,english,,0,0,0,,AUDIENCE: [INAUDIBLE]
 Dialogue: 0,1:24:13.57,1:24:17.65,english,,0,0,0,,DAVID J. MALAN: Yeah, the computer's processing my directions, my actions, really quickly.
 Dialogue: 0,1:24:13.57,1:24:17.65,chinese,,0,0,0,,是的，电脑处理指令和行动真的特别快。
 Dialogue: 0,1:24:17.65,1:24:18.95,english,,0,0,0,,And so it actually is doing it.
-Dialogue: 0,1:24:17.65,1:24:18.95,chinese,,0,0,0,,因此，它实际上是这样做的，先显示"Hello, "，很快切换到"David"。
+Dialogue: 0,1:24:17.65,1:24:18.95,chinese,,0,0,0,,因此，它实际上是这样做的，先显示 "Hello, "，很快切换到 "David"。
 Dialogue: 0,1:24:18.95,1:24:23.22,english,,0,0,0,,It's just, you and I, in the room, are just way too slow to notice that it said-- (QUICKLY) "Hello, David."
-Dialogue: 0,1:24:18.95,1:24:23.22,chinese,,0,0,0,,只是，我们反应太慢，没注意到它说——"Hello, David."
+Dialogue: 0,1:24:18.95,1:24:23.22,chinese,,0,0,0,,只是，我们反应太慢，没注意到它说—— "Hello, David."
 Dialogue: 0,1:24:23.22,1:24:25.47,english,,0,0,0,,It just seems to have just said, "David."
 Dialogue: 0,1:24:23.22,1:24:25.47,chinese,,0,0,0,,它似乎只说了 "David"。
 Dialogue: 0,1:24:25.47,1:24:26.91,english,,0,0,0,,So all right, how can I fix this?
@@ -2214,10 +2206,10 @@ Dialogue: 0,1:25:14.60,1:25:18.12,chinese,,0,0,0,,好吧，现在好多了，起
 Dialogue: 0,1:25:18.12,1:25:21.25,english,,0,0,0,,I think your hypothesis was right, just looks kind of stupid, right?
 Dialogue: 0,1:25:18.12,1:25:21.25,chinese,,0,0,0,,我们的设想没问题，只是看起来有点呆是吧？
 Dialogue: 0,1:25:21.25,1:25:22.88,english,,0,0,0,,Like, the fact that it's saying Hello--
-Dialogue: 0,1:25:21.25,1:25:22.88,chinese,,0,0,0,,就像它在说 "你好...
+Dialogue: 0,1:25:21.25,1:25:22.88,chinese,,0,0,0,,就像它在说 "Hello...
 Dialogue: 0,1:25:22.88,1:25:24.17,english,,0,0,0,,[PAUSE]
 Dialogue: 0,1:25:24.17,1:25:25.64,english,,0,0,0,,--David, like we can do better.
-Dialogue: 0,1:25:24.17,1:25:25.64,chinese,,0,0,0,,...David" ，我们可以做好点。
+Dialogue: 0,1:25:24.17,1:25:25.64,chinese,,0,0,0,,...David" ，我们可以做更好。
 Dialogue: 0,1:25:25.64,1:25:29.93,english,,0,0,0,,And like, literally every piece of software on your phone or Mac or PC is better than that.
 Dialogue: 0,1:25:25.64,1:25:29.93,chinese,,0,0,0,,而且，你手机、Mac 或 PC 上的每款软件都比它好。
 Dialogue: 0,1:25:29.93,1:25:33.75,english,,0,0,0,,It adds words together in the user interfaces you and I are familiar with.
@@ -2245,9 +2237,9 @@ Dialogue: 0,1:25:56.28,1:25:59.81,chinese,,0,0,0,,如果我继续向下滚动，
 Dialogue: 0,1:25:59.81,1:26:01.28,english,,0,0,0,,But that's just placeholder text.
 Dialogue: 0,1:25:59.81,1:26:01.28,chinese,,0,0,0,,但这只是占位符文本。
 Dialogue: 0,1:26:01.28,1:26:06.17,english,,0,0,0,,You can join one piece of text with another piece of text, by default "apple" and "banana."
-Dialogue: 0,1:26:01.28,1:26:06.17,chinese,,0,0,0,,你可以将一段文本与另一段文本连接起来，默认情况下是"apple"和"banana"。
+Dialogue: 0,1:26:01.28,1:26:06.17,chinese,,0,0,0,,你可以将一段文本与另一段文本连接起来，默认情况下是 "apple" 和 "banana"。
 Dialogue: 0,1:26:06.17,1:26:08.48,english,,0,0,0,,But let's change it to "hello" and my name.
-Dialogue: 0,1:26:06.17,1:26:08.48,chinese,,0,0,0,,但让我们把它改成"hello"和我的名字。
+Dialogue: 0,1:26:06.17,1:26:08.48,chinese,,0,0,0,,但让我们把它改成 "hello" 和我的名字。
 Dialogue: 0,1:26:08.48,1:26:11.12,english,,0,0,0,,So this, too, wrong size but right shape.
 Dialogue: 0,1:26:08.48,1:26:11.12,chinese,,0,0,0,,这也是正确的形状，但是大小不对。
 Dialogue: 0,1:26:11.12,1:26:13.19,english,,0,0,0,,So let me let it snap into place.
@@ -2283,7 +2275,7 @@ Dialogue: 0,1:26:52.65,1:26:53.75,chinese,,0,0,0,,但它更加正确，
 Dialogue: 0,1:26:53.75,1:26:57.06,english,,0,0,0,,It's better designed just because that's what you would kind of expect the software to do
 Dialogue: 0,1:26:53.75,1:26:57.06,chinese,,0,0,0,,它设计得更好，因为这是你期望软件能做的事情，
 Dialogue: 0,1:26:57.06,1:27:03.96,english,,0,0,0,,and not be some kind of lame user interface that's just inserting random delays to just make it kind of work, like that's a workaround, a hack, if you will.
-Dialogue: 0,1:26:57.06,1:27:03.96,chinese,,0,0,0,,而不是一些仅仅通过插入随机延迟来使它“大概工作”的可怜用户界面，\N这样只是一种变通，一种权宜之计，你可以这样说。
+Dialogue: 0,1:26:57.06,1:27:03.96,chinese,,0,0,0,,而不是一些仅仅通过插入随机延迟来使它 "大概能用" 的坏用户界面，\N这样只是一种变通，一种权宜之计，你可以这样说。
 Dialogue: 0,1:27:03.96,1:27:06.17,english,,0,0,0,,But there's some cool things you can do with Scratch.
 Dialogue: 0,1:27:03.96,1:27:06.17,chinese,,0,0,0,,不过，用 Scratch 也能做一些很酷的事情。
 Dialogue: 0,1:27:06.17,1:27:10.94,english,,0,0,0,,And we won't really go down the rabbit hole of all of the fun and family-friendly features that it has.
@@ -2295,13 +2287,13 @@ Dialogue: 0,1:27:12.81,1:27:16.55,chinese,,0,0,0,,让我点击屏幕左下角的
 Dialogue: 0,1:27:16.55,1:27:17.72,english,,0,0,0,,And this one's kind of cool.
 Dialogue: 0,1:27:16.55,1:27:17.72,chinese,,0,0,0,,这个还挺酷的。
 Dialogue: 0,1:27:17.72,1:27:19.57,english,,0,0,0,,Let me go to Text to Speech.
-Dialogue: 0,1:27:17.72,1:27:19.57,chinese,,0,0,0,,我选择"Text to Speech"。
+Dialogue: 0,1:27:17.72,1:27:19.57,chinese,,0,0,0,,我选择 "Text to Speech"。
 Dialogue: 0,1:27:19.57,1:27:22.70,english,,0,0,0,,And you'll notice that this one requires internet because it's cloud based.
 Dialogue: 0,1:27:19.57,1:27:22.70,chinese,,0,0,0,,你会注意到这个功能需要互联网，因为它是基于云的。
 Dialogue: 0,1:27:22.70,1:27:27.71,english,,0,0,0,,But this just gave me some new puzzle pieces in a new category,
 Dialogue: 0,1:27:22.70,1:27:27.71,chinese,,0,0,0,,但是这给我提供了一些新的拼图块，属于一个新的类别，
 Dialogue: 0,1:27:27.71,1:27:28.34,english,,0,0,0,,Text to Speech.
-Dialogue: 0,1:27:27.71,1:27:28.34,chinese,,0,0,0,,名为 "文字转语音"。
+Dialogue: 0,1:27:27.71,1:27:28.34,chinese,,0,0,0,,就是 "文字转语音"。
 Dialogue: 0,1:27:28.34,1:27:30.71,english,,0,0,0,,And these green ones do exactly what they say.
 Dialogue: 0,1:27:28.34,1:27:30.71,chinese,,0,0,0,,这些绿色的拼图块做的就是它们名字里面写的。
 Dialogue: 0,1:27:30.71,1:27:31.86,english,,0,0,0,,So let me do this.
@@ -2309,7 +2301,7 @@ Dialogue: 0,1:27:30.71,1:27:31.86,chinese,,0,0,0,,那就让我来吧。
 Dialogue: 0,1:27:31.86,1:27:33.12,english,,0,0,0,,Let me zoom out again.
 Dialogue: 0,1:27:31.86,1:27:33.12,chinese,,0,0,0,,再次缩小视图。
 Dialogue: 0,1:27:33.12,1:27:34.54,english,,0,0,0,,Let me keep the Join block.
-Dialogue: 0,1:27:33.12,1:27:34.54,chinese,,0,0,0,,我保留Join拼图块，
+Dialogue: 0,1:27:33.12,1:27:34.54,chinese,,0,0,0,,我保留 Join 拼图块，
 Dialogue: 0,1:27:34.54,1:27:36.71,english,,0,0,0,,And I'm just going to temporarily toss it over here.
 Dialogue: 0,1:27:34.54,1:27:36.71,chinese,,0,0,0,,但暂时把它放在这里。
 Dialogue: 0,1:27:36.71,1:27:40.07,english,,0,0,0,,It's not going to delete itself because I didn't drag it over to the other side.
@@ -2329,7 +2321,7 @@ Dialogue: 0,1:27:56.27,1:27:57.71,chinese,,0,0,0,,D-A-V-I-D，回车。
 Dialogue: 0,1:27:57.71,1:27:58.46,english,,0,0,0,,And--
 Dialogue: 0,1:27:58.46,1:28:00.57,english,,0,0,0,,COMPUTER: Hello, David.
 Dialogue: 0,1:28:00.57,1:28:01.37,english,,0,0,0,,DAVID J. MALAN: OK.
-Dialogue: 0,1:28:00.57,1:28:01.37,chinese,,0,0,0,,大卫-J-马兰：好的。
+Dialogue: 0,1:28:00.57,1:28:01.37,chinese,,0,0,0,,好的。
 Dialogue: 0,1:28:01.37,1:28:02.37,english,,0,0,0,,[LAUGHTER]
 Dialogue: 0,1:28:02.37,1:28:03.89,english,,0,0,0,,It's a little robotic.
 Dialogue: 0,1:28:02.37,1:28:03.89,chinese,,0,0,0,,有点像机器人。
@@ -2377,16 +2369,16 @@ Dialogue: 0,1:29:02.73,1:29:03.78,english,,0,0,0,,--like would prefer that it--
 Dialogue: 0,1:29:02.73,1:29:03.78,chinese,,0,0,0,,希望它可以，
 Dialogue: 0,1:29:03.78,1:29:03.84,english,,0,0,0,,[MEOW]
 Dialogue: 0,1:29:03.84,1:29:06.79,english,,0,0,0,,--just meow, perhaps, like again and again, without having to keep--
-Dialogue: 0,1:29:03.84,1:29:06.79,chinese,,0,0,0,,就 "喵喵 "地叫，一次又一次，而不必每次都要，
+Dialogue: 0,1:29:03.84,1:29:06.79,chinese,,0,0,0,,就 "喵喵" 地叫，一次又一次，而不必每次都要，
 Dialogue: 0,1:29:06.79,1:29:07.29,english,,0,0,0,,[MEOW]
 Dialogue: 0,1:29:07.29,1:29:08.16,english,,0,0,0,,--hitting the button.
 Dialogue: 0,1:29:07.29,1:29:08.16,chinese,,0,0,0,,按下按钮。
 Dialogue: 0,1:29:08.16,1:29:09.88,english,,0,0,0,,So how might we do this?
 Dialogue: 0,1:29:08.16,1:29:09.88,chinese,,0,0,0,,那么，我们该如何做呢？
 Dialogue: 0,1:29:09.88,1:29:16.57,english,,0,0,0,,All right, well, if I want it to meow multiple times, why don't I just, like, grab it another time and another time?
-Dialogue: 0,1:29:09.88,1:29:16.57,chinese,,0,0,0,,好的，如果我想让它叫多次，为什么我不直接再拖拽一次、再拖拽一次呢？
+Dialogue: 0,1:29:09.88,1:29:16.57,chinese,,0,0,0,,好的，如果我想让它叫多次，为什么我不直接拖一个、再拖一个呢？
 Dialogue: 0,1:29:16.57,1:29:21.72,english,,0,0,0,,Alternatively, you can Right-click or Control-click a puzzle piece and just duplicate it from a little menu that drops down.
-Dialogue: 0,1:29:16.57,1:29:21.72,chinese,,0,0,0,,或者，你可以右键点击或者按住Control键点击拼图块，\N然后从弹出的菜单中选择"Duplicate"，复制。
+Dialogue: 0,1:29:16.57,1:29:21.72,chinese,,0,0,0,,或者，你可以右键点击或者按住 Control 键点击拼图块，\N然后从弹出的菜单中选择 "Duplicate"，复制。
 Dialogue: 0,1:29:21.72,1:29:22.92,english,,0,0,0,,So here we go, three meows.
 Dialogue: 0,1:29:21.72,1:29:22.92,chinese,,0,0,0,,好了，现在是三声喵。
 Dialogue: 0,1:29:22.92,1:29:25.09,english,,0,0,0,,[MEOWING]
@@ -2499,7 +2491,7 @@ Dialogue: 0,1:31:44.66,1:31:50.37,english,,0,0,0,,And now-- same output but argu
 Dialogue: 0,1:31:44.66,1:31:50.37,chinese,,0,0,0,,而现在—— 尽管输出一致，不过可以说设计得更好。
 Dialogue: 0,1:31:50.37,1:31:50.87,english,,0,0,0,,Why?
 Dialogue: 0,1:31:50.87,1:31:55.04,english,,0,0,0,,Because if I want to change the number of meows, I change it in one place, no Copy/Paste messiness.
-Dialogue: 0,1:31:50.87,1:31:55.04,chinese,,0,0,0,,因为如果我想更改喵星人的数量，\N只需在一个地方进行更改即可，不会出现复制/粘贴的混乱情况。
+Dialogue: 0,1:31:50.87,1:31:55.04,chinese,,0,0,0,,因为如果我想更改猫叫的数量，\N只需在一个地方进行更改即可，不会出现复制/粘贴的混乱情况。
 Dialogue: 0,1:31:55.04,1:31:56.86,english,,0,0,0,,If I want to change the waiting, one place.
 Dialogue: 0,1:31:55.04,1:31:56.86,chinese,,0,0,0,,如果我想改变等待时间，也只改一个地方。
 Dialogue: 0,1:31:56.86,1:31:59.45,english,,0,0,0,,I don't have to change it in multiple places and not screw up.
@@ -2530,7 +2522,7 @@ Dialogue: 0,1:32:35.18,1:32:42.65,chinese,,0,0,0,,让我们自己制作一个名
 Dialogue: 0,1:32:42.65,1:32:43.42,english,,0,0,0,,So let me do this.
 Dialogue: 0,1:32:42.65,1:32:43.42,chinese,,0,0,0,,来吧。
 Dialogue: 0,1:32:43.42,1:32:48.31,english,,0,0,0,,Under my blocks in pink here, I'm going to go ahead and click, literally, Make a Block.
-Dialogue: 0,1:32:43.42,1:32:48.31,chinese,,0,0,0,,在粉红色的区块下，我要点击"制作区块"。
+Dialogue: 0,1:32:43.42,1:32:48.31,chinese,,0,0,0,,在粉红色的区块下，我要点击 "制作区块"。
 Dialogue: 0,1:32:48.31,1:32:51.10,english,,0,0,0,,Now, here's an interface by which I can give the block a name.
 Dialogue: 0,1:32:48.31,1:32:51.10,chinese,,0,0,0,,现在，这里有一个接口，我可以通过它给程序块命名。
 Dialogue: 0,1:32:51.10,1:32:53.41,english,,0,0,0,,M-E-O-W will be the name of this block.
@@ -2606,7 +2598,7 @@ Dialogue: 0,1:34:40.39,1:34:42.08,chinese,,0,0,0,,这里会有一个占位符。
 Dialogue: 0,1:34:42.08,1:34:43.96,english,,0,0,0,,So I'm just going to put a placeholder there.
 Dialogue: 0,1:34:42.08,1:34:43.96,chinese,,0,0,0,,所以我先在这里放一个占位符。
 Dialogue: 0,1:34:43.96,1:34:47.88,english,,0,0,0,,I keep using "n" for number, which is a go to in computer scientist terms.
-Dialogue: 0,1:34:43.96,1:34:47.88,chinese,,0,0,0,,我一直用 "n "表示数字，我们计算机科学家都是这么约定俗成的。
+Dialogue: 0,1:34:43.96,1:34:47.88,chinese,,0,0,0,,我一直用 "n" 表示数字，我们计算机科学家都是这么约定俗成的。
 Dialogue: 0,1:34:47.88,1:34:52.03,english,,0,0,0,,And I'm going to add some descriptive text just so that it's a little more self-explanatory.
 Dialogue: 0,1:34:47.88,1:34:52.03,chinese,,0,0,0,,我还要添加点描述性文字，让它更加一目了然。
 Dialogue: 0,1:34:52.03,1:34:54.07,english,,0,0,0,,I'm just going to say Meow n Times.
@@ -2760,7 +2752,7 @@ Dialogue: 0,1:38:55.55,1:38:59.36,chinese,,0,0,0,,等一等，
 Dialogue: 0,1:38:59.36,1:39:02.33,english,,0,0,0,,Hmm-- another bug.
 Dialogue: 0,1:38:59.36,1:39:02.33,chinese,,0,0,0,,嗯，出 bug 了。
 Dialogue: 0,1:39:02.33,1:39:09.02,english,,0,0,0,,Why is the cat not meowing even though I very explicitly said, If Touching Mouse Pointer, Meow?
-Dialogue: 0,1:39:02.33,1:39:09.02,chinese,,0,0,0,,为什么我明明设置了 "如果触摸鼠标指针，就喵喵叫" ，猫却不喵喵叫呢？
+Dialogue: 0,1:39:02.33,1:39:09.02,chinese,,0,0,0,,为什么我明明设置了 "如果碰到鼠标指针，就喵喵叫" ，猫却不喵喵叫呢？
 Dialogue: 0,1:39:09.02,1:39:10.29,english,,0,0,0,,Yeah, in the middle--
 Dialogue: 0,1:39:09.02,1:39:10.29,chinese,,0,0,0,,中间这位请讲。
 Dialogue: 0,1:39:10.29,1:39:11.89,english,,0,0,0,,AUDIENCE: [INAUDIBLE]
@@ -2849,9 +2841,9 @@ Dialogue: 0,1:41:03.12,1:41:05.37,chinese,,0,0,0,,站在电脑一旁编程，多
 Dialogue: 0,1:41:05.37,1:41:08.13,english,,0,0,0,,But I'm now going to say this.
 Dialogue: 0,1:41:05.37,1:41:08.13,chinese,,0,0,0,,我现在要说的是，
 Dialogue: 0,1:41:08.13,1:41:14.46,english,,0,0,0,,When Video Motion is 50, go ahead and Play Sound Meow like this.
-Dialogue: 0,1:41:08.13,1:41:14.46,chinese,,0,0,0,,当 "Video Motion" 为 50 时，像这样播放一声喵。
+Dialogue: 0,1:41:08.13,1:41:14.46,chinese,,0,0,0,,当 Video Motion 为 50 时，像这样播放一声喵。
 Dialogue: 0,1:41:14.46,1:41:16.17,english,,0,0,0,,So the cat is still in that world.
-Dialogue: 0,1:41:14.46,1:41:16.17,chinese,,0,0,0,,所以，这只猫还在那个世界里。
+Dialogue: 0,1:41:14.46,1:41:16.17,chinese,,0,0,0,,所以，这只猫还在那个世界里运行。
 Dialogue: 0,1:41:16.17,1:41:18.97,english,,0,0,0,,I'm going to stop the program and rerun it.
 Dialogue: 0,1:41:16.17,1:41:18.97,chinese,,0,0,0,,我要停止程序再重新运行。
 Dialogue: 0,1:41:18.97,1:41:21.09,english,,0,0,0,,So here we go, Green Flag.
@@ -2890,7 +2882,7 @@ Dialogue: 0,1:42:12.97,1:42:20.00,chinese,,0,0,0,,如果效果不如预期，也
 Dialogue: 0,1:42:20.00,1:42:24.72,english,,0,0,0,,Well, let's go ahead and use, actually, how about another example of something a predecessor of yours made?
 Dialogue: 0,1:42:20.00,1:42:24.72,chinese,,0,0,0,,好吧，让我们继续，用你们前辈做的另一个例子怎么样？
 Dialogue: 0,1:42:24.72,1:42:28.83,english,,0,0,0,,Let me go ahead and grab a program I opened in advance here called
-Dialogue: 0,1:42:24.72,1:42:28.83,chinese,,0,0,0,,让我打开一个提前准备好的程序，叫做"打地鼠"。
+Dialogue: 0,1:42:24.72,1:42:28.83,chinese,,0,0,0,,让我打开一个提前准备好的程序，叫做 "打地鼠"。
 Dialogue: 0,1:42:28.83,1:42:38.89,english,,0,0,0,,Whack-A-Mole Might we get a brave volunteer to come up, who is willing to whack a mole with their head, virtually?
 Dialogue: 0,1:42:28.83,1:42:38.89,chinese,,0,0,0,,我们能不能请一位勇敢的志愿者上来，用头模拟着打鼹鼠？
 Dialogue: 0,1:42:38.89,1:42:40.77,english,,0,0,0,,Maybe-- OK, let's see, how about in way back?
@@ -2970,15 +2962,15 @@ Dialogue: 0,1:44:42.35,1:44:49.63,annotation,,0,0,0,,*注：多少个单词其�
 Dialogue: 0,1:44:49.63,1:44:54.60,english,,0,0,0,,So there's probably some math going on in there whereby the author of this program just is incrementing
 Dialogue: 0,1:44:49.63,1:44:54.60,chinese,,0,0,0,,因此，这里可能有一些数学运算，程序的编写者只是在递增这个变量，
 Dialogue: 0,1:44:54.60,1:45:00.57,english,,0,0,0,,that is, adding 1 and 1 every time it detected that a mole had been whacked, in this case, with movement.
-Dialogue: 0,1:44:54.60,1:45:00.57,chinese,,0,0,0,,也就是说，每次检测到鼹鼠被"捶打"（在这里是"移动"）时，就会一个一个地递增。
+Dialogue: 0,1:44:54.60,1:45:00.57,chinese,,0,0,0,,也就是说，每次检测到鼹鼠被 "捶打"（在这里是"移动"）时，就会一个一个地递增。
 Dialogue: 0,1:45:00.57,1:45:07.56,english,,0,0,0,,So back in the day, I, myself, actually implemented my very first program in Scratch when I was a graduate student, actually, at MIT
 Dialogue: 0,1:45:00.57,1:45:07.56,chinese,,0,0,0,,想当时我读研究生时，就用 Scratch 实现了我的第一个程序。
 Dialogue: 0,1:45:07.56,1:45:15.50,english,,0,0,0,,cross-registered at MIT, taking a class from MIT's Media Lab, specifically, the lifelong kindergarten group, which is the group that created Scratch, itself.
-Dialogue: 0,1:45:07.56,1:45:15.50,chinese,,0,0,0,,当时我在麻省理工学院注册交叉参加了一门\N Media Lab lifelong kindergarten 小组的课程，这个小组其实就是 Scratch 的创造者。
+Dialogue: 0,1:45:07.56,1:45:15.50,chinese,,0,0,0,,当时我在麻省理工学院注册交叉参加了一门\N Media Lab lifelong kindergarten 小组的课程，其实 Scratch 就是这个小组的作品。
 Dialogue: 0,1:45:15.50,1:45:27.12,english,,0,0,0,,And the program I wrote all those years ago and still rather cling to is a little something here called Oscartime, that I thought I'd play just a quick excerpt of myself here.
 Dialogue: 0,1:45:15.50,1:45:27.12,chinese,,0,0,0,,我多年前编写的，至今仍念念不忘的程序是一个叫做 "奥斯卡时间" 的小玩意儿，\N我想在这里为自己播放一段简短的片段。
 Dialogue: 0,1:45:27.12,1:45:38.06,english,,0,0,0,,So in this case, consider, as the music starts playing, how this program, which is much more sophisticated, certainly, than the earliest "Say hello" examples we just did might also be implemented.
-Dialogue: 0,1:45:27.12,1:45:38.06,chinese,,0,0,0,,现在当音乐开始播放时，请想一想这个程序是如何实现的，\N当然，这个程序要比我们刚才最早做的 "Say hello" 例子要复杂得多。
+Dialogue: 0,1:45:27.12,1:45:38.06,chinese,,0,0,0,,现在当音乐开始播放时，请想一想这个程序是如何实现的，\N当然，这个程序要比我们刚才最早做的 Say hello 例子要复杂得多。
 Dialogue: 0,1:45:38.06,1:45:40.74,english,,0,0,0,,Let me go ahead now and click the Green Flag.
 Dialogue: 0,1:45:38.06,1:45:40.74,chinese,,0,0,0,,现在让我点击绿旗。
 Dialogue: 0,1:45:40.74,1:45:44.95,english,,0,0,0,,[MUSIC - OSCAR THE GROUCH, "I LOVE TRASH"]
@@ -3028,7 +3020,7 @@ Dialogue: 0,1:47:04.81,1:47:09.67,chinese,,0,0,0,,其实在这个程序里，一
 Dialogue: 0,1:47:09.67,1:47:12.13,english,,0,0,0,,And ultimately, there's just a lot of building blocks.
 Dialogue: 0,1:47:09.67,1:47:12.13,chinese,,0,0,0,,归根结底，这都是一些拼图块。
 Dialogue: 0,1:47:12.13,1:47:15.61,english,,0,0,0,,But I didn't sit down and implement Oscartime, as I called it, all at once.
-Dialogue: 0,1:47:12.13,1:47:15.61,chinese,,0,0,0,,我那时候没什么头绪，不是坐下来就把 "Oscartime" 编写完成的。
+Dialogue: 0,1:47:12.13,1:47:15.61,chinese,,0,0,0,,我那时候没什么头绪，不是坐下来就把 Oscartime 编写完成的。
 Dialogue: 0,1:47:15.61,1:47:17.50,english,,0,0,0,,I really did take baby steps, so to speak.
 Dialogue: 0,1:47:15.61,1:47:17.50,chinese,,0,0,0,,可以说，我真的是坐着宝宝巴士过来的。
 Dialogue: 0,1:47:17.50,1:47:24.22,english,,0,0,0,,And I figured out, well, how could I decompose this vision I had at the time to create this game ultimately?
@@ -3056,7 +3048,7 @@ Dialogue: 0,1:47:48.98,1:47:51.22,chinese,,0,0,0,,让我打开奥斯卡时间。
 Dialogue: 0,1:47:51.22,1:47:52.51,english,,0,0,0,,Let me full screen this.
 Dialogue: 0,1:47:51.22,1:47:52.51,chinese,,0,0,0,,全屏显示。
 Dialogue: 0,1:47:52.51,1:47:59.68,english,,0,0,0,,And here you have-- let me hide the trash for just a moment-- is what I might call the second version of my program
-Dialogue: 0,1:47:52.51,1:47:59.68,chinese,,0,0,0,,这就是，让我先把垃圾藏起来，Oscartime 的第二个版本
+Dialogue: 0,1:47:52.51,1:47:59.68,chinese,,0,0,0,,这就是，让我先把垃圾藏起来，Oscartime 的第二个版本。
 Dialogue: 0,1:47:59.68,1:48:06.26,english,,0,0,0,,wherein, at the top right of the stage here, I had the lamppost, which I just dragged and dropped and got going, but then I added an actual sprite.
 Dialogue: 0,1:47:59.68,1:48:06.26,chinese,,0,0,0,,其中，在舞台的左上方有一个灯柱，我只是拖放过来就行了，\N但随后我又添加了一个实际的精灵（垃圾桶）。
 Dialogue: 0,1:48:06.26,1:48:09.10,english,,0,0,0,,And it has to be a sprite if you want it to do things interactively.
@@ -3086,7 +3078,7 @@ Dialogue: 0,1:48:49.27,1:48:51.34,chinese,,0,0,0,,如果把光标拿开，我希
 Dialogue: 0,1:48:51.34,1:48:52.64,english,,0,0,0,,So how can I do that?
 Dialogue: 0,1:48:51.34,1:48:52.64,chinese,,0,0,0,,那我该怎么实现呢？
 Dialogue: 0,1:48:52.64,1:48:59.20,english,,0,0,0,,I want an If, but I just don't want one question, I really want two, a fork in the road that goes left or right, so to speak.
-Dialogue: 0,1:48:52.64,1:48:59.20,chinese,,0,0,0,,我想要一个 "if" 条件判断，但是延伸出两条路径，可以说是一个向左或向右的岔路口。
+Dialogue: 0,1:48:52.64,1:48:59.20,chinese,,0,0,0,,我想要一个 if 条件判断，但是延伸出两条路径，可以说是一个向左或向右的岔路口。
 Dialogue: 0,1:48:59.20,1:49:02.83,english,,0,0,0,,And let me grab this puzzle piece here, as I did long ago.
 Dialogue: 0,1:48:59.20,1:49:02.83,chinese,,0,0,0,,让我像当初上学一样，抓住这块拼图。
 Dialogue: 0,1:49:02.83,1:49:04.69,english,,0,0,0,,So notice, it grows to fill.
@@ -3094,7 +3086,7 @@ Dialogue: 0,1:49:02.83,1:49:04.69,chinese,,0,0,0,,注意一下，它可以自动
 Dialogue: 0,1:49:04.69,1:49:06.43,english,,0,0,0,,What's the question I want to ask?
 Dialogue: 0,1:49:04.69,1:49:06.43,chinese,,0,0,0,,我想问什么问题？
 Dialogue: 0,1:49:06.43,1:49:13.86,english,,0,0,0,,Well, under Sensing, I'm going to go ahead here and say If this trashcan is Touching the Mouse Pointer-- what do I want to do?
-Dialogue: 0,1:49:06.43,1:49:13.86,chinese,,0,0,0,,应该在 "感应 "功能下，我想问的是，如果鼠标指针碰到了这个垃圾桶，我该怎么办？
+Dialogue: 0,1:49:06.43,1:49:13.86,chinese,,0,0,0,,应该在 Sensing 功能下，我想问的是，如果鼠标指针碰到了这个垃圾桶，我该怎么办？
 Dialogue: 0,1:49:13.86,1:49:16.03,english,,0,0,0,,Well, I want to change what the trashcan looks like.
 Dialogue: 0,1:49:13.86,1:49:16.03,chinese,,0,0,0,,我想改变垃圾桶的样子。
 Dialogue: 0,1:49:16.03,1:49:17.74,english,,0,0,0,,And this part, I did in advance of class.
@@ -3110,7 +3102,7 @@ Dialogue: 0,1:49:35.32,1:49:39.25,chinese,,0,0,0,,其中一些服装被称为 Os
 Dialogue: 0,1:49:39.25,1:49:40.81,english,,0,0,0,,Oscar1 is closed.
 Dialogue: 0,1:49:39.25,1:49:40.81,chinese,,0,0,0,,Oscar1 是关着的垃圾桶。
 Dialogue: 0,1:49:40.81,1:49:42.07,english,,0,0,0,,Oscar2 is open.
-Dialogue: 0,1:49:40.81,1:49:42.07,chinese,,0,0,0,,Oscar 2 是开着的垃圾桶。
+Dialogue: 0,1:49:40.81,1:49:42.07,chinese,,0,0,0,,Oscar2 是开着的垃圾桶。
 Dialogue: 0,1:49:42.07,1:49:43.73,english,,0,0,0,,So let's just deal with those first.
 Dialogue: 0,1:49:42.07,1:49:43.73,chinese,,0,0,0,,所以我们先解决垃圾桶的开关触发吧。
 Dialogue: 0,1:49:43.73,1:49:48.10,english,,0,0,0,,So if I'm touching the mouse pointer, let me go under-- how about Looks?
@@ -3248,7 +3240,7 @@ Dialogue: 0,1:53:03.67,1:53:06.06,chinese,,0,0,0,,这里还有一块拼图，叫
 Dialogue: 0,1:53:06.06,1:53:07.68,english,,0,0,0,,So again, y is the vertical.
 Dialogue: 0,1:53:06.06,1:53:07.68,chinese,,0,0,0,,再说一遍，y 是垂直方向。
 Dialogue: 0,1:53:07.68,1:53:14.17,english,,0,0,0,,So let me just change y by one pixel downward at a time, so -1 one pixel at a time.
-Dialogue: 0,1:53:07.68,1:53:14.17,chinese,,0,0,0,,设置每次向下改变一个像素，也就是每次让 y -1。
+Dialogue: 0,1:53:07.68,1:53:14.17,chinese,,0,0,0,,设置每次向下改变一个像素，也就是每次让 y 减少 1。
 Dialogue: 0,1:53:14.17,1:53:15.54,english,,0,0,0,,So it's kind of slow.
 Dialogue: 0,1:53:14.17,1:53:15.54,chinese,,0,0,0,,有点慢。
 Dialogue: 0,1:53:15.54,1:53:17.01,english,,0,0,0,,And I think now--
