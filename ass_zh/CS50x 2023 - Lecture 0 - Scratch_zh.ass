@@ -17,9 +17,9 @@ Video File: ../video/CS50x 2023 - Lecture 0 - Scratch.mp4
 Video AR Mode: 4
 Video AR Value: 1.777778
 Video Zoom Percent: 0.375000
-Scroll Position: 390
-Active Line: 397
-Video Position: 27792
+Scroll Position: 1484
+Active Line: 1490
+Video Position: 89206
 
 [V4+ Styles]
 Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
@@ -1520,7 +1520,7 @@ Dialogue: 0,1:01:44.34,1:01:47.34,chinese,,0,0,0,,这里是我们的 x 轴，问
 Dialogue: 0,1:01:47.34,1:01:49.76,english,,0,0,0,,So the bigger the problem, the farther out that way.
 Dialogue: 0,1:01:47.34,1:01:49.76,chinese,,0,0,0,,问题越大，x 轴上的数值越大。
 Dialogue: 0,1:01:49.76,1:01:51.20,english,,0,0,0,,Time to solve the problem.
-Dialogue: 0,1:01:49.76,1:01:51.20,chinese,,0,0,0,,是时候解决问题了。
+Dialogue: 0,1:01:49.76,1:01:51.20,chinese,,0,0,0,,y 轴是解决问题花费的时间。
 Dialogue: 0,1:01:51.20,1:01:55.53,english,,0,0,0,,The higher you go up on the y-axis, the more time you're taking to solve it.
 Dialogue: 0,1:01:51.20,1:01:55.53,chinese,,0,0,0,,解决问题所需的时间在 y 轴上表示，y 轴上的数值越大，解决问题所需的时间越长。
 Dialogue: 0,1:01:55.53,1:01:59.85,english,,0,0,0,,How would we draw the running time, the amount of time taken to run that first algorithm?
