@@ -10,14 +10,14 @@ PlayResX: 1920
 PlayResY: 1080
 
 [Aegisub Project Garbage]
-Audio File: ../video/CS50x 2023 - Lecture 4 - Memory.mp4
-Video File: ../video/CS50x 2023 - Lecture 4 - Memory.mp4
+Audio File: ../video/CS50x 2023 - Lecture 3 - Algorithms.mp4
+Video File: ../video/CS50x 2023 - Lecture 3 - Algorithms.mp4
 Video AR Mode: 4
 Video AR Value: 1.777778
 Video Zoom Percent: 0.375000
-Scroll Position: 7
-Active Line: 15
-Video Position: 2229
+Scroll Position: 15
+Active Line: 25
+Video Position: 3155
 
 [V4+ Styles]
 Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
@@ -43,21 +43,19 @@ Dialogue: 0,0:01:28.00,0:01:30.45,chinese,,0,0,0,,我们一下一下地撕完了
 Dialogue: 0,0:01:30.45,0:01:32.86,english,,0,0,0,,And that somehow got us to a better solution.
 Dialogue: 0,0:01:30.45,0:01:32.86,chinese,,0,0,0,,找到了一种更好的解决办法（二分）。
 Dialogue: 0,0:01:32.86,0:01:41.65,english,,0,0,0,,But today, we'll try to start formalizing some of those ideas and capturing some of those same ideas not in pseudocode just yet, but in actual code as well.
-Dialogue: 0,0:01:32.86,0:01:41.65,chinese,,0,0,0,,但今天，我们将尝试开始将其中的一些想法正规化，\N并捕捉其中的一些相同想法，但还不是用伪代码，而是用实际代码。
+Dialogue: 0,0:01:32.86,0:01:41.65,chinese,,0,0,0,,今天，我们要试着把这些想法规范一下，不用伪代码，而是实际代码来实现算法。
 Dialogue: 0,0:01:41.65,0:01:48.37,english,,0,0,0,,But we'll also consider the efficiency of those algorithms, like just how good, how well-designed our algorithms actually are.
-Dialogue: 0,0:01:41.65,0:01:48.37,chinese,,0,0,0,,但我们也会考虑这些算法的效率，比如我们的算法究竟有多好，设计得有多完善。
+Dialogue: 0,0:01:41.65,0:01:48.37,chinese,,0,0,0,,我们同时也要考虑这些算法的效率，算法到底设计得好不好，有没有很完善。
 Dialogue: 0,0:01:48.37,0:01:56.46,english,,0,0,0,,And if you recall, when we did the phone book example wherein I first had an algorithm searching one page at a time, and then second one two pages at a time, and then third,
-Dialogue: 0,0:01:48.37,0:01:56.46,chinese,,0,0,0,,如果你还记得，当我们做电话簿的例子时，我首先让算法一次搜索一页，然后是第二次，一次搜索两页，然后是第三次、
+Dialogue: 0,0:01:48.37,0:01:56.46,chinese,,0,0,0,,还记得电话簿的那个例子吗，我首先是逐页逐页地找，\N第二次的时候，两页两页地找，
 Dialogue: 0,0:01:56.46,0:02:01.90,english,,0,0,0,,started tearing the thing in half, recall that we, with a wave of the hand, kind of analyzed it as follows.
-Dialogue: 0,0:01:56.46,0:02:01.90,chinese,,0,0,0,,我们开始把它撕成两半，记得我们一挥手，对它进行了如下分析。
+Dialogue: 0,0:01:56.46,0:02:01.90,chinese,,0,0,0,,而最后，我们把电话册扯成两份，一挥手就甩掉一半，然后做了下面的分析。
 Dialogue: 0,0:02:01.90,0:02:11.43,english,,0,0,0,,We proposed that if the x-axis here is the size of the problem, like number of pages in a phone book, and the y-axis is the time required to solve the problem in seconds, minutes,
-Dialogue: 0,0:02:01.90,0:02:11.43,chinese,,0,0,0,,我们建议，如果这里的 x 轴是问题的大小，如电话簿的页数，y 轴是解决问题所需的时间，以秒、分钟为单位、
-Dialogue: 0,0:02:11.43,0:02:19.62,english,,0,0,0,,page tears, whatever your unit of measure is, recall that the first algorithm, which is the straight line such that if you had n pages in the phone book, it might have this slope of n--
-Dialogue: 0,0:02:11.43,0:02:19.62,chinese,,0,0,0,,不管你的计量单位是什么，请记住，第一种算法是这样的直线：如果你的电话簿有 n 页，它的斜率可能是 n------------。
-Dialogue: 0,0:02:19.62,0:02:23.28,english,,0,0,0,,and there's this one-to-one relationship between pages and tears.
-Dialogue: 0,0:02:19.62,0:02:23.28,chinese,,0,0,0,,页数和眼泪之间是一一对应的关系。
+Dialogue: 0,0:02:01.90,0:02:11.43,chinese,,0,0,0,,我们让 x 轴代表问题的大小，比如电话簿的页数，\Ny 轴是解决问题花费的时间，单位可以是秒、分钟...
+Dialogue: 0,0:02:11.43,0:02:23.28,english,,0,0,0,,page tears, whatever your unit of measure is, recall that the first algorithm, which is the straight line such that if you had n pages in the phone book, it might have this slope of n-- and there's this one-to-one relationship between pages and tears.
+Dialogue: 0,0:02:11.43,0:02:23.28,chinese,,0,0,0,,不管计量单位取什么，要记住，第一种算法是这样的直线：\N有 n 页电话簿，它的斜率就是 n—— 页数和花费的时间是一一对应的关系。
 Dialogue: 0,0:02:23.28,0:02:33.57,english,,0,0,0,,Two pages at a time, of course, was twice as fast, but still really the same shape, the yellow line here indicating that yeah, it's n over 2, maybe plus 1 if you have to double back, as we discussed.
-Dialogue: 0,0:02:23.28,0:02:33.57,chinese,,0,0,0,,当然，一次翻两页的速度是原来的两倍，但形状还是一样，这里的黄线表示，是的，超过 2 页，如果要翻两页，可能还要加 1 页，就像我们讨论过的那样。
+Dialogue: 0,0:02:23.28,0:02:33.57,chinese,,0,0,0,,如果两页两页地翻，速度快了一倍，但形状还是一样，这里的黄线表示，是的，超过 2 页，如果要翻两页，可能还要加 1 页，就像我们讨论过的那样。
 Dialogue: 0,0:02:33.57,0:02:38.37,english,,0,0,0,,But it's really still fundamentally the same algorithm one or two pages at a time.
 Dialogue: 0,0:02:33.57,0:02:38.37,chinese,,0,0,0,,但从根本上说，每次一到两页的算法还是一样的。
 Dialogue: 0,0:02:38.37,0:02:45.66,english,,0,0,0,,But the third algorithm, recall, was this one here in green, where we called it logarithmic in terms of how fast or how slow it was.
