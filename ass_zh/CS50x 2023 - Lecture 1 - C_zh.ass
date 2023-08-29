@@ -14,10 +14,10 @@ Audio File: ../video/CS50x 2023 - Lecture 1 - C.mp4
 Video File: ../video/CS50x 2023 - Lecture 1 - C.mp4
 Video AR Mode: 4
 Video AR Value: 1.777778
-Video Zoom Percent: 0.250000
-Scroll Position: 4347
-Active Line: 4360
-Video Position: 214334
+Video Zoom Percent: 0.375000
+Scroll Position: 4072
+Active Line: 4073
+Video Position: 193922
 
 [V4+ Styles]
 Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
@@ -4101,7 +4101,7 @@ Dialogue: 0,2:14:35.80,2:14:38.64,chinese,,0,0,0,,实际上是有上下界的。
 Dialogue: 0,2:14:38.64,2:14:40.07,english,,0,0,0,,So what's the implication of this?
 Dialogue: 0,2:14:38.64,2:14:40.07,chinese,,0,0,0,,那么这能说明什么呢？
 Dialogue: 0,2:14:40.07,2:14:48.12,english,,0,0,0,,Well, it turns out that computers typically use as many as 32 bits in zeros or ones to represent something like an integer, or in C, in int.
-Dialogue: 0,2:14:40.07,2:14:48.12,chinese,,0,0,0,,事实证明，计算机通常使用多达 32 位（8 bytes）的 0 或 1 来表示像整数这样的东西，\N即 C 语言里的 int 类型。
+Dialogue: 0,2:14:40.07,2:14:48.12,chinese,,0,0,0,,事实证明，计算机通常使用多达 32 位（4 bytes）的 0 或 1 来表示像整数这样的东西，\N即 C 语言里的 int 类型。
 Dialogue: 0,2:14:48.12,2:14:56.97,english,,0,0,0,,So for instance, the smallest number we could represent using 32 ints, of course, using 32 bits, of course, would be zero-- 32 zeros like this here.
 Dialogue: 0,2:14:48.12,2:14:56.97,chinese,,0,0,0,,例如，使用 32 位的 int 类型，我们可以表示的最小数字当然是 0，使用 32 个 0，就像这里一样。
 Dialogue: 0,2:14:56.97,2:15:07.20,english,,0,0,0,,And the biggest number we could represent is by changing all of those zeros to ones, which, in this case, will ideally give us a number that equals roughly 4 billion in total.
