@@ -15,9 +15,9 @@ Video File: ../video/CS50x 2023 - Lecture 3 - Algorithms.mp4
 Video AR Mode: 4
 Video AR Value: 1.777778
 Video Zoom Percent: 0.500000
-Scroll Position: 3050
-Active Line: 3059
-Video Position: 143381
+Scroll Position: 3742
+Active Line: 772
+Video Position: 40948
 
 [V4+ Styles]
 Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
@@ -185,7 +185,7 @@ Dialogue: 0,0:07:08.90,0:07:11.02,chinese,,0,0,0,,其实我会把算法的伪代
 Dialogue: 0,0:07:11.02,0:07:12.77,english,,0,0,0,,And I'm going to give you the name for it.
 Dialogue: 0,0:07:11.02,0:07:12.77,chinese,,0,0,0,,还告诉你它的名字。
 Dialogue: 0,0:07:12.77,0:07:13.90,english,,0,0,0,,It's called linear search.
-Dialogue: 0,0:07:12.77,0:07:13.90,chinese,,0,0,0,,这就是所谓的线性搜索。
+Dialogue: 0,0:07:12.77,0:07:13.90,chinese,,0,0,0,,这就是所谓的线性查找。
 Dialogue: 0,0:07:13.90,0:07:17.98,english,,0,0,0,,And as the name implies, you're pretty much going to end up walking in sort of a straight line.
 Dialogue: 0,0:07:13.90,0:07:17.98,chinese,,0,0,0,,顾名思义，你最终会走成一条直线。
 Dialogue: 0,0:07:17.98,0:07:19.22,english,,0,0,0,,But how are you going to do this?
@@ -316,9 +316,9 @@ Dialogue: 0,0:10:31.18,0:10:34.17,chinese,,0,0,0,,Carter，如果你不介意的
 Dialogue: 0,0:10:34.17,0:10:38.01,english,,0,0,0,,But in the meantime, let me point out how we might now translate that same idea to code.
 Dialogue: 0,0:10:34.17,0:10:38.01,chinese,,0,0,0,,现在呢我要告诉大家，怎么把同样的想法转化成代码。
 Dialogue: 0,0:10:38.01,0:10:51.25,english,,0,0,0,,Pretty high level, pretty English-oriented with that pseudocode-- but really now, as of last week, we have syntax via which Stephanie and, soon, Jackson could treat this locker, this set of lockers, as really indeed an array using bracket notation.
-Dialogue: 0,0:10:38.01,0:10:51.25,chinese,,0,0,0,,这个伪代码相当高级，相当面向英语，其实从上周开始，我们已经学习过 C 语法了，\N我们的两位志愿者现在就可以使用方括号，把这组柜子看作一整个数组了。
+Dialogue: 0,0:10:38.01,0:10:51.25,chinese,,0,0,0,,这个伪代码相当高级，相当面向英语，其实上周课开始，我们已经学习过 C 语法了，\N两位志愿者现在就可以用方括号，把这组柜子看作一整个数组了。
 Dialogue: 0,0:10:51.25,0:10:54.48,english,,0,0,0,,So we can now get a little closer in our pseudocode to actual code.
-Dialogue: 0,0:10:51.25,0:10:54.48,chinese,,0,0,0,,我们现在可以让伪代码向实际代码迈进。
+Dialogue: 0,0:10:51.25,0:10:54.48,chinese,,0,0,0,,现在我们让伪代码向实际代码迈进。
 Dialogue: 0,0:10:54.48,0:11:06.60,english,,0,0,0,,And the way a computer scientist, for instance, would translate fairly high level English pseudocode like this to something that's a little closer to C or any language that supports arrays would be a little more cryptically like this.
 Dialogue: 0,0:10:54.48,0:11:06.60,chinese,,0,0,0,,计算机科学家们，会把这种高级的英语伪代码，翻译成更接近 C 语言或其他语言里数组的模样，\N看起来没那么一目了然，大概这个样子。
 Dialogue: 0,0:11:06.60,0:11:09.06,english,,0,0,0,,But you'll see more of this syntax in the coming days.
@@ -332,28 +332,29 @@ Dialogue: 0,0:11:17.73,0:11:26.50,chinese,,0,0,0,,if 50 is behind doors[i]，我
 Dialogue: 0,0:11:26.50,0:11:30.37,english,,0,0,0,,But then the rest of the logic, the rest of the pseudocode really is the same way.
 Dialogue: 0,0:11:26.50,0:11:30.37,chinese,,0,0,0,,其余的逻辑，落实到伪代码都一样。
 Dialogue: 0,0:11:30.37,0:11:40.17,english,,0,0,0,,And so you'll find in time that programmers, computer scientists more generally, when you start expressing ideas, algorithms to someone else, instead of maybe operating at this level here,
-Dialogue: 0,0:11:30.37,0:11:40.17,chinese,,0,0,0,,所以说你发现了吧，程序员和计算机科学家向别人表达想法和算法的时候，\N一般都会从伪代码层面开始，而不是这种纯英文句法，
+Dialogue: 0,0:11:30.37,0:11:40.17,chinese,,0,0,0,,所以说你发现了吧，程序员和计算机科学家向别人表达想法和算法的时候，\N一般都会从伪代码层面开始，而不是采用这种纯英文句法，
 Dialogue: 0,0:11:40.17,0:11:47.38,english,,0,0,0,,you now have a new vocabulary, really a new syntax that you can be a little more specific, not getting so into the weeds of writing actual C code,
-Dialogue: 0,0:11:40.17,0:11:47.38,chinese,,0,0,0,,你现在就有了一个新的手段，一种新的语法，\N你可以写得更加具体一些，却不至于把注意力分散在 C 语言语法的弯弯绕绕里，
+Dialogue: 0,0:11:40.17,0:11:47.38,chinese,,0,0,0,,你现在就有了一个新的手段、一种新的语法，\N你可以写得更加具体一些，却不至于把注意力分散在 C 语言语法的弯弯绕绕里，
 Dialogue: 0,0:11:47.38,0:11:51.81,english,,0,0,0,,but at least now doing something that's a little closer to manipulating an array like this.
-Dialogue: 0,0:11:47.38,0:11:51.81,chinese,,0,0,0,,并且现在做的事情更接近于实际操作一个数组。
+Dialogue: 0,0:11:47.38,0:11:51.81,chinese,,0,0,0,,并且现在的写法更接近于实际用代码操作一个数组。
+Dialogue: 0,0:11:47.38,0:11:51.81,annotation,,0,0,0,,碎碎念：这段翻得流畅吧~
 Dialogue: 0,0:11:51.81,0:11:55.14,english,,0,0,0,,So Jackson, would you like to stand on up?
 Dialogue: 0,0:11:51.81,0:11:55.14,chinese,,0,0,0,,Jackson，你能站起来吗？
 Dialogue: 0,0:11:55.14,0:11:56.76,english,,0,0,0,,All right.
 Dialogue: 0,0:11:56.76,0:11:57.36,english,,0,0,0,,Yes, yes.
 Dialogue: 0,0:11:57.36,0:11:59.01,english,,0,0,0,,Support for Jackson here, too.
-Dialogue: 0,0:11:57.36,0:11:59.01,chinese,,0,0,0,,来鼓励一下 Jackson 吧。
+Dialogue: 0,0:11:57.36,0:11:59.01,chinese,,0,0,0,,给 Jackson 一些鼓励吧。
 Dialogue: 0,0:11:59.01,0:12:00.78,english,,0,0,0,,Nice.
 Dialogue: 0,0:12:00.78,0:12:04.47,english,,0,0,0,,And here now, I'm going to allow you an assumption that Stephanie did not have.
 Dialogue: 0,0:12:00.78,0:12:04.47,chinese,,0,0,0,,现在，我允许你做一个 Stephanie 没有的假设。
 Dialogue: 0,0:12:04.47,0:12:10.05,english,,0,0,0,,Stephanie clearly was really doing her best searching from left to right using linear search, as we'll now call it.
-Dialogue: 0,0:12:04.47,0:12:10.05,chinese,,0,0,0,,很明显，Stephanie 使用了 linear search（线性搜索），从左到右进行查找，确实做到了最好。
+Dialogue: 0,0:12:04.47,0:12:10.05,chinese,,0,0,0,,很明显，Stephanie 使用了 linear search（线性查找），从左到右进行查找，确实做到了最好。
 Dialogue: 0,0:12:10.05,0:12:12.18,english,,0,0,0,,But they were pretty much in a random order, right?
-Dialogue: 0,0:12:10.05,0:12:12.18,chinese,,0,0,0,,但它们的顺序很随意，不是吗？
+Dialogue: 0,0:12:10.05,0:12:12.18,chinese,,0,0,0,,但它们刚才是无序的对吧？
 Dialogue: 0,0:12:12.18,0:12:15.03,english,,0,0,0,,There was a 20 over there, there was 1 over there, and then a 50.
 Dialogue: 0,0:12:12.18,0:12:15.03,chinese,,0,0,0,,那边是 20，那边是 1，然后是 50。
 Dialogue: 0,0:12:15.03,0:12:19.11,english,,0,0,0,,So we deliberately jumbled things up and did not sort the numbers for her.
-Dialogue: 0,0:12:15.03,0:12:19.11,chinese,,0,0,0,,是故意的，我们把事情弄得一团糟，没有为她把数字排个序。
+Dialogue: 0,0:12:15.03,0:12:19.11,chinese,,0,0,0,,是故意的，我们把事情弄得一团糟，没有为她把数字排好序。
 Dialogue: 0,0:12:19.11,0:12:24.51,english,,0,0,0,,But Carter kindly has just come up to give you a leg up, Jackson, by sorting the numbers in advance.
 Dialogue: 0,0:12:19.11,0:12:24.51,chinese,,0,0,0,,刚才 Carter 好心上来帮了你一把，Jackson，这些数字现在是排列好的，越来越大。
 Dialogue: 0,0:12:24.51,0:12:32.25,english,,0,0,0,,And we'd like you this time, much like in week 0, to do something again and again, but this time using what we'll now call binary search.
@@ -361,7 +362,7 @@ Dialogue: 0,0:12:24.51,0:12:32.25,chinese,,0,0,0,,这次，我们希望你可以
 Dialogue: 0,0:12:32.25,0:12:35.58,english,,0,0,0,,It's exactly the same algorithm conceptually as we did in Week 0.
 Dialogue: 0,0:12:32.25,0:12:35.58,chinese,,0,0,0,,在概念上，跟第 0 周的算法完全一致。
 Dialogue: 0,0:12:35.58,0:12:40.45,english,,0,0,0,,But if we translate it to the context of this array, we now might say something like this.
-Dialogue: 0,0:12:35.58,0:12:40.45,chinese,,0,0,0,,如果我们把二分查找放到这个数组的上下文里面考虑，我们现在就可以这样说了。
+Dialogue: 0,0:12:35.58,0:12:40.45,chinese,,0,0,0,,如果把二分查找放到这个数组的上下文里面考虑，我们现在就可以这样说了。
 Dialogue: 0,0:12:40.45,0:12:50.61,english,,0,0,0,,The first step for Jackson might be to ask the question-- if 50 is behind the middle door, where presumably he's done some mental math to figure out what the middle is, then he's going to just return true.
 Dialogue: 0,0:12:40.45,0:12:50.61,chinese,,0,0,0,,Jackson 的第一步可能是问这个问题—— if 50 在中间那扇门后面，\N他心算一下就可以找出中间那扇门的位置，满足就返回 true。
 Dialogue: 0,0:12:50.61,0:12:53.07,english,,0,0,0,,And hopefully we'll get lucky and 50 will be right there.
@@ -390,7 +391,7 @@ Dialogue: 0,0:13:26.17,0:13:28.59,chinese,,0,0,0,,诶，这儿没有。
 Dialogue: 0,0:13:28.59,0:13:39.08,english,,0,0,0,,So let me actually go back and amend my pseudocode here and just say Jackson, if we don't hand you any doors at all, or eventually, as he's dividing and conquering, if he's left with no more doors,
 Dialogue: 0,0:13:28.59,0:13:39.08,chinese,,0,0,0,,让我回过头来修改一下伪代码，如果一扇门都没有，\N或者最终，Jackson 不断分而治之，到最后没有更多的门了，
 Dialogue: 0,0:13:39.08,0:13:42.38,english,,0,0,0,,we have to handle that situation so that the behavior is defined.
-Dialogue: 0,0:13:39.08,0:13:42.38,chinese,,0,0,0,,我们必须处理这种情况，把这种行为定义出来。
+Dialogue: 0,0:13:39.08,0:13:42.38,chinese,,0,0,0,,我们必须处理这种情况，把这些情况下的行为定义出来。
 Dialogue: 0,0:13:42.38,0:13:48.65,english,,0,0,0,,All right, so with that said, Jackson, do you want to go ahead and find us the number 50 and walk us through verbally what you're doing and finding?
 Dialogue: 0,0:13:42.38,0:13:48.65,chinese,,0,0,0,,好，话说到这，Jackson，你要不要继续找数字 50，\N然后口头跟我们解释解释你在做什么和找到了什么？
 Dialogue: 0,0:13:48.65,0:13:52.86,english,,0,0,0,,JACKSON: All right, so it looks like this one is the middle door.
@@ -422,7 +423,7 @@ Dialogue: 0,0:14:21.24,0:14:21.99,chinese,,0,0,0,,棒。
 Dialogue: 0,0:14:21.99,0:14:25.68,english,,0,0,0,,Very well done this time around, too.
 Dialogue: 0,0:14:21.99,0:14:25.68,chinese,,0,0,0,,做得很不错。
 Dialogue: 0,0:14:25.68,0:14:29.68,english,,0,0,0,,So thank you, first, to our volunteers here.
-Dialogue: 0,0:14:25.68,0:14:29.68,chinese,,0,0,0,,首先，感谢我们的志愿者。
+Dialogue: 0,0:14:25.68,0:14:29.68,chinese,,0,0,0,,首先，感谢我们的两位志愿者。
 Dialogue: 0,0:14:29.68,0:14:36.74,english,,0,0,0,,And in fact, since you're a fan of Monopoly, as we're so informed, we have the Cambridge edition of Monopoly with all your Harvard favorites.
 Dialogue: 0,0:14:29.68,0:14:36.74,chinese,,0,0,0,,其实，各位大富翁游戏爱好者可能知道，我们有剑桥版的大富翁，里面有大家最心水的哈佛。
 Dialogue: 0,0:14:36.74,0:14:37.41,english,,0,0,0,,JACKSON: No way.
@@ -431,395 +432,383 @@ Dialogue: 0,0:14:37.41,0:14:38.46,chinese,,0,0,0,,给你。
 Dialogue: 0,0:14:38.46,0:14:38.97,english,,0,0,0,,STEPHANIE: Thank you.
 Dialogue: 0,0:14:38.97,0:14:40.09,english,,0,0,0,,JACKSON: Thank you so much.
 Dialogue: 0,0:14:40.09,0:14:42.57,english,,0,0,0,,DAVID MALAN: Thank you to our volunteers for finding us 50.
-Dialogue: 0,0:14:40.09,0:14:42.57,chinese,,0,0,0,,感谢我们的志愿者为我们找到了 50.
+Dialogue: 0,0:14:40.09,0:14:42.57,chinese,,0,0,0,,感谢志愿者帮我们找到了 50。
 Dialogue: 0,0:14:42.57,0:14:46.94,english,,0,0,0,,So-- that was more popular than we expected.
-Dialogue: 0,0:14:42.57,0:14:46.94,chinese,,0,0,0,,所以，这比我们预想的更受欢迎。
+Dialogue: 0,0:14:42.57,0:14:46.94,chinese,,0,0,0,,看来比我想的还要受欢迎啊（笑）。
 Dialogue: 0,0:14:46.94,0:14:52.06,english,,0,0,0,,So here, we can translate this one more time into something a little closer to code.
-Dialogue: 0,0:14:46.94,0:14:52.06,chinese,,0,0,0,,在这里，我们可以再把它翻译成更接近代码的内容。
+Dialogue: 0,0:14:46.94,0:14:52.06,chinese,,0,0,0,,现在呢，我们可以再把它翻译得接近代码一点。
 Dialogue: 0,0:14:52.06,0:14:59.38,english,,0,0,0,,And again, still pseudocode-- but here, now, might be another formulation of exactly what Jackson just did, just using the nomenclature now of arrays,
-Dialogue: 0,0:14:52.06,0:14:59.38,chinese,,0,0,0,,同样，还是伪代码--但现在，这里可能是Jackson刚才所做工作的另一种表述，只是使用了数组的术语、
+Dialogue: 0,0:14:52.06,0:14:59.38,chinese,,0,0,0,,Jackson 刚才做的事情，我用数组的术语表述并展示在这里，还是算伪代码，
 Dialogue: 0,0:14:59.38,0:15:04.64,english,,0,0,0,,where you can be a little more precise with your instructions and still leave it to someone else to translate this, finally, to code.
-Dialogue: 0,0:14:59.38,0:15:04.64,chinese,,0,0,0,,在这种情况下，你可以把指令说得更精确一些，但还是要让别人把这些指令最终翻译成代码。
+Dialogue: 0,0:14:59.38,0:15:04.64,chinese,,0,0,0,,但是指令更加精确一些，不过仍然需要翻译一下才是真正的 C 代码。
 Dialogue: 0,0:15:04.64,0:15:06.64,english,,0,0,0,,But here we have same question at the beginning.
-Dialogue: 0,0:15:04.64,0:15:06.64,chinese,,0,0,0,,但在这里，我们一开始就遇到了同样的问题。
+Dialogue: 0,0:15:04.64,0:15:06.64,chinese,,0,0,0,,看这里，我们一开始就判断了一个问题。
 Dialogue: 0,0:15:06.64,0:15:08.65,english,,0,0,0,,If no doors left, return false.
-Dialogue: 0,0:15:06.64,0:15:08.65,chinese,,0,0,0,,如果没有门，则返回 false。
+Dialogue: 0,0:15:06.64,0:15:08.65,chinese,,0,0,0,,如果一扇门都没有，直接返回 false。
 Dialogue: 0,0:15:08.65,0:15:19.48,english,,0,0,0,,If 50 is behind doors bracket middle-- so I'm assuming here, because this is pseudocode-- that somewhere I've done the mental math or the actual math to figure out what the index of middle is.
-Dialogue: 0,0:15:08.65,0:15:19.48,chinese,,0,0,0,,如果 50 在括号中间--所以我在这里假设，因为这是伪代码--我已经在某个地方进行了心算或实际计算，以找出中间的指数是多少。
+Dialogue: 0,0:15:08.65,0:15:19.48,chinese,,0,0,0,,if 50 is behind doors[middle]，因为这是伪代码，\N所以假设我们经过心算或实际计算，已经找好了 middle 的数组下标。
 Dialogue: 0,0:15:19.48,0:15:27.31,english,,0,0,0,,For instance, if these are seven doors in an array, this would be location 0, 1, 2, 3, 4, 5, 6.
-Dialogue: 0,0:15:19.48,0:15:27.31,chinese,,0,0,0,,例如，如果一个数组中有 7 扇门，那么位置就是 0、1、2、3、4、5、6。
+Dialogue: 0,0:15:19.48,0:15:27.31,chinese,,0,0,0,,举个例子，如果数组里有 7 扇门，那序号就是 0、1、2、3、4、5、6。
 Dialogue: 0,0:15:27.31,0:15:33.52,english,,0,0,0,,So somehow I've taken the total number of doors, 7, divided by 2 to find the middle.
-Dialogue: 0,0:15:27.31,0:15:33.52,chinese,,0,0,0,,于是，我就用门的总数 7 除以 2 来找出中间值。
+Dialogue: 0,0:15:27.31,0:15:33.52,chinese,,0,0,0,,于是，我用门的总数 7 除以 2 来找出 middle。
 Dialogue: 0,0:15:33.52,0:15:34.43,english,,0,0,0,,That's 3 and 1/2.
-Dialogue: 0,0:15:33.52,0:15:34.43,chinese,,0,0,0,,这是3又1/2。
+Dialogue: 0,0:15:33.52,0:15:34.43,chinese,,0,0,0,,答案是 3 又 1/2。
 Dialogue: 0,0:15:34.43,0:15:35.68,english,,0,0,0,,We have to deal with rounding.
-Dialogue: 0,0:15:34.43,0:15:35.68,chinese,,0,0,0,,我们必须处理四舍五入的问题。
+Dialogue: 0,0:15:34.43,0:15:35.68,chinese,,0,0,0,,我们得处理四舍五入的问题。
 Dialogue: 0,0:15:35.68,0:15:39.91,english,,0,0,0,,But suffice it to say there's a well-defined formula for finding the middle index.
-Dialogue: 0,0:15:35.68,0:15:39.91,chinese,,0,0,0,,但可以说，找到中间指数有一个明确的公式。
+Dialogue: 0,0:15:35.68,0:15:39.91,chinese,,0,0,0,,但可以确定的是，找中间的序号，是有一个明确的公式的。
 Dialogue: 0,0:15:39.91,0:15:43.28,english,,0,0,0,,Given the total number of lockers, divide by 2 and then round accordingly.
-Dialogue: 0,0:15:39.91,0:15:43.28,chinese,,0,0,0,,将柜子总数除以 2，然后四舍五入。
+Dialogue: 0,0:15:39.91,0:15:43.28,chinese,,0,0,0,,把柜子总数除以 2，再做四舍五入。
 Dialogue: 0,0:15:43.28,0:15:48.79,english,,0,0,0,,So that's presumably what Jackson did just by counting or in his head to find us door number 3.
-Dialogue: 0,0:15:43.28,0:15:48.79,chinese,,0,0,0,,所以，Jackson大概是通过数数或者在脑子里想了想，才找到了 3 号门。
+Dialogue: 0,0:15:43.28,0:15:48.79,chinese,,0,0,0,,所以，Jackson 大概数了数或者经过心算，确认到了 3 号门。
 Dialogue: 0,0:15:48.79,0:15:52.21,english,,0,0,0,,Not the third door, the 4th door, but door bracket 3.
-Dialogue: 0,0:15:48.79,0:15:52.21,chinese,,0,0,0,,不是第 3 扇门，也不是第 4 扇门，而是 3 号门支架。
+Dialogue: 0,0:15:48.79,0:15:52.21,chinese,,0,0,0,,不是第 3 扇门哈，其实是第 4 扇门，就是 doors[3]。
 Dialogue: 0,0:15:52.21,0:15:56.20,english,,0,0,0,,So this is just saying if 50 is behind doors bracket middle, return true.
-Dialogue: 0,0:15:52.21,0:15:56.20,chinese,,0,0,0,,也就是说，如果 50 在门后括号中间，则返回 true。
+Dialogue: 0,0:15:52.21,0:15:56.20,chinese,,0,0,0,,也就是说，如果 50 在 doors[3]，就返回 true。
 Dialogue: 0,0:15:56.20,0:15:57.20,english,,0,0,0,,That was not the case.
-Dialogue: 0,0:15:56.20,0:15:57.20,chinese,,0,0,0,,事实并非如此。
+Dialogue: 0,0:15:56.20,0:15:57.20,chinese,,0,0,0,,刚才不是这种情况。
 Dialogue: 0,0:15:57.20,0:15:58.96,english,,0,0,0,,He found a $20 bill instead.
-Dialogue: 0,0:15:57.20,0:15:58.96,chinese,,0,0,0,,他发现了一张 20 美元的钞票。
+Dialogue: 0,0:15:57.20,0:15:58.96,chinese,,0,0,0,,他发现的是一张 20 块的。
 Dialogue: 0,0:15:58.96,0:16:10.66,english,,0,0,0,,Else, if 50 is less than the doors bracket middle, go ahead-- and now it gets interesting-- search doors 0 through doors middle minus 1.
-Dialogue: 0,0:15:58.96,0:16:10.66,chinese,,0,0,0,,否则，如果 50 小于门括号中间的数字，那么继续--现在变得有趣了--搜索门 0 到门中间减 1。
+Dialogue: 0,0:15:58.96,0:16:10.66,chinese,,0,0,0,,else if 50 < doors[middle]，接着往下执行——\N现在有点意思，search doors[0] through doors[middle-1]。
 Dialogue: 0,0:16:10.66,0:16:12.73,english,,0,0,0,,So it's getting a little more into the weeds now.
-Dialogue: 0,0:16:10.66,0:16:12.73,chinese,,0,0,0,,所以，现在的情况越来越复杂了。
+Dialogue: 0,0:16:10.66,0:16:12.73,chinese,,0,0,0,,所以，现在的情况要更加复杂了。
 Dialogue: 0,0:16:12.73,0:16:24.34,english,,0,0,0,,But if middle is 3, this one here, what we want to now have Jackson search if 50 had been-- if the number had been less, we want to start at bracket 0 and go up through this one.
-Dialogue: 0,0:16:12.73,0:16:24.34,chinese,,0,0,0,,但如果中间是 3，也就是这里的这个，我们现在要让Jackson搜索的是，如果 50 是 -- 如果这个数字更小，我们要从 0 号括号开始，一直搜索到这个括号。
+Dialogue: 0,0:16:12.73,0:16:24.34,chinese,,0,0,0,,现在的 middle 是 3，就是这里的这一个柜子，接着要让 Jackson 做的是，\N如果 50 比中间的要小，就从 [0] 开始，一直搜索到这里。
 Dialogue: 0,0:16:24.34,0:16:28.29,english,,0,0,0,,And we deliberately subtract 1 because what's the point of looking in the same locker again?
-Dialogue: 0,0:16:24.34,0:16:28.29,chinese,,0,0,0,,我们故意减去 1，因为再看同一个柜子又有什么意义呢？
+Dialogue: 0,0:16:24.34,0:16:28.29,chinese,,0,0,0,,我们有意减去 1 了，因为再检查一遍 middle 柜子又有什么意义呢？
+Dialogue: 0,0:16:24.34,0:16:28.29,annotation,,0,0,0,,*注：记住这句话。
 Dialogue: 0,0:16:28.29,0:16:31.27,english,,0,0,0,,We might as well do 0 through middle minus 1.
-Dialogue: 0,0:16:28.29,0:16:31.27,chinese,,0,0,0,,我们不妨从 0 到中间减 1。
+Dialogue: 0,0:16:28.29,0:16:31.27,chinese,,0,0,0,,所以不妨从 0 搜索到 middle-1。
 Dialogue: 0,0:16:31.27,0:16:37.12,english,,0,0,0,,Else if 50 is greater than doors bracket middle, which it was, what did we then do?
-Dialogue: 0,0:16:31.27,0:16:37.12,chinese,,0,0,0,,否则，如果 50 大于门括号的中间值，那我们该怎么办？
+Dialogue: 0,0:16:31.27,0:16:37.12,chinese,,0,0,0,,再 else if，要是 50 大于 doors[middle]，又怎么办？
 Dialogue: 0,0:16:37.12,0:16:43.29,english,,0,0,0,,So Jackson intuitively searched for doors middle plus 1 through doors n minus 1.
-Dialogue: 0,0:16:37.12,0:16:43.29,chinese,,0,0,0,,于是，Jackson凭直觉寻找中间加 1 的门，穿过 n 减 1 的门。
+Dialogue: 0,0:16:37.12,0:16:43.29,chinese,,0,0,0,,于是，Jackson 凭着直觉，从 doors[middle+1] 开始，一直找到 doors[n-1] 结束。
 Dialogue: 0,0:16:43.29,0:16:46.42,english,,0,0,0,,And honestly, it gets a little annoying having the pluses and minuses here.
-Dialogue: 0,0:16:43.29,0:16:46.42,chinese,,0,0,0,,老实说，在这里说优点和缺点有点烦人。
+Dialogue: 0,0:16:43.29,0:16:46.42,chinese,,0,0,0,,说实话，这里一会加一会减的，有点烦人。
 Dialogue: 0,0:16:46.42,0:16:47.78,english,,0,0,0,,But just think of what it means.
-Dialogue: 0,0:16:46.42,0:16:47.78,chinese,,0,0,0,,但想想这意味着什么吧。
+Dialogue: 0,0:16:46.42,0:16:47.78,chinese,,0,0,0,,但是想想背后的含义吧。
 Dialogue: 0,0:16:47.78,0:16:49.09,english,,0,0,0,,This is the middle door.
-Dialogue: 0,0:16:47.78,0:16:49.09,chinese,,0,0,0,,这是中门。
+Dialogue: 0,0:16:47.78,0:16:49.09,chinese,,0,0,0,,这是中间的门。
 Dialogue: 0,0:16:49.09,0:16:56.15,english,,0,0,0,,And Jackson then did proceed to search through doors middle plus 1 because there's no point in searching this one again.
-Dialogue: 0,0:16:49.09,0:16:56.15,chinese,,0,0,0,,然后，Jackson又开始搜查中间加 1 号门，因为再搜查这扇门已经没有意义了。
+Dialogue: 0,0:16:49.09,0:16:56.15,chinese,,0,0,0,,然后，Jackson 从 middle+1 号门开始找，因为再检查一次 middle 没有意义。
 Dialogue: 0,0:16:56.15,0:17:05.35,english,,0,0,0,,And then the last element in any array of size n where n is just our go-to number for the size is always going to be n minus 1.
-Dialogue: 0,0:16:56.15,0:17:05.35,chinese,,0,0,0,,然后，在任何大小为 n 的数组中，最后一个元素总是 n 减 1。
+Dialogue: 0,0:16:56.15,0:17:05.35,chinese,,0,0,0,,在大小为 n 的数组中，最后一个元素下标总是 n-1。
 Dialogue: 0,0:17:05.35,0:17:06.31,english,,0,0,0,,It's not going to be n.
-Dialogue: 0,0:17:05.35,0:17:06.31,chinese,,0,0,0,,它不会是 n。
+Dialogue: 0,0:17:05.35,0:17:06.31,chinese,,0,0,0,,不会到 n 的。
 Dialogue: 0,0:17:06.31,0:17:10.83,english,,0,0,0,,It's going to be n minus 1 because we always start counting arrays at 0.
-Dialogue: 0,0:17:06.31,0:17:10.83,chinese,,0,0,0,,它将是 n 减 1，因为我们总是从 0 开始计数数组。
+Dialogue: 0,0:17:06.31,0:17:10.83,chinese,,0,0,0,,是 n-1，因为数组里我们总是从 0 开始数。
 Dialogue: 0,0:17:10.83,0:17:16.43,english,,0,0,0,,So here then we have a translation into pseudocode that's a little closer to C of this exact same idea.
-Dialogue: 0,0:17:10.83,0:17:16.43,chinese,,0,0,0,,在这里，我们将这个完全相同的想法翻译成了更接近 C 语言的伪代码。
+Dialogue: 0,0:17:10.83,0:17:16.43,chinese,,0,0,0,,我们把这个想法，翻译成了更接近 C 语言的伪代码，放在这儿。
 Dialogue: 0,0:17:16.43,0:17:18.49,english,,0,0,0,,And here, we come full circle to Week 0.
-Dialogue: 0,0:17:16.43,0:17:18.49,chinese,,0,0,0,,在这里，我们又回到了第 0 周。
+Dialogue: 0,0:17:16.43,0:17:18.49,chinese,,0,0,0,,在这里，仿佛回到了第 0 周。
 Dialogue: 0,0:17:18.49,0:17:23.42,english,,0,0,0,,In Week 0, it was pretty intuitive to imagine dividing and conquering a problem like this.
-Dialogue: 0,0:17:18.49,0:17:23.42,chinese,,0,0,0,,在第 0 周，我们可以很直观地想象怎么分割和征服这样一个问题。
+Dialogue: 0,0:17:18.49,0:17:23.42,chinese,,0,0,0,,第 0 周里，我们直观地推演了一下，怎么把这样一个问题分而治之。
 Dialogue: 0,0:17:23.42,0:17:29.92,english,,0,0,0,,But if you now think back to actual your iPhone, your Android phone, or the like, when you're doing autocomplete and searching the list,
-Dialogue: 0,0:17:23.42,0:17:29.92,chinese,,0,0,0,,但是，如果你现在回想一下你的 iPhone、Android 手机或类似设备，当你在进行自动完成和搜索列表时、
+Dialogue: 0,0:17:23.42,0:17:29.92,chinese,,0,0,0,,你现在想想自己用的各种设备，在通讯录里进行搜索并自动补全的时候，
 Dialogue: 0,0:17:29.92,0:17:34.84,english,,0,0,0,,it's possible, if you don't have many friends or family or colleagues in the phone, you know what?
-Dialogue: 0,0:17:29.92,0:17:34.84,chinese,,0,0,0,,如果你没有很多朋友、家人或同事的电话，你知道吗？
+Dialogue: 0,0:17:29.92,0:17:34.84,chinese,,0,0,0,,如果联系人没有很多，你知道吗？
 Dialogue: 0,0:17:34.84,0:17:40.72,english,,0,0,0,,Linear search, just checking every name for the person you're searching for, might be perfectly fine.
-Dialogue: 0,0:17:34.84,0:17:40.72,chinese,,0,0,0,,线性搜索，只检查要搜索的人的每一个名字，可能完全没问题。
+Dialogue: 0,0:17:34.84,0:17:40.72,chinese,,0,0,0,,如果采用线性查找，把自己要找的人跟通讯录里的一个一个比对，可能完全没问题。
 Dialogue: 0,0:17:40.72,0:17:47.77,english,,0,0,0,,But odds are your phone's being smarter than that, especially if you start to have dozens, hundreds, thousands of people in your contacts over the years.
-Dialogue: 0,0:17:40.72,0:17:47.77,chinese,,0,0,0,,但是，你的手机很可能比这更聪明，尤其是当你的联系人数年来增加到几十、几百、几千人的时候。
+Dialogue: 0,0:17:40.72,0:17:47.77,chinese,,0,0,0,,但是，你的手机会更加聪明一点，尤其是你的联系人涨到几十、几百、几千人的时候。
 Dialogue: 0,0:17:47.77,0:17:49.54,english,,0,0,0,,What would be better than linear search?
-Dialogue: 0,0:17:47.77,0:17:49.54,chinese,,0,0,0,,有什么比线性搜索更好？
+Dialogue: 0,0:17:47.77,0:17:49.54,chinese,,0,0,0,,有什么比线性查找更加好？
 Dialogue: 0,0:17:49.54,0:17:51.34,english,,0,0,0,,Well, perhaps binary search.
-Dialogue: 0,0:17:49.54,0:17:51.34,chinese,,0,0,0,,嗯，也许是二进制搜索。
+Dialogue: 0,0:17:49.54,0:17:51.34,chinese,,0,0,0,,也许是二分查找。
 Dialogue: 0,0:17:51.34,0:17:55.18,english,,0,0,0,,But, but, but-- there's an assumption, a requirement, which is what?
-Dialogue: 0,0:17:51.34,0:17:55.18,chinese,,0,0,0,,但是，但是，但是 - 有一个假设，一个要求，这是什么？
+Dialogue: 0,0:17:51.34,0:17:55.18,chinese,,0,0,0,,但是但是但是，有一个假设，一个必要条件，是啥？
 Dialogue: 0,0:17:55.18,0:18:04.83,english,,0,0,0,,Why was Jackson ultimately able to find the 50 in just three steps instead of a full seven, like Stephanie?
-Dialogue: 0,0:17:55.18,0:18:04.83,chinese,,0,0,0,,为什么Jackson最终只用了三步就找到了 50，而不是像Stephanie那样用了整整七步？
+Dialogue: 0,0:17:55.18,0:18:04.83,chinese,,0,0,0,,为什么 Jackson 只用了三步就找到 50，而 Stephanie 用了整整七步？
 Dialogue: 0,0:18:04.83,0:18:06.57,english,,0,0,0,,Because the array was sorted.
-Dialogue: 0,0:18:04.83,0:18:06.57,chinese,,0,0,0,,因为数组已排序。
+Dialogue: 0,0:18:04.83,0:18:06.57,chinese,,0,0,0,,因为数组排好序了。
 Dialogue: 0,0:18:06.57,0:18:09.99,english,,0,0,0,,And so this is sort of a teaser for what we'll have to come back to later today.
-Dialogue: 0,0:18:06.57,0:18:09.99,chinese,,0,0,0,,所以，这只是一个预告，我们今天晚些时候还要继续讨论。
+Dialogue: 0,0:18:06.57,0:18:09.99,chinese,,0,0,0,,现在先做个预告，今天晚些时候我们来抖包袱。
 Dialogue: 0,0:18:09.99,0:18:12.78,english,,0,0,0,,Well, how much effort did it take someone like Carter?
-Dialogue: 0,0:18:09.99,0:18:12.78,chinese,,0,0,0,,那么，像Carter这样的人需要付出多少努力呢？
+Dialogue: 0,0:18:09.99,0:18:12.78,chinese,,0,0,0,,这样的话，像 Carter 这样的人做了多少工作呢？
 Dialogue: 0,0:18:12.78,0:18:17.04,english,,0,0,0,,How much effort does it take your phone to sort all of those names and numbers in advance?
-Dialogue: 0,0:18:12.78,0:18:17.04,chinese,,0,0,0,,你的手机要花费多少精力才能提前将这些名字和号码分类？
+Dialogue: 0,0:18:12.78,0:18:17.04,chinese,,0,0,0,,你的手机提前把这些名字和号码排好序，代价有多少？
 Dialogue: 0,0:18:17.04,0:18:19.65,english,,0,0,0,,Because maybe it's not actually worth the amount of time.
-Dialogue: 0,0:18:17.04,0:18:19.65,chinese,,0,0,0,,因为也许这实际上不值得花那么多时间。
+Dialogue: 0,0:18:17.04,0:18:19.65,chinese,,0,0,0,,因为可能在实际应用里不值得花那么多时间预先排序。
 Dialogue: 0,0:18:19.65,0:18:24.21,english,,0,0,0,,Now someone like Google probably somehow keeps the database of web pages sorted.
-Dialogue: 0,0:18:19.65,0:18:24.21,chinese,,0,0,0,,现在，像谷歌这样的公司可能会以某种方式对网页数据库进行分类。
+Dialogue: 0,0:18:19.65,0:18:24.21,chinese,,0,0,0,,在如今，谷歌这样的大公司可能会用某种方式，让数据库里存储的网页保持有序状态。
 Dialogue: 0,0:18:24.21,0:18:32.28,english,,0,0,0,,You can imagine it being super slow if, when you type in cats or something else into google.com, if they searched linearly over their entire data set.
-Dialogue: 0,0:18:24.21,0:18:32.28,chinese,,0,0,0,,你可以想象一下，当你在 google.com 上输入猫或其他东西时，如果他们对整个数据集进行线性搜索，速度会有多慢。
+Dialogue: 0,0:18:24.21,0:18:32.28,chinese,,0,0,0,,你可以想象一下，当你在 google.com 上输入猫或别的关键词，\N如果要对整个数据集进行线性查找，速度会有多慢。
 Dialogue: 0,0:18:32.28,0:18:35.43,english,,0,0,0,,Ideally, they're doing something a little smarter than that.
-Dialogue: 0,0:18:32.28,0:18:35.43,chinese,,0,0,0,,理想的情况是，他们做的事情比这更聪明一些。
+Dialogue: 0,0:18:32.28,0:18:35.43,chinese,,0,0,0,,理想的情况下，他们有更聪明的策略。
 Dialogue: 0,0:18:35.43,0:18:38.82,english,,0,0,0,,So we'll formalize, now, exactly this kind of analysis.
-Dialogue: 0,0:18:35.43,0:18:38.82,chinese,,0,0,0,,因此，我们现在要把这种分析正式化。
+Dialogue: 0,0:18:35.43,0:18:38.82,chinese,,0,0,0,,所以，我们现在来正式分析一下。
 Dialogue: 0,0:18:38.82,0:18:42.18,english,,0,0,0,,And it's not going to be so much mathy as it still will be intuitive.
-Dialogue: 0,0:18:38.82,0:18:42.18,chinese,,0,0,0,,它不会太数学化，但仍然会很直观。
+Dialogue: 0,0:18:38.82,0:18:42.18,chinese,,0,0,0,,不会太涉及数学论证，而是保持直观。
 Dialogue: 0,0:18:42.18,0:18:50.55,english,,0,0,0,,But we'll introduce you to some jargon, some terminology that most any programmer or computer scientists might use when analyzing their own algorithms.
-Dialogue: 0,0:18:42.18,0:18:50.55,chinese,,0,0,0,,但我们会向你介绍一些行话，一些大多数程序员或计算机科学家在分析自己的算法时可能会用到的术语。
+Dialogue: 0,0:18:42.18,0:18:50.55,chinese,,0,0,0,,我们会向你介绍一些行话，\N也就是大多数程序员或计算机科学家分析自己算法的时候，可能会用到的术语。
 Dialogue: 0,0:18:50.55,0:18:53.67,english,,0,0,0,,Let's formalize now what this kind of analysis is.
 Dialogue: 0,0:18:50.55,0:18:53.67,chinese,,0,0,0,,现在，让我们把这种分析正式化。
 Dialogue: 0,0:18:53.67,0:18:56.91,english,,0,0,0,,So right now, I claim binary search better than linear search.
-Dialogue: 0,0:18:53.67,0:18:56.91,chinese,,0,0,0,,因此，现在我认为二进制搜索比线性搜索更好。
+Dialogue: 0,0:18:53.67,0:18:56.91,chinese,,0,0,0,,也就是说，现在我认为二分查找比线性查找更优秀。
 Dialogue: 0,0:18:56.91,0:18:59.10,english,,0,0,0,,But how much better and why, exactly?
 Dialogue: 0,0:18:56.91,0:18:59.10,chinese,,0,0,0,,但究竟好了多少，为什么？
 Dialogue: 0,0:18:59.10,0:19:01.12,english,,0,0,0,,Well, it all comes back to this kind of graph.
-Dialogue: 0,0:18:59.10,0:19:01.12,chinese,,0,0,0,,那么，这一切又回到了这样一张图上。
+Dialogue: 0,0:18:59.10,0:19:01.12,chinese,,0,0,0,,那么，归根结底又回到了这张图上。
 Dialogue: 0,0:19:01.12,0:19:04.83,english,,0,0,0,,So this, recall, is how we analyzed the phone book back in Week 0.
-Dialogue: 0,0:19:01.12,0:19:04.83,chinese,,0,0,0,,回想一下，我们在第 0 周就是这样分析电话簿的。
-Dialogue: 0,0:19:04.83,0:19:13.74,english,,0,0,0,,And recall that, indeed, we had these formulas, rough formulas that described the running time of those three algorithms-- one page at a time, two pages at a time, and then
-Dialogue: 0,0:19:04.83,0:19:13.74,chinese,,0,0,0,,回想一下，我们确实有这些公式，描述这三种算法运行时间的粗略公式--一次一页，一次两页，然后是
-Dialogue: 0,0:19:13.74,0:19:15.72,english,,0,0,0,,tearing the thing again and again in half.
-Dialogue: 0,0:19:13.74,0:19:15.72,chinese,,0,0,0,,一次又一次地把它撕成两半。
+Dialogue: 0,0:19:01.12,0:19:04.83,chinese,,0,0,0,,回想一下，在第 0 周里，我们是这样分析电话簿的。
+Dialogue: 0,0:19:04.83,0:19:15.72,english,,0,0,0,,And recall that, indeed, we had these formulas, rough formulas that described the running time of those three algorithms-- one page at a time, two pages at a time, and then tearing the thing again and again in half.
+Dialogue: 0,0:19:04.83,0:19:15.72,chinese,,0,0,0,,我们确实提到了描述这三种算法运行时间的粗略公式——\N一次一页，一次两页，然后是 一次又一次地把书撕成两半。
 Dialogue: 0,0:19:15.72,0:19:26.70,english,,0,0,0,,And precisely, if you counted up the number of pages I was touching or the number of pages I was tearing, it's fair to say that the first algorithm, in the worst case, might have taken n total pages.
-Dialogue: 0,0:19:15.72,0:19:26.70,chinese,,0,0,0,,准确地说，如果你统计一下我接触的页数或撕掉的页数，可以说第一种算法在最坏的情况下可能总共用了 n 页。
+Dialogue: 0,0:19:15.72,0:19:26.70,chinese,,0,0,0,,说准确一点，如果你统计一下我翻过或者撕掉的页数，\N可以说第一种算法在最坏的情况下可能总共会用 n 页。
 Dialogue: 0,0:19:26.70,0:19:31.26,english,,0,0,0,,It didn't because I was searching for John Harvard at the time, which is somewhat early in the alphabet.
-Dialogue: 0,0:19:26.70,0:19:31.26,chinese,,0,0,0,,因为我当时正在搜索约翰-哈佛（John Harvard），而字母表中的约翰-哈佛（John Harvard）还有点早。
+Dialogue: 0,0:19:26.70,0:19:31.26,chinese,,0,0,0,,我当时搜索的是 John Harvard，它在字母表里还比较靠前。
 Dialogue: 0,0:19:31.26,0:19:34.34,english,,0,0,0,,But if I were searching for someone with the last name of Z,
-Dialogue: 0,0:19:31.26,0:19:34.34,chinese,,0,0,0,,但如果我在搜索一个姓 Z、
+Dialogue: 0,0:19:31.26,0:19:34.34,chinese,,0,0,0,,但如果我搜索的是一个 Z 开头姓氏的人，
 Dialogue: 0,0:19:34.34,0:19:38.43,english,,0,0,0,,I would have had to keep going and going, in the worst case, through all n pages.
-Dialogue: 0,0:19:34.34,0:19:38.43,chinese,,0,0,0,,我不得不一直读下去，最糟糕的情况是读完所有 N 页。
+Dialogue: 0,0:19:34.34,0:19:38.43,chinese,,0,0,0,,我不得不一直找下去，最糟糕的情况是翻完所有 n 页。
 Dialogue: 0,0:19:38.43,0:19:41.94,english,,0,0,0,,Not as bad for the second algorithm, and that's why we do n divided by 2.
-Dialogue: 0,0:19:38.43,0:19:41.94,chinese,,0,0,0,,第二种算法就没那么糟糕了，这就是我们用 n 除以 2 的原因。
+Dialogue: 0,0:19:38.43,0:19:41.94,chinese,,0,0,0,,第二种算法相对没那么糟糕，最坏情况下需要翻 n/2 次。
 Dialogue: 0,0:19:41.94,0:19:43.92,english,,0,0,0,,And even that's a bit of a white lie.
-Dialogue: 0,0:19:41.94,0:19:43.92,chinese,,0,0,0,,即使是这样，也有点像是在撒一个弥天大谎。
+Dialogue: 0,0:19:41.94,0:19:43.92,chinese,,0,0,0,,其实这里还藏了点小谎。
 Dialogue: 0,0:19:43.92,0:19:48.27,english,,0,0,0,,It's probably n divided by 2 plus 1 in case I have to double back.
-Dialogue: 0,0:19:43.92,0:19:48.27,chinese,,0,0,0,,可能是 n 除以 2 再加上 1，以防我需要加倍计算。
+Dialogue: 0,0:19:43.92,0:19:48.27,chinese,,0,0,0,,可能是 n/2+1 次，因为可能刚好把那页跳过，需要回看一页。
 Dialogue: 0,0:19:48.27,0:19:52.03,english,,0,0,0,,But again, I'm sort of doing this more generally to capture the essence of these things.
-Dialogue: 0,0:19:48.27,0:19:52.03,chinese,,0,0,0,,不过，我这样做也是为了更概括地抓住这些事情的本质。
-Dialogue: 0,0:19:52.03,0:19:54.36,english,,0,0,0,,And then we really got into the weeds with like log base
-Dialogue: 0,0:19:52.03,0:19:54.36,chinese,,0,0,0,,然后，我们就真正进入了像原木基地这样的杂草丛生的地方
-Dialogue: 0,0:19:54.36,0:19:56.94,english,,0,0,0,,2 event for that third and final algorithm.
-Dialogue: 0,0:19:54.36,0:19:56.94,chinese,,0,0,0,,2 活动的第三个也是最后一个算法。
+Dialogue: 0,0:19:48.27,0:19:52.03,chinese,,0,0,0,,我说是 n/2，是为了更概括性地抓住这些事情的本质。
+Dialogue: 0,0:19:52.03,0:19:56.94,english,,0,0,0,,And then we really got into the weeds with like log base 2 event for that third and final algorithm.
+Dialogue: 0,0:19:52.03,0:19:56.94,chinese,,0,0,0,,然后，我们到达了第三种也就是最后一个算法，\N没有那么直白了，它需要的次数是 2 为底的对数。
 Dialogue: 0,0:19:56.94,0:20:04.20,english,,0,0,0,,And at the time, we claimed any time you're dividing something in half, in half, in half, odds are there's going to be some kind of logarithm involved.
-Dialogue: 0,0:19:56.94,0:20:04.20,chinese,,0,0,0,,当时，我们认为，任何时候，如果要把某个东西对半分、对半分、对半分，都有可能涉及某种对数。
+Dialogue: 0,0:19:56.94,0:20:04.20,chinese,,0,0,0,,当时我们还聊到了，在任何时候，\N如果需要把某个东西一直对半分下去，就可能涉及到某种对数。
 Dialogue: 0,0:20:04.20,0:20:05.34,english,,0,0,0,,And we'll see that today.
-Dialogue: 0,0:20:04.20,0:20:05.34,chinese,,0,0,0,,我们今天就能看到这一点。
+Dialogue: 0,0:20:04.20,0:20:05.34,chinese,,0,0,0,,我们今天也会看到。
 Dialogue: 0,0:20:05.34,0:20:09.01,english,,0,0,0,,But today, we're going to actually start using computer science terminology.
-Dialogue: 0,0:20:05.34,0:20:09.01,chinese,,0,0,0,,但今天，我们将真正开始使用计算机科学术语。
+Dialogue: 0,0:20:05.34,0:20:09.01,chinese,,0,0,0,,从今天起，我们要真正开始使用计算机科学里的术语。
 Dialogue: 0,0:20:09.01,0:20:13.59,english,,0,0,0,,And we're going to formalize this imprecision, if you will.
-Dialogue: 0,0:20:09.01,0:20:13.59,chinese,,0,0,0,,如果你愿意，我们将把这种不精确正式化。
-Dialogue: 0,0:20:13.59,0:20:20.82,english,,0,0,0,,We are not going to care, generally, about exactly how many steps some algorithm takes because that's not going to be that enlightening,
-Dialogue: 0,0:20:13.59,0:20:20.82,chinese,,0,0,0,,一般来说，我们不会关心某种算法到底要走多少步，因为这不会有什么启发、
-Dialogue: 0,0:20:20.82,0:20:24.63,english,,0,0,0,,especially if maybe you have a faster computer tomorrow than you did today.
-Dialogue: 0,0:20:20.82,0:20:24.63,chinese,,0,0,0,,尤其是当你明天的电脑速度比今天更快的时候。
+Dialogue: 0,0:20:09.01,0:20:13.59,chinese,,0,0,0,,我们会把各种不精确的描述正式化。
+Dialogue: 0,0:20:13.59,0:20:24.63,english,,0,0,0,,We are not going to care, generally, about exactly how many steps some algorithm takes because that's not going to be that enlightening, especially if maybe you have a faster computer tomorrow than you did today.
+Dialogue: 0,0:20:13.59,0:20:24.63,chinese,,0,0,0,,通常情况下，我们不会过于关注某个算法究竟需要多少步，\N因为这不会带来很多启发，特别是计算机的性能在逐步提高。
+Dialogue: 0,0:20:13.59,0:20:24.63,annotation,,0,0,0,,*注：就是说，这不是一个通用的标准来衡量程序的运行效率。\N举个例子，从我家走到学校要一千步，在不知道每步迈多大，每步花多长时间的情况下，这个信息就很鸡肋。
 Dialogue: 0,0:20:24.63,0:20:27.51,english,,0,0,0,,It wouldn't really be fair to compare numbers too precisely.
-Dialogue: 0,0:20:24.63,0:20:27.51,chinese,,0,0,0,,过于精确地比较数字并不公平。
+Dialogue: 0,0:20:24.63,0:20:27.51,chinese,,0,0,0,,过于精确地比较数字反而不公平。
 Dialogue: 0,0:20:27.51,0:20:33.93,english,,0,0,0,,We really want to, with the wave of a hand, just get a sense of roughly how slow or how fast an algorithm is.
-Dialogue: 0,0:20:27.51,0:20:33.93,chinese,,0,0,0,,我们真的希望，只要挥挥手，就能大致了解算法的速度有多快或多慢。
+Dialogue: 0,0:20:27.51,0:20:33.93,chinese,,0,0,0,,我们真正想要的是，只要掐指一算，就能大致了解一个算法是多么慢或多么快。
 Dialogue: 0,0:20:33.93,0:20:36.00,english,,0,0,0,,So the notation here is deliberate.
-Dialogue: 0,0:20:33.93,0:20:36.00,chinese,,0,0,0,,因此，这里的标注是经过深思熟虑的。
+Dialogue: 0,0:20:33.93,0:20:36.00,chinese,,0,0,0,,因此，这里的符号是有深意的。
 Dialogue: 0,0:20:36.00,0:20:40.62,english,,0,0,0,,That is literally a capital O, often italicized, refer to as big O.
-Dialogue: 0,0:20:36.00,0:20:40.62,chinese,,0,0,0,,这简直就是一个大写的 O，通常是斜体，被称为大 O。
+Dialogue: 0,0:20:36.00,0:20:40.62,chinese,,0,0,0,,字面上看是一个大写的 O，通常是斜体，被称为大 O 符号。
 Dialogue: 0,0:20:40.62,0:20:43.92,english,,0,0,0,,And so the first algorithm is in big O of n.
-Dialogue: 0,0:20:40.62,0:20:43.92,chinese,,0,0,0,,因此，第一种算法是 n 的大 O。
+Dialogue: 0,0:20:40.62,0:20:43.92,chinese,,0,0,0,,所以第一个算法的复杂度是 O(n)，
 Dialogue: 0,0:20:43.92,0:20:47.76,english,,0,0,0,,The second algorithm is in big O of n divided by 2.
-Dialogue: 0,0:20:43.92,0:20:47.76,chinese,,0,0,0,,第二种算法是 n 除以 2 的大 O。
+Dialogue: 0,0:20:43.92,0:20:47.76,chinese,,0,0,0,,第二个算法的复杂度是 O(n/2)，
 Dialogue: 0,0:20:47.76,0:20:51.48,english,,0,0,0,,The third algorithm is in big O of log base 2 of n.
-Dialogue: 0,0:20:47.76,0:20:51.48,chinese,,0,0,0,,第三种算法的运算量为 n 的对数基 2 的大 O。
+Dialogue: 0,0:20:47.76,0:20:51.48,chinese,,0,0,0,,第三个算法的复杂度是 O(log₂(n))。
 Dialogue: 0,0:20:51.48,0:20:54.69,english,,0,0,0,,But even that is kind of unnecessary detail.
-Dialogue: 0,0:20:51.48,0:20:54.69,chinese,,0,0,0,,但即便如此，细节也是多余的。
+Dialogue: 0,0:20:51.48,0:20:54.69,chinese,,0,0,0,,但即使是这么写，还是有不太必要的细节。
 Dialogue: 0,0:20:54.69,0:21:01.23,english,,0,0,0,,When using big O notation, you really don't care about, we'll see, the smaller order terms.
-Dialogue: 0,0:20:54.69,0:21:01.23,chinese,,0,0,0,,在使用大 O 符号时，你真的不需要关心小阶项，我们会看到。
+Dialogue: 0,0:20:54.69,0:21:01.23,chinese,,0,0,0,,在使用大 O 符号时，我们实际上不关心小阶项。
 Dialogue: 0,0:21:01.23,0:21:04.50,english,,0,0,0,,We're not going to care about the divided by 2 because you know what?
-Dialogue: 0,0:21:01.23,0:21:04.50,chinese,,0,0,0,,我们不会关心除以 2 的问题，因为你知道吗？
+Dialogue: 0,0:21:01.23,0:21:04.50,chinese,,0,0,0,,我们不会关心除以 2 什么的，因为你知道吗？
 Dialogue: 0,0:21:04.50,0:21:07.72,english,,0,0,0,,The shape of these algorithms are is almost the same.
-Dialogue: 0,0:21:04.50,0:21:07.72,chinese,,0,0,0,,这些算法的形状几乎相同。
+Dialogue: 0,0:21:04.50,0:21:07.72,chinese,,0,0,0,,这些算法的形状几乎是相同的。
 Dialogue: 0,0:21:07.72,0:21:11.34,english,,0,0,0,,And really, the idea-- the algorithm itself is sort of fundamentally the same.
-Dialogue: 0,0:21:07.72,0:21:11.34,chinese,,0,0,0,,实际上，算法本身在本质上是一样的。
+Dialogue: 0,0:21:07.72,0:21:11.34,chinese,,0,0,0,,而且实际上，这些算法的核心思想基本上是相同的。
 Dialogue: 0,0:21:11.34,0:21:13.62,english,,0,0,0,,Instead of one page at a time, I'm doing two.
-Dialogue: 0,0:21:11.34,0:21:13.62,chinese,,0,0,0,,我不再一次只做一页，而是要做两页。
+Dialogue: 0,0:21:11.34,0:21:13.62,chinese,,0,0,0,,不是一页一页地处理，而是一次处理两页。
 Dialogue: 0,0:21:13.62,0:21:22.08,english,,0,0,0,,But if you throw millions of pages, billions of pages at me, those algorithms are really going to kind of perform the same as n gets really large, goes off toward infinity.
-Dialogue: 0,0:21:13.62,0:21:22.08,chinese,,0,0,0,,但是，如果你向我抛出数百万页、数十亿页的数据，随着 n 越来越大，向无穷大的方向发展，这些算法的性能就会越来越差。
+Dialogue: 0,0:21:13.62,0:21:22.08,chinese,,0,0,0,,但如果你向我丢过来几百万、几十亿页，\N随着 n 变得非常大，趋近无穷大，这些算法的表现将会非常相似，没有量级上的效率区别。
 Dialogue: 0,0:21:22.08,0:21:23.58,english,,0,0,0,,And the same is true for logarithms.
-Dialogue: 0,0:21:22.08,0:21:23.58,chinese,,0,0,0,,对数也是如此。
+Dialogue: 0,0:21:22.08,0:21:23.58,chinese,,0,0,0,,对数（log）也是一个道理。
 Dialogue: 0,0:21:23.58,0:21:33.04,english,,0,0,0,,Even if you're a little rusty, it turns out that whether you do the math with log base 2, log base 3, log base 10, you can just multiply one by the other to really get the same formula.
-Dialogue: 0,0:21:23.58,0:21:33.04,chinese,,0,0,0,,即使你有点生疏，事实证明，无论你用对数基 2、对数基 3 还是对数基 10 来计算，只要用其中一个乘以另一个，就能得到相同的公式。
+Dialogue: 0,0:21:23.58,0:21:33.04,chinese,,0,0,0,,可能对数运算你们有点生疏了，其实，无论是用底数 2、底数 3 还是底数 10 进行计算，\N通过把它们相乘，最终得到的大 O 表示法都是一样的。
+Dialogue: 0,0:21:23.58,0:21:33.04,annotation,,0,0,0,,*注：就是说，不管底数是多少，通过换底公式，都可以让底统一起来，无非就是前面带一个系数。\N而系数在前面讲 O(n) 的时候就提到了，不管 n 前面带 1/2 还是 2 什么的，都可以忽略掉。\N
 Dialogue: 0,0:21:33.04,0:21:39.27,english,,0,0,0,,So this is only to say a computer scientist would generally say that the first two algorithms are on the order of n steps.
-Dialogue: 0,0:21:33.04,0:21:39.27,chinese,,0,0,0,,因此，这只能说，计算机科学家一般会说，前两种算法都是 n 步的数量级。
+Dialogue: 0,0:21:33.04,0:21:39.27,chinese,,0,0,0,,因此，计算机科学家通常会说，前两个算法的时间复杂度是 O(n)，
 Dialogue: 0,0:21:39.27,0:21:42.69,english,,0,0,0,,The third algorithm is on the order of log n steps.
-Dialogue: 0,0:21:39.27,0:21:42.69,chinese,,0,0,0,,第三种算法的步骤数为 log n。
+Dialogue: 0,0:21:39.27,0:21:42.69,chinese,,0,0,0,,第三个算法的时间复杂度是 O(log n)。
 Dialogue: 0,0:21:42.69,0:21:46.35,english,,0,0,0,,And we don't really care precisely what we mean beyond that.
-Dialogue: 0,0:21:42.69,0:21:46.35,chinese,,0,0,0,,除此之外，我们并不关心我们的确切含义。
+Dialogue: 0,0:21:42.69,0:21:46.35,chinese,,0,0,0,,除此之外，我们并不关心确切有多少次运算（，只要知道跟数据规模 n 的关系就够了）。
 Dialogue: 0,0:21:46.35,0:21:49.77,english,,0,0,0,,And this big O notation, as we'll see-- and actually, let me zoom out.
-Dialogue: 0,0:21:46.35,0:21:49.77,chinese,,0,0,0,,而这个大 O 符号，我们会看到--实际上，让我放大一下。
+Dialogue: 0,0:21:46.35,0:21:49.77,chinese,,0,0,0,,而这个大 O 符号，我们会看到... 让我放大一下。
 Dialogue: 0,0:21:49.77,0:21:58.32,english,,0,0,0,,If you can imagine suddenly making the x-axis much longer-- so more pages on the screen at once-- it is indeed going to be the shapes of these curves
-Dialogue: 0,0:21:49.77,0:21:58.32,chinese,,0,0,0,,如果你能想象一下，突然把 X 轴变得更长--这样屏幕上就能同时显示更多的页面--那就确实会出现这些曲线的形状了
+Dialogue: 0,0:21:49.77,0:21:58.32,chinese,,0,0,0,,来想象一下，把 x 轴拉得很长很长，\N让屏幕上显示的跨度更大，实际上最终只有这些曲线的形状能够辨认，（注意理解图的变化）
 Dialogue: 0,0:21:58.32,0:22:07.47,english,,0,0,0,,that matter, because imagine in your mind's eye as you zoom out, zoom out, zoom out, zoom out, and as n gets much, much, much bigger on the x-axis, the red and the yellow line
-Dialogue: 0,0:21:58.32,0:22:07.47,chinese,,0,0,0,,因为在你的脑海中想象一下，当你放大、放大、再放大、再放大，当 n 在 x 轴上变大很多很多时，红线和黄线
+Dialogue: 0,0:21:58.32,0:22:07.47,chinese,,0,0,0,,在你的脑海里想象，整张图不断缩小再缩小，\Nn 越来越大，现在 x 轴上的 n 已经大到接近无穷了，
 Dialogue: 0,0:22:07.47,0:22:11.40,english,,0,0,0,,are essentially going to look the same once n is sufficiently large.
-Dialogue: 0,0:22:07.47,0:22:11.40,chinese,,0,0,0,,在 n 足够大的情况下，基本上都是一样的。
+Dialogue: 0,0:22:07.47,0:22:11.40,chinese,,0,0,0,,红线和黄线基本上会重叠到看起来一样。
 Dialogue: 0,0:22:11.40,0:22:14.37,english,,0,0,0,,But the green line is never going to look the same.
-Dialogue: 0,0:22:11.40,0:22:14.37,chinese,,0,0,0,,但绿线永远不会是原来的样子。
+Dialogue: 0,0:22:11.40,0:22:14.37,chinese,,0,0,0,,但是绿线永远也不会跟那俩看起来一样。
 Dialogue: 0,0:22:14.37,0:22:16.42,english,,0,0,0,,It's going to be a fundamentally different shape.
-Dialogue: 0,0:22:14.37,0:22:16.42,chinese,,0,0,0,,这将是一个根本不同的形状。
+Dialogue: 0,0:22:14.37,0:22:16.42,chinese,,0,0,0,,它的形状是完全不同的。
 Dialogue: 0,0:22:16.42,0:22:23.20,english,,0,0,0,,And so that's the intuition of big O, to get a sense of these rates of performance like this.
-Dialogue: 0,0:22:16.42,0:22:23.20,chinese,,0,0,0,,因此，这就是大 O 的直觉，它能让人感觉到这样的绩效率。
+Dialogue: 0,0:22:16.42,0:22:23.20,chinese,,0,0,0,,所以这就是大 O 符号的直观性，这些算法的性能一看便知。
 Dialogue: 0,0:22:23.20,0:22:32.49,english,,0,0,0,,So here, then, is big O. Here is, perhaps, a cheat sheet of the common formulas that a computer scientist, certainly in an introductory context, might use when analyzing algorithms.
-Dialogue: 0,0:22:23.20,0:22:32.49,chinese,,0,0,0,,这里也许是计算机科学家（当然是在入门情况下）在分析算法时可能会用到的常用公式的小抄。
+Dialogue: 0,0:22:23.20,0:22:32.49,chinese,,0,0,0,,这里是计算机科学家们，可能初学者用得多一点，\N在分析算法效率时可能会用到的常用公式的速查表。
 Dialogue: 0,0:22:32.49,0:22:39.04,english,,0,0,0,,And let's consider for a moment which of our first two algorithms-- linear search and binary search-- fall into these categories.
-Dialogue: 0,0:22:32.49,0:22:39.04,chinese,,0,0,0,,让我们先考虑一下我们的前两种算法--线性搜索和二进制搜索--属于哪一类。
+Dialogue: 0,0:22:32.49,0:22:39.04,chinese,,0,0,0,,让我们考虑一下刚才两种算法，线性查找和二分查找，分别属于哪一种。
 Dialogue: 0,0:22:39.04,0:22:44.31,english,,0,0,0,,So I've ordered them from slowest to fastest, so order of n squared.
-Dialogue: 0,0:22:39.04,0:22:44.31,chinese,,0,0,0,,因此，我将它们从最慢到最快排序，所以顺序是 n 的平方。
+Dialogue: 0,0:22:39.04,0:22:44.31,chinese,,0,0,0,,这里已经按照最慢到最快排好序了，所以排第一个最慢的是 n 平方。
 Dialogue: 0,0:22:44.31,0:22:48.39,english,,0,0,0,,It's not something we've actually seen yet, but it tends to be slow because it's quadratic.
-Dialogue: 0,0:22:44.31,0:22:48.39,chinese,,0,0,0,,我们还没有真正见过这种情况，但它往往很慢，因为它是二次方的。
-Dialogue: 0,0:22:48.39,0:22:49.35,english,,0,0,0,,You're doing n times n.
-Dialogue: 0,0:22:48.39,0:22:49.35,chinese,,0,0,0,,你在做 n 次 n。
-Dialogue: 0,0:22:49.35,0:22:51.09,english,,0,0,0,,That's got to add up to a lot of steps.
-Dialogue: 0,0:22:49.35,0:22:51.09,chinese,,0,0,0,,这些步骤加起来可不少。
+Dialogue: 0,0:22:44.31,0:22:48.39,chinese,,0,0,0,,我们还没有真正见过这种情况，但它往往很慢，因为带了平方。
+Dialogue: 0,0:22:48.39,0:22:51.09,english,,0,0,0,,You're doing n times n. That's got to add up to a lot of steps.
+Dialogue: 0,0:22:48.39,0:22:51.09,chinese,,0,0,0,,也就是有 n 次 n，步骤叠加起来可就很多了。
+Dialogue: 0,0:22:48.39,0:22:51.09,annotation,,0,0,0,,*注：还记得上节课，for 循环里面调用 strlen 吗，就是 O(n^2) 的时间复杂度。
 Dialogue: 0,0:22:51.09,0:22:53.19,english,,0,0,0,,Better today is going to be n log n.
-Dialogue: 0,0:22:51.09,0:22:53.19,chinese,,0,0,0,,今天会更好，是 n log n。
+Dialogue: 0,0:22:51.09,0:22:53.19,chinese,,0,0,0,,比这更好的是 n log n。
 Dialogue: 0,0:22:53.19,0:22:54.63,english,,0,0,0,,Even better is going to be n.
-Dialogue: 0,0:22:53.19,0:22:54.63,chinese,,0,0,0,,更好的将是 n。
+Dialogue: 0,0:22:53.19,0:22:54.63,chinese,,0,0,0,,更好的是 n。
 Dialogue: 0,0:22:54.63,0:22:56.19,english,,0,0,0,,Even better than that is log n.
-Dialogue: 0,0:22:54.63,0:22:56.19,chinese,,0,0,0,,比这更好的是 log n。
+Dialogue: 0,0:22:54.63,0:22:56.19,chinese,,0,0,0,,还要好的是 log n。
 Dialogue: 0,0:22:56.19,0:23:08.20,english,,0,0,0,,And best is so-called order of 1, like one step or maybe two steps, maybe even 1,000 steps, but a fixed, finite number of steps that never changes no matter how big n is.
-Dialogue: 0,0:22:56.19,0:23:08.20,chinese,,0,0,0,,最好是所谓的 1 的数量级，比如 1 步或 2 步，甚至 1000 步，但无论 n 有多大，都是固定的、有限的步数，永远不会改变。
+Dialogue: 0,0:22:56.19,0:23:08.20,chinese,,0,0,0,,最好的是所谓的 O(1)，可能 1 步，2 步也可以，甚至 1000 步都没问题，\N只要是一个固定的、有限的步骤，无论 n 有多大，这个数字都不会随之改变。
+Dialogue: 0,0:22:56.19,0:23:08.20,annotation,,0,0,0,,*注：可能还有同学不太理解为什么这里都能看作 O(1)，不太理解为什么可以忽略 n （最高项）前面的系数。\N时间复杂度从概念上来说，它表示的是算法执行效率 "随着数据规模 n 增长" 的 "变化趋势"（划两个重点），\N不管这些常量的执行会花费多少工夫，我们都可以忽略掉，因为它跟 n 无关，不会影响到 "增长趋势"。\N形象一点理解，就是教授刚才说的 "函数形状"，当 n 被拉到无穷大的时候，这些都是无足轻重的，理解到这里就够了。
 Dialogue: 0,0:23:08.20,0:23:13.57,english,,0,0,0,,So given this chart, just to be clear, linear search-- let's consider the worst case.
-Dialogue: 0,0:23:08.20,0:23:13.57,chinese,,0,0,0,,因此，考虑到这个图表，为了清楚起见，线性搜索 -- 让我们考虑最坏的情况。
+Dialogue: 0,0:23:08.20,0:23:13.57,chinese,,0,0,0,,所以来根据这个图表想想线性查找，考虑最坏的情况。
 Dialogue: 0,0:23:13.57,0:23:23.50,english,,0,0,0,,In the worst case, how many steps did it take someone like Stephanie to find the solution to the problem, assuming not seven doors but n doors?
-Dialogue: 0,0:23:13.57,0:23:23.50,chinese,,0,0,0,,在最坏的情况下，假设不是七扇门，而是 n 扇门，像Stephanie这样的人需要走多少步才能找到解决问题的办法？
+Dialogue: 0,0:23:13.57,0:23:23.50,chinese,,0,0,0,,假设不是 7 扇门，而是 n 扇门，\N最坏的情况下，Stephanie 需要走多少步才能找到答案？
 Dialogue: 0,0:23:23.50,0:23:25.16,english,,0,0,0,,Yeah?
 Dialogue: 0,0:23:25.16,0:23:26.54,english,,0,0,0,,So on the order of n.
-Dialogue: 0,0:23:25.16,0:23:26.54,chinese,,0,0,0,,所以是 n 的数量级。
+Dialogue: 0,0:23:25.16,0:23:26.54,chinese,,0,0,0,,答案是 "n 阶"。
 Dialogue: 0,0:23:26.54,0:23:28.28,english,,0,0,0,,And in this case, it's exactly n.
-Dialogue: 0,0:23:26.54,0:23:28.28,chinese,,0,0,0,,在这种情况下，正好是 n。
+Dialogue: 0,0:23:26.54,0:23:28.28,chinese,,0,0,0,,这种情况，你可以说正好是 n。
 Dialogue: 0,0:23:28.28,0:23:33.53,english,,0,0,0,,But you know what, maybe it's arguably 2n because it took Stephanie a couple of steps.
-Dialogue: 0,0:23:28.28,0:23:33.53,chinese,,0,0,0,,但你知道吗，也许可以说是 2n，因为它花了Stephanie几步。
+Dialogue: 0,0:23:28.28,0:23:33.53,chinese,,0,0,0,,但你知道吗，说是 2n 也没错，Stephanie 还做了额外一些操作。
 Dialogue: 0,0:23:33.53,0:23:34.46,english,,0,0,0,,She had to lift the latch.
-Dialogue: 0,0:23:33.53,0:23:34.46,chinese,,0,0,0,,她不得不抬起门闩。
+Dialogue: 0,0:23:33.53,0:23:34.46,chinese,,0,0,0,,她必须要解开门锁。
 Dialogue: 0,0:23:34.46,0:23:35.36,english,,0,0,0,,She had to open the door.
-Dialogue: 0,0:23:34.46,0:23:35.36,chinese,,0,0,0,,她不得不打开门。
+Dialogue: 0,0:23:34.46,0:23:35.36,chinese,,0,0,0,,她必须要把门打开。
 Dialogue: 0,0:23:35.36,0:23:36.31,english,,0,0,0,,Maybe it's three steps.
-Dialogue: 0,0:23:35.36,0:23:36.31,chinese,,0,0,0,,也许是三个步骤。
+Dialogue: 0,0:23:35.36,0:23:36.31,chinese,,0,0,0,,可能说是有三步呢。
 Dialogue: 0,0:23:36.31,0:23:37.53,english,,0,0,0,,She had to show the money.
-Dialogue: 0,0:23:36.31,0:23:37.53,chinese,,0,0,0,,她必须拿出钱来。
+Dialogue: 0,0:23:36.31,0:23:37.53,chinese,,0,0,0,,她还必须把钱拿出来。
 Dialogue: 0,0:23:37.53,0:23:39.17,english,,0,0,0,,So now it's 3n, 2n.
-Dialogue: 0,0:23:37.53,0:23:39.17,chinese,,0,0,0,,所以现在是 3n，2n。
+Dialogue: 0,0:23:37.53,0:23:39.17,chinese,,0,0,0,,所以现在可以说是 3n，2n...
 Dialogue: 0,0:23:39.17,0:23:41.99,english,,0,0,0,,But we don't really care about that level of precision.
-Dialogue: 0,0:23:39.17,0:23:41.99,chinese,,0,0,0,,但我们并不关心这种精确度。
+Dialogue: 0,0:23:39.17,0:23:41.99,chinese,,0,0,0,,这种精确度我们并不关心。
 Dialogue: 0,0:23:41.99,0:23:45.66,english,,0,0,0,,We really just care about the fundamental number of operations.
-Dialogue: 0,0:23:41.99,0:23:45.66,chinese,,0,0,0,,我们其实只关心运算的基本次数。
+Dialogue: 0,0:23:41.99,0:23:45.66,chinese,,0,0,0,,我们其实只关心操作的基本次数。
 Dialogue: 0,0:23:45.66,0:23:47.54,english,,0,0,0,,So we'll say yes, on the order of n.
-Dialogue: 0,0:23:45.66,0:23:47.54,chinese,,0,0,0,,所以我们说是的，数量级为 n。
+Dialogue: 0,0:23:45.66,0:23:47.54,chinese,,0,0,0,,所以说，没错，是 n 阶的。
 Dialogue: 0,0:23:47.54,0:23:51.32,english,,0,0,0,,So that might be an upper bound, we'll call this, for linear search.
-Dialogue: 0,0:23:47.54,0:23:51.32,chinese,,0,0,0,,因此，这可能是线性搜索的上限，我们称之为 "上限"。
+Dialogue: 0,0:23:47.54,0:23:51.32,chinese,,0,0,0,,所以，这就是线性查找的上界，我们称之为 upper bound。
 Dialogue: 0,0:23:51.32,0:23:53.03,english,,0,0,0,,And how about binary search?
-Dialogue: 0,0:23:51.32,0:23:53.03,chinese,,0,0,0,,那么二进制搜索呢？
+Dialogue: 0,0:23:51.32,0:23:53.03,chinese,,0,0,0,,那么二分查找呢？
 Dialogue: 0,0:23:53.03,0:24:02.91,english,,0,0,0,,In Jackson's case, or in general, me in Week 0, if there's n doors, how many steps did it take Jackson or me using binary search?
-Dialogue: 0,0:23:53.03,0:24:02.91,chinese,,0,0,0,,如果有 n 扇门，Jackson或我使用二进制搜索需要多少步？
+Dialogue: 0,0:23:53.03,0:24:02.91,chinese,,0,0,0,,Jackson 或者我来用二分查找，n 扇门的时候需要多少步？
 Dialogue: 0,0:24:02.91,0:24:04.86,english,,0,0,0,,In this case, it was literally three.
-Dialogue: 0,0:24:02.91,0:24:04.86,chinese,,0,0,0,,在这种情况下，简直就是三个人。
+Dialogue: 0,0:24:02.91,0:24:04.86,chinese,,0,0,0,,在这个例子里，答案是字面上的 3。
 Dialogue: 0,0:24:04.86,0:24:07.20,english,,0,0,0,,But that's not a formula.
 Dialogue: 0,0:24:04.86,0:24:07.20,chinese,,0,0,0,,但这不是一个公式。
 Dialogue: 0,0:24:07.20,0:24:09.69,english,,0,0,0,,Yeah so it's on the order of log n.
-Dialogue: 0,0:24:07.20,0:24:09.69,chinese,,0,0,0,,是的，所以是 log n 的数量级。
+Dialogue: 0,0:24:07.20,0:24:09.69,chinese,,0,0,0,,是的，所以应该叫做对数阶（log n）。
 Dialogue: 0,0:24:09.69,0:24:14.25,english,,0,0,0,,And indeed, if there are seven doors, well, that's almost eight, if you just do a little bit of rounding.
-Dialogue: 0,0:24:09.69,0:24:14.25,chinese,,0,0,0,,事实上，如果有七扇门，那么，只要稍微四舍五入一下，就差不多有八扇门了。
+Dialogue: 0,0:24:09.69,0:24:14.25,chinese,,0,0,0,,7 扇门的话，稍微舍入一下，就是 8。
 Dialogue: 0,0:24:14.25,0:24:18.48,english,,0,0,0,,And indeed, if you take log base 2 of 8, that does actually give us 3.
-Dialogue: 0,0:24:14.25,0:24:18.48,chinese,,0,0,0,,事实上，如果以 8 为对数基数 2，实际上就是 3。
+Dialogue: 0,0:24:14.25,0:24:18.48,chinese,,0,0,0,,而以 2 为底 8 的对数，实际上答案就是 3。
 Dialogue: 0,0:24:18.48,0:24:19.81,english,,0,0,0,,So the math actually checks out.
-Dialogue: 0,0:24:18.48,0:24:19.81,chinese,,0,0,0,,因此，计算结果是正确的。
+Dialogue: 0,0:24:18.48,0:24:19.81,chinese,,0,0,0,,计算结果准确无误。
 Dialogue: 0,0:24:19.81,0:24:22.27,english,,0,0,0,,And if you're not comfortable with logarithms, no big deal.
-Dialogue: 0,0:24:19.81,0:24:22.27,chinese,,0,0,0,,如果你对对数感到不适应，也没什么大不了的。
+Dialogue: 0,0:24:19.81,0:24:22.27,chinese,,0,0,0,,如果你不太适应对数运算，也没什么大不了的。
 Dialogue: 0,0:24:22.27,0:24:23.67,english,,0,0,0,,Just think about it intuitively.
 Dialogue: 0,0:24:22.27,0:24:23.67,chinese,,0,0,0,,凭直觉想一想就知道了。
 Dialogue: 0,0:24:23.67,0:24:27.01,english,,0,0,0,,Logarithm of base 2 is just dividing something again and again.
-Dialogue: 0,0:24:23.67,0:24:27.01,chinese,,0,0,0,,以 2 为底的对数就是重复除以某物。
-Dialogue: 0,0:24:27.01,0:24:38.61,english,,0,0,0,,So on this chart, when we consider big O, which to be clear, allows you to describe the order of an algorithm's running time-- like the magnitude of it-- but it also describes, more specifically,
-Dialogue: 0,0:24:27.01,0:24:38.61,chinese,,0,0,0,,因此，在这张图上，当我们考虑大 O 时，说白了，它允许你描述算法运行时间的顺序--比如它的大小--但它也更具体地描述了、
-Dialogue: 0,0:24:38.61,0:24:40.09,english,,0,0,0,,an upper bound.
-Dialogue: 0,0:24:38.61,0:24:40.09,chinese,,0,0,0,,一个上限。
+Dialogue: 0,0:24:23.67,0:24:27.01,chinese,,0,0,0,,以 2 为底的对数就是把某个东西不断分成两半。
+Dialogue: 0,0:24:27.01,0:24:40.09,english,,0,0,0,,So on this chart, when we consider big O, which to be clear, allows you to describe the order of an algorithm's running time-- like the magnitude of it-- but it also describes, more specifically, an upper bound.
+Dialogue: 0,0:24:27.01,0:24:40.09,chinese,,0,0,0,,考虑这张图上大 O 的时候，要明确一点，\N它是用来描述算法运行时间的阶数的，也就是数量级，它具体地描述了一个上界。
 Dialogue: 0,0:24:40.09,0:24:49.27,english,,0,0,0,,So in the worst case, for instance, these are pretty good measures of how good-- or rather, of how bad-- linear search and binary search might be.
-Dialogue: 0,0:24:40.09,0:24:49.27,chinese,,0,0,0,,因此，举例来说，在最坏的情况下，这些都能很好地衡量线性搜索和二进制搜索的好坏。
+Dialogue: 0,0:24:40.09,0:24:49.27,chinese,,0,0,0,,不管是线性查找还是二分查找，\N通过大 O 表示法都能衡量出最坏情况下算法的效率（也就是算法复杂度的上界）。
 Dialogue: 0,0:24:49.27,0:24:49.77,english,,0,0,0,,Why?
 Dialogue: 0,0:24:49.77,0:24:56.32,english,,0,0,0,,Well, suppose you're searching a 1,000-page phonebook and the person's name starts with Z. The algorithm is still going to be on the order of n steps.
-Dialogue: 0,0:24:49.77,0:24:56.32,chinese,,0,0,0,,好吧，假设你正在搜索一本 1000 页的电话簿，而这个人的名字是 Z 开头的。
+Dialogue: 0,0:24:49.77,0:24:56.32,chinese,,0,0,0,,好吧，假设你正在翻阅一本电话簿，整整 1000 页，\N而要找的人名字是 Z 开头的，算法的时间复杂度就是 O(n)。
 Dialogue: 0,0:24:56.32,0:24:56.82,english,,0,0,0,,Why?
 Dialogue: 0,0:24:56.82,0:25:01.08,english,,0,0,0,,Because it might take you as many as all n steps to find it.
-Dialogue: 0,0:24:56.82,0:25:01.08,chinese,,0,0,0,,因为你可能要花费 N 个步骤才能找到它。
+Dialogue: 0,0:24:56.82,0:25:01.08,chinese,,0,0,0,,因为最坏情况要 n 个步骤才能找到它。
 Dialogue: 0,0:25:01.08,0:25:05.25,english,,0,0,0,,Now that's not necessarily going to be the case in practice.
 Dialogue: 0,0:25:01.08,0:25:05.25,chinese,,0,0,0,,但实际情况未必如此。
 Dialogue: 0,0:25:05.25,0:25:16.18,english,,0,0,0,,If I use big O as an upper bound, well, it would be nice if there's a corresponding lower bound, especially if you want to consider not just worst cases, but maybe best cases.
-Dialogue: 0,0:25:05.25,0:25:16.18,chinese,,0,0,0,,如果我用大 O 作为上限，那么如果有相应的下限就更好了，尤其是如果你不仅要考虑最坏的情况，还要考虑最好的情况。
+Dialogue: 0,0:25:05.25,0:25:16.18,chinese,,0,0,0,,如果大 O 作为上限的话，如果有相应的下限就更好了，\N不仅要考虑最坏的情况，还要考虑最好的情况。
 Dialogue: 0,0:25:16.18,0:25:18.04,english,,0,0,0,,So what might we use here?
-Dialogue: 0,0:25:16.18,0:25:18.04,chinese,,0,0,0,,那么，我们在这里可以使用什么呢？
+Dialogue: 0,0:25:16.18,0:25:18.04,chinese,,0,0,0,,那可以怎么来表示呢？
 Dialogue: 0,0:25:18.04,0:25:20.20,english,,0,0,0,,Well, this is a capital Greek omega symbol.
-Dialogue: 0,0:25:18.04,0:25:20.20,chinese,,0,0,0,,这是一个大写的希腊文欧米茄符号。
+Dialogue: 0,0:25:18.04,0:25:20.20,chinese,,0,0,0,,这是一个大写的希腊文 omega 符号。
 Dialogue: 0,0:25:20.20,0:25:28.71,english,,0,0,0,,So omega is the symbol that a computer scientist uses generally to describe a lower bound on an algorithm, often in the context of best case, though not necessarily.
-Dialogue: 0,0:25:20.20,0:25:28.71,chinese,,0,0,0,,因此，Ω 通常是计算机科学家用来描述算法下限的符号，通常在最佳情况下使用，但也不一定。
+Dialogue: 0,0:25:20.20,0:25:28.71,chinese,,0,0,0,,Ω 通常是计算机科学家用来描述算法下界的符号，也就是算法的最好情况。
 Dialogue: 0,0:25:28.71,0:25:32.49,english,,0,0,0,,So a lower bound means how few steps might an algorithm take?
-Dialogue: 0,0:25:28.71,0:25:32.49,chinese,,0,0,0,,那么，下限是指算法可能需要多少步？
+Dialogue: 0,0:25:28.71,0:25:32.49,chinese,,0,0,0,,下界是指，算法最少可能需要多少步？
 Dialogue: 0,0:25:32.49,0:25:33.99,english,,0,0,0,,And here, too, same formulas.
-Dialogue: 0,0:25:32.49,0:25:33.99,chinese,,0,0,0,,这里也是同样的公式。
+Dialogue: 0,0:25:32.49,0:25:33.99,chinese,,0,0,0,,还是有这些公式。
 Dialogue: 0,0:25:33.99,0:25:36.27,english,,0,0,0,,And we'll fill in these blanks over time.
-Dialogue: 0,0:25:33.99,0:25:36.27,chinese,,0,0,0,,随着时间的推移，我们将填补这些空白。
+Dialogue: 0,0:25:33.99,0:25:36.27,chinese,,0,0,0,,随着时间的推移，我们会把这块的理解补上。
 Dialogue: 0,0:25:36.27,0:25:41.37,english,,0,0,0,,Some algorithms might always take a minimum of n squared steps, or on the order of n steps.
-Dialogue: 0,0:25:36.27,0:25:41.37,chinese,,0,0,0,,有些算法可能总是需要最少 n 个平方步，或者与 n 步的数量级相当。
+Dialogue: 0,0:25:36.27,0:25:41.37,chinese,,0,0,0,,有些算法可能最少都需要 n 方步，或者跟 n 数量级相当。
 Dialogue: 0,0:25:41.37,0:25:45.66,english,,0,0,0,,Some might only take n log n, or n, or log n, or 1.
-Dialogue: 0,0:25:41.37,0:25:45.66,chinese,,0,0,0,,有些可能只需要 n log n，或 n，或 log n，或 1。
+Dialogue: 0,0:25:41.37,0:25:45.66,chinese,,0,0,0,,有些则可能只需要 n log n、n、log n，或 1。
 Dialogue: 0,0:25:45.66,0:25:52.98,english,,0,0,0,,So something like a linear search-- when Stephanie started with linear search, she didn't get lucky this time on stage.
-Dialogue: 0,0:25:45.66,0:25:52.98,chinese,,0,0,0,,因此，像线性搜索这样的东西 -- 当Stephanie开始使用线性搜索时，她这次在舞台上并不走运。
+Dialogue: 0,0:25:45.66,0:25:52.98,chinese,,0,0,0,,所以考虑下线性查找呢，当时 Stephanie 使用线性查找时并没有很走运。
 Dialogue: 0,0:25:52.98,0:25:57.72,english,,0,0,0,,But what if she had, and the first door she opened were 50?
-Dialogue: 0,0:25:52.98,0:25:57.72,chinese,,0,0,0,,但如果她打开的第一扇门是 50 扇呢？
+Dialogue: 0,0:25:52.98,0:25:57.72,chinese,,0,0,0,,要是她运气到位了，打开的第一扇门就是 50 呢？
 Dialogue: 0,0:25:57.72,0:26:08.29,english,,0,0,0,,How might you then describe the lower bound on linear search in this so-called best case, using this list of possible answers?
-Dialogue: 0,0:25:57.72,0:26:08.29,chinese,,0,0,0,,那么，在这种所谓的最佳情况下，你可以怎么利用这个可能答案列表来描述线性搜索的下限？
+Dialogue: 0,0:25:57.72,0:26:08.29,chinese,,0,0,0,,你怎么描述线性搜索在这种最好情况里的下界呢？答案就在这个表里面。
 Dialogue: 0,0:26:08.29,0:26:09.53,english,,0,0,0,,Yeah?
 Dialogue: 0,0:26:09.53,0:26:11.06,english,,0,0,0,,Yeah, so omega of 1.
-Dialogue: 0,0:26:09.53,0:26:11.06,chinese,,0,0,0,,是的，所以Ω为1。
+Dialogue: 0,0:26:09.53,0:26:11.06,chinese,,0,0,0,,对的，答案是 Ω(1)。
 Dialogue: 0,0:26:11.06,0:26:18.99,english,,0,0,0,,So in the best case, the lower bound on how many steps it might take linear search to find something might just be one step.
-Dialogue: 0,0:26:11.06,0:26:18.99,chinese,,0,0,0,,因此，在最好的情况下，线性搜索需要多少步才能找到某样东西，下限可能只是一步。
+Dialogue: 0,0:26:11.06,0:26:18.99,chinese,,0,0,0,,在最理想的情况里，线性查找需要多少步才能找到某样东西？这个问题的答案是 1。
 Dialogue: 0,0:26:18.99,0:26:19.49,english,,0,0,0,,Why?
-Dialogue: 0,0:26:19.49,0:26:28.46,english,,0,0,0,,Because maybe if Stephanie had gotten lucky and we had prefilled these lockers with the numbers in some other order such that she might have opened the first locker, and voila,
-Dialogue: 0,0:26:19.49,0:26:28.46,chinese,,0,0,0,,因为如果Stephanie运气好的话，我们事先把这些柜子的数字按照其他顺序排列好，她可能会打开第一个柜子，然后就可以了、
-Dialogue: 0,0:26:28.46,0:26:34.61,english,,0,0,0,,the number 50 could have been there, so a lower bound arguably could indeed be omega of 1 for linear search.
-Dialogue: 0,0:26:28.46,0:26:34.61,chinese,,0,0,0,,数字 50 可能就在那里，因此可以说，线性搜索的下限确实可能是 1 的欧米茄。
+Dialogue: 0,0:26:19.49,0:26:34.61,english,,0,0,0,,Because maybe if Stephanie had gotten lucky and we had prefilled these lockers with the numbers in some other order such that she might have opened the first locker, and voila, the number 50 could have been there, so a lower bound arguably could indeed be omega of 1 for linear search.
+Dialogue: 0,0:26:19.49,0:26:34.61,chinese,,0,0,0,,如果里面的钱换了个方式摆放，让 Stephanie 运气超级好，她一打开第一个柜子，\N数字 50 就赫然眼前，所以我们可以确认，线性查找的下界确实是 Ω(1)。
 Dialogue: 0,0:26:34.61,0:26:35.99,english,,0,0,0,,And how about now for Jackson?
-Dialogue: 0,0:26:34.61,0:26:35.99,chinese,,0,0,0,,Jackson现在怎么样？
+Dialogue: 0,0:26:34.61,0:26:35.99,chinese,,0,0,0,,Jackson 的情况又怎么样？
 Dialogue: 0,0:26:35.99,0:26:37.44,english,,0,0,0,,He used binary search.
-Dialogue: 0,0:26:35.99,0:26:37.44,chinese,,0,0,0,,他使用了二进制搜索。
+Dialogue: 0,0:26:35.99,0:26:37.44,chinese,,0,0,0,,他使用的是二分查找。
 Dialogue: 0,0:26:37.44,0:26:40.94,english,,0,0,0,,So he dived right into the middle of the problem.
-Dialogue: 0,0:26:37.44,0:26:40.94,chinese,,0,0,0,,于是，他一头扎进了问题的中心。
+Dialogue: 0,0:26:37.44,0:26:40.94,chinese,,0,0,0,,于是，他一头扎进了问题中心。
 Dialogue: 0,0:26:40.94,0:26:45.02,english,,0,0,0,,But what would be a lower bound on binary search using this logic?
-Dialogue: 0,0:26:40.94,0:26:45.02,chinese,,0,0,0,,但使用这种逻辑进行二进制搜索的下限是多少呢？
+Dialogue: 0,0:26:40.94,0:26:45.02,chinese,,0,0,0,,使用二分查找的逻辑，下限又是多少呢？
 Dialogue: 0,0:26:45.02,0:26:45.98,english,,0,0,0,,Yeah?
 Dialogue: 0,0:26:45.98,0:26:47.46,english,,0,0,0,,Yeah, so again, omega of 1.
-Dialogue: 0,0:26:45.98,0:26:47.46,chinese,,0,0,0,,是的，所以还是 1 的欧米茄值。
+Dialogue: 0,0:26:45.98,0:26:47.46,chinese,,0,0,0,,没错，一样的，还是 Ω(1)。
 Dialogue: 0,0:26:47.46,0:26:47.96,english,,0,0,0,,Why?
 Dialogue: 0,0:26:47.96,0:26:49.58,english,,0,0,0,,Because maybe he just gets lucky.
-Dialogue: 0,0:26:47.96,0:26:49.58,chinese,,0,0,0,,因为也许他只是运气好。
+Dialogue: 0,0:26:47.96,0:26:49.58,chinese,,0,0,0,,可能就是运气好吧。
 Dialogue: 0,0:26:49.58,0:26:53.30,english,,0,0,0,,And indeed, right in the middle of the lockers could have been the number 50.
-Dialogue: 0,0:26:49.58,0:26:53.30,chinese,,0,0,0,,事实上，在柜子的正中间可能就是 50 号。
+Dialogue: 0,0:26:49.58,0:26:53.30,chinese,,0,0,0,,柜子的正中间是 50 号，这种可能性是有的。
 Dialogue: 0,0:26:53.30,0:26:54.06,english,,0,0,0,,It wasn't.
 Dialogue: 0,0:26:54.06,0:27:00.05,english,,0,0,0,,And so more germane in Jackson's actual practice would have been the big O discussion.
-Dialogue: 0,0:26:54.06,0:27:00.05,chinese,,0,0,0,,因此，在Jackson的实际实践中，大 O 的讨论会更有针对性。
-Dialogue: 0,0:27:00.05,0:27:08.67,english,,0,0,0,,But big O and omega, upper bound and lower bound, just allow a computer scientist to kind of wrestle with what could happen maybe in the worst case, what can happen in the best case?
-Dialogue: 0,0:27:00.05,0:27:08.67,chinese,,0,0,0,,但是，大 O 和欧米茄，上限和下限，只是让计算机科学家纠结于在最坏的情况下可能发生什么，在最好的情况下可能发生什么？
-Dialogue: 0,0:27:08.67,0:27:12.26,english,,0,0,0,,And you can even get even more precise like the average case or the like.
-Dialogue: 0,0:27:08.67,0:27:12.26,chinese,,0,0,0,,你甚至可以获得更精确的结果，比如平均案例或类似的结果。
-Dialogue: 0,0:27:12.26,0:27:21.38,english,,0,0,0,,And this is, indeed, what engineers might do at a whiteboard in a company, in a university when designing an algorithm and trying to make arguments as to why their algorithm is better than someone
-Dialogue: 0,0:27:12.26,0:27:21.38,chinese,,0,0,0,,事实上，这就是工程师们在公司或大学的白板上设计算法，并试图论证为什么他们的算法比别人的更好时可能会做的事情。
-Dialogue: 0,0:27:21.38,0:27:24.08,english,,0,0,0,,else's, by way of these kinds of analyses.
-Dialogue: 0,0:27:21.38,0:27:24.08,chinese,,0,0,0,,通过这类分析，我们还可以了解到其他国家的情况。
+Dialogue: 0,0:26:54.06,0:27:00.05,chinese,,0,0,0,,在 Jackson 的实际操作里面，大 O 表示法更加贴切。
+Dialogue: 0,0:27:00.05,0:27:12.26,english,,0,0,0,,But big O and omega, upper bound and lower bound, just allow a computer scientist to kind of wrestle with what could happen maybe in the worst case, what can happen in the best case? And you can even get even more precise like the average case or the like.
+Dialogue: 0,0:27:00.05,0:27:12.26,chinese,,0,0,0,,大 O 代表上界，也就是最坏情况下发生的事情；Ω 代表下界，就是最好情况下发生的事情。\N这两种都是计算机科学家对程序执行效率的分析，\N甚至追求更加精确的话，还可以分析平均情况也就是平均时间复杂度之类的。
+Dialogue: 0,0:27:12.26,0:27:24.08,english,,0,0,0,,And this is, indeed, what engineers might do at a whiteboard in a company, in a university when designing an algorithm and trying to make arguments as to why their algorithm is better than someone else's, by way of these kinds of analyses.
+Dialogue: 0,0:27:12.26,0:27:24.08,chinese,,0,0,0,,其实，这就是工程师们在设计算法时，写在公司或大学的白板上的东西，\N他们试图用这些分析来证明，自己的算法比别人的算法更好。
 Dialogue: 0,0:27:24.08,0:27:35.88,english,,0,0,0,,And just so you've seen it, it turns out that if some algorithm happens to have an identical upper bound and lower bound, you can actually use a capital Greek theta as well.
-Dialogue: 0,0:27:24.08,0:27:35.88,chinese,,0,0,0,,你也看到了，如果某种算法的上界和下界恰好相同，那么实际上也可以使用大写的希腊字母θ。
+Dialogue: 0,0:27:24.08,0:27:35.88,chinese,,0,0,0,,你还会看到，如果某些算法的上界和下界相同，还可以使用希腊字母 Θ。
 Dialogue: 0,0:27:35.88,0:27:38.21,english,,0,0,0,,And this is the last of the Greek symbols today.
 Dialogue: 0,0:27:35.88,0:27:38.21,chinese,,0,0,0,,这是今天最后一个希腊符号。
 Dialogue: 0,0:27:38.21,0:27:43.13,english,,0,0,0,,But a Greek theta indicates a coincidence of both upper bound and lower bound.
-Dialogue: 0,0:27:38.21,0:27:43.13,chinese,,0,0,0,,但希腊文的 θ 表示上限和下限的重合。
+Dialogue: 0,0:27:38.21,0:27:43.13,chinese,,0,0,0,,希腊字母 Θ 表示上界和下界的重合。
 Dialogue: 0,0:27:43.13,0:27:44.70,english,,0,0,0,,That is, they are one and the same.
-Dialogue: 0,0:27:43.13,0:27:44.70,chinese,,0,0,0,,也就是说，它们是一体的。
+Dialogue: 0,0:27:43.13,0:27:44.70,chinese,,0,0,0,,也就是说，它们一模一样。
 Dialogue: 0,0:27:44.70,0:27:49.22,english,,0,0,0,,That was not the case for our discussion a second ago of linear search, not the case for binary search.
-Dialogue: 0,0:27:44.70,0:27:49.22,chinese,,0,0,0,,前一秒我们讨论线性搜索时的情况并非如此，二进制搜索也并非如此。
+Dialogue: 0,0:27:44.70,0:27:49.22,chinese,,0,0,0,,刚才我们讨论了线性查找、二分查找，两种算法都并非如此。
 Dialogue: 0,0:27:49.22,0:27:56.97,english,,0,0,0,,But you could use the same kinds of formulas if it turns out that your upper bound and lower bound are the same.
-Dialogue: 0,0:27:49.22,0:27:56.97,chinese,,0,0,0,,但如果发现上限和下限相同，也可以使用相同的公式。
+Dialogue: 0,0:27:49.22,0:27:56.97,chinese,,0,0,0,,要是上界和下界是一样的，你可以写成这里展示的公式。
 Dialogue: 0,0:27:56.97,0:28:09.08,english,,0,0,0,,So for instance, if I were to count everyone literally in this room-- one, two, three, four, five, six and so forth-- you could actually say that counting in that way is in theta of n
-Dialogue: 0,0:27:56.97,0:28:09.08,chinese,,0,0,0,,因此，举例来说，如果我按字面意思数这个房间里的每个人--一、二、三、四、五、六等等--你实际上可以说，以这种方式数数，是在 n 的θ中
+Dialogue: 0,0:27:56.97,0:28:09.08,chinese,,0,0,0,,比如说，如果我要统计房间里的人数—— 1、2、3...\N 你实际上可以说，这种方式数数的时间复杂度是 Θ(n)，
 Dialogue: 0,0:28:09.08,0:28:13.46,english,,0,0,0,,because in the best case, it's going to take me n points, people in the audience.
-Dialogue: 0,0:28:09.08,0:28:13.46,chinese,,0,0,0,,因为在最好的情况下，观众会给我N分。
+Dialogue: 0,0:28:09.08,0:28:13.46,chinese,,0,0,0,,因为最好的情况，我得数 n 个观众。
 Dialogue: 0,0:28:13.46,0:28:15.26,english,,0,0,0,,In the worst case, it's going to take me n.
-Dialogue: 0,0:28:13.46,0:28:15.26,chinese,,0,0,0,,最坏的情况是，我得花上 N 年时间。
+Dialogue: 0,0:28:13.46,0:28:15.26,chinese,,0,0,0,,在最坏情况下，我还是需要数 n 个。
 Dialogue: 0,0:28:15.26,0:28:18.38,english,,0,0,0,,It's always going to take me n steps if I want to count everyone in the room.
-Dialogue: 0,0:28:15.26,0:28:18.38,chinese,,0,0,0,,如果要计算房间里的每个人，我总是要走 N 步。
+Dialogue: 0,0:28:15.26,0:28:18.38,chinese,,0,0,0,,如果我想数出房间里的每个人，总是需要 n 步。
 Dialogue: 0,0:28:18.38,0:28:20.93,english,,0,0,0,,You can't really do better than that unless you skip people.
-Dialogue: 0,0:28:18.38,0:28:20.93,chinese,,0,0,0,,除非你跳过别人，否则你不可能做得更好。
+Dialogue: 0,0:28:18.38,0:28:20.93,chinese,,0,0,0,,除非你跳过一些人，不然没可能做得更好。
 Dialogue: 0,0:28:20.93,0:28:26.15,english,,0,0,0,,So that would be an example of the cuff of something where theta is instead germane.
-Dialogue: 0,0:28:20.93,0:28:26.15,chinese,,0,0,0,,因此，这将是一个例子，说明袖口中的θ反而是有意义的。
+Dialogue: 0,0:28:20.93,0:28:26.15,chinese,,0,0,0,,这就是一个日常生活里跟 Θ 特别有关联的算法例子。
 Dialogue: 0,0:28:26.15,0:28:38.73,english,,0,0,0,,Are any questions now on big O, on omega, or theta, which are now just more formal tools in the toolkit for talking about the design of our algorithms?
-Dialogue: 0,0:28:26.15,0:28:38.73,chinese,,0,0,0,,现在是否有任何关于大 O、Ω 或 Theta 的问题，它们现在只是工具包中更正式的工具，用于讨论我们的算法设计？
+Dialogue: 0,0:28:26.15,0:28:38.73,chinese,,0,0,0,,关于大 O、Ω 还有 Θ 这几种时间复杂度还有问题吗？\N关于分析和设计算法，我们现在又多了几样工具了。
+Dialogue: 0,0:28:26.15,0:28:38.73,annotation,,0,0,0,,*注：这里来总结一下：\N O（大 O）表示上界（upper bound），时间复杂度 O(f(n)) 表示该算法的运行时间在最坏情况下以 f(n) 的量级增长；\N Ω（Omega）表示下界（lower bound），时间复杂度 Ω(f(n)) 表示该算法的运行时间在最好情况下以 f(n) 的量级增长；\NΘ（Theta）表示紧确界（tight bound），适用于上界和下界一致的情况。\N大 O 表示法使用得最为广泛，因为大部分情况下最能说明算法的效率，不能每次都寄希望于最好情况是吧。\N现在了解到这里就足够了，后面很多进阶课程会更加深入地讨论时间/空间复杂度。
 Dialogue: 0,0:28:38.73,0:28:42.05,english,,0,0,0,,Any questions?
 Dialogue: 0,0:28:38.73,0:28:42.05,chinese,,0,0,0,,有问题吗？
 Dialogue: 0,0:28:42.05,0:28:42.86,english,,0,0,0,,No?
 Dialogue: 0,0:28:42.86,0:28:44.72,english,,0,0,0,,Seeing none.
-Dialogue: 0,0:28:42.86,0:28:44.72,chinese,,0,0,0,,没有。
 Dialogue: 0,0:28:44.72,0:28:45.56,english,,0,0,0,,Oh, is this-- yes?
-Dialogue: 0,0:28:44.72,0:28:45.56,chinese,,0,0,0,,哦，这是 - 是吗？
 Dialogue: 0,0:28:45.56,0:28:46.84,english,,0,0,0,,No?
 Dialogue: 0,0:28:46.84,0:28:48.25,english,,0,0,0,,OK, so we're good.
-Dialogue: 0,0:28:46.84,0:28:48.25,chinese,,0,0,0,,好了，我们没事了。
+Dialogue: 0,0:28:46.84,0:28:48.25,chinese,,0,0,0,,好吧，大家都真棒。
 Dialogue: 0,0:28:48.25,0:28:52.00,english,,0,0,0,,So let's go ahead and translate this, perhaps, to some actual code.
 Dialogue: 0,0:28:48.25,0:28:52.00,chinese,,0,0,0,,因此，让我们把它转换成一些实际的代码吧。
 Dialogue: 0,0:28:52.00,0:28:53.90,english,,0,0,0,,Let me go over to VS Code here.
@@ -879,7 +868,7 @@ Dialogue: 0,0:30:42.55,0:30:45.38,chinese,,0,0,0,,好吧，现在就让我继续
 Dialogue: 0,0:30:45.38,0:30:50.02,english,,0,0,0,,We'll call it n by using get_int and prompting them for a number-- so nothing new there.
 Dialogue: 0,0:30:45.38,0:30:50.02,chinese,,0,0,0,,我们将使用 get_int 调用 n，并提示他们输入一个数字--所以这并不新鲜。
 Dialogue: 0,0:30:50.02,0:30:53.68,english,,0,0,0,,And now let me go ahead and implement linear search.
-Dialogue: 0,0:30:50.02,0:30:53.68,chinese,,0,0,0,,现在，让我继续实施线性搜索。
+Dialogue: 0,0:30:50.02,0:30:53.68,chinese,,0,0,0,,现在，让我继续实施线性查找。
 Dialogue: 0,0:30:53.68,0:30:57.52,english,,0,0,0,,And the pseudocode we had for this before used some array-like notation.
 Dialogue: 0,0:30:53.68,0:30:57.52,chinese,,0,0,0,,我们之前的伪代码使用了一些类似数组的符号。
 Dialogue: 0,0:30:57.52,0:30:59.62,english,,0,0,0,,Let me go ahead, then, and start similarly.
@@ -919,7 +908,7 @@ Dialogue: 0,0:32:02.69,0:32:06.67,chinese,,0,0,0,,因此，我们再来回顾一
 Dialogue: 0,0:32:06.67,0:32:09.98,english,,0,0,0,,We're creating an array of seven numbers, these numbers.
 Dialogue: 0,0:32:06.67,0:32:09.98,chinese,,0,0,0,,我们正在创建一个包含七个数字的数组，就是这些数字。
 Dialogue: 0,0:32:09.98,0:32:16.09,english,,0,0,0,,And then after that we have really highlighted here an implementation of linear search.
-Dialogue: 0,0:32:09.98,0:32:16.09,chinese,,0,0,0,,之后，我们在这里着重强调了线性搜索的实现。
+Dialogue: 0,0:32:09.98,0:32:16.09,chinese,,0,0,0,,之后，我们在这里着重强调了线性查找的实现。
 Dialogue: 0,0:32:16.09,0:32:22.54,english,,0,0,0,,I mean this is the C version, I daresay, of what Stephanie did on the board, whereas now the array is called numbers instead of doors.
 Dialogue: 0,0:32:16.09,0:32:22.54,chinese,,0,0,0,,我敢说，这就是Stephanie在黑板上所做工作的 C 语言版本，只不过现在的数组叫数字，而不是门。
 Dialogue: 0,0:32:22.54,0:32:25.46,english,,0,0,0,,But I think it's pretty much the same.
@@ -947,9 +936,9 @@ Dialogue: 0,0:32:50.72,0:32:52.98,chinese,,0,0,0,,而那个人，确实没有找
 Dialogue: 0,0:32:52.98,0:32:59.30,english,,0,0,0,,So we've taken an idea from Week 0, now formalized in Week 3, and just translated it now to code.
 Dialogue: 0,0:32:52.98,0:32:59.30,chinese,,0,0,0,,因此，我们将第 0 周的想法在第 3 周正式化，并将其转化为代码。
 Dialogue: 0,0:32:59.30,0:33:05.50,english,,0,0,0,,Questions on this implementation of linear search?
-Dialogue: 0,0:32:59.30,0:33:05.50,chinese,,0,0,0,,对线性搜索的实现有疑问？
+Dialogue: 0,0:32:59.30,0:33:05.50,chinese,,0,0,0,,对线性查找的实现有疑问？
 Dialogue: 0,0:33:05.50,0:33:07.57,english,,0,0,0,,Linear search.
-Dialogue: 0,0:33:05.50,0:33:07.57,chinese,,0,0,0,,线性搜索。
+Dialogue: 0,0:33:05.50,0:33:07.57,chinese,,0,0,0,,线性查找。
 Dialogue: 0,0:33:07.57,0:33:08.68,english,,0,0,0,,Nothing.
 Dialogue: 0,0:33:08.68,0:33:11.81,english,,0,0,0,,Oh, so successful so far today.
 Dialogue: 0,0:33:08.68,0:33:11.81,chinese,,0,0,0,,哦，今天到目前为止都很成功。
@@ -974,7 +963,7 @@ Dialogue: 0,0:33:57.89,0:34:00.17,chinese,,0,0,0,,现在，这里是一个字符
 Dialogue: 0,0:34:00.17,0:34:03.94,english,,0,0,0,,Let me go ahead and prompt the user now not for an integer anymore.
 Dialogue: 0,0:34:00.17,0:34:03.94,chinese,,0,0,0,,让我继续提示用户，现在不用再输入整数了。
 Dialogue: 0,0:34:03.94,0:34:07.97,english,,0,0,0,,I want to now search for one of these strings still using linear search.
-Dialogue: 0,0:34:03.94,0:34:07.97,chinese,,0,0,0,,我现在想搜索其中一个字符串，仍然使用线性搜索。
+Dialogue: 0,0:34:03.94,0:34:07.97,chinese,,0,0,0,,我现在想搜索其中一个字符串，仍然使用线性查找。
 Dialogue: 0,0:34:07.97,0:34:13.84,english,,0,0,0,,So let me create a string s, set it equal to get_string, prompt the user for a string to search for.
 Dialogue: 0,0:34:07.97,0:34:13.84,chinese,,0,0,0,,因此，让我创建一个字符串 s，设置它等于 get_string，然后提示用户搜索一个字符串。
 Dialogue: 0,0:34:13.84,0:34:19.54,english,,0,0,0,,And then I think my code here is almost the same, except for one detail.
@@ -1068,7 +1057,7 @@ Dialogue: 0,0:37:34.45,0:37:39.92,chinese,,0,0,0,,我的程序为什么会崩溃
 Dialogue: 0,0:37:39.92,0:37:41.90,english,,0,0,0,,I didn't really change the logic.
 Dialogue: 0,0:37:39.92,0:37:41.90,chinese,,0,0,0,,我并没有真正改变逻辑。
 Dialogue: 0,0:37:41.90,0:37:43.55,english,,0,0,0,,It's still linear search.
-Dialogue: 0,0:37:41.90,0:37:43.55,chinese,,0,0,0,,它仍然是线性搜索。
+Dialogue: 0,0:37:41.90,0:37:43.55,chinese,,0,0,0,,它仍然是线性查找。
 Dialogue: 0,0:37:43.55,0:37:46.28,english,,0,0,0,,Let me hide the terminal so you can see all of the code at once.
 Dialogue: 0,0:37:43.55,0:37:46.28,chinese,,0,0,0,,让我把终端隐藏起来，这样你就能一次性看到所有代码。
 Dialogue: 0,0:37:46.28,0:37:49.85,english,,0,0,0,,The only thing I did was switched from integers to strings.
@@ -1209,7 +1198,7 @@ Dialogue: 0,0:41:43.10,0:41:48.36,chinese,,0,0,0,,你可能希望通过夜间程
 Dialogue: 0,0:41:48.36,0:41:55.91,english,,0,0,0,,Using these exit codes, can a program determine yes or no that other code succeeded or failed.
 Dialogue: 0,0:41:48.36,0:41:55.91,chinese,,0,0,0,,利用这些退出代码，程序能否确定其他代码成功或失败。
 Dialogue: 0,0:41:55.91,0:42:01.85,english,,0,0,0,,Other questions on linear search in this way.
-Dialogue: 0,0:41:55.91,0:42:01.85,chinese,,0,0,0,,以这种方式进行线性搜索的其他问题。
+Dialogue: 0,0:41:55.91,0:42:01.85,chinese,,0,0,0,,以这种方式进行线性查找的其他问题。
 Dialogue: 0,0:42:01.85,0:42:02.35,english,,0,0,0,,No?
 Dialogue: 0,0:42:02.35,0:42:11.59,english,,0,0,0,,All right, well, let's translate this to one other feature of C here by incorporating these two ideas now into one other program.
 Dialogue: 0,0:42:02.35,0:42:11.59,chinese,,0,0,0,,好吧，让我们将这两个想法融入到另一个程序中，从而将其转化为 C 语言的另一个特性。
@@ -1297,7 +1286,7 @@ Dialogue: 0,0:44:53.86,0:44:55.96,chinese,,0,0,0,,字符串名称等于获取字
 Dialogue: 0,0:44:55.96,0:44:59.99,english,,0,0,0,,And let's ask the user for a name, presumably David or Carter or someone else.
 Dialogue: 0,0:44:55.96,0:44:59.99,chinese,,0,0,0,,让我们询问用户的姓名，大概是 David、Carter 或其他人。
 Dialogue: 0,0:44:59.99,0:45:01.85,english,,0,0,0,,And now let's re-implement linear search.
-Dialogue: 0,0:44:59.99,0:45:01.85,chinese,,0,0,0,,现在，让我们重新实现线性搜索。
+Dialogue: 0,0:44:59.99,0:45:01.85,chinese,,0,0,0,,现在，让我们重新实现线性查找。
 Dialogue: 0,0:45:01.85,0:45:05.92,english,,0,0,0,,So 4, int i get 0. i is less than 2.
 Dialogue: 0,0:45:01.85,0:45:05.92,chinese,,0,0,0,,因此，4，int i 得到 0，i 小于 2。
 Dialogue: 0,0:45:05.92,0:45:07.51,english,,0,0,0,,And do as I say, not as I do.
@@ -1632,7 +1621,7 @@ Dialogue: 0,0:54:36.94,0:54:40.26,chinese,,0,0,0,,例如，输入约翰-哈佛�
 Dialogue: 0,0:54:40.26,0:54:43.71,english,,0,0,0,,So fundamentally, the code isn't all that different.
 Dialogue: 0,0:54:40.26,0:54:43.71,chinese,,0,0,0,,因此，从根本上说，代码并没有什么不同。
 Dialogue: 0,0:54:43.71,0:54:46.09,english,,0,0,0,,Linear search is still behaving the same way.
-Dialogue: 0,0:54:43.71,0:54:46.09,chinese,,0,0,0,,线性搜索仍在以同样的方式进行。
+Dialogue: 0,0:54:43.71,0:54:46.09,chinese,,0,0,0,,线性查找仍在以同样的方式进行。
 Dialogue: 0,0:54:46.09,0:54:48.69,english,,0,0,0,,And I admit, this is kind of ugly looking.
 Dialogue: 0,0:54:46.09,0:54:48.69,chinese,,0,0,0,,我承认，这看起来有点丑。
 Dialogue: 0,0:54:48.69,0:54:52.35,english,,0,0,0,,We've kind of made a two line solution five lines of code now.
@@ -1752,7 +1741,7 @@ Dialogue: 0,0:58:50.47,0:58:53.02,chinese,,0,0,0,,我们在大厅里准备了一
 Dialogue: 0,0:58:53.02,0:58:55.90,english,,0,0,0,,All right, we are back.
 Dialogue: 0,0:58:53.02,0:58:55.90,chinese,,0,0,0,,好了，我们回来了。
 Dialogue: 0,0:58:55.90,0:59:02.35,english,,0,0,0,,And up until now, it clearly seems to be a good thing if your data is sorted, because you can use binary search.
-Dialogue: 0,0:58:55.90,0:59:02.35,chinese,,0,0,0,,到目前为止，如果你的数据是排序的，这显然是件好事，因为你可以使用二进制搜索。
+Dialogue: 0,0:58:55.90,0:59:02.35,chinese,,0,0,0,,到目前为止，如果你的数据是排序的，这显然是件好事，因为你可以使用二分查找。
 Dialogue: 0,0:59:02.35,0:59:05.54,english,,0,0,0,,You know a little something more about the data.
 Dialogue: 0,0:59:02.35,0:59:05.54,chinese,,0,0,0,,你对数据的了解更多一些。
 Dialogue: 0,0:59:05.54,0:59:10.42,english,,0,0,0,,But it turns out that sorting in and of itself is kind of a problem to solve too.
@@ -1866,9 +1855,9 @@ Dialogue: 0,1:02:10.63,1:02:11.24,english,,0,0,0,,All right.
 Dialogue: 0,1:02:11.24,1:02:21.16,english,,0,0,0,,So let's consider, now, how we might go about sorting our kind volunteers here, the goal being to get them into order from smallest to largest so that,
 Dialogue: 0,1:02:11.24,1:02:21.16,chinese,,0,0,0,,因此，现在让我们考虑一下，怎么在这里对我们的志愿者进行分类，我们的目标是把他们按照从大到小的顺序排列，这样就可以了、
 Dialogue: 0,1:02:21.16,1:02:24.16,english,,0,0,0,,presumably then, we can use something smarter than just linear search.
-Dialogue: 0,1:02:21.16,1:02:24.16,chinese,,0,0,0,,那么，我们可以使用比线性搜索更智能的方法。
+Dialogue: 0,1:02:21.16,1:02:24.16,chinese,,0,0,0,,那么，我们可以使用比线性查找更智能的方法。
 Dialogue: 0,1:02:24.16,1:02:27.87,english,,0,0,0,,We can actually use binary search, assuming that they are already then sorted.
-Dialogue: 0,1:02:24.16,1:02:27.87,chinese,,0,0,0,,实际上，我们可以使用二进制搜索，假设它们已经排序。
+Dialogue: 0,1:02:24.16,1:02:27.87,chinese,,0,0,0,,实际上，我们可以使用二分查找，假设它们已经排序。
 Dialogue: 0,1:02:27.87,1:02:32.60,english,,0,0,0,,So let me propose that we first consider an algorithm that actually has a name called selection sort.
 Dialogue: 0,1:02:27.87,1:02:32.60,chinese,,0,0,0,,因此，我建议我们首先考虑一种算法，它实际上有一个名字，叫做选择排序。
 Dialogue: 0,1:02:32.60,1:02:43.61,english,,0,0,0,,And selection sort is going to be one that literally has me, or really you, as the programmer, selecting the smallest element again and again, and then putting them into the appropriate place.
@@ -2723,7 +2712,7 @@ Dialogue: 0,1:27:43.85,1:27:53.66,chinese,,0,0,0,,只要 f 是以自身为单位
 Dialogue: 0,1:27:53.66,1:27:57.37,english,,0,0,0,,And this is actually something we've seen already in class, even though we didn't call it as much.
 Dialogue: 0,1:27:53.66,1:27:57.37,chinese,,0,0,0,,这其实是我们在课堂上已经看到过的，尽管我们没有说得那么多。
 Dialogue: 0,1:27:57.37,1:28:07.76,english,,0,0,0,,So for instance, consider this pseudocode from earlier, whereby this was the pseudocode for searching via binary search, a whole bunch of doors.
-Dialogue: 0,1:27:57.37,1:28:07.76,chinese,,0,0,0,,因此，举个例子，看一下之前的这个伪代码，这是通过二进制搜索进行搜索的伪代码，其中有一大堆门。
+Dialogue: 0,1:27:57.37,1:28:07.76,chinese,,0,0,0,,因此，举个例子，看一下之前的这个伪代码，这是通过二分查找进行搜索的伪代码，其中有一大堆门。
 Dialogue: 0,1:28:07.76,1:28:12.60,english,,0,0,0,,If no doors are left returned false, that was the additional conditional we added.
 Dialogue: 0,1:28:07.76,1:28:12.60,chinese,,0,0,0,,如果没有门，则返回 false，这是我们添加的附加条件。
 Dialogue: 0,1:28:12.60,1:28:20.78,english,,0,0,0,,But then if number behind middle door returned true, and here's the interesting part, if number is less than middle door, search the left half.
@@ -3709,24 +3698,24 @@ Dialogue: 0,1:56:53.49,1:56:58.56,chinese,,0,0,0,,事实上，n log n 的阶数�
 Dialogue: 0,1:56:58.56,1:57:10.65,english,,0,0,0,,And so of all of the sorts thus far, we've seen that merge sort here, actually, is n log n, which is strictly better than n squared, which is where both selection sort and bubble sort landed.
 Dialogue: 0,1:56:58.56,1:57:10.65,chinese,,0,0,0,,因此，在迄今为止的所有排序中，我们看到这里的合并排序实际上是 n log n，严格来说比 n 平方要好，这也是选择排序和冒泡排序的优势所在。
 Dialogue: 0,1:57:10.65,1:57:14.01,english,,0,0,0,,But it's also slower than linear search, for instance.
-Dialogue: 0,1:57:10.65,1:57:14.01,chinese,,0,0,0,,但它也比线性搜索等慢。
+Dialogue: 0,1:57:10.65,1:57:14.01,chinese,,0,0,0,,但它也比线性查找等慢。
 Dialogue: 0,1:57:14.01,1:57:15.39,english,,0,0,0,,But you would rather expect that.
 Dialogue: 0,1:57:14.01,1:57:15.39,chinese,,0,0,0,,但你更希望如此。
 Dialogue: 0,1:57:15.39,1:57:21.67,english,,0,0,0,,If you have to do a lot of work up front sorting some elements versus just searching them, you're going to have to put in more effort.
 Dialogue: 0,1:57:15.39,1:57:21.67,chinese,,0,0,0,,如果你必须在前期做大量工作来分类某些元素，而不是仅仅搜索它们，你就必须付出更多努力。
 Dialogue: 0,1:57:21.67,1:57:30.32,english,,0,0,0,,And so the question of whether or not you should just search something blindly with linear search and not bother sorting it, really boils down to, can you afford to spend this amount of time?
-Dialogue: 0,1:57:21.67,1:57:30.32,chinese,,0,0,0,,因此，是否应该盲目地使用线性搜索来搜索，而不是费力地进行分类，这个问题其实可以归结为：你能花得起这么多时间吗？
+Dialogue: 0,1:57:21.67,1:57:30.32,chinese,,0,0,0,,因此，是否应该盲目地使用线性查找来搜索，而不是费力地进行分类，这个问题其实可以归结为：你能花得起这么多时间吗？
 Dialogue: 0,1:57:30.32,1:57:35.17,english,,0,0,0,,And if you're the Googles of the world, odds are you don't want to be searching their database linearly every time.
 Dialogue: 0,1:57:30.32,1:57:35.17,chinese,,0,0,0,,如果你是全球最大的谷歌公司，你很可能不希望每次都以线性方式搜索他们的数据库。
 Dialogue: 0,1:57:35.17,1:57:35.67,english,,0,0,0,,Why?
 Dialogue: 0,1:57:35.67,1:57:43.56,english,,0,0,0,,Because you can sort it once and then benefit millions, billions of people, subsequently using something like binary search or, frankly in practice,
-Dialogue: 0,1:57:35.67,1:57:43.56,chinese,,0,0,0,,因为你可以对其进行一次排序，然后使用类似二进制搜索的方法，或者坦率地说，在实践中使用类似二进制搜索的方法，让数百万、数十亿人受益、
+Dialogue: 0,1:57:35.67,1:57:43.56,chinese,,0,0,0,,因为你可以对其进行一次排序，然后使用类似二分查找的方法，或者坦率地说，在实践中使用类似二分查找的方法，让数百万、数十亿人受益、
 Dialogue: 0,1:57:43.56,1:57:46.44,english,,0,0,0,,something even fancier and faster than binary search.
-Dialogue: 0,1:57:43.56,1:57:46.44,chinese,,0,0,0,,比二进制搜索更先进、更快速的东西。
+Dialogue: 0,1:57:43.56,1:57:46.44,chinese,,0,0,0,,比二分查找更先进、更快速的东西。
 Dialogue: 0,1:57:46.44,1:57:48.36,english,,0,0,0,,But there's always going to be this trade off.
 Dialogue: 0,1:57:46.44,1:57:48.36,chinese,,0,0,0,,但是，这其中总会有这样那样的权衡。
 Dialogue: 0,1:57:48.36,1:57:52.14,english,,0,0,0,,You can achieve binary search only if the elements are sorted.
-Dialogue: 0,1:57:48.36,1:57:52.14,chinese,,0,0,0,,只有对元素进行排序，才能实现二进制搜索。
+Dialogue: 0,1:57:48.36,1:57:52.14,chinese,,0,0,0,,只有对元素进行排序，才能实现二分查找。
 Dialogue: 0,1:57:52.14,1:57:53.94,english,,0,0,0,,How much does it cost you to sort them?
 Dialogue: 0,1:57:52.14,1:57:53.94,chinese,,0,0,0,,分类的费用是多少？
 Dialogue: 0,1:57:53.94,1:57:56.94,english,,0,0,0,,Well, maybe n squared, if you used some of the earlier algorithms.
