@@ -15,9 +15,9 @@ Video File: ../video/CS50x 2023 - Lecture 3 - Algorithms.mp4
 Video AR Mode: 4
 Video AR Value: 1.777778
 Video Zoom Percent: 0.500000
-Scroll Position: 3742
-Active Line: 772
-Video Position: 40948
+Scroll Position: 2206
+Active Line: 2208
+Video Position: 105840
 
 [V4+ Styles]
 Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
@@ -334,10 +334,9 @@ Dialogue: 0,0:11:26.50,0:11:30.37,chinese,,0,0,0,,其余的逻辑，落实到伪
 Dialogue: 0,0:11:30.37,0:11:40.17,english,,0,0,0,,And so you'll find in time that programmers, computer scientists more generally, when you start expressing ideas, algorithms to someone else, instead of maybe operating at this level here,
 Dialogue: 0,0:11:30.37,0:11:40.17,chinese,,0,0,0,,所以说你发现了吧，程序员和计算机科学家向别人表达想法和算法的时候，\N一般都会从伪代码层面开始，而不是采用这种纯英文句法，
 Dialogue: 0,0:11:40.17,0:11:47.38,english,,0,0,0,,you now have a new vocabulary, really a new syntax that you can be a little more specific, not getting so into the weeds of writing actual C code,
-Dialogue: 0,0:11:40.17,0:11:47.38,chinese,,0,0,0,,你现在就有了一个新的手段、一种新的语法，\N你可以写得更加具体一些，却不至于把注意力分散在 C 语言语法的弯弯绕绕里，
+Dialogue: 0,0:11:40.17,0:11:47.38,chinese,,0,0,0,,你现在就学到了一个新的手段、一种新的语法，\N可以把思路表达得更加具体一些，却不至于把注意力分散在 C 语言语法的弯弯绕绕里，
 Dialogue: 0,0:11:47.38,0:11:51.81,english,,0,0,0,,but at least now doing something that's a little closer to manipulating an array like this.
-Dialogue: 0,0:11:47.38,0:11:51.81,chinese,,0,0,0,,并且现在的写法更接近于实际用代码操作一个数组。
-Dialogue: 0,0:11:47.38,0:11:51.81,annotation,,0,0,0,,碎碎念：这段翻得流畅吧~
+Dialogue: 0,0:11:47.38,0:11:51.81,chinese,,0,0,0,,现在的写法更接近于实际用代码操作一个数组。
 Dialogue: 0,0:11:51.81,0:11:55.14,english,,0,0,0,,So Jackson, would you like to stand on up?
 Dialogue: 0,0:11:51.81,0:11:55.14,chinese,,0,0,0,,Jackson，你能站起来吗？
 Dialogue: 0,0:11:55.14,0:11:56.76,english,,0,0,0,,All right.
@@ -810,208 +809,197 @@ Dialogue: 0,0:28:45.56,0:28:46.84,english,,0,0,0,,No?
 Dialogue: 0,0:28:46.84,0:28:48.25,english,,0,0,0,,OK, so we're good.
 Dialogue: 0,0:28:46.84,0:28:48.25,chinese,,0,0,0,,好吧，大家都真棒。
 Dialogue: 0,0:28:48.25,0:28:52.00,english,,0,0,0,,So let's go ahead and translate this, perhaps, to some actual code.
-Dialogue: 0,0:28:48.25,0:28:52.00,chinese,,0,0,0,,因此，让我们把它转换成一些实际的代码吧。
+Dialogue: 0,0:28:48.25,0:28:52.00,chinese,,0,0,0,,现在我们来把思想翻译成实际的代码吧。
 Dialogue: 0,0:28:52.00,0:28:53.90,english,,0,0,0,,Let me go over to VS Code here.
-Dialogue: 0,0:28:52.00,0:28:53.90,chinese,,0,0,0,,让我来看看 VS 代码。
+Dialogue: 0,0:28:52.00,0:28:53.90,chinese,,0,0,0,,转到 VS Code。
 Dialogue: 0,0:28:53.90,0:29:00.28,english,,0,0,0,,And let's see if we can't now translate some of these ideas to some actual code, not so much using new syntax yet.
-Dialogue: 0,0:28:53.90,0:29:00.28,chinese,,0,0,0,,现在，让我们看看能否将这些想法转化为实际代码，但先不要使用太多新语法。
+Dialogue: 0,0:28:53.90,0:29:00.28,chinese,,0,0,0,,现在，我们来看看怎么把这些想法转化成实际代码，不会用到太多新语法。
 Dialogue: 0,0:29:00.28,0:29:03.32,english,,0,0,0,,We're going to still operate in this world of arrays like last week.
-Dialogue: 0,0:29:00.28,0:29:03.32,chinese,,0,0,0,,我们仍将像上周一样，在阵列的世界里运行。
+Dialogue: 0,0:29:00.28,0:29:03.32,chinese,,0,0,0,,跟上周一样，我们需要操作数组。
 Dialogue: 0,0:29:03.32,0:29:09.28,english,,0,0,0,,So let me go ahead and create a program called search.c by executing code space search.c in my terminal.
-Dialogue: 0,0:29:03.32,0:29:09.28,chinese,,0,0,0,,因此，让我继续在终端中执行代码空间 search.c，创建一个名为 search.c 的程序。
-Dialogue: 0,0:29:09.28,0:29:14.74,english,,0,0,0,,And then up here, let's go ahead and include our usual, so include cs50.h so I can get some input.
-Dialogue: 0,0:29:09.28,0:29:14.74,chinese,,0,0,0,,然后在这里，让我们继续并包含我们常用的 cs50.h，这样我就能得到一些输入了。
-Dialogue: 0,0:29:14.74,0:29:18.37,english,,0,0,0,,Include standard io.h so I can print some output.
-Dialogue: 0,0:29:14.74,0:29:18.37,chinese,,0,0,0,,包含标准 io.h，以便打印输出。
-Dialogue: 0,0:29:18.37,0:29:23.14,english,,0,0,0,,We'll do int main void, the meaning of which we did start to tease apart last week.
-Dialogue: 0,0:29:18.37,0:29:23.14,chinese,,0,0,0,,我们要做的是 int main void，上周我们已经开始厘清它的含义。
+Dialogue: 0,0:29:03.32,0:29:09.28,chinese,,0,0,0,,终端里执行 code search.c，创建程序 search.c。
+Dialogue: 0,0:29:09.28,0:29:23.14,english,,0,0,0,,And then up here, let's go ahead and include our usual, so include cs50.h so I can get some input. Include standard io.h so I can print some output. We'll do int main void, the meaning of which we did start to tease apart last week.
+Dialogue: 0,0:29:09.28,0:29:23.14,chinese,,0,0,0,,【口述代码】
 Dialogue: 0,0:29:23.14,0:29:26.65,english,,0,0,0,,The fact that it's void again today just means no command line arguments.
-Dialogue: 0,0:29:23.14,0:29:26.65,chinese,,0,0,0,,今天再次失效只是意味着没有命令行参数。
+Dialogue: 0,0:29:23.14,0:29:26.65,chinese,,0,0,0,,上周我们已经揭开他们的面纱，不需要命令行参数，所以写 void。
 Dialogue: 0,0:29:26.65,0:29:28.58,english,,0,0,0,,And let me go ahead and do this.
-Dialogue: 0,0:29:26.65,0:29:28.58,chinese,,0,0,0,,让我来做这件事。
+Dialogue: 0,0:29:26.65,0:29:28.58,chinese,,0,0,0,,我要这么做。
 Dialogue: 0,0:29:28.58,0:29:34.84,english,,0,0,0,,Let me go ahead and declare, just for discussion's sake, a static array, like an array that never changes.
-Dialogue: 0,0:29:28.58,0:29:34.84,chinese,,0,0,0,,为了便于讨论，让我声明一个静态数组，就像一个永远不会改变的数组。
+Dialogue: 0,0:29:28.58,0:29:34.84,chinese,,0,0,0,,我们接着讨论讨论，声明一个静态数组，它的大小永远不会改变。
 Dialogue: 0,0:29:34.84,0:29:41.29,english,,0,0,0,,And the syntax for this is going to be give me an array called numbers using the square bracket notation.
-Dialogue: 0,0:29:34.84,0:29:41.29,chinese,,0,0,0,,语法是使用方括号符号给我一个名为数字的数组。
+Dialogue: 0,0:29:34.84,0:29:41.29,chinese,,0,0,0,,语法是数组类型，数组名，后面接一个空的方括号。
 Dialogue: 0,0:29:41.29,0:29:50.06,english,,0,0,0,,And I'm going to immediately initialize it to 20, 500, 10, 5, 100, 1, and 50, reminiscent of those same denominations as before.
-Dialogue: 0,0:29:41.29,0:29:50.06,chinese,,0,0,0,,我将立即把它初始化为 20、500、10、5、100、1 和 50，让人想起之前的那些面额。
+Dialogue: 0,0:29:41.29,0:29:50.06,chinese,,0,0,0,,然后马上初始化为 20、500、10、5、100、1 和 50，跟之前的那些面额相呼应。
 Dialogue: 0,0:29:50.06,0:29:54.08,english,,0,0,0,,So this is a slightly new syntax that we've perhaps not seen.
-Dialogue: 0,0:29:50.06,0:29:54.08,chinese,,0,0,0,,因此，这是一种略微新颖的语法，也许我们还没有见过。
-Dialogue: 0,0:29:54.08,0:30:00.82,english,,0,0,0,,And the curly braces here, which are different from for loops and while loops and functions, just tell the compiler please give me
-Dialogue: 0,0:29:54.08,0:30:00.82,chinese,,0,0,0,,这里的大括号不同于 for 循环、while 循环和函数，只是告诉编译器请给我
-Dialogue: 0,0:30:00.82,0:30:05.38,english,,0,0,0,,an array of whatever size this is containing those numbers left to right.
-Dialogue: 0,0:30:00.82,0:30:05.38,chinese,,0,0,0,,一个数组，大小与此数组相同，从左到右包含这些数字。
+Dialogue: 0,0:29:50.06,0:29:54.08,chinese,,0,0,0,,这种语法略微有点新颖，之前还没有见过。
+Dialogue: 0,0:29:54.08,0:30:05.38,english,,0,0,0,,And the curly braces here, which are different from for loops and while loops and functions, just tell the compiler please give me an array of whatever size this is containing those numbers left to right.
+Dialogue: 0,0:29:54.08,0:30:05.38,chinese,,0,0,0,,这里的花括号跟 for 循环、while 循环和函数都不一样，只是告诉编译器，\N请给我一个数组，大小你自己算，反正从左到右刚好包含这些数字。
 Dialogue: 0,0:30:05.38,0:30:10.22,english,,0,0,0,,I could alternatively use last week's syntax of saying something like this.
-Dialogue: 0,0:30:05.38,0:30:10.22,chinese,,0,0,0,,我也可以用上周的句法，这样说。
+Dialogue: 0,0:30:05.38,0:30:10.22,chinese,,0,0,0,,用上周学的语法也可以，这样写。
 Dialogue: 0,0:30:10.22,0:30:13.09,english,,0,0,0,,Let's see, 1, 2, 3, 4, 5, 6, 7 denominations.
-Dialogue: 0,0:30:10.22,0:30:13.09,chinese,,0,0,0,,让我们看看，1、2、3、4、5、6、7 种面额。
+Dialogue: 0,0:30:10.22,0:30:13.09,chinese,,0,0,0,,一共有 7 项。
 Dialogue: 0,0:30:13.09,0:30:15.25,english,,0,0,0,,I could alternatively do this.
-Dialogue: 0,0:30:13.09,0:30:15.25,chinese,,0,0,0,,我也可以这样做。
-Dialogue: 0,0:30:15.25,0:30:21.91,english,,0,0,0,,And then I could say numbers bracket 0 equals
-Dialogue: 0,0:30:15.25,0:30:21.91,chinese,,0,0,0,,然后我可以说数字括号 0 等于
-Dialogue: 0,0:30:21.91,0:30:25.57,english,,0,0,0,,20, numbers bracket 1 equals 500.
-Dialogue: 0,0:30:21.91,0:30:25.57,chinese,,0,0,0,,20，数字括号 1 等于 500。
+Dialogue: 0,0:30:13.09,0:30:15.25,chinese,,0,0,0,,可以改成这种。
+Dialogue: 0,0:30:15.25,0:30:25.57,english,,0,0,0,,And then I could say numbers bracket 0 equals 20, numbers bracket 1 equals 500.
+Dialogue: 0,0:30:15.25,0:30:25.57,chinese,,0,0,0,,【口述代码】
 Dialogue: 0,0:30:25.57,0:30:27.57,english,,0,0,0,,And I could do this five more times.
-Dialogue: 0,0:30:25.57,0:30:27.57,chinese,,0,0,0,,我还可以这样做五次。
+Dialogue: 0,0:30:25.57,0:30:27.57,chinese,,0,0,0,,还要这么写五行。
 Dialogue: 0,0:30:27.57,0:30:28.78,english,,0,0,0,,That's just a little tedious.
-Dialogue: 0,0:30:27.57,0:30:28.78,chinese,,0,0,0,,这有点乏味。
+Dialogue: 0,0:30:27.57,0:30:28.78,chinese,,0,0,0,,有点没意思。
 Dialogue: 0,0:30:28.78,0:30:32.53,english,,0,0,0,,If you know the numbers in advance, you don't have to tell the compiler how many there are.
-Dialogue: 0,0:30:28.78,0:30:32.53,chinese,,0,0,0,,如果事先知道数字，就不必告诉编译器有多少个。
-Dialogue: 0,0:30:32.53,0:30:37.42,english,,0,0,0,,You can just let it figure it out that your numbers will be 10, 500, 10, 5,
-Dialogue: 0,0:30:32.53,0:30:37.42,chinese,,0,0,0,,你可以让它计算出你的数字将是 10、500、10、5、
-Dialogue: 0,0:30:37.42,0:30:39.43,english,,0,0,0,,100, 1, and 50.
-Dialogue: 0,0:30:37.42,0:30:39.43,chinese,,0,0,0,,100、1 和 50。
+Dialogue: 0,0:30:28.78,0:30:32.53,chinese,,0,0,0,,如果事先知道是哪些数字，就不必告诉编译器有多少个，让它自己推断。
+Dialogue: 0,0:30:32.53,0:30:39.43,english,,0,0,0,,You can just let it figure it out that your numbers will be 10, 500, 10, 5, 100, 1, and 50.
+Dialogue: 0,0:30:32.53,0:30:39.43,chinese,,0,0,0,,【口述代码】
 Dialogue: 0,0:30:39.43,0:30:42.55,english,,0,0,0,,So this is how you statically define an array.
-Dialogue: 0,0:30:39.43,0:30:42.55,chinese,,0,0,0,,这就是静态定义数组的方法。
+Dialogue: 0,0:30:39.43,0:30:42.55,chinese,,0,0,0,,这样就能够定义静态数组。
 Dialogue: 0,0:30:42.55,0:30:45.38,english,,0,0,0,,All right, let me just go ahead and ask the user now for a number.
-Dialogue: 0,0:30:42.55,0:30:45.38,chinese,,0,0,0,,好吧，现在就让我继续向用户询问一个数字。
+Dialogue: 0,0:30:42.55,0:30:45.38,chinese,,0,0,0,,现在要让用户给到一个数字。
 Dialogue: 0,0:30:45.38,0:30:50.02,english,,0,0,0,,We'll call it n by using get_int and prompting them for a number-- so nothing new there.
-Dialogue: 0,0:30:45.38,0:30:50.02,chinese,,0,0,0,,我们将使用 get_int 调用 n，并提示他们输入一个数字--所以这并不新鲜。
+Dialogue: 0,0:30:45.38,0:30:50.02,chinese,,0,0,0,,【口述代码】
 Dialogue: 0,0:30:50.02,0:30:53.68,english,,0,0,0,,And now let me go ahead and implement linear search.
-Dialogue: 0,0:30:50.02,0:30:53.68,chinese,,0,0,0,,现在，让我继续实施线性查找。
+Dialogue: 0,0:30:50.02,0:30:53.68,chinese,,0,0,0,,现在我要实现线性查找了。
 Dialogue: 0,0:30:53.68,0:30:57.52,english,,0,0,0,,And the pseudocode we had for this before used some array-like notation.
-Dialogue: 0,0:30:53.68,0:30:57.52,chinese,,0,0,0,,我们之前的伪代码使用了一些类似数组的符号。
+Dialogue: 0,0:30:53.68,0:30:57.52,chinese,,0,0,0,,之前的伪代码里面用到了一些类数组语法。
 Dialogue: 0,0:30:57.52,0:30:59.62,english,,0,0,0,,Let me go ahead, then, and start similarly.
-Dialogue: 0,0:30:57.52,0:30:59.62,chinese,,0,0,0,,那么，就让我从类似的方面说起吧。
+Dialogue: 0,0:30:57.52,0:30:59.62,chinese,,0,0,0,,那就从相似的这部分开始吧。
 Dialogue: 0,0:30:59.62,0:31:04.27,english,,0,0,0,,For int i-- and you almost always start counting at i by convention.
-Dialogue: 0,0:30:59.62,0:31:04.27,chinese,,0,0,0,,对于 int i -- 按照惯例，几乎总是从 i 开始计数。
+Dialogue: 0,0:30:59.62,0:31:04.27,chinese,,0,0,0,,一般在循环里都是用 i 作为 counter 的。
 Dialogue: 0,0:31:04.27,0:31:06.49,english,,0,0,0,,So that's perhaps a good starting point.
-Dialogue: 0,0:31:04.27,0:31:06.49,chinese,,0,0,0,,因此，这或许是一个很好的起点。
+Dialogue: 0,0:31:04.27,0:31:06.49,chinese,,0,0,0,,从 0 开始好一点。
 Dialogue: 0,0:31:06.49,0:31:09.79,english,,0,0,0,,I'm going to do this so long as i is less than 7.
-Dialogue: 0,0:31:06.49,0:31:09.79,chinese,,0,0,0,,只要 i 小于 7，我就会这么做。
+Dialogue: 0,0:31:06.49,0:31:09.79,chinese,,0,0,0,,循环的条件是 i < 7。
 Dialogue: 0,0:31:09.79,0:31:15.56,english,,0,0,0,,Not the best design to hard code the 7, but this is just for demonstration's sake for now, because I know how many numbers I put in there.
-Dialogue: 0,0:31:09.79,0:31:15.56,chinese,,0,0,0,,硬编码 7 并不是最好的设计，但这只是为了演示，因为我知道我在里面输入了多少数字。
+Dialogue: 0,0:31:09.79,0:31:15.56,chinese,,0,0,0,,硬编码 7 并不是好设计，只是为了演示而已，因为我知道里面有多少个数字。
 Dialogue: 0,0:31:15.56,0:31:16.99,english,,0,0,0,,And then I'm going to i++.
-Dialogue: 0,0:31:15.56,0:31:16.99,chinese,,0,0,0,,然后我要去i++。
+Dialogue: 0,0:31:15.56,0:31:16.99,chinese,,0,0,0,,然后 i++。
 Dialogue: 0,0:31:16.99,0:31:21.55,english,,0,0,0,,So now I have the beginnings of a loop that will just allow me to iterate over the entire array.
-Dialogue: 0,0:31:16.99,0:31:21.55,chinese,,0,0,0,,现在我有了一个循环的雏形，它可以让我遍历整个数组。
+Dialogue: 0,0:31:16.99,0:31:21.55,chinese,,0,0,0,,现在我有了一个循环的雏形，能够遍历整个数组。
 Dialogue: 0,0:31:21.55,0:31:22.76,english,,0,0,0,,And let me ask this.
-Dialogue: 0,0:31:21.55,0:31:22.76,chinese,,0,0,0,,我想问一下
+Dialogue: 0,0:31:21.55,0:31:22.76,chinese,,0,0,0,,然后做一个条件判断。
 Dialogue: 0,0:31:22.76,0:31:36.19,english,,0,0,0,,If the current number at location i equals equals n, which is the number the human typed in, then let's go ahead and do something simple like printf, quote unquote, found, backslash n.
-Dialogue: 0,0:31:22.76,0:31:36.19,chinese,,0,0,0,,如果位置 i 上的当前数字等于 n，也就是人类输入的数字，那么我们就来做一些简单的操作，比如 printf、quote unquote、found、backslash n。
+Dialogue: 0,0:31:22.76,0:31:36.19,chinese,,0,0,0,,【口述代码】
 Dialogue: 0,0:31:36.19,0:31:40.24,english,,0,0,0,,And then per our discussion last week, to indicate that this is successful,
-Dialogue: 0,0:31:36.19,0:31:40.24,chinese,,0,0,0,,然后，根据我们上周的讨论，说明这是成功的、
+Dialogue: 0,0:31:36.19,0:31:40.24,chinese,,0,0,0,,我们上周讨论过了，说明成功找到了，
 Dialogue: 0,0:31:40.24,0:31:42.61,english,,0,0,0,,I'm going to return 0 if I found it.
-Dialogue: 0,0:31:40.24,0:31:42.61,chinese,,0,0,0,,如果我找到了，我会归还 0。
+Dialogue: 0,0:31:40.24,0:31:42.61,chinese,,0,0,0,,找到的话，就 return 一个 0。
 Dialogue: 0,0:31:42.61,0:31:48.64,english,,0,0,0,,And if I don't find it, I'm just going to go down here and, by default, say not found, backslash n.
-Dialogue: 0,0:31:42.61,0:31:48.64,chinese,,0,0,0,,如果找不到，我就在下面默认为 "未找到，反斜杠 n"。
+Dialogue: 0,0:31:42.61,0:31:48.64,chinese,,0,0,0,,要是没找到，就要跳到最下面写【口述代码】。
 Dialogue: 0,0:31:48.64,0:31:52.61,english,,0,0,0,,And just for convention-- whoops, just for good measure, per convention,
-Dialogue: 0,0:31:48.64,0:31:52.61,chinese,,0,0,0,,只是为了惯例--哎呀，只是为了好的措施，按照惯例、
+Dialogue: 0,0:31:48.64,0:31:52.61,chinese,,0,0,0,,按照惯例来说，就是一种好的实践，
 Dialogue: 0,0:31:52.61,0:31:55.63,english,,0,0,0,,I'll return 1 or, really, any value other than 0.
-Dialogue: 0,0:31:52.61,0:31:55.63,chinese,,0,0,0,,我会返回 1 或 0 以外的任何值。
+Dialogue: 0,0:31:52.61,0:31:55.63,chinese,,0,0,0,,我会返回一个非 0 值。
 Dialogue: 0,0:31:55.63,0:31:57.13,english,,0,0,0,,0, recall, means success.
 Dialogue: 0,0:31:55.63,0:31:57.13,chinese,,0,0,0,,0 表示成功。
 Dialogue: 0,0:31:57.13,0:32:02.69,english,,0,0,0,,And any other integer tends to mean error of some sort, irrespective of the number I'm looking for.
-Dialogue: 0,0:31:57.13,0:32:02.69,chinese,,0,0,0,,而任何其他整数往往意味着某种误差，与我要找的数字无关。
+Dialogue: 0,0:31:57.13,0:32:02.69,chinese,,0,0,0,,如果非 0 就代表哪里出错了，没找到我想要的数字。
 Dialogue: 0,0:32:02.69,0:32:06.67,english,,0,0,0,,So just to revisit, the only thing that's new here is the syntax.
-Dialogue: 0,0:32:02.69,0:32:06.67,chinese,,0,0,0,,因此，我们再来回顾一下，这里唯一的新内容就是语法。
+Dialogue: 0,0:32:02.69,0:32:06.67,chinese,,0,0,0,,再来回顾一下，这里唯一的新内容就是语法。
 Dialogue: 0,0:32:06.67,0:32:09.98,english,,0,0,0,,We're creating an array of seven numbers, these numbers.
-Dialogue: 0,0:32:06.67,0:32:09.98,chinese,,0,0,0,,我们正在创建一个包含七个数字的数组，就是这些数字。
+Dialogue: 0,0:32:06.67,0:32:09.98,chinese,,0,0,0,,我们创建了一个数组，包含这些数字，有 7 个。
 Dialogue: 0,0:32:09.98,0:32:16.09,english,,0,0,0,,And then after that we have really highlighted here an implementation of linear search.
-Dialogue: 0,0:32:09.98,0:32:16.09,chinese,,0,0,0,,之后，我们在这里着重强调了线性查找的实现。
+Dialogue: 0,0:32:09.98,0:32:16.09,chinese,,0,0,0,,然后框起来的这部分是线性查找的实现。
 Dialogue: 0,0:32:16.09,0:32:22.54,english,,0,0,0,,I mean this is the C version, I daresay, of what Stephanie did on the board, whereas now the array is called numbers instead of doors.
-Dialogue: 0,0:32:16.09,0:32:22.54,chinese,,0,0,0,,我敢说，这就是Stephanie在黑板上所做工作的 C 语言版本，只不过现在的数组叫数字，而不是门。
+Dialogue: 0,0:32:16.09,0:32:22.54,chinese,,0,0,0,,当时的伪代码就是这样的，只是转成了 C 语言版本，数组名从 doors 改成了 numbers。
 Dialogue: 0,0:32:22.54,0:32:25.46,english,,0,0,0,,But I think it's pretty much the same.
-Dialogue: 0,0:32:22.54,0:32:25.46,chinese,,0,0,0,,但我认为，情况都差不多。
+Dialogue: 0,0:32:22.54,0:32:25.46,chinese,,0,0,0,,我觉得基本没啥变化的。
 Dialogue: 0,0:32:25.46,0:32:30.38,english,,0,0,0,,Let me go ahead and open my terminal window and run make search.
-Dialogue: 0,0:32:25.46,0:32:30.38,chinese,,0,0,0,,让我打开终端窗口，运行 make search。
+Dialogue: 0,0:32:25.46,0:32:30.38,chinese,,0,0,0,,打开终端窗口，运行 make search。
 Dialogue: 0,0:32:30.38,0:32:32.51,english,,0,0,0,,Seems to compile, ./search.
-Dialogue: 0,0:32:30.38,0:32:32.51,chinese,,0,0,0,,似乎可以编译，./search。
+Dialogue: 0,0:32:30.38,0:32:32.51,chinese,,0,0,0,,似乎编译好了，./search。
 Dialogue: 0,0:32:32.51,0:32:34.31,english,,0,0,0,,And let's go ahead and search for a number.
-Dialogue: 0,0:32:32.51,0:32:34.31,chinese,,0,0,0,,让我们继续搜索一个数字。
+Dialogue: 0,0:32:32.51,0:32:34.31,chinese,,0,0,0,,让我们来查找一个数字。
 Dialogue: 0,0:32:34.31,0:32:36.23,english,,0,0,0,,We'll start with what we did before, 50.
-Dialogue: 0,0:32:34.31,0:32:36.23,chinese,,0,0,0,,我们从之前的 50 开始。
+Dialogue: 0,0:32:34.31,0:32:36.23,chinese,,0,0,0,,就之前的 50 吧。
 Dialogue: 0,0:32:36.23,0:32:37.34,english,,0,0,0,,And it's found.
-Dialogue: 0,0:32:36.23,0:32:37.34,chinese,,0,0,0,,找到了
+Dialogue: 0,0:32:36.23,0:32:37.34,chinese,,0,0,0,,找到了。
 Dialogue: 0,0:32:37.34,0:32:39.77,english,,0,0,0,,Let's go ahead and run it again, ./search.
-Dialogue: 0,0:32:37.34,0:32:39.77,chinese,,0,0,0,,让我们再次运行 ./search。
+Dialogue: 0,0:32:37.34,0:32:39.77,chinese,,0,0,0,,再运行一次。
 Dialogue: 0,0:32:39.77,0:32:42.50,english,,0,0,0,,Let's search for maybe 20 at the beginning.
-Dialogue: 0,0:32:39.77,0:32:42.50,chinese,,0,0,0,,一开始大概搜索 20 个吧。
+Dialogue: 0,0:32:39.77,0:32:42.50,chinese,,0,0,0,,查找一下 20 吧。
 Dialogue: 0,0:32:42.50,0:32:43.67,english,,0,0,0,,That one, too, is found.
 Dialogue: 0,0:32:42.50,0:32:43.67,chinese,,0,0,0,,这个也找到了。
 Dialogue: 0,0:32:43.67,0:32:50.72,english,,0,0,0,,Let's run it one more time searching for like 1,000, which is not among the denominations.
-Dialogue: 0,0:32:43.67,0:32:50.72,chinese,,0,0,0,,让我们再搜索一次，比如 1000，这不在教派之列。
+Dialogue: 0,0:32:43.67,0:32:50.72,chinese,,0,0,0,,再找一次，比如 1000，这个没有在里面。
 Dialogue: 0,0:32:50.72,0:32:52.98,english,,0,0,0,,And that one, indeed, is not found.
-Dialogue: 0,0:32:50.72,0:32:52.98,chinese,,0,0,0,,而那个人，确实没有找到。
+Dialogue: 0,0:32:50.72,0:32:52.98,chinese,,0,0,0,,确实没有找到。
 Dialogue: 0,0:32:52.98,0:32:59.30,english,,0,0,0,,So we've taken an idea from Week 0, now formalized in Week 3, and just translated it now to code.
-Dialogue: 0,0:32:52.98,0:32:59.30,chinese,,0,0,0,,因此，我们将第 0 周的想法在第 3 周正式化，并将其转化为代码。
+Dialogue: 0,0:32:52.98,0:32:59.30,chinese,,0,0,0,,所以呢，第 0 周的想法在第 3 周的今天规范化了，转化成 C 语言代码。
 Dialogue: 0,0:32:59.30,0:33:05.50,english,,0,0,0,,Questions on this implementation of linear search?
-Dialogue: 0,0:32:59.30,0:33:05.50,chinese,,0,0,0,,对线性查找的实现有疑问？
+Dialogue: 0,0:32:59.30,0:33:05.50,chinese,,0,0,0,,对于线性查找的实现，大家有问题吗？
 Dialogue: 0,0:33:05.50,0:33:07.57,english,,0,0,0,,Linear search.
 Dialogue: 0,0:33:05.50,0:33:07.57,chinese,,0,0,0,,线性查找。
 Dialogue: 0,0:33:07.57,0:33:08.68,english,,0,0,0,,Nothing.
 Dialogue: 0,0:33:08.68,0:33:11.81,english,,0,0,0,,Oh, so successful so far today.
-Dialogue: 0,0:33:08.68,0:33:11.81,chinese,,0,0,0,,哦，今天到目前为止都很成功。
+Dialogue: 0,0:33:08.68,0:33:11.81,chinese,,0,0,0,,今天的课直到现在一直很成功啊。
 Dialogue: 0,0:33:11.81,0:33:19.27,english,,0,0,0,,So let's see if we can't maybe make this a little more interesting and see if we can't trip over a detail that's going to be important in C.
-Dialogue: 0,0:33:11.81,0:33:19.27,chinese,,0,0,0,,所以，让我们看看能不能让这个问题变得更有趣一些，看看我们能不能绊倒一个在 C 语言中会很重要的细节。
+Dialogue: 0,0:33:11.81,0:33:19.27,chinese,,0,0,0,,我们再来点有意思的，以此引出 C 语言里一个很重要的细节。
 Dialogue: 0,0:33:19.27,0:33:23.33,english,,0,0,0,,And instead of doing numbers, let me go ahead and do this.
-Dialogue: 0,0:33:19.27,0:33:23.33,chinese,,0,0,0,,与其用数字说话，不如让我这样做。
+Dialogue: 0,0:33:19.27,0:33:23.33,chinese,,0,0,0,,现在不要 numbers 了，改成这样。
 Dialogue: 0,0:33:23.33,0:33:25.03,english,,0,0,0,,We'll stay on theme with Monopoly.
 Dialogue: 0,0:33:23.33,0:33:25.03,chinese,,0,0,0,,我们还是以大富翁为主题吧。
 Dialogue: 0,0:33:25.03,0:33:27.73,english,,0,0,0,,And I went down the rabbit hole of reading the Wikipedia article on Monopoly.
-Dialogue: 0,0:33:25.03,0:33:27.73,chinese,,0,0,0,,然后我就钻进了兔子洞，阅读了维基百科上关于大富翁的文章。
+Dialogue: 0,0:33:25.03,0:33:27.73,chinese,,0,0,0,,我深入阅读了大富翁的维基百科文章。
 Dialogue: 0,0:33:27.73,0:33:33.74,english,,0,0,0,,And the original pieces or tokens that came with Monopoly-- and it turns out we can represent those with strings.
-Dialogue: 0,0:33:27.73,0:33:33.74,chinese,,0,0,0,,而大富翁游戏中的原始棋子或代币 -- 原来我们可以用字符串来表示。
+Dialogue: 0,0:33:27.73,0:33:33.74,chinese,,0,0,0,,大富翁游戏里面，有棋子和代币，我们可以用字符串来表示。
 Dialogue: 0,0:33:33.74,0:33:39.17,english,,0,0,0,,So I'm going to create an array called strings, plural, of whatever size I defined here.
-Dialogue: 0,0:33:33.74,0:33:39.17,chinese,,0,0,0,,因此，我要创建一个名为 strings 的数组，复数，大小随我在这里定义的大小而定。
+Dialogue: 0,0:33:33.74,0:33:39.17,chinese,,0,0,0,,所以我要创建一个数组 strings，大小定义在这里。
 Dialogue: 0,0:33:39.17,0:33:54.70,english,,0,0,0,,And the very first monopoly pieces back in the day were a battleship that you could play with, a boot, a cannon, an iron, a thimble, and a top hat, some of which you might from the game nowadays.
-Dialogue: 0,0:33:39.17,0:33:54.70,chinese,,0,0,0,,当年最早的大富翁棋子是一艘可以玩的战舰、一只靴子、一门大炮、一个铁器、一个顶针和一顶高帽，其中一些你现在可能还能从游戏中找到。
+Dialogue: 0,0:33:39.17,0:33:54.70,chinese,,0,0,0,,而最早的大富翁棋子包括了一艘战舰、一只靴子、一门大炮、一把熨斗、一只顶针和一顶高帽，\N有一些传袭到了现在的游戏里面。
 Dialogue: 0,0:33:54.70,0:33:57.89,english,,0,0,0,,Turns out they've been changing these-- had no idea-- over the years.
-Dialogue: 0,0:33:54.70,0:33:57.89,chinese,,0,0,0,,原来这些年来他们一直在换这些东西--没想到--。
+Dialogue: 0,0:33:54.70,0:33:57.89,chinese,,0,0,0,,其实这些棋子多年来一直在变化，我之前不知道。
 Dialogue: 0,0:33:57.89,0:34:00.17,english,,0,0,0,,So here is, now, an array of strings.
-Dialogue: 0,0:33:57.89,0:34:00.17,chinese,,0,0,0,,现在，这里是一个字符串数组。
+Dialogue: 0,0:33:57.89,0:34:00.17,chinese,,0,0,0,,所以这是一个字符串数组。
 Dialogue: 0,0:34:00.17,0:34:03.94,english,,0,0,0,,Let me go ahead and prompt the user now not for an integer anymore.
-Dialogue: 0,0:34:00.17,0:34:03.94,chinese,,0,0,0,,让我继续提示用户，现在不用再输入整数了。
+Dialogue: 0,0:34:00.17,0:34:03.94,chinese,,0,0,0,,现在要提示用户，现在不是输入一个整数了。
 Dialogue: 0,0:34:03.94,0:34:07.97,english,,0,0,0,,I want to now search for one of these strings still using linear search.
-Dialogue: 0,0:34:03.94,0:34:07.97,chinese,,0,0,0,,我现在想搜索其中一个字符串，仍然使用线性查找。
+Dialogue: 0,0:34:03.94,0:34:07.97,chinese,,0,0,0,,我现在想搜索里面的一个字符串，仍然采用线性查找。
 Dialogue: 0,0:34:07.97,0:34:13.84,english,,0,0,0,,So let me create a string s, set it equal to get_string, prompt the user for a string to search for.
-Dialogue: 0,0:34:07.97,0:34:13.84,chinese,,0,0,0,,因此，让我创建一个字符串 s，设置它等于 get_string，然后提示用户搜索一个字符串。
+Dialogue: 0,0:34:07.97,0:34:13.84,chinese,,0,0,0,,【口述代码】
 Dialogue: 0,0:34:13.84,0:34:19.54,english,,0,0,0,,And then I think my code here is almost the same, except for one detail.
-Dialogue: 0,0:34:13.84,0:34:19.54,chinese,,0,0,0,,然后，我想我这里的代码几乎是一样的，除了一个细节。
+Dialogue: 0,0:34:13.84,0:34:19.54,chinese,,0,0,0,,我想这里的代码几乎不用变，除了一个细节。
 Dialogue: 0,0:34:19.54,0:34:21.85,english,,0,0,0,,I now have an array called strings.
-Dialogue: 0,0:34:19.54,0:34:21.85,chinese,,0,0,0,,现在我有一个名为 strings 的数组。
+Dialogue: 0,0:34:19.54,0:34:21.85,chinese,,0,0,0,,现在我有一个字符串数组 strings。
 Dialogue: 0,0:34:21.85,0:34:24.04,english,,0,0,0,,I now have a variable called s.
-Dialogue: 0,0:34:21.85,0:34:24.04,chinese,,0,0,0,,现在我有一个名为 s 的变量。
+Dialogue: 0,0:34:21.85,0:34:24.04,chinese,,0,0,0,,有一个变量 s。
 Dialogue: 0,0:34:24.04,0:34:31.03,english,,0,0,0,,But it turns out, for reasons we'll explore in more detail next week, this line of code is not going to work.
-Dialogue: 0,0:34:24.04,0:34:31.03,chinese,,0,0,0,,但事实证明，由于我们下周将详细探讨的原因，这行代码是行不通的。
+Dialogue: 0,0:34:24.04,0:34:31.03,chinese,,0,0,0,,但事实证明，这行代码是有问题的，详细的原因我们下周再探讨。
 Dialogue: 0,0:34:31.03,0:34:36.88,english,,0,0,0,,And it turns out the reason has to do with what we discussed last week of what a string really is.
-Dialogue: 0,0:34:31.03,0:34:36.88,chinese,,0,0,0,,事实证明，原因与我们上周讨论的 "字符串到底是什么 "有关。
+Dialogue: 0,0:34:31.03,0:34:36.88,chinese,,0,0,0,,原因跟我们上周讨论的 "字符串到底是什么" 有关。
 Dialogue: 0,0:34:36.88,0:34:39.35,english,,0,0,0,,And what is a string, again?
 Dialogue: 0,0:34:36.88,0:34:39.35,chinese,,0,0,0,,什么是字符串？
 Dialogue: 0,0:34:39.35,0:34:41.00,english,,0,0,0,,A string is an array.
 Dialogue: 0,0:34:39.35,0:34:41.00,chinese,,0,0,0,,字符串是一个数组。
 Dialogue: 0,0:34:41.00,0:34:51.94,english,,0,0,0,,And it turns out, though, that equals equals is not going to generously compare all of the characters in an array for you just because you use equal equals.
-Dialogue: 0,0:34:41.00,0:34:51.94,chinese,,0,0,0,,但事实证明，并不能因为你使用了等价等式，等价等式就会慷慨地为你比较数组中的所有字符。
+Dialogue: 0,0:34:41.00,0:34:51.94,chinese,,0,0,0,,但事实证明，并不是你使用了 ==，C 语言就会慷慨地帮你比较数组里的所有字符。
 Dialogue: 0,0:34:51.94,0:34:54.65,english,,0,0,0,,It turns out it's not going to compare every letter.
-Dialogue: 0,0:34:51.94,0:34:54.65,chinese,,0,0,0,,事实证明，它不会比较每一个字母。
+Dialogue: 0,0:34:51.94,0:34:54.65,chinese,,0,0,0,,真实情况，它不会逐个字符地进行比较。
 Dialogue: 0,0:34:54.65,0:35:03.05,english,,0,0,0,,And so thankfully, there is, in the string library that we introduced last week, a solution to this problem.
-Dialogue: 0,0:34:54.65,0:35:03.05,chinese,,0,0,0,,幸好，在我们上周介绍的字符串库中，有一个解决这个问题的方法。
+Dialogue: 0,0:34:54.65,0:35:03.05,chinese,,0,0,0,,还好我们上周介绍了字符串库 string.h，里面有一个解决方案。
 Dialogue: 0,0:35:03.05,0:35:05.85,english,,0,0,0,,The reason for the problem, we'll explore in more detail next week.
-Dialogue: 0,0:35:03.05,0:35:05.85,chinese,,0,0,0,,问题的原因，我们下周再详细探讨。
+Dialogue: 0,0:35:03.05,0:35:05.85,chinese,,0,0,0,,问题的原因，我们留待下周更详细地探讨。
 Dialogue: 0,0:35:05.85,0:35:15.68,english,,0,0,0,,But for now, just know that when you want to compare strings in C-- especially if you've come into the class knowing a bit of Java or Python or some other language-- you cannot use equals equals.
-Dialogue: 0,0:35:05.85,0:35:15.68,chinese,,0,0,0,,但现在，你只需知道，当你想用 C 语言比较字符串时--尤其是如果你在学习这门课时了解一些 Java、Python 或其他语言的话--你不能使用等式 equals。
+Dialogue: 0,0:35:05.85,0:35:15.68,chinese,,0,0,0,,现在大家只需知道，在 C 语言里当你想要比较两个字符串的时候，不能使用 ==。\N 要是你之前了解了一些 Java、Python 或其他语言，可能就心领神会了。
 Dialogue: 0,0:35:15.68,0:35:18.50,english,,0,0,0,,Even though you could in Scratch, you cannot in C.
-Dialogue: 0,0:35:15.68,0:35:18.50,chinese,,0,0,0,,在 Scratch 中可以，在 C 语言中却不行。
+Dialogue: 0,0:35:15.68,0:35:18.50,chinese,,0,0,0,,在 Scratch 可以，C 语言里却不行。
 Dialogue: 0,0:35:18.50,0:35:21.62,english,,0,0,0,,So what I have to actually do here is this.
-Dialogue: 0,0:35:18.50,0:35:21.62,chinese,,0,0,0,,因此，我在这里要做的实际上是这样的。
+Dialogue: 0,0:35:18.50,0:35:21.62,chinese,,0,0,0,,所以我必须得写成这样。
 Dialogue: 0,0:35:21.62,0:35:36.05,english,,0,0,0,,I have to ask the question, does the return value of a function called str compare, or strcomp, equal 0 when passed in the current string and that's user input?
-Dialogue: 0,0:35:21.62,0:35:36.05,chinese,,0,0,0,,我想问一个问题，当输入当前字符串和用户输入时，名为 str compare 或 strcomp 的函数的返回值是否等于 0？
+Dialogue: 0,0:35:21.62,0:35:36.05,chinese,,0,0,0,,【口述代码】
 Dialogue: 0,0:35:36.05,0:35:44.50,english,,0,0,0,,So if you read the documentation for this function called str compare, you'll see that it takes two strings as input, first one and second one.
-Dialogue: 0,0:35:36.05,0:35:44.50,chinese,,0,0,0,,因此，如果你阅读一下这个名为 str compare 的函数的文档，就会发现它需要两个字符串作为输入，第一个字符串和第二个字符串。
+Dialogue: 0,0:35:36.05,0:35:44.50,chinese,,0,0,0,,\N如果你读了 strcmp 这个函数的文档，就知道它的输入是两个字符串，第一个和第二个。
 Dialogue: 0,0:35:44.50,0:35:51.91,english,,0,0,0,,It then-- someone decades ago wrote the code that probably uses a for loop or a while loop to compare every character in each of those strings.
-Dialogue: 0,0:35:44.50,0:35:51.91,chinese,,0,0,0,,然后--几十年前有人写了一段代码，可能是用 for 循环或 while 循环来比较每个字符串中的每个字符。
+Dialogue: 0,0:35:44.50,0:35:51.91,chinese,,0,0,0,,在几十年前，有位程序员可能用了 for 循环或 while 循环，\N来逐位比较这两个字符串里的每一个字符，实现了这个函数。
 Dialogue: 0,0:35:51.91,0:35:56.29,english,,0,0,0,,And it turns out it returns 0 if they are, in fact, equal.
-Dialogue: 0,0:35:51.91,0:35:56.29,chinese,,0,0,0,,结果发现，如果它们实际上相等，则返回 0。
+Dialogue: 0,0:35:51.91,0:35:56.29,chinese,,0,0,0,,结果要是它们实际上相等，就返回 0。
 Dialogue: 0,0:35:56.29,0:36:02.44,english,,0,0,0,,Turns out, too, it will return a positive number or a negative number in other situations.
-Dialogue: 0,0:35:56.29,0:36:02.44,chinese,,0,0,0,,原来，在其他情况下，它也会返回正数或负数。
+Dialogue: 0,0:35:56.29,0:36:02.44,chinese,,0,0,0,,而在其他情况下，这个函数会返回一个正数或一个负数。
 Dialogue: 0,0:36:02.44,0:36:10.81,english,,0,0,0,,Any intuition for why it might actually be useful to have a function that allows you to check if two strings are equal?
-Dialogue: 0,0:36:02.44,0:36:10.81,chinese,,0,0,0,,有没有直觉告诉我们，为什么使用一个函数来检查两个字符串是否相等会很有用？
+Dialogue: 0,0:36:02.44,0:36:10.81,chinese,,0,0,0,,有没有直觉告诉我们，为什么这个检查两个字符串是否相等的函数，会很有用？
 Dialogue: 0,0:36:10.81,0:36:14.83,english,,0,0,0,,If they're not equal, what else might be interesting to know when comparing two strings?
-Dialogue: 0,0:36:10.81,0:36:14.83,chinese,,0,0,0,,如果它们不相等，那么在比较两个字符串时，还有什么值得注意的？
+Dialogue: 0,0:36:10.81,0:36:14.83,chinese,,0,0,0,,如果它们不相等，那么通过比较两个字符串，还能获取什么有用的信息？
 Dialogue: 0,0:36:18.47,0:36:19.39,english,,0,0,0,,If certain values are?
-Dialogue: 0,0:36:18.47,0:36:19.39,chinese,,0,0,0,,如果某些值是
+Dialogue: 0,0:36:18.47,0:36:19.39,chinese,,0,0,0,,如果某些值是...
 Dialogue: 0,0:36:19.39,0:36:23.34,english,,0,0,0,,STUDENT: [INAUDIBLE]
-Dialogue: 0,0:36:19.39,0:36:23.34,chinese,,0,0,0,,学生：[听不清]
 Dialogue: 0,0:36:23.34,0:36:24.43,english,,0,0,0,,DAVID MALAN: OK, possibly.
 Dialogue: 0,0:36:23.34,0:36:24.43,chinese,,0,0,0,,好吧，有可能。
 Dialogue: 0,0:36:24.43,0:36:26.95,english,,0,0,0,,Maybe you want to just how similar they are.
@@ -1019,715 +1007,708 @@ Dialogue: 0,0:36:24.43,0:36:26.95,chinese,,0,0,0,,也许你想知道它们有多
 Dialogue: 0,0:36:26.95,0:36:28.81,english,,0,0,0,,And that's indeed an algorithm unto itself.
 Dialogue: 0,0:36:26.95,0:36:28.81,chinese,,0,0,0,,这本身就是一种算法。
 Dialogue: 0,0:36:28.81,0:36:31.41,english,,0,0,0,,But str compare is a little simpler than that.
-Dialogue: 0,0:36:28.81,0:36:31.41,chinese,,0,0,0,,但是，str 比较比这更简单一些。
+Dialogue: 0,0:36:28.81,0:36:31.41,chinese,,0,0,0,,但是，strcmp 要简单一些。
 Dialogue: 0,0:36:31.41,0:36:33.04,english,,0,0,0,,STUDENT: [INAUDIBLE]
 Dialogue: 0,0:36:31.41,0:36:33.04,chinese,,0,0,0,,学生：[听不清]
 Dialogue: 0,0:36:35.85,0:36:41.95,english,,0,0,0,,DAVID MALAN: Exactly, if you're trying to alphabetize a whole list of strings, just like your phone probably is for your contacts or address book.
-Dialogue: 0,0:36:35.85,0:36:41.95,chinese,,0,0,0,,DAVID MALAN：没错，如果你想按字母顺序排列整个字符串列表，就像你的手机可能会按字母顺序排列通讯录或地址簿一样。
+Dialogue: 0,0:36:35.85,0:36:41.95,chinese,,0,0,0,,没错，如果你试着对一整列字符串进行字典序排序，\N你手机里面通讯录什么的就是这么排的。
 Dialogue: 0,0:36:41.95,0:36:53.80,english,,0,0,0,,It turns out that str compare will actually return a positive number or a negative number or a 0 based on whether, maybe it comes alphabetically first or later, or in fact, equal.
-Dialogue: 0,0:36:41.95,0:36:53.80,chinese,,0,0,0,,事实证明，str compare 实际上会返回一个正数、一个负数或一个 0，这取决于它是按字母顺序排列在前还是在后，或者实际上是相等的。
+Dialogue: 0,0:36:41.95,0:36:53.80,chinese,,0,0,0,,其实，strcmp 会根据两个字符串的字典序先后，返回一个正数、负数或 0。
 Dialogue: 0,0:36:53.80,0:36:55.13,english,,0,0,0,,So that can be a useful thing.
-Dialogue: 0,0:36:53.80,0:36:55.13,chinese,,0,0,0,,因此，这可能是一件有用的事情。
+Dialogue: 0,0:36:53.80,0:36:55.13,chinese,,0,0,0,,所以这个可能会有用。
 Dialogue: 0,0:36:55.13,0:36:58.88,english,,0,0,0,,And that's just a teaser for a lower level explanation that we'll see next week.
-Dialogue: 0,0:36:55.13,0:36:58.88,chinese,,0,0,0,,这只是一个预告，下周我们将看到更低层次的解释。
+Dialogue: 0,0:36:55.13,0:36:58.88,chinese,,0,0,0,,这只是一个引子，下周我们会看到更低层次的解释。
 Dialogue: 0,0:36:58.88,0:37:01.75,english,,0,0,0,,So now, let me cross my fingers and see if I got this right.
-Dialogue: 0,0:36:58.88,0:37:01.75,chinese,,0,0,0,,现在，让我掰掰手指头，看看我说的对不对。
+Dialogue: 0,0:36:58.88,0:37:01.75,chinese,,0,0,0,,现在我要祈祷祈祷，希望没搞错什么。
 Dialogue: 0,0:37:01.75,0:37:05.41,english,,0,0,0,,Let me go ahead and do make search.
-Dialogue: 0,0:37:01.75,0:37:05.41,chinese,,0,0,0,,让我继续搜索。
+Dialogue: 0,0:37:01.75,0:37:05.41,chinese,,0,0,0,,make search.
 Dialogue: 0,0:37:05.41,0:37:08.59,english,,0,0,0,,Did compile, albeit slowly.
-Dialogue: 0,0:37:05.41,0:37:08.59,chinese,,0,0,0,,编译成功了，尽管速度很慢。
+Dialogue: 0,0:37:05.41,0:37:08.59,chinese,,0,0,0,,编译成功了，尽管速度慢了点。
 Dialogue: 0,0:37:08.59,0:37:11.92,english,,0,0,0,,Dot slash search, and let's search for something like the thimble.
-Dialogue: 0,0:37:08.59,0:37:11.92,chinese,,0,0,0,,点斜线搜索，搜索顶针之类的东西。
+Dialogue: 0,0:37:08.59,0:37:11.92,chinese,,0,0,0,,./search，来搜索点东西。
 Dialogue: 0,0:37:11.92,0:37:14.04,english,,0,0,0,,And we see that that's, indeed, found.
-Dialogue: 0,0:37:11.92,0:37:14.04,chinese,,0,0,0,,我们看到，这确实是真的。
+Dialogue: 0,0:37:11.92,0:37:14.04,chinese,,0,0,0,,你们看，确实找着了。
 Dialogue: 0,0:37:14.04,0:37:19.06,english,,0,0,0,,Otherwise, let's search for something that I know isn't there, like a race car, which was there when I grew up.
-Dialogue: 0,0:37:14.04,0:37:19.06,chinese,,0,0,0,,否则，我们就去找一些我知道不存在的东西，比如赛车，我长大后赛车就在那里。
+Dialogue: 0,0:37:14.04,0:37:19.06,chinese,,0,0,0,,我们再来搜点不存在的，比如陪伴我长大的赛车。
 Dialogue: 0,0:37:19.06,0:37:23.22,english,,0,0,0,,But huh, segmentation fault, core dumped.
-Dialogue: 0,0:37:19.06,0:37:23.22,chinese,,0,0,0,,但是啊，分段故障，核心转储。
+Dialogue: 0,0:37:19.06,0:37:23.22,chinese,,0,0,0,,但是，啊，段错误，核心转储。
 Dialogue: 0,0:37:23.22,0:37:25.81,english,,0,0,0,,And actually, some of you have tripped over this error before.
-Dialogue: 0,0:37:23.22,0:37:25.81,chinese,,0,0,0,,实际上，你们中的一些人以前也曾犯过这样的错误。
+Dialogue: 0,0:37:23.22,0:37:25.81,chinese,,0,0,0,,实际上，你们有人可能之前遇到过这个错误了。
 Dialogue: 0,0:37:25.81,0:37:27.22,english,,0,0,0,,Anyone want to admit seeing this?
-Dialogue: 0,0:37:25.81,0:37:27.22,chinese,,0,0,0,,有谁愿意承认看到了这一幕？
+Dialogue: 0,0:37:25.81,0:37:27.22,chinese,,0,0,0,,有没有人愿意承认一下？
 Dialogue: 0,0:37:27.22,0:37:32.17,english,,0,0,0,,So yeah, not something we've talked about, and honestly, not something I intended just now.
-Dialogue: 0,0:37:27.22,0:37:32.17,chinese,,0,0,0,,所以，是的，这不是我们讨论过的话题，说实话，也不是我刚才想说的。
+Dialogue: 0,0:37:27.22,0:37:32.17,chinese,,0,0,0,,所以，是的，我们还没有讨论过这个话题，说实话，我今天没打算讲。
 Dialogue: 0,0:37:32.17,0:37:34.45,english,,0,0,0,,But that too, we'll see next week.
-Dialogue: 0,0:37:32.17,0:37:34.45,chinese,,0,0,0,,不过，这也是下周的事了。
+Dialogue: 0,0:37:32.17,0:37:34.45,chinese,,0,0,0,,不过，下周一切都会揭晓。
 Dialogue: 0,0:37:34.45,0:37:39.92,english,,0,0,0,,Any intuition for why my program just broke.
 Dialogue: 0,0:37:34.45,0:37:39.92,chinese,,0,0,0,,我的程序为什么会崩溃？
 Dialogue: 0,0:37:39.92,0:37:41.90,english,,0,0,0,,I didn't really change the logic.
-Dialogue: 0,0:37:39.92,0:37:41.90,chinese,,0,0,0,,我并没有真正改变逻辑。
+Dialogue: 0,0:37:39.92,0:37:41.90,chinese,,0,0,0,,我没有改变程序逻辑啊。
 Dialogue: 0,0:37:41.90,0:37:43.55,english,,0,0,0,,It's still linear search.
-Dialogue: 0,0:37:41.90,0:37:43.55,chinese,,0,0,0,,它仍然是线性查找。
+Dialogue: 0,0:37:41.90,0:37:43.55,chinese,,0,0,0,,还是那个线性查找。
 Dialogue: 0,0:37:43.55,0:37:46.28,english,,0,0,0,,Let me hide the terminal so you can see all of the code at once.
-Dialogue: 0,0:37:43.55,0:37:46.28,chinese,,0,0,0,,让我把终端隐藏起来，这样你就能一次性看到所有代码。
+Dialogue: 0,0:37:43.55,0:37:46.28,chinese,,0,0,0,,我来把终端隐藏起来，一次性展示所有代码。
 Dialogue: 0,0:37:46.28,0:37:49.85,english,,0,0,0,,The only thing I did was switched from integers to strings.
-Dialogue: 0,0:37:46.28,0:37:49.85,chinese,,0,0,0,,我做的唯一一件事就是把整数换成字符串。
+Dialogue: 0,0:37:46.28,0:37:49.85,chinese,,0,0,0,,我只做了一件事情，把 int 换成 string。
 Dialogue: 0,0:37:49.85,0:37:52.31,english,,0,0,0,,And I switched to str compare here.
-Dialogue: 0,0:37:49.85,0:37:52.31,chinese,,0,0,0,,在这里，我改用 str 比较。
+Dialogue: 0,0:37:49.85,0:37:52.31,chinese,,0,0,0,,在这里，改用 strlen 了。
 Dialogue: 0,0:37:52.31,0:37:54.20,english,,0,0,0,,But segmentation fault happened.
-Dialogue: 0,0:37:52.31,0:37:54.20,chinese,,0,0,0,,但分段故障发生了。
+Dialogue: 0,0:37:52.31,0:37:54.20,chinese,,0,0,0,,结果发生了段错误。
 Dialogue: 0,0:37:54.20,0:37:57.08,english,,0,0,0,,And the teaser is that that somehow relates to the computer's memory.
-Dialogue: 0,0:37:54.20,0:37:57.08,chinese,,0,0,0,,而预告的内容是，这与计算机的内存有某种联系。
+Dialogue: 0,0:37:54.20,0:37:57.08,chinese,,0,0,0,,我来预告一下，这跟计算机内存有某种联系。
 Dialogue: 0,0:37:57.08,0:37:57.99,english,,0,0,0,,Yeah.
 Dialogue: 0,0:37:57.99,0:38:00.69,english,,0,0,0,,STUDENT: [INAUDIBLE]
 Dialogue: 0,0:37:57.99,0:38:00.69,chinese,,0,0,0,,学生：[听不清]
 Dialogue: 0,0:38:01.47,0:38:03.67,english,,0,0,0,,DAVID MALAN: Yeah, and this is subtle, but spot on.
-Dialogue: 0,0:38:01.47,0:38:03.67,chinese,,0,0,0,,是的，这一点很微妙，但很准确。
+Dialogue: 0,0:38:01.47,0:38:03.67,chinese,,0,0,0,,没错诶，这有点不容易察觉，不过完全正确。
 Dialogue: 0,0:38:03.67,0:38:12.81,english,,0,0,0,,So one, two, three, four, five, six elements total in this array, versus the seven numbers of monopoly denominations that we had earlier.
-Dialogue: 0,0:38:03.67,0:38:12.81,chinese,,0,0,0,,因此，这个数组中一共有 1、2、3、4、5、6 个元素，而我们之前有 7 个垄断面额的数字。
+Dialogue: 0,0:38:03.67,0:38:12.81,chinese,,0,0,0,,你看这个数组，一共有 6 个元素，而我们之前有 7 个柜子。
 Dialogue: 0,0:38:12.81,0:38:13.88,english,,0,0,0,,And this is where, see?
 Dialogue: 0,0:38:12.81,0:38:13.88,chinese,,0,0,0,,就在这里，看到了吗？
 Dialogue: 0,0:38:13.88,0:38:15.93,english,,0,0,0,,Sort of case in point, this came back to bite me.
 Dialogue: 0,0:38:13.88,0:38:15.93,chinese,,0,0,0,,这就是一个典型的例子，它反过来咬了我一口。
 Dialogue: 0,0:38:15.93,0:38:26.61,english,,0,0,0,,The fact that I hardcoded this value as opposed to maybe separating it out as a constant or declaring it higher up, kind of bit me here, because now, I'm iterating over an array of size 6.
-Dialogue: 0,0:38:15.93,0:38:26.61,chinese,,0,0,0,,事实上，我对这个值进行了硬编码，而不是将它作为一个常量分离出来，或者在更高的位置进行声明，这让我很不爽，因为现在我正在遍历一个大小为 6 的数组。
+Dialogue: 0,0:38:15.93,0:38:26.61,chinese,,0,0,0,,我刚才硬编码了这个值，没有写成一个常量抽象出来，在前面的位置进行声明，\N结果被摆了一道，因为现在遍历的数组长度是 6。
 Dialogue: 0,0:38:26.61,0:38:32.25,english,,0,0,0,,But clearly, I'm going one step too far, because I'm literally going to iterate seven times, not six.
-Dialogue: 0,0:38:26.61,0:38:32.25,chinese,,0,0,0,,但很明显，我走得太远了，因为我要迭代七次，而不是六次。
+Dialogue: 0,0:38:26.61,0:38:32.25,chinese,,0,0,0,,很明显，这里没刹住车，迭代了 7 次，而不是 6 次。
 Dialogue: 0,0:38:32.25,0:38:35.58,english,,0,0,0,,So it's as though I'm looking at memory that's over here.
-Dialogue: 0,0:38:32.25,0:38:35.58,chinese,,0,0,0,,因此，我仿佛看到了这边的记忆。
+Dialogue: 0,0:38:32.25,0:38:35.58,chinese,,0,0,0,,因此我用到了不属于数组的后面的内存。
 Dialogue: 0,0:38:35.58,0:38:37.53,english,,0,0,0,,And indeed, next week, we'll focus on memory.
-Dialogue: 0,0:38:35.58,0:38:37.53,chinese,,0,0,0,,事实上，下周我们将重点讨论记忆。
+Dialogue: 0,0:38:35.58,0:38:37.53,chinese,,0,0,0,,下周我们会重点讨论内存的一些话题。
 Dialogue: 0,0:38:37.53,0:38:38.86,english,,0,0,0,,And that's just a bad thing.
-Dialogue: 0,0:38:37.53,0:38:38.86,chinese,,0,0,0,,这就是一件坏事。
+Dialogue: 0,0:38:37.53,0:38:38.86,chinese,,0,0,0,,这种事情就很糟糕。
 Dialogue: 0,0:38:38.86,0:38:47.28,english,,0,0,0,,So odds are, not even seeing your code from this past week, if any of you have had segmentation faults, odds are, you touched memory that you shouldn't have.
-Dialogue: 0,0:38:38.86,0:38:47.28,chinese,,0,0,0,,因此，即使不看你们上周的代码，如果你们中有人出现过分段故障，也很有可能是你触碰了不该触碰的内存。
+Dialogue: 0,0:38:38.86,0:38:47.28,chinese,,0,0,0,,其实，我都不用看到具体的代码，如果你们出现过 segment fault（段错误）什么的，\N大概率就是访问了不该操作的内存。
 Dialogue: 0,0:38:47.28,0:38:49.29,english,,0,0,0,,You maybe looped too many times.
-Dialogue: 0,0:38:47.28,0:38:49.29,chinese,,0,0,0,,你可能循环了太多次。
+Dialogue: 0,0:38:47.28,0:38:49.29,chinese,,0,0,0,,可能是你循环的次数太多了。
 Dialogue: 0,0:38:49.29,0:38:52.77,english,,0,0,0,,You might have used a negative number to get into your array.
-Dialogue: 0,0:38:49.29,0:38:52.77,chinese,,0,0,0,,你可能使用了负数来进入数组。
+Dialogue: 0,0:38:49.29,0:38:52.77,chinese,,0,0,0,,可能是你用了负数的下标来访问数组。
 Dialogue: 0,0:38:52.77,0:38:55.22,english,,0,0,0,,In general, you touched memory that you shouldn't have.
-Dialogue: 0,0:38:52.77,0:38:55.22,chinese,,0,0,0,,总的来说，你触及了不该触及的记忆。
+Dialogue: 0,0:38:52.77,0:38:55.22,chinese,,0,0,0,,总而言之，你访问了不该操作的内存。
 Dialogue: 0,0:38:55.22,0:38:57.72,english,,0,0,0,,And you touched a segment of memory that you shouldn't have.
-Dialogue: 0,0:38:55.22,0:38:57.72,chinese,,0,0,0,,你触及了一段不该触及的记忆。
+Dialogue: 0,0:38:55.22,0:38:57.72,chinese,,0,0,0,,访问了不该访问的内存段。
 Dialogue: 0,0:38:57.72,0:39:00.06,english,,0,0,0,,The fix, though, at least in my case, is simple.
-Dialogue: 0,0:38:57.72,0:39:00.06,chinese,,0,0,0,,不过，至少对我来说，解决方法很简单。
+Dialogue: 0,0:38:57.72,0:39:00.06,chinese,,0,0,0,,不过，至少在这里，解决方法很简单。
 Dialogue: 0,0:39:00.06,0:39:01.30,english,,0,0,0,,Just don't do that.
-Dialogue: 0,0:39:00.06,0:39:01.30,chinese,,0,0,0,,别这么做
+Dialogue: 0,0:39:00.06,0:39:01.30,chinese,,0,0,0,,不要这么做就行了。
 Dialogue: 0,0:39:01.30,0:39:03.21,english,,0,0,0,,So let me go ahead and recompile this.
-Dialogue: 0,0:39:01.30,0:39:03.21,chinese,,0,0,0,,所以，让我继续重新编译。
+Dialogue: 0,0:39:01.30,0:39:03.21,chinese,,0,0,0,,我继续重新编译。
 Dialogue: 0,0:39:03.21,0:39:06.87,english,,0,0,0,,Make search dot slash search.
-Dialogue: 0,0:39:03.21,0:39:06.87,chinese,,0,0,0,,进行点斜线搜索。
+Dialogue: 0,0:39:03.21,0:39:06.87,chinese,,0,0,0,,来走流程。
 Dialogue: 0,0:39:06.87,0:39:10.32,english,,0,0,0,,And I'll search again for race car, Enter.
-Dialogue: 0,0:39:06.87,0:39:10.32,chinese,,0,0,0,,我再搜索一下赛车，回车。
+Dialogue: 0,0:39:06.87,0:39:10.32,chinese,,0,0,0,,我还是想要搜索一下 race car。
 Dialogue: 0,0:39:10.32,0:39:11.85,english,,0,0,0,,And now it does not crash.
 Dialogue: 0,0:39:10.32,0:39:11.85,chinese,,0,0,0,,现在它不会崩溃了。
 Dialogue: 0,0:39:11.85,0:39:13.63,english,,0,0,0,,But it does tell me it's not found.
-Dialogue: 0,0:39:11.85,0:39:13.63,chinese,,0,0,0,,但它确实告诉我找不到。
+Dialogue: 0,0:39:11.85,0:39:13.63,chinese,,0,0,0,,它确切地告诉我没有找到。
 Dialogue: 0,0:39:13.63,0:39:17.04,english,,0,0,0,,So subtle, but something you might yourself have tripped over already.
-Dialogue: 0,0:39:13.63,0:39:17.04,chinese,,0,0,0,,如此微妙，但你自己可能已经被绊倒了。
+Dialogue: 0,0:39:13.63,0:39:17.04,chinese,,0,0,0,,就这么一个细节的问题，你自己写的话可能会被卡住 。
 Dialogue: 0,0:39:17.04,0:39:23.19,english,,0,0,0,,Questions then, on what I just did, intentionally or otherwise.
-Dialogue: 0,0:39:17.04,0:39:23.19,chinese,,0,0,0,,那么，请就我刚才有意无意的行为提出问题。
+Dialogue: 0,0:39:17.04,0:39:23.19,chinese,,0,0,0,,那么，对于我刚才有意无意写下的程序，请你们提出问题吧。
 Dialogue: 0,0:39:23.19,0:39:24.42,english,,0,0,0,,Yeah, in front.
-Dialogue: 0,0:39:23.19,0:39:24.42,chinese,,0,0,0,,是啊，在前面。
+Dialogue: 0,0:39:23.19,0:39:24.42,chinese,,0,0,0,,好，前面这位。
 Dialogue: 0,0:39:24.42,0:39:31.27,english,,0,0,0,,STUDENT: One thing is the program still works if you do return-- if you don't do return 0, return 1.
-Dialogue: 0,0:39:24.42,0:39:31.27,chinese,,0,0,0,,学生：有一点是，如果你不返回 0，而是返回 1，程序仍然可以运行。
+Dialogue: 0,0:39:24.42,0:39:31.27,chinese,,0,0,0,,有一点是，如果你不 return 0、return 1 什么的，程序还是可以运行啊。
 Dialogue: 0,0:39:31.27,0:39:33.22,english,,0,0,0,,So what is the purpose of doing [INAUDIBLE]??
-Dialogue: 0,0:39:31.27,0:39:33.22,chinese,,0,0,0,,那么，这样做的目的是什么？
+Dialogue: 0,0:39:31.27,0:39:33.22,chinese,,0,0,0,,那这样做的目的是什么呢？
 Dialogue: 0,0:39:33.22,0:39:34.72,english,,0,0,0,,DAVID MALAN: A really good question.
-Dialogue: 0,0:39:33.22,0:39:34.72,chinese,,0,0,0,,这真是一个好问题。
+Dialogue: 0,0:39:33.22,0:39:34.72,chinese,,0,0,0,,这个问题太好了。
 Dialogue: 0,0:39:34.72,0:39:38.92,english,,0,0,0,,So the program will still work even if I don't return 0 or return 1.
-Dialogue: 0,0:39:34.72,0:39:38.92,chinese,,0,0,0,,因此，即使我不返回 0 或返回 1，程序仍然可以运行。
+Dialogue: 0,0:39:34.72,0:39:38.92,chinese,,0,0,0,,他说，即使我不 return 0 或 return 1，程序还是能够运行。
 Dialogue: 0,0:39:38.92,0:39:43.93,english,,0,0,0,,In fact, let me go ahead and do that and just hide my terminal window for a second.
-Dialogue: 0,0:39:38.92,0:39:43.93,chinese,,0,0,0,,事实上，让我先把终端窗口隐藏起来。
+Dialogue: 0,0:39:38.92,0:39:43.93,chinese,,0,0,0,,我先来把终端窗口隐藏起来。
 Dialogue: 0,0:39:43.93,0:39:48.04,english,,0,0,0,,Let's get rid of the return here.
-Dialogue: 0,0:39:43.93,0:39:48.04,chinese,,0,0,0,,让我们在这里摆脱回程。
+Dialogue: 0,0:39:43.93,0:39:48.04,chinese,,0,0,0,,把这里的 return 全都删掉。
 Dialogue: 0,0:39:48.04,0:39:50.81,english,,0,0,0,,However, watch what happens here.
-Dialogue: 0,0:39:48.04,0:39:50.81,chinese,,0,0,0,,然而，请看这里发生了什么。
+Dialogue: 0,0:39:48.04,0:39:50.81,chinese,,0,0,0,,然而，请看这里会发生什么。
 Dialogue: 0,0:39:50.81,0:39:53.71,english,,0,0,0,,Let me go ahead and recompile this, make search.
-Dialogue: 0,0:39:50.81,0:39:53.71,chinese,,0,0,0,,让我继续重新编译，进行搜索。
+Dialogue: 0,0:39:50.81,0:39:53.71,chinese,,0,0,0,,走个编译流程。
 Dialogue: 0,0:39:53.71,0:39:55.61,english,,0,0,0,,Let me scroll up in my code here.
-Dialogue: 0,0:39:53.71,0:39:55.61,chinese,,0,0,0,,让我在代码中向上滚动。
+Dialogue: 0,0:39:53.71,0:39:55.61,chinese,,0,0,0,,把代码滚到下面来。
 Dialogue: 0,0:39:55.61,0:39:57.56,english,,0,0,0,,Let me go ahead and do dot slash search.
-Dialogue: 0,0:39:55.61,0:39:57.56,chinese,,0,0,0,,让我继续进行点斜线搜索。
+Dialogue: 0,0:39:55.61,0:39:57.56,chinese,,0,0,0,,执行以下。
 Dialogue: 0,0:39:57.56,0:40:02.80,english,,0,0,0,,And let me go ahead and search for the first thing in the list, battle ship, so I know that this should be found.
-Dialogue: 0,0:39:57.56,0:40:02.80,chinese,,0,0,0,,让我继续搜索列表中的第一件事--战舰，这样我就知道应该能找到它。
+Dialogue: 0,0:39:57.56,0:40:02.80,chinese,,0,0,0,,我现在要搜索列表里第一个，battle ship，应该会找到。
 Dialogue: 0,0:40:02.80,0:40:04.69,english,,0,0,0,,I hit Enter.
-Dialogue: 0,0:40:02.80,0:40:04.69,chinese,,0,0,0,,我按了回车键。
+Dialogue: 0,0:40:02.80,0:40:04.69,chinese,,0,0,0,,按下回车。
 Dialogue: 0,0:40:04.69,0:40:05.85,english,,0,0,0,,Huh, interesting.
 Dialogue: 0,0:40:04.69,0:40:05.85,chinese,,0,0,0,,嗯，有意思。
 Dialogue: 0,0:40:05.85,0:40:07.15,english,,0,0,0,,So it's saying found not found.
-Dialogue: 0,0:40:05.85,0:40:07.15,chinese,,0,0,0,,所以它说 "未找到"。
+Dialogue: 0,0:40:05.85,0:40:07.15,chinese,,0,0,0,,结果它没找着。
 Dialogue: 0,0:40:07.15,0:40:11.49,english,,0,0,0,,But do you see why, logically, in this case?
-Dialogue: 0,0:40:07.15,0:40:11.49,chinese,,0,0,0,,但是，从逻辑上讲，在这种情况下，你明白为什么吗？
+Dialogue: 0,0:40:07.15,0:40:11.49,chinese,,0,0,0,,但是，从逻辑上讲，这种情况你知道为啥吗？
 Dialogue: 0,0:40:11.49,0:40:12.98,english,,0,0,0,,STUDENT: Is the loop still running?
-Dialogue: 0,0:40:11.49,0:40:12.98,chinese,,0,0,0,,学生：循环还在运行吗？
+Dialogue: 0,0:40:11.49,0:40:12.98,chinese,,0,0,0,,循环还在运行吗？
 Dialogue: 0,0:40:12.98,0:40:13.91,english,,0,0,0,,DAVID MALAN: Exactly.
 Dialogue: 0,0:40:12.98,0:40:13.91,chinese,,0,0,0,,没错。
 Dialogue: 0,0:40:13.91,0:40:15.30,english,,0,0,0,,So the loop is still running.
-Dialogue: 0,0:40:13.91,0:40:15.30,chinese,,0,0,0,,因此，循环仍在运行。
+Dialogue: 0,0:40:13.91,0:40:15.30,chinese,,0,0,0,,是因为循环还在运行。
 Dialogue: 0,0:40:15.30,0:40:17.01,english,,0,0,0,,So there's a couple of solutions to this.
-Dialogue: 0,0:40:15.30,0:40:17.01,chinese,,0,0,0,,因此，有几种解决方案可以解决这个问题。
+Dialogue: 0,0:40:15.30,0:40:17.01,chinese,,0,0,0,,所以这个问题有几种解决方案。
 Dialogue: 0,0:40:17.01,0:40:21.08,english,,0,0,0,,I could, for instance, somehow break out of the code here.
-Dialogue: 0,0:40:17.01,0:40:21.08,chinese,,0,0,0,,例如，我可以用某种方法跳出这里的代码。
+Dialogue: 0,0:40:17.01,0:40:21.08,chinese,,0,0,0,,比如说，我可以用 break，跳出这里的循环。
+Dialogue: 0,0:40:17.01,0:40:21.08,annotation,,0,0,0,,*注：这个知识点前面没有提到过，可以用 break 跳出 for、while 循环。
 Dialogue: 0,0:40:21.08,0:40:24.20,english,,0,0,0,,But that's going to still result in line 18 executing.
-Dialogue: 0,0:40:21.08,0:40:24.20,chinese,,0,0,0,,但这仍会导致执行第 18 行。
+Dialogue: 0,0:40:21.08,0:40:24.20,chinese,,0,0,0,,第 18 行还是要执行的。
 Dialogue: 0,0:40:24.20,0:40:26.60,english,,0,0,0,,I could then instead just return here.
-Dialogue: 0,0:40:24.20,0:40:26.60,chinese,,0,0,0,,这样我就可以直接回到这里了。
+Dialogue: 0,0:40:24.20,0:40:26.60,chinese,,0,0,0,,在这里 return 0 也是可以的。
 Dialogue: 0,0:40:26.60,0:40:29.39,english,,0,0,0,,I don't strictly need to return 1 down at the bottom.
-Dialogue: 0,0:40:26.60,0:40:29.39,chinese,,0,0,0,,严格来说，我并不需要在底部返回 1。
+Dialogue: 0,0:40:26.60,0:40:29.39,chinese,,0,0,0,,严格来说，在底部 return 1 不是必须的。
 Dialogue: 0,0:40:29.39,0:40:39.30,english,,0,0,0,,But I made this claim last week that it tends to be helpful as your programs get more sophisticated, to at least signify, just like a real world programmer, error codes when something goes wrong.
-Dialogue: 0,0:40:29.39,0:40:39.30,chinese,,0,0,0,,但我上周说过，当你的程序越来越复杂时，至少要像现实世界中的程序员一样，在出错时给出错误代码，这往往会有所帮助。
+Dialogue: 0,0:40:29.39,0:40:39.30,chinese,,0,0,0,,但我上周说过，当你的程序越来越复杂时，\N就要学着像工业环境里面的程序员一样，在出错时给出错误代码，这往往会有所帮助。
 Dialogue: 0,0:40:39.30,0:40:44.09,english,,0,0,0,,So returning 0 in main is the easiest way to signify my code is done.
-Dialogue: 0,0:40:39.30,0:40:44.09,chinese,,0,0,0,,因此，在 main 中返回 0 是表示代码完成的最简单方法。
+Dialogue: 0,0:40:39.30,0:40:44.09,chinese,,0,0,0,,因此，main 里返回 0 是表示程序执行完成的最简单方法。
 Dialogue: 0,0:40:44.09,0:40:46.34,english,,0,0,0,,I'm ready to exit successfully, that's it.
 Dialogue: 0,0:40:44.09,0:40:46.34,chinese,,0,0,0,,我已经准备好成功退出了，就这样。
 Dialogue: 0,0:40:46.34,0:40:50.28,english,,0,0,0,,But down here, I could absolutely still return 0, because that's not a huge deal.
-Dialogue: 0,0:40:46.34,0:40:50.28,chinese,,0,0,0,,但在这里，我绝对还是可以返回 0，因为这不是什么大问题。
+Dialogue: 0,0:40:46.34,0:40:50.28,chinese,,0,0,0,,但在这里，return 0 也是绝对可以的，不是啥大问题。
 Dialogue: 0,0:40:50.28,0:40:55.20,english,,0,0,0,,It's not really an error that deserves annoying the user with some kind of pop up that something went wrong.
-Dialogue: 0,0:40:50.28,0:40:55.20,chinese,,0,0,0,,这并不是一个真正的错误，不值得用某种弹出窗口来提醒用户出了问题。
+Dialogue: 0,0:40:50.28,0:40:55.20,chinese,,0,0,0,,这并不是一个真正的错误，不值得弹出一个窗口来提醒用户出了问题。
 Dialogue: 0,0:40:55.20,0:41:00.33,english,,0,0,0,,But return 1 is just a lower level way of signaling, eh, it didn't really find what I was looking for.
-Dialogue: 0,0:40:55.20,0:41:00.33,chinese,,0,0,0,,但返回值 1 只是一种较低级的信号，表示 "嗯，它并没有找到我要找的东西"。
+Dialogue: 0,0:40:55.20,0:41:00.33,chinese,,0,0,0,,但 return 1 只是一种低层次的信号，表示 "嗯，它并没有找到我想要的东西"。
 Dialogue: 0,0:41:00.33,0:41:03.51,english,,0,0,0,,And remember from last week, you can see this as follows.
 Dialogue: 0,0:41:00.33,0:41:03.51,chinese,,0,0,0,,还记得上周的内容吗？
 Dialogue: 0,0:41:03.51,0:41:08.06,english,,0,0,0,,If I recompile this again, now that I've reverted those changes, so make search.
-Dialogue: 0,0:41:03.51,0:41:08.06,chinese,,0,0,0,,如果我重新编译，现在我已经还原了这些更改，所以请进行搜索。
+Dialogue: 0,0:41:03.51,0:41:08.06,chinese,,0,0,0,,重新编译一下，现在我已经改回去了，make search。
 Dialogue: 0,0:41:08.06,0:41:19.79,english,,0,0,0,,And if I do a dot slash search and search for battle ship, which is indeed found, recall I can execute this magical command, echo dollar sign question mark, which you're not going to often execute.
-Dialogue: 0,0:41:08.06,0:41:19.79,chinese,,0,0,0,,如果我进行点斜线搜索，搜索战舰，确实找到了，那么我就可以执行这个神奇的命令，回声美元符号问号，你不会经常执行这个命令。
+Dialogue: 0,0:41:08.06,0:41:19.79,chinese,,0,0,0,,./search，搜索 battle ship，确实找到了，\N就可以执行那个神奇的命令，each $?，你不会经常执行这个命令。
 Dialogue: 0,0:41:19.79,0:41:22.79,english,,0,0,0,,But it shows you what main returned.
-Dialogue: 0,0:41:19.79,0:41:22.79,chinese,,0,0,0,,但它向你展示了返回的主要内容。
+Dialogue: 0,0:41:19.79,0:41:22.79,chinese,,0,0,0,,它确实可以向你展示 main 函数的返回值。
 Dialogue: 0,0:41:22.79,0:41:27.77,english,,0,0,0,,If I run search again and search for race car, which is not found,
-Dialogue: 0,0:41:22.79,0:41:27.77,chinese,,0,0,0,,如果我再次运行搜索，搜索赛车，但没有找到、
+Dialogue: 0,0:41:22.79,0:41:27.77,chinese,,0,0,0,,再次运行，搜索 race car，但找不到的，
 Dialogue: 0,0:41:27.77,0:41:32.15,english,,0,0,0,,I see not found, but I can also run this command again and see that, oh, it returned 1.
-Dialogue: 0,0:41:27.77,0:41:32.15,chinese,,0,0,0,,我看到了未找到，但我也可以再次运行这条命令，并看到，哦，它返回了 1。
+Dialogue: 0,0:41:27.77,0:41:32.15,chinese,,0,0,0,,得到了 Not found，来执行 each $?，就看到它返回了 1。
 Dialogue: 0,0:41:32.15,0:41:40.10,english,,0,0,0,,So now if you fast forward a few months, a few years, when you're actually writing code in a company or for larger projects, you might want to be automating software.
-Dialogue: 0,0:41:32.15,0:41:40.10,chinese,,0,0,0,,因此，如果把时间快进到几个月或几年后，当你在一家公司或大型项目中实际编写代码时，你可能会希望实现软件自动化。
+Dialogue: 0,0:41:32.15,0:41:40.10,chinese,,0,0,0,,所以说，如果快进到几个月几年以后，\N当你们实际在公司或大型项目中编写代码时，你可能会希望实现软件自动化。
 Dialogue: 0,0:41:40.10,0:41:43.10,english,,0,0,0,,You might not want the human to necessarily be running it manually.
-Dialogue: 0,0:41:40.10,0:41:43.10,chinese,,0,0,0,,你可能不希望人类一定要手动运行它。
+Dialogue: 0,0:41:40.10,0:41:43.10,chinese,,0,0,0,,不希望每次都一定要我们手动运行程序。
 Dialogue: 0,0:41:43.10,0:41:48.36,english,,0,0,0,,You might want code to be automated by some nightly process or something like that.
-Dialogue: 0,0:41:43.10,0:41:48.36,chinese,,0,0,0,,你可能希望通过夜间程序或类似程序自动执行代码。
+Dialogue: 0,0:41:43.10,0:41:48.36,chinese,,0,0,0,,可能希望在每天晚上或者什么时间，代码能够自动化地执行一些任务。
 Dialogue: 0,0:41:48.36,0:41:55.91,english,,0,0,0,,Using these exit codes, can a program determine yes or no that other code succeeded or failed.
-Dialogue: 0,0:41:48.36,0:41:55.91,chinese,,0,0,0,,利用这些退出代码，程序能否确定其他代码成功或失败。
+Dialogue: 0,0:41:48.36,0:41:55.91,chinese,,0,0,0,,利用好这些退出代码，程序就能够确定其他代码是运行成功还是失败。
 Dialogue: 0,0:41:55.91,0:42:01.85,english,,0,0,0,,Other questions on linear search in this way.
-Dialogue: 0,0:41:55.91,0:42:01.85,chinese,,0,0,0,,以这种方式进行线性查找的其他问题。
+Dialogue: 0,0:41:55.91,0:42:01.85,chinese,,0,0,0,,关于线性查找，还有问题吗大家？
 Dialogue: 0,0:42:01.85,0:42:02.35,english,,0,0,0,,No?
 Dialogue: 0,0:42:02.35,0:42:11.59,english,,0,0,0,,All right, well, let's translate this to one other feature of C here by incorporating these two ideas now into one other program.
-Dialogue: 0,0:42:02.35,0:42:11.59,chinese,,0,0,0,,好吧，让我们将这两个想法融入到另一个程序中，从而将其转化为 C 语言的另一个特性。
+Dialogue: 0,0:42:02.35,0:42:11.59,chinese,,0,0,0,,好的，那我们继续这个思想，\N再加上 C 的另一个特性，把两个东西结合起来写一个程序。
 Dialogue: 0,0:42:11.59,0:42:16.60,english,,0,0,0,,So I'm going to create a phone book in C by doing code space phonebook dot C.
-Dialogue: 0,0:42:11.59,0:42:16.60,chinese,,0,0,0,,因此，我将通过代码空间 phonebook dot C 创建一个 C 语言电话簿。
+Dialogue: 0,0:42:11.59,0:42:16.60,chinese,,0,0,0,,code phonebook.c，这样来创建一个 C 语言写的电话簿。
 Dialogue: 0,0:42:16.60,0:42:23.03,english,,0,0,0,,And let's combine some of these ideas and implement this notion of searching a phonebook for an actual name and getting back a number.
-Dialogue: 0,0:42:16.60,0:42:23.03,chinese,,0,0,0,,让我们把这些想法结合起来，实现在电话簿中搜索真实姓名并返回号码的概念。
+Dialogue: 0,0:42:16.60,0:42:23.03,chinese,,0,0,0,,把这些想法结合起来，我们实现一个在电话簿里搜索真实姓名，返回对应的号码。
 Dialogue: 0,0:42:23.03,0:42:30.86,english,,0,0,0,,So I'm going to go ahead and quickly include some of the same things, cs50.h so we can get input. standard io dot h so we can print output.
-Dialogue: 0,0:42:23.03,0:42:30.86,chinese,,0,0,0,,因此，我将继续快速包含一些相同的内容，如 cs50.h，以便我们获取输入。
+Dialogue: 0,0:42:23.03,0:42:30.86,chinese,,0,0,0,,【口述代码】
 Dialogue: 0,0:42:30.86,0:42:39.01,english,,0,0,0,,And I'm going to preemptively include string.h in case we need that one as well. int main void, no need for command line arguments today.
-Dialogue: 0,0:42:30.86,0:42:39.01,chinese,,0,0,0,,我还会预先包含 string.h，以备不时之需。 int main void，今天不需要命令行参数。
+Dialogue: 0,0:42:30.86,0:42:39.01,chinese,,0,0,0,,【口述代码】
 Dialogue: 0,0:42:39.01,0:42:42.65,english,,0,0,0,,And let me give myself, now, an array of names for this phone book.
-Dialogue: 0,0:42:39.01,0:42:42.65,chinese,,0,0,0,,现在，让我给自己的电话簿起个名字吧。
+Dialogue: 0,0:42:39.01,0:42:42.65,chinese,,0,0,0,,现在，我把电话簿数组叫做 names。
 Dialogue: 0,0:42:42.65,0:42:45.04,english,,0,0,0,,So string names equals.
-Dialogue: 0,0:42:42.65,0:42:45.04,chinese,,0,0,0,,因此，字符串名称等于
+Dialogue: 0,0:42:42.65,0:42:45.04,chinese,,0,0,0,,【口述代码】
 Dialogue: 0,0:42:45.04,0:42:50.84,english,,0,0,0,,And then in curly braces, how about Carter will be one person in the phone book, and David, myself, will be the other.
-Dialogue: 0,0:42:45.04,0:42:50.84,chinese,,0,0,0,,然后在大括号里，Carter将是电话簿上的一个人，而 David，也就是我，将是另一个人。
+Dialogue: 0,0:42:45.04,0:42:50.84,chinese,,0,0,0,,【口述代码】
 Dialogue: 0,0:42:50.84,0:42:53.46,english,,0,0,0,,So we'll keep it short so we don't have to type too many names.
-Dialogue: 0,0:42:50.84,0:42:53.46,chinese,,0,0,0,,所以我们长话短说，免得打出太多名字。
+Dialogue: 0,0:42:50.84,0:42:53.46,chinese,,0,0,0,,所以我们一切从简，不打出那么多名字来。
 Dialogue: 0,0:42:53.46,0:42:55.84,english,,0,0,0,,But this is a phone book with two people thus far.
-Dialogue: 0,0:42:53.46,0:42:55.84,chinese,,0,0,0,,但到目前为止，这是一本有两个人的电话簿。
+Dialogue: 0,0:42:53.46,0:42:55.84,chinese,,0,0,0,,直到现在，电话簿上有两个人了。
 Dialogue: 0,0:42:55.84,0:42:59.62,english,,0,0,0,,Suppose, now, we want to also store Carter's phone number in mind.
-Dialogue: 0,0:42:55.84,0:42:59.62,chinese,,0,0,0,,假设现在我们还想存储Carter的电话号码。
+Dialogue: 0,0:42:55.84,0:42:59.62,chinese,,0,0,0,,要是现在我们还想存储 Carter 的电话号码。
 Dialogue: 0,0:42:59.62,0:43:01.42,english,,0,0,0,,So it's not just saying found or not found.
-Dialogue: 0,0:42:59.62,0:43:01.42,chinese,,0,0,0,,所以，它不只是说找到或没找到。
+Dialogue: 0,0:42:59.62,0:43:01.42,chinese,,0,0,0,,现在不是说找到或者没找到了。
 Dialogue: 0,0:43:01.42,0:43:05.32,english,,0,0,0,,It's literally looking up our phone numbers like a proper phone book.
-Dialogue: 0,0:43:01.42,0:43:05.32,chinese,,0,0,0,,它就像一本正规的电话簿一样查找我们的电话号码。
+Dialogue: 0,0:43:01.42,0:43:05.32,chinese,,0,0,0,,要像一本正规的电话簿一样，能够查询电话号码。
 Dialogue: 0,0:43:05.32,0:43:09.44,english,,0,0,0,,Well, at the moment, there's really no way to do this.
-Dialogue: 0,0:43:05.32,0:43:09.44,chinese,,0,0,0,,目前确实没有办法做到这一点。
+Dialogue: 0,0:43:05.32,0:43:09.44,chinese,,0,0,0,,目前的代码还不得行。
 Dialogue: 0,0:43:09.44,0:43:16.51,english,,0,0,0,,I could do something hackish like I could put a number like 617-495-1000 after Carter.
-Dialogue: 0,0:43:09.44,0:43:16.51,chinese,,0,0,0,,我可以做点小动作，比如在Carter后面加个号码，比如 617-495-1000。
+Dialogue: 0,0:43:09.44,0:43:16.51,chinese,,0,0,0,,我要做点小动作，在 Carter 后面加个号码，比如 617-495-1000。
 Dialogue: 0,0:43:16.51,0:43:22.46,english,,0,0,0,,I could maybe do something like 949-468-2750 after me.
-Dialogue: 0,0:43:16.51,0:43:22.46,chinese,,0,0,0,,我也许可以在我身后做一些类似 949-468-2750 的事情。
+Dialogue: 0,0:43:16.51,0:43:22.46,chinese,,0,0,0,,我自己名字后面加个 949-468-2750。
 Dialogue: 0,0:43:22.46,0:43:25.30,english,,0,0,0,,But now you're kind of doing the whole apples and oranges thing.
-Dialogue: 0,0:43:22.46,0:43:25.30,chinese,,0,0,0,,但现在你却在做 "苹果和橘子 "的事情。
+Dialogue: 0,0:43:22.46,0:43:25.30,chinese,,0,0,0,,这俩玩意风马牛不相及啊。
 Dialogue: 0,0:43:25.30,0:43:26.47,english,,0,0,0,,Now, it's not strings.
-Dialogue: 0,0:43:25.30,0:43:26.47,chinese,,0,0,0,,现在，它不是字符串了。
+Dialogue: 0,0:43:25.30,0:43:26.47,chinese,,0,0,0,,这又不是字符串。
 Dialogue: 0,0:43:26.47,0:43:28.42,english,,0,0,0,,It's a string int, string int.
-Dialogue: 0,0:43:26.47,0:43:28.42,chinese,,0,0,0,,是字符串 int，字符串 int。
+Dialogue: 0,0:43:26.47,0:43:28.42,chinese,,0,0,0,,数组里面是：string、int、string、int。
 Dialogue: 0,0:43:28.42,0:43:31.24,english,,0,0,0,,All right, so maybe I could just make all of these strings.
-Dialogue: 0,0:43:28.42,0:43:31.24,chinese,,0,0,0,,好吧，也许我可以把这些字符串都做出来。
+Dialogue: 0,0:43:28.42,0:43:31.24,chinese,,0,0,0,,好吧，要不我就把全部都变成 string。
 Dialogue: 0,0:43:31.24,0:43:34.60,english,,0,0,0,,But now it's just a conceptual mixing of apples and oranges.
-Dialogue: 0,0:43:31.24,0:43:34.60,chinese,,0,0,0,,但现在，这只是在概念上把苹果和橘子混为一谈。
+Dialogue: 0,0:43:31.24,0:43:34.60,chinese,,0,0,0,,从类型上把两种东西统一一下。
 Dialogue: 0,0:43:34.60,0:43:36.42,english,,0,0,0,,Like yes, that's an array of four strings.
-Dialogue: 0,0:43:34.60,0:43:36.42,chinese,,0,0,0,,没错，这是一个由四个字符串组成的数组。
+Dialogue: 0,0:43:34.60,0:43:36.42,chinese,,0,0,0,,没错，现在的数组由四个 string 组成了。
 Dialogue: 0,0:43:36.42,0:43:43.10,english,,0,0,0,,But now you're on the honor system to know that the first string is a name, the second string is a number, the third string is-- you can do it.
-Dialogue: 0,0:43:36.42,0:43:43.10,chinese,,0,0,0,,但现在你可以通过荣誉系统知道 第一个字符串是名字 第二个字符串是数字 第三个字符串是 你可以做到的
+Dialogue: 0,0:43:36.42,0:43:43.10,chinese,,0,0,0,,我们现在必须守着规矩，\N第一个 string 是名字，第二个是电话号码；第三个是名字... 你得保持下去。
 Dialogue: 0,0:43:43.10,0:43:45.11,english,,0,0,0,,But it's a bit of a hack, so to speak.
-Dialogue: 0,0:43:43.10,0:43:45.11,chinese,,0,0,0,,但可以说，这有点像 "黑客"。
+Dialogue: 0,0:43:43.10,0:43:45.11,chinese,,0,0,0,,可以说，这有点太乱来了。
 Dialogue: 0,0:43:45.11,0:43:47.30,english,,0,0,0,,So what might be cleaner than this?
-Dialogue: 0,0:43:45.11,0:43:47.30,chinese,,0,0,0,,那么，还有什么比这更干净的呢？
+Dialogue: 0,0:43:45.11,0:43:47.30,chinese,,0,0,0,,我们怎么做可以规范一点？
 Dialogue: 0,0:43:47.30,0:43:55.48,english,,0,0,0,,Instead of combining our phone numbers into the same array as our names, what else might we do that's perhaps a little better?
-Dialogue: 0,0:43:47.30,0:43:55.48,chinese,,0,0,0,,与其把电话号码和姓名合并到同一个数组中，我们还能做些什么更好的事情呢？
+Dialogue: 0,0:43:47.30,0:43:55.48,chinese,,0,0,0,,不要把电话号码和姓名合并到同一个数组里面，我们能不能更加优雅一点？
 Dialogue: 0,0:43:55.48,0:43:56.44,english,,0,0,0,,Say it little louder.
-Dialogue: 0,0:43:55.48,0:43:56.44,chinese,,0,0,0,,说大声点
+Dialogue: 0,0:43:55.48,0:43:56.44,chinese,,0,0,0,,大声点说出来。
 Dialogue: 0,0:43:58.96,0:44:01.19,english,,0,0,0,,A 2D array, possibly something we could do.
-Dialogue: 0,0:43:58.96,0:44:01.19,chinese,,0,0,0,,二维阵列，可能是我们可以做到的。
+Dialogue: 0,0:43:58.96,0:44:01.19,chinese,,0,0,0,,二维数组，可能是个解决办法。
 Dialogue: 0,0:44:01.19,0:44:07.82,english,,0,0,0,,I'm going to keep it even simpler now, because we haven't used those by name, even though that is, we saw last week, technically what argv is.
-Dialogue: 0,0:44:01.19,0:44:07.82,chinese,,0,0,0,,我现在要把它说得更简单一些，因为我们还没有使用过这些文件的名称，尽管我们上周已经看到，从技术上讲，argv 就是这样的文件。
+Dialogue: 0,0:44:01.19,0:44:07.82,chinese,,0,0,0,,我们先简单点，不把所有都塞进 names 数组里面，其实从技术实现上，argv 就是这么做的。
+Dialogue: 0,0:44:01.19,0:44:07.82,annotation,,0,0,0,,*注：是指 argv 把所有的参数都当作一整个 string 数组，不分什么 int。
 Dialogue: 0,0:44:07.82,0:44:10.24,english,,0,0,0,,What else could I do if I want to store names and numbers?
-Dialogue: 0,0:44:07.82,0:44:10.24,chinese,,0,0,0,,如果我想存储姓名和数字，还能做什么？
+Dialogue: 0,0:44:07.82,0:44:10.24,chinese,,0,0,0,,如果我想存储名字和数字，还能怎么做？
 Dialogue: 0,0:44:10.24,0:44:11.14,english,,0,0,0,,Yeah.
 Dialogue: 0,0:44:11.14,0:44:12.22,english,,0,0,0,,STUDENT: [INAUDIBLE]
-Dialogue: 0,0:44:11.14,0:44:12.22,chinese,,0,0,0,,学生：[听不清]
 Dialogue: 0,0:44:12.22,0:44:13.69,english,,0,0,0,,DAVID MALAN: Yeah, let me go with this suggestion.
-Dialogue: 0,0:44:12.22,0:44:13.69,chinese,,0,0,0,,是的，我同意这个建议。
+Dialogue: 0,0:44:12.22,0:44:13.69,chinese,,0,0,0,,我非常认可这个建议。
 Dialogue: 0,0:44:13.69,0:44:14.60,english,,0,0,0,,It's a little simpler.
 Dialogue: 0,0:44:13.69,0:44:14.60,chinese,,0,0,0,,这就简单多了。
 Dialogue: 0,0:44:14.60,0:44:18.97,english,,0,0,0,,Rather than complicate things in literally different dimensions, let me go ahead and do string.
-Dialogue: 0,0:44:14.60,0:44:18.97,chinese,,0,0,0,,与其把事情复杂化，还不如让我来做串联。
+Dialogue: 0,0:44:14.60,0:44:18.97,chinese,,0,0,0,,弄成二维数组把事情复杂化了，我现在要这么写...
 Dialogue: 0,0:44:18.97,0:44:21.73,english,,0,0,0,,Well, I could do int numbers.
-Dialogue: 0,0:44:18.97,0:44:21.73,chinese,,0,0,0,,好吧，我可以做 int 数字。
+Dialogue: 0,0:44:18.97,0:44:21.73,chinese,,0,0,0,,【口述代码】
 Dialogue: 0,0:44:21.73,0:44:22.69,english,,0,0,0,,But you know what?
 Dialogue: 0,0:44:21.73,0:44:22.69,chinese,,0,0,0,,但你知道吗？
 Dialogue: 0,0:44:22.69,0:44:29.20,english,,0,0,0,,So that we can support punctuation like dashes or even parentheses or country codes, I'm going to do this instead.
-Dialogue: 0,0:44:22.69,0:44:29.20,chinese,,0,0,0,,为了支持破折号、括号或国家代码等标点符号，我打算这样做。
+Dialogue: 0,0:44:22.69,0:44:29.20,chinese,,0,0,0,,为了支持破折号、括号或国家代码什么的符号，我打算不用 int。
+Dialogue: 0,0:44:22.69,0:44:29.20,chinese,,0,0,0,,*注：想想身份证，用 int 也存不下啊。所以直接用 string 了。
 Dialogue: 0,0:44:29.20,0:44:40.39,english,,0,0,0,,I'm going to do string numbers so that I can represent Carter's number as quote unquote plus 1 for the US, 617-495-1000, complete with hyphens, as is US convention.
-Dialogue: 0,0:44:29.20,0:44:40.39,chinese,,0,0,0,,我将使用字符串数字，这样就可以按照美国的惯例，将Carter的号码表示为引号加 1，即 617-495-1000，并加上连字符。
+Dialogue: 0,0:44:29.20,0:44:40.39,chinese,,0,0,0,,【口述代码】
 Dialogue: 0,0:44:40.39,0:44:47.93,english,,0,0,0,,And then for mine I'll go ahead and do +1-949-468-2750 semicolon.
-Dialogue: 0,0:44:40.39,0:44:47.93,chinese,,0,0,0,,然后，我将继续使用 +1-949-468-2750 分号。
+Dialogue: 0,0:44:40.39,0:44:47.93,chinese,,0,0,0,,【口述代码】
 Dialogue: 0,0:44:47.93,0:44:53.86,english,,0,0,0,,And now down below, let's actually enable the user to search this phone book, just like in week 0 we did.
-Dialogue: 0,0:44:47.93,0:44:53.86,chinese,,0,0,0,,现在，让我们像第 0 周那样，让用户搜索电话簿。
+Dialogue: 0,0:44:47.93,0:44:53.86,chinese,,0,0,0,,现在，要像第 0 周那样，让用户在电话簿里面查。
 Dialogue: 0,0:44:53.86,0:44:55.96,english,,0,0,0,,String name equals get string.
-Dialogue: 0,0:44:53.86,0:44:55.96,chinese,,0,0,0,,字符串名称等于获取字符串。
+Dialogue: 0,0:44:53.86,0:44:55.96,chinese,,0,0,0,,【口述代码】
 Dialogue: 0,0:44:55.96,0:44:59.99,english,,0,0,0,,And let's ask the user for a name, presumably David or Carter or someone else.
-Dialogue: 0,0:44:55.96,0:44:59.99,chinese,,0,0,0,,让我们询问用户的姓名，大概是 David、Carter 或其他人。
+Dialogue: 0,0:44:55.96,0:44:59.99,chinese,,0,0,0,,【口述代码】
 Dialogue: 0,0:44:59.99,0:45:01.85,english,,0,0,0,,And now let's re-implement linear search.
-Dialogue: 0,0:44:59.99,0:45:01.85,chinese,,0,0,0,,现在，让我们重新实现线性查找。
+Dialogue: 0,0:44:59.99,0:45:01.85,chinese,,0,0,0,,现在我们来重新实现一下线性查找。
 Dialogue: 0,0:45:01.85,0:45:05.92,english,,0,0,0,,So 4, int i get 0. i is less than 2.
-Dialogue: 0,0:45:01.85,0:45:05.92,chinese,,0,0,0,,因此，4，int i 得到 0，i 小于 2。
+Dialogue: 0,0:45:01.85,0:45:05.92,chinese,,0,0,0,,【口述代码】
 Dialogue: 0,0:45:05.92,0:45:07.51,english,,0,0,0,,And do as I say, not as I do.
-Dialogue: 0,0:45:05.92,0:45:07.51,chinese,,0,0,0,,照我说的做，而不是照我做的做。
+Dialogue: 0,0:45:05.92,0:45:07.51,chinese,,0,0,0,,注意我说的啊，不要每次都这么写。
 Dialogue: 0,0:45:07.51,0:45:13.22,english,,0,0,0,,I think we should beware this hard coding, but we'll keep it simple for now. i++.
-Dialogue: 0,0:45:07.51,0:45:13.22,chinese,,0,0,0,,我认为我们应该小心这种硬编码，但现在我们还是保持简单。
+Dialogue: 0,0:45:07.51,0:45:13.22,chinese,,0,0,0,,这种硬编码必须得避免，不过现在就简单起见。
 Dialogue: 0,0:45:13.22,0:45:17.15,english,,0,0,0,,And then in this for loop, I think we have all of the ingredients to solve this.
-Dialogue: 0,0:45:13.22,0:45:17.15,chinese,,0,0,0,,然后在这个 for 循环中，我认为我们已经具备了解决这个问题的所有要素。
+Dialogue: 0,0:45:13.22,0:45:17.15,chinese,,0,0,0,,用这个 for 循环，我觉得解决整个问题就足够了。
 Dialogue: 0,0:45:17.15,0:45:28.81,english,,0,0,0,,So if the return value of str compare of all of the names bracket i comparing against the name that the human typed in, if all of that equals
-Dialogue: 0,0:45:17.15,0:45:28.81,chinese,,0,0,0,,因此，如果字符串比较所有名称的返回值与人类键入的名称进行比较，如果所有返回值都等于
-Dialogue: 0,0:45:28.81,0:45:36.77,english,,0,0,0,,equals 0, that is, all of the characters in those two strings are equal, then I think we can go ahead and say found, just like last time.
+Dialogue: 0,0:45:17.15,0:45:28.81,chinese,,0,0,0,,【口述代码】
+Dialogue: 0,0:45:28.81,0:45:36.77,english,,0,0,0,,【口述代码】
 Dialogue: 0,0:45:28.81,0:45:36.77,chinese,,0,0,0,,等于 0，即这两个字符串中的所有字符都相等，那么我想我们就可以像上次一样说 "找到了"。
 Dialogue: 0,0:45:36.77,0:45:37.52,english,,0,0,0,,But you know what?
 Dialogue: 0,0:45:36.77,0:45:37.52,chinese,,0,0,0,,但你知道吗？
 Dialogue: 0,0:45:37.52,0:45:40.13,english,,0,0,0,,Let's actually print Carter's or my phone number.
-Dialogue: 0,0:45:37.52,0:45:40.13,chinese,,0,0,0,,我们来打印Carter或我的电话号码吧。
+Dialogue: 0,0:45:37.52,0:45:40.13,chinese,,0,0,0,,我们来打印下 Carter，或者我的电话号码吧。
 Dialogue: 0,0:45:40.13,0:45:44.77,english,,0,0,0,,So found percent s, and we'll plug in numbers, bracket i.
-Dialogue: 0,0:45:40.13,0:45:44.77,chinese,,0,0,0,,所以找到了百分数 s，我们将数字填入括号 i。
+Dialogue: 0,0:45:40.13,0:45:44.77,chinese,,0,0,0,,【口述代码】
 Dialogue: 0,0:45:44.77,0:45:47.80,english,,0,0,0,,And then just for consistency, I'll return 0 here.
-Dialogue: 0,0:45:44.77,0:45:47.80,chinese,,0,0,0,,然后，为了保持一致，我会在这里返回 0。
+Dialogue: 0,0:45:44.77,0:45:47.80,chinese,,0,0,0,,跟以前保持一致，我在这里 return 0。
 Dialogue: 0,0:45:47.80,0:45:53.60,english,,0,0,0,,And down here, how about I'll say something like printf not found, just to be clear.
-Dialogue: 0,0:45:47.80,0:45:53.60,chinese,,0,0,0,,为了清楚起见，我在下面会说 printf 未找到之类的话。
+Dialogue: 0,0:45:47.80,0:45:53.60,chinese,,0,0,0,,表达清楚一点，我在下面 printf 没找到之类的提示。
 Dialogue: 0,0:45:53.60,0:45:56.24,english,,0,0,0,,And then I'll return 1 as well.
-Dialogue: 0,0:45:53.60,0:45:56.24,chinese,,0,0,0,,然后，我也会返回 1。
+Dialogue: 0,0:45:53.60,0:45:56.24,chinese,,0,0,0,,然后，这里就 return 1。
 Dialogue: 0,0:45:56.24,0:45:58.12,english,,0,0,0,,So just to recap, here's all of the code.
-Dialogue: 0,0:45:56.24,0:45:58.12,chinese,,0,0,0,,下面是所有的代码。
+Dialogue: 0,0:45:56.24,0:45:58.12,chinese,,0,0,0,,来回顾一下这个程序所有的代码。
 Dialogue: 0,0:45:58.12,0:46:01.61,english,,0,0,0,,It's almost the same as before, except now it's useful.
-Dialogue: 0,0:45:58.12,0:46:01.61,chinese,,0,0,0,,和以前几乎一样，只不过现在有用了。
+Dialogue: 0,0:45:58.12,0:46:01.61,chinese,,0,0,0,,程序和以前变化不大，只不过现在能解决实际问题了。
 Dialogue: 0,0:46:01.61,0:46:03.46,english,,0,0,0,,I'm not just saying found or not found.
-Dialogue: 0,0:46:01.61,0:46:03.46,chinese,,0,0,0,,我不只是说找到或没找到。
+Dialogue: 0,0:46:01.61,0:46:03.46,chinese,,0,0,0,,不只是告诉用户，找到或者没找到。
 Dialogue: 0,0:46:03.46,0:46:07.18,english,,0,0,0,,I found a number in monopoly, or I found a piece in monopoly.
-Dialogue: 0,0:46:03.46,0:46:07.18,chinese,,0,0,0,,我在大富翁游戏中找到了一个数字，或者我在大富翁游戏中找到了一个棋子。
+Dialogue: 0,0:46:03.46,0:46:07.18,chinese,,0,0,0,,我在大富翁游戏里，找到了一个数字，或者找到了一个棋子。
 Dialogue: 0,0:46:07.18,0:46:09.88,english,,0,0,0,,I'm looking up in one array, one of the strings.
-Dialogue: 0,0:46:07.18,0:46:09.88,chinese,,0,0,0,,我正在一个数组中查找其中一个字符串。
+Dialogue: 0,0:46:07.18,0:46:09.88,chinese,,0,0,0,,这次是，在一个数组里，查找其中一个字符串。
 Dialogue: 0,0:46:09.88,0:46:12.73,english,,0,0,0,,And then I'm printing from the other array, the answer.
-Dialogue: 0,0:46:09.88,0:46:12.73,chinese,,0,0,0,,然后我从另一个数组中打印出答案。
+Dialogue: 0,0:46:09.88,0:46:12.73,chinese,,0,0,0,,如果找到了，就从另一个数组里打印出答案。
 Dialogue: 0,0:46:12.73,0:46:19.48,english,,0,0,0,,So let me go ahead here and run the compiler, make phone book, Enter.
-Dialogue: 0,0:46:12.73,0:46:19.48,chinese,,0,0,0,,让我继续运行编译器，制作电话簿，回车。
+Dialogue: 0,0:46:12.73,0:46:19.48,chinese,,0,0,0,,跑一下编译，make phonebook，回车。
 Dialogue: 0,0:46:19.48,0:46:21.07,english,,0,0,0,,OK, that's promising, no errors.
-Dialogue: 0,0:46:19.48,0:46:21.07,chinese,,0,0,0,,好的，很有希望，没有错误。
+Dialogue: 0,0:46:19.48,0:46:21.07,chinese,,0,0,0,,好的，很有搞头啊，没发生错误。
 Dialogue: 0,0:46:21.07,0:46:22.72,english,,0,0,0,,Dot slash phonebook now.
-Dialogue: 0,0:46:21.07,0:46:22.72,chinese,,0,0,0,,点斜线电话簿。
+Dialogue: 0,0:46:21.07,0:46:22.72,chinese,,0,0,0,,运行一下。
 Dialogue: 0,0:46:22.72,0:46:26.35,english,,0,0,0,,And let's search, for instance, Carter Enter.
-Dialogue: 0,0:46:22.72,0:46:26.35,chinese,,0,0,0,,例如，让我们搜索 "Carter回车"。
+Dialogue: 0,0:46:22.72,0:46:26.35,chinese,,0,0,0,,比如说，来搜一下 Carter 吧，回车。
 Dialogue: 0,0:46:26.35,0:46:28.06,english,,0,0,0,,All right, so we found Carter's number.
-Dialogue: 0,0:46:26.35,0:46:28.06,chinese,,0,0,0,,我们找到Carter的号码了
+Dialogue: 0,0:46:26.35,0:46:28.06,chinese,,0,0,0,,我们找到了 Carter 的号码。
 Dialogue: 0,0:46:28.06,0:46:29.39,english,,0,0,0,,All right, let me do that again.
-Dialogue: 0,0:46:28.06,0:46:29.39,chinese,,0,0,0,,好吧，让我再来一遍。
+Dialogue: 0,0:46:28.06,0:46:29.39,chinese,,0,0,0,,好吧，再来一遍。
 Dialogue: 0,0:46:29.39,0:46:30.96,english,,0,0,0,,Phone book, let's search for David.
-Dialogue: 0,0:46:29.39,0:46:30.96,chinese,,0,0,0,,电话簿，让我们搜索 David。
+Dialogue: 0,0:46:29.39,0:46:30.96,chinese,,0,0,0,,这次搜索 David。
 Dialogue: 0,0:46:30.96,0:46:32.96,english,,0,0,0,,All right, we seem to have found David's number.
-Dialogue: 0,0:46:30.96,0:46:32.96,chinese,,0,0,0,,好了 我们似乎找到了戴维的号码
+Dialogue: 0,0:46:30.96,0:46:32.96,chinese,,0,0,0,,好，这次看起来也找到了。
 Dialogue: 0,0:46:32.96,0:46:34.50,english,,0,0,0,,All right, let's do it one last time.
-Dialogue: 0,0:46:32.96,0:46:34.50,chinese,,0,0,0,,好吧，我们再来最后一次。
+Dialogue: 0,0:46:32.96,0:46:34.50,chinese,,0,0,0,,好吧，再来最后一次。
 Dialogue: 0,0:46:34.50,0:46:35.41,english,,0,0,0,,Phone book, Enter.
-Dialogue: 0,0:46:34.50,0:46:35.41,chinese,,0,0,0,,电话簿，输入。
+Dialogue: 0,0:46:34.50,0:46:35.41,chinese,,0,0,0,,运行。
 Dialogue: 0,0:46:35.41,0:46:37.36,english,,0,0,0,,And now we'll search for John Harvard.
-Dialogue: 0,0:46:35.41,0:46:37.36,chinese,,0,0,0,,现在我们来寻找约翰-哈佛。
+Dialogue: 0,0:46:35.41,0:46:37.36,chinese,,0,0,0,,来查找 John Harvard。
 Dialogue: 0,0:46:37.36,0:46:40.06,english,,0,0,0,,Enter, not found.
-Dialogue: 0,0:46:37.36,0:46:40.06,chinese,,0,0,0,,输入，未找到。
+Dialogue: 0,0:46:37.36,0:46:40.06,chinese,,0,0,0,,回车，它说没找到。
 Dialogue: 0,0:46:40.06,0:46:45.52,english,,0,0,0,,All right, so I daresay, albeit with minimal testing, this code is correct.
-Dialogue: 0,0:46:40.06,0:46:45.52,chinese,,0,0,0,,好吧，我敢说，尽管只进行了最低限度的测试，但这段代码是正确的。
+Dialogue: 0,0:46:40.06,0:46:45.52,chinese,,0,0,0,,好吧，我敢说，虽然只是简单测试了一下，但这段代码是正确的。
 Dialogue: 0,0:46:45.52,0:46:48.19,english,,0,0,0,,Would anyone now like to critique the design?
-Dialogue: 0,0:46:45.52,0:46:48.19,chinese,,0,0,0,,现在有人愿意对设计进行点评吗？
+Dialogue: 0,0:46:45.52,0:46:48.19,chinese,,0,0,0,,有没有人愿意锐评一下这段代码的设计？
 Dialogue: 0,0:46:48.19,0:46:51.91,english,,0,0,0,,Does something rub you the wrong way, perhaps, about this approach here?
-Dialogue: 0,0:46:48.19,0:46:51.91,chinese,,0,0,0,,这种方法是否让你觉得不妥？
+Dialogue: 0,0:46:48.19,0:46:51.91,chinese,,0,0,0,,有没有哪里你觉得不妥？
 Dialogue: 0,0:46:55.12,0:47:01.51,english,,0,0,0,,And as always, think about how, if the program maybe gets longer, more complicated, how decisions like this might unfold.
-Dialogue: 0,0:46:55.12,0:47:01.51,chinese,,0,0,0,,而且，要一如既往地思考，如果计划变得更长、更复杂，类似这样的决定会怎么展开。
+Dialogue: 0,0:46:55.12,0:47:01.51,chinese,,0,0,0,,我们需要一如既往养成习惯，\N思考如果程序变得更加复杂，应该怎么把代码展开得更加标准和优雅。
 Dialogue: 0,0:47:01.51,0:47:02.44,english,,0,0,0,,Yeah.
 Dialogue: 0,0:47:02.44,0:47:04.40,english,,0,0,0,,STUDENT: If i is less than 2.
-Dialogue: 0,0:47:02.44,0:47:04.40,chinese,,0,0,0,,学生：如果 i 小于 2。
+Dialogue: 0,0:47:02.44,0:47:04.40,chinese,,0,0,0,,学生：if i < 2 这里。
 Dialogue: 0,0:47:04.40,0:47:10.08,english,,0,0,0,,DAVID MALAN: OK, so if i is less than 2, so technically, if I change the number of people in this phone book,
-Dialogue: 0,0:47:04.40,0:47:10.08,chinese,,0,0,0,,好的，如果 i 小于 2，那么从技术上讲，如果我改变了电话簿中的人数、
+Dialogue: 0,0:47:04.40,0:47:10.08,chinese,,0,0,0,,嗯嗯，如果写 i<2，那我们要是从代码上改变了电话簿里的人数，
 Dialogue: 0,0:47:10.08,0:47:11.33,english,,0,0,0,,I'm going to have to update i.
-Dialogue: 0,0:47:10.08,0:47:11.33,chinese,,0,0,0,,我必须更新 i。
+Dialogue: 0,0:47:10.08,0:47:11.33,chinese,,0,0,0,,必须同步更新 i。
 Dialogue: 0,0:47:11.33,0:47:13.29,english,,0,0,0,,And we've already seen that I get myself into trouble.
-Dialogue: 0,0:47:11.33,0:47:13.29,chinese,,0,0,0,,我们已经看到，我给自己找了不少麻烦。
+Dialogue: 0,0:47:11.33,0:47:13.29,chinese,,0,0,0,,可以看到，这样添了不少麻烦。
 Dialogue: 0,0:47:13.29,0:47:14.16,english,,0,0,0,,So that's bad design.
-Dialogue: 0,0:47:13.29,0:47:14.16,chinese,,0,0,0,,这就是糟糕的设计。
+Dialogue: 0,0:47:13.29,0:47:14.16,chinese,,0,0,0,,所以说是烂设计。
 Dialogue: 0,0:47:14.16,0:47:15.00,english,,0,0,0,,Good.
 Dialogue: 0,0:47:15.00,0:47:20.71,english,,0,0,0,,STUDENT: Say you add someone's name to the phonebook, but you don't have the corresponding number.
-Dialogue: 0,0:47:15.00,0:47:20.71,chinese,,0,0,0,,学生：假设你在电话簿中添加了某人的名字，但却没有相应的号码。
+Dialogue: 0,0:47:15.00,0:47:20.71,chinese,,0,0,0,,学生：要是你在电话簿里添加了某人的名字，但却没有相应的号码。
 Dialogue: 0,0:47:20.71,0:47:24.73,english,,0,0,0,,So then when you go to pull their number, it [INAUDIBLE] someone's number.
-Dialogue: 0,0:47:20.71,0:47:24.73,chinese,,0,0,0,,所以，当你去调取他们的号码时，就会[听不清]别人的号码。
+Dialogue: 0,0:47:20.71,0:47:24.73,chinese,,0,0,0,,当你去获取他们的号码时，就会...
 Dialogue: 0,0:47:24.73,0:47:25.48,english,,0,0,0,,DAVID MALAN: Yeah.
-Dialogue: 0,0:47:24.73,0:47:25.48,chinese,,0,0,0,,是的
+Dialogue: 0,0:47:24.73,0:47:25.48,chinese,,0,0,0,,没错。
 Dialogue: 0,0:47:25.48,0:47:28.18,english,,0,0,0,,So again, I'm sort of trusting myself not to screw up.
-Dialogue: 0,0:47:25.48,0:47:28.18,chinese,,0,0,0,,所以，我又一次相信自己不会搞砸。
+Dialogue: 0,0:47:25.48,0:47:28.18,chinese,,0,0,0,,所以，我给了自己充分的信任，不会搞砸任何地方。
 Dialogue: 0,0:47:28.18,0:47:36.64,english,,0,0,0,,If I add John or anyone else to the first array but I forget to add their number to the second array, eventually things are going to drift and be inconsistent.
-Dialogue: 0,0:47:28.18,0:47:36.64,chinese,,0,0,0,,如果我把约翰或其他人添加到第一个数组中，却忘了把他们的号码添加到第二个数组中，最终事情就会发生偏移和不一致。
+Dialogue: 0,0:47:28.18,0:47:36.64,chinese,,0,0,0,,如果我把其他人添加到第一个数组里，却忘了同步添加他们的号码到第二个数组，\N最终程序就走偏了，变得前后不一致。
 Dialogue: 0,0:47:36.64,0:47:39.01,english,,0,0,0,,And then code will be incorrect at that point.
 Dialogue: 0,0:47:36.64,0:47:39.01,chinese,,0,0,0,,这时，代码就会出现错误。
 Dialogue: 0,0:47:39.01,0:47:43.42,english,,0,0,0,,So sort of a poor design setting me up for future failure, if you will.
-Dialogue: 0,0:47:39.01,0:47:43.42,chinese,,0,0,0,,因此，可以说这是一个为我未来的失败埋下伏笔的糟糕设计。
+Dialogue: 0,0:47:39.01,0:47:43.42,chinese,,0,0,0,,所以可以说，这是为我未来的失败埋下的伏笔，一种很烂的设计。
 Dialogue: 0,0:47:43.42,0:47:44.86,english,,0,0,0,,Other thoughts?
-Dialogue: 0,0:47:43.42,0:47:44.86,chinese,,0,0,0,,还有其他想法吗？
+Dialogue: 0,0:47:43.42,0:47:44.86,chinese,,0,0,0,,还有别的想法吗？
 Dialogue: 0,0:47:44.86,0:47:45.46,english,,0,0,0,,Yeah.
 Dialogue: 0,0:47:45.46,0:47:52.84,english,,0,0,0,,STUDENT: [INAUDIBLE] so if you were to switch the order of the numbers but not the main [INAUDIBLE]
-Dialogue: 0,0:47:45.46,0:47:52.84,chinese,,0,0,0,,学生：所以如果你要调换数字的顺序，但不调换主要的[听不清]
+Dialogue: 0,0:47:45.46,0:47:52.84,chinese,,0,0,0,,学生：如果你调换了数字的顺序，但是主要的...
 Dialogue: 0,0:47:52.84,0:47:54.14,english,,0,0,0,,DAVID MALAN: Yeah, really good.
-Dialogue: 0,0:47:52.84,0:47:54.14,chinese,,0,0,0,,是的，非常好。
+Dialogue: 0,0:47:52.84,0:47:54.14,chinese,,0,0,0,,是的，非常对。
 Dialogue: 0,0:47:54.14,0:47:55.55,english,,0,0,0,,We're assuming the same order.
-Dialogue: 0,0:47:54.14,0:47:55.55,chinese,,0,0,0,,我们假设顺序相同。
+Dialogue: 0,0:47:54.14,0:47:55.55,chinese,,0,0,0,,我们假设两个数组顺序一致。
 Dialogue: 0,0:47:55.55,0:47:59.45,english,,0,0,0,,From left to right, the names go, and from left to right, the numbers go.
-Dialogue: 0,0:47:55.55,0:47:59.45,chinese,,0,0,0,,从左到右依次是名字，从左到右依次是数字。
+Dialogue: 0,0:47:55.55,0:47:59.45,chinese,,0,0,0,,从左到右名字和数字依次对应。
 Dialogue: 0,0:47:59.45,0:48:01.16,english,,0,0,0,,But that's kind of just the honor system.
-Dialogue: 0,0:47:59.45,0:48:01.16,chinese,,0,0,0,,但这只是一种荣誉制度。
+Dialogue: 0,0:47:59.45,0:48:01.16,chinese,,0,0,0,,但这只是一种君子协议。
 Dialogue: 0,0:48:01.16,0:48:07.04,english,,0,0,0,,Like, there's literally nothing in code preventing me from reversing the order for whatever reason, or maybe sorting the names.
-Dialogue: 0,0:48:01.16,0:48:07.04,chinese,,0,0,0,,比如，代码中没有任何东西可以阻止我以任何理由颠倒顺序，或者对名字进行排序。
+Dialogue: 0,0:48:01.16,0:48:07.04,chinese,,0,0,0,,代码里没有任何东西可以阻止我拿个理由去改变顺序或者排个序。
 Dialogue: 0,0:48:07.04,0:48:10.13,english,,0,0,0,,Like, they're sorted now, and maybe that's deliberate, but maybe it's not.
-Dialogue: 0,0:48:07.04,0:48:10.13,chinese,,0,0,0,,比如，他们现在被分类了，也许这是故意的，但也许不是。
+Dialogue: 0,0:48:07.04,0:48:10.13,chinese,,0,0,0,,比如，names 现在被排了个序，有意无意的。
 Dialogue: 0,0:48:10.13,0:48:12.92,english,,0,0,0,,So this honor system here, too, is just not good.
-Dialogue: 0,0:48:10.13,0:48:12.92,chinese,,0,0,0,,因此，这里的荣誉制度也是不可取的。
+Dialogue: 0,0:48:10.13,0:48:12.92,chinese,,0,0,0,,所以，这里的君子协议是不可取的。
 Dialogue: 0,0:48:12.92,0:48:19.49,english,,0,0,0,,I could put a comment in here to remind myself, note to self, always update arrays the same way.
-Dialogue: 0,0:48:12.92,0:48:19.49,chinese,,0,0,0,,我可以在这里写个注释来提醒自己，注意，一定要以同样的方式更新数组。
+Dialogue: 0,0:48:12.92,0:48:19.49,chinese,,0,0,0,,我可以在这里写条注释提醒自己，注意，必须要以同样的方式更新数组。
 Dialogue: 0,0:48:19.49,0:48:26.09,english,,0,0,0,,But like, something's going to happen eventually, especially when we have not two, but three, but 30, 300 names and numbers.
-Dialogue: 0,0:48:19.49,0:48:26.09,chinese,,0,0,0,,但是，总归会有事情发生的，尤其是当我们有了不是两个，而是三个，而是 30、300 个名字和号码的时候。
+Dialogue: 0,0:48:19.49,0:48:26.09,chinese,,0,0,0,,但是常在河边走哪有不湿鞋，尤其是当我们有了两个、三个... 300 个名字和号码的时候。
 Dialogue: 0,0:48:26.09,0:48:29.67,english,,0,0,0,,It would be nice to keep all of the related data together.
-Dialogue: 0,0:48:26.09,0:48:29.67,chinese,,0,0,0,,如果能将所有相关数据保存在一起就更好了。
+Dialogue: 0,0:48:26.09,0:48:29.67,chinese,,0,0,0,,如果能把所有相关数据保存在一起就更好了。
 Dialogue: 0,0:48:29.67,0:48:37.97,english,,0,0,0,,And so in fact, the one new feature of C we'll introduce today is one that actually allows us to implement our very own data structures.
-Dialogue: 0,0:48:29.67,0:48:37.97,chinese,,0,0,0,,因此，事实上，我们今天要介绍的 C 语言的一个新功能就是允许我们实现自己的数据结构。
+Dialogue: 0,0:48:29.67,0:48:37.97,chinese,,0,0,0,,所以我们今天要介绍 C 语言里一种新语法，就是允许我们实现自己的数据结构。
 Dialogue: 0,0:48:37.97,0:48:45.93,english,,0,0,0,,You can think of arrays as a very lightweight data structure, in that it allows you to cluster related data back to back to back to back.
-Dialogue: 0,0:48:37.97,0:48:45.93,chinese,,0,0,0,,你可以将数组视为一种非常轻量级的数据结构，因为它允许你将相关数据背靠背地集中在一起。
+Dialogue: 0,0:48:37.97,0:48:45.93,chinese,,0,0,0,,你可以把数组视为一种非常轻量级的数据结构，数组里所有数据紧挨着，集中连续存放在一起。
 Dialogue: 0,0:48:45.93,0:48:48.17,english,,0,0,0,,And this is how strings are implemented.
 Dialogue: 0,0:48:45.93,0:48:48.17,chinese,,0,0,0,,这就是字符串的实现方式。
 Dialogue: 0,0:48:48.17,0:48:51.56,english,,0,0,0,,They are a data structure effectively implemented with an array.
-Dialogue: 0,0:48:48.17,0:48:51.56,chinese,,0,0,0,,它们是一种通过数组有效实现的数据结构。
+Dialogue: 0,0:48:48.17,0:48:51.56,chinese,,0,0,0,,通过数组，字符串（字符数组）被高效地实现了。
 Dialogue: 0,0:48:51.56,0:48:59.87,english,,0,0,0,,But with C and with other languages, it turns out you can invent your own data types, whether they're one dimensional, two dimensional even, or beyond.
-Dialogue: 0,0:48:51.56,0:48:59.87,chinese,,0,0,0,,但事实证明，使用 C 语言和其他语言，你可以发明自己的数据类型，无论是一维、二维甚至更多。
+Dialogue: 0,0:48:51.56,0:48:59.87,chinese,,0,0,0,,但其实，不管是 C 语言还是别的语言，你可以发明自己的数据类型，一维、二维甚至更多都可以。
 Dialogue: 0,0:48:59.87,0:49:07.20,english,,0,0,0,,And with C, can you specifically create your own types that have their own names?
-Dialogue: 0,0:48:59.87,0:49:07.20,chinese,,0,0,0,,那么在 C 语言中，你是否可以专门创建具有自己名称的类型呢？
+Dialogue: 0,0:48:59.87,0:49:07.20,chinese,,0,0,0,,那么在 C 语言里，怎么创建一个，具有自己名称的数据类型呢？
 Dialogue: 0,0:49:07.20,0:49:16.38,english,,0,0,0,,So for instance, wouldn't it have been nice if C came with, not just char and int and floats and long and others.
-Dialogue: 0,0:49:07.20,0:49:16.38,chinese,,0,0,0,,因此，举例来说，如果 C 语言不仅有 char、int、floats 和 long 等，还有其他，那该多好。
+Dialogue: 0,0:49:07.20,0:49:16.38,chinese,,0,0,0,,就是说，如果 C 语言里不仅有 char、int、floats 和 long 这些类型，还允许有其他的，那该多好啊。
 Dialogue: 0,0:49:16.38,0:49:19.97,english,,0,0,0,,Wouldn't it be nice if C came with a data type called person?
-Dialogue: 0,0:49:16.38,0:49:19.97,chinese,,0,0,0,,如果 C 语言自带一种名为 person 的数据类型，岂不更好？
+Dialogue: 0,0:49:16.38,0:49:19.97,chinese,,0,0,0,,如果 C 语言自带一种数据类型 person，岂不更香？
 Dialogue: 0,0:49:19.97,0:49:22.79,english,,0,0,0,,And ideally, a person would have a name and a number.
-Dialogue: 0,0:49:19.97,0:49:22.79,chinese,,0,0,0,,理想情况下，一个人应该有名字和号码。
+Dialogue: 0,0:49:19.97,0:49:22.79,chinese,,0,0,0,,理想情况下，一个 person 类型应该具有名字和号码。
 Dialogue: 0,0:49:22.79,0:49:24.86,english,,0,0,0,,Now, that's a little naive and unrealistic.
-Dialogue: 0,0:49:22.79,0:49:24.86,chinese,,0,0,0,,现在看来，这有点天真和不切实际。
+Dialogue: 0,0:49:22.79,0:49:24.86,chinese,,0,0,0,,现在看来，这未免有点天真和不切实际了。
 Dialogue: 0,0:49:24.86,0:49:28.46,english,,0,0,0,,Like, why would they define a person to have just those two fields.
-Dialogue: 0,0:49:24.86,0:49:28.46,chinese,,0,0,0,,比如，他们为什么要把一个人定义为只有这两个字段。
+Dialogue: 0,0:49:24.86,0:49:28.46,chinese,,0,0,0,,比如，为什么要把一个人定义成只有这两个字段呢？
 Dialogue: 0,0:49:28.46,0:49:30.95,english,,0,0,0,,Certainly, people could have disagreed what a person is.
-Dialogue: 0,0:49:28.46,0:49:30.95,chinese,,0,0,0,,当然，人们对 "人 "的定义可能存在分歧。
+Dialogue: 0,0:49:28.46,0:49:30.95,chinese,,0,0,0,,每个人（每个程序里）对人的定义都可能存在分歧。
 Dialogue: 0,0:49:30.95,0:49:32.30,english,,0,0,0,,So they leave it to us.
-Dialogue: 0,0:49:30.95,0:49:32.30,chinese,,0,0,0,,所以，他们把它留给了我们。
+Dialogue: 0,0:49:30.95,0:49:32.30,chinese,,0,0,0,,所以，C 语言把决定权交给了我们程序员自己。
 Dialogue: 0,0:49:32.30,0:49:36.81,english,,0,0,0,,The authors of C gave us all of these primitives, ints and floats and strings and so forth.
-Dialogue: 0,0:49:32.30,0:49:36.81,chinese,,0,0,0,,C 语言的作者为我们提供了所有这些基元，如 ints、浮点数和字符串等等。
+Dialogue: 0,0:49:32.30,0:49:36.81,chinese,,0,0,0,,C 语言的作者们，为我们提供了所有的基元，比如说各种整型、浮点型和字符串等等。
 Dialogue: 0,0:49:36.81,0:49:48.15,english,,0,0,0,,But it's up to us now to use those in a more interesting way so that we can create an array of person variables, if you will, inside of an array called people, just to pluralize it here.
-Dialogue: 0,0:49:36.81,0:49:48.15,chinese,,0,0,0,,但现在我们要做的是以一种更有趣的方式使用这些变量，这样我们就可以在一个名为 people 的数组中创建一个人物变量数组。
+Dialogue: 0,0:49:36.81,0:49:48.15,chinese,,0,0,0,,但现在我们需要的是更加创造性地使用这些变量，\N这样我们就可以创建一个叫做 people 的数组，里面包含有相应的多个 person 类型变量。
 Dialogue: 0,0:49:48.15,0:49:49.74,english,,0,0,0,,So how are we going to do this?
-Dialogue: 0,0:49:48.15,0:49:49.74,chinese,,0,0,0,,那么，我们该怎么做呢？
+Dialogue: 0,0:49:48.15,0:49:49.74,chinese,,0,0,0,,那我们要怎么实现呢？
 Dialogue: 0,0:49:49.74,0:49:58.01,english,,0,0,0,,Well, for now, let's just stipulate that a person in the world will have a name and a number that we could argue all day long what else a person should have.
-Dialogue: 0,0:49:49.74,0:49:58.01,chinese,,0,0,0,,好吧，现在我们先规定，世界上的人都会有一个名字和一个号码，至于一个人还应该有什么，我们可以争论一整天。
+Dialogue: 0,0:49:49.74,0:49:58.01,chinese,,0,0,0,,好吧，现在我们先规定，世界上的人都会有一个名字和一个号码，\N至于一个人还应该有什么属性，我们可以争论一整天。
 Dialogue: 0,0:49:58.01,0:49:58.67,english,,0,0,0,,And that's fine.
-Dialogue: 0,0:49:58.01,0:49:58.67,chinese,,0,0,0,,这很好。
+Dialogue: 0,0:49:58.01,0:49:58.67,chinese,,0,0,0,,好了。
 Dialogue: 0,0:49:58.67,0:50:01.79,english,,0,0,0,,You can invent your own person eventually.
-Dialogue: 0,0:49:58.67,0:50:01.79,chinese,,0,0,0,,你最终可以发明自己的人。
+Dialogue: 0,0:49:58.67,0:50:01.79,chinese,,0,0,0,,你最终可以发明自己的 person 类型。
 Dialogue: 0,0:50:01.79,0:50:06.50,english,,0,0,0,,At the moment, I'm using just two variables to define a person's name and number.
-Dialogue: 0,0:50:01.79,0:50:06.50,chinese,,0,0,0,,目前，我只用两个变量来定义一个人的姓名和号码。
+Dialogue: 0,0:50:01.79,0:50:06.50,chinese,,0,0,0,,目前的一个 person，由姓名和号码两个 string 定义。
 Dialogue: 0,0:50:06.50,0:50:14.66,english,,0,0,0,,But wouldn't it be nice to encapsulate, that is, combine these two data types, into a new and improved data type called person.
-Dialogue: 0,0:50:06.50,0:50:14.66,chinese,,0,0,0,,但是，如果能将这两种数据类型封装起来，即合并成一种新的、改进的数据类型--"人"，岂不更好？
+Dialogue: 0,0:50:06.50,0:50:14.66,chinese,,0,0,0,,但是，要是能把这两种数据类型封装起来，\N合并成一种新的、改进的数据类型，做一层抽象，直接叫做 person，岂不更好？
 Dialogue: 0,0:50:14.66,0:50:17.36,english,,0,0,0,,And the syntax for that is going to be this.
-Dialogue: 0,0:50:14.66,0:50:17.36,chinese,,0,0,0,,其语法是这样的
+Dialogue: 0,0:50:14.66,0:50:17.36,chinese,,0,0,0,,语法是这样子的。
 Dialogue: 0,0:50:17.36,0:50:18.80,english,,0,0,0,,So it's a bit of a mouthful.
-Dialogue: 0,0:50:17.36,0:50:18.80,chinese,,0,0,0,,所以说起来有点拗口。
+Dialogue: 0,0:50:17.36,0:50:18.80,chinese,,0,0,0,,所以说有点拗口。
 Dialogue: 0,0:50:18.80,0:50:21.96,english,,0,0,0,,But you can, perhaps, infer what some of this is doing here.
-Dialogue: 0,0:50:18.80,0:50:21.96,chinese,,0,0,0,,不过，你或许可以推断出这其中的一些作用。
+Dialogue: 0,0:50:18.80,0:50:21.96,chinese,,0,0,0,,不过，你可以猜猜这么写的逻辑。
 Dialogue: 0,0:50:21.96,0:50:24.50,english,,0,0,0,,So it turns out C has a keyword called typedef.
-Dialogue: 0,0:50:21.96,0:50:24.50,chinese,,0,0,0,,原来 C 语言有一个关键字叫 typedef。
+Dialogue: 0,0:50:21.96,0:50:24.50,chinese,,0,0,0,,原来 C 语言有一个关键字叫 typedef（type define）。
 Dialogue: 0,0:50:24.50,0:50:28.31,english,,0,0,0,,As the name kind of suggests, this allows you to define your own type.
 Dialogue: 0,0:50:24.50,0:50:28.31,chinese,,0,0,0,,顾名思义，它允许你定义自己的类型。
 Dialogue: 0,0:50:28.31,0:50:31.55,english,,0,0,0,,Struct is an indication that it's a structure.
-Dialogue: 0,0:50:28.31,0:50:31.55,chinese,,0,0,0,,结构表明这是一个结构。
+Dialogue: 0,0:50:28.31,0:50:31.55,chinese,,0,0,0,,struct 表明这是一整个 structure（结构体）。
 Dialogue: 0,0:50:31.55,0:50:36.71,english,,0,0,0,,It's like a structure that has multiple values inside of it that you are trying to define.
-Dialogue: 0,0:50:31.55,0:50:36.71,chinese,,0,0,0,,这就像一个结构，里面有多个你要定义的值。
+Dialogue: 0,0:50:31.55,0:50:36.71,chinese,,0,0,0,,这个结构体里面，有多个你要定义的值。
 Dialogue: 0,0:50:36.71,0:50:42.27,english,,0,0,0,,And then at the very bottom here outside of the curly braces, is the name of the type that you want to create.
-Dialogue: 0,0:50:36.71,0:50:42.27,chinese,,0,0,0,,然后在大括号外的最下方，是你要创建的类型的名称。
+Dialogue: 0,0:50:36.71,0:50:42.27,chinese,,0,0,0,,然后在花括号外的最下方，是你要创建类型的名称。
 Dialogue: 0,0:50:42.27,0:50:46.79,english,,0,0,0,,So you don't have discretion over using typedef or struct in this particular case.
-Dialogue: 0,0:50:42.27,0:50:46.79,chinese,,0,0,0,,因此，在这种特殊情况下，你不能随意使用 typedef 或 struct。
+Dialogue: 0,0:50:42.27,0:50:46.79,chinese,,0,0,0,,所以，在这种特殊情况下，你不能随意使用 typedef 或 struct。
+Dialogue: 0,0:50:42.27,0:50:46.79,annotation,,0,0,0,,*注：这里是说，所有变量和自定义类型的名字不能和 C 中的关键字一样。
 Dialogue: 0,0:50:46.79,0:50:48.66,english,,0,0,0,,But you can name the thing whatever you want.
-Dialogue: 0,0:50:46.79,0:50:48.66,chinese,,0,0,0,,但你可以给它起任何你想要的名字。
+Dialogue: 0,0:50:46.79,0:50:48.66,chinese,,0,0,0,,除此以外你想取什么都可以。
 Dialogue: 0,0:50:48.66,0:50:52.59,english,,0,0,0,,And you can put anything in the structure that you want as well.
-Dialogue: 0,0:50:48.66,0:50:52.59,chinese,,0,0,0,,你也可以在结构中加入任何你想要的东西。
+Dialogue: 0,0:50:48.66,0:50:52.59,chinese,,0,0,0,,在 struct 里，可以加入任何你想要的东西。
 Dialogue: 0,0:50:52.59,0:51:05.76,english,,0,0,0,,And as soon as the semicolon is executed at the bottom of the code, every line thereafter can now have access to a person data type, whether as a single variable, or as an entire array.
-Dialogue: 0,0:50:52.59,0:51:05.76,chinese,,0,0,0,,只要在代码底部执行分号，此后的每一行都可以访问一个人的数据类型，无论是单个变量还是整个数组。
+Dialogue: 0,0:50:52.59,0:51:05.76,chinese,,0,0,0,,在类型声明后面加上分号，在这以后的每一行都可以访问 person 类型，\N可以创建单个变量，也可以是整个数组。
 Dialogue: 0,0:51:05.76,0:51:10.26,english,,0,0,0,,So if I want to build on this then, let me go ahead and do this.
-Dialogue: 0,0:51:05.76,0:51:10.26,chinese,,0,0,0,,因此，如果我想在此基础上再进一步，就让我继续这样做吧。
+Dialogue: 0,0:51:05.76,0:51:10.26,chinese,,0,0,0,,现在我想在此基础上再进一步，来这么写。
 Dialogue: 0,0:51:10.26,0:51:12.23,english,,0,0,0,,Let me go back to my C code here.
-Dialogue: 0,0:51:10.26,0:51:12.23,chinese,,0,0,0,,让我回到我的 C 代码。
+Dialogue: 0,0:51:10.26,0:51:12.23,chinese,,0,0,0,,回到 C 语言代码里面。
 Dialogue: 0,0:51:12.23,0:51:17.61,english,,0,0,0,,And I'm going to go ahead and change just a couple of things.
-Dialogue: 0,0:51:12.23,0:51:17.61,chinese,,0,0,0,,我想先改动几处。
+Dialogue: 0,0:51:12.23,0:51:17.61,chinese,,0,0,0,,接着我想先改动几处。
 Dialogue: 0,0:51:17.61,0:51:19.11,english,,0,0,0,,Let's go ahead and do this.
 Dialogue: 0,0:51:17.61,0:51:19.11,chinese,,0,0,0,,让我们开始吧。
 Dialogue: 0,0:51:19.11,0:51:23.24,english,,0,0,0,,I'm going to go ahead and, first, get rid of those two hardcoded arrays.
-Dialogue: 0,0:51:19.11,0:51:23.24,chinese,,0,0,0,,首先，我要去掉这两个硬编码数组。
+Dialogue: 0,0:51:19.11,0:51:23.24,chinese,,0,0,0,,首先，我要去掉这两个硬编码的数组。
 Dialogue: 0,0:51:23.24,0:51:30.18,english,,0,0,0,,And let me go ahead and, at the top of my file, invent this type, so typedef struct.
-Dialogue: 0,0:51:23.24,0:51:30.18,chinese,,0,0,0,,让我继续前进，在文件顶端发明这个类型，即 typedef struct。
+Dialogue: 0,0:51:23.24,0:51:30.18,chinese,,0,0,0,,继续写，在文件的顶部创造这个类型，typedef struct。
 Dialogue: 0,0:51:30.18,0:51:34.47,english,,0,0,0,,Inside of it will be a string name and then a string number.
-Dialogue: 0,0:51:30.18,0:51:34.47,chinese,,0,0,0,,其中将包含一个字符串名称和一个字符串编号。
+Dialogue: 0,0:51:30.18,0:51:34.47,chinese,,0,0,0,,里面包含有两个 string，一个是名字，一个是编号。
 Dialogue: 0,0:51:34.47,0:51:36.78,english,,0,0,0,,And then the name of the structure will be person.
-Dialogue: 0,0:51:34.47,0:51:36.78,chinese,,0,0,0,,然后，结构的名称将是人。
+Dialogue: 0,0:51:34.47,0:51:36.78,chinese,,0,0,0,,然后，整个结构体的名称是 person。
 Dialogue: 0,0:51:36.78,0:51:44.53,english,,0,0,0,,And best practice would have me define it at the very top of my file so that any of my functions, in fact, could use it, even though I just have main in this case.
-Dialogue: 0,0:51:36.78,0:51:44.53,chinese,,0,0,0,,最好的做法是在文件的最顶端定义它，这样我的任何函数都可以使用它，尽管在本例中我只使用了 main。
+Dialogue: 0,0:51:36.78,0:51:44.53,chinese,,0,0,0,,最佳实践是在文件的最顶端定义它，\N这样在下面任何函数都可以使用，尽管这个例子里只有 main 函数用到了。
 Dialogue: 0,0:51:44.53,0:51:47.10,english,,0,0,0,,Now, if I wanted, I could do this.
-Dialogue: 0,0:51:44.53,0:51:47.10,chinese,,0,0,0,,现在，如果我愿意，我可以这样做。
+Dialogue: 0,0:51:44.53,0:51:47.10,chinese,,0,0,0,,现在，我想这么写。
 Dialogue: 0,0:51:47.10,0:51:50.37,english,,0,0,0,,Person P1 and person P2.
-Dialogue: 0,0:51:47.10,0:51:50.37,chinese,,0,0,0,,人 P1 和人 P2。
+Dialogue: 0,0:51:47.10,0:51:50.37,chinese,,0,0,0,,【口述代码】
 Dialogue: 0,0:51:50.37,0:51:53.04,english,,0,0,0,,But we know from last week, that already is bad design.
-Dialogue: 0,0:51:50.37,0:51:53.04,chinese,,0,0,0,,但我们从上周就知道，这已经是糟糕的设计了。
+Dialogue: 0,0:51:50.37,0:51:53.04,chinese,,0,0,0,,但我们从上周就知道，这是一种烂设计。
 Dialogue: 0,0:51:53.04,0:52:00.04,english,,0,0,0,,If you want to have multiple instances of the same type of variable, we should probably use what instead?
-Dialogue: 0,0:51:53.04,0:52:00.04,chinese,,0,0,0,,如果要使用同一类型变量的多个实例，我们应该用什么来代替？
+Dialogue: 0,0:51:53.04,0:52:00.04,chinese,,0,0,0,,如果要使用同一类型变量的多个实例，应该用什么来代替？
 Dialogue: 0,0:52:00.04,0:52:01.04,english,,0,0,0,,STUDENT: [INAUDIBLE]
-Dialogue: 0,0:52:00.04,0:52:01.04,chinese,,0,0,0,,学生：[听不清]
 Dialogue: 0,0:52:01.04,0:52:01.79,english,,0,0,0,,DAVID MALAN: And--
-Dialogue: 0,0:52:01.04,0:52:01.79,chinese,,0,0,0,,还有
 Dialogue: 0,0:52:01.79,0:52:02.47,english,,0,0,0,,STUDENT: An array.
-Dialogue: 0,0:52:01.79,0:52:02.47,chinese,,0,0,0,,学生：一个数组。
+Dialogue: 0,0:52:01.79,0:52:02.47,chinese,,0,0,0,,一个数组。
 Dialogue: 0,0:52:02.47,0:52:03.63,english,,0,0,0,,DAVID MALAN: Yeah, an array.
-Dialogue: 0,0:52:02.47,0:52:03.63,chinese,,0,0,0,,是的，一个阵列。
+Dialogue: 0,0:52:02.47,0:52:03.63,chinese,,0,0,0,,是的，一个数组。
 Dialogue: 0,0:52:03.63,0:52:05.23,english,,0,0,0,,So let me not even go down that road.
-Dialogue: 0,0:52:03.63,0:52:05.23,chinese,,0,0,0,,所以，我就不多说了。
+Dialogue: 0,0:52:03.63,0:52:05.23,chinese,,0,0,0,,所以，我就不这么搞了。
 Dialogue: 0,0:52:05.23,0:52:06.70,english,,0,0,0,,Let me instead just do this.
-Dialogue: 0,0:52:05.23,0:52:06.70,chinese,,0,0,0,,让我这样做吧。
+Dialogue: 0,0:52:05.23,0:52:06.70,chinese,,0,0,0,,而是这么写。
 Dialogue: 0,0:52:06.70,0:52:09.72,english,,0,0,0,,Person will be the type of the array.
-Dialogue: 0,0:52:06.70,0:52:09.72,chinese,,0,0,0,,Person 将是数组的类型。
+Dialogue: 0,0:52:06.70,0:52:09.72,chinese,,0,0,0,,person 是数组的类型。
 Dialogue: 0,0:52:09.72,0:52:10.81,english,,0,0,0,,But I'm going to call it--
-Dialogue: 0,0:52:09.72,0:52:10.81,chinese,,0,0,0,,但我要叫它 --
+Dialogue: 0,0:52:09.72,0:52:10.81,chinese,,0,0,0,,但我要叫它...
 Dialogue: 0,0:52:10.81,0:52:11.98,english,,0,0,0,,I could call it persons.
-Dialogue: 0,0:52:10.81,0:52:11.98,chinese,,0,0,0,,我可以称之为 "人"。
+Dialogue: 0,0:52:10.81,0:52:11.98,chinese,,0,0,0,,叫它 persons 好了。
 Dialogue: 0,0:52:11.98,0:52:13.72,english,,0,0,0,,But in English, we typically say people.
-Dialogue: 0,0:52:11.98,0:52:13.72,chinese,,0,0,0,,但在英语中，我们通常说 "人"。
+Dialogue: 0,0:52:11.98,0:52:13.72,chinese,,0,0,0,,在英语中，我们通常说 people。
 Dialogue: 0,0:52:13.72,0:52:15.19,english,,0,0,0,,So I'll call the array people.
-Dialogue: 0,0:52:13.72,0:52:15.19,chinese,,0,0,0,,所以我要打电话给阵列人员。
+Dialogue: 0,0:52:13.72,0:52:15.19,chinese,,0,0,0,,所以我就叫它 people。
 Dialogue: 0,0:52:15.19,0:52:20.92,english,,0,0,0,,And I want two people to exist in this array, though I could certainly change that number to be anything I want.
-Dialogue: 0,0:52:15.19,0:52:20.92,chinese,,0,0,0,,我希望在这个数组中存在两个人，当然我也可以随意更改这个数字。
+Dialogue: 0,0:52:15.19,0:52:20.92,chinese,,0,0,0,,我希望这个数组里有两个元素，当然这个数字是可以随意更改的。
 Dialogue: 0,0:52:20.92,0:52:27.19,english,,0,0,0,,How, now, do you put a name inside of a person and then put the number inside of that same person?
-Dialogue: 0,0:52:20.92,0:52:27.19,chinese,,0,0,0,,现在，你怎么把名字放在一个人的里面，然后再把数字放在同一个人的里面？
+Dialogue: 0,0:52:20.92,0:52:27.19,chinese,,0,0,0,,现在，怎么把名字和数字放在 person 的里面？
 Dialogue: 0,0:52:27.19,0:52:28.99,english,,0,0,0,,Well, slightly new syntax today.
 Dialogue: 0,0:52:27.19,0:52:28.99,chinese,,0,0,0,,嗯，今天的语法有点新。
 Dialogue: 0,0:52:28.99,0:52:30.52,english,,0,0,0,,I'm going to go ahead and say this.
 Dialogue: 0,0:52:28.99,0:52:30.52,chinese,,0,0,0,,我就直说了。
 Dialogue: 0,0:52:30.52,0:52:34.42,english,,0,0,0,,People bracket 0 just gives me the first person in the array.
-Dialogue: 0,0:52:30.52,0:52:34.42,chinese,,0,0,0,,人字段 0 只提供了数组中的第一个人。
+Dialogue: 0,0:52:30.52,0:52:34.42,chinese,,0,0,0,,people[0] 就是数组里的第一个人。
 Dialogue: 0,0:52:34.42,0:52:35.57,english,,0,0,0,,That's not new.
-Dialogue: 0,0:52:34.42,0:52:35.57,chinese,,0,0,0,,这并不新鲜。
+Dialogue: 0,0:52:34.42,0:52:35.57,chinese,,0,0,0,,这个倒是不新鲜。
 Dialogue: 0,0:52:35.57,0:52:40.84,english,,0,0,0,,But if you want to go inside of that person in memory, you use a dot.
-Dialogue: 0,0:52:35.57,0:52:40.84,chinese,,0,0,0,,但如果你想进入记忆中的那个人的内心世界，就需要使用点。
+Dialogue: 0,0:52:35.57,0:52:40.84,chinese,,0,0,0,,但如果你想访问内存中那个 person 的属性，就需要使用点语法。
 Dialogue: 0,0:52:40.84,0:52:44.87,english,,0,0,0,,And then you just specify the name of the attribute therein.
-Dialogue: 0,0:52:40.84,0:52:44.87,chinese,,0,0,0,,然后只需指定其中的属性名称即可。
+Dialogue: 0,0:52:40.84,0:52:44.87,chinese,,0,0,0,,然后指定其中的属性名称就行了。
 Dialogue: 0,0:52:44.87,0:52:47.41,english,,0,0,0,,So if I want to set the first person's name to Carter,
-Dialogue: 0,0:52:44.87,0:52:47.41,chinese,,0,0,0,,所以，如果我想把第一个人的名字设置为Carter、
+Dialogue: 0,0:52:44.87,0:52:47.41,chinese,,0,0,0,,比如说我想把第一个人的 name 设置成 Carter，
 Dialogue: 0,0:52:47.41,0:52:49.48,english,,0,0,0,,I just use that so-called dot notation.
-Dialogue: 0,0:52:47.41,0:52:49.48,chinese,,0,0,0,,我只是使用所谓的点符号。
+Dialogue: 0,0:52:47.41,0:52:49.48,chinese,,0,0,0,,要用这个点符号。
 Dialogue: 0,0:52:49.48,0:52:52.78,english,,0,0,0,,And then if I want to set Carter's number using dot notation,
-Dialogue: 0,0:52:49.48,0:52:52.78,chinese,,0,0,0,,然后，如果我想用点记法设置Carter的数字、
+Dialogue: 0,0:52:49.48,0:52:52.78,chinese,,0,0,0,,然后，我想用点符号设置 Carter 的 number。
 Dialogue: 0,0:52:52.78,0:52:56.68,english,,0,0,0,,I would do this, +1-617-495-1000.
-Dialogue: 0,0:52:52.78,0:52:56.68,chinese,,0,0,0,,我会这样做，+1-617-495-1000。
+Dialogue: 0,0:52:52.78,0:52:56.68,chinese,,0,0,0,,【口述代码】
 Dialogue: 0,0:52:56.68,0:52:58.88,english,,0,0,0,,And then if I want to do the same for myself,
-Dialogue: 0,0:52:56.68,0:52:58.88,chinese,,0,0,0,,然后，如果我想为自己做同样的事、
+Dialogue: 0,0:52:56.68,0:52:58.88,chinese,,0,0,0,,然后，我也想把自己的设置了。
 Dialogue: 0,0:52:58.88,0:53:03.73,english,,0,0,0,,I would now do people bracket 1 dot name equals quote unquote David.
-Dialogue: 0,0:52:58.88,0:53:03.73,chinese,,0,0,0,,我现在会做的人括弧 1 点名等于引号 David。
+Dialogue: 0,0:52:58.88,0:53:03.73,chinese,,0,0,0,,【口述代码】
 Dialogue: 0,0:53:03.73,0:53:08.44,english,,0,0,0,,And then people bracket 1 still dot number equals quote unquote
-Dialogue: 0,0:53:03.73,0:53:08.44,chinese,,0,0,0,,然后人们括号里的 1 仍然是点号等于引号，而不是引号
+Dialogue: 0,0:53:03.73,0:53:08.44,chinese,,0,0,0,,【口述代码】
 Dialogue: 0,0:53:08.44,0:53:13.03,english,,0,0,0,,+1-949-468-2750.
-Dialogue: 0,0:53:08.44,0:53:13.03,chinese,,0,0,0,,+1-949-468-2750.
 Dialogue: 0,0:53:13.03,0:53:18.61,english,,0,0,0,,And now, at the bottom of my file, I think my logic can pretty much stay the same.
-Dialogue: 0,0:53:13.03,0:53:18.61,chinese,,0,0,0,,现在，在我的文件底部，我认为我的逻辑可以基本保持不变。
+Dialogue: 0,0:53:13.03,0:53:18.61,chinese,,0,0,0,,文件后面呢，我觉得逻辑可以基本保持不变。
 Dialogue: 0,0:53:18.61,0:53:24.37,english,,0,0,0,,I can still, on this line here, prompt the user for the name of the person they want to look up.
-Dialogue: 0,0:53:18.61,0:53:24.37,chinese,,0,0,0,,我仍然可以在这一行提示用户输入他们想要查询的人的姓名。
+Dialogue: 0,0:53:18.61,0:53:24.37,chinese,,0,0,0,,这一行还是提示用户输入查询人的姓名。
 Dialogue: 0,0:53:24.37,0:53:26.62,english,,0,0,0,,For now, even though I admit it's not the best design,
-Dialogue: 0,0:53:24.37,0:53:26.62,chinese,,0,0,0,,现在，尽管我承认这不是最好的设计、
+Dialogue: 0,0:53:24.37,0:53:26.62,chinese,,0,0,0,,现在，我得承认这设计得不行，
 Dialogue: 0,0:53:26.62,0:53:28.49,english,,0,0,0,,I'm just doing this for demonstration's sake,
-Dialogue: 0,0:53:26.62,0:53:28.49,chinese,,0,0,0,,我这样做只是为了演示、
+Dialogue: 0,0:53:26.62,0:53:28.49,chinese,,0,0,0,,这么写只是为了演示，
 Dialogue: 0,0:53:28.49,0:53:31.36,english,,0,0,0,,I'm going to leave the two there, because I know I have two people.
-Dialogue: 0,0:53:28.49,0:53:31.36,chinese,,0,0,0,,我把这两个留在这里，因为我知道我有两个人。
+Dialogue: 0,0:53:28.49,0:53:31.36,chinese,,0,0,0,,还是把 2 留在这里，因为我知道一共是两个人。
 Dialogue: 0,0:53:31.36,0:53:34.10,english,,0,0,0,,But down here, this is going to have to change.
-Dialogue: 0,0:53:31.36,0:53:34.10,chinese,,0,0,0,,但在这里，这种情况必须改变。
+Dialogue: 0,0:53:31.36,0:53:34.10,chinese,,0,0,0,,但这一行必须改一下了。
 Dialogue: 0,0:53:34.10,0:53:37.00,english,,0,0,0,,I don't want to compare names bracket i anymore.
-Dialogue: 0,0:53:34.10,0:53:37.00,chinese,,0,0,0,,我不想再比较括号 I 的名字了。
+Dialogue: 0,0:53:34.10,0:53:37.00,chinese,,0,0,0,,现在比较的不是 names[i] 了。
 Dialogue: 0,0:53:37.00,0:53:42.19,english,,0,0,0,,What do I want to type here as the first argument to str compare?
-Dialogue: 0,0:53:37.00,0:53:42.19,chinese,,0,0,0,,我想在这里输入什么作为 str 比较的第一个参数？
+Dialogue: 0,0:53:37.00,0:53:42.19,chinese,,0,0,0,,strcmp 的第一个参数应该改成什么？
 Dialogue: 0,0:53:42.19,0:53:43.90,english,,0,0,0,,What do I want to do here?
 Dialogue: 0,0:53:42.19,0:53:43.90,chinese,,0,0,0,,我想在这里做什么？
 Dialogue: 0,0:53:43.90,0:53:44.96,english,,0,0,0,,Yeah.
 Dialogue: 0,0:53:44.96,0:53:46.80,english,,0,0,0,,STUDENT: People i dot name.
-Dialogue: 0,0:53:44.96,0:53:46.80,chinese,,0,0,0,,学生
 Dialogue: 0,0:53:46.80,0:53:49.14,english,,0,0,0,,DAVID MALAN: So people i dot name, yeah.
-Dialogue: 0,0:53:46.80,0:53:49.14,chinese,,0,0,0,,是的，所以是点名的人。
+Dialogue: 0,0:53:46.80,0:53:49.14,chinese,,0,0,0,,所以是 people[i].name。
 Dialogue: 0,0:53:49.14,0:53:54.48,english,,0,0,0,,So I want to go into the people array at the ith location, because that's what my loop is doing.
-Dialogue: 0,0:53:49.14,0:53:54.48,chinese,,0,0,0,,因此，我想在第 i 个位置进入人物数组，因为这正是我的循环要做的事情。
+Dialogue: 0,0:53:49.14,0:53:54.48,chinese,,0,0,0,,【口述代码】
 Dialogue: 0,0:53:54.48,0:53:55.89,english,,0,0,0,,It's updating i again and again.
-Dialogue: 0,0:53:54.48,0:53:55.89,chinese,,0,0,0,,它一次又一次地更新 i。
+Dialogue: 0,0:53:54.48,0:53:55.89,chinese,,0,0,0,,循环一次又一次地更新 i。
 Dialogue: 0,0:53:55.89,0:53:58.08,english,,0,0,0,,And then look at name, and that's good.
-Dialogue: 0,0:53:55.89,0:53:58.08,chinese,,0,0,0,,然后再看名字，这样就很好。
+Dialogue: 0,0:53:55.89,0:53:58.08,chinese,,0,0,0,,【口述代码】
 Dialogue: 0,0:53:58.08,0:53:59.67,english,,0,0,0,,I think now I need to change this too.
-Dialogue: 0,0:53:58.08,0:53:59.67,chinese,,0,0,0,,我想现在我也需要改变一下。
+Dialogue: 0,0:53:58.08,0:53:59.67,chinese,,0,0,0,,下面也要跟着变。
 Dialogue: 0,0:53:59.67,0:54:01.89,english,,0,0,0,,What do I want to print if the person is found?
-Dialogue: 0,0:53:59.67,0:54:01.89,chinese,,0,0,0,,如果找到了这个人，我想打印什么？
+Dialogue: 0,0:53:59.67,0:54:01.89,chinese,,0,0,0,,如果找到了这个人，我想输出什么？
 Dialogue: 0,0:54:01.89,0:54:02.44,english,,0,0,0,,Someone else?
-Dialogue: 0,0:54:01.89,0:54:02.44,chinese,,0,0,0,,别人？
+Dialogue: 0,0:54:01.89,0:54:02.44,chinese,,0,0,0,,别的人想回答吗？
 Dialogue: 0,0:54:05.07,0:54:08.85,english,,0,0,0,,What do I want to print here, if I found the person's name?
-Dialogue: 0,0:54:05.07,0:54:08.85,chinese,,0,0,0,,如果我找到了这个人的名字，我想在这里打印什么？
+Dialogue: 0,0:54:05.07,0:54:08.85,chinese,,0,0,0,,如果我找到了这个人的名字，要打印点啥？
 Dialogue: 0,0:54:08.85,0:54:09.36,english,,0,0,0,,Yeah.
 Dialogue: 0,0:54:09.36,0:54:10.89,english,,0,0,0,,STUDENT: [INAUDIBLE]
-Dialogue: 0,0:54:09.36,0:54:10.89,chinese,,0,0,0,,学生：[听不清]
 Dialogue: 0,0:54:10.89,0:54:12.39,english,,0,0,0,,DAVID MALAN: Say it a little louder.
 Dialogue: 0,0:54:10.89,0:54:12.39,chinese,,0,0,0,,说大声点。
 Dialogue: 0,0:54:12.39,0:54:13.79,english,,0,0,0,,STUDENT: People i dot number.
-Dialogue: 0,0:54:12.39,0:54:13.79,chinese,,0,0,0,,学生：人i点号。
 Dialogue: 0,0:54:13.79,0:54:14.67,english,,0,0,0,,DAVID MALAN: Perfect.
-Dialogue: 0,0:54:13.79,0:54:14.67,chinese,,0,0,0,,好极了
 Dialogue: 0,0:54:14.67,0:54:20.31,english,,0,0,0,,So people bracket i dot number, if indeed I want to print the corresponding number to this person.
-Dialogue: 0,0:54:14.67,0:54:20.31,chinese,,0,0,0,,因此，如果我确实想给这个人打印相应的数字，那么人的括号里就会有 i 点编号。
+Dialogue: 0,0:54:14.67,0:54:20.31,chinese,,0,0,0,,所以是 people[i].number，如果我想访问相应的 person。
 Dialogue: 0,0:54:20.31,0:54:22.93,english,,0,0,0,,And then I think the rest of my code can stay the same.
-Dialogue: 0,0:54:20.31,0:54:22.93,chinese,,0,0,0,,然后，我想我的其他代码可以保持不变。
+Dialogue: 0,0:54:20.31,0:54:22.93,chinese,,0,0,0,,然后，我想别的代码可以不动了。
 Dialogue: 0,0:54:22.93,0:54:27.15,english,,0,0,0,,So let me go ahead and rerun make phone book to recompile this version.
-Dialogue: 0,0:54:22.93,0:54:27.15,chinese,,0,0,0,,因此，让我继续重新运行 make phone book，重新编译这个版本。
+Dialogue: 0,0:54:22.93,0:54:27.15,chinese,,0,0,0,,重新编译一下。
 Dialogue: 0,0:54:27.15,0:54:28.17,english,,0,0,0,,So far so good.
 Dialogue: 0,0:54:27.15,0:54:28.17,chinese,,0,0,0,,到目前为止还不错。
 Dialogue: 0,0:54:28.17,0:54:29.40,english,,0,0,0,,Dot slash phone book.
-Dialogue: 0,0:54:28.17,0:54:29.40,chinese,,0,0,0,,点斜线电话簿。
+Dialogue: 0,0:54:28.17,0:54:29.40,chinese,,0,0,0,,运行一下。
 Dialogue: 0,0:54:29.40,0:54:31.59,english,,0,0,0,,Let's go ahead and type in Carter's name, found.
-Dialogue: 0,0:54:29.40,0:54:31.59,chinese,,0,0,0,,让我们输入Carter的名字，找到了。
+Dialogue: 0,0:54:29.40,0:54:31.59,chinese,,0,0,0,,我们来输入 Carter 的名字，找到了。
 Dialogue: 0,0:54:31.59,0:54:33.39,english,,0,0,0,,All right, let's go ahead and run it again.
-Dialogue: 0,0:54:31.59,0:54:33.39,chinese,,0,0,0,,好吧，我们再运行一次。
+Dialogue: 0,0:54:31.59,0:54:33.39,chinese,,0,0,0,,好吧，再来一次。
 Dialogue: 0,0:54:33.39,0:54:35.27,english,,0,0,0,,David's name, found.
-Dialogue: 0,0:54:33.39,0:54:35.27,chinese,,0,0,0,, David的名字，找到了。
+Dialogue: 0,0:54:33.39,0:54:35.27,chinese,,0,0,0,,David 的名字，找到了。
 Dialogue: 0,0:54:35.27,0:54:36.94,english,,0,0,0,,Let's go ahead and run it one more time.
-Dialogue: 0,0:54:35.27,0:54:36.94,chinese,,0,0,0,,让我们再运行一次。
+Dialogue: 0,0:54:35.27,0:54:36.94,chinese,,0,0,0,,再运行一次。
 Dialogue: 0,0:54:36.94,0:54:40.26,english,,0,0,0,,Type in John Harvard, for instance, not found, in this case.
-Dialogue: 0,0:54:36.94,0:54:40.26,chinese,,0,0,0,,例如，输入约翰-哈佛，在这种情况下找不到。
+Dialogue: 0,0:54:36.94,0:54:40.26,chinese,,0,0,0,,输入 John Harvard，这个情况应该不该找到。
 Dialogue: 0,0:54:40.26,0:54:43.71,english,,0,0,0,,So fundamentally, the code isn't all that different.
-Dialogue: 0,0:54:40.26,0:54:43.71,chinese,,0,0,0,,因此，从根本上说，代码并没有什么不同。
+Dialogue: 0,0:54:40.26,0:54:43.71,chinese,,0,0,0,,所以从根本上来说，代码并没有什么不同。
 Dialogue: 0,0:54:43.71,0:54:46.09,english,,0,0,0,,Linear search is still behaving the same way.
-Dialogue: 0,0:54:43.71,0:54:46.09,chinese,,0,0,0,,线性查找仍在以同样的方式进行。
+Dialogue: 0,0:54:43.71,0:54:46.09,chinese,,0,0,0,,还是用老办法来进行线性查找。
 Dialogue: 0,0:54:46.09,0:54:48.69,english,,0,0,0,,And I admit, this is kind of ugly looking.
-Dialogue: 0,0:54:46.09,0:54:48.69,chinese,,0,0,0,,我承认，这看起来有点丑。
+Dialogue: 0,0:54:46.09,0:54:48.69,chinese,,0,0,0,,我得承认，这看起来有点丑。
 Dialogue: 0,0:54:48.69,0:54:52.35,english,,0,0,0,,We've kind of made a two line solution five lines of code now.
-Dialogue: 0,0:54:48.69,0:54:52.35,chinese,,0,0,0,,我们把一个两行代码的解决方案变成了五行代码。
+Dialogue: 0,0:54:48.69,0:54:52.35,chinese,,0,0,0,,原来的解决方案只有两行，现在却要五行代码。
 Dialogue: 0,0:54:52.35,0:55:03.89,english,,0,0,0,,But if we fast forward a week or two when we start saving information to files, we'll introduce you to files like csv files, comma separated values, or spreadsheet files, which
-Dialogue: 0,0:54:52.35,0:55:03.89,chinese,,0,0,0,,但是，如果我们快进一两周，开始将信息保存到文件中，我们就会向你介绍 csv 文件（逗号分隔值）或电子表格文件等文件，它们是
+Dialogue: 0,0:54:52.35,0:55:03.89,chinese,,0,0,0,,要是我们快进到一两周后，开始把信息保存到文件里，\N我们会学到用逗号作为分隔符的 csv 文件，还有电子表格文件等等，
 Dialogue: 0,0:55:03.89,0:55:06.60,english,,0,0,0,,you've surely opened on your Mac or PC at some point in the past.
-Dialogue: 0,0:55:03.89,0:55:06.60,chinese,,0,0,0,,你肯定曾经在 Mac 或 PC 上打开过这些文件。
+Dialogue: 0,0:55:03.89,0:55:06.60,chinese,,0,0,0,,你肯定之前在电脑上打开过这些文件的。
 Dialogue: 0,0:55:06.60,0:55:11.79,english,,0,0,0,,Suffice it to say we'll soon learn techniques for storing information, like names and numbers, in files.
-Dialogue: 0,0:55:06.60,0:55:11.79,chinese,,0,0,0,,我们很快就能学会在文件中存储姓名和数字等信息的技术。
+Dialogue: 0,0:55:06.60,0:55:11.79,chinese,,0,0,0,,我们很快就能学会，怎么样把姓名和数字等等信息存进文件。
 Dialogue: 0,0:55:11.79,0:55:19.08,english,,0,0,0,,And at that point, we're not going to do any of this hackish sort of hard coding of the number 2 and manually typing my name and Carter's name and number into our program.
-Dialogue: 0,0:55:11.79,0:55:19.08,chinese,,0,0,0,,到那时，我们就不会再像黑客那样硬编码数字 2，也不会再在程序中手动输入我和Carter的名字和号码了。
+Dialogue: 0,0:55:11.79,0:55:19.08,chinese,,0,0,0,,到那时，我们就不会像黑客那样硬编码数字 2 了，\N也不用在程序里手动输入我和 Carter 的名字、号码什么的。
 Dialogue: 0,0:55:19.08,0:55:21.75,english,,0,0,0,,We'll read the information dynamically from a file.
-Dialogue: 0,0:55:19.08,0:55:21.75,chinese,,0,0,0,,我们将从文件中动态读取信息。
+Dialogue: 0,0:55:19.08,0:55:21.75,chinese,,0,0,0,,我们会从文件里动态读取信息。
 Dialogue: 0,0:55:21.75,0:55:25.18,english,,0,0,0,,And in a few weeks, we'll read it dynamically from a database instead.
-Dialogue: 0,0:55:21.75,0:55:25.18,chinese,,0,0,0,,几周后，我们将从数据库中动态读取数据。
+Dialogue: 0,0:55:21.75,0:55:25.18,chinese,,0,0,0,,再几周后，我们会从数据库里动态读取数据。
 Dialogue: 0,0:55:25.18,0:55:32.19,english,,0,0,0,,But this is, for now, just syntactically how we can create an array of size 2 containing one person each.
-Dialogue: 0,0:55:25.18,0:55:32.19,chinese,,0,0,0,,但目前，这只是从语法上讲，我们怎么创建一个大小为 2 的数组，每个数组包含一个人。
+Dialogue: 0,0:55:25.18,0:55:32.19,chinese,,0,0,0,,到目前我们只是介绍了，怎么用新语法创建一个大小为 2 的 person 类型数组。
 Dialogue: 0,0:55:32.19,0:55:41.61,english,,0,0,0,,We can update the name and number of the first person, update the name and the number of the second person, and then later search across those names and print out the corresponding numbers.
-Dialogue: 0,0:55:32.19,0:55:41.61,chinese,,0,0,0,,我们可以更新第一个人的姓名和编号，更新第二个人的姓名和编号，然后搜索这些姓名并打印出相应的编号。
+Dialogue: 0,0:55:32.19,0:55:41.61,chinese,,0,0,0,,我们可以更新第一个人、第二个人的姓名和号码，还可以搜索这些姓名并打印出相应的号码。
 Dialogue: 0,0:55:41.61,0:55:44.22,english,,0,0,0,,And in this sense, this is a better design.
-Dialogue: 0,0:55:41.61,0:55:44.22,chinese,,0,0,0,,从这个意义上说，这是一个更好的设计。
+Dialogue: 0,0:55:41.61,0:55:44.22,chinese,,0,0,0,,从这个意义上说，这样设计得更好了。
 Dialogue: 0,0:55:44.22,0:55:44.73,english,,0,0,0,,Why?
 Dialogue: 0,0:55:44.73,0:55:53.40,english,,0,0,0,,Because my person data type encapsulates, now, everything that it means to be a person, at least in this narrow world.
-Dialogue: 0,0:55:44.73,0:55:53.40,chinese,,0,0,0,,因为我的人数据类型现在概括了作为一个人的所有含义，至少在这个狭隘的世界里是这样。
+Dialogue: 0,0:55:44.73,0:55:53.40,chinese,,0,0,0,,因为在这个用途不多的程序里面，person 数据类型概括并包含了一个人需要的所有信息。
 Dialogue: 0,0:55:53.40,0:55:57.58,english,,0,0,0,,And if I want to add something to the notion of a person, for instance,
-Dialogue: 0,0:55:53.40,0:55:57.58,chinese,,0,0,0,,例如，如果我想在 "人 "的概念中添加一些内容、
+Dialogue: 0,0:55:53.40,0:55:57.58,chinese,,0,0,0,,比如说，我现在想要给 person 添加点属性，
 Dialogue: 0,0:55:57.58,0:56:03.74,english,,0,0,0,,I could go up to my type def, and tomorrow, add an address to every person and start reading that in as well.
-Dialogue: 0,0:55:57.58,0:56:03.74,chinese,,0,0,0,,明天，我就可以在我的类型定义中为每个人添加一个地址，然后开始读取。
+Dialogue: 0,0:55:57.58,0:56:03.74,chinese,,0,0,0,,比如，我就可以到 typedef 的地方，为每个人添加一个 address，然后开始读写数据。
 Dialogue: 0,0:56:03.74,0:56:05.16,english,,0,0,0,,And now it's not the honor system.
-Dialogue: 0,0:56:03.74,0:56:05.16,chinese,,0,0,0,,现在不是荣誉制度了。
+Dialogue: 0,0:56:03.74,0:56:05.16,chinese,,0,0,0,,现在就不是君子协定了。
 Dialogue: 0,0:56:05.16,0:56:12.21,english,,0,0,0,,It's not a names array, a numbers array, an addresses array, and everything else you might imagine related to a person.
-Dialogue: 0,0:56:05.16,0:56:12.21,chinese,,0,0,0,,它不是一个姓名数组、一个数字数组、一个地址数组，以及你可能想象到的与人有关的其他一切。
+Dialogue: 0,0:56:05.16,0:56:12.21,chinese,,0,0,0,,它不是零散的 names 数组、numbers 数组、addresses 数组，等等人的单独属性。
 Dialogue: 0,0:56:12.21,0:56:17.22,english,,0,0,0,,It's all encapsulated, which is a term of art inside of the same type.
-Dialogue: 0,0:56:12.21,0:56:17.22,chinese,,0,0,0,,这一切都是封装的，是同一类型中的一个术语。
+Dialogue: 0,0:56:12.21,0:56:17.22,chinese,,0,0,0,,一切被封装起来，放到一个数据类型里面作为属性。
 Dialogue: 0,0:56:17.22,0:56:21.66,english,,0,0,0,,Reminiscent, if some of you have programmed before, of something called object-oriented programming.
-Dialogue: 0,0:56:17.22,0:56:21.66,chinese,,0,0,0,,如果你们中有人以前编过程序，就会想起一种叫做面向对象编程的东西。
+Dialogue: 0,0:56:17.22,0:56:21.66,chinese,,0,0,0,,如果你们有人以前写过程序，\N也许就会想到 "面向对象编程"（OOP，Object-Oriented Programming）。
 Dialogue: 0,0:56:21.66,0:56:23.19,english,,0,0,0,,But we're not there yet.
 Dialogue: 0,0:56:21.66,0:56:23.19,chinese,,0,0,0,,但我们还没到那一步。
 Dialogue: 0,0:56:23.19,0:56:24.69,english,,0,0,0,,C is not that.
-Dialogue: 0,0:56:23.19,0:56:24.69,chinese,,0,0,0,,C 并非如此。
+Dialogue: 0,0:56:23.19,0:56:24.69,chinese,,0,0,0,,C 不是一门面向对象的语言。
 Dialogue: 0,0:56:24.69,0:56:35.03,english,,0,0,0,,Questions on this use of struct or this new syntax, the dot operator being really the juicy part here.
-Dialogue: 0,0:56:24.69,0:56:35.03,chinese,,0,0,0,,关于 struct 的使用或这种新语法的问题，点运算符是最重要的部分。
+Dialogue: 0,0:56:24.69,0:56:35.03,chinese,,0,0,0,,关于 struct 的使用和相关的新语法，. 符号是最重要的。
 Dialogue: 0,0:56:35.03,0:56:35.62,english,,0,0,0,,Any questions?
 Dialogue: 0,0:56:35.03,0:56:35.62,chinese,,0,0,0,,有问题吗？
 Dialogue: 0,0:56:35.62,0:56:36.52,english,,0,0,0,,Yeah.
 Dialogue: 0,0:56:36.52,0:56:39.41,english,,0,0,0,,STUDENT: [INAUDIBLE]
-Dialogue: 0,0:56:36.52,0:56:39.41,chinese,,0,0,0,,学生：[听不清]
 Dialogue: 0,0:56:42.80,0:56:44.42,english,,0,0,0,,DAVID MALAN: On what line number?
-Dialogue: 0,0:56:42.80,0:56:44.42,chinese,,0,0,0,,在第几行？
+Dialogue: 0,0:56:42.80,0:56:44.42,chinese,,0,0,0,,在哪一行？
 Dialogue: 0,0:56:44.42,0:56:46.06,english,,0,0,0,,STUDENT: 16.
-Dialogue: 0,0:56:44.42,0:56:46.06,chinese,,0,0,0,,学生： 16.
 Dialogue: 0,0:56:46.06,0:56:46.73,english,,0,0,0,,DAVID MALAN: 16?
-Dialogue: 0,0:56:46.06,0:56:46.73,chinese,,0,0,0,,16？
 Dialogue: 0,0:56:46.73,0:56:51.23,english,,0,0,0,,So yes, so syntactically, we introduced the square brackets last week.
-Dialogue: 0,0:56:46.73,0:56:51.23,chinese,,0,0,0,,是的，从语法上讲，我们上周引入了方括号。
+Dialogue: 0,0:56:46.73,0:56:51.23,chinese,,0,0,0,,是的，我们上周引入了 C 语法中的方括号。
 Dialogue: 0,0:56:51.23,0:56:55.31,english,,0,0,0,,So doing people bracket 0 just means go to the first person in the array.
-Dialogue: 0,0:56:51.23,0:56:55.31,chinese,,0,0,0,,因此，"0 号括弧 "的意思就是去找数组中的第一个人。
+Dialogue: 0,0:56:51.23,0:56:55.31,chinese,,0,0,0,,所以，[0] 的意思就是去找 people 数组里的第一个人。
 Dialogue: 0,0:56:55.31,0:56:58.40,english,,0,0,0,,That was like when Stephanie literally opened this door.
-Dialogue: 0,0:56:55.31,0:56:58.40,chinese,,0,0,0,,就好像Stephanie真的打开了这扇门。
+Dialogue: 0,0:56:55.31,0:56:58.40,chinese,,0,0,0,,就好像 Stephanie 把这扇门打开了。
 Dialogue: 0,0:56:58.40,0:56:59.99,english,,0,0,0,,That's doors bracket 0.
-Dialogue: 0,0:56:58.40,0:56:59.99,chinese,,0,0,0,,这是 0 号门。
+Dialogue: 0,0:56:58.40,0:56:59.99,chinese,,0,0,0,,这是 doors[0]。
 Dialogue: 0,0:56:59.99,0:57:02.33,english,,0,0,0,,But this is, of course, people bracket 0 instead.
-Dialogue: 0,0:56:59.99,0:57:02.33,chinese,,0,0,0,,不过，这当然是人的括号 0 代替的。
+Dialogue: 0,0:56:59.99,0:57:02.33,chinese,,0,0,0,,不过程序里面是 people[0]。
 Dialogue: 0,0:57:02.33,0:57:04.58,english,,0,0,0,,Today, the dot is a new piece of syntax.
-Dialogue: 0,0:57:02.33,0:57:04.58,chinese,,0,0,0,,如今，"点 "已成为一种新的语法。
+Dialogue: 0,0:57:02.33,0:57:04.58,chinese,,0,0,0,,从今天起，点是一种新的语法。
 Dialogue: 0,0:57:04.58,0:57:13.29,english,,0,0,0,,It means go inside of that person in memory and look at the name they're in and set it equal to Carter and do the same for number.
-Dialogue: 0,0:57:04.58,0:57:13.29,chinese,,0,0,0,,这意味着进入记忆中的那个人，查看他们的名字，将其设置为Carter，并对数字做同样的设置。
+Dialogue: 0,0:57:04.58,0:57:13.29,chinese,,0,0,0,,这句的意思是进入内存里的那个 person 结构体，\N查看 name，设置成 Carter，然后把 number 也改掉了。
 Dialogue: 0,0:57:13.29,0:57:13.88,english,,0,0,0,,So that's all.
-Dialogue: 0,0:57:13.29,0:57:13.88,chinese,,0,0,0,,就这样吧。
+Dialogue: 0,0:57:13.29,0:57:13.88,chinese,,0,0,0,,就是这样。
 Dialogue: 0,0:57:13.88,0:57:18.41,english,,0,0,0,,It's like, open the locker door, go inside of it, and check or set the name and the number.
-Dialogue: 0,0:57:13.88,0:57:18.41,chinese,,0,0,0,,这就好比，打开柜子门，进入柜内，检查或设置名称和编号。
+Dialogue: 0,0:57:13.88,0:57:18.41,chinese,,0,0,0,,这就好比，打开柜子门，往里面看，检查或设置名称和号码什么的。
 Dialogue: 0,0:57:18.41,0:57:19.04,english,,0,0,0,,Yeah.
 Dialogue: 0,0:57:19.04,0:57:29.28,english,,0,0,0,,STUDENT: [INAUDIBLE] can you set default values for each of the [INAUDIBLE]??
-Dialogue: 0,0:57:19.04,0:57:29.28,chinese,,0,0,0,,学生：[听不清]你能为每个[听不清]设置默认值吗？
+Dialogue: 0,0:57:19.04,0:57:29.28,chinese,,0,0,0,,学生：你能为每个... 设置默认值吗？
 Dialogue: 0,0:57:29.28,0:57:30.84,english,,0,0,0,,DAVID MALAN: Attributes is fine.
-Dialogue: 0,0:57:29.28,0:57:30.84,chinese,,0,0,0,,DAVID MALAN：属性没问题。
+Dialogue: 0,0:57:29.28,0:57:30.84,chinese,,0,0,0,,你的意思应该是 attribute（属性）。
 Dialogue: 0,0:57:30.84,0:57:31.53,english,,0,0,0,,Good question.
-Dialogue: 0,0:57:30.84,0:57:31.53,chinese,,0,0,0,,问得好。
+Dialogue: 0,0:57:30.84,0:57:31.53,chinese,,0,0,0,,好问题。
 Dialogue: 0,0:57:31.53,0:57:34.05,english,,0,0,0,,In the struct, can you set default values?
-Dialogue: 0,0:57:31.53,0:57:34.05,chinese,,0,0,0,,在结构体中，能否设置默认值？
+Dialogue: 0,0:57:31.53,0:57:34.05,chinese,,0,0,0,,在结构体中，能不能给属性设置默认值？
 Dialogue: 0,0:57:34.05,0:57:35.10,english,,0,0,0,,Short answer, no.
-Dialogue: 0,0:57:34.05,0:57:35.10,chinese,,0,0,0,,简而言之，没有。
+Dialogue: 0,0:57:34.05,0:57:35.10,chinese,,0,0,0,,简而言之，C 语言不行。
 Dialogue: 0,0:57:35.10,0:57:42.58,english,,0,0,0,,And this is where C becomes less feature-able than more modern languages like Python and Java and others, where you can, in fact, do that.
-Dialogue: 0,0:57:35.10,0:57:42.58,chinese,,0,0,0,,与 Python 和 Java 等更现代的语言相比，C 语言的功能性就显得不足了。
+Dialogue: 0,0:57:35.10,0:57:42.58,chinese,,0,0,0,,与 Python 和 Java 等更现代的语言相比，C 语言就显得功能不足了。
 Dialogue: 0,0:57:42.58,0:57:47.14,english,,0,0,0,,So when we transition to Python in a few weeks' time, we'll see how we can start solving problems like that.
-Dialogue: 0,0:57:42.58,0:57:47.14,chinese,,0,0,0,,因此，当我们在几周后过渡到 Python 时，我们将看到怎么开始解决这样的问题。
+Dialogue: 0,0:57:42.58,0:57:47.14,chinese,,0,0,0,,所以，几周后过渡到 Python 的时候，我们就能看到怎么解决你说的设置默认值。
 Dialogue: 0,0:57:47.14,0:57:51.45,english,,0,0,0,,But for now, it's up to you to initialize name and number to something.
-Dialogue: 0,0:57:47.14,0:57:51.45,chinese,,0,0,0,,但现在，你需要将名称和编号初始化为某个值。
+Dialogue: 0,0:57:47.14,0:57:51.45,chinese,,0,0,0,,不过现在，你需要手动把 name 和 number 初始化为一个值。
 Dialogue: 0,0:57:51.45,0:57:52.83,english,,0,0,0,,Yeah.
 Dialogue: 0,0:57:52.83,0:57:55.54,english,,0,0,0,,STUDENT: [INAUDIBLE]
-Dialogue: 0,0:57:52.83,0:57:55.54,chinese,,0,0,0,,学生：[听不清]
 Dialogue: 0,0:58:04.12,0:58:05.54,english,,0,0,0,,DAVID MALAN: Really good question.
-Dialogue: 0,0:58:04.12,0:58:05.54,chinese,,0,0,0,,问得好。
+Dialogue: 0,0:58:04.12,0:58:05.54,chinese,,0,0,0,,好问题。
 Dialogue: 0,0:58:05.54,0:58:08.47,english,,0,0,0,,How can we adjust or critique the design of what I'm doing?
-Dialogue: 0,0:58:05.54,0:58:08.47,chinese,,0,0,0,,我们该怎么调整或批评我的设计？
+Dialogue: 0,0:58:05.54,0:58:08.47,chinese,,0,0,0,,要怎么调整或批评这里的设计？
 Dialogue: 0,0:58:08.47,0:58:13.78,english,,0,0,0,,This is one of the few situations where I would say, hypocritically, do as I say, not as I do.
-Dialogue: 0,0:58:08.47,0:58:13.78,chinese,,0,0,0,,这是为数不多的我会虚伪地说 "照我说的做，而不是照我做的做 "的情况之一。
+Dialogue: 0,0:58:08.47,0:58:13.78,chinese,,0,0,0,,这是为数不多的几次情况，我虚伪地跟你们讲 "照我说的做，而不是照我做的做"。
 Dialogue: 0,0:58:13.78,0:58:17.71,english,,0,0,0,,I am using pretty ugly lines like this, just to introduce the syntax.
-Dialogue: 0,0:58:13.78,0:58:17.71,chinese,,0,0,0,,我用了这样很难看的一行，只是为了介绍一下语法。
+Dialogue: 0,0:58:13.78,0:58:17.71,chinese,,0,0,0,,我用了这行很丑的代码，只是为了介绍一下语法。
 Dialogue: 0,0:58:17.71,0:58:26.23,english,,0,0,0,,But my claim, pedagogically today, is that eventually, when we start storing names and numbers or other things in files or in databases, you won't have this redundancy.
-Dialogue: 0,0:58:17.71,0:58:26.23,chinese,,0,0,0,,但我今天在教学上的主张是，最终，当我们开始在文件或数据库中存储名称、数字或其他东西时，你就不会再有这种冗余了。
+Dialogue: 0,0:58:17.71,0:58:26.23,chinese,,0,0,0,,但是今天只是教学的目的，\N最终，我们会用文件、数据库来存储名称、数字或其他信息，就不会出现这种冗余的写法了。
+Dialogue: 0,0:58:17.71,0:58:26.23,annotation,,0,0,0,,*碎碎念：有没有注意到 David 课上 live coding 的代码都是格式十分标准的，\N他一直以身作则写出好代码。大伙们一边学习语法和知识，也要好好模仿他的各种最佳实践。
 Dialogue: 0,0:58:26.23,0:58:34.63,english,,0,0,0,,You'll have one line of code or two lines of code that read the information from the file or database and then fill the entire array with that data.
-Dialogue: 0,0:58:26.23,0:58:34.63,chinese,,0,0,0,,你将用一行或两行代码从文件或数据库中读取信息，然后用这些数据填充整个数组。
+Dialogue: 0,0:58:26.23,0:58:34.63,chinese,,0,0,0,,一行或两行代码就可以从文件或数据库中读取信息，然后把这些数据填进整个数组。
 Dialogue: 0,0:58:34.63,0:58:39.40,english,,0,0,0,,For now, I'm just doing it manually so as to keep our focus only on the new syntax, but that's it.
-Dialogue: 0,0:58:34.63,0:58:39.40,chinese,,0,0,0,,目前，我只是手动操作，以便让我们只关注新语法，但仅此而已。
+Dialogue: 0,0:58:34.63,0:58:39.40,chinese,,0,0,0,,在这里我是自己手写数据的，以便让我们只关注新语法，仅此而已了。
 Dialogue: 0,0:58:39.40,0:58:42.64,english,,0,0,0,,So forgive the bad design by design today.
 Dialogue: 0,0:58:39.40,0:58:42.64,chinese,,0,0,0,,所以，请原谅今天的糟糕设计。
 Dialogue: 0,0:58:42.64,0:58:45.74,english,,0,0,0,,Other questions on this?
@@ -1735,473 +1716,449 @@ Dialogue: 0,0:58:42.64,0:58:45.74,chinese,,0,0,0,,还有其他问题吗？
 Dialogue: 0,0:58:45.74,0:58:47.59,english,,0,0,0,,All right, that's been a lot already.
 Dialogue: 0,0:58:45.74,0:58:47.59,chinese,,0,0,0,,好了，已经说了很多了。
 Dialogue: 0,0:58:47.59,0:58:50.47,english,,0,0,0,,Why don't we go ahead and take our 10 minute break with snacks first.
-Dialogue: 0,0:58:47.59,0:58:50.47,chinese,,0,0,0,,不如我们先去吃点心，休息 10 分钟。
+Dialogue: 0,0:58:47.59,0:58:50.47,chinese,,0,0,0,,不如我们先去整点点心，休息 10 分钟。
 Dialogue: 0,0:58:50.47,0:58:53.02,english,,0,0,0,,We have some delightful brownies in the lobby.
-Dialogue: 0,0:58:50.47,0:58:53.02,chinese,,0,0,0,,我们在大厅里准备了一些美味的巧克力蛋糕。
+Dialogue: 0,0:58:50.47,0:58:53.02,chinese,,0,0,0,,大厅里有我们准备的一些好吃的巧克力蛋糕。
 Dialogue: 0,0:58:53.02,0:58:55.90,english,,0,0,0,,All right, we are back.
 Dialogue: 0,0:58:53.02,0:58:55.90,chinese,,0,0,0,,好了，我们回来了。
 Dialogue: 0,0:58:55.90,0:59:02.35,english,,0,0,0,,And up until now, it clearly seems to be a good thing if your data is sorted, because you can use binary search.
-Dialogue: 0,0:58:55.90,0:59:02.35,chinese,,0,0,0,,到目前为止，如果你的数据是排序的，这显然是件好事，因为你可以使用二分查找。
+Dialogue: 0,0:58:55.90,0:59:02.35,chinese,,0,0,0,,到目前为止，如果你的数据是排好序的，显然是件好事，因为就可以用二分查找了。
 Dialogue: 0,0:59:02.35,0:59:05.54,english,,0,0,0,,You know a little something more about the data.
-Dialogue: 0,0:59:02.35,0:59:05.54,chinese,,0,0,0,,你对数据的了解更多一些。
+Dialogue: 0,0:59:02.35,0:59:05.54,chinese,,0,0,0,,你能了解数据多一点（由数据间的相对大小得到相对位置信息）。
 Dialogue: 0,0:59:05.54,0:59:10.42,english,,0,0,0,,But it turns out that sorting in and of itself is kind of a problem to solve too.
-Dialogue: 0,0:59:05.54,0:59:10.42,chinese,,0,0,0,,但事实证明，分类本身也是一个需要解决的问题。
+Dialogue: 0,0:59:05.54,0:59:10.42,chinese,,0,0,0,,但其实，排序本身就是一个需要解决的问题。
 Dialogue: 0,0:59:10.42,0:59:20.23,english,,0,0,0,,And you might think, well, if sorting is going to be pretty fast, we absolutely should do it before we start searching, because that will just speed up all of our searches.
-Dialogue: 0,0:59:10.42,0:59:20.23,chinese,,0,0,0,,你可能会想，好吧，如果排序会很快，我们绝对应该在开始搜索之前进行排序，因为这会加快我们所有的搜索速度。
+Dialogue: 0,0:59:10.42,0:59:20.23,chinese,,0,0,0,,你可能会想，好吧，如果排序很快的话，\N我们绝对应该先排序再查找，因为可以加快后续所有搜索的速度。
 Dialogue: 0,0:59:20.23,0:59:28.09,english,,0,0,0,,But if sorting is slow, that kind of invites the question, well, should we bother sorting our data if we're only going to search the data maybe once, maybe twice?
-Dialogue: 0,0:59:20.23,0:59:28.09,chinese,,0,0,0,,但是，如果排序速度很慢，就会引出这样一个问题：如果我们只搜索一次或两次数据，我们还需要费心排序数据吗？
+Dialogue: 0,0:59:20.23,0:59:28.09,chinese,,0,0,0,,但是，如果排序操作很慢的话，就会引出这样一个问题：\N如果只查找一两次数据，我们还需要费心排序数据吗？
 Dialogue: 0,0:59:28.09,0:59:30.55,english,,0,0,0,,And so here is going to be, potentially, a trade off.
-Dialogue: 0,0:59:28.09,0:59:30.55,chinese,,0,0,0,,因此，这可能是一种权衡。
+Dialogue: 0,0:59:28.09,0:59:30.55,chinese,,0,0,0,,因此，这可以说是一种权衡。
 Dialogue: 0,0:59:30.55,0:59:33.25,english,,0,0,0,,So let's consider what it means really to sort data.
-Dialogue: 0,0:59:30.55,0:59:33.25,chinese,,0,0,0,,因此，让我们思考一下数据分类的真正含义。
+Dialogue: 0,0:59:30.55,0:59:33.25,chinese,,0,0,0,,我们来思考一下排序数据的真正含义。
 Dialogue: 0,0:59:33.25,0:59:35.95,english,,0,0,0,,In our case, it's just going to be simple and use numbers.
-Dialogue: 0,0:59:33.25,0:59:35.95,chinese,,0,0,0,,在我们的案例中，只需简单地使用数字即可。
+Dialogue: 0,0:59:33.25,0:59:35.95,chinese,,0,0,0,,在我们的例子里面，只是简简单单几个数字来排序。
 Dialogue: 0,0:59:35.95,0:59:40.88,english,,0,0,0,,But it might, in the case of the Googles of the world, be actual web pages or persons or the like.
-Dialogue: 0,0:59:35.95,0:59:40.88,chinese,,0,0,0,,但是，对于世界上的谷歌来说，它可能是实际的网页或人或类似的东西。
+Dialogue: 0,0:59:35.95,0:59:40.88,chinese,,0,0,0,,但是，对于世界级的 Google 来说，可能排序的是实际的网页、很多的人，等等东西。
 Dialogue: 0,0:59:40.88,0:59:46.09,english,,0,0,0,,So here is our typical picture for sorting, for solving any problem.
-Dialogue: 0,0:59:40.88,0:59:46.09,chinese,,0,0,0,,这就是我们排序和解决任何问题的典型图片。
+Dialogue: 0,0:59:40.88,0:59:46.09,chinese,,0,0,0,,这张图非常典型，不管是排序还是解决别的问题都是这种模式。
 Dialogue: 0,0:59:46.09,0:59:48.19,english,,0,0,0,,Input at left and output at right.
-Dialogue: 0,0:59:46.09,0:59:48.19,chinese,,0,0,0,,左侧为输入，右侧为输出。
+Dialogue: 0,0:59:46.09,0:59:48.19,chinese,,0,0,0,,左侧输入，右侧输出。
 Dialogue: 0,0:59:48.19,0:59:54.34,english,,0,0,0,,The input to our sort problem is going to be some unsorted set of values.
-Dialogue: 0,0:59:48.19,0:59:54.34,chinese,,0,0,0,,排序问题的输入将是一组未排序的值。
+Dialogue: 0,0:59:48.19,0:59:54.34,chinese,,0,0,0,,排序问题的输入是一组没有经过排序的值。
 Dialogue: 0,0:59:54.34,0:59:57.94,english,,0,0,0,,And the output, ideally, will be the same set of values sorted.
-Dialogue: 0,0:59:54.34,0:59:57.94,chinese,,0,0,0,,理想情况下，输出将是排序后的同一组值。
-Dialogue: 0,0:59:57.94,1:00:04.78,english,,0,0,0,,And if we do this concretely, let's suppose that we want to go about sorting this list of numbers, 7, 2, 5, 4, 1, 6, 0,
-Dialogue: 0,0:59:57.94,1:00:04.78,chinese,,0,0,0,,具体来讲，假设我们要对 7、2、5、4、1、6、0 这一串数字进行排序、
-Dialogue: 0,1:00:04.78,1:00:05.86,english,,0,0,0,,3.
+Dialogue: 0,0:59:54.34,0:59:57.94,chinese,,0,0,0,,理想情况下，输出就是排序后的同一组值。
+Dialogue: 0,0:59:57.94,1:00:05.86,english,,0,0,0,,And if we do this concretely, let's suppose that we want to go about sorting this list of numbers, 7, 2, 5, 4, 1, 6, 0, 3.
+Dialogue: 0,0:59:57.94,1:00:04.78,chinese,,0,0,0,,具体来讲，比如我们要对 7、2、5、4、1、6、0、3 这一串数字进行排序，
 Dialogue: 0,1:00:05.86,1:00:07.81,english,,0,0,0,,So it's all of the numbers from 0 to 7.
-Dialogue: 0,1:00:05.86,1:00:07.81,chinese,,0,0,0,,所以是从 0 到 7 的所有数字。
+Dialogue: 0,1:00:05.86,1:00:07.81,chinese,,0,0,0,,其实就是 0 到 7 的所有数字。
 Dialogue: 0,1:00:07.81,1:00:09.75,english,,0,0,0,,But they're somehow jumbled up randomly.
-Dialogue: 0,1:00:07.81,1:00:09.75,chinese,,0,0,0,,但不知何故，它们被随意地混杂在一起。
+Dialogue: 0,1:00:07.81,1:00:09.75,chinese,,0,0,0,,不管什么原因，它们现在被随意地打乱了。
 Dialogue: 0,1:00:09.75,1:00:11.59,english,,0,0,0,,That's going to be the input to the problem.
-Dialogue: 0,1:00:09.75,1:00:11.59,chinese,,0,0,0,,这就是问题的症结所在。
+Dialogue: 0,1:00:09.75,1:00:11.59,chinese,,0,0,0,,这就是问题的输入。
 Dialogue: 0,1:00:11.59,1:00:17.99,english,,0,0,0,,And the goal is now to sort those so that you, indeed, get out 0, 1, 2, 3, 4, 5, 6, 7 instead.
-Dialogue: 0,1:00:11.59,1:00:17.99,chinese,,0,0,0,,现在的目标是对这些数据进行排序，这样你就能得到 0、1、2、3、4、5、6、7，而不是 0、1、2、3、4、5、6、7。
+Dialogue: 0,1:00:11.59,1:00:17.99,chinese,,0,0,0,,现在的目标是排序这些数据，要得到的结果是 0、1、2、3、4、5、6、7。
 Dialogue: 0,1:00:17.99,1:00:23.90,english,,0,0,0,,So it turns out there's lots of different ways we can actually sort numbers like these here.
-Dialogue: 0,1:00:17.99,1:00:23.90,chinese,,0,0,0,,事实证明，我们可以用很多不同的方法对这些数字进行排序。
-Dialogue: 0,1:00:23.90,1:00:32.41,english,,0,0,0,,And in fact, just to complement our search example earlier, could we perhaps quickly get some eight volunteers to come up if you're comfortable appearing on the internet?
-Dialogue: 0,1:00:23.90,1:00:32.41,chinese,,0,0,0,,事实上，为了补充我们之前的搜索示例，如果你愿意出现在互联网上，我们是否可以快速让八位志愿者上来？
+Dialogue: 0,1:00:17.99,1:00:23.90,chinese,,0,0,0,,其实，有很多不同的算法来对这些数字进行排序。
+Dialogue: 0,1:00:23.90,1:00:32.41,english,,0,0,0,,And in fact, just to complement our sorting example earlier, could we perhaps quickly get some eight volunteers to come up if you're comfortable appearing on the internet?
+Dialogue: 0,1:00:23.90,1:00:32.41,chinese,,0,0,0,,其实我想来补充一下刚才这个排序例子，\N能不能快速上来八位志愿者，如果你愿意在视频里出镜的话？
 Dialogue: 0,1:00:32.41,1:00:39.10,english,,0,0,0,,If you want to do 1, 2, 3, 4, 5, 6, 7, 8, how about?
-Dialogue: 0,1:00:32.41,1:00:39.10,chinese,,0,0,0,,如果你想做 1、2、3、4、5、6、7、8，怎么样？
+Dialogue: 0,1:00:32.41,1:00:39.10,chinese,,0,0,0,,摇人中... 怎么样？
 Dialogue: 0,1:00:39.10,1:00:40.25,english,,0,0,0,,All right, come on down.
-Dialogue: 0,1:00:39.10,1:00:40.25,chinese,,0,0,0,,好了，下来吧
+Dialogue: 0,1:00:39.10,1:00:40.25,chinese,,0,0,0,,好了，过来吧。
 Dialogue: 0,1:00:45.04,1:00:47.97,english,,0,0,0,,All right.
 Dialogue: 0,1:00:47.97,1:00:50.56,english,,0,0,0,,Come on over here, and I'll give you each a number.
-Dialogue: 0,1:00:47.97,1:00:50.56,chinese,,0,0,0,,过来，我给你们每人一个号码。
+Dialogue: 0,1:00:47.97,1:00:50.56,chinese,,0,0,0,,过来过来，我给你们每人一个号码。
 Dialogue: 0,1:00:50.56,1:00:58.39,english,,0,0,0,,And if you want to start to organize yourselves in the same order you see the numbers on the board.
-Dialogue: 0,1:00:50.56,1:00:58.39,chinese,,0,0,0,,如果你们想按照黑板上的数字顺序排列，请按顺序排列。
+Dialogue: 0,1:00:50.56,1:00:58.39,chinese,,0,0,0,,请你们按照黑板上的数字顺序排列。
 Dialogue: 0,1:00:58.39,1:01:04.46,english,,0,0,0,,So look up on the overhead and organize yourselves from left to right in that same order.
-Dialogue: 0,1:00:58.39,1:01:04.46,chinese,,0,0,0,,所以，请抬头看看头顶，按照同样的顺序从左到右排列。
+Dialogue: 0,1:00:58.39,1:01:04.46,chinese,,0,0,0,,抬头看看大屏幕，按照同样的顺序从左到右排一下。
 Dialogue: 0,1:01:04.46,1:01:06.21,english,,0,0,0,,And let's have the first of you-- perfect.
-Dialogue: 0,1:01:04.46,1:01:06.21,chinese,,0,0,0,,让我们有你的第一个 - 完美。
+Dialogue: 0,1:01:04.46,1:01:06.21,chinese,,0,0,0,,你是第一个。
 Dialogue: 0,1:01:06.21,1:01:10.42,english,,0,0,0,,If you want to come right over here, how about right in line with this?
-Dialogue: 0,1:01:06.21,1:01:10.42,chinese,,0,0,0,,如果你想过来，和这个排成一线怎么？
+Dialogue: 0,1:01:06.21,1:01:10.42,chinese,,0,0,0,,你过来一点点，排在这里可以吗？
 Dialogue: 0,1:01:10.42,1:01:13.99,english,,0,0,0,,All right, and a few more numbers.
 Dialogue: 0,1:01:10.42,1:01:13.99,chinese,,0,0,0,,好了，还有几个数字。
 Dialogue: 0,1:01:13.99,1:01:14.98,english,,0,0,0,,All right.
 Dialogue: 0,1:01:14.98,1:01:19.81,english,,0,0,0,,Number 2, 6, and perfect.
-Dialogue: 0,1:01:14.98,1:01:19.81,chinese,,0,0,0,,2号、6号，完美。
 Dialogue: 0,1:01:19.81,1:01:21.62,english,,0,0,0,,Just the right number, all right.
-Dialogue: 0,1:01:19.81,1:01:21.62,chinese,,0,0,0,,数字刚刚好
+Dialogue: 0,1:01:19.81,1:01:21.62,chinese,,0,0,0,,数字刚刚好。
 Dialogue: 0,1:01:21.62,1:01:22.85,english,,0,0,0,,Uh oh.
 Dialogue: 0,1:01:22.85,1:01:24.40,english,,0,0,0,,All right, there we go, number three.
-Dialogue: 0,1:01:22.85,1:01:24.40,chinese,,0,0,0,,好了，第三项。
+Dialogue: 0,1:01:22.85,1:01:24.40,chinese,,0,0,0,,好了，第 3 个。
 Dialogue: 0,1:01:24.40,1:01:24.96,english,,0,0,0,,All right.
 Dialogue: 0,1:01:24.96,1:01:26.26,english,,0,0,0,,So let's just do a quick check.
-Dialogue: 0,1:01:24.96,1:01:26.26,chinese,,0,0,0,,所以，让我们快速检查一下。
+Dialogue: 0,1:01:24.96,1:01:26.26,chinese,,0,0,0,,所以，我们来快速检查一下。
 Dialogue: 0,1:01:26.26,1:01:30.86,english,,0,0,0,,We have 7, 2, 5, 4, 1, 6, 0, 3, very good so far.
-Dialogue: 0,1:01:26.26,1:01:30.86,chinese,,0,0,0,,我们有 7、2、5、4、1、6、0、3，目前非常好。
+Dialogue: 0,1:01:26.26,1:01:30.86,chinese,,0,0,0,,现在是 7、2、5、4、1、6、0、3，到现在都非常好。
 Dialogue: 0,1:01:30.86,1:01:34.51,english,,0,0,0,,Do you want to just scootch a little this way just to make a little more room?
-Dialogue: 0,1:01:30.86,1:01:34.51,chinese,,0,0,0,,你想往这边挪一点，腾出更多空间吗？
+Dialogue: 0,1:01:30.86,1:01:34.51,chinese,,0,0,0,,能不能请你往这边挪一点，腾出点空间？
 Dialogue: 0,1:01:34.51,1:01:38.09,english,,0,0,0,,All right, and let's consider now who we have here on stage.
-Dialogue: 0,1:01:34.51,1:01:38.09,chinese,,0,0,0,,好了，现在让我们来看看台上都有谁。
+Dialogue: 0,1:01:34.51,1:01:38.09,chinese,,0,0,0,,好了，现在让我们来认识下台上都有谁。
 Dialogue: 0,1:01:38.09,1:01:40.78,english,,0,0,0,,You want to each say a quick hello to the audience?
-Dialogue: 0,1:01:38.09,1:01:40.78,chinese,,0,0,0,,你们想和观众打个招呼吗？
+Dialogue: 0,1:01:38.09,1:01:40.78,chinese,,0,0,0,,跟观众打个招呼怎么样？
 Dialogue: 0,1:01:40.78,1:01:42.07,english,,0,0,0,,RYAN: Hi, my name is Ryan.
-Dialogue: 0,1:01:40.78,1:01:42.07,chinese,,0,0,0,,你好，我叫莱恩。
 Dialogue: 0,1:01:42.07,1:01:45.59,english,,0,0,0,,I'm a first year from Pennypacker.
-Dialogue: 0,1:01:42.07,1:01:45.59,chinese,,0,0,0,,我是佩妮帕克的一年级学生。
 Dialogue: 0,1:01:45.59,1:01:46.93,english,,0,0,0,,ITSELLE: Hi, my name is Itselle.
-Dialogue: 0,1:01:45.59,1:01:46.93,chinese,,0,0,0,,你好，我叫伊瑟尔嗨，我叫伊瑟尔
 Dialogue: 0,1:01:46.93,1:01:49.17,english,,0,0,0,,I'm a first year at Strauss.
-Dialogue: 0,1:01:46.93,1:01:49.17,chinese,,0,0,0,,我是施特劳斯学院的一年级学生。
 Dialogue: 0,1:01:49.17,1:01:50.26,english,,0,0,0,,LUCY: Hi, my name is Lucy.
-Dialogue: 0,1:01:49.17,1:01:50.26,chinese,,0,0,0,,嗨，我叫露西。
 Dialogue: 0,1:01:50.26,1:01:52.40,english,,0,0,0,,And I'm a first year from Greenough.
-Dialogue: 0,1:01:50.26,1:01:52.40,chinese,,0,0,0,,我是来自格林诺夫的一年级学生。
 Dialogue: 0,1:01:52.40,1:01:53.65,english,,0,0,0,,SHILOH: Hi, my name is Shiloh.
-Dialogue: 0,1:01:52.40,1:01:53.65,chinese,,0,0,0,,你好，我叫夏伊洛。
 Dialogue: 0,1:01:53.65,1:01:55.92,english,,0,0,0,,I'm a first year in Wigglesworth.
-Dialogue: 0,1:01:53.65,1:01:55.92,chinese,,0,0,0,,我是维格斯沃斯的一年级学生。
 Dialogue: 0,1:01:55.92,1:01:57.01,english,,0,0,0,,JACK: Hi, my name is Jack.
-Dialogue: 0,1:01:55.92,1:01:57.01,chinese,,0,0,0,,你好，我叫杰克。
 Dialogue: 0,1:01:57.01,1:01:59.87,english,,0,0,0,,And I'm a first year in Strauss.
-Dialogue: 0,1:01:57.01,1:01:59.87,chinese,,0,0,0,,我是施特劳斯学院的一年级学生。
 Dialogue: 0,1:01:59.87,1:02:01.21,english,,0,0,0,,KATHRYN: Hi, my name is Kathryn.
-Dialogue: 0,1:01:59.87,1:02:01.21,chinese,,0,0,0,,你好，我叫凯瑟琳。
 Dialogue: 0,1:02:01.21,1:02:02.78,english,,0,0,0,,I'm a first year at Strauss.
-Dialogue: 0,1:02:01.21,1:02:02.78,chinese,,0,0,0,,我是施特劳斯学院的一年级学生。
 Dialogue: 0,1:02:02.78,1:02:04.12,english,,0,0,0,,MICHAEL: Hi, my name is Michael.
-Dialogue: 0,1:02:02.78,1:02:04.12,chinese,,0,0,0,,嗨，我叫迈克尔嗨，我的名字是迈克尔。
 Dialogue: 0,1:02:04.12,1:02:06.06,english,,0,0,0,,I'm a first year at Pennypacker.
-Dialogue: 0,1:02:04.12,1:02:06.06,chinese,,0,0,0,,我是佩妮派克的一年级学生。
 Dialogue: 0,1:02:06.06,1:02:07.48,english,,0,0,0,,MUHAMMAD: Hi, my name is Muhammad.
-Dialogue: 0,1:02:06.06,1:02:07.48,chinese,,0,0,0,,你好，我叫穆罕默德。
 Dialogue: 0,1:02:07.48,1:02:09.04,english,,0,0,0,,I'm a first year in Matthews.
-Dialogue: 0,1:02:07.48,1:02:09.04,chinese,,0,0,0,,我是马修斯大学的一年级学生。
 Dialogue: 0,1:02:09.04,1:02:10.63,english,,0,0,0,,DAVID MALAN: Hi, nice, welcome aboard.
 Dialogue: 0,1:02:09.04,1:02:10.63,chinese,,0,0,0,,嗨，很好，欢迎加入。
 Dialogue: 0,1:02:10.63,1:02:11.24,english,,0,0,0,,All right.
 Dialogue: 0,1:02:11.24,1:02:21.16,english,,0,0,0,,So let's consider, now, how we might go about sorting our kind volunteers here, the goal being to get them into order from smallest to largest so that,
-Dialogue: 0,1:02:11.24,1:02:21.16,chinese,,0,0,0,,因此，现在让我们考虑一下，怎么在这里对我们的志愿者进行分类，我们的目标是把他们按照从大到小的顺序排列，这样就可以了、
+Dialogue: 0,1:02:11.24,1:02:21.16,chinese,,0,0,0,,所以我们现在考虑的是，把所有志愿者进行排序，\N我们的目标是把他们按照从小到大的顺序排列就行了，
 Dialogue: 0,1:02:21.16,1:02:24.16,english,,0,0,0,,presumably then, we can use something smarter than just linear search.
-Dialogue: 0,1:02:21.16,1:02:24.16,chinese,,0,0,0,,那么，我们可以使用比线性查找更智能的方法。
+Dialogue: 0,1:02:21.16,1:02:24.16,chinese,,0,0,0,,这样以后，我们就可以使用一种办法，比线性查找更聪明一点来查找了。
 Dialogue: 0,1:02:24.16,1:02:27.87,english,,0,0,0,,We can actually use binary search, assuming that they are already then sorted.
-Dialogue: 0,1:02:24.16,1:02:27.87,chinese,,0,0,0,,实际上，我们可以使用二分查找，假设它们已经排序。
+Dialogue: 0,1:02:24.16,1:02:27.87,chinese,,0,0,0,,就是二分查找，但是前提是他们已经排好序了。
 Dialogue: 0,1:02:27.87,1:02:32.60,english,,0,0,0,,So let me propose that we first consider an algorithm that actually has a name called selection sort.
-Dialogue: 0,1:02:27.87,1:02:32.60,chinese,,0,0,0,,因此，我建议我们首先考虑一种算法，它实际上有一个名字，叫做选择排序。
+Dialogue: 0,1:02:27.87,1:02:32.60,chinese,,0,0,0,,所以，我们首先得考虑一种排序算法，叫做选择排序。
 Dialogue: 0,1:02:32.60,1:02:43.61,english,,0,0,0,,And selection sort is going to be one that literally has me, or really you, as the programmer, selecting the smallest element again and again, and then putting them into the appropriate place.
-Dialogue: 0,1:02:32.60,1:02:43.61,chinese,,0,0,0,,而 "选择排序 "就是让我，或者说是你，作为程序员，一次又一次地选择最小的元素，然后把它们放到合适的位置。
+Dialogue: 0,1:02:32.60,1:02:43.61,chinese,,0,0,0,,选择排序，就是让我们程序员，一次又一次地选择最小的元素，把它们放到合适的位置去。
 Dialogue: 0,1:02:43.61,1:02:47.11,english,,0,0,0,,So let me go ahead and start this here, starting with the number 7.
-Dialogue: 0,1:02:43.61,1:02:47.11,chinese,,0,0,0,,让我从这里开始，从数字 7 开始。
+Dialogue: 0,1:02:43.61,1:02:47.11,chinese,,0,0,0,,我要从这里开始，数字 7 开始。
 Dialogue: 0,1:02:47.11,1:02:49.24,english,,0,0,0,,At the moment, 7 is the smallest number I've found.
-Dialogue: 0,1:02:47.11,1:02:49.24,chinese,,0,0,0,,目前，7 是我找到的最小数字。
+Dialogue: 0,1:02:47.11,1:02:49.24,chinese,,0,0,0,,目前，我找到的最小数字是 7。
 Dialogue: 0,1:02:49.24,1:02:52.61,english,,0,0,0,,So I'm going to make mental note of that with a mental variable, if you will.
-Dialogue: 0,1:02:49.24,1:02:52.61,chinese,,0,0,0,,所以，我要用一个心理变量来记下这一点。
+Dialogue: 0,1:02:49.24,1:02:52.61,chinese,,0,0,0,,所以，我要在心里拿一个变量记着。
 Dialogue: 0,1:02:52.61,1:02:53.71,english,,0,0,0,,I'm going to move on now.
 Dialogue: 0,1:02:52.61,1:02:53.71,chinese,,0,0,0,,我要继续前进了。
 Dialogue: 0,1:02:53.71,1:03:01.55,english,,0,0,0,,Number 2 is obviously smaller, so I'm just going to update my mental reminder that 2 is now the smallest, effectively forgetting, for now, number 7.
-Dialogue: 0,1:02:53.71,1:03:01.55,chinese,,0,0,0,,2 号显然更小，所以我只是要更新我的心理提醒，2 号现在是最小的，实际上暂时忘记了 7 号。
+Dialogue: 0,1:02:53.71,1:03:01.55,chinese,,0,0,0,,2 显然更小，所以我需要更新心里那个变量，2 现在是最小的，实际上 7 可以抛之脑后了。
 Dialogue: 0,1:03:01.55,1:03:02.44,english,,0,0,0,,5, not smaller.
-Dialogue: 0,1:03:01.55,1:03:02.44,chinese,,0,0,0,,5，而不是更小。
+Dialogue: 0,1:03:01.55,1:03:02.44,chinese,,0,0,0,,5，没有更小。
 Dialogue: 0,1:03:02.44,1:03:03.37,english,,0,0,0,,4, not smaller.
-Dialogue: 0,1:03:02.44,1:03:03.37,chinese,,0,0,0,,4，而不是更小。
+Dialogue: 0,1:03:02.44,1:03:03.37,chinese,,0,0,0,,4，没有更小。
 Dialogue: 0,1:03:03.37,1:03:04.17,english,,0,0,0,,1, smaller.
-Dialogue: 0,1:03:03.37,1:03:04.17,chinese,,0,0,0,,1，较小。
+Dialogue: 0,1:03:03.37,1:03:04.17,chinese,,0,0,0,,1，还要小点。
 Dialogue: 0,1:03:04.17,1:03:05.92,english,,0,0,0,,And I'm going to make mental note of that.
-Dialogue: 0,1:03:04.17,1:03:05.92,chinese,,0,0,0,,我要在心里记下这一点。
+Dialogue: 0,1:03:04.17,1:03:05.92,chinese,,0,0,0,,我要在心里记着。
 Dialogue: 0,1:03:05.92,1:03:07.03,english,,0,0,0,,6, not smaller.
-Dialogue: 0,1:03:05.92,1:03:07.03,chinese,,0,0,0,,6，而不是更小。
+Dialogue: 0,1:03:05.92,1:03:07.03,chinese,,0,0,0,,6，没有更小。
 Dialogue: 0,1:03:07.03,1:03:08.20,english,,0,0,0,,0, even smaller.
-Dialogue: 0,1:03:07.03,1:03:08.20,chinese,,0,0,0,,0，甚至更小。
+Dialogue: 0,1:03:07.03,1:03:08.20,chinese,,0,0,0,,0，甚至还要小。
 Dialogue: 0,1:03:08.20,1:03:11.14,english,,0,0,0,,I'll make mental note of that, having forgotten now everything else.
-Dialogue: 0,1:03:08.20,1:03:11.14,chinese,,0,0,0,,我会记下来的，其他的都忘了。
+Dialogue: 0,1:03:08.20,1:03:11.14,chinese,,0,0,0,,前面忘了，中间忘了，最后是 0。
 Dialogue: 0,1:03:11.14,1:03:13.18,english,,0,0,0,,And now number 3 is not smaller.
-Dialogue: 0,1:03:11.14,1:03:13.18,chinese,,0,0,0,,而现在，3 号也不小了。
+Dialogue: 0,1:03:11.14,1:03:13.18,chinese,,0,0,0,,现在的 3 也没有更小。
 Dialogue: 0,1:03:13.18,1:03:14.29,english,,0,0,0,,So what's your name again?
 Dialogue: 0,1:03:13.18,1:03:14.29,chinese,,0,0,0,,你叫什么名字来着？
 Dialogue: 0,1:03:14.29,1:03:14.63,english,,0,0,0,,MICHAEL: Michael.
-Dialogue: 0,1:03:14.29,1:03:14.63,chinese,,0,0,0,,迈克尔迈克尔
 Dialogue: 0,1:03:14.63,1:03:16.24,english,,0,0,0,,DAVID MALAN: So Michael is number 0.
-Dialogue: 0,1:03:14.63,1:03:16.24,chinese,,0,0,0,,迈克尔是0号。
+Dialogue: 0,1:03:14.63,1:03:16.24,chinese,,0,0,0,,Michael 是 0 号。
 Dialogue: 0,1:03:16.24,1:03:18.31,english,,0,0,0,,He belongs, of course, way down there.
-Dialogue: 0,1:03:16.24,1:03:18.31,chinese,,0,0,0,,当然，他属于那里。
+Dialogue: 0,1:03:16.24,1:03:18.31,chinese,,0,0,0,,当然，他应该去那里。
 Dialogue: 0,1:03:18.31,1:03:20.74,english,,0,0,0,,But unfortunately-- you are--
-Dialogue: 0,1:03:18.31,1:03:20.74,chinese,,0,0,0,,但不幸的是 -- 你 --
+Dialogue: 0,1:03:18.31,1:03:20.74,chinese,,0,0,0,,不幸的是，这位...
 Dialogue: 0,1:03:20.74,1:03:21.55,english,,0,0,0,,RYAN: Ryan.
-Dialogue: 0,1:03:20.74,1:03:21.55,chinese,,0,0,0,,莱恩
 Dialogue: 0,1:03:21.55,1:03:23.36,english,,0,0,0,,DAVID MALAN: Ryan is in the way.
-Dialogue: 0,1:03:21.55,1:03:23.36,chinese,,0,0,0,,瑞安挡住了去路
+Dialogue: 0,1:03:21.55,1:03:23.36,chinese,,0,0,0,,Ryan 占住了那个位置。
 Dialogue: 0,1:03:23.36,1:03:24.58,english,,0,0,0,,So what should we do?
 Dialogue: 0,1:03:23.36,1:03:24.58,chinese,,0,0,0,,那我们该怎么办？
 Dialogue: 0,1:03:24.58,1:03:27.57,english,,0,0,0,,How should we start to sort this list?
-Dialogue: 0,1:03:24.58,1:03:27.57,chinese,,0,0,0,,我们应该怎么开始对这份清单进行排序？
+Dialogue: 0,1:03:24.58,1:03:27.57,chinese,,0,0,0,,我们应该怎么开始排序这个列表？
 Dialogue: 0,1:03:27.57,1:03:30.51,english,,0,0,0,,Where should number 0 go?
 Dialogue: 0,1:03:27.57,1:03:30.51,chinese,,0,0,0,,0 号应该放在哪里？
 Dialogue: 0,1:03:30.51,1:03:31.01,english,,0,0,0,,Yeah.
 Dialogue: 0,1:03:31.01,1:03:32.22,english,,0,0,0,,Do you want to say it louder?
-Dialogue: 0,1:03:31.01,1:03:32.22,chinese,,0,0,0,,你想说大声点吗？
+Dialogue: 0,1:03:31.01,1:03:32.22,chinese,,0,0,0,,大声点可以吗？
 Dialogue: 0,1:03:32.22,1:03:34.54,english,,0,0,0,,STUDENT: I will swap, I think.
-Dialogue: 0,1:03:32.22,1:03:34.54,chinese,,0,0,0,,学生：我想我会交换的。
+Dialogue: 0,1:03:32.22,1:03:34.54,chinese,,0,0,0,,学生：我觉得需要他俩交换。
 Dialogue: 0,1:03:34.54,1:03:36.67,english,,0,0,0,,DAVID MALAN: Yeah, so let's just go ahead and swap.
 Dialogue: 0,1:03:34.54,1:03:36.67,chinese,,0,0,0,,是啊，那我们就继续交换吧。
 Dialogue: 0,1:03:36.67,1:03:39.19,english,,0,0,0,,So if you want to go ahead and 0, go on where 7 is.
-Dialogue: 0,1:03:36.67,1:03:39.19,chinese,,0,0,0,,所以，如果你想继续 0，就继续 7 的位置。
+Dialogue: 0,1:03:36.67,1:03:39.19,chinese,,0,0,0,,所以，0 这位，转移到 7 的位置。
 Dialogue: 0,1:03:39.19,1:03:41.17,english,,0,0,0,,We need to make room for number 7.
-Dialogue: 0,1:03:39.19,1:03:41.17,chinese,,0,0,0,,我们需要为 7 号腾出空间。
+Dialogue: 0,1:03:39.19,1:03:41.17,chinese,,0,0,0,,我们需要为 7 腾出空间。
 Dialogue: 0,1:03:41.17,1:03:45.53,english,,0,0,0,,It would kind of be cheating if maybe everyone kind of politely stepped over to the side.
-Dialogue: 0,1:03:41.17,1:03:45.53,chinese,,0,0,0,,如果每个人都礼貌地站到一边，那就有点作弊了。
+Dialogue: 0,1:03:41.17,1:03:45.53,chinese,,0,0,0,,如果每个人都换位思考，站到 0 的后边来，那就有点耍赖了。
 Dialogue: 0,1:03:45.53,1:03:46.03,english,,0,0,0,,Why?
 Dialogue: 0,1:03:46.03,1:03:54.19,english,,0,0,0,,Because if we imagine all of our volunteers here to be an array, like, that's a crazy amount of work to have every element in the array shift to the left just to make room.
-Dialogue: 0,1:03:46.03,1:03:54.19,chinese,,0,0,0,,因为如果我们把所有的志愿者都想象成一个数组，那么要让数组中的每个元素都向左移动以腾出空间，这将是一个非常大的工作量。
+Dialogue: 0,1:03:46.03,1:03:54.19,chinese,,0,0,0,,我们把志愿者想象成一整个数组，\N如果要让数组里的每个元素都移动一位腾出空间，这么做的工作量特别大。
 Dialogue: 0,1:03:54.19,1:03:57.34,english,,0,0,0,,So we're going to keep it simple and just evict whoever's there now.
-Dialogue: 0,1:03:54.19,1:03:57.34,chinese,,0,0,0,,所以我们就简单点，不管是谁，只要把他赶走就行了。
+Dialogue: 0,1:03:54.19,1:03:57.34,chinese,,0,0,0,,所以我们就简单点，不管是谁，只要做一次交换就行了。
 Dialogue: 0,1:03:57.34,1:04:00.88,english,,0,0,0,,Now, maybe we get lucky, and number 7 is actually closer to its destination.
-Dialogue: 0,1:03:57.34,1:04:00.88,chinese,,0,0,0,,现在，也许我们运气好，7 号实际上离目的地更近了。
+Dialogue: 0,1:03:57.34,1:04:00.88,chinese,,0,0,0,,现在，可能是运气好吧，7 号距离他实际上的终点更近了。
 Dialogue: 0,1:04:00.88,1:04:03.25,english,,0,0,0,,Maybe we get unlucky, and it goes farther away.
-Dialogue: 0,1:04:00.88,1:04:03.25,chinese,,0,0,0,,也许我们运气不好，它走得更远。
+Dialogue: 0,1:04:00.88,1:04:03.25,chinese,,0,0,0,,也可能运气不好，他离得更远。
 Dialogue: 0,1:04:03.25,1:04:05.26,english,,0,0,0,,But we've at least solved one problem.
 Dialogue: 0,1:04:03.25,1:04:05.26,chinese,,0,0,0,,但我们至少解决了一个问题。
 Dialogue: 0,1:04:05.26,1:04:10.28,english,,0,0,0,,If we had n problems at first, now we have n minus 1, because number 0 is indeed in the right place.
-Dialogue: 0,1:04:05.26,1:04:10.28,chinese,,0,0,0,,如果一开始我们有 n 个问题，那么现在我们有 n 减 1，因为数字 0 确实在正确的位置上。
+Dialogue: 0,1:04:05.26,1:04:10.28,chinese,,0,0,0,,如果一开始我们有 n 个问题（n 个数字需要排序），\N那现在问题规模只有 n-1 了，因为数字 0 确实去到了正确的位置。
 Dialogue: 0,1:04:10.28,1:04:15.13,english,,0,0,0,,So if I continue to act this out, let me go ahead and say 2, currently the smallest.
-Dialogue: 0,1:04:10.28,1:04:15.13,chinese,,0,0,0,,所以，如果我继续演下去，就让我继续说 2，目前是最小的。
+Dialogue: 0,1:04:10.28,1:04:15.13,chinese,,0,0,0,,所以，我们继续表演下去，我得说，2 目前是最小的。
 Dialogue: 0,1:04:15.13,1:04:18.04,english,,0,0,0,,5, no, 4, no, 1 currently the smallest.
-Dialogue: 0,1:04:15.13,1:04:18.04,chinese,,0,0,0,,5，否，4，否，1 目前最小。
+Dialogue: 0,1:04:15.13,1:04:18.04,chinese,,0,0,0,,5，没有，4，没有，1 目前最小。
 Dialogue: 0,1:04:18.04,1:04:19.00,english,,0,0,0,,I'll make mental note.
 Dialogue: 0,1:04:18.04,1:04:19.00,chinese,,0,0,0,,我会记下来的。
 Dialogue: 0,1:04:19.00,1:04:22.69,english,,0,0,0,,6, 7, 3, and now let me pause.
-Dialogue: 0,1:04:19.00,1:04:22.69,chinese,,0,0,0,,6、7、3，现在让我暂停一下。
+Dialogue: 0,1:04:19.00,1:04:22.69,chinese,,0,0,0,,6、7、3，现在要暂停一下。
 Dialogue: 0,1:04:22.69,1:04:26.00,english,,0,0,0,,1 is obviously the now smallest element.
 Dialogue: 0,1:04:22.69,1:04:26.00,chinese,,0,0,0,,1 显然是现在最小的元素。
 Dialogue: 0,1:04:26.00,1:04:27.76,english,,0,0,0,,So did I need to keep going?
-Dialogue: 0,1:04:26.00,1:04:27.76,chinese,,0,0,0,,那么，我需要继续前进吗？
+Dialogue: 0,1:04:26.00,1:04:27.76,chinese,,0,0,0,,那么，我现在需要交换吗？
 Dialogue: 0,1:04:27.76,1:04:30.55,english,,0,0,0,,Well, turns out, at least as I've defined selection sort,
-Dialogue: 0,1:04:27.76,1:04:30.55,chinese,,0,0,0,,事实证明，至少我已经定义了选择排序、
+Dialogue: 0,1:04:27.76,1:04:30.55,chinese,,0,0,0,,其实，按照我刚才定义的选择排序（每次选择最小的元素，放到合适的位置去），
 Dialogue: 0,1:04:30.55,1:04:36.55,english,,0,0,0,,I do need to keep going, because I only claim that I'm using one variable in my mind to remember the then smallest element.
-Dialogue: 0,1:04:30.55,1:04:36.55,chinese,,0,0,0,,我确实需要继续下去，因为我只声称我在脑海中用一个变量来记忆当时最小的元素。
-Dialogue: 0,1:04:36.55,1:04:39.97,english,,0,0,0,,I'm not smart enough like us humans to remember, wait a minute,
-Dialogue: 0,1:04:36.55,1:04:39.97,chinese,,0,0,0,,我不像我们人类那么聪明，不记得了，等等、
-Dialogue: 0,1:04:39.97,1:04:41.59,english,,0,0,0,,1 is definitely the smallest now.
-Dialogue: 0,1:04:39.97,1:04:41.59,chinese,,0,0,0,,1 现在肯定是最小的。
+Dialogue: 0,1:04:30.55,1:04:36.55,chinese,,0,0,0,,我确实需要继续下去，因为我在脑海里只用了一个变量，来记住目前最小的元素。
+Dialogue: 0,1:04:36.55,1:04:41.59,english,,0,0,0,,I'm not smart enough like us humans to remember, wait a minute, 1 is definitely the smallest now.
+Dialogue: 0,1:04:36.55,1:04:41.59,chinese,,0,0,0,,计算机在记忆上没人类那么聪明灵活，"停一下，1 现在肯定是最小的"。
 Dialogue: 0,1:04:41.59,1:04:43.19,english,,0,0,0,,I don't have that whole recollection.
-Dialogue: 0,1:04:41.59,1:04:43.19,chinese,,0,0,0,,我没有那段完整的回忆。
+Dialogue: 0,1:04:41.59,1:04:43.19,chinese,,0,0,0,,走过的这段完整的记忆，计算机没有。
 Dialogue: 0,1:04:43.19,1:04:45.59,english,,0,0,0,,So I just am keeping track of the now smallest.
-Dialogue: 0,1:04:43.19,1:04:45.59,chinese,,0,0,0,,所以，我只是在记录现在最小的。
+Dialogue: 0,1:04:43.19,1:04:45.59,chinese,,0,0,0,,所以，我只是记录了当前最小值。
 Dialogue: 0,1:04:45.59,1:04:46.91,english,,0,0,0,,So number 1, your name was?
-Dialogue: 0,1:04:45.59,1:04:46.91,chinese,,0,0,0,,那么第一位，你叫什么名字？
+Dialogue: 0,1:04:45.59,1:04:46.91,chinese,,0,0,0,,那么 1 号这位，你叫什么名字？
 Dialogue: 0,1:04:46.91,1:04:47.41,english,,0,0,0,,JACK: Jack.
-Dialogue: 0,1:04:46.91,1:04:47.41,chinese,,0,0,0,,杰克
 Dialogue: 0,1:04:47.41,1:04:49.30,english,,0,0,0,,DAVID MALAN: Jack, where should Jack go?
-Dialogue: 0,1:04:47.41,1:04:49.30,chinese,,0,0,0,,杰克，杰克该去哪儿？
+Dialogue: 0,1:04:47.41,1:04:49.30,chinese,,0,0,0,,Jack 该去哪儿？
 Dialogue: 0,1:04:49.30,1:04:50.38,english,,0,0,0,,Probably there.
-Dialogue: 0,1:04:49.30,1:04:50.38,chinese,,0,0,0,,可能在那里。
+Dialogue: 0,1:04:49.30,1:04:50.38,chinese,,0,0,0,,应该是那里。
 Dialogue: 0,1:04:50.38,1:04:51.67,english,,0,0,0,,And what's your name?
 Dialogue: 0,1:04:50.38,1:04:51.67,chinese,,0,0,0,,你叫什么名字？
 Dialogue: 0,1:04:51.67,1:04:51.88,english,,0,0,0,,ITSELLE: Itselle.
-Dialogue: 0,1:04:51.67,1:04:51.88,chinese,,0,0,0,,伊策尔伊瑟尔
 Dialogue: 0,1:04:51.88,1:04:57.43,english,,0,0,0,,DAVID MALAN: OK, so Jack and Itselle, if you want to swap places, we've now solved two of the n total problems.
-Dialogue: 0,1:04:51.88,1:04:57.43,chinese,,0,0,0,,好了，杰克和伊瑟尔，如果你们想交换位置的话，我们现在已经解决了N个问题中的两个。
+Dialogue: 0,1:04:51.88,1:04:57.43,chinese,,0,0,0,,好了，Jack 和 Itselle，如果你们交换一下位置，n 个问题我们就解决两个了。
 Dialogue: 0,1:04:57.43,1:04:58.99,english,,0,0,0,,And now we'll do it a little faster.
-Dialogue: 0,1:04:57.43,1:04:58.99,chinese,,0,0,0,,现在我们要做得更快一点。
+Dialogue: 0,1:04:57.43,1:04:58.99,chinese,,0,0,0,,现在要做快一点。
 Dialogue: 0,1:04:58.99,1:05:03.88,english,,0,0,0,,If each of you want to start to swap as I find the right person, so 5 smallest,
-Dialogue: 0,1:04:58.99,1:05:03.88,chinese,,0,0,0,,如果你们每个人都想在我找到合适人选后开始交换，那么最小的 5 人、
+Dialogue: 0,1:04:58.99,1:05:03.88,chinese,,0,0,0,,我找到合适人选后，你们就自己交换一下，现在最小的是 5，
 Dialogue: 0,1:05:03.88,1:05:06.34,english,,0,0,0,,4 smaller, 2 is smaller.
 Dialogue: 0,1:05:03.88,1:05:06.34,chinese,,0,0,0,,4 更小，2 更小。
 Dialogue: 0,1:05:06.34,1:05:07.75,english,,0,0,0,,Got to keep checking.
-Dialogue: 0,1:05:06.34,1:05:07.75,chinese,,0,0,0,,必须继续检查。
+Dialogue: 0,1:05:06.34,1:05:07.75,chinese,,0,0,0,,必须继续往后找。
 Dialogue: 0,1:05:07.75,1:05:09.57,english,,0,0,0,,OK, 2 was smaller.
-Dialogue: 0,1:05:07.75,1:05:09.57,chinese,,0,0,0,,好吧，2 号比较小。
+Dialogue: 0,1:05:07.75,1:05:09.57,chinese,,0,0,0,,好了，2 是最小的。
 Dialogue: 0,1:05:09.57,1:05:11.78,english,,0,0,0,,All right, now I'm going to go back to the beginning.
-Dialogue: 0,1:05:09.57,1:05:11.78,chinese,,0,0,0,,好了，现在我要回到开头。
+Dialogue: 0,1:05:09.57,1:05:11.78,chinese,,0,0,0,,现在我要回到开头。
 Dialogue: 0,1:05:11.78,1:05:13.09,english,,0,0,0,,All right, 4 is small.
-Dialogue: 0,1:05:11.78,1:05:13.09,chinese,,0,0,0,,好吧，4 是小数。
+Dialogue: 0,1:05:11.78,1:05:13.09,chinese,,0,0,0,,好吧，4 很小。
 Dialogue: 0,1:05:13.09,1:05:14.05,english,,0,0,0,,5 is not.
 Dialogue: 0,1:05:14.05,1:05:14.74,english,,0,0,0,,6 is not.
 Dialogue: 0,1:05:14.74,1:05:16.12,english,,0,0,0,,7-- oh, 3 is small.
-Dialogue: 0,1:05:14.74,1:05:16.12,chinese,,0,0,0,,7 -- 哦，3个很小。
+Dialogue: 0,1:05:14.74,1:05:16.12,chinese,,0,0,0,,哦，3 还要小。
 Dialogue: 0,1:05:16.12,1:05:17.77,english,,0,0,0,,Where do you want to go?
-Dialogue: 0,1:05:16.12,1:05:17.77,chinese,,0,0,0,,你想去哪里？
+Dialogue: 0,1:05:16.12,1:05:17.77,chinese,,0,0,0,,你要去哪里？
 Dialogue: 0,1:05:17.77,1:05:18.67,english,,0,0,0,,OK, good.
 Dialogue: 0,1:05:18.67,1:05:19.81,english,,0,0,0,,I'm going to go back here.
-Dialogue: 0,1:05:18.67,1:05:19.81,chinese,,0,0,0,,我要回到这里。
+Dialogue: 0,1:05:18.67,1:05:19.81,chinese,,0,0,0,,我要回到开头去。
 Dialogue: 0,1:05:19.81,1:05:21.06,english,,0,0,0,,And I can be a little smart.
-Dialogue: 0,1:05:19.81,1:05:21.06,chinese,,0,0,0,,我还会耍小聪明。
+Dialogue: 0,1:05:19.81,1:05:21.06,chinese,,0,0,0,,我现在还可以聪明一点。
 Dialogue: 0,1:05:21.06,1:05:24.95,english,,0,0,0,,I don't have to go all the way to the end, because I know these folks are already sorted.
-Dialogue: 0,1:05:21.06,1:05:24.95,chinese,,0,0,0,,我没有必要一直写到最后，因为我知道这些人已经分好类了。
+Dialogue: 0,1:05:21.06,1:05:24.95,chinese,,0,0,0,,没有必要从开头一直检查到结尾，因为我知道前面这些已经排好序了。
 Dialogue: 0,1:05:24.95,1:05:26.63,english,,0,0,0,,So I can at least optimize slightly.
-Dialogue: 0,1:05:24.95,1:05:26.63,chinese,,0,0,0,,因此，我至少可以稍微优化一下。
+Dialogue: 0,1:05:24.95,1:05:26.63,chinese,,0,0,0,,这里稍微优化了一下。
 Dialogue: 0,1:05:26.63,1:05:27.97,english,,0,0,0,,So now 5 is small.
-Dialogue: 0,1:05:26.63,1:05:27.97,chinese,,0,0,0,,所以，现在 5 是小数目。
+Dialogue: 0,1:05:26.63,1:05:27.97,chinese,,0,0,0,,现在 5 是最小的。
 Dialogue: 0,1:05:27.97,1:05:28.72,english,,0,0,0,,6 is small.
-Dialogue: 0,1:05:27.97,1:05:28.72,chinese,,0,0,0,,6 是小数。
+Dialogue: 0,1:05:27.97,1:05:28.72,chinese,,0,0,0,,6 没有。
 Dialogue: 0,1:05:28.72,1:05:30.16,english,,0,0,0,,7 is 4, 4 is smaller.
-Dialogue: 0,1:05:28.72,1:05:30.16,chinese,,0,0,0,,7 是 4，4 更小。
+Dialogue: 0,1:05:28.72,1:05:30.16,chinese,,0,0,0,,4 更小。
 Dialogue: 0,1:05:30.16,1:05:33.08,english,,0,0,0,,If you want to go in place there.
-Dialogue: 0,1:05:30.16,1:05:33.08,chinese,,0,0,0,,如果你想去那里。
+Dialogue: 0,1:05:30.16,1:05:33.08,chinese,,0,0,0,,你可以去那里了。
 Dialogue: 0,1:05:33.08,1:05:34.81,english,,0,0,0,,And now, here things get interesting.
-Dialogue: 0,1:05:33.08,1:05:34.81,chinese,,0,0,0,,现在，事情变得有趣了。
+Dialogue: 0,1:05:33.08,1:05:34.81,chinese,,0,0,0,,现在，事情有点意思了。
 Dialogue: 0,1:05:34.81,1:05:39.34,english,,0,0,0,,I can optimize by not looking at these folks anymore, because they're obviously problem solved.
-Dialogue: 0,1:05:34.81,1:05:39.34,chinese,,0,0,0,,我可以不看这些人，因为他们显然已经解决问题了。
+Dialogue: 0,1:05:34.81,1:05:39.34,chinese,,0,0,0,,前面还是可以不用管，因为他们显然已经找到了自己的正确位置。
 Dialogue: 0,1:05:39.34,1:05:42.97,english,,0,0,0,,But now 5 is small, 6 is not, 7 is not.
-Dialogue: 0,1:05:39.34,1:05:42.97,chinese,,0,0,0,,但现在 5 号是小号，6 号不是，7 号也不是。
+Dialogue: 0,1:05:39.34,1:05:42.97,chinese,,0,0,0,,现在最小的是 5，不是 6，也不是 7。
 Dialogue: 0,1:05:42.97,1:05:45.01,english,,0,0,0,,OK, 5, you can stay where you are.
-Dialogue: 0,1:05:42.97,1:05:45.01,chinese,,0,0,0,,好了，5号，你可以留在原地。
+Dialogue: 0,1:05:42.97,1:05:45.01,chinese,,0,0,0,,好了，5 号，你留在原地就行。
 Dialogue: 0,1:05:45.01,1:05:49.42,english,,0,0,0,,Now, a human in the room is obviously going to question why I'm wasting any more time.
-Dialogue: 0,1:05:45.01,1:05:49.42,chinese,,0,0,0,,现在，房间里的人显然会质疑我为什么还要浪费时间。
+Dialogue: 0,1:05:45.01,1:05:49.42,chinese,,0,0,0,,现在，可能大伙会质疑我为什么还要浪费时间，不是已经排好了吗。
 Dialogue: 0,1:05:49.42,1:05:52.09,english,,0,0,0,,But with selection sort, as I've defined it thus far,
-Dialogue: 0,1:05:49.42,1:05:52.09,chinese,,0,0,0,,但是，按照我目前的定义，选择排序、
+Dialogue: 0,1:05:49.42,1:05:52.09,chinese,,0,0,0,,但是，按照定义来说，选择排序必须要走完（现在是一种比较好的情况），
 Dialogue: 0,1:05:52.09,1:05:55.84,english,,0,0,0,,I still have to, now, check 6 is smallest, not 7.
-Dialogue: 0,1:05:52.09,1:05:55.84,chinese,,0,0,0,,我现在还得检查 6 是最小的，而不是 7。
+Dialogue: 0,1:05:52.09,1:05:55.84,chinese,,0,0,0,,现在还得检查 6 是最小的，而不是 7。
 Dialogue: 0,1:05:55.84,1:05:58.52,english,,0,0,0,,And now my final step, OK, they're all in place.
-Dialogue: 0,1:05:55.84,1:05:58.52,chinese,,0,0,0,,现在是我的最后一步，好了，它们都就位了。
+Dialogue: 0,1:05:55.84,1:05:58.52,chinese,,0,0,0,,最后一步看 7，好了，一切就位。
 Dialogue: 0,1:05:58.52,1:06:05.06,english,,0,0,0,,So here, too, is this dichotomy between what we all have is this bird's eye view of the whole problem, where it's obvious where everyone needs to go.
-Dialogue: 0,1:05:58.52,1:06:05.06,chinese,,0,0,0,,因此，在这里也存在着这样一种对立，即我们都从鸟瞰的角度来看待整个问题，显然每个人都需要去哪里。
+Dialogue: 0,1:05:58.52,1:06:05.06,chinese,,0,0,0,,所以，这里存在着一种对立的视角，\N如果我们都从鸟瞰的角度来看待整个问题，显然每个人需要去哪里一目了然。
 Dialogue: 0,1:06:05.06,1:06:09.13,english,,0,0,0,,But a computer implementing this with an array really has to be more methodical.
-Dialogue: 0,1:06:05.06,1:06:09.13,chinese,,0,0,0,,但是，使用数组实现这一功能的计算机必须更加有条不紊。
+Dialogue: 0,1:06:05.06,1:06:09.13,chinese,,0,0,0,,但是，计算机里面的数组没法兼顾全局，必须更加有条不紊地步步执行。
+Dialogue: 0,1:06:05.06,1:06:09.13,annotation,,0,0,0,,*注：好好想想 David 这里传递的思想。
 Dialogue: 0,1:06:09.13,1:06:10.72,english,,0,0,0,,And we're actually saving a step here.
-Dialogue: 0,1:06:09.13,1:06:10.72,chinese,,0,0,0,,实际上，我们在这里节省了一个步骤。
+Dialogue: 0,1:06:09.13,1:06:10.72,chinese,,0,0,0,,其实我们在这里省了一个步骤。
 Dialogue: 0,1:06:10.72,1:06:13.78,english,,0,0,0,,If we were really doing this, none of these numbers would be visible.
 Dialogue: 0,1:06:10.72,1:06:13.78,chinese,,0,0,0,,如果我们真的这样做了，这些数字就都看不到了。
 Dialogue: 0,1:06:13.78,1:06:16.84,english,,0,0,0,,All eight of our volunteers would be inside of a locked door.
-Dialogue: 0,1:06:13.78,1:06:16.84,chinese,,0,0,0,,我们的八名志愿者都会在一扇上锁的门内。
+Dialogue: 0,1:06:13.78,1:06:16.84,chinese,,0,0,0,,我们的八名志愿者，每位都会关进一扇上锁的门。
 Dialogue: 0,1:06:16.84,1:06:19.22,english,,0,0,0,,And only then could we see them one at a time.
-Dialogue: 0,1:06:16.84,1:06:19.22,chinese,,0,0,0,,只有这样，我们才能一个一个地看到它们。
+Dialogue: 0,1:06:16.84,1:06:19.22,chinese,,0,0,0,,这样，我们一次只能看到他们里的一个，没法从全局把握。
 Dialogue: 0,1:06:19.22,1:06:21.67,english,,0,0,0,,But we're focusing now just on the sorting aspect.
-Dialogue: 0,1:06:19.22,1:06:21.67,chinese,,0,0,0,,但我们现在只关注分类方面。
+Dialogue: 0,1:06:19.22,1:06:21.67,chinese,,0,0,0,,我们现在只关注排序方面。
 Dialogue: 0,1:06:21.67,1:06:29.62,english,,0,0,0,,So let me just, before we do one other demonstration here, propose that what I really just did here in pseudocode was something like this.
-Dialogue: 0,1:06:21.67,1:06:29.62,chinese,,0,0,0,,所以，在我们做其他演示之前，请允许我提议，我刚才用伪代码做的事情其实是这样的。
+Dialogue: 0,1:06:21.67,1:06:29.62,chinese,,0,0,0,,所以，在做别的演示之前，我来推出刚才表演的伪代码描述。
 Dialogue: 0,1:06:29.62,1:06:38.11,english,,0,0,0,,For i from 0 to n minus 1, keeping in mind that 0 is always the left of the array. n minus 1 is always the right end of the array.
-Dialogue: 0,1:06:29.62,1:06:38.11,chinese,,0,0,0,,对于从 0 到 n 减 1 的 i，记住 0 总是数组的左端，n 减 1 总是数组的右端。
+Dialogue: 0,1:06:29.62,1:06:38.11,chinese,,0,0,0,,for i from 0 to n-1，记住 0 总是数组的左端，n-1 总是数组的右端。
 Dialogue: 0,1:06:38.11,1:06:45.73,english,,0,0,0,,For i from 0 to n minus 1, I found the smallest number between numbers bracket i and numbers bracket n minus 1.
-Dialogue: 0,1:06:38.11,1:06:45.73,chinese,,0,0,0,,对于从 0 到 n 减 1 的 i，我找到了数字括号 i 和数字括号 n 减 1 之间的最小数字。
+Dialogue: 0,1:06:38.11,1:06:45.73,chinese,,0,0,0,,for i from 0 to n-1，我找到了 numbers[i] 和 numbers[n-1] 之间的最小数字。
 Dialogue: 0,1:06:45.73,1:06:48.61,english,,0,0,0,,And that's the very geeky way of expressing this optimization.
-Dialogue: 0,1:06:45.73,1:06:48.61,chinese,,0,0,0,,这就是这种优化的极客表达方式。
+Dialogue: 0,1:06:45.73,1:06:48.61,chinese,,0,0,0,,这就是一种抽象过的代码描述。
 Dialogue: 0,1:06:48.61,1:06:51.49,english,,0,0,0,,I'm always starting from numbers bracket i wherever I am.
-Dialogue: 0,1:06:48.61,1:06:51.49,chinese,,0,0,0,,无论在哪里，我总是从数字括号 i 开始。
+Dialogue: 0,1:06:48.61,1:06:51.49,chinese,,0,0,0,,无论排序几个了，我总是从 numbers[i] 开始。
 Dialogue: 0,1:06:51.49,1:06:53.20,english,,0,0,0,,And then everything else to the right.
-Dialogue: 0,1:06:51.49,1:06:53.20,chinese,,0,0,0,,然后是右边的一切。
+Dialogue: 0,1:06:51.49,1:06:53.20,chinese,,0,0,0,,然后往右边看所有的。
 Dialogue: 0,1:06:53.20,1:06:56.89,english,,0,0,0,,And that's what was allowing me to ignore the already sorted volunteers.
-Dialogue: 0,1:06:53.20,1:06:56.89,chinese,,0,0,0,,这也是让我忽略已经排序的志愿者的原因。
+Dialogue: 0,1:06:53.20,1:06:56.89,chinese,,0,0,0,,这样就忽略掉了已经排序的志愿者。
 Dialogue: 0,1:06:56.89,1:07:05.47,english,,0,0,0,,If, though, my last line says swap smallest number with numbers i, think that implements what our humans were doing by physically walking to another spot.
-Dialogue: 0,1:06:56.89,1:07:05.47,chinese,,0,0,0,,不过，如果我的最后一行说用数字 i 交换最小的数字，我想这就实现了我们人类通过身体走到另一个地方的做法。
+Dialogue: 0,1:06:56.89,1:07:05.47,chinese,,0,0,0,,在伪代码的最后一行里面，我说要交换 numbers[i] 和最小的数字，\N就是刚才我们人工演示里做的走到另一个位置。
 Dialogue: 0,1:07:05.47,1:07:09.22,english,,0,0,0,,All right, so that, then, would be what we'll call selection sort.
-Dialogue: 0,1:07:05.47,1:07:09.22,chinese,,0,0,0,,好了，这就是我们所说的选择排序。
+Dialogue: 0,1:07:05.47,1:07:09.22,chinese,,0,0,0,,好了，这就是我们说的选择排序。
 Dialogue: 0,1:07:09.22,1:07:13.36,english,,0,0,0,,Let's go ahead and take a second approach here using an algorithm that I'm going to call bubble sort.
-Dialogue: 0,1:07:09.22,1:07:13.36,chinese,,0,0,0,,让我们使用第二种方法，我把这种算法称为冒泡排序。
+Dialogue: 0,1:07:09.22,1:07:13.36,chinese,,0,0,0,,现在来介绍第二种方法，叫做冒泡排序。
 Dialogue: 0,1:07:13.36,1:07:16.09,english,,0,0,0,,But to do this, we need you all to reset to your original locations.
-Dialogue: 0,1:07:13.36,1:07:16.09,chinese,,0,0,0,,但要做到这一点，我们需要你们全部重置到原来的位置。
+Dialogue: 0,1:07:13.36,1:07:16.09,chinese,,0,0,0,,在开始以前，需要你们全部重置到原来的位置。
 Dialogue: 0,1:07:16.09,1:07:19.75,english,,0,0,0,,We have a little cheat sheet on the board if you'd like to go back to this position here.
-Dialogue: 0,1:07:16.09,1:07:19.75,chinese,,0,0,0,,如果你想回到这个位置，我们在黑板上有一张小抄。
+Dialogue: 0,1:07:16.09,1:07:19.75,chinese,,0,0,0,,看黑板上有你们刚才位置的记录。
 Dialogue: 0,1:07:19.75,1:07:26.78,english,,0,0,0,,And let me take a fundamentally different approach, because I'm not really liking selection sort as is, because it's kind of a lot of walking back and forth.
-Dialogue: 0,1:07:19.75,1:07:26.78,chinese,,0,0,0,,让我采取一种根本不同的方法，因为我不太喜欢现在的选择排序，因为这有点像来回走动。
+Dialogue: 0,1:07:19.75,1:07:26.78,chinese,,0,0,0,,这种算法截然不同，因为我不太喜欢现在的选择排序，要来回走动。
 Dialogue: 0,1:07:26.78,1:07:30.62,english,,0,0,0,,And the lot of walking suggests a lot of, lot of steps again and again.
-Dialogue: 0,1:07:26.78,1:07:30.62,chinese,,0,0,0,,而 "走了很多路 "则意味着要走很多很多步。
+Dialogue: 0,1:07:26.78,1:07:30.62,chinese,,0,0,0,,而走了很多路，就意味着要运算很多很多步。
 Dialogue: 0,1:07:30.62,1:07:32.09,english,,0,0,0,,So what might I do instead?
 Dialogue: 0,1:07:30.62,1:07:32.09,chinese,,0,0,0,,那我该怎么做呢？
 Dialogue: 0,1:07:32.09,1:07:36.73,english,,0,0,0,,Well, bubble sort is going to have me focus a little more intuitively on just smaller problems.
-Dialogue: 0,1:07:32.09,1:07:36.73,chinese,,0,0,0,,嗯，气泡排序会让我更直观地关注一些小问题。
+Dialogue: 0,1:07:32.09,1:07:36.73,chinese,,0,0,0,,嗯，冒泡排序会更直观地关注一些小问题。
 Dialogue: 0,1:07:36.73,1:07:38.60,english,,0,0,0,,And let's see if this gets me somewhere else.
-Dialogue: 0,1:07:36.73,1:07:38.60,chinese,,0,0,0,,让我们看看这是否能让我去别的地方。
+Dialogue: 0,1:07:36.73,1:07:38.60,chinese,,0,0,0,,让我们看看能不能带来一些进展。
 Dialogue: 0,1:07:38.60,1:07:43.67,english,,0,0,0,,So if I just look at this list without looking at everyone else, 7 and 2, this is obviously a problem.
-Dialogue: 0,1:07:38.60,1:07:43.67,chinese,,0,0,0,,因此，如果我只看这份名单，而不看其他人，7 和 2，这显然是个问题。
+Dialogue: 0,1:07:38.60,1:07:43.67,chinese,,0,0,0,,如果我不看这个列表里面其他的，只关注 7 和 2，这显然有问题。
 Dialogue: 0,1:07:43.67,1:07:44.17,english,,0,0,0,,Why?
 Dialogue: 0,1:07:44.17,1:07:45.50,english,,0,0,0,,Because you're out of order.
-Dialogue: 0,1:07:44.17,1:07:45.50,chinese,,0,0,0,,因为你失常了。
+Dialogue: 0,1:07:44.17,1:07:45.50,chinese,,0,0,0,,因为顺序不对。
 Dialogue: 0,1:07:45.50,1:07:47.81,english,,0,0,0,,So let's just solve one tiny problem first.
-Dialogue: 0,1:07:45.50,1:07:47.81,chinese,,0,0,0,,所以，我们还是先解决一个小问题吧。
+Dialogue: 0,1:07:45.50,1:07:47.81,chinese,,0,0,0,,所以，我们先把这个小问题解决掉。
 Dialogue: 0,1:07:47.81,1:07:49.57,english,,0,0,0,,So 7 and 2, why don't you swap?
-Dialogue: 0,1:07:47.81,1:07:49.57,chinese,,0,0,0,,那么 7 和 2，你们为什么不交换呢？
+Dialogue: 0,1:07:47.81,1:07:49.57,chinese,,0,0,0,,7 和 2 两位，你们交换一下？
 Dialogue: 0,1:07:49.57,1:07:54.16,english,,0,0,0,,I know 2 is in a better place now, because she's definitely less than 7.
-Dialogue: 0,1:07:49.57,1:07:54.16,chinese,,0,0,0,,我知道 2 号现在的情况比 7 号好，因为她肯定比 7 号小。
+Dialogue: 0,1:07:49.57,1:07:54.16,chinese,,0,0,0,,我知道 2 号的位置更加接近正确，因为 2 比 7 号小是必然的。
 Dialogue: 0,1:07:54.16,1:07:55.54,english,,0,0,0,,So I think I can now move on.
-Dialogue: 0,1:07:54.16,1:07:55.54,chinese,,0,0,0,,所以，我想我现在可以继续前进了。
+Dialogue: 0,1:07:54.16,1:07:55.54,chinese,,0,0,0,,所以，我们接着往后看。
 Dialogue: 0,1:07:55.54,1:07:57.35,english,,0,0,0,,7 and 5, problem.
-Dialogue: 0,1:07:55.54,1:07:57.35,chinese,,0,0,0,,7 和 5，问题。
+Dialogue: 0,1:07:55.54,1:07:57.35,chinese,,0,0,0,,7 和 5，是个问题。
 Dialogue: 0,1:07:57.35,1:07:58.39,english,,0,0,0,,So let's solve that.
-Dialogue: 0,1:07:57.35,1:07:58.39,chinese,,0,0,0,,那我们就来解决这个问题。
+Dialogue: 0,1:07:57.35,1:07:58.39,chinese,,0,0,0,,我们来解决一下。
 Dialogue: 0,1:07:58.39,1:07:59.83,english,,0,0,0,,7 and 4, problem.
-Dialogue: 0,1:07:58.39,1:07:59.83,chinese,,0,0,0,,7 和 4，问题。
+Dialogue: 0,1:07:58.39,1:07:59.83,chinese,,0,0,0,,7 和 4，有问题。
 Dialogue: 0,1:07:59.83,1:08:02.38,english,,0,0,0,,Let's solve that, 7 and 1, let's solve that.
-Dialogue: 0,1:07:59.83,1:08:02.38,chinese,,0,0,0,,让我们来解决这个问题，7 和 1，让我们来解决这个问题。
+Dialogue: 0,1:07:59.83,1:08:02.38,chinese,,0,0,0,,交换一下。7 和 1，交换一下。
 Dialogue: 0,1:08:02.38,1:08:03.97,english,,0,0,0,,7 and 6, let's solve that.
-Dialogue: 0,1:08:02.38,1:08:03.97,chinese,,0,0,0,,7 和 6，让我们来解决这个问题。
+Dialogue: 0,1:08:02.38,1:08:03.97,chinese,,0,0,0,,7 和 6，交换一下。
 Dialogue: 0,1:08:03.97,1:08:05.08,english,,0,0,0,,7 and 0, solve that.
-Dialogue: 0,1:08:03.97,1:08:05.08,chinese,,0,0,0,,7 和 0，解决这个问题。
+Dialogue: 0,1:08:03.97,1:08:05.08,chinese,,0,0,0,,7 和 0，交换一下。
 Dialogue: 0,1:08:05.08,1:08:06.55,english,,0,0,0,,7 and 3, solve that.
-Dialogue: 0,1:08:05.08,1:08:06.55,chinese,,0,0,0,,7 和 3，解决这个问题。
+Dialogue: 0,1:08:05.08,1:08:06.55,chinese,,0,0,0,,7 和 3，交换一下。
 Dialogue: 0,1:08:06.55,1:08:07.33,english,,0,0,0,,OK, done.
 Dialogue: 0,1:08:07.33,1:08:09.13,english,,0,0,0,,Sorted, right?
-Dialogue: 0,1:08:07.33,1:08:09.13,chinese,,0,0,0,,分类了，对吗？
+Dialogue: 0,1:08:07.33,1:08:09.13,chinese,,0,0,0,,排序好了，对吗？
 Dialogue: 0,1:08:09.13,1:08:11.78,english,,0,0,0,,Or obviously not, if you just glance at these numbers here.
-Dialogue: 0,1:08:09.13,1:08:11.78,chinese,,0,0,0,,或者说，如果你只看一眼这些数字，显然不是这样。
+Dialogue: 0,1:08:09.13,1:08:11.78,chinese,,0,0,0,,你们看一眼就知道，显然还没有。
 Dialogue: 0,1:08:11.78,1:08:14.53,english,,0,0,0,,But we have, fundamentally, taken a bite out of the problem.
-Dialogue: 0,1:08:11.78,1:08:14.53,chinese,,0,0,0,,但从根本上说，我们已经解决了这个问题。
+Dialogue: 0,1:08:11.78,1:08:14.53,chinese,,0,0,0,,但从根本上讲，我们已经解决了一个问题。
 Dialogue: 0,1:08:14.53,1:08:17.02,english,,0,0,0,,7 is indeed in the right place.
-Dialogue: 0,1:08:14.53,1:08:17.02,chinese,,0,0,0,,7 的位置确实没错。
+Dialogue: 0,1:08:14.53,1:08:17.02,chinese,,0,0,0,,7 到达了正确的位置。
 Dialogue: 0,1:08:17.02,1:08:21.17,english,,0,0,0,,So we maximally have n minus 1 other problems to solve.
-Dialogue: 0,1:08:17.02,1:08:21.17,chinese,,0,0,0,,因此，我们最多还有 n 减 1 个其他问题需要解决。
+Dialogue: 0,1:08:17.02,1:08:21.17,chinese,,0,0,0,,所以，我们最多还有 n-1 个其他问题需要解决。
 Dialogue: 0,1:08:21.17,1:08:23.66,english,,0,0,0,,So how do I do this?
-Dialogue: 0,1:08:21.17,1:08:23.66,chinese,,0,0,0,,那么我该怎么做呢？
+Dialogue: 0,1:08:21.17,1:08:23.66,chinese,,0,0,0,,我们要怎么做呢？
 Dialogue: 0,1:08:23.66,1:08:25.70,english,,0,0,0,,I think I can just repeat the same logic.
-Dialogue: 0,1:08:23.66,1:08:25.70,chinese,,0,0,0,,我想我可以重复同样的逻辑。
+Dialogue: 0,1:08:23.66,1:08:25.70,chinese,,0,0,0,,我想可以重复同样的逻辑。
 Dialogue: 0,1:08:25.70,1:08:26.77,english,,0,0,0,,Let me go over here.
-Dialogue: 0,1:08:25.70,1:08:26.77,chinese,,0,0,0,,让我到这边来。
+Dialogue: 0,1:08:25.70,1:08:26.77,chinese,,0,0,0,,让我到最开始的地方来。
 Dialogue: 0,1:08:26.77,1:08:28.21,english,,0,0,0,,2 and 5, good.
-Dialogue: 0,1:08:26.77,1:08:28.21,chinese,,0,0,0,,2 和 5，很好。
+Dialogue: 0,1:08:26.77,1:08:28.21,chinese,,0,0,0,,2 和 5，对的。
 Dialogue: 0,1:08:28.21,1:08:29.80,english,,0,0,0,,5 and 4, no.
-Dialogue: 0,1:08:28.21,1:08:29.80,chinese,,0,0,0,,第 5 和第 4 号
+Dialogue: 0,1:08:28.21,1:08:29.80,chinese,,0,0,0,,5 和 4，不对。
 Dialogue: 0,1:08:29.80,1:08:31.33,english,,0,0,0,,5 and 1, no.
-Dialogue: 0,1:08:29.80,1:08:31.33,chinese,,0,0,0,,5 和 1，No.
+Dialogue: 0,1:08:29.80,1:08:31.33,chinese,,0,0,0,,5 和 1，不对。
 Dialogue: 0,1:08:31.33,1:08:32.59,english,,0,0,0,,5 and 6, yes.
-Dialogue: 0,1:08:31.33,1:08:32.59,chinese,,0,0,0,,5 和 6，是的。
+Dialogue: 0,1:08:31.33,1:08:32.59,chinese,,0,0,0,,5 和 6，没错。
 Dialogue: 0,1:08:32.59,1:08:34.66,english,,0,0,0,,6 and 0, no.
-Dialogue: 0,1:08:32.59,1:08:34.66,chinese,,0,0,0,,6 and 0, no.
+Dialogue: 0,1:08:32.59,1:08:34.66,chinese,,0,0,0,,6 和 0，不行。
 Dialogue: 0,1:08:34.66,1:08:36.76,english,,0,0,0,,6 and 3, no.
-Dialogue: 0,1:08:34.66,1:08:36.76,chinese,,0,0,0,,6 和 3，No.
+Dialogue: 0,1:08:34.66,1:08:36.76,chinese,,0,0,0,,6 和 3，不行。
 Dialogue: 0,1:08:36.76,1:08:39.19,english,,0,0,0,,So now we've solved two of the problems.
 Dialogue: 0,1:08:36.76,1:08:39.19,chinese,,0,0,0,,现在我们已经解决了两个问题。
 Dialogue: 0,1:08:39.19,1:08:42.70,english,,0,0,0,,And what's nice about bubble sort, at least as this glance, it's nice and simple.
-Dialogue: 0,1:08:39.19,1:08:42.70,chinese,,0,0,0,,泡泡排序的好处是，至少从这个角度看，它既漂亮又简单。
+Dialogue: 0,1:08:39.19,1:08:42.70,chinese,,0,0,0,,冒泡排序的好处是，至少从这个角度来看，好用又简单。
 Dialogue: 0,1:08:42.70,1:08:43.54,english,,0,0,0,,It's nice and local.
-Dialogue: 0,1:08:42.70,1:08:43.54,chinese,,0,0,0,,这里环境优美，又是当地人的乐园。
+Dialogue: 0,1:08:42.70,1:08:43.54,chinese,,0,0,0,,非常好使，而且每次都只关注局部。
 Dialogue: 0,1:08:43.54,1:08:46.51,english,,0,0,0,,And you just keep incrementally solving more and more problems.
-Dialogue: 0,1:08:43.54,1:08:46.51,chinese,,0,0,0,,而你只是不断地逐步解决越来越多的问题。
+Dialogue: 0,1:08:43.54,1:08:46.51,chinese,,0,0,0,,我们只是一步一步地解决越来越多的问题。
 Dialogue: 0,1:08:46.51,1:08:48.01,english,,0,0,0,,So let's go ahead and do this again.
-Dialogue: 0,1:08:46.51,1:08:48.01,chinese,,0,0,0,,所以，让我们再来一次。
+Dialogue: 0,1:08:46.51,1:08:48.01,chinese,,0,0,0,,我们再来一次。
 Dialogue: 0,1:08:48.01,1:08:50.08,english,,0,0,0,,And I'll do it-- we can do it faster.
-Dialogue: 0,1:08:48.01,1:08:50.08,chinese,,0,0,0,,我会做的，我们可以做得更快。
+Dialogue: 0,1:08:48.01,1:08:50.08,chinese,,0,0,0,,这次做快一点。
 Dialogue: 0,1:08:50.08,1:08:51.76,english,,0,0,0,,2 and 4, we know are good.
-Dialogue: 0,1:08:50.08,1:08:51.76,chinese,,0,0,0,,我们知道，2 号和 4 号都不错。
+Dialogue: 0,1:08:50.08,1:08:51.76,chinese,,0,0,0,,2 和 4，没问题。
 Dialogue: 0,1:08:51.76,1:08:59.20,english,,0,0,0,,4 and 1, 4 and 5, 5 and 0, 5 and 3, 5 and 6, 6 and 7, good.
 Dialogue: 0,1:08:51.76,1:08:59.20,chinese,,0,0,0,,4 和 1、4 和 5、5 和 0、5 和 3、5 和 6、6 和 7，很好。
 Dialogue: 0,1:08:59.20,1:09:01.39,english,,0,0,0,,So we go back, 2 and 1.
-Dialogue: 0,1:08:59.20,1:09:01.39,chinese,,0,0,0,,所以我们回去，2 和 1。
+Dialogue: 0,1:08:59.20,1:09:01.39,chinese,,0,0,0,,所以我们倒回去看，2 和 1。
 Dialogue: 0,1:09:01.39,1:09:03.34,english,,0,0,0,,Ah, now another problem solve.
-Dialogue: 0,1:09:01.39,1:09:03.34,chinese,,0,0,0,,啊，现在又一个问题解决了。
+Dialogue: 0,1:09:01.39,1:09:03.34,chinese,,0,0,0,,啊，现在又能解决一个问题。
 Dialogue: 0,1:09:03.34,1:09:09.93,english,,0,0,0,,2, and 4, 4 and 0, 4 and 3, 4 and 5, 5 and 6, 6 and 7.
-Dialogue: 0,1:09:03.34,1:09:09.93,chinese,,0,0,0,,2和4、4和0、4和3、4和5、5和6、6和7。
-Dialogue: 0,1:09:09.93,1:09:14.89,english,,0,0,0,,And so notice 2, as per its name, the largest elements have bubbled their way up to the top.
-Dialogue: 0,1:09:09.93,1:09:14.89,chinese,,0,0,0,,因此，请注意 2，正如它的名字一样，最大的元素已经冒了出来。
+Dialogue: 0,1:09:09.93,1:09:14.89,english,,0,0,0,,And so notice too, as per its name, the largest elements have bubbled their way up to the top.
+Dialogue: 0,1:09:09.93,1:09:14.89,chinese,,0,0,0,,注意了，正如冒泡排序的名字，最大的元素已经浮出水面（最右边）。
 Dialogue: 0,1:09:14.89,1:09:18.34,english,,0,0,0,,And that's what seems to be happening just as we're fixing some remaining problems.
-Dialogue: 0,1:09:14.89,1:09:18.34,chinese,,0,0,0,,就在我们解决一些遗留问题的时候，这似乎正在发生。
+Dialogue: 0,1:09:14.89,1:09:18.34,chinese,,0,0,0,,就是这样的步骤，我们一步步会解决剩下的问题。
 Dialogue: 0,1:09:18.34,1:09:19.12,english,,0,0,0,,So almost done.
-Dialogue: 0,1:09:18.34,1:09:19.12,chinese,,0,0,0,,就快完成了。
+Dialogue: 0,1:09:18.34,1:09:19.12,chinese,,0,0,0,,差不多快完成了。
 Dialogue: 0,1:09:19.12,1:09:27.55,english,,0,0,0,,1 and 2, 2 and 0, 2 and 3, 3 and 4, 4 and 5, 5 and 6, 6 and 7, almost done.
-Dialogue: 0,1:09:19.12,1:09:27.55,chinese,,0,0,0,,1 和 2、2 和 0、2 和 3、3 和 4、4 和 5、5 和 6、6 和 7，快完成了。
+Dialogue: 0,1:09:19.12,1:09:27.55,chinese,,0,0,0,,1 和 2、2 和 0、2 和 3、3 和 4、4 和 5、5 和 6、6 和 7，完成了。
 Dialogue: 0,1:09:27.55,1:09:29.83,english,,0,0,0,,Obviously, to us humans, it looks done.
 Dialogue: 0,1:09:27.55,1:09:29.83,chinese,,0,0,0,,显然，对我们人类来说，它看起来已经完成了。
 Dialogue: 0,1:09:29.83,1:09:32.52,english,,0,0,0,,How do I know as the computer for sure?
 Dialogue: 0,1:09:29.83,1:09:32.52,chinese,,0,0,0,,作为计算机，我怎么确定？
 Dialogue: 0,1:09:32.52,1:09:36.37,english,,0,0,0,,What would be the most surefire way for me to now go, it's not done, sorry.
-Dialogue: 0,1:09:32.52,1:09:36.37,chinese,,0,0,0,,有什么最万无一失的办法能让我现在就走？
+Dialogue: 0,1:09:32.52,1:09:36.37,chinese,,0,0,0,,有什么万无一失的办法能让我现在确定一切结束？噢，不好意思捏。
 Dialogue: 0,1:09:36.37,1:09:38.08,english,,0,0,0,,That's a bug.
-Dialogue: 0,1:09:36.37,1:09:38.08,chinese,,0,0,0,,这是一个错误。
+Dialogue: 0,1:09:36.37,1:09:38.08,chinese,,0,0,0,,这里有个 bug。
 Dialogue: 0,1:09:38.08,1:09:43.39,english,,0,0,0,,OK, 1 and 0, 1 and 2, 2 and 3, 3 and 4, 4 and 5, 5 and 6, 6 and 7.
 Dialogue: 0,1:09:38.08,1:09:43.39,chinese,,0,0,0,,好，1 和 0、1 和 2、2 和 3、3 和 4、4 和 5、5 和 6、6 和 7。
 Dialogue: 0,1:09:43.39,1:09:47.89,english,,0,0,0,,OK, so now it's obviously sorted to the rest of us on stage.
-Dialogue: 0,1:09:43.39,1:09:47.89,chinese,,0,0,0,,好了，现在舞台上的其他人显然已经分好类了。
+Dialogue: 0,1:09:43.39,1:09:47.89,chinese,,0,0,0,,好了，现在应该都排好序了。
 Dialogue: 0,1:09:47.89,1:09:50.29,english,,0,0,0,,How could I confirm as much as code?
-Dialogue: 0,1:09:47.89,1:09:50.29,chinese,,0,0,0,,我怎样才能尽可能多地确认代码？
+Dialogue: 0,1:09:47.89,1:09:50.29,chinese,,0,0,0,,我怎么从代码上进行确认？
 Dialogue: 0,1:09:50.29,1:09:52.67,english,,0,0,0,,You're doing it with your mind, just glancing at this.
-Dialogue: 0,1:09:50.29,1:09:52.67,chinese,,0,0,0,,你只是瞥了一眼，就用意念去做了。
+Dialogue: 0,1:09:50.29,1:09:52.67,chinese,,0,0,0,,你只是瞥了一眼，就自然地知道了。
 Dialogue: 0,1:09:52.67,1:09:56.08,english,,0,0,0,,How would the computer, the code, know for sure that this list is now sorted?
-Dialogue: 0,1:09:52.67,1:09:56.08,chinese,,0,0,0,,计算机、代码怎么确定列表已经排序？
+Dialogue: 0,1:09:52.67,1:09:56.08,chinese,,0,0,0,,计算机怎么确定列表已经排序？
 Dialogue: 0,1:09:56.08,1:09:57.00,english,,0,0,0,,Yeah.
 Dialogue: 0,1:09:57.00,1:09:58.50,english,,0,0,0,,STUDENT: [INAUDIBLE] one more time.
-Dialogue: 0,1:09:57.00,1:09:58.50,chinese,,0,0,0,,学生：[听不清]再来一次。
+Dialogue: 0,1:09:57.00,1:09:58.50,chinese,,0,0,0,,学生：...再来一次。
 Dialogue: 0,1:09:58.50,1:10:00.00,english,,0,0,0,,DAVID MALAN: Let's do one more time.
-Dialogue: 0,1:09:58.50,1:10:00.00,chinese,,0,0,0,,我们再来一次。
+Dialogue: 0,1:09:58.50,1:10:00.00,chinese,,0,0,0,,我们再来走一次。
 Dialogue: 0,1:10:00.00,1:10:03.51,english,,0,0,0,,And look, draw what conclusion?
-Dialogue: 0,1:10:00.00,1:10:03.51,chinese,,0,0,0,,你看，得出了什么结论？
+Dialogue: 0,1:10:00.00,1:10:03.51,chinese,,0,0,0,,然后能得出什么结论呢？
 Dialogue: 0,1:10:03.51,1:10:05.49,english,,0,0,0,,STUDENT: That nothing has to switch at all.
-Dialogue: 0,1:10:03.51,1:10:05.49,chinese,,0,0,0,,学生：什么都不用换。
+Dialogue: 0,1:10:03.51,1:10:05.49,chinese,,0,0,0,,学生：什么都不用交换。
 Dialogue: 0,1:10:05.49,1:10:08.86,english,,0,0,0,,DAVID MALAN: Yeah, let's do it one more time, even though it's a little wasteful.
 Dialogue: 0,1:10:05.49,1:10:08.86,chinese,,0,0,0,,是啊，我们再来一次吧，虽然有点浪费。
 Dialogue: 0,1:10:08.86,1:10:19.13,english,,0,0,0,,But logically, if I go through the whole list comparing pairs again, again, and again, and I don't do any work that time, now it's obviously logically safe to just stop, because otherwise, I'm
-Dialogue: 0,1:10:08.86,1:10:19.13,chinese,,0,0,0,,但是，从逻辑上讲，如果我一遍又一遍地比较整个列表中的配对，而这一次我没有做任何工作，那么现在停下来显然在逻辑上是安全的，因为否则，我就会
+Dialogue: 0,1:10:08.86,1:10:19.13,chinese,,0,0,0,,但从逻辑上讲，如果我一遍又一遍地在列表里面比较、交换，\N而这一次我什么都不用交换，那显然从逻辑上现在停止是没问题的，
 Dialogue: 0,1:10:19.13,1:10:22.93,english,,0,0,0,,wasting my time doing the same thing again and again if no one's actually moving.
-Dialogue: 0,1:10:19.13,1:10:22.93,chinese,,0,0,0,,如果没有人真正行动起来，我就会浪费时间反复做同样的事情。
+Dialogue: 0,1:10:19.13,1:10:22.93,chinese,,0,0,0,,因为没有需要移动的元素了，如果不停止就是在浪费时间一遍又一遍地循环。
 Dialogue: 0,1:10:22.93,1:10:25.35,english,,0,0,0,,So I'm afraid we don't have monopoly games for all of you.
-Dialogue: 0,1:10:22.93,1:10:25.35,chinese,,0,0,0,,所以，恐怕我们没有为你们所有人准备大富翁游戏。
+Dialogue: 0,1:10:22.93,1:10:25.35,chinese,,0,0,0,,可惜我们没有给你们所有人准备大富翁游戏。
 Dialogue: 0,1:10:25.35,1:10:26.76,english,,0,0,0,,But we do have eight stress balls.
-Dialogue: 0,1:10:25.35,1:10:26.76,chinese,,0,0,0,,但我们确实有八个压力球。
+Dialogue: 0,1:10:25.35,1:10:26.76,chinese,,0,0,0,,不过确实有八个压力球分给大家。
 Dialogue: 0,1:10:26.76,1:10:30.09,english,,0,0,0,,And round of applause, if we could, for our volunteers.
-Dialogue: 0,1:10:26.76,1:10:30.09,chinese,,0,0,0,,掌声送给我们的志愿者。
+Dialogue: 0,1:10:26.76,1:10:30.09,chinese,,0,0,0,,掌声送给我们的志愿者们。
 Dialogue: 0,1:10:30.09,1:10:33.91,english,,0,0,0,,If you want to put your numbers on the shelf there.
-Dialogue: 0,1:10:30.09,1:10:33.91,chinese,,0,0,0,,如果你想把你的数字放在架子上。
+Dialogue: 0,1:10:30.09,1:10:33.91,chinese,,0,0,0,,请大家把数字放在架子上。
 Dialogue: 0,1:10:33.91,1:10:36.72,english,,0,0,0,,So if we consider for a moment-- thank you.
-Dialogue: 0,1:10:33.91,1:10:36.72,chinese,,0,0,0,,所以，如果我们考虑一下 -- 谢谢。
+Dialogue: 0,1:10:33.91,1:10:36.72,chinese,,0,0,0,,所以，我们来考虑一下... 谢谢你们。
 Dialogue: 0,1:10:36.72,1:10:39.34,english,,0,0,0,,Thank you so much.
 Dialogue: 0,1:10:36.72,1:10:39.34,chinese,,0,0,0,,非常感谢。
 Dialogue: 0,1:10:39.34,1:10:42.15,english,,0,0,0,,Sure.
@@ -2209,22 +2166,22 @@ Dialogue: 0,1:10:42.15,1:10:43.17,english,,0,0,0,,Thank you.
 Dialogue: 0,1:10:43.17,1:10:44.23,english,,0,0,0,,Thanks.
 Dialogue: 0,1:10:44.23,1:10:44.73,english,,0,0,0,,Sure.
 Dialogue: 0,1:10:44.73,1:10:48.87,english,,0,0,0,,So if we consider now these two algorithms, which one is better?
-Dialogue: 0,1:10:44.73,1:10:48.87,chinese,,0,0,0,,那么，如果我们现在考虑这两种算法，哪一种更好呢？
+Dialogue: 0,1:10:44.73,1:10:48.87,chinese,,0,0,0,,那么，我们现在来考虑一下这两种算法，哪一种更好呢？
 Dialogue: 0,1:10:48.87,1:10:55.95,english,,0,0,0,,Any intuition for whether selection sort the first is better or worse than bubble sort the second?
-Dialogue: 0,1:10:48.87,1:10:55.95,chinese,,0,0,0,,第一种选择排序方式比第二种冒泡排序方式好还是不好，有什么直观感受吗？
+Dialogue: 0,1:10:48.87,1:10:55.95,chinese,,0,0,0,,第一种是选择排序，第二种是冒泡排序，大家有没有什么直观的印象好或者不好？
 Dialogue: 0,1:10:55.95,1:10:58.02,english,,0,0,0,,Any thoughts?
-Dialogue: 0,1:10:55.95,1:10:58.02,chinese,,0,0,0,,有什么想法？
+Dialogue: 0,1:10:55.95,1:10:58.02,chinese,,0,0,0,,有想法吗？
 Dialogue: 0,1:10:58.02,1:10:58.86,english,,0,0,0,,Yeah.
 Dialogue: 0,1:10:58.86,1:11:03.62,english,,0,0,0,,STUDENT: Bubble sort's even better because it's less work [INAUDIBLE]..
-Dialogue: 0,1:10:58.86,1:11:03.62,chinese,,0,0,0,,泡泡排序的更好，因为它的工作[听不清]。
+Dialogue: 0,1:10:58.86,1:11:03.62,chinese,,0,0,0,,冒泡排序更好一点，因为它...
 Dialogue: 0,1:11:03.62,1:11:08.93,english,,0,0,0,,DAVID MALAN: So bubble sort seems like less work, especially since I was focusing on those localized problems.
-Dialogue: 0,1:11:03.62,1:11:08.93,chinese,,0,0,0,,所以说，泡沫似乎更省事，尤其是我当时专注于那些局部问题。
+Dialogue: 0,1:11:03.62,1:11:08.93,chinese,,0,0,0,,所以说，冒泡排序似乎更省事，我们每次都专注于解决局部的问题。
 Dialogue: 0,1:11:08.93,1:11:11.46,english,,0,0,0,,Other intuition?
-Dialogue: 0,1:11:08.93,1:11:11.46,chinese,,0,0,0,,其他直觉？
+Dialogue: 0,1:11:08.93,1:11:11.46,chinese,,0,0,0,,还有想法吗？
 Dialogue: 0,1:11:11.46,1:11:14.58,english,,0,0,0,,Selection sort versus bubble sort.
-Dialogue: 0,1:11:11.46,1:11:14.58,chinese,,0,0,0,,选择排序与冒泡排序
+Dialogue: 0,1:11:11.46,1:11:14.58,chinese,,0,0,0,,选择排序与冒泡排序。
 Dialogue: 0,1:11:14.58,1:11:19.42,english,,0,0,0,,Well, let me propose that we try to quantize this so we can actually analyze it in some way.
-Dialogue: 0,1:11:14.58,1:11:19.42,chinese,,0,0,0,,好吧，让我提议，我们试着将其量化，这样我们就能以某种方式对其进行实际分析了。
+Dialogue: 0,1:11:14.58,1:11:19.42,chinese,,0,0,0,,好吧，我提议来试着量化这两种算法，这样我们就能不凭感觉而是根据实际分析了。
 Dialogue: 0,1:11:19.42,1:11:22.59,english,,0,0,0,,And this is not an exercise we'll do constantly for lots of algorithms.
 Dialogue: 0,1:11:19.42,1:11:22.59,chinese,,0,0,0,,而且，这也不是我们为大量算法不断进行的练习。
 Dialogue: 0,1:11:22.59,1:11:24.94,english,,0,0,0,,But these are pretty representative of algorithms.
@@ -2414,11 +2371,11 @@ Dialogue: 0,1:18:11.28,1:18:19.65,chinese,,0,0,0,,这里有一种算法，就像
 Dialogue: 0,1:18:19.65,1:18:21.36,english,,0,0,0,,All right, so hopefully we can do better.
 Dialogue: 0,1:18:19.65,1:18:21.36,chinese,,0,0,0,,好吧，希望我们能做得更好。
 Dialogue: 0,1:18:21.36,1:18:25.61,english,,0,0,0,,And someone proposed earlier that bubble sort felt like it was using fewer steps.
-Dialogue: 0,1:18:21.36,1:18:25.61,chinese,,0,0,0,,之前有人提出，气泡排序感觉使用的步骤更少了。
+Dialogue: 0,1:18:21.36,1:18:25.61,chinese,,0,0,0,,之前有人提出，冒泡排序感觉使用的步骤更少了。
 Dialogue: 0,1:18:25.61,1:18:26.91,english,,0,0,0,,Well, let's consider that next.
 Dialogue: 0,1:18:25.61,1:18:26.91,chinese,,0,0,0,,好吧，让我们接下来考虑这个问题。
 Dialogue: 0,1:18:26.91,1:18:30.63,english,,0,0,0,,With bubble sort, we had this pseudocode, I claim.
-Dialogue: 0,1:18:26.91,1:18:30.63,chinese,,0,0,0,,对于气泡排序，我声称我们有这样的伪代码。
+Dialogue: 0,1:18:26.91,1:18:30.63,chinese,,0,0,0,,对于冒泡排序，我声称我们有这样的伪代码。
 Dialogue: 0,1:18:30.63,1:18:33.78,english,,0,0,0,,Whereby, let's focus on the inside of the code first.
 Dialogue: 0,1:18:30.63,1:18:33.78,chinese,,0,0,0,,因此，让我们先关注代码的内部。
 Dialogue: 0,1:18:33.78,1:18:36.12,english,,0,0,0,,Down here, what was I doing?
@@ -2567,7 +2524,7 @@ Dialogue: 0,1:22:59.83,1:23:05.95,chinese,,0,0,0,,冒泡排序的结构不就是
 Dialogue: 0,1:23:05.95,1:23:07.08,english,,0,0,0,,DAVID MALAN: Good question.
 Dialogue: 0,1:23:05.95,1:23:07.08,chinese,,0,0,0,,问得好。
 Dialogue: 0,1:23:07.08,1:23:12.86,english,,0,0,0,,Isn't bubble sort designed such that you wouldn't need to compare numbers that have already bubbled up?
-Dialogue: 0,1:23:07.08,1:23:12.86,chinese,,0,0,0,,气泡排序的设计不就是为了让你不需要比较已经冒泡的数字吗？
+Dialogue: 0,1:23:07.08,1:23:12.86,chinese,,0,0,0,,冒泡排序的设计不就是为了让你不需要比较已经冒泡的数字吗？
 Dialogue: 0,1:23:12.86,1:23:17.00,english,,0,0,0,,That's what's happening here in the middle, implicitly.
 Dialogue: 0,1:23:12.86,1:23:17.00,chinese,,0,0,0,,这就是中间隐含发生的事情。
 Dialogue: 0,1:23:17.00,1:23:19.22,english,,0,0,0,,I'm always going from left to right.
@@ -2601,7 +2558,7 @@ Dialogue: 0,1:24:08.99,1:24:10.51,chinese,,0,0,0,,那你还是别说了。
 Dialogue: 0,1:24:10.51,1:24:17.55,english,,0,0,0,,Because if you do a whole pass and make no swaps, why would you waste time doing it again expecting different behavior?
 Dialogue: 0,1:24:10.51,1:24:17.55,chinese,,0,0,0,,因为如果你做了一整遍，却没有进行任何交换，为什么还要浪费时间再做一遍，期待有不同的表现呢？
 Dialogue: 0,1:24:17.55,1:24:26.64,english,,0,0,0,,So to help visualize these, whereby now bubble sort can be advantageous if the data is already sorted or mostly sorted.
-Dialogue: 0,1:24:17.55,1:24:26.64,chinese,,0,0,0,,因此，如果数据已经排序或大部分已经排序，为了帮助可视化这些数据，现在气泡排序就很有优势。
+Dialogue: 0,1:24:17.55,1:24:26.64,chinese,,0,0,0,,因此，如果数据已经排序或大部分已经排序，为了帮助可视化这些数据，现在冒泡排序就很有优势。
 Dialogue: 0,1:24:26.64,1:24:27.14,english,,0,0,0,,Why?
 Dialogue: 0,1:24:27.14,1:24:29.51,english,,0,0,0,,Because it does have this short circuit detail.
 Dialogue: 0,1:24:27.14,1:24:29.51,chinese,,0,0,0,,因为它确实有这个短路细节。
@@ -2652,7 +2609,7 @@ Dialogue: 0,1:25:50.97,1:25:54.65,chinese,,0,0,0,,我不得不在那里不停地
 Dialogue: 0,1:25:54.65,1:25:58.64,english,,0,0,0,,Well, let me re-randomize the array, just so we start with a different order.
 Dialogue: 0,1:25:54.65,1:25:58.64,chinese,,0,0,0,,好吧，让我重新随机排列，这样我们就能以不同的顺序开始了。
 Dialogue: 0,1:25:58.64,1:26:00.38,english,,0,0,0,,And now let me click on bubble sort.
-Dialogue: 0,1:25:58.64,1:26:00.38,chinese,,0,0,0,,现在让我点击气泡排序。
+Dialogue: 0,1:25:58.64,1:26:00.38,chinese,,0,0,0,,现在让我点击冒泡排序。
 Dialogue: 0,1:26:00.38,1:26:03.24,english,,0,0,0,,And you'll see similar idea, but different algorithm.
 Dialogue: 0,1:26:00.38,1:26:03.24,chinese,,0,0,0,,你会看到类似的想法，但算法不同。
 Dialogue: 0,1:26:03.24,1:26:09.99,english,,0,0,0,,So now, the two bars in pink are the two that are being compared and fixed, potentially, if they're out of order.
@@ -3234,11 +3191,11 @@ Dialogue: 0,1:44:01.88,1:44:08.05,chinese,,0,0,0,,那么，我们怎么才能真
 Dialogue: 0,1:44:08.05,1:44:16.87,english,,0,0,0,,Well, let me propose that we actually introduced a third and final algorithm for sorting that hopefully does better than the two sorts thus far.
 Dialogue: 0,1:44:08.05,1:44:16.87,chinese,,0,0,0,,好吧，让我提议，我们实际上引入了第三种也是最后一种排序算法，希望它能比迄今为止的两种排序算法做得更好。
 Dialogue: 0,1:44:16.87,1:44:19.48,english,,0,0,0,,We've done selection sort and bubble sort.
-Dialogue: 0,1:44:16.87,1:44:19.48,chinese,,0,0,0,,我们已经完成了选择排序和气泡排序。
+Dialogue: 0,1:44:16.87,1:44:19.48,chinese,,0,0,0,,我们已经完成了选择排序和冒泡排序。
 Dialogue: 0,1:44:19.48,1:44:24.22,english,,0,0,0,,Bubble sort, we liked a little better, at least insofar as in the best case where the list is already sorted.
-Dialogue: 0,1:44:19.48,1:44:24.22,chinese,,0,0,0,,至少在列表已经排序的最佳情况下，我们更喜欢气泡排序。
+Dialogue: 0,1:44:19.48,1:44:24.22,chinese,,0,0,0,,至少在列表已经排序的最佳情况下，我们更喜欢冒泡排序。
 Dialogue: 0,1:44:24.22,1:44:30.49,english,,0,0,0,,Bubble sort's at least smarter, and it will actually terminate early, giving us a better lower bound, in terms of our omega notation.
-Dialogue: 0,1:44:24.22,1:44:30.49,chinese,,0,0,0,,泡泡排序至少更聪明，它实际上会提前结束，根据我们的欧米茄符号，给我们一个更好的下限。
+Dialogue: 0,1:44:24.22,1:44:30.49,chinese,,0,0,0,,冒泡排序至少更聪明，它实际上会提前结束，根据我们的欧米茄符号，给我们一个更好的下限。
 Dialogue: 0,1:44:30.49,1:44:36.25,english,,0,0,0,,But it turns out that recursion, and this is not necessarily a feature of recursion, but something we can now leverage.
 Dialogue: 0,1:44:30.49,1:44:36.25,chinese,,0,0,0,,但事实证明，递归并不一定是递归的特征，而是我们现在可以利用的东西。
 Dialogue: 0,1:44:36.25,1:44:47.56,english,,0,0,0,,It turns out, using recursion, we can take a fundamentally different approach to sorting a whole bunch of numbers in such a way that we can do far fewer comparisons and, ideally, speed up
@@ -3334,7 +3291,7 @@ Dialogue: 0,1:47:08.83,1:47:10.66,chinese,,0,0,0,,很明显，接下来是 2。
 Dialogue: 0,1:47:10.66,1:47:15.22,english,,0,0,0,,And now, notice, each time I do this, my hands are theoretically making forward progress.
 Dialogue: 0,1:47:10.66,1:47:15.22,chinese,,0,0,0,,现在请注意，每次我这样做时，我的双手理论上都在向前迈进。
 Dialogue: 0,1:47:15.22,1:47:20.29,english,,0,0,0,,I'm not doubling back like I kept doing with selection sort or bubble sort, back and forth, back and forth.
-Dialogue: 0,1:47:15.22,1:47:20.29,chinese,,0,0,0,,我不会像处理选择排序或气泡排序时那样来回折腾。
+Dialogue: 0,1:47:15.22,1:47:20.29,chinese,,0,0,0,,我不会像处理选择排序或冒泡排序时那样来回折腾。
 Dialogue: 0,1:47:20.29,1:47:24.31,english,,0,0,0,,My fingers are constantly advancing forward, and that's going to be a key detail.
 Dialogue: 0,1:47:20.29,1:47:24.31,chinese,,0,0,0,,我的手指不断向前推进，这将是一个关键细节。
 Dialogue: 0,1:47:24.31,1:47:27.34,english,,0,0,0,,So I compare 4 and 3, 3 obviously.
@@ -3771,7 +3728,7 @@ Dialogue: 0,1:59:29.65,1:59:34.45,chinese,,0,0,0,,最后，我们想向大家展
 Dialogue: 0,1:59:34.45,1:59:35.80,english,,0,0,0,,It's about 60 seconds long.
 Dialogue: 0,1:59:34.45,1:59:35.80,chinese,,0,0,0,,时长约 60 秒。
 Dialogue: 0,1:59:35.80,1:59:46.57,english,,0,0,0,,And it will compare for you, selection sort, bubble sort, and merge sort in parallel simultaneously with some fun sorting music, showing you ultimately what it really
-Dialogue: 0,1:59:35.80,1:59:46.57,chinese,,0,0,0,,它还会同时为你比较选择排序、气泡排序和合并排序，并伴有一些有趣的排序音乐，最终向你展示它到底是什么。
+Dialogue: 0,1:59:35.80,1:59:46.57,chinese,,0,0,0,,它还会同时为你比较选择排序、冒泡排序和合并排序，并伴有一些有趣的排序音乐，最终向你展示它到底是什么。
 Dialogue: 0,1:59:46.57,1:59:52.75,english,,0,0,0,,means to be an O of n squared, or better yet, big O of n log n.
 Dialogue: 0,1:59:46.57,1:59:52.75,chinese,,0,0,0,,意味着是 n 平方的 O，或者更好的是 n log n 的大 O。
 Dialogue: 0,1:59:52.75,1:59:54.85,english,,0,0,0,,Selection on the top.
