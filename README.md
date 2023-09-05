@@ -1,7 +1,7 @@
 # CS50x 2023 & 2024 中文翻译
-这里备份 CS50x 课程的翻译文稿，感谢每一个 star !
+**这里备份 CS50x 课程的翻译文稿，感谢每一个 star !**
 
-点击打开 [Lectures 合集](https://space.bilibili.com/398793142/channel/collectiondetail?sid=1694108) ，[Labs 合集](https://space.bilibili.com/398793142/channel/collectiondetail?sid=1694420)。
+点击打开 [Lectures 中文合集](https://space.bilibili.com/398793142/channel/collectiondetail?sid=1694108) ，[Labs 中文合集](https://space.bilibili.com/398793142/channel/collectiondetail?sid=1694420)。
 
 
 课程仍在翻译中，计划是 C 语言部分翻译 23 年版本，后面部分翻译 24 年新版。
