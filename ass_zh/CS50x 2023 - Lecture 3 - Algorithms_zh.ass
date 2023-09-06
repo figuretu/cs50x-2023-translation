@@ -15,9 +15,9 @@ Video File: ../video/CS50x 2023 - Lecture 3 - Algorithms.mp4
 Video AR Mode: 4
 Video AR Value: 1.777778
 Video Zoom Percent: 0.375000
-Scroll Position: 3594
-Active Line: 3580
-Video Position: 167940
+Scroll Position: 1009
+Active Line: 1023
+Video Position: 54553
 
 [V4+ Styles]
 Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
@@ -1051,7 +1051,7 @@ Dialogue: 0,0:37:43.55,0:37:46.28,chinese,,0,0,0,,我来把终端隐藏起来，
 Dialogue: 0,0:37:46.28,0:37:49.85,english,,0,0,0,,The only thing I did was switched from integers to strings.
 Dialogue: 0,0:37:46.28,0:37:49.85,chinese,,0,0,0,,我只做了一件事情，把 int 换成 string。
 Dialogue: 0,0:37:49.85,0:37:52.31,english,,0,0,0,,And I switched to str compare here.
-Dialogue: 0,0:37:49.85,0:37:52.31,chinese,,0,0,0,,在这里，改用 strlen 了。
+Dialogue: 0,0:37:49.85,0:37:52.31,chinese,,0,0,0,,在这里，改用 strcmp 了。
 Dialogue: 0,0:37:52.31,0:37:54.20,english,,0,0,0,,But segmentation fault happened.
 Dialogue: 0,0:37:52.31,0:37:54.20,chinese,,0,0,0,,结果发生了段错误。
 Dialogue: 0,0:37:54.20,0:37:57.08,english,,0,0,0,,And the teaser is that that somehow relates to the computer's memory.
