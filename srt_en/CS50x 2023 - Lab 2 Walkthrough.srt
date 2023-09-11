@@ -1,0 +1,580 @@
+1
+00:00:00,000 --> 00:00:00,652
+
+
+2
+00:00:00,652 --> 00:00:02,360
+BRIAN YU: In this lab,
+your task is going
+
+3
+00:00:02,360 --> 00:00:05,720
+to be to write a program that
+calculates the score for words
+
+4
+00:00:05,720 --> 00:00:10,160
+in a game of Scrabble and compares the
+score for two words against each other.
+
+5
+00:00:10,160 --> 00:00:12,170
+Scrabble is a game where
+your job is to form
+
+6
+00:00:12,170 --> 00:00:15,170
+words made out of letters
+where each letter is
+
+7
+00:00:15,170 --> 00:00:17,270
+assigned some number of points.
+
+8
+00:00:17,270 --> 00:00:20,990
+Common letters, like A and E
+and I, are only worth 1 point.
+
+9
+00:00:20,990 --> 00:00:25,130
+Slightly less common letters, like
+B or C or M, are worth 3 points.
+
+10
+00:00:25,130 --> 00:00:28,560
+And rare letters, like Q and
+Z, are worth even more points--
+
+11
+00:00:28,560 --> 00:00:30,020
+10 points, in this case.
+
+12
+00:00:30,020 --> 00:00:32,450
+And there's an entire
+table here that shows you,
+
+13
+00:00:32,450 --> 00:00:36,980
+for any letter of the alphabet, how
+many points that letter is worth.
+
+14
+00:00:36,980 --> 00:00:39,980
+Using this assignment of
+points, we can take a word
+
+15
+00:00:39,980 --> 00:00:42,740
+and figure out how many
+points that word is worth.
+
+16
+00:00:42,740 --> 00:00:46,400
+For the word "Scrabble," for example,
+we know that S is worth 1 point,
+
+17
+00:00:46,400 --> 00:00:51,200
+C is worth 3 points, so on and so forth,
+and we can add up all of those numbers
+
+18
+00:00:51,200 --> 00:00:55,820
+to figure out that the word
+"Scrabble" is worth 14 points.
+
+19
+00:00:55,820 --> 00:00:57,920
+And once we have that
+ability, we can then
+
+20
+00:00:57,920 --> 00:01:00,800
+compare two words to figure
+out, between those two
+
+21
+00:01:00,800 --> 00:01:03,590
+words, which word is worth more.
+
+22
+00:01:03,590 --> 00:01:06,680
+If I were to compare the word
+"computer" against the word "science,"
+
+23
+00:01:06,680 --> 00:01:10,670
+for example, I would find that
+"computer" is worth 14 points in a game
+
+24
+00:01:10,670 --> 00:01:14,630
+of Scrabble, and "science" is worth
+11 points in a game of Scrabble,
+
+25
+00:01:14,630 --> 00:01:18,600
+so between those two words,
+"computer" would win.
+
+26
+00:01:18,600 --> 00:01:23,370
+Your task now is to write a program in
+C that can do this comparison for you--
+
+27
+00:01:23,370 --> 00:01:28,320
+taking two words and figuring out which
+one would win in a game of Scrabble.
+
+28
+00:01:28,320 --> 00:01:30,150
+Your program will work like this.
+
+29
+00:01:30,150 --> 00:01:33,930
+At the command line, you would
+run the program ./scrabble.
+
+30
+00:01:33,930 --> 00:01:37,200
+Your program will then prompt
+for a word from player 1,
+
+31
+00:01:37,200 --> 00:01:40,960
+and player 1 would type in a word--
+for example, the word "computer."
+
+32
+00:01:40,960 --> 00:01:44,190
+And then your program would
+prompt player 2 to type in a word,
+
+33
+00:01:44,190 --> 00:01:47,880
+and player 2 could then type in
+a word-- for example, "science."
+
+34
+00:01:47,880 --> 00:01:51,510
+Your program should then take both of
+those words, looking at each letter
+
+35
+00:01:51,510 --> 00:01:53,940
+and figuring out how much
+each letter is worth,
+
+36
+00:01:53,940 --> 00:01:57,420
+and using that information to
+figure out which of the two words
+
+37
+00:01:57,420 --> 00:02:00,480
+is going to have a higher
+score in a game of Scrabble.
+
+38
+00:02:00,480 --> 00:02:02,580
+In this case, player
+1's word, "computer,"
+
+39
+00:02:02,580 --> 00:02:05,580
+has the higher score, so your
+program is going to print something
+
+40
+00:02:05,580 --> 00:02:07,200
+like "Player 1 wins!"
+
+41
+00:02:07,200 --> 00:02:08,870
+for example.
+
+42
+00:02:08,870 --> 00:02:11,600
+Now, how exactly is your
+program going to figure out
+
+43
+00:02:11,600 --> 00:02:14,360
+how many points a
+particular word is worth?
+
+44
+00:02:14,360 --> 00:02:16,250
+Well, in the distribution
+code we give you--
+
+45
+00:02:16,250 --> 00:02:17,917
+which we'll take a look at in a moment--
+
+46
+00:02:17,917 --> 00:02:22,430
+we give you an array of integers,
+called POINTS, in all capital letters,
+
+47
+00:02:22,430 --> 00:02:26,810
+and this here is an array of 26
+integers, each one representing
+
+48
+00:02:26,810 --> 00:02:29,540
+the Scrabble score for
+a particular letter--
+
+49
+00:02:29,540 --> 00:02:31,290
+in alphabetical order.
+
+50
+00:02:31,290 --> 00:02:33,680
+And because this is
+an array, we can index
+
+51
+00:02:33,680 --> 00:02:36,530
+into that array using square
+brackets to get access
+
+52
+00:02:36,530 --> 00:02:39,980
+to one particular score
+for one particular letter.
+
+53
+00:02:39,980 --> 00:02:43,700
+For example, if we wanted to figure out
+how many points the letter A is worth--
+
+54
+00:02:43,700 --> 00:02:45,630
+the first letter of the alphabet--
+
+55
+00:02:45,630 --> 00:02:48,890
+we would use POINTS square
+bracket 0 to get access
+
+56
+00:02:48,890 --> 00:02:51,290
+to the first element
+in the array, recalling
+
+57
+00:02:51,290 --> 00:02:55,930
+that the first element in an
+array is the element at index 0.
+
+58
+00:02:55,930 --> 00:02:59,140
+If I wanted to figure out how
+many points the letter B is worth,
+
+59
+00:02:59,140 --> 00:03:03,110
+I could use POINTS square bracket
+1 to get access to the number 3--
+
+60
+00:03:03,110 --> 00:03:06,580
+the value for the letter B.
+Likewise, POINTS square bracket 2
+
+61
+00:03:06,580 --> 00:03:09,670
+would give me access to the
+point value of the letter C,
+
+62
+00:03:09,670 --> 00:03:12,680
+all the way up to POINTS
+square bracket 25,
+
+63
+00:03:12,680 --> 00:03:15,760
+which would give me access to the
+last element in this array, which
+
+64
+00:03:15,760 --> 00:03:20,162
+in this case is 10,
+the value for letter Z.
+
+65
+00:03:20,162 --> 00:03:23,370
+With that in mind, let's now take a look
+at the rest of the distribution code
+
+66
+00:03:23,370 --> 00:03:25,200
+that we give you for this lab.
+
+67
+00:03:25,200 --> 00:03:30,630
+Here, in scrabble.c, you'll notice that
+after including cs50.h and stdio.h,
+
+68
+00:03:30,630 --> 00:03:34,350
+we have this array of points that
+has all of the point values for each
+
+69
+00:03:34,350 --> 00:03:37,540
+of the letters of the alphabet
+in alphabetical order,
+
+70
+00:03:37,540 --> 00:03:39,450
+and then inside of the
+main function, we've
+
+71
+00:03:39,450 --> 00:03:41,460
+already written some code for you.
+
+72
+00:03:41,460 --> 00:03:44,670
+And your task is just going to
+be to complete this function.
+
+73
+00:03:44,670 --> 00:03:49,380
+We start by using get_string to prompt
+the user for a word from player 1,
+
+74
+00:03:49,380 --> 00:03:52,110
+storing that inside of
+word 1, and likewise doing
+
+75
+00:03:52,110 --> 00:03:53,490
+the same thing for player 2--
+
+76
+00:03:53,490 --> 00:03:56,790
+get_string for player 2, storing
+whatever string the user types
+
+77
+00:03:56,790 --> 00:03:59,370
+in as word 2.
+
+78
+00:03:59,370 --> 00:04:04,050
+After that, we score both words by
+calling this compute_score function,
+
+79
+00:04:04,050 --> 00:04:08,100
+first on word 1, and then calling
+that same function on word 2.
+
+80
+00:04:08,100 --> 00:04:10,380
+We haven't seen that function
+yet, but implementing
+
+81
+00:04:10,380 --> 00:04:12,810
+that function is going to be up to you.
+
+82
+00:04:12,810 --> 00:04:16,290
+And we'll save the result of that
+function inside of the variables
+
+83
+00:04:16,290 --> 00:04:18,959
+score 1 and score 2.
+
+84
+00:04:18,959 --> 00:04:23,460
+Left up to you is to print out the
+winner between player 1 and player 2--
+
+85
+00:04:23,460 --> 00:04:26,760
+to compare those two
+values, score 1 and score 2,
+
+86
+00:04:26,760 --> 00:04:30,150
+and to print either that player
+1 wins, or player 2 wins,
+
+87
+00:04:30,150 --> 00:04:32,790
+or, in the event that both
+words have the same score,
+
+88
+00:04:32,790 --> 00:04:35,260
+to print out that it's a tie.
+
+89
+00:04:35,260 --> 00:04:37,650
+The other piece of this program
+that you'll need to write
+
+90
+00:04:37,650 --> 00:04:39,930
+is this compute_score function.
+
+91
+00:04:39,930 --> 00:04:43,710
+This function takes a word as
+input, which is of type string,
+
+92
+00:04:43,710 --> 00:04:48,420
+and returns an int, representing
+the score for that particular word.
+
+93
+00:04:48,420 --> 00:04:51,570
+And you'll likely want to compute
+that score by iterating over
+
+94
+00:04:51,570 --> 00:04:55,230
+all of the characters in the word,
+and for each of those characters,
+
+95
+00:04:55,230 --> 00:04:59,850
+figuring out how many points
+that character is worth.
+
+96
+00:04:59,850 --> 00:05:02,350
+So in summary, here's
+what you'll need to do.
+
+97
+00:05:02,350 --> 00:05:04,980
+First, complete the
+compute_score function,
+
+98
+00:05:04,980 --> 00:05:09,360
+returning the number of points that
+would be given to any particular word.
+
+99
+00:05:09,360 --> 00:05:13,350
+In doing so, you'll want to
+ignore any non-letter characters.
+
+100
+00:05:13,350 --> 00:05:17,890
+In Scrabble, only the letters A
+through Z actually count for points,
+
+101
+00:05:17,890 --> 00:05:22,080
+so if the user includes punctuation or
+spaces inside of the text they write,
+
+102
+00:05:22,080 --> 00:05:24,210
+you should ignore
+those other characters,
+
+103
+00:05:24,210 --> 00:05:28,020
+and only consider the letters
+when determining the score.
+
+104
+00:05:28,020 --> 00:05:31,260
+Your function should
+also be case-insensitive.
+
+105
+00:05:31,260 --> 00:05:33,510
+That is to say, regardless
+of whether the character is
+
+106
+00:05:33,510 --> 00:05:36,030
+an uppercase letter
+or a lowercase letter,
+
+107
+00:05:36,030 --> 00:05:39,090
+you should be able to assign that
+letter some number of points.
+
+108
+00:05:39,090 --> 00:05:45,020
+Both capital A and lowercase a are
+each worth 1 point, for example.
+
+109
+00:05:45,020 --> 00:05:47,480
+After you've completed the
+compute_score function,
+
+110
+00:05:47,480 --> 00:05:49,820
+you should then complete
+the main function
+
+111
+00:05:49,820 --> 00:05:53,510
+by comparing those two
+values, score 1 and score 2,
+
+112
+00:05:53,510 --> 00:05:57,470
+and then printing either player
+1 wins, or player 2 wins,
+
+113
+00:05:57,470 --> 00:06:01,910
+or tie, depending on how those two
+scores compare with each other.
+
+114
+00:06:01,910 --> 00:06:03,950
+After you've implemented
+these steps, you
+
+115
+00:06:03,950 --> 00:06:08,090
+should then be able to run your Scrabble
+program, provide a word for player 1,
+
+116
+00:06:08,090 --> 00:06:10,700
+and provide a word for
+player 2, and your program
+
+117
+00:06:10,700 --> 00:06:13,310
+should be able to tell you
+which of those two words
+
+118
+00:06:13,310 --> 00:06:16,040
+would be worth more
+in a game of Scrabble.
+
+119
+00:06:16,040 --> 00:06:19,500
+My name is Brian, and this was Scrabble.
+
+120
+00:06:19,500 --> 00:06:20,000
+
+
